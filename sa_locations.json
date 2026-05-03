@@ -1,0 +1,246 @@
+[
+  {
+    "province": "Gauteng",
+    "slug": "gauteng",
+    "metros": [
+      {
+        "name": "City of Johannesburg",
+        "slug": "city-of-johannesburg",
+        "suburbs": [
+          {"name": "Sandton", "slug": "sandton"},
+          {"name": "Rosebank", "slug": "rosebank"},
+          {"name": "Midrand", "slug": "midrand"},
+          {"name": "Randburg", "slug": "randburg"},
+          {"name": "Fourways", "slug": "fourways"},
+          {"name": "Bryanston", "slug": "bryanston"},
+          {"name": "Bedfordview", "slug": "bedfordview"}
+        ]
+      },
+      {
+        "name": "City of Tshwane",
+        "slug": "city-of-tshwane",
+        "suburbs": [
+          {"name": "Pretoria East", "slug": "pretoria-east"},
+          {"name": "Centurion", "slug": "centurion"},
+          {"name": "Menlyn", "slug": "menlyn"},
+          {"name": "Hatfield", "slug": "hatfield"},
+          {"name": "Brooklyn", "slug": "brooklyn"}
+        ]
+      },
+      {
+        "name": "Ekurhuleni",
+        "slug": "ekurhuleni",
+        "suburbs": [
+          {"name": "Boksburg", "slug": "boksburg"},
+          {"name": "Benoni", "slug": "benoni"},
+          {"name": "Kempton Park", "slug": "kempton-park"},
+          {"name": "Germiston", "slug": "germiston"},
+          {"name": "Edenvale", "slug": "edenvale"}
+        ]
+      }
+    ]
+  },
+  {
+    "province": "Western Cape",
+    "slug": "western-cape",
+    "metros": [
+      {
+        "name": "City of Cape Town",
+        "slug": "city-of-cape-town",
+        "suburbs": [
+          {"name": "Cape Town CBD", "slug": "cape-town-cbd"},
+          {"name": "Bellville", "slug": "bellville"},
+          {"name": "Stellenbosch", "slug": "stellenbosch"},
+          {"name": "Somerset West", "slug": "somerset-west"},
+          {"name": "Durbanville", "slug": "durbanville"},
+          {"name": "Claremont", "slug": "claremont"},
+          {"name": "Century City", "slug": "century-city"}
+        ]
+      },
+      {
+        "name": "Cape Winelands",
+        "slug": "cape-winelands",
+        "suburbs": [
+          {"name": "Paarl", "slug": "paarl"},
+          {"name": "Worcester", "slug": "worcester"},
+          {"name": "Franschhoek", "slug": "franschhoek"}
+        ]
+      },
+      {
+        "name": "Garden Route",
+        "slug": "garden-route",
+        "suburbs": [
+          {"name": "George", "slug": "george"},
+          {"name": "Knysna", "slug": "knysna"},
+          {"name": "Plettenberg Bay", "slug": "plettenberg-bay"},
+          {"name": "Mossel Bay", "slug": "mossel-bay"}
+        ]
+      }
+    ]
+  },
+  {
+    "province": "KwaZulu-Natal",
+    "slug": "kwazulu-natal",
+    "metros": [
+      {
+        "name": "eThekwini",
+        "slug": "ethekwini",
+        "suburbs": [
+          {"name": "Durban", "slug": "durban"},
+          {"name": "Umhlanga", "slug": "umhlanga"},
+          {"name": "Pinetown", "slug": "pinetown"},
+          {"name": "Westville", "slug": "westville"},
+          {"name": "Hillcrest", "slug": "hillcrest"},
+          {"name": "Ballito", "slug": "ballito"}
+        ]
+      },
+      {
+        "name": "Msunduzi",
+        "slug": "msunduzi",
+        "suburbs": [
+          {"name": "Pietermaritzburg", "slug": "pietermaritzburg"}
+        ]
+      },
+      {
+        "name": "King Cetshwayo",
+        "slug": "king-cetshwayo",
+        "suburbs": [
+          {"name": "Richards Bay", "slug": "richards-bay"},
+          {"name": "Empangeni", "slug": "empangeni"}
+        ]
+      }
+    ]
+  },
+  {
+    "province": "Eastern Cape",
+    "slug": "eastern-cape",
+    "metros": [
+      {
+        "name": "Nelson Mandela Bay",
+        "slug": "nelson-mandela-bay",
+        "suburbs": [
+          {"name": "Gqeberha", "slug": "gqeberha"},
+          {"name": "Port Elizabeth", "slug": "port-elizabeth"},
+          {"name": "Kariega", "slug": "kariega"},
+          {"name": "Uitenhage", "slug": "uitenhage"}
+        ]
+      },
+      {
+        "name": "Buffalo City",
+        "slug": "buffalo-city",
+        "suburbs": [
+          {"name": "East London", "slug": "east-london"},
+          {"name": "King William's Town", "slug": "king-williams-town"}
+        ]
+      }
+    ]
+  },
+  {
+    "province": "Free State",
+    "slug": "free-state",
+    "metros": [
+      {
+        "name": "Mangaung",
+        "slug": "mangaung",
+        "suburbs": [
+          {"name": "Bloemfontein", "slug": "bloemfontein"},
+          {"name": "Botshabelo", "slug": "botshabelo"}
+        ]
+      },
+      {
+        "name": "Lejweleputswa",
+        "slug": "lejweleputswa",
+        "suburbs": [
+          {"name": "Welkom", "slug": "welkom"}
+        ]
+      }
+    ]
+  },
+  {
+    "province": "Mpumalanga",
+    "slug": "mpumalanga",
+    "metros": [
+      {
+        "name": "Ehlanzeni",
+        "slug": "ehlanzeni",
+        "suburbs": [
+          {"name": "Mbombela", "slug": "mbombela"},
+          {"name": "Nelspruit", "slug": "nelspruit"},
+          {"name": "White River", "slug": "white-river"}
+        ]
+      },
+      {
+        "name": "Nkangala",
+        "slug": "nkangala",
+        "suburbs": [
+          {"name": "Emalahleni", "slug": "emalahleni"},
+          {"name": "Witbank", "slug": "witbank"},
+          {"name": "Middelburg", "slug": "middelburg"}
+        ]
+      }
+    ]
+  },
+  {
+    "province": "Limpopo",
+    "slug": "limpopo",
+    "metros": [
+      {
+        "name": "Capricorn",
+        "slug": "capricorn",
+        "suburbs": [
+          {"name": "Polokwane", "slug": "polokwane"}
+        ]
+      },
+      {
+        "name": "Mopani",
+        "slug": "mopani",
+        "suburbs": [
+          {"name": "Tzaneen", "slug": "tzaneen"},
+          {"name": "Phalaborwa", "slug": "phalaborwa"}
+        ]
+      }
+    ]
+  },
+  {
+    "province": "North West",
+    "slug": "north-west",
+    "metros": [
+      {
+        "name": "Bojanala Platinum",
+        "slug": "bojanala-platinum",
+        "suburbs": [
+          {"name": "Rustenburg", "slug": "rustenburg"},
+          {"name": "Brits", "slug": "brits"}
+        ]
+      },
+      {
+        "name": "Dr Kenneth Kaunda",
+        "slug": "dr-kenneth-kaunda",
+        "suburbs": [
+          {"name": "Klerksdorp", "slug": "klerksdorp"},
+          {"name": "Potchefstroom", "slug": "potchefstroom"}
+        ]
+      }
+    ]
+  },
+  {
+    "province": "Northern Cape",
+    "slug": "northern-cape",
+    "metros": [
+      {
+        "name": "Frances Baard",
+        "slug": "frances-baard",
+        "suburbs": [
+          {"name": "Kimberley", "slug": "kimberley"}
+        ]
+      },
+      {
+        "name": "ZF Mgcawu",
+        "slug": "zf-mgcawu",
+        "suburbs": [
+          {"name": "Upington", "slug": "upington"}
+        ]
+      }
+    ]
+  }
+]

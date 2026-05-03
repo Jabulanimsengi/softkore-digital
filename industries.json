@@ -1,0 +1,362 @@
+[
+  {
+    "slug": "salon-beauty-websites",
+    "name": "Salons and Beauty Businesses",
+    "category": "Health, Beauty and Wellness",
+    "audience": "salons, spas, nail bars, beauty clinics, barbers, and mobile beauty professionals",
+    "challenge": "clients compare treatments, prices, location, trust, and booking convenience before making contact",
+    "solution": "a polished website, online booking flow, local SEO pages, service menus, reviews, and conversion-focused contact paths",
+    "features": ["Treatment menu pages", "Online booking", "Stylist or therapist profiles", "Before-and-after galleries", "Local SEO pages", "WhatsApp enquiries"]
+  },
+  {
+    "slug": "medical-practice-websites",
+    "name": "Medical Practices",
+    "category": "Healthcare",
+    "audience": "doctors, clinics, specialists, private practices, and healthcare groups",
+    "challenge": "patients need trustworthy information, clear services, location details, appointment paths, and confidence before booking",
+    "solution": "a professional medical website with service pages, doctor profiles, patient FAQs, appointment forms, and strong technical foundations",
+    "features": ["Doctor profiles", "Service pages", "Appointment requests", "Patient FAQs", "Location pages", "Technical SEO"]
+  },
+  {
+    "slug": "dental-practice-websites",
+    "name": "Dental Practices",
+    "category": "Healthcare",
+    "audience": "dentists, orthodontists, cosmetic dental clinics, and oral health practices",
+    "challenge": "patients often compare dental services, pricing signals, reviews, treatment details, and nearby availability",
+    "solution": "a dental website with treatment pages, trust content, local SEO, booking enquiries, and performance monitoring",
+    "features": ["Treatment pages", "Emergency dental pages", "Appointment forms", "Reviews", "Local SEO", "Service FAQs"]
+  },
+  {
+    "slug": "law-firm-websites-seo",
+    "name": "Law Firms",
+    "category": "Professional Services",
+    "audience": "attorneys, legal practices, conveyancers, labour law firms, and specialist legal advisors",
+    "challenge": "clients need clarity, credibility, practice-area detail, location relevance, and a confidential path to contact the firm",
+    "solution": "a serious legal website with practice-area pages, attorney profiles, enquiry forms, local SEO, and helpful legal FAQs",
+    "features": ["Practice-area pages", "Attorney profiles", "Confidential enquiries", "Local SEO", "Case-type FAQs", "Content planning"]
+  },
+  {
+    "slug": "accounting-firm-websites",
+    "name": "Accounting and Tax Firms",
+    "category": "Professional Services",
+    "audience": "accountants, tax consultants, payroll providers, bookkeepers, and advisory firms",
+    "challenge": "business clients compare trust, compliance knowledge, service scope, and ongoing support before making contact",
+    "solution": "a service-led website with package pages, enquiry forms, business resources, local pages, and SEO monitoring",
+    "features": ["Service packages", "Tax service pages", "Lead forms", "Resource pages", "Local SEO", "Client onboarding"]
+  },
+  {
+    "slug": "real-estate-website-design",
+    "name": "Real Estate Agencies",
+    "category": "Property",
+    "audience": "estate agencies, property brokers, rental agencies, and property consultants",
+    "challenge": "buyers, sellers, landlords, and tenants need fast property discovery, trust, location relevance, and lead capture",
+    "solution": "a real estate website with listings, agent profiles, valuation forms, local area pages, and performance-focused SEO",
+    "features": ["Property listings", "Agent profiles", "Valuation forms", "Area pages", "Lead capture", "CRM integration"]
+  },
+  {
+    "slug": "property-management-websites",
+    "name": "Property Management Companies",
+    "category": "Property",
+    "audience": "property managers, body corporate managers, rental managers, and facilities teams",
+    "challenge": "owners and tenants need clear communication, service information, document workflows, and reliable support channels",
+    "solution": "a property management website or portal with owner enquiries, tenant support, document flows, and admin dashboards",
+    "features": ["Owner enquiries", "Tenant support forms", "Document uploads", "Maintenance requests", "Dashboards", "Local pages"]
+  },
+  {
+    "slug": "ecommerce-development",
+    "name": "E-commerce Businesses",
+    "category": "Retail and Commerce",
+    "audience": "online stores, product brands, wholesalers, niche retailers, and growing e-commerce teams",
+    "challenge": "customers need fast product discovery, trust, easy checkout, delivery clarity, and post-purchase confidence",
+    "solution": "an e-commerce platform with product pages, payment integration, analytics, technical SEO, and performance optimization",
+    "features": ["Product catalogues", "Payment integration", "Checkout flows", "Inventory structure", "Product SEO", "Analytics"]
+  },
+  {
+    "slug": "retail-store-websites",
+    "name": "Retail Stores",
+    "category": "Retail and Commerce",
+    "audience": "local shops, boutique stores, furniture stores, hardware stores, and specialty retailers",
+    "challenge": "customers look for products, opening hours, locations, stock signals, promotions, and contact options",
+    "solution": "a retail website with product/service pages, local SEO, store information, promotions, and enquiry paths",
+    "features": ["Store pages", "Product highlights", "Promotions", "Location pages", "WhatsApp enquiries", "Local SEO"]
+  },
+  {
+    "slug": "restaurant-websites",
+    "name": "Restaurants and Food Businesses",
+    "category": "Hospitality",
+    "audience": "restaurants, cafes, takeaways, caterers, bakeries, and food service brands",
+    "challenge": "customers want menus, opening times, location, booking options, delivery links, and social proof quickly",
+    "solution": "a fast restaurant website with menus, booking links, local SEO, gallery content, and mobile-first contact actions",
+    "features": ["Digital menus", "Reservation links", "Delivery links", "Gallery sections", "Local SEO", "Mobile calls"]
+  },
+  {
+    "slug": "hotel-lodge-websites",
+    "name": "Hotels, Lodges and Guest Houses",
+    "category": "Hospitality and Tourism",
+    "audience": "hotels, lodges, guest houses, bed and breakfasts, and accommodation brands",
+    "challenge": "guests compare rooms, amenities, location, reviews, rates, booking convenience, and nearby attractions",
+    "solution": "an accommodation website with room pages, booking enquiries, local content, galleries, SEO, and analytics",
+    "features": ["Room pages", "Booking enquiries", "Gallery sections", "Amenity pages", "Local tourism content", "Performance tracking"]
+  },
+  {
+    "slug": "tourism-business-websites",
+    "name": "Tourism and Travel Businesses",
+    "category": "Hospitality and Tourism",
+    "audience": "tour operators, travel agencies, shuttle services, attractions, and experience providers",
+    "challenge": "travellers need clear itineraries, trust, pricing signals, location details, and simple enquiry or booking options",
+    "solution": "a tourism website with package pages, booking forms, destination SEO, gallery content, and conversion tracking",
+    "features": ["Tour package pages", "Booking forms", "Destination pages", "Gallery content", "Reviews", "SEO monitoring"]
+  },
+  {
+    "slug": "construction-company-websites",
+    "name": "Construction Companies",
+    "category": "Construction and Trades",
+    "audience": "builders, contractors, renovation companies, civil contractors, and construction suppliers",
+    "challenge": "clients need proof of capability, project examples, service scope, safety signals, and a clear quote path",
+    "solution": "a construction website with project portfolios, service pages, quote forms, local SEO, and credibility content",
+    "features": ["Project portfolios", "Service pages", "Quote requests", "Supplier pages", "Safety credentials", "Local SEO"]
+  },
+  {
+    "slug": "plumber-websites",
+    "name": "Plumbers",
+    "category": "Construction and Trades",
+    "audience": "plumbing companies, emergency plumbers, maintenance teams, and leak detection specialists",
+    "challenge": "customers search urgently and need location relevance, trust, service clarity, and fast contact options",
+    "solution": "a plumber website with emergency pages, service-area pages, call buttons, WhatsApp, reviews, and local SEO",
+    "features": ["Emergency pages", "Service-area pages", "Call buttons", "WhatsApp links", "Reviews", "Local SEO"]
+  },
+  {
+    "slug": "electrician-websites",
+    "name": "Electricians",
+    "category": "Construction and Trades",
+    "audience": "electricians, electrical contractors, compliance specialists, and maintenance teams",
+    "challenge": "clients need qualified providers, clear services, fast response, safety confidence, and local availability",
+    "solution": "an electrician website with service pages, emergency contact paths, compliance pages, local SEO, and quote forms",
+    "features": ["Electrical service pages", "Emergency contact", "Compliance pages", "Quote forms", "Service areas", "Reviews"]
+  },
+  {
+    "slug": "solar-installer-websites",
+    "name": "Solar Installers",
+    "category": "Energy",
+    "audience": "solar installers, backup power providers, inverter companies, and renewable energy consultants",
+    "challenge": "customers compare trust, technical options, installation quality, warranties, financing, and local proof",
+    "solution": "a solar website with solution pages, quote forms, project examples, product explainers, local SEO, and tracking",
+    "features": ["Solar solution pages", "Quote forms", "Project examples", "Product explainers", "Local SEO", "Lead tracking"]
+  },
+  {
+    "slug": "security-company-websites",
+    "name": "Security Companies",
+    "category": "Safety and Security",
+    "audience": "security firms, guarding companies, alarm installers, CCTV providers, and response companies",
+    "challenge": "clients need trust, response clarity, service coverage, compliance signals, and fast consultation paths",
+    "solution": "a security website with service pages, area coverage, enquiry forms, trust content, and SEO monitoring",
+    "features": ["Guarding pages", "CCTV pages", "Area coverage", "Consultation forms", "Trust signals", "SEO monitoring"]
+  },
+  {
+    "slug": "logistics-company-websites",
+    "name": "Logistics and Transport Companies",
+    "category": "Logistics and Transport",
+    "audience": "couriers, freight companies, fleet operators, transport brokers, and logistics providers",
+    "challenge": "clients compare routes, capability, reliability, fleet information, compliance, and quote response times",
+    "solution": "a logistics website or portal with service pages, quote workflows, tracking integrations, dashboards, and local SEO",
+    "features": ["Freight service pages", "Quote workflows", "Tracking integrations", "Fleet information", "Dashboards", "B2B SEO"]
+  },
+  {
+    "slug": "manufacturing-websites",
+    "name": "Manufacturing Companies",
+    "category": "Industrial and B2B",
+    "audience": "manufacturers, factories, industrial suppliers, production businesses, and component makers",
+    "challenge": "buyers need product capability, certifications, capacity signals, technical details, and B2B enquiry paths",
+    "solution": "a manufacturing website with product/service pages, technical content, B2B lead forms, catalogues, and SEO structure",
+    "features": ["Product pages", "Technical pages", "B2B lead forms", "Downloadable catalogues", "Certifications", "SEO structure"]
+  },
+  {
+    "slug": "mining-supplier-websites",
+    "name": "Mining Suppliers",
+    "category": "Mining and Industrial",
+    "audience": "mining suppliers, equipment providers, safety suppliers, engineering vendors, and industrial service companies",
+    "challenge": "procurement teams need clear capability, compliance information, product/service details, and reliable contact paths",
+    "solution": "a mining supplier website with capability pages, product catalogues, compliance content, B2B SEO, and enquiry workflows",
+    "features": ["Capability pages", "Product catalogues", "Compliance content", "B2B enquiries", "Technical documents", "SEO monitoring"]
+  },
+  {
+    "slug": "agriculture-business-websites",
+    "name": "Agriculture and Farming Businesses",
+    "category": "Agriculture",
+    "audience": "farms, agricultural suppliers, food producers, equipment providers, and agri-service companies",
+    "challenge": "buyers and partners need product clarity, seasonality information, supply details, trust, and regional relevance",
+    "solution": "an agriculture website with product pages, regional SEO, enquiry forms, distribution information, and content planning",
+    "features": ["Product pages", "Regional SEO", "Distribution pages", "Enquiry forms", "Seasonal content", "Supplier information"]
+  },
+  {
+    "slug": "education-training-websites",
+    "name": "Education and Training Providers",
+    "category": "Education",
+    "audience": "schools, colleges, training providers, tutors, academies, and online course businesses",
+    "challenge": "students and parents compare courses, credibility, outcomes, schedules, fees, and enrolment paths",
+    "solution": "an education website or portal with course pages, enrolment forms, learner resources, SEO, and admin tools",
+    "features": ["Course pages", "Enrolment forms", "Learner portals", "Schedules", "Resource pages", "SEO tracking"]
+  },
+  {
+    "slug": "fitness-studio-websites",
+    "name": "Fitness Studios and Gyms",
+    "category": "Health, Beauty and Wellness",
+    "audience": "gyms, personal trainers, yoga studios, pilates studios, martial arts schools, and wellness studios",
+    "challenge": "members compare classes, pricing, trainers, location, schedule convenience, and trial options",
+    "solution": "a fitness website with class schedules, booking flows, trainer profiles, membership pages, local SEO, and lead tracking",
+    "features": ["Class schedules", "Bookings", "Trainer profiles", "Membership pages", "Trial offers", "Local SEO"]
+  },
+  {
+    "slug": "automotive-business-websites",
+    "name": "Automotive Businesses",
+    "category": "Automotive",
+    "audience": "dealerships, mechanics, panel beaters, tyre shops, car washes, and auto service providers",
+    "challenge": "customers compare service availability, pricing signals, location, trust, and booking convenience",
+    "solution": "an automotive website with service pages, booking enquiries, vehicle listings or galleries, local SEO, and reviews",
+    "features": ["Service pages", "Booking requests", "Vehicle listings", "Gallery sections", "Reviews", "Local SEO"]
+  },
+  {
+    "slug": "financial-advisor-websites",
+    "name": "Financial Advisors",
+    "category": "Finance",
+    "audience": "financial advisors, wealth planners, investment consultants, and retirement planning firms",
+    "challenge": "clients need trust, service clarity, compliance-friendly content, appointment paths, and educational resources",
+    "solution": "a financial advisory website with service pages, advisor profiles, consultation forms, resources, and SEO monitoring",
+    "features": ["Advisor profiles", "Service pages", "Consultation forms", "Resource pages", "Trust content", "SEO monitoring"]
+  },
+  {
+    "slug": "insurance-broker-websites",
+    "name": "Insurance Brokers",
+    "category": "Finance",
+    "audience": "insurance brokers, short-term insurance firms, commercial insurance advisors, and specialist brokers",
+    "challenge": "clients compare cover types, advice quality, responsiveness, trust, and quote request simplicity",
+    "solution": "an insurance website with product pages, quote forms, commercial cover pages, local SEO, and lead tracking",
+    "features": ["Cover pages", "Quote forms", "Commercial insurance pages", "Broker profiles", "Local SEO", "Lead tracking"]
+  },
+  {
+    "slug": "recruitment-agency-websites",
+    "name": "Recruitment Agencies",
+    "category": "Professional Services",
+    "audience": "recruiters, staffing agencies, HR consultants, labour brokers, and talent platforms",
+    "challenge": "employers and candidates need role clarity, credibility, application paths, sector focus, and database workflows",
+    "solution": "a recruitment website or portal with job listings, candidate forms, employer pages, dashboards, and SEO",
+    "features": ["Job listings", "Candidate forms", "Employer pages", "Talent databases", "Dashboards", "SEO structure"]
+  },
+  {
+    "slug": "nonprofit-websites",
+    "name": "Nonprofits and NGOs",
+    "category": "Community and Public Benefit",
+    "audience": "nonprofits, NGOs, charities, foundations, community groups, and social impact organizations",
+    "challenge": "supporters need mission clarity, trust, project evidence, donation paths, volunteer forms, and impact reporting",
+    "solution": "a nonprofit website with campaign pages, donation links, impact stories, volunteer forms, and reporting dashboards",
+    "features": ["Campaign pages", "Donation links", "Impact stories", "Volunteer forms", "Reports", "Email capture"]
+  },
+  {
+    "slug": "church-ministry-websites",
+    "name": "Churches and Ministries",
+    "category": "Community and Public Benefit",
+    "audience": "churches, ministries, faith communities, outreach groups, and religious organizations",
+    "challenge": "members and visitors need service times, location details, event information, giving links, and contact paths",
+    "solution": "a church website with event pages, sermon content, giving links, ministry pages, contact forms, and local SEO",
+    "features": ["Service times", "Event pages", "Sermon content", "Giving links", "Ministry pages", "Local SEO"]
+  },
+  {
+    "slug": "event-venue-websites",
+    "name": "Event Venues and Event Companies",
+    "category": "Events",
+    "audience": "event venues, wedding venues, conference centres, planners, and event service providers",
+    "challenge": "clients compare availability, capacity, packages, images, location, reviews, and enquiry response",
+    "solution": "an event website with venue pages, package details, galleries, enquiry forms, local SEO, and booking workflows",
+    "features": ["Venue pages", "Package pages", "Gallery sections", "Enquiry forms", "Availability workflows", "Local SEO"]
+  },
+  {
+    "slug": "photography-websites",
+    "name": "Photographers and Creative Studios",
+    "category": "Creative Services",
+    "audience": "photographers, videographers, design studios, content creators, and creative service providers",
+    "challenge": "clients judge style, trust, availability, package fit, and enquiry experience before booking",
+    "solution": "a portfolio website with service packages, galleries, booking enquiries, local SEO, and conversion tracking",
+    "features": ["Portfolio galleries", "Package pages", "Booking enquiries", "Testimonials", "Local SEO", "Analytics"]
+  },
+  {
+    "slug": "architect-websites",
+    "name": "Architects and Design Firms",
+    "category": "Built Environment",
+    "audience": "architects, interior designers, quantity surveyors, and design-led built environment firms",
+    "challenge": "clients need portfolio proof, design approach, project types, professional credibility, and consultation paths",
+    "solution": "a portfolio-led website with project pages, service pages, team profiles, enquiry flows, and SEO structure",
+    "features": ["Project pages", "Service pages", "Team profiles", "Consultation forms", "Portfolio galleries", "SEO structure"]
+  },
+  {
+    "slug": "engineering-firm-websites",
+    "name": "Engineering Firms",
+    "category": "Built Environment",
+    "audience": "civil, structural, mechanical, electrical, and consulting engineering firms",
+    "challenge": "procurement teams and clients need capability, compliance, project experience, sectors served, and enquiry paths",
+    "solution": "an engineering website with capability pages, sector pages, project proof, document downloads, and B2B SEO",
+    "features": ["Capability pages", "Sector pages", "Project proof", "Document downloads", "B2B enquiries", "SEO structure"]
+  },
+  {
+    "slug": "consulting-firm-websites",
+    "name": "Consulting Firms",
+    "category": "Professional Services",
+    "audience": "management consultants, business consultants, operations advisors, and specialist advisory firms",
+    "challenge": "buyers need clarity on expertise, outcomes, methodology, trust, and consultation value before booking",
+    "solution": "a consulting website with service pages, case-style proof, resource content, lead magnets, and SEO monitoring",
+    "features": ["Service pages", "Methodology pages", "Resource content", "Lead magnets", "Consultation forms", "SEO monitoring"]
+  },
+  {
+    "slug": "it-company-websites",
+    "name": "IT Companies and MSPs",
+    "category": "Technology",
+    "audience": "IT support companies, managed service providers, cloud consultants, cybersecurity firms, and software vendors",
+    "challenge": "business buyers need trust, service scope, response clarity, technical credibility, and strong B2B lead paths",
+    "solution": "a technology website with service pages, solution pages, case-style proof, enquiry forms, and SEO architecture",
+    "features": ["Solution pages", "Service pages", "B2B lead forms", "Trust content", "Technical resources", "SEO structure"]
+  },
+  {
+    "slug": "cleaning-company-websites",
+    "name": "Cleaning Companies",
+    "category": "Facilities and Local Services",
+    "audience": "commercial cleaners, domestic cleaners, specialist cleaning providers, and facilities teams",
+    "challenge": "clients need service clarity, area coverage, trust, pricing signals, and fast quote paths",
+    "solution": "a cleaning company website with service pages, area pages, quote forms, reviews, and local SEO",
+    "features": ["Service pages", "Area pages", "Quote forms", "Reviews", "Before-and-after content", "Local SEO"]
+  },
+  {
+    "slug": "hvac-company-websites",
+    "name": "HVAC and Air Conditioning Companies",
+    "category": "Facilities and Local Services",
+    "audience": "HVAC installers, air conditioning companies, refrigeration specialists, and maintenance providers",
+    "challenge": "customers need technical confidence, fast contact, maintenance information, service coverage, and quote options",
+    "solution": "an HVAC website with service pages, emergency contact paths, maintenance plans, local SEO, and enquiry forms",
+    "features": ["Installation pages", "Maintenance pages", "Emergency contact", "Quote forms", "Service areas", "Local SEO"]
+  },
+  {
+    "slug": "childcare-school-websites",
+    "name": "Childcare Centres and Preschools",
+    "category": "Education",
+    "audience": "creches, preschools, daycare centres, aftercare providers, and early learning centres",
+    "challenge": "parents compare trust, safety, fees, location, programmes, photos, and enquiry response before visiting",
+    "solution": "a childcare website with programme pages, enquiry forms, trust content, gallery sections, and local SEO",
+    "features": ["Programme pages", "Enquiry forms", "Trust content", "Gallery sections", "Fee information", "Local SEO"]
+  },
+  {
+    "slug": "pharmacy-websites",
+    "name": "Pharmacies",
+    "category": "Healthcare",
+    "audience": "independent pharmacies, clinic pharmacies, wellness pharmacies, and pharmacy groups",
+    "challenge": "customers need opening hours, services, location, prescription support, clinic services, and contact options",
+    "solution": "a pharmacy website with service pages, clinic information, location pages, contact actions, and SEO monitoring",
+    "features": ["Service pages", "Clinic information", "Location pages", "Contact actions", "Health resources", "SEO monitoring"]
+  },
+  {
+    "slug": "veterinary-practice-websites",
+    "name": "Veterinary Practices",
+    "category": "Healthcare",
+    "audience": "vets, animal clinics, pet hospitals, grooming clinics, and veterinary specialists",
+    "challenge": "pet owners compare trust, emergency availability, services, location, reviews, and appointment convenience",
+    "solution": "a veterinary website with service pages, appointment forms, emergency information, local SEO, and trust content",
+    "features": ["Vet service pages", "Appointment forms", "Emergency information", "Team profiles", "Reviews", "Local SEO"]
+  }
+]
