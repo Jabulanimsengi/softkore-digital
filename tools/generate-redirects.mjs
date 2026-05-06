@@ -189,7 +189,6 @@ fs.writeFileSync(
   `${JSON.stringify(
     {
       host: "www.softkoredigital.co.za",
-      generatedAt: new Date().toISOString(),
       count: sortedRedirects.length,
       redirects: sortedRedirects.map(([from, to]) => ({ from, to })),
     },
