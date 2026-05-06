@@ -1,0 +1,29 @@
+{
+  "name": "softkoredigital",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "predeploy": "npm run generate:redirects && npm run validate:redirects && npm run build && npm run validate:export",
+    "generate:sitemaps": "node tools/generate-sitemaps.mjs",
+    "submit:indexnow": "node tools/submit-indexnow.mjs",
+    "generate:redirects": "node tools/generate-redirects.mjs",
+    "validate:redirects": "node tools/validate-redirects.mjs",
+    "validate:export": "node tools/validate-next-export.mjs"
+  },
+  "dependencies": {
+    "next": "^15.3.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.17",
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "typescript": "^5.8.3"
+  }
+}

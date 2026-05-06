@@ -1,0 +1,6167 @@
+{
+  "host": "www.softkoredigital.co.za",
+  "generatedAt": "2026-05-06T08:30:51.134Z",
+  "count": 1540,
+  "redirects": [
+    {
+      "from": "/app-development/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/contact-us/",
+      "to": "/#contact"
+    },
+    {
+      "from": "/contact/",
+      "to": "/#contact"
+    },
+    {
+      "from": "/contact/index.html",
+      "to": "/#contact"
+    },
+    {
+      "from": "/custom-web-applications/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/guides/choosing-a-website-partner/",
+      "to": "/guides/website-prices-south-africa/"
+    },
+    {
+      "from": "/guides/choosing-a-website-partner/index.html",
+      "to": "/guides/website-prices-south-africa/"
+    },
+    {
+      "from": "/guides/improve-website-enquiries/",
+      "to": "/guides/why-your-website-is-not-ranking/"
+    },
+    {
+      "from": "/guides/improve-website-enquiries/index.html",
+      "to": "/guides/why-your-website-is-not-ranking/"
+    },
+    {
+      "from": "/guides/index.html",
+      "to": "/guides/"
+    },
+    {
+      "from": "/guides/planning-service-pages/",
+      "to": "/guides/technical-seo-checklist/"
+    },
+    {
+      "from": "/guides/planning-service-pages/index.html",
+      "to": "/guides/technical-seo-checklist/"
+    },
+    {
+      "from": "/guides/website-maintenance-checklist/index.html",
+      "to": "/guides/website-maintenance-checklist/"
+    },
+    {
+      "from": "/guides/website-prices-south-africa/index.html",
+      "to": "/guides/website-prices-south-africa/"
+    },
+    {
+      "from": "/guides/website-vs-web-application/index.html",
+      "to": "/guides/website-vs-web-application/"
+    },
+    {
+      "from": "/home/",
+      "to": "/"
+    },
+    {
+      "from": "/index.html",
+      "to": "/"
+    },
+    {
+      "from": "/industries/accounting-firm-websites/custom-web-applications/",
+      "to": "/industries/accounting-firm-websites/"
+    },
+    {
+      "from": "/industries/accounting-firm-websites/custom-web-applications/index.html",
+      "to": "/industries/accounting-firm-websites/"
+    },
+    {
+      "from": "/industries/accounting-firm-websites/index.html",
+      "to": "/industries/accounting-firm-websites/"
+    },
+    {
+      "from": "/industries/accounting-firm-websites/seo-services/",
+      "to": "/industries/accounting-firm-websites/"
+    },
+    {
+      "from": "/industries/accounting-firm-websites/seo-services/index.html",
+      "to": "/industries/accounting-firm-websites/"
+    },
+    {
+      "from": "/industries/accounting-firm-websites/website-design/",
+      "to": "/industries/accounting-firm-websites/"
+    },
+    {
+      "from": "/industries/accounting-firm-websites/website-design/index.html",
+      "to": "/industries/accounting-firm-websites/"
+    },
+    {
+      "from": "/industries/aesthetic-clinic-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/aesthetic-clinic-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/aesthetic-clinic-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/aesthetic-clinic-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/aesthetic-clinic-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/aesthetic-clinic-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/aesthetic-clinic-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/aesthetic-clinic-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/agriculture-business-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/agriculture-business-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/agriculture-business-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/agriculture-business-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/agriculture-business-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/agriculture-business-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/agriculture-business-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/agriculture-business-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/architect-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/architect-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/architect-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/architect-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/architect-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/architect-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/architect-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/architect-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/auditor-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/auditor-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/auditor-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/auditor-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/auditor-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/auditor-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/auditor-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/auditor-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/automotive-business-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/automotive-business-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/automotive-business-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/automotive-business-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/automotive-business-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/automotive-business-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/automotive-business-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/automotive-business-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/baby-store-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/baby-store-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/baby-store-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/baby-store-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/baby-store-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/baby-store-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/baby-store-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/baby-store-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/bakery-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/bakery-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/bakery-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/bakery-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/bakery-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/bakery-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/bakery-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/bakery-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/barber-shop-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/barber-shop-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/barber-shop-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/barber-shop-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/barber-shop-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/barber-shop-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/barber-shop-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/barber-shop-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/business-coach-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/business-coach-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/business-coach-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/business-coach-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/business-coach-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/business-coach-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/business-coach-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/business-coach-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/car-rental-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/car-rental-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/car-rental-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/car-rental-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/car-rental-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/car-rental-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/car-rental-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/car-rental-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/carpenter-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/carpenter-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/carpenter-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/carpenter-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/carpenter-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/carpenter-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/carpenter-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/carpenter-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/carpet-cleaning-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/carpet-cleaning-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/carpet-cleaning-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/carpet-cleaning-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/carpet-cleaning-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/carpet-cleaning-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/carpet-cleaning-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/carpet-cleaning-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/catering-company-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/catering-company-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/catering-company-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/catering-company-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/catering-company-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/catering-company-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/catering-company-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/catering-company-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/childcare-school-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/childcare-school-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/childcare-school-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/childcare-school-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/childcare-school-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/childcare-school-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/childcare-school-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/childcare-school-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/chiropractor-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/chiropractor-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/chiropractor-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/chiropractor-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/chiropractor-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/chiropractor-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/chiropractor-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/chiropractor-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/church-ministry-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/church-ministry-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/church-ministry-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/church-ministry-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/church-ministry-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/church-ministry-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/church-ministry-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/church-ministry-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/cleaning-company-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/cleaning-company-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/cleaning-company-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/cleaning-company-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/cleaning-company-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/cleaning-company-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/cleaning-company-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/cleaning-company-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/coffee-shop-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/coffee-shop-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/coffee-shop-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/coffee-shop-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/coffee-shop-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/coffee-shop-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/coffee-shop-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/coffee-shop-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/construction-company-websites/custom-web-applications/",
+      "to": "/industries/construction-company-websites/"
+    },
+    {
+      "from": "/industries/construction-company-websites/custom-web-applications/index.html",
+      "to": "/industries/construction-company-websites/"
+    },
+    {
+      "from": "/industries/construction-company-websites/index.html",
+      "to": "/industries/construction-company-websites/"
+    },
+    {
+      "from": "/industries/construction-company-websites/seo-services/",
+      "to": "/industries/construction-company-websites/"
+    },
+    {
+      "from": "/industries/construction-company-websites/seo-services/index.html",
+      "to": "/industries/construction-company-websites/"
+    },
+    {
+      "from": "/industries/construction-company-websites/website-design/",
+      "to": "/industries/construction-company-websites/"
+    },
+    {
+      "from": "/industries/construction-company-websites/website-design/index.html",
+      "to": "/industries/construction-company-websites/"
+    },
+    {
+      "from": "/industries/consulting-firm-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/consulting-firm-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/consulting-firm-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/consulting-firm-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/consulting-firm-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/consulting-firm-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/consulting-firm-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/consulting-firm-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/conveyancer-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/conveyancer-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/conveyancer-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/conveyancer-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/conveyancer-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/conveyancer-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/conveyancer-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/conveyancer-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/corporate-training-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/corporate-training-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/corporate-training-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/corporate-training-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/corporate-training-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/corporate-training-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/corporate-training-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/corporate-training-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/courier-company-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/courier-company-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/courier-company-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/courier-company-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/courier-company-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/courier-company-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/courier-company-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/courier-company-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/cybersecurity-company-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/cybersecurity-company-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/cybersecurity-company-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/cybersecurity-company-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/cybersecurity-company-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/cybersecurity-company-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/cybersecurity-company-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/cybersecurity-company-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/debt-counsellor-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/debt-counsellor-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/debt-counsellor-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/debt-counsellor-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/debt-counsellor-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/debt-counsellor-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/debt-counsellor-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/debt-counsellor-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/dental-practice-websites/custom-web-applications/",
+      "to": "/industries/dental-practice-websites/"
+    },
+    {
+      "from": "/industries/dental-practice-websites/custom-web-applications/index.html",
+      "to": "/industries/dental-practice-websites/"
+    },
+    {
+      "from": "/industries/dental-practice-websites/index.html",
+      "to": "/industries/dental-practice-websites/"
+    },
+    {
+      "from": "/industries/dental-practice-websites/seo-services/",
+      "to": "/industries/dental-practice-websites/"
+    },
+    {
+      "from": "/industries/dental-practice-websites/seo-services/index.html",
+      "to": "/industries/dental-practice-websites/"
+    },
+    {
+      "from": "/industries/dental-practice-websites/website-design/",
+      "to": "/industries/dental-practice-websites/"
+    },
+    {
+      "from": "/industries/dental-practice-websites/website-design/index.html",
+      "to": "/industries/dental-practice-websites/"
+    },
+    {
+      "from": "/industries/dermatologist-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/dermatologist-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/dermatologist-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/dermatologist-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/dermatologist-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/dermatologist-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/dermatologist-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/dermatologist-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/driving-school-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/driving-school-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/driving-school-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/driving-school-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/driving-school-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/driving-school-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/driving-school-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/driving-school-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/ecommerce-development/custom-web-applications/",
+      "to": "/industries/ecommerce-development/"
+    },
+    {
+      "from": "/industries/ecommerce-development/custom-web-applications/index.html",
+      "to": "/industries/ecommerce-development/"
+    },
+    {
+      "from": "/industries/ecommerce-development/index.html",
+      "to": "/industries/ecommerce-development/"
+    },
+    {
+      "from": "/industries/ecommerce-development/seo-services/",
+      "to": "/industries/ecommerce-development/"
+    },
+    {
+      "from": "/industries/ecommerce-development/seo-services/index.html",
+      "to": "/industries/ecommerce-development/"
+    },
+    {
+      "from": "/industries/ecommerce-development/website-design/",
+      "to": "/industries/ecommerce-development/"
+    },
+    {
+      "from": "/industries/ecommerce-development/website-design/index.html",
+      "to": "/industries/ecommerce-development/"
+    },
+    {
+      "from": "/industries/education-training-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/education-training-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/education-training-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/education-training-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/education-training-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/education-training-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/education-training-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/education-training-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/electrician-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/electrician-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/electrician-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/electrician-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/electrician-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/electrician-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/electrician-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/electrician-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/engineering-firm-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/engineering-firm-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/engineering-firm-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/engineering-firm-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/engineering-firm-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/engineering-firm-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/engineering-firm-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/engineering-firm-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/engineering-supplier-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/engineering-supplier-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/engineering-supplier-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/engineering-supplier-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/engineering-supplier-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/engineering-supplier-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/engineering-supplier-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/engineering-supplier-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/estate-agent-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/estate-agent-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/estate-agent-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/estate-agent-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/estate-agent-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/estate-agent-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/estate-agent-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/estate-agent-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/event-planner-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/event-planner-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/event-planner-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/event-planner-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/event-planner-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/event-planner-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/event-planner-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/event-planner-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/event-venue-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/event-venue-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/event-venue-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/event-venue-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/event-venue-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/event-venue-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/event-venue-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/event-venue-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/farm-equipment-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/farm-equipment-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/farm-equipment-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/farm-equipment-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/farm-equipment-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/farm-equipment-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/farm-equipment-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/farm-equipment-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/financial-advisor-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/financial-advisor-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/financial-advisor-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/financial-advisor-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/financial-advisor-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/financial-advisor-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/financial-advisor-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/financial-advisor-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/fitness-studio-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/fitness-studio-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/fitness-studio-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/fitness-studio-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/fitness-studio-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/fitness-studio-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/fitness-studio-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/fitness-studio-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/flooring-company-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/flooring-company-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/flooring-company-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/flooring-company-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/flooring-company-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/flooring-company-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/flooring-company-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/flooring-company-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/florist-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/florist-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/florist-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/florist-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/florist-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/florist-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/florist-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/florist-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/food-manufacturer-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/food-manufacturer-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/food-manufacturer-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/food-manufacturer-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/food-manufacturer-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/food-manufacturer-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/food-manufacturer-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/food-manufacturer-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/freight-forwarder-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/freight-forwarder-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/freight-forwarder-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/freight-forwarder-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/freight-forwarder-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/freight-forwarder-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/freight-forwarder-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/freight-forwarder-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/funeral-home-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/funeral-home-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/funeral-home-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/funeral-home-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/funeral-home-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/funeral-home-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/funeral-home-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/funeral-home-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/furniture-manufacturer-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/furniture-manufacturer-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/furniture-manufacturer-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/furniture-manufacturer-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/furniture-manufacturer-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/furniture-manufacturer-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/furniture-manufacturer-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/furniture-manufacturer-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/furniture-store-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/furniture-store-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/furniture-store-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/furniture-store-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/furniture-store-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/furniture-store-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/furniture-store-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/furniture-store-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/gp-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/gp-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/gp-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/gp-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/gp-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/gp-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/gp-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/gp-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/guest-house-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/guest-house-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/guest-house-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/guest-house-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/guest-house-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/guest-house-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/guest-house-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/guest-house-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hardware-store-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hardware-store-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hardware-store-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hardware-store-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hardware-store-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hardware-store-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hardware-store-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hardware-store-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/home-care-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/home-care-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/home-care-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/home-care-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/home-care-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/home-care-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/home-care-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/home-care-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hotel-lodge-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hotel-lodge-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hotel-lodge-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hotel-lodge-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hotel-lodge-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hotel-lodge-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hotel-lodge-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hotel-lodge-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hr-consultant-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hr-consultant-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hr-consultant-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hr-consultant-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hr-consultant-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hr-consultant-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hr-consultant-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hr-consultant-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hvac-company-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hvac-company-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hvac-company-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hvac-company-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hvac-company-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hvac-company-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hvac-company-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/hvac-company-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/insurance-broker-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/insurance-broker-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/insurance-broker-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/insurance-broker-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/insurance-broker-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/insurance-broker-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/insurance-broker-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/insurance-broker-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/interior-designer-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/interior-designer-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/interior-designer-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/interior-designer-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/interior-designer-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/interior-designer-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/interior-designer-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/interior-designer-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/it-company-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/it-company-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/it-company-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/it-company-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/it-company-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/it-company-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/it-company-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/it-company-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/jewellery-store-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/jewellery-store-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/jewellery-store-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/jewellery-store-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/jewellery-store-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/jewellery-store-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/jewellery-store-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/jewellery-store-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/landscaping-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/landscaping-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/landscaping-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/landscaping-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/landscaping-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/landscaping-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/landscaping-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/landscaping-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/laundry-service-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/laundry-service-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/laundry-service-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/laundry-service-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/laundry-service-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/laundry-service-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/laundry-service-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/laundry-service-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/law-firm-websites-seo/",
+      "to": "/industries/legal-firm-seo-services/"
+    },
+    {
+      "from": "/industries/law-firm-websites-seo/custom-web-applications/",
+      "to": "/industries/legal-firm-seo-services/"
+    },
+    {
+      "from": "/industries/law-firm-websites-seo/custom-web-applications/index.html",
+      "to": "/industries/legal-firm-seo-services/"
+    },
+    {
+      "from": "/industries/law-firm-websites-seo/index.html",
+      "to": "/industries/legal-firm-seo-services/"
+    },
+    {
+      "from": "/industries/law-firm-websites-seo/seo-services/",
+      "to": "/industries/legal-firm-seo-services/"
+    },
+    {
+      "from": "/industries/law-firm-websites-seo/seo-services/index.html",
+      "to": "/industries/legal-firm-seo-services/"
+    },
+    {
+      "from": "/industries/law-firm-websites-seo/website-design/",
+      "to": "/industries/legal-firm-seo-services/"
+    },
+    {
+      "from": "/industries/law-firm-websites-seo/website-design/index.html",
+      "to": "/industries/legal-firm-seo-services/"
+    },
+    {
+      "from": "/industries/letting-agent-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/letting-agent-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/letting-agent-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/letting-agent-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/letting-agent-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/letting-agent-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/letting-agent-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/letting-agent-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/logistics-company-websites/custom-web-applications/",
+      "to": "/industries/logistics-company-websites/"
+    },
+    {
+      "from": "/industries/logistics-company-websites/custom-web-applications/index.html",
+      "to": "/industries/logistics-company-websites/"
+    },
+    {
+      "from": "/industries/logistics-company-websites/index.html",
+      "to": "/industries/logistics-company-websites/"
+    },
+    {
+      "from": "/industries/logistics-company-websites/seo-services/",
+      "to": "/industries/logistics-company-websites/"
+    },
+    {
+      "from": "/industries/logistics-company-websites/seo-services/index.html",
+      "to": "/industries/logistics-company-websites/"
+    },
+    {
+      "from": "/industries/logistics-company-websites/website-design/",
+      "to": "/industries/logistics-company-websites/"
+    },
+    {
+      "from": "/industries/logistics-company-websites/website-design/index.html",
+      "to": "/industries/logistics-company-websites/"
+    },
+    {
+      "from": "/industries/manufacturing-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/manufacturing-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/manufacturing-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/manufacturing-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/manufacturing-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/manufacturing-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/manufacturing-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/manufacturing-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/marketing-agency-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/marketing-agency-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/marketing-agency-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/marketing-agency-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/marketing-agency-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/marketing-agency-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/marketing-agency-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/marketing-agency-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/mechanic-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/mechanic-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/mechanic-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/mechanic-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/mechanic-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/mechanic-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/mechanic-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/mechanic-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/medical-practice-websites/custom-web-applications/",
+      "to": "/industries/medical-practice-websites/"
+    },
+    {
+      "from": "/industries/medical-practice-websites/custom-web-applications/index.html",
+      "to": "/industries/medical-practice-websites/"
+    },
+    {
+      "from": "/industries/medical-practice-websites/index.html",
+      "to": "/industries/medical-practice-websites/"
+    },
+    {
+      "from": "/industries/medical-practice-websites/seo-services/",
+      "to": "/industries/medical-practice-websites/"
+    },
+    {
+      "from": "/industries/medical-practice-websites/seo-services/index.html",
+      "to": "/industries/medical-practice-websites/"
+    },
+    {
+      "from": "/industries/medical-practice-websites/website-design/",
+      "to": "/industries/medical-practice-websites/"
+    },
+    {
+      "from": "/industries/medical-practice-websites/website-design/index.html",
+      "to": "/industries/medical-practice-websites/"
+    },
+    {
+      "from": "/industries/mining-supplier-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/mining-supplier-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/mining-supplier-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/mining-supplier-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/mining-supplier-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/mining-supplier-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/mining-supplier-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/mining-supplier-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/mortgage-broker-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/mortgage-broker-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/mortgage-broker-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/mortgage-broker-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/mortgage-broker-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/mortgage-broker-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/mortgage-broker-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/mortgage-broker-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/moving-company-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/moving-company-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/moving-company-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/moving-company-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/moving-company-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/moving-company-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/moving-company-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/moving-company-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/municipal-service-provider-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/municipal-service-provider-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/municipal-service-provider-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/municipal-service-provider-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/municipal-service-provider-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/municipal-service-provider-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/municipal-service-provider-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/municipal-service-provider-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/nonprofit-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/nonprofit-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/nonprofit-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/nonprofit-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/nonprofit-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/nonprofit-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/nonprofit-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/nonprofit-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/notary-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/notary-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/notary-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/notary-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/notary-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/notary-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/notary-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/notary-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/nursery-garden-centre-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/nursery-garden-centre-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/nursery-garden-centre-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/nursery-garden-centre-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/nursery-garden-centre-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/nursery-garden-centre-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/nursery-garden-centre-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/nursery-garden-centre-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/occupational-therapist-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/occupational-therapist-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/occupational-therapist-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/occupational-therapist-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/occupational-therapist-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/occupational-therapist-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/occupational-therapist-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/occupational-therapist-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/online-course-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/online-course-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/online-course-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/online-course-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/online-course-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/online-course-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/online-course-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/online-course-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/optometrist-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/optometrist-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/optometrist-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/optometrist-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/optometrist-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/optometrist-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/optometrist-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/optometrist-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/packaging-company-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/packaging-company-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/packaging-company-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/packaging-company-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/packaging-company-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/packaging-company-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/packaging-company-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/packaging-company-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/painting-contractor-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/painting-contractor-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/painting-contractor-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/painting-contractor-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/painting-contractor-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/painting-contractor-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/painting-contractor-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/painting-contractor-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/panel-beater-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/panel-beater-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/panel-beater-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/panel-beater-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/panel-beater-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/panel-beater-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/panel-beater-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/panel-beater-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pest-control-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pest-control-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pest-control-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pest-control-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pest-control-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pest-control-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pest-control-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pest-control-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pet-store-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pet-store-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pet-store-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pet-store-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pet-store-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pet-store-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pet-store-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pet-store-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pharmacy-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pharmacy-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pharmacy-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pharmacy-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pharmacy-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pharmacy-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pharmacy-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pharmacy-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/photography-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/photography-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/photography-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/photography-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/photography-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/photography-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/photography-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/photography-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/physiotherapist-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/physiotherapist-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/physiotherapist-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/physiotherapist-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/physiotherapist-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/physiotherapist-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/physiotherapist-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/physiotherapist-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/plumber-websites/custom-web-applications/",
+      "to": "/industries/plumber-websites/"
+    },
+    {
+      "from": "/industries/plumber-websites/custom-web-applications/index.html",
+      "to": "/industries/plumber-websites/"
+    },
+    {
+      "from": "/industries/plumber-websites/index.html",
+      "to": "/industries/plumber-websites/"
+    },
+    {
+      "from": "/industries/plumber-websites/seo-services/",
+      "to": "/industries/plumber-websites/"
+    },
+    {
+      "from": "/industries/plumber-websites/seo-services/index.html",
+      "to": "/industries/plumber-websites/"
+    },
+    {
+      "from": "/industries/plumber-websites/website-design/",
+      "to": "/industries/plumber-websites/"
+    },
+    {
+      "from": "/industries/plumber-websites/website-design/index.html",
+      "to": "/industries/plumber-websites/"
+    },
+    {
+      "from": "/industries/pool-builder-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pool-builder-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pool-builder-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pool-builder-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pool-builder-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pool-builder-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pool-builder-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/pool-builder-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/printing-company-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/printing-company-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/printing-company-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/printing-company-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/printing-company-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/printing-company-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/printing-company-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/printing-company-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/property-management-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/property-management-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/property-management-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/property-management-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/property-management-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/property-management-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/property-management-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/property-management-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/psychologist-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/psychologist-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/psychologist-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/psychologist-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/psychologist-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/psychologist-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/psychologist-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/psychologist-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/quantity-surveyor-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/quantity-surveyor-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/quantity-surveyor-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/quantity-surveyor-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/quantity-surveyor-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/quantity-surveyor-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/quantity-surveyor-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/quantity-surveyor-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/real-estate-website-design/",
+      "to": "/industries/real-estate-websites/"
+    },
+    {
+      "from": "/industries/real-estate-website-design/custom-web-applications/",
+      "to": "/industries/real-estate-websites/"
+    },
+    {
+      "from": "/industries/real-estate-website-design/custom-web-applications/index.html",
+      "to": "/industries/real-estate-websites/"
+    },
+    {
+      "from": "/industries/real-estate-website-design/index.html",
+      "to": "/industries/real-estate-websites/"
+    },
+    {
+      "from": "/industries/real-estate-website-design/seo-services/",
+      "to": "/industries/real-estate-websites/"
+    },
+    {
+      "from": "/industries/real-estate-website-design/seo-services/index.html",
+      "to": "/industries/real-estate-websites/"
+    },
+    {
+      "from": "/industries/real-estate-website-design/website-design/",
+      "to": "/industries/real-estate-websites/"
+    },
+    {
+      "from": "/industries/real-estate-website-design/website-design/index.html",
+      "to": "/industries/real-estate-websites/"
+    },
+    {
+      "from": "/industries/recruitment-agency-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/recruitment-agency-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/recruitment-agency-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/recruitment-agency-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/recruitment-agency-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/recruitment-agency-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/recruitment-agency-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/recruitment-agency-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/restaurant-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/restaurant-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/restaurant-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/restaurant-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/restaurant-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/restaurant-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/restaurant-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/restaurant-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/retail-store-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/retail-store-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/retail-store-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/retail-store-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/retail-store-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/retail-store-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/retail-store-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/retail-store-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/roofing-company-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/roofing-company-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/roofing-company-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/roofing-company-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/roofing-company-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/roofing-company-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/roofing-company-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/roofing-company-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/saas-company-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/saas-company-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/saas-company-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/saas-company-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/saas-company-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/saas-company-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/saas-company-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/saas-company-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/salon-beauty-websites/",
+      "to": "/industries/salon-booking-software/"
+    },
+    {
+      "from": "/industries/salon-beauty-websites/custom-web-applications/",
+      "to": "/industries/salon-booking-software/"
+    },
+    {
+      "from": "/industries/salon-beauty-websites/custom-web-applications/index.html",
+      "to": "/industries/salon-booking-software/"
+    },
+    {
+      "from": "/industries/salon-beauty-websites/index.html",
+      "to": "/industries/salon-booking-software/"
+    },
+    {
+      "from": "/industries/salon-beauty-websites/seo-services/",
+      "to": "/industries/salon-booking-software/"
+    },
+    {
+      "from": "/industries/salon-beauty-websites/seo-services/index.html",
+      "to": "/industries/salon-booking-software/"
+    },
+    {
+      "from": "/industries/salon-beauty-websites/website-design/",
+      "to": "/industries/salon-booking-software/"
+    },
+    {
+      "from": "/industries/salon-beauty-websites/website-design/index.html",
+      "to": "/industries/salon-booking-software/"
+    },
+    {
+      "from": "/industries/security-company-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/security-company-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/security-company-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/security-company-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/security-company-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/security-company-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/security-company-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/security-company-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/signage-company-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/signage-company-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/signage-company-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/signage-company-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/signage-company-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/signage-company-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/signage-company-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/signage-company-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/software-company-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/software-company-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/software-company-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/software-company-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/software-company-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/software-company-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/software-company-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/software-company-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/solar-installer-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/solar-installer-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/solar-installer-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/solar-installer-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/solar-installer-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/solar-installer-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/solar-installer-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/solar-installer-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/spa-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/spa-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/spa-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/spa-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/spa-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/spa-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/spa-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/spa-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/speech-therapist-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/speech-therapist-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/speech-therapist-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/speech-therapist-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/speech-therapist-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/speech-therapist-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/speech-therapist-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/speech-therapist-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/storage-facility-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/storage-facility-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/storage-facility-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/storage-facility-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/storage-facility-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/storage-facility-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/storage-facility-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/storage-facility-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/student-accommodation-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/student-accommodation-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/student-accommodation-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/student-accommodation-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/student-accommodation-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/student-accommodation-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/student-accommodation-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/student-accommodation-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tattoo-studio-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tattoo-studio-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tattoo-studio-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tattoo-studio-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tattoo-studio-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tattoo-studio-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tattoo-studio-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tattoo-studio-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/telecom-company-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/telecom-company-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/telecom-company-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/telecom-company-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/telecom-company-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/telecom-company-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/telecom-company-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/telecom-company-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tourism-business-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tourism-business-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tourism-business-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tourism-business-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tourism-business-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tourism-business-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tourism-business-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tourism-business-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tutoring-business-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tutoring-business-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tutoring-business-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tutoring-business-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tutoring-business-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tutoring-business-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tutoring-business-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tutoring-business-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tyre-shop-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tyre-shop-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tyre-shop-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tyre-shop-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tyre-shop-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tyre-shop-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tyre-shop-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/tyre-shop-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/veterinary-practice-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/veterinary-practice-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/veterinary-practice-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/veterinary-practice-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/veterinary-practice-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/veterinary-practice-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/veterinary-practice-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/veterinary-practice-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/veterinary-supplier-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/veterinary-supplier-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/veterinary-supplier-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/veterinary-supplier-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/veterinary-supplier-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/veterinary-supplier-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/veterinary-supplier-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/veterinary-supplier-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/virtual-assistant-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/virtual-assistant-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/virtual-assistant-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/virtual-assistant-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/virtual-assistant-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/virtual-assistant-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/virtual-assistant-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/virtual-assistant-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/warehouse-business-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/warehouse-business-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/warehouse-business-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/warehouse-business-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/warehouse-business-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/warehouse-business-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/warehouse-business-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/warehouse-business-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/waste-management-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/waste-management-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/waste-management-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/waste-management-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/waste-management-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/waste-management-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/waste-management-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/waste-management-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/waterproofing-company-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/waterproofing-company-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/waterproofing-company-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/waterproofing-company-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/waterproofing-company-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/waterproofing-company-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/waterproofing-company-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/waterproofing-company-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/wedding-venue-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/wedding-venue-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/wedding-venue-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/wedding-venue-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/wedding-venue-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/wedding-venue-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/wedding-venue-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/wedding-venue-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/welding-company-websites/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/welding-company-websites/custom-web-applications/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/welding-company-websites/custom-web-applications/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/welding-company-websites/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/welding-company-websites/seo-services/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/welding-company-websites/seo-services/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/welding-company-websites/website-design/",
+      "to": "/industries/"
+    },
+    {
+      "from": "/industries/welding-company-websites/website-design/index.html",
+      "to": "/industries/"
+    },
+    {
+      "from": "/maintenance/",
+      "to": "/services/website-maintenance/"
+    },
+    {
+      "from": "/seo-services/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/seo/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/custom-web-applications/eastern-cape/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/eastern-cape/buffalo-city/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/eastern-cape/buffalo-city/east-london/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/eastern-cape/buffalo-city/east-london/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/eastern-cape/buffalo-city/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/eastern-cape/buffalo-city/king-williams-town/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/eastern-cape/buffalo-city/king-williams-town/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/eastern-cape/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/eastern-cape/nelson-mandela-bay/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/eastern-cape/nelson-mandela-bay/gqeberha/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/eastern-cape/nelson-mandela-bay/gqeberha/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/eastern-cape/nelson-mandela-bay/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/eastern-cape/nelson-mandela-bay/kariega/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/eastern-cape/nelson-mandela-bay/kariega/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/eastern-cape/nelson-mandela-bay/port-elizabeth/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/eastern-cape/nelson-mandela-bay/port-elizabeth/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/eastern-cape/nelson-mandela-bay/uitenhage/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/eastern-cape/nelson-mandela-bay/uitenhage/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/free-state/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/free-state/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/free-state/lejweleputswa/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/free-state/lejweleputswa/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/free-state/lejweleputswa/welkom/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/free-state/lejweleputswa/welkom/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/free-state/mangaung/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/free-state/mangaung/bloemfontein/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/free-state/mangaung/bloemfontein/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/free-state/mangaung/botshabelo/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/free-state/mangaung/botshabelo/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/free-state/mangaung/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-johannesburg/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-johannesburg/bedfordview/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-johannesburg/bedfordview/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-johannesburg/bryanston/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-johannesburg/bryanston/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-johannesburg/fourways/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-johannesburg/fourways/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-johannesburg/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-johannesburg/midrand/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-johannesburg/midrand/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-johannesburg/randburg/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-johannesburg/randburg/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-johannesburg/rosebank/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-johannesburg/rosebank/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-johannesburg/sandton/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-johannesburg/sandton/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-tshwane/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-tshwane/brooklyn/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-tshwane/brooklyn/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-tshwane/centurion/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-tshwane/centurion/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-tshwane/hatfield/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-tshwane/hatfield/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-tshwane/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-tshwane/menlyn/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-tshwane/menlyn/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-tshwane/pretoria-east/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/city-of-tshwane/pretoria-east/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/ekurhuleni/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/ekurhuleni/benoni/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/ekurhuleni/benoni/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/ekurhuleni/boksburg/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/ekurhuleni/boksburg/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/ekurhuleni/edenvale/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/ekurhuleni/edenvale/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/ekurhuleni/germiston/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/ekurhuleni/germiston/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/ekurhuleni/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/ekurhuleni/kempton-park/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/ekurhuleni/kempton-park/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/gauteng/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/kwazulu-natal/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/kwazulu-natal/ethekwini/",
+      "to": "/services/custom-web-applications/kwazulu-natal/durban/"
+    },
+    {
+      "from": "/services/custom-web-applications/kwazulu-natal/ethekwini/ballito/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/kwazulu-natal/ethekwini/ballito/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/kwazulu-natal/ethekwini/durban/",
+      "to": "/services/custom-web-applications/kwazulu-natal/durban/"
+    },
+    {
+      "from": "/services/custom-web-applications/kwazulu-natal/ethekwini/durban/index.html",
+      "to": "/services/custom-web-applications/kwazulu-natal/durban/"
+    },
+    {
+      "from": "/services/custom-web-applications/kwazulu-natal/ethekwini/hillcrest/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/kwazulu-natal/ethekwini/hillcrest/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/kwazulu-natal/ethekwini/index.html",
+      "to": "/services/custom-web-applications/kwazulu-natal/durban/"
+    },
+    {
+      "from": "/services/custom-web-applications/kwazulu-natal/ethekwini/pinetown/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/kwazulu-natal/ethekwini/pinetown/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/kwazulu-natal/ethekwini/umhlanga/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/kwazulu-natal/ethekwini/umhlanga/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/kwazulu-natal/ethekwini/westville/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/kwazulu-natal/ethekwini/westville/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/kwazulu-natal/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/kwazulu-natal/king-cetshwayo/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/kwazulu-natal/king-cetshwayo/empangeni/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/kwazulu-natal/king-cetshwayo/empangeni/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/kwazulu-natal/king-cetshwayo/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/kwazulu-natal/king-cetshwayo/richards-bay/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/kwazulu-natal/king-cetshwayo/richards-bay/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/kwazulu-natal/msunduzi/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/kwazulu-natal/msunduzi/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/kwazulu-natal/msunduzi/pietermaritzburg/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/kwazulu-natal/msunduzi/pietermaritzburg/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/limpopo/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/limpopo/capricorn/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/limpopo/capricorn/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/limpopo/capricorn/polokwane/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/limpopo/capricorn/polokwane/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/limpopo/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/limpopo/mopani/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/limpopo/mopani/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/limpopo/mopani/phalaborwa/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/limpopo/mopani/phalaborwa/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/limpopo/mopani/tzaneen/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/limpopo/mopani/tzaneen/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/mpumalanga/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/mpumalanga/ehlanzeni/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/mpumalanga/ehlanzeni/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/mpumalanga/ehlanzeni/mbombela/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/mpumalanga/ehlanzeni/mbombela/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/mpumalanga/ehlanzeni/nelspruit/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/mpumalanga/ehlanzeni/nelspruit/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/mpumalanga/ehlanzeni/white-river/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/mpumalanga/ehlanzeni/white-river/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/mpumalanga/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/mpumalanga/nkangala/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/mpumalanga/nkangala/emalahleni/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/mpumalanga/nkangala/emalahleni/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/mpumalanga/nkangala/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/mpumalanga/nkangala/middelburg/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/mpumalanga/nkangala/middelburg/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/mpumalanga/nkangala/witbank/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/mpumalanga/nkangala/witbank/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/north-west/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/north-west/bojanala-platinum/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/north-west/bojanala-platinum/brits/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/north-west/bojanala-platinum/brits/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/north-west/bojanala-platinum/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/north-west/bojanala-platinum/rustenburg/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/north-west/bojanala-platinum/rustenburg/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/north-west/dr-kenneth-kaunda/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/north-west/dr-kenneth-kaunda/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/north-west/dr-kenneth-kaunda/klerksdorp/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/north-west/dr-kenneth-kaunda/klerksdorp/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/north-west/dr-kenneth-kaunda/potchefstroom/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/north-west/dr-kenneth-kaunda/potchefstroom/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/north-west/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/northern-cape/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/northern-cape/frances-baard/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/northern-cape/frances-baard/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/northern-cape/frances-baard/kimberley/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/northern-cape/frances-baard/kimberley/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/northern-cape/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/northern-cape/zf-mgcawu/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/northern-cape/zf-mgcawu/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/northern-cape/zf-mgcawu/upington/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/northern-cape/zf-mgcawu/upington/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/cape-winelands/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/cape-winelands/franschhoek/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/cape-winelands/franschhoek/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/cape-winelands/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/cape-winelands/paarl/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/cape-winelands/paarl/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/cape-winelands/worcester/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/cape-winelands/worcester/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/city-of-cape-town/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/city-of-cape-town/bellville/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/city-of-cape-town/bellville/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/city-of-cape-town/cape-town-cbd/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/city-of-cape-town/cape-town-cbd/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/city-of-cape-town/century-city/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/city-of-cape-town/century-city/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/city-of-cape-town/claremont/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/city-of-cape-town/claremont/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/city-of-cape-town/durbanville/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/city-of-cape-town/durbanville/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/city-of-cape-town/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/city-of-cape-town/somerset-west/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/city-of-cape-town/somerset-west/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/city-of-cape-town/stellenbosch/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/city-of-cape-town/stellenbosch/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/garden-route/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/garden-route/george/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/garden-route/george/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/garden-route/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/garden-route/knysna/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/garden-route/knysna/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/garden-route/mossel-bay/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/garden-route/mossel-bay/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/garden-route/plettenberg-bay/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/garden-route/plettenberg-bay/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/custom-web-applications/western-cape/index.html",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/services/seo-services/eastern-cape/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/eastern-cape/buffalo-city/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/eastern-cape/buffalo-city/east-london/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/eastern-cape/buffalo-city/east-london/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/eastern-cape/buffalo-city/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/eastern-cape/buffalo-city/king-williams-town/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/eastern-cape/buffalo-city/king-williams-town/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/eastern-cape/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/eastern-cape/nelson-mandela-bay/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/eastern-cape/nelson-mandela-bay/gqeberha/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/eastern-cape/nelson-mandela-bay/gqeberha/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/eastern-cape/nelson-mandela-bay/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/eastern-cape/nelson-mandela-bay/kariega/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/eastern-cape/nelson-mandela-bay/kariega/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/eastern-cape/nelson-mandela-bay/port-elizabeth/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/eastern-cape/nelson-mandela-bay/port-elizabeth/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/eastern-cape/nelson-mandela-bay/uitenhage/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/eastern-cape/nelson-mandela-bay/uitenhage/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/free-state/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/free-state/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/free-state/lejweleputswa/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/free-state/lejweleputswa/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/free-state/lejweleputswa/welkom/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/free-state/lejweleputswa/welkom/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/free-state/mangaung/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/free-state/mangaung/bloemfontein/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/free-state/mangaung/bloemfontein/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/free-state/mangaung/botshabelo/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/free-state/mangaung/botshabelo/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/free-state/mangaung/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-johannesburg/",
+      "to": "/services/seo-services/gauteng/sandton/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-johannesburg/bedfordview/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-johannesburg/bedfordview/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-johannesburg/bryanston/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-johannesburg/bryanston/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-johannesburg/fourways/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-johannesburg/fourways/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-johannesburg/index.html",
+      "to": "/services/seo-services/gauteng/sandton/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-johannesburg/midrand/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-johannesburg/midrand/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-johannesburg/randburg/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-johannesburg/randburg/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-johannesburg/rosebank/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-johannesburg/rosebank/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-johannesburg/sandton/",
+      "to": "/services/seo-services/gauteng/sandton/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-johannesburg/sandton/index.html",
+      "to": "/services/seo-services/gauteng/sandton/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-tshwane/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-tshwane/brooklyn/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-tshwane/brooklyn/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-tshwane/centurion/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-tshwane/centurion/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-tshwane/hatfield/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-tshwane/hatfield/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-tshwane/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-tshwane/menlyn/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-tshwane/menlyn/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-tshwane/pretoria-east/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/city-of-tshwane/pretoria-east/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/ekurhuleni/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/ekurhuleni/benoni/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/ekurhuleni/benoni/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/ekurhuleni/boksburg/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/ekurhuleni/boksburg/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/ekurhuleni/edenvale/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/ekurhuleni/edenvale/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/ekurhuleni/germiston/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/ekurhuleni/germiston/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/ekurhuleni/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/ekurhuleni/kempton-park/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/ekurhuleni/kempton-park/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/gauteng/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/kwazulu-natal/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/kwazulu-natal/ethekwini/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/kwazulu-natal/ethekwini/ballito/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/kwazulu-natal/ethekwini/ballito/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/kwazulu-natal/ethekwini/durban/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/kwazulu-natal/ethekwini/durban/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/kwazulu-natal/ethekwini/hillcrest/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/kwazulu-natal/ethekwini/hillcrest/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/kwazulu-natal/ethekwini/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/kwazulu-natal/ethekwini/pinetown/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/kwazulu-natal/ethekwini/pinetown/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/kwazulu-natal/ethekwini/umhlanga/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/kwazulu-natal/ethekwini/umhlanga/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/kwazulu-natal/ethekwini/westville/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/kwazulu-natal/ethekwini/westville/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/kwazulu-natal/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/kwazulu-natal/king-cetshwayo/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/kwazulu-natal/king-cetshwayo/empangeni/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/kwazulu-natal/king-cetshwayo/empangeni/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/kwazulu-natal/king-cetshwayo/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/kwazulu-natal/king-cetshwayo/richards-bay/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/kwazulu-natal/king-cetshwayo/richards-bay/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/kwazulu-natal/msunduzi/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/kwazulu-natal/msunduzi/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/kwazulu-natal/msunduzi/pietermaritzburg/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/kwazulu-natal/msunduzi/pietermaritzburg/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/limpopo/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/limpopo/capricorn/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/limpopo/capricorn/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/limpopo/capricorn/polokwane/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/limpopo/capricorn/polokwane/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/limpopo/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/limpopo/mopani/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/limpopo/mopani/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/limpopo/mopani/phalaborwa/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/limpopo/mopani/phalaborwa/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/limpopo/mopani/tzaneen/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/limpopo/mopani/tzaneen/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/mpumalanga/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/mpumalanga/ehlanzeni/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/mpumalanga/ehlanzeni/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/mpumalanga/ehlanzeni/mbombela/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/mpumalanga/ehlanzeni/mbombela/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/mpumalanga/ehlanzeni/nelspruit/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/mpumalanga/ehlanzeni/nelspruit/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/mpumalanga/ehlanzeni/white-river/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/mpumalanga/ehlanzeni/white-river/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/mpumalanga/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/mpumalanga/nkangala/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/mpumalanga/nkangala/emalahleni/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/mpumalanga/nkangala/emalahleni/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/mpumalanga/nkangala/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/mpumalanga/nkangala/middelburg/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/mpumalanga/nkangala/middelburg/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/mpumalanga/nkangala/witbank/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/mpumalanga/nkangala/witbank/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/north-west/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/north-west/bojanala-platinum/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/north-west/bojanala-platinum/brits/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/north-west/bojanala-platinum/brits/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/north-west/bojanala-platinum/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/north-west/bojanala-platinum/rustenburg/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/north-west/bojanala-platinum/rustenburg/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/north-west/dr-kenneth-kaunda/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/north-west/dr-kenneth-kaunda/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/north-west/dr-kenneth-kaunda/klerksdorp/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/north-west/dr-kenneth-kaunda/klerksdorp/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/north-west/dr-kenneth-kaunda/potchefstroom/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/north-west/dr-kenneth-kaunda/potchefstroom/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/north-west/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/northern-cape/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/northern-cape/frances-baard/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/northern-cape/frances-baard/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/northern-cape/frances-baard/kimberley/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/northern-cape/frances-baard/kimberley/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/northern-cape/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/northern-cape/zf-mgcawu/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/northern-cape/zf-mgcawu/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/northern-cape/zf-mgcawu/upington/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/northern-cape/zf-mgcawu/upington/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/cape-winelands/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/cape-winelands/franschhoek/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/cape-winelands/franschhoek/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/cape-winelands/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/cape-winelands/paarl/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/cape-winelands/paarl/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/cape-winelands/worcester/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/cape-winelands/worcester/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/city-of-cape-town/",
+      "to": "/services/seo-services/western-cape/cape-town/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/city-of-cape-town/bellville/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/city-of-cape-town/bellville/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/city-of-cape-town/cape-town-cbd/",
+      "to": "/services/seo-services/western-cape/cape-town/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/city-of-cape-town/cape-town-cbd/index.html",
+      "to": "/services/seo-services/western-cape/cape-town/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/city-of-cape-town/century-city/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/city-of-cape-town/century-city/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/city-of-cape-town/claremont/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/city-of-cape-town/claremont/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/city-of-cape-town/durbanville/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/city-of-cape-town/durbanville/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/city-of-cape-town/index.html",
+      "to": "/services/seo-services/western-cape/cape-town/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/city-of-cape-town/somerset-west/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/city-of-cape-town/somerset-west/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/city-of-cape-town/stellenbosch/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/city-of-cape-town/stellenbosch/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/garden-route/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/garden-route/george/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/garden-route/george/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/garden-route/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/garden-route/knysna/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/garden-route/knysna/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/garden-route/mossel-bay/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/garden-route/mossel-bay/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/garden-route/plettenberg-bay/",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/garden-route/plettenberg-bay/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/seo-services/western-cape/index.html",
+      "to": "/services/seo-services/"
+    },
+    {
+      "from": "/services/web-development/eastern-cape/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/eastern-cape/buffalo-city/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/eastern-cape/buffalo-city/east-london/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/eastern-cape/buffalo-city/east-london/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/eastern-cape/buffalo-city/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/eastern-cape/buffalo-city/king-williams-town/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/eastern-cape/buffalo-city/king-williams-town/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/eastern-cape/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/eastern-cape/nelson-mandela-bay/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/eastern-cape/nelson-mandela-bay/gqeberha/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/eastern-cape/nelson-mandela-bay/gqeberha/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/eastern-cape/nelson-mandela-bay/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/eastern-cape/nelson-mandela-bay/kariega/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/eastern-cape/nelson-mandela-bay/kariega/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/eastern-cape/nelson-mandela-bay/port-elizabeth/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/eastern-cape/nelson-mandela-bay/port-elizabeth/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/eastern-cape/nelson-mandela-bay/uitenhage/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/eastern-cape/nelson-mandela-bay/uitenhage/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/free-state/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/free-state/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/free-state/lejweleputswa/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/free-state/lejweleputswa/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/free-state/lejweleputswa/welkom/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/free-state/lejweleputswa/welkom/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/free-state/mangaung/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/free-state/mangaung/bloemfontein/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/free-state/mangaung/bloemfontein/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/free-state/mangaung/botshabelo/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/free-state/mangaung/botshabelo/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/free-state/mangaung/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-johannesburg/",
+      "to": "/services/web-development/gauteng/johannesburg/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-johannesburg/bedfordview/",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-johannesburg/bedfordview/index.html",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-johannesburg/bryanston/",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-johannesburg/bryanston/index.html",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-johannesburg/fourways/",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-johannesburg/fourways/index.html",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-johannesburg/index.html",
+      "to": "/services/web-development/gauteng/johannesburg/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-johannesburg/midrand/",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-johannesburg/midrand/index.html",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-johannesburg/randburg/",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-johannesburg/randburg/index.html",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-johannesburg/rosebank/",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-johannesburg/rosebank/index.html",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-johannesburg/sandton/",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-johannesburg/sandton/index.html",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-tshwane/",
+      "to": "/services/web-development/gauteng/pretoria/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-tshwane/brooklyn/",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-tshwane/brooklyn/index.html",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-tshwane/centurion/",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-tshwane/centurion/index.html",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-tshwane/hatfield/",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-tshwane/hatfield/index.html",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-tshwane/index.html",
+      "to": "/services/web-development/gauteng/pretoria/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-tshwane/menlyn/",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-tshwane/menlyn/index.html",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-tshwane/pretoria-east/",
+      "to": "/services/web-development/gauteng/pretoria/"
+    },
+    {
+      "from": "/services/web-development/gauteng/city-of-tshwane/pretoria-east/index.html",
+      "to": "/services/web-development/gauteng/pretoria/"
+    },
+    {
+      "from": "/services/web-development/gauteng/ekurhuleni/",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/ekurhuleni/benoni/",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/ekurhuleni/benoni/index.html",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/ekurhuleni/boksburg/",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/ekurhuleni/boksburg/index.html",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/ekurhuleni/edenvale/",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/ekurhuleni/edenvale/index.html",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/ekurhuleni/germiston/",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/ekurhuleni/germiston/index.html",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/ekurhuleni/index.html",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/ekurhuleni/kempton-park/",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/ekurhuleni/kempton-park/index.html",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/gauteng/index.html",
+      "to": "/services/web-development/gauteng/"
+    },
+    {
+      "from": "/services/web-development/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/kwazulu-natal/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/kwazulu-natal/ethekwini/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/kwazulu-natal/ethekwini/ballito/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/kwazulu-natal/ethekwini/ballito/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/kwazulu-natal/ethekwini/durban/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/kwazulu-natal/ethekwini/durban/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/kwazulu-natal/ethekwini/hillcrest/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/kwazulu-natal/ethekwini/hillcrest/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/kwazulu-natal/ethekwini/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/kwazulu-natal/ethekwini/pinetown/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/kwazulu-natal/ethekwini/pinetown/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/kwazulu-natal/ethekwini/umhlanga/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/kwazulu-natal/ethekwini/umhlanga/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/kwazulu-natal/ethekwini/westville/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/kwazulu-natal/ethekwini/westville/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/kwazulu-natal/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/kwazulu-natal/king-cetshwayo/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/kwazulu-natal/king-cetshwayo/empangeni/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/kwazulu-natal/king-cetshwayo/empangeni/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/kwazulu-natal/king-cetshwayo/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/kwazulu-natal/king-cetshwayo/richards-bay/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/kwazulu-natal/king-cetshwayo/richards-bay/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/kwazulu-natal/msunduzi/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/kwazulu-natal/msunduzi/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/kwazulu-natal/msunduzi/pietermaritzburg/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/kwazulu-natal/msunduzi/pietermaritzburg/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/limpopo/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/limpopo/capricorn/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/limpopo/capricorn/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/limpopo/capricorn/polokwane/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/limpopo/capricorn/polokwane/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/limpopo/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/limpopo/mopani/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/limpopo/mopani/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/limpopo/mopani/phalaborwa/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/limpopo/mopani/phalaborwa/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/limpopo/mopani/tzaneen/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/limpopo/mopani/tzaneen/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/mpumalanga/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/mpumalanga/ehlanzeni/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/mpumalanga/ehlanzeni/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/mpumalanga/ehlanzeni/mbombela/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/mpumalanga/ehlanzeni/mbombela/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/mpumalanga/ehlanzeni/nelspruit/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/mpumalanga/ehlanzeni/nelspruit/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/mpumalanga/ehlanzeni/white-river/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/mpumalanga/ehlanzeni/white-river/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/mpumalanga/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/mpumalanga/nkangala/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/mpumalanga/nkangala/emalahleni/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/mpumalanga/nkangala/emalahleni/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/mpumalanga/nkangala/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/mpumalanga/nkangala/middelburg/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/mpumalanga/nkangala/middelburg/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/mpumalanga/nkangala/witbank/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/mpumalanga/nkangala/witbank/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/north-west/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/north-west/bojanala-platinum/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/north-west/bojanala-platinum/brits/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/north-west/bojanala-platinum/brits/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/north-west/bojanala-platinum/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/north-west/bojanala-platinum/rustenburg/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/north-west/bojanala-platinum/rustenburg/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/north-west/dr-kenneth-kaunda/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/north-west/dr-kenneth-kaunda/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/north-west/dr-kenneth-kaunda/klerksdorp/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/north-west/dr-kenneth-kaunda/klerksdorp/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/north-west/dr-kenneth-kaunda/potchefstroom/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/north-west/dr-kenneth-kaunda/potchefstroom/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/north-west/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/northern-cape/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/northern-cape/frances-baard/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/northern-cape/frances-baard/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/northern-cape/frances-baard/kimberley/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/northern-cape/frances-baard/kimberley/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/northern-cape/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/northern-cape/zf-mgcawu/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/northern-cape/zf-mgcawu/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/northern-cape/zf-mgcawu/upington/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/northern-cape/zf-mgcawu/upington/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/cape-winelands/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/cape-winelands/franschhoek/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/cape-winelands/franschhoek/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/cape-winelands/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/cape-winelands/paarl/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/cape-winelands/paarl/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/cape-winelands/worcester/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/cape-winelands/worcester/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/city-of-cape-town/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/city-of-cape-town/bellville/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/city-of-cape-town/bellville/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/city-of-cape-town/cape-town-cbd/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/city-of-cape-town/cape-town-cbd/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/city-of-cape-town/century-city/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/city-of-cape-town/century-city/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/city-of-cape-town/claremont/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/city-of-cape-town/claremont/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/city-of-cape-town/durbanville/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/city-of-cape-town/durbanville/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/city-of-cape-town/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/city-of-cape-town/somerset-west/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/city-of-cape-town/somerset-west/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/city-of-cape-town/stellenbosch/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/city-of-cape-town/stellenbosch/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/garden-route/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/garden-route/george/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/garden-route/george/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/garden-route/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/garden-route/knysna/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/garden-route/knysna/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/garden-route/mossel-bay/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/garden-route/mossel-bay/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/garden-route/plettenberg-bay/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/garden-route/plettenberg-bay/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/web-development/western-cape/index.html",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/services/website-maintenance/index.html",
+      "to": "/services/website-maintenance/"
+    },
+    {
+      "from": "/sitemap/",
+      "to": "/sitemap.xml"
+    },
+    {
+      "from": "/sitemap/index.html",
+      "to": "/sitemap.xml"
+    },
+    {
+      "from": "/web-applications/",
+      "to": "/services/custom-web-applications/"
+    },
+    {
+      "from": "/web-design/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/web-development/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/website-design/",
+      "to": "/services/web-development/"
+    },
+    {
+      "from": "/website-maintenance/",
+      "to": "/services/website-maintenance/"
+    }
+  ]
+}
