@@ -24,6 +24,8 @@ const requiredUrls = [
   "https://www.softkoredigital.co.za/services/web-development/gauteng/johannesburg/",
   "https://www.softkoredigital.co.za/services/seo-services/western-cape/cape-town/",
   "https://www.softkoredigital.co.za/industries/plumber-websites/",
+  "https://www.softkoredigital.co.za/ai-agents/",
+  "https://www.softkoredigital.co.za/ai-agents/plumber-websites/",
   "https://www.softkoredigital.co.za/guides/technical-seo-checklist/",
 ];
 

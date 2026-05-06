@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { aiAgentIndustryPages, aiAgentIndustryUrl } from "@/data/ai-agents";
 import { guides, guideUrl } from "@/data/guides";
 import { industries, industryUrl } from "@/data/industries";
 import { localSeoPages, localUrl } from "@/data/local-seo";
@@ -18,6 +19,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.82,
     },
     {
+      url: `${site.domain}/ai-agents/`,
+      priority: 0.82,
+    },
+    {
       url: `${site.domain}/guides/`,
       priority: 0.74,
     },
@@ -32,6 +37,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...industries.map((industry) => ({
       url: `${site.domain}${industryUrl(industry)}`,
       priority: industry.priority,
+    })),
+    ...aiAgentIndustryPages.map((page) => ({
+      url: `${site.domain}${aiAgentIndustryUrl(page)}`,
+      priority: page.priority,
     })),
     ...guides.map((guide) => ({
       url: `${site.domain}${guideUrl(guide)}`,

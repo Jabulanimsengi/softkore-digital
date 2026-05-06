@@ -1,8 +1,11 @@
 import Link from "next/link";
+import { getAiAgentIndustry, aiAgentIndustryUrl } from "@/data/ai-agents";
 import type { IndustryPage } from "@/data/industries";
 import { CardGrid, FaqList, LinkList, ProofList } from "@/components/PageSections";
 
 export function IndustryTemplate({ industry }: { industry: IndustryPage }) {
+  const aiAgentPage = getAiAgentIndustry(industry.slug);
+
   return (
     <main>
       <section className="section page-hero">
@@ -82,7 +85,14 @@ export function IndustryTemplate({ industry }: { industry: IndustryPage }) {
 
       <section className="section areas-section">
         <h2>Related Services</h2>
-        <LinkList items={industry.related} />
+        <LinkList
+          items={[
+            ...(aiAgentPage
+              ? [{ label: aiAgentPage.name, href: aiAgentIndustryUrl(aiAgentPage) }]
+              : []),
+            ...industry.related,
+          ]}
+        />
       </section>
 
       <section className="section faq-section">

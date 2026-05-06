@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { aiAgentIndustryPages, aiAgentIndustryUrl } from "@/data/ai-agents";
 import { industries } from "@/data/industries";
 import { LinkList } from "@/components/PageSections";
 import { absoluteUrl } from "@/lib/site";
@@ -112,6 +113,20 @@ export default function IndustriesPage() {
               </article>
             </div>
           </div>
+        </section>
+
+        <section className="section areas-section">
+          <h2>AI Agent Planning by Industry</h2>
+          <p className="section-intro">
+            For teams that want to reduce repetitive admin and improve customer
+            handoffs, these pages show practical starting points.
+          </p>
+          <LinkList
+            items={aiAgentIndustryPages.map((page) => ({
+              label: page.name,
+              href: aiAgentIndustryUrl(page),
+            }))}
+          />
         </section>
       </main>
     </>
