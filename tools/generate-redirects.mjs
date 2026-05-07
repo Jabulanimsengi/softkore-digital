@@ -217,12 +217,30 @@ for (const [source, target] of Object.entries(priorityIndustryTargets)) {
 
 const sortedRedirects = [...redirects.entries()].sort(([a], [b]) => a.localeCompare(b));
 
+function escapeRegex(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function nginxRule([from, to]) {
+  if (!from.endsWith("/index.html") && from !== "/index.html") {
+    return `location = ${from} { return 301 ${to}; }`;
+  }
+
+  const requestPattern = `^${escapeRegex(from)}(?:\\?.*)?$`;
+  return [
+    `location = ${from} {`,
+    `    if ($request_uri ~ ${requestPattern}) { return 301 ${to}; }`,
+    "    try_files $uri =404;",
+    "}",
+  ].join("\n");
+}
+
 const nginx = `# SoftKore Digital redirect rules.
 # Include this file inside the canonical www.softkoredigital.co.za HTTPS server block before the generic location / block.
 # Example:
 #   include /etc/nginx/snippets/softkore-redirects.conf;
 
-${sortedRedirects.map(([from, to]) => `location = ${from} { return 301 ${to}; }`).join("\n")}
+${sortedRedirects.map(nginxRule).join("\n")}
 `;
 
 fs.writeFileSync(nginxPath, nginx, "utf8");
