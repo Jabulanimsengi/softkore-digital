@@ -24,21 +24,21 @@ const priorityLocationTargets = {
   "web-development/gauteng/city-of-johannesburg/johannesburg": "/services/web-development/gauteng/johannesburg/",
   "web-development/gauteng/city-of-tshwane": "/services/web-development/gauteng/pretoria/",
   "web-development/gauteng/city-of-tshwane/pretoria": "/services/web-development/gauteng/pretoria/",
-  "web-development/gauteng/city-of-tshwane/pretoria-east": "/services/web-development/gauteng/pretoria/",
+  "web-development/gauteng/city-of-tshwane/pretoria-east": "/services/web-development/gauteng/pretoria/pretoria-east/",
   "seo-services/gauteng/city-of-johannesburg/sandton": "/services/seo-services/gauteng/sandton/",
-  "seo-services/gauteng/city-of-johannesburg": "/services/seo-services/gauteng/sandton/",
+  "seo-services/gauteng/city-of-johannesburg": "/services/seo-services/gauteng/johannesburg/",
   "seo-services/western-cape/city-of-cape-town": "/services/seo-services/western-cape/cape-town/",
-  "seo-services/western-cape/city-of-cape-town/cape-town-cbd": "/services/seo-services/western-cape/cape-town/",
+  "seo-services/western-cape/city-of-cape-town/cape-town-cbd": "/services/seo-services/western-cape/cape-town/cape-town-cbd/",
   "custom-web-applications/kwazulu-natal/ethekwini": "/services/custom-web-applications/kwazulu-natal/durban/",
   "custom-web-applications/kwazulu-natal/ethekwini/durban": "/services/custom-web-applications/kwazulu-natal/durban/",
 };
 
 const priorityIndustryTargets = {
-  "salon-beauty-websites": "/industries/salon-booking-software/",
+  "salon-beauty-websites": "/industries/beauty-salon-websites/",
   "ecommerce-development": "/industries/ecommerce-development/",
   "medical-practice-websites": "/industries/medical-practice-websites/",
   "real-estate-website-design": "/industries/real-estate-websites/",
-  "law-firm-websites-seo": "/industries/legal-firm-seo-services/",
+  "law-firm-websites-seo": "/industries/law-firm-websites/",
   "dental-practice-websites": "/industries/dental-practice-websites/",
   "accounting-firm-websites": "/industries/accounting-firm-websites/",
   "construction-company-websites": "/industries/construction-company-websites/",
@@ -46,16 +46,24 @@ const priorityIndustryTargets = {
   "logistics-company-websites": "/industries/logistics-company-websites/",
 };
 
+const legacyLocationSlugTargets = {
+  "city-of-johannesburg": "johannesburg",
+  "city-of-tshwane": "pretoria",
+  "city-of-cape-town": "cape-town",
+};
+
+const legacyIndustrySlugTargets = {
+  "salon-beauty-websites": "beauty-salon-websites",
+  "law-firm-websites-seo": "law-firm-websites",
+  "real-estate-website-design": "real-estate-websites",
+};
+
 const legacyRedirects = [
   ["/home/", "/"],
   ["/index.html", "/"],
-  ["/contact/", "/#contact"],
-  ["/contact/index.html", "/#contact"],
-  ["/contact-us/", "/#contact"],
+  ["/contact-us/", "/contact/"],
   ["/guides/", "/guides/"],
   ["/guides/index.html", "/guides/"],
-  ["/sitemap/", "/sitemap.xml"],
-  ["/sitemap/index.html", "/sitemap.xml"],
   ["/web-design/", "/services/web-development/"],
   ["/website-design/", "/services/web-development/"],
   ["/web-development/", "/services/web-development/"],
@@ -80,6 +88,11 @@ function addWithIndex(redirects, from, to) {
   const cleanFrom = from.endsWith("/") ? from : `${from}/`;
   addRedirect(redirects, cleanFrom, to);
   addRedirect(redirects, `${cleanFrom}index.html`, to);
+}
+
+function addIndexOnly(redirects, route) {
+  const cleanRoute = route.endsWith("/") ? route : `${route}/`;
+  addRedirect(redirects, `${cleanRoute}index.html`, cleanRoute);
 }
 
 function listIndexRoutes(baseDir) {
@@ -153,6 +166,23 @@ function guideDestination(route) {
   return guideTargets[guideSlug] || "/guides/";
 }
 
+function migratedServiceDestination(route) {
+  const parts = route.replace(/^\/services\//, "").replace(/\/$/, "").split("/");
+  if (parts.length < 2) return null;
+
+  const migrated = parts.map((part) => legacyLocationSlugTargets[part] || part);
+  if (migrated.join("/") === parts.join("/")) return null;
+  return `/services/${migrated.join("/")}/`;
+}
+
+function migratedIndustryDestination(route) {
+  const parts = route.replace(/^\/industries\//, "").replace(/\/$/, "").split("/");
+  const migratedSlug = legacyIndustrySlugTargets[parts[0]];
+  if (!migratedSlug) return null;
+
+  return `/industries/${[migratedSlug, ...parts.slice(1)].join("/")}/`;
+}
+
 fs.mkdirSync(deployDir, { recursive: true });
 
 const redirects = new Map();
@@ -162,15 +192,27 @@ for (const [from, to] of legacyRedirects) {
 }
 
 for (const route of listIndexRoutes("services")) {
-  addWithIndex(redirects, route, serviceDestination(route));
+  const migrated = migratedServiceDestination(route);
+  if (migrated) addWithIndex(redirects, route, migrated);
+  else addIndexOnly(redirects, route);
 }
 
 for (const route of listIndexRoutes("industries")) {
-  addWithIndex(redirects, route, industryDestination(route));
+  const migrated = migratedIndustryDestination(route);
+  if (migrated) addWithIndex(redirects, route, migrated);
+  else addIndexOnly(redirects, route);
 }
 
 for (const route of listIndexRoutes("guides")) {
-  addWithIndex(redirects, route, guideDestination(route));
+  addIndexOnly(redirects, route);
+}
+
+for (const [source, target] of Object.entries(priorityLocationTargets)) {
+  addWithIndex(redirects, `/services/${source}/`, target);
+}
+
+for (const [source, target] of Object.entries(priorityIndustryTargets)) {
+  addWithIndex(redirects, `/industries/${source}/`, target);
 }
 
 const sortedRedirects = [...redirects.entries()].sort(([a], [b]) => a.localeCompare(b));

@@ -5,7 +5,7 @@
     "metros": [
       {
         "name": "City of Johannesburg",
-        "slug": "city-of-johannesburg",
+        "slug": "johannesburg",
         "suburbs": [
           {"name": "Sandton", "slug": "sandton"},
           {"name": "Rosebank", "slug": "rosebank"},
@@ -18,7 +18,7 @@
       },
       {
         "name": "City of Tshwane",
-        "slug": "city-of-tshwane",
+        "slug": "pretoria",
         "suburbs": [
           {"name": "Pretoria East", "slug": "pretoria-east"},
           {"name": "Centurion", "slug": "centurion"},
@@ -46,7 +46,7 @@
     "metros": [
       {
         "name": "City of Cape Town",
-        "slug": "city-of-cape-town",
+        "slug": "cape-town",
         "suburbs": [
           {"name": "Cape Town CBD", "slug": "cape-town-cbd"},
           {"name": "Bellville", "slug": "bellville"},

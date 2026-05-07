@@ -57,16 +57,39 @@ for (const file of nginxFiles) {
 
 if (fs.existsSync("out/sitemap.xml")) {
   const sitemap = fs.readFileSync("out/sitemap.xml", "utf8");
+  const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+  if (sitemapUrls.length < 700) {
+    fail(`Expected deployed sitemap to contain at least 700 URLs, found ${sitemapUrls.length}.`);
+  }
+
   for (const url of requiredUrls) {
     if (!sitemap.includes(`<loc>${url}</loc>`)) {
       fail(`Missing required sitemap URL: ${url}`);
     }
   }
 
-  const forbidden = ["city-of-", "law-firm-websites-seo", "salon-beauty-websites"];
-  for (const token of forbidden) {
+  const forbiddenSitemapTokens = [
+    "city-of-johannesburg",
+    "city-of-tshwane",
+    "city-of-cape-town",
+    "law-firm-websites-seo",
+    "salon-beauty-websites",
+    "real-estate-website-design",
+  ];
+  for (const token of forbiddenSitemapTokens) {
     if (sitemap.includes(token)) {
-      fail(`Sitemap contains old URL token: ${token}`);
+      fail(`Sitemap contains legacy URL token: ${token}`);
+    }
+  }
+
+  if (fs.existsSync("deploy/redirects-softkore.json")) {
+    const redirects = JSON.parse(fs.readFileSync("deploy/redirects-softkore.json", "utf8")).redirects || [];
+    const redirectSources = new Set(redirects.map((redirect) => redirect.from));
+    for (const url of sitemapUrls) {
+      const pathName = new URL(url).pathname;
+      if (redirectSources.has(pathName)) {
+        fail(`Sitemap contains a redirected URL: ${url}`);
+      }
     }
   }
 }
@@ -79,11 +102,34 @@ if (fs.existsSync("out/b7f4c9a62e1d4a0f8c3b59d7126e4a90.txt")) {
 }
 
 if (fs.existsSync("out")) {
-  const oldStaticRoots = ["services/web-development/gauteng/city-of-johannesburg", "industries/law-firm-websites-seo"];
-  for (const oldPath of oldStaticRoots) {
-    if (fs.existsSync(path.join("out", oldPath))) {
-      fail(`Export contains old static route: out/${oldPath}`);
+  const requiredGeneratedPages = [
+    "out/services/web-development/gauteng/johannesburg/sandton/index.html",
+    "out/services/seo-services/western-cape/cape-town/cape-town-cbd/index.html",
+    "out/industries/plumber-websites/seo-services/index.html",
+    "out/industries/beauty-salon-websites/website-design/index.html",
+    "out/contact/index.html",
+    "out/sitemap/index.html",
+  ];
+
+  for (const file of requiredGeneratedPages) {
+    if (!fs.existsSync(file)) {
+      fail(`Missing generated SEO page in export: ${file}`);
     }
+  }
+
+  function countHtmlPages(directory) {
+    let count = 0;
+    for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+      const fullPath = path.join(directory, entry.name);
+      if (entry.isDirectory()) count += countHtmlPages(fullPath);
+      else if (entry.name === "index.html" || (directory === "out" && entry.name.endsWith(".html"))) count += 1;
+    }
+    return count;
+  }
+
+  const htmlPages = countHtmlPages("out");
+  if (htmlPages < 300) {
+    fail(`Expected deployed export to contain at least 300 HTML pages, found ${htmlPages}.`);
   }
 }
 

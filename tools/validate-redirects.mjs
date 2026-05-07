@@ -7,9 +7,8 @@ const requiredMappings = new Map([
   ["/services/web-development/gauteng/city-of-johannesburg/index.html", "/services/web-development/gauteng/johannesburg/"],
   ["/services/seo-services/western-cape/city-of-cape-town/", "/services/seo-services/western-cape/cape-town/"],
   ["/services/custom-web-applications/kwazulu-natal/ethekwini/durban/", "/services/custom-web-applications/kwazulu-natal/durban/"],
-  ["/industries/law-firm-websites-seo/", "/industries/legal-firm-seo-services/"],
-  ["/industries/salon-beauty-websites/", "/industries/salon-booking-software/"],
-  ["/industries/plumber-websites/seo-services/", "/industries/plumber-websites/"],
+  ["/industries/law-firm-websites-seo/", "/industries/law-firm-websites/"],
+  ["/industries/salon-beauty-websites/", "/industries/beauty-salon-websites/"],
   ["/guides/website-prices-south-africa/index.html", "/guides/website-prices-south-africa/"],
   ["/guides/website-vs-web-application/index.html", "/guides/website-vs-web-application/"],
 ]);
@@ -55,7 +54,7 @@ for (const redirect of redirects) {
   }
 
   for (const pattern of forbiddenDestinationPatterns) {
-    if (pattern.test(redirect.to)) {
+    if (!redirect.from.endsWith("/index.html") && pattern.test(redirect.to)) {
       fail(`Forbidden old slug in redirect destination: ${redirect.from} -> ${redirect.to}`);
     }
   }

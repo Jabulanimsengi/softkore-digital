@@ -27,12 +27,12 @@ function slugToTitle(slug) {
 
 function singularName(industry) {
   const overrides = {
-    "salon-beauty-websites": "salon or beauty business",
+    "beauty-salon-websites": "salon or beauty business",
     "medical-practice-websites": "medical practice",
     "dental-practice-websites": "dental practice",
-    "law-firm-websites-seo": "law firm",
+    "law-firm-websites": "law firm",
     "accounting-firm-websites": "accounting or tax firm",
-    "real-estate-website-design": "real estate agency",
+    "real-estate-websites": "real estate agency",
     "property-management-websites": "property management company",
     "ecommerce-development": "e-commerce business",
     "retail-store-websites": "retail store",
@@ -150,6 +150,28 @@ function opportunityCards(industry) {
   ];
 }
 
+function marketPlanCards(industry) {
+  const business = singularName(industry);
+  return [
+    {
+      title: "Customer questions",
+      text: `The page should answer what the ${business} does, who it helps, what makes it trustworthy, and what a customer should do next.`,
+    },
+    {
+      title: "Commercial pages",
+      text: `Core service, pricing, proof, FAQ, and contact sections should be close enough that visitors do not need to hunt for decision-making information.`,
+    },
+    {
+      title: "Local visibility",
+      text: `If the business serves specific areas, location pages should include useful local context, nearby areas, and links back to the relevant services.`,
+    },
+    {
+      title: "Operational fit",
+      text: `If admin work is slowing the team down, the website can grow into bookings, dashboards, client portals, quote workflows, payments, or reporting.`,
+    },
+  ];
+}
+
 function industryFaqs(industry) {
   const business = singularName(industry);
   const article = articleFor(business).toLowerCase();
@@ -186,7 +208,7 @@ function jsonLd(industry, faqs) {
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      name: `${industry.name} Websites, Web Apps and SEO`,
+      name: `Websites, Web Apps and SEO for ${industry.name}`,
       url: `${domain}/industries/${industry.slug}/`,
       about: industry.name,
       provider: {
@@ -274,6 +296,20 @@ function makeHub() {
         <p class="section-intro">Choose an industry to see practical website, application, and SEO ideas shaped around that market.</p>
         ${groupHtml}
       </section>
+      <section class="section content-section">
+        <div class="content-grid">
+          <div class="content-copy">
+            <h2>Why industry pages matter</h2>
+            <p>A law firm, medical practice, restaurant, logistics company, and salon do not win customers in the same way. Each market has different trust signals, service questions, booking paths, proof requirements, and search behaviour.</p>
+            <p>These industry pages help business owners see what their website or web application should actually do. Some businesses need clear service pages and stronger local SEO. Others need bookings, customer portals, quote workflows, dashboards, payments, or better enquiry tracking online.</p>
+          </div>
+          <div class="content-panel">
+            <article class="content-card"><h3>Sharper positioning</h3><p>Industry-specific pages make it easier to explain what customers need to know before they call, book, visit, or request a quote.</p></article>
+            <article class="content-card"><h3>Better feature planning</h3><p>The right website features depend on the business model, customer journey, admin workload, and trust signals for that market.</p></article>
+            <article class="content-card"><h3>Stronger search structure</h3><p>Industry pages can connect service, location, and problem-based searches without forcing every visitor through one generic homepage.</p></article>
+          </div>
+        </div>
+      </section>
     </main>
 `;
   writeFile(path.join(root, "industries", "index.html"), shell({
@@ -295,6 +331,7 @@ function makeIndustryPage(industry) {
   const faqs = industryFaqs(industry);
   const business = singularName(industry);
   const opportunities = opportunityCards(industry);
+  const marketPlan = marketPlanCards(industry);
   const featureCards = industry.features
     .map((feature) => `<article class="content-card"><h3>${escapeHtml(feature)}</h3><p>${escapeHtml(featureDescription(feature, industry))}</p></article>`)
     .join("\n");
@@ -304,7 +341,7 @@ function makeIndustryPage(industry) {
         <div class="page-hero-inner">
           <div>
             <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Home</a><span>/</span><a href="../">Industries</a><span>/</span><span>${escapeHtml(industry.name)}</span></nav>
-            <h1>${escapeHtml(industry.name)} Websites, Web Apps and SEO</h1>
+            <h1>Websites, Web Apps and SEO for ${escapeHtml(industry.name)}</h1>
             <p>SoftKore Digital helps ${escapeHtml(industry.audience)} build websites, tools, and search visibility that make it easier for customers to choose them.</p>
             <div class="hero-actions"><a class="button button-primary" href="../../index.html#contact">Start a Project</a><a class="button button-secondary" href="../../services/web-development/">View Services</a></div>
           </div>
@@ -326,6 +363,12 @@ function makeIndustryPage(industry) {
       <section class="section local-proof-section">
         <div class="section-heading"><h2>Useful Features for ${escapeHtml(industry.name)}</h2></div>
         <div class="local-insight-grid">${featureCards}</div>
+      </section>
+      <section class="section local-proof-section">
+        <div class="section-heading"><h2>Search and Conversion Plan</h2></div>
+        <div class="local-insight-grid">
+          ${marketPlan.map((card) => `<article class="content-card"><h3>${escapeHtml(card.title)}</h3><p>${escapeHtml(card.text)}</p></article>`).join("\n")}
+        </div>
       </section>
       <section class="section local-proof-section">
         <div class="content-grid">
@@ -358,7 +401,7 @@ function makeIndustryPage(industry) {
 `;
   writeFile(path.join(root, "industries", industry.slug, "index.html"), shell({
     depth: 2,
-    title: `${industry.name} Websites, Web Apps and SEO | SoftKore Digital`,
+    title: `Websites, Web Apps and SEO for ${industry.name} | SoftKore Digital`,
     description: `Websites, web applications, and SEO for ${industry.name.toLowerCase()} in South Africa. Build clearer pages, stronger systems, and better digital visibility.`,
     canonical: `${domain}/industries/${industry.slug}/`,
     body,

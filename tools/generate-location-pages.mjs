@@ -117,10 +117,10 @@ const provinceNotes = {
 };
 
 const metroNotes = {
-  "city-of-johannesburg": "high-competition commercial searches, B2B comparison, professional services, and fast decision-making",
-  "city-of-tshwane": "professional practices, public-sector adjacent businesses, education, consulting, and service providers",
+  johannesburg: "high-competition commercial searches, B2B comparison, professional services, and fast decision-making",
+  pretoria: "professional practices, public-sector adjacent businesses, education, consulting, and service providers",
   ekurhuleni: "industrial, logistics, manufacturing, aviation-adjacent, and local service businesses",
-  "city-of-cape-town": "competitive local search across tourism, retail, professional services, creative companies, and technology businesses",
+  "cape-town": "competitive local search across tourism, retail, professional services, creative companies, and technology businesses",
   "cape-winelands": "hospitality, tourism, agriculture, professional services, and location-led discovery",
   "garden-route": "tourism, hospitality, property, local services, and destination-led customer searches",
   ethekwini: "coastal commerce, logistics, hospitality, professional services, and retail visibility",
@@ -141,10 +141,10 @@ const metroNotes = {
 };
 
 const displayNames = {
-  "city-of-johannesburg": "Johannesburg",
-  "city-of-tshwane": "Tshwane",
+  johannesburg: "Johannesburg",
+  pretoria: "Pretoria",
   ethekwini: "Durban and eThekwini",
-  "city-of-cape-town": "Cape Town",
+  "cape-town": "Cape Town",
   "nelson-mandela-bay": "Nelson Mandela Bay",
 };
 
@@ -174,7 +174,7 @@ function writeFile(filePath, content) {
   fs.writeFileSync(filePath, content, "utf8");
 }
 
-function layout({ depth, title, description, canonical, h1, intro, breadcrumb, summaryTitle, summary, bodyHeading, body, cards, links, schema, insightTitle, insights, proofTitle, proofItems, planTitle, planItems, faqs }) {
+function layout({ depth, title, description, canonical, h1, intro, breadcrumb, summaryTitle, summary, bodyHeading, body, cards, links, schema, insightTitle, insights, decisionTitle, decisionItems, proofTitle, proofItems, planTitle, planItems, faqs }) {
   const prefix = relPrefix(depth);
   const summaryItems = summary.map((item) => `<li>${escapeHtml(item)}</li>`).join("\n");
   const cardHtml = cards
@@ -182,6 +182,7 @@ function layout({ depth, title, description, canonical, h1, intro, breadcrumb, s
     .join("\n");
   const linkHtml = links.map((link) => `<a href="${link.href}">${escapeHtml(link.label)}</a>`).join("\n");
   const insightHtml = insights.map((item) => `<article class="content-card"><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.text)}</p></article>`).join("\n");
+  const decisionHtml = decisionItems.map((item) => `<article class="content-card"><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.text)}</p></article>`).join("\n");
   const proofHtml = proofItems.map((item) => `<li><strong>${escapeHtml(item.title)}</strong><span>${escapeHtml(item.text)}</span></li>`).join("\n");
   const planHtml = planItems.map((item) => `<article class="content-card"><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.text)}</p></article>`).join("\n");
   const faqHtml = faqs.map((faq) => `<details class="faq-item"><summary>${escapeHtml(faq.question)}</summary><p>${escapeHtml(faq.answer)}</p></details>`).join("\n");
@@ -244,6 +245,12 @@ function layout({ depth, title, description, canonical, h1, intro, breadcrumb, s
           <h2>${escapeHtml(insightTitle)}</h2>
         </div>
         <div class="local-insight-grid">${insightHtml}</div>
+      </section>
+      <section class="section local-proof-section">
+        <div class="section-heading">
+          <h2>${escapeHtml(decisionTitle)}</h2>
+        </div>
+        <div class="local-insight-grid">${decisionHtml}</div>
       </section>
       <section class="section local-proof-section">
         <div class="content-grid">
@@ -361,6 +368,44 @@ function buildInsights(service, profile, province, metro, suburb) {
     { title: `What matters in ${area}`, text: `${profile.businessContext}. Your website or platform needs to make the next step obvious for people who are already comparing options.` },
     { title: "How customers decide", text: `${profile.customerPattern}. Clear pages, quick contact options, and honest service details make that decision easier.` },
     { title: "Nearby areas", text: `Many businesses also serve nearby areas such as ${nearby}. The site can be planned so those customers find the right service without confusion.` },
+  ];
+}
+
+function buildDecisionItems(service, profile, province, metro, suburb) {
+  const area = profile.areaName;
+  const locationScope = suburb
+    ? `${suburb.name}, ${displayName(metro)}, and nearby suburbs`
+    : metro
+      ? `${area} and its surrounding suburbs`
+      : `${province.province} and its priority cities`;
+  const measurement = service.slug === "seo-services"
+    ? "Search Console coverage, query movement, indexed pages, internal links, and priority page improvements"
+    : service.slug === "custom-web-applications"
+      ? "completed workflows, user adoption, admin time saved, form submissions, and support requests reduced"
+      : "qualified enquiries, contact clicks, form submissions, page engagement, and local service page performance";
+  const pageStructure = service.slug === "seo-services"
+    ? "technical fixes, service page rewrites, local page improvements, internal links, and measurement notes"
+    : service.slug === "custom-web-applications"
+      ? "workflow scope, user roles, core screens, admin controls, notifications, integrations, and launch priorities"
+      : "homepage sections, service pages, proof blocks, quote paths, FAQs, location links, and technical SEO basics";
+
+  return [
+    {
+      title: "Buyer intent",
+      text: `${area} visitors are usually deciding whether the provider is credible, available, relevant to their problem, and easy to contact.`,
+    },
+    {
+      title: "Page structure",
+      text: `The recommended structure covers ${pageStructure}, so the page supports a real decision instead of only repeating a keyword.`,
+    },
+    {
+      title: "Local coverage",
+      text: `Internal links should connect ${locationScope} so people and crawlers can move through the service area naturally.`,
+    },
+    {
+      title: "Measurement",
+      text: `Progress should be reviewed through ${measurement}, then used to decide which pages or flows to improve next.`,
+    },
   ];
 }
 
@@ -507,6 +552,8 @@ function makeProvincePage(service, province) {
     ],
     insightTitle: `Why ${province.province} Businesses Choose Us`,
     insights: buildInsights(service, profile, province),
+    decisionTitle: `Search and Conversion Priorities`,
+    decisionItems: buildDecisionItems(service, profile, province),
     proofTitle: "What You Can Expect",
     proofItems: buildProofItems(service, profile),
     planTitle: `Our Approach in ${province.province}`,
@@ -530,7 +577,7 @@ function makeMetroPage(service, province, metro) {
   writeFile(filePath, layout({
     depth: 4,
     title: `${service.label} ${area} | SoftKore Digital`,
-    description: `${service.label} in ${area}, ${province.province}, for businesses that need targeted digital systems and stronger local visibility.`,
+    description: `${service.label} in ${area}, ${province.province}, with local page planning, clear enquiry paths, technical foundations, and practical growth support.`,
     canonical: `${domain}/${urlPath}`,
     h1: `${service.label} in ${area}`,
     intro: `${area} is busy, competitive, and full of customers comparing options before they make contact. SoftKore Digital helps businesses present their services clearly and make enquiries easier.`,
@@ -549,6 +596,8 @@ function makeMetroPage(service, province, metro) {
     ],
     insightTitle: `Why ${area} Businesses Choose Us`,
     insights: buildInsights(service, profile, province, metro),
+    decisionTitle: `Search and Conversion Priorities`,
+    decisionItems: buildDecisionItems(service, profile, province, metro),
     proofTitle: "What You Can Expect",
     proofItems: buildProofItems(service, profile),
     planTitle: `Our Approach in ${area}`,
@@ -575,7 +624,7 @@ function makeSuburbPage(service, province, metro, suburb) {
   writeFile(filePath, layout({
     depth: 5,
     title: `${service.label} ${suburb.name} | SoftKore Digital`,
-    description: `${service.label} in ${suburb.name}, ${province.province}, for businesses that need practical digital implementation and stronger local search visibility.`,
+    description: `${service.label} in ${suburb.name}, ${province.province}, with clear service pages, useful local context, stronger enquiry paths, and technical SEO basics.`,
     canonical: `${domain}/${urlPath}`,
     h1: `${service.label} in ${suburb.name}`,
     intro: `${suburb.name} customers usually want quick answers before they enquire. SoftKore Digital helps businesses present their services clearly, build trust, and make the next step easy.`,
@@ -594,6 +643,8 @@ function makeSuburbPage(service, province, metro, suburb) {
     ],
     insightTitle: `Why ${suburb.name} Businesses Choose Us`,
     insights: buildInsights(service, profile, province, metro, suburb),
+    decisionTitle: `Search and Conversion Priorities`,
+    decisionItems: buildDecisionItems(service, profile, province, metro, suburb),
     proofTitle: "What You Can Expect",
     proofItems: buildProofItems(service, profile),
     planTitle: `Our Approach in ${suburb.name}`,
