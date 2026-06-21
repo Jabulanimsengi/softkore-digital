@@ -8,6 +8,14 @@ export function ScrollReveal() {
     const targets = document.querySelectorAll(
       [
         "main:not(.sk-home) > section",
+        ".sk-home .sk-section-title",
+        ".sk-home .sk-service-row",
+        ".sk-home .sk-step",
+        ".sk-home .sk-proof-item",
+        ".sk-home .sk-focus > div",
+        ".sk-home .sk-contact-copy",
+        ".sk-home .sk-contact .contact-form",
+        ".sk-home .form-note",
         ".service-card",
         ".content-card",
         ".proof-list li",

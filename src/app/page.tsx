@@ -148,7 +148,6 @@ export default function HomePage() {
 
         <section className="sk-services section" id="services">
           <div className="sk-section-title">
-            <span aria-hidden="true">/</span>
             <h2>What we do</h2>
           </div>
           <div className="sk-service-list">
@@ -168,7 +167,6 @@ export default function HomePage() {
         <section className="sk-process" id="process">
           <div className="section sk-process-inner">
             <div className="sk-section-title">
-              <span aria-hidden="true">/</span>
               <h2>How we work</h2>
             </div>
             <div className="sk-steps">
@@ -188,7 +186,6 @@ export default function HomePage() {
 
         <section className="sk-proof section">
           <div className="sk-section-title">
-            <span aria-hidden="true">/</span>
             <h2>Why work with Softkore</h2>
           </div>
           <div className="sk-proof-grid">
