@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { GuidePage } from "@/data/guides";
-import { FaqList, LinkList } from "@/components/PageSections";
+import { FaqList, LinkList, PageSignalPanel } from "@/components/PageSections";
 
 export function GuideTemplate({ guide }: { guide: GuidePage }) {
   return (
@@ -9,31 +9,24 @@ export function GuideTemplate({ guide }: { guide: GuidePage }) {
         <div className="page-hero-inner">
           <div>
             <nav className="breadcrumb" aria-label="Breadcrumb">
-              <Link href="/">Home</Link>
+              <Link prefetch={false} href="/">Home</Link>
               <span>/</span>
-              <Link href="/guides/">Guides</Link>
+              <Link prefetch={false} href="/guides/">Guides</Link>
               <span>/</span>
               <span>{guide.title}</span>
             </nav>
             <h1>{guide.title}</h1>
             <p>{guide.intro}</p>
             <div className="hero-actions">
-              <Link className="button button-primary" href="/#contact">
+              <Link prefetch={false} className="button button-primary" href="/contact/">
                 Ask About This
               </Link>
-              <Link className="button button-secondary" href="/services/seo-services/">
+              <Link prefetch={false} className="button button-secondary" href="/services/seo-services/">
                 View SEO Services
               </Link>
             </div>
           </div>
-          <aside className="page-summary">
-            <strong>Guide covers</strong>
-            <ul>
-              {guide.summary.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </aside>
+          <PageSignalPanel title="Guide covers" items={guide.summary} />
         </div>
       </section>
 
@@ -73,3 +66,4 @@ export function GuideTemplate({ guide }: { guide: GuidePage }) {
     </main>
   );
 }
+

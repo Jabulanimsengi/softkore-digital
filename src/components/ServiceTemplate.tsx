@@ -1,6 +1,13 @@
 import Link from "next/link";
 import type { ServicePage } from "@/data/services";
-import { CardGrid, FaqList, LinkList, ProofList } from "@/components/PageSections";
+import {
+  CardGrid,
+  ConversionBand,
+  FaqList,
+  LinkList,
+  PageSignalPanel,
+  ProofList,
+} from "@/components/PageSections";
 
 export function ServiceTemplate({ service }: { service: ServicePage }) {
   return (
@@ -9,29 +16,22 @@ export function ServiceTemplate({ service }: { service: ServicePage }) {
         <div className="page-hero-inner">
           <div>
             <nav className="breadcrumb" aria-label="Breadcrumb">
-              <Link href="/">Home</Link>
+              <Link prefetch={false} href="/">Home</Link>
               <span>/</span>
               <span>{service.eyebrow}</span>
             </nav>
             <h1>{service.h1}</h1>
             <p>{service.intro}</p>
             <div className="hero-actions">
-              <Link className="button button-primary" href="/#contact">
+              <Link prefetch={false} className="button button-primary" href="/contact/">
                 {service.primaryCta}
               </Link>
-              <Link className="button button-secondary" href={service.secondaryHref}>
+              <Link prefetch={false} className="button button-secondary" href={service.secondaryHref}>
                 {service.secondaryCta}
               </Link>
             </div>
           </div>
-          <aside className="page-summary">
-            <strong>{service.summaryTitle}</strong>
-            <ul>
-              {service.summary.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </aside>
+          <PageSignalPanel title={service.summaryTitle} items={service.summary} />
         </div>
       </section>
 
@@ -81,6 +81,14 @@ export function ServiceTemplate({ service }: { service: ServicePage }) {
         <LinkList items={service.related} />
       </section>
 
+      <ConversionBand
+        title={`Need ${service.title.toLowerCase()} that is easier to trust and act on?`}
+        text="Send us the current website, the pages that matter most, and what you want visitors to do. We will help shape the next practical step."
+        primaryLabel={service.primaryCta}
+        secondaryHref="/guides/website-prices-south-africa/"
+        secondaryLabel="View Planning Guide"
+      />
+
       <section className="section faq-section">
         <div className="section-heading">
           <h2>{service.title} FAQs</h2>
@@ -110,3 +118,4 @@ export function ServiceTemplate({ service }: { service: ServicePage }) {
     </main>
   );
 }
+

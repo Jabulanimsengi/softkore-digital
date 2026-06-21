@@ -224,12 +224,12 @@ function pageHtml(industry, pageType) {
         <a href="../../../">Home</a>
         <a href="../../../services/web-development/">Services</a>
         <a href="../../../industries/">Industries</a>
-        <a href="../../../#work">Work</a>
-        <a href="../../../#process">Process</a>
+        <a href="../../../work/">Work</a>
+        <a href="../../../services/">Process</a>
         <a href="../../../services/seo-services/">SEO</a>
-        <a href="../../../#contact">Contact</a>
+        <a href="../../../contact/">Contact</a>
       </nav>
-      <a class="nav-cta" href="../../../#contact">Start a Project</a>
+      <a class="nav-cta" href="../../../contact/">Start a Project</a>
     </header>
     <main>
       <section class="section page-hero">
@@ -238,7 +238,7 @@ function pageHtml(industry, pageType) {
             <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../">Home</a><span>/</span><a href="../../">Industries</a><span>/</span><a href="../">${escapeHtml(industry.name)}</a><span>/</span><span>${escapeHtml(pageType.label)}</span></nav>
             <h1>${escapeHtml(pageType.titleSuffix)} for ${escapeHtml(industry.name)}</h1>
             <p>${escapeHtml(pageType.angle(industry))}</p>
-            <div class="hero-actions"><a class="button button-primary" href="../../../#contact">Start a Project</a><a class="button button-secondary" href="../../../${pageType.serviceUrl.replace(/^\//, "")}">View ${escapeHtml(pageType.serviceLabel)}</a></div>
+            <div class="hero-actions"><a class="button button-primary" href="../../../contact/">Start a Project</a><a class="button button-secondary" href="../../../${pageType.serviceUrl.replace(/^\//, "")}">View ${escapeHtml(pageType.serviceLabel)}</a></div>
           </div>
           <aside class="page-summary"><strong>${escapeHtml(pageType.label)} focus</strong><ul>${summaryItems}</ul></aside>
         </div>

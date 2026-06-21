@@ -7,31 +7,31 @@ export default function NotFound() {
         <div className="page-hero-inner">
           <div>
             <nav className="breadcrumb" aria-label="Breadcrumb">
-              <Link href="/">Home</Link>
+              <Link prefetch={false} href="/">Home</Link>
               <span>/</span>
               <span>Not found</span>
             </nav>
             <h1>Page Not Found</h1>
             <p>
-              This page is not part of the new Next.js route map yet. Start from
-              the homepage or the core service pages.
+              This page is not available right now. Start from the homepage or
+              the core service pages.
             </p>
             <div className="hero-actions">
-              <Link className="button button-primary" href="/">
+              <Link prefetch={false} className="button button-primary" href="/">
                 Go Home
               </Link>
-              <Link className="button button-secondary" href="/services/web-development/">
+              <Link prefetch={false} className="button button-secondary" href="/services/web-development/">
                 View Services
               </Link>
             </div>
           </div>
           <aside className="page-summary">
-            <strong>Current route focus</strong>
+            <strong>Helpful starting points</strong>
             <ul>
               <li>Homepage</li>
               <li>Core service pages</li>
-              <li>Typed content model</li>
-              <li>Static export foundation</li>
+              <li>Industry pages</li>
+              <li>Project review</li>
             </ul>
           </aside>
         </div>
@@ -39,3 +39,4 @@ export default function NotFound() {
     </main>
   );
 }
+

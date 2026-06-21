@@ -94,6 +94,71 @@ function cleanHomeLinks(html) {
     .replace(/href="index\.html(#[^"]*)?"/g, (_match, hash = "") => `href="./${hash}"`);
 }
 
+function relativePrefix(file) {
+  const relativeDir = path.relative(root, path.dirname(file)).replaceAll(path.sep, "/");
+  if (!relativeDir) return "./";
+  return "../".repeat(relativeDir.split("/").length);
+}
+
+function siteHeader(prefix) {
+  return `    <header class="site-header" data-header>
+      <a class="brand" href="${prefix}" aria-label="SoftKore Digital home"><img class="brand-logo" src="${prefix}logo.png" alt="SoftKore Digital" width="${logoWidth}" height="${logoHeight}" /></a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle><span></span><span></span></button>
+      <nav class="site-nav" data-nav>
+        <a href="${prefix}">Home</a>
+        <a href="${prefix}services/">Services</a>
+        <a href="${prefix}industries/">Industries</a>
+        <a href="${prefix}ai-agents/">AI Agents</a>
+        <a href="${prefix}guides/">Guides</a>
+        <a href="${prefix}work/">Work</a>
+        <a href="${prefix}contact/">Contact</a>
+      </nav>
+      <a class="nav-cta" href="${prefix}contact/">Start a Project</a>
+    </header>`;
+}
+
+function siteFooter(prefix) {
+  return `    <footer class="site-footer">
+      <div class="footer-brand">
+        <a href="${prefix}" aria-label="SoftKore Digital home"><img class="footer-logo" src="${prefix}logo.png" alt="SoftKore Digital" width="${logoWidth}" height="${logoHeight}" /></a>
+        <p>Websites, web applications, AI workflow planning, and ongoing improvements for South African businesses that want clearer digital systems.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="${prefix}">Home</a>
+        <a href="${prefix}services/">Services</a>
+        <a href="${prefix}industries/">Industries</a>
+        <a href="${prefix}ai-agents/">AI Agents</a>
+        <a href="${prefix}guides/">Guides</a>
+        <a href="${prefix}work/">Work</a>
+        <a href="${prefix}contact/">Contact</a>
+      </nav>
+      <div class="footer-contact">
+        <span>Start with a practical review.</span>
+        <a href="mailto:info@softkoredigital.co.za">info@softkoredigital.co.za</a>
+      </div>
+    </footer>`;
+}
+
+function normalizeChrome(html, file) {
+  const prefix = relativePrefix(file);
+  let nextHtml = html.replace(/    <header class="site-header"[\s\S]*?<\/header>/, siteHeader(prefix));
+
+  if (!/<link\s+rel=["'](?:shortcut icon|icon)["']/i.test(nextHtml)) {
+    nextHtml = nextHtml.replace(/(\s*<\/head>)/i, `\n    <link rel="icon" href="${prefix}logo.png" />$1`);
+  }
+
+  nextHtml = nextHtml
+    .replace(/href="((?:\.\.\/)*)#contact"/g, (_match, rel = "") => `href="${rel || "./"}contact/"`)
+    .replace(/href="((?:\.\.\/)*)#work"/g, (_match, rel = "") => `href="${rel || "./"}work/"`)
+    .replace(/href="((?:\.\.\/)*)#process"/g, (_match, rel = "") => `href="${rel || "./"}services/"`);
+
+  if (!/<footer class="site-footer"/.test(nextHtml)) {
+    nextHtml = nextHtml.replace(/\s*<\/body>/i, `\n${siteFooter(prefix)}\n  </body>`);
+  }
+
+  return nextHtml;
+}
+
 function addLogoDimensions(html) {
   return html.replace(/<img class="([^"]*\bbrand-logo\b[^"]*)" src="([^"]+)" alt="SoftKore Digital"(?![^>]*\bwidth=)([^>]*)\/>/g, (_match, classes, src, rest) => {
     return `<img class="${classes}" src="${src}" alt="SoftKore Digital" width="${logoWidth}" height="${logoHeight}"${rest} />`;
@@ -109,6 +174,7 @@ for (const file of walk(root)) {
   const canonical = attr(html, /<link\s+rel=["']canonical["']\s+href=["']([^"']*)["']/i);
 
   html = cleanHomeLinks(html);
+  html = normalizeChrome(html, file);
   html = addLogoDimensions(html);
   html = mergeBreadcrumbSchema(html, canonical);
 

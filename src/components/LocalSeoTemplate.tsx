@@ -1,7 +1,14 @@
 import Link from "next/link";
 import type { LocalSeoPage } from "@/data/local-seo";
 import { getService } from "@/data/services";
-import { CardGrid, FaqList, LinkList, ProofList } from "@/components/PageSections";
+import {
+  CardGrid,
+  ConversionBand,
+  FaqList,
+  LinkList,
+  PageSignalPanel,
+  ProofList,
+} from "@/components/PageSections";
 
 export function LocalSeoTemplate({ page }: { page: LocalSeoPage }) {
   const service = getService(page.serviceSlug);
@@ -12,15 +19,15 @@ export function LocalSeoTemplate({ page }: { page: LocalSeoPage }) {
         <div className="page-hero-inner">
           <div>
             <nav className="breadcrumb" aria-label="Breadcrumb">
-              <Link href="/">Home</Link>
+              <Link prefetch={false} href="/">Home</Link>
               <span>/</span>
-              <Link href={`/services/${page.serviceSlug}/`}>
+              <Link prefetch={false} href={`/services/${page.serviceSlug}/`}>
                 {service?.eyebrow || "Service"}
               </Link>
               <span>/</span>
               {page.areaSlug ? (
                 <>
-                  <Link href={`/services/${page.serviceSlug}/${page.regionSlug}/`}>
+                  <Link prefetch={false} href={`/services/${page.serviceSlug}/${page.regionSlug}/`}>
                     {page.regionName}
                   </Link>
                   <span>/</span>
@@ -33,22 +40,15 @@ export function LocalSeoTemplate({ page }: { page: LocalSeoPage }) {
             <h1>{page.h1}</h1>
             <p>{page.intro}</p>
             <div className="hero-actions">
-              <Link className="button button-primary" href="/#contact">
+              <Link prefetch={false} className="button button-primary" href="/contact/">
                 Start a Project
               </Link>
-              <Link className="button button-secondary" href={`/services/${page.serviceSlug}/`}>
+              <Link prefetch={false} className="button button-secondary" href={`/services/${page.serviceSlug}/`}>
                 View Core Service
               </Link>
             </div>
           </div>
-          <aside className="page-summary">
-            <strong>{page.areaName || page.regionName} focus</strong>
-            <ul>
-              {page.summary.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </aside>
+          <PageSignalPanel title={`${page.areaName || page.regionName} focus`} items={page.summary} />
         </div>
       </section>
 
@@ -88,6 +88,14 @@ export function LocalSeoTemplate({ page }: { page: LocalSeoPage }) {
         <LinkList items={page.related} />
       </section>
 
+      <ConversionBand
+        title={`Want a stronger ${page.areaName || page.regionName} page?`}
+        text="We can review the current page, tighten the offer, improve the trust signals, and connect it to the right service and industry pages."
+        primaryLabel="Request a Page Review"
+        secondaryHref={`/services/${page.serviceSlug}/`}
+        secondaryLabel="View Core Service"
+      />
+
       <section className="section faq-section">
         <div className="section-heading">
           <h2>Frequently Asked Questions</h2>
@@ -97,3 +105,4 @@ export function LocalSeoTemplate({ page }: { page: LocalSeoPage }) {
     </main>
   );
 }
+

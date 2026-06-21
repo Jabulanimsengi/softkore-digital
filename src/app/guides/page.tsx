@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { guides } from "@/data/guides";
+import { PageHeroImage } from "@/components/PageHeroImage";
 import { LinkList } from "@/components/PageSections";
 import { absoluteUrl } from "@/lib/site";
 import { breadcrumbSchema, JsonLd } from "@/lib/schema";
@@ -28,7 +29,7 @@ export default function GuidesPage() {
           <div className="page-hero-inner">
             <div>
               <nav className="breadcrumb" aria-label="Breadcrumb">
-                <Link href="/">Home</Link>
+                <Link prefetch={false} href="/">Home</Link>
                 <span>/</span>
                 <span>Guides</span>
               </nav>
@@ -39,15 +40,16 @@ export default function GuidesPage() {
                 maintaining a healthier digital presence.
               </p>
               <div className="hero-actions">
-                <Link className="button button-primary" href="/#contact">
+                <Link prefetch={false} className="button button-primary" href="/contact/">
                   Start a Project
                 </Link>
-                <Link className="button button-secondary" href="/services/seo-services/">
+                <Link prefetch={false} className="button button-secondary" href="/services/seo-services/">
                   View SEO Services
                 </Link>
               </div>
             </div>
-            <aside className="page-summary">
+            <aside className="page-summary page-summary-media">
+              <PageHeroImage imageKey="guides" />
               <strong>Current guide library</strong>
               <ul>
                 {guides.map((guide) => (
@@ -74,3 +76,4 @@ export default function GuidesPage() {
     </>
   );
 }
+

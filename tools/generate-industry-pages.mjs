@@ -256,12 +256,12 @@ function shell({ depth, title, description, canonical, body, schema }) {
         <a href="${prefix}index.html">Home</a>
         <a href="${prefix}services/web-development/">Services</a>
         <a href="${prefix}industries/">Industries</a>
-        <a href="${prefix}index.html#work">Work</a>
-        <a href="${prefix}index.html#process">Process</a>
+        <a href="${prefix}work/">Work</a>
+        <a href="${prefix}services/">Process</a>
         <a href="${prefix}services/seo-services/">SEO</a>
-        <a href="${prefix}index.html#contact">Contact</a>
+        <a href="${prefix}contact/">Contact</a>
       </nav>
-      <a class="nav-cta" href="${prefix}index.html#contact">Start a Project</a>
+      <a class="nav-cta" href="${prefix}contact/">Start a Project</a>
     </header>
 ${body}
     <script src="${prefix}script.js"></script>
@@ -286,7 +286,7 @@ function makeHub() {
             <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a><span>/</span><span>Industries</span></nav>
             <h1>Websites, Web Applications and SEO for South African Industries</h1>
             <p>Different industries win customers in different ways. These pages show how a website, web app, or SEO plan can match the way people choose providers in each market.</p>
-            <div class="hero-actions"><a class="button button-primary" href="../index.html#contact">Start a Project</a><a class="button button-secondary" href="../services/web-development/">View Services</a></div>
+            <div class="hero-actions"><a class="button button-primary" href="../contact/">Start a Project</a><a class="button button-secondary" href="../services/web-development/">View Services</a></div>
           </div>
           <aside class="page-summary"><strong>Industry coverage</strong><ul><li>${industries.length} industry pages</li><li>Website ideas by market</li><li>Application opportunities</li><li>SEO starting points</li></ul></aside>
         </div>
@@ -343,7 +343,7 @@ function makeIndustryPage(industry) {
             <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Home</a><span>/</span><a href="../">Industries</a><span>/</span><span>${escapeHtml(industry.name)}</span></nav>
             <h1>Websites, Web Apps and SEO for ${escapeHtml(industry.name)}</h1>
             <p>SoftKore Digital helps ${escapeHtml(industry.audience)} build websites, tools, and search visibility that make it easier for customers to choose them.</p>
-            <div class="hero-actions"><a class="button button-primary" href="../../index.html#contact">Start a Project</a><a class="button button-secondary" href="../../services/web-development/">View Services</a></div>
+            <div class="hero-actions"><a class="button button-primary" href="../../contact/">Start a Project</a><a class="button button-secondary" href="../../services/web-development/">View Services</a></div>
           </div>
           <aside class="page-summary"><strong>${escapeHtml(industry.category)}</strong><ul>${industry.features.slice(0, 5).map((feature) => `<li>${escapeHtml(feature)}</li>`).join("\n")}</ul></aside>
         </div>

@@ -5,10 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
+    "dev:fresh": "node tools/clean-next.mjs && next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run generate:sitemaps && npm run generate:redirects && npm run validate:redirects && npm run clean:export && npm run build && npm run sync:static-export && npm run validate:export",
+    "clean:next": "node tools/clean-next.mjs",
     "clean:export": "node tools/clean-export.mjs",
     "generate:sitemaps": "node tools/generate-sitemaps.mjs",
     "sync:static-export": "node tools/sync-static-export.mjs",

@@ -1,173 +1,199 @@
 import Link from "next/link";
-import { CardGrid, LinkList } from "@/components/PageSections";
+import { ContactForm } from "@/components/ContactForm";
 import { JsonLd, organizationSchema } from "@/lib/schema";
 
 const services = [
   {
-    title: "Premium Business Websites",
-    text: "A good business website should explain what you do, make you look credible, and help people contact you without friction.",
+    title: "Website design",
+    text: "Fast, modern websites that make the offer obvious, build trust, and turn visitors into enquiries.",
     href: "/services/web-development/",
-    cta: "Build My Website",
-    items: ["Company websites", "Landing pages", "Service pages", "Mobile-first design"],
+    icon: "window",
   },
   {
-    title: "Custom Web Applications",
-    text: "When spreadsheets and manual follow-ups start slowing you down, a custom web app can give your team one place to manage the work.",
-    href: "/services/custom-web-applications/",
-    cta: "Build My App",
-    items: ["Client dashboards", "Admin panels", "Booking systems", "Payment integration"],
-    featured: true,
-  },
-  {
-    title: "SEO Growth Systems",
-    text: "SEO works best when the site is technically healthy, the pages are useful, and progress is checked regularly.",
+    title: "SEO growth",
+    text: "Search-led page systems for local services, niche industries, and useful content that keeps compounding.",
     href: "/services/seo-services/",
-    cta: "Improve My SEO",
-    items: ["Technical SEO setup", "Search Console monitoring", "Indexing checks", "Page optimization"],
+    icon: "growth",
+  },
+  {
+    title: "App design",
+    text: "Usable web applications, dashboards, portals, and workflows designed around real daily operations.",
+    href: "/services/custom-web-applications/",
+    icon: "phone",
+  },
+  {
+    title: "Enterprise design",
+    text: "Internal tools, data flows, integrations, and design systems that scale beyond one launch.",
+    href: "/services/custom-web-applications/",
+    icon: "building",
+  },
+  {
+    title: "Cloud systems",
+    text: "Practical deployment, monitoring, hosting, automation, and system care for digital products.",
+    href: "/services/website-maintenance/",
+    icon: "cloud",
   },
 ];
 
-const whyItems = [
+const steps = [
   {
-    title: "Premium Design",
-    text: "Clean, modern interfaces that make your business look professional and trustworthy.",
+    number: "01",
+    title: "Discover",
+    text: "We learn your goals, audience, constraints, and the work your team repeats.",
   },
   {
-    title: "Strong Engineering",
-    text: "Websites and applications built with clean code, scalable structure, and future growth in mind.",
+    number: "02",
+    title: "Design",
+    text: "We shape the message, screens, journeys, and technical path before build.",
   },
   {
-    title: "SEO From the Foundation",
-    text: "Search-friendly structure, fast pages, and clear content are planned from the start.",
+    number: "03",
+    title: "Build",
+    text: "We develop clean, fast systems with responsive layouts and practical admin thinking.",
   },
   {
-    title: "Ongoing Monitoring",
-    text: "We help you track performance, fix issues, improve pages, and keep your online presence healthy.",
+    number: "04",
+    title: "Improve",
+    text: "We measure, refine, and keep the parts that create business value moving.",
   },
 ];
 
-const areas = [
-  { label: "Gauteng web development", href: "/services/web-development/gauteng/" },
-  { label: "Johannesburg web development", href: "/services/web-development/gauteng/johannesburg/" },
-  { label: "Pretoria web development", href: "/services/web-development/gauteng/pretoria/" },
-  { label: "Sandton SEO services", href: "/services/seo-services/gauteng/sandton/" },
-  { label: "Cape Town SEO services", href: "/services/seo-services/western-cape/cape-town/" },
-  { label: "Durban custom web applications", href: "/services/custom-web-applications/kwazulu-natal/durban/" },
+const proof = [
+  {
+    title: "Intent first",
+    text: "No surface polish without knowing what the page, app, or system must do.",
+  },
+  {
+    title: "Built to last",
+    text: "Solid structure, maintainable code, and technical choices that can survive growth.",
+  },
+  {
+    title: "Partner mindset",
+    text: "Clear communication, practical decisions, and no hand-offs into confusion.",
+  },
 ];
+
+function ServiceIcon({ type }: { type: string }) {
+  return (
+    <svg className="sk-service-icon" viewBox="0 0 48 48" aria-hidden="true">
+      {type === "window" ? (
+        <>
+          <path d="M7 12h34v26H7z" />
+          <path d="M7 19h34M14 15h.1M19 15h.1" />
+        </>
+      ) : null}
+      {type === "growth" ? (
+        <>
+          <path d="M8 36h6V25H8zM21 36h6V18h-6zM34 36h6V10h-6z" />
+          <path d="M8 18l10-8 9 6 13-11" />
+        </>
+      ) : null}
+      {type === "phone" ? (
+        <>
+          <path d="M17 6h14a3 3 0 0 1 3 3v30a3 3 0 0 1-3 3H17a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3z" />
+          <path d="M22 36h4" />
+        </>
+      ) : null}
+      {type === "building" ? (
+        <>
+          <path d="M9 40V16h12v24M21 40V8h18v32" />
+          <path d="M14 22h2M14 29h2M27 15h3M27 23h3M27 31h3" />
+        </>
+      ) : null}
+      {type === "cloud" ? (
+        <>
+          <path d="M16 36h20a8 8 0 0 0 1-15 12 12 0 0 0-23-3A9 9 0 0 0 16 36z" />
+        </>
+      ) : null}
+    </svg>
+  );
+}
 
 export default function HomePage() {
   return (
     <>
       <JsonLd data={organizationSchema()} />
-      <main>
-        <section className="hero section" id="home">
-          <div className="hero-copy">
-            <h1>We Build Digital Systems That Help Businesses Grow</h1>
-            <p>
-              SoftKore Digital builds websites, web apps, and SEO foundations
-              that make it easier for customers to find you, understand what you
-              offer, and get in touch.
+      <main className="sk-home">
+        <section className="sk-hero section" id="home">
+          <div className="sk-hero-copy">
+            <h1>Websites, SEO and software systems built with intent.</h1>
+            <p className="sk-hero-lead">
+              Build what your business can actually use.
             </p>
-            <div className="hero-actions">
-              <Link className="button button-primary" href="#contact">
-                Start Your Project
+            <p className="sk-hero-text">
+              Softkore Technologies designs and builds focused digital products
+              for businesses that need clearer websites, better search
+              visibility, usable apps, and reliable operating systems.
+            </p>
+            <div className="sk-actions">
+              <Link prefetch={false} className="button button-primary" href="/contact/">
+                Design the site <span aria-hidden="true">-&gt;</span>
               </Link>
-              <Link className="button button-secondary" href="/services/web-development/">
-                View Our Services
+              <Link prefetch={false} className="button button-secondary" href="/services/">
+                Plan the system <span aria-hidden="true">-&gt;</span>
               </Link>
             </div>
-            <div className="trust-line">
-              Websites | Web Applications | SEO Implementation | Monitoring
+            <div className="sk-capabilities" aria-label="Softkore capabilities">
+              <span>Software</span>
+              <span>Web Applications</span>
+              <span>Cloud</span>
+              <span>Digital Solutions</span>
             </div>
           </div>
-
-          <div className="hero-visual" aria-label="SoftKore Digital dashboard mockup">
-            <div className="dashboard-shell">
-              <div className="dashboard-top">
-                <div className="mini-brand">
-                  <span className="mini-mark" />
-                  <span>SoftKore Digital Dashboard</span>
-                </div>
-                <span className="status-dot">Live</span>
-              </div>
-              <div className="dashboard-grid">
-                <article className="metric-card large">
-                  <span>Website Health</span>
-                  <strong>96%</strong>
-                  <small>Excellent</small>
-                  <div className="ring" aria-hidden="true" />
-                </article>
-                <article className="metric-card">
-                  <span>SEO Visibility</span>
-                  <strong>Growing</strong>
-                  <small>+28% vs last 30 days</small>
-                </article>
-                <article className="metric-card">
-                  <span>Pages Optimized</span>
-                  <strong>128</strong>
-                  <small>+18 this month</small>
-                </article>
-                <article className="metric-card wide">
-                  <span>Speed Score</span>
-                  <strong>
-                    91<em>/100</em>
-                  </strong>
-                  <small>Great performance</small>
-                  <div className="progress">
-                    <span style={{ width: "91%" }} />
-                  </div>
-                </article>
-              </div>
-            </div>
+          <div className="sk-hero-mark" aria-hidden="true">
+            <span />
+            <span />
           </div>
         </section>
 
-        <section className="section strip" aria-label="Main services">
-          <span>Websites</span>
-          <span>Applications</span>
-          <span>SEO</span>
-          <span>Monitoring</span>
-        </section>
-
-        <section className="section" id="services">
-          <div className="section-heading">
-            <h2>What We Build</h2>
-            <p>
-              Start with a professional website, add the systems your team
-              needs, and keep improving what brings in real enquiries.
-            </p>
+        <section className="sk-services section" id="services">
+          <div className="sk-section-title">
+            <span aria-hidden="true">/</span>
+            <h2>What we do</h2>
           </div>
-
-          <div className="service-grid">
+          <div className="sk-service-list">
             {services.map((service) => (
-              <article
-                className={`service-card ${service.featured ? "featured" : ""}`}
-                key={service.title}
-              >
-                <div className="icon-box" aria-hidden="true">
-                  {service.featured ? "</>" : "[]"}
+              <Link prefetch={false} className="sk-service-row" href={service.href} key={service.title}>
+                <ServiceIcon type={service.icon} />
+                <div>
+                  <h3>{service.title}</h3>
+                  <p>{service.text}</p>
                 </div>
-                <h3>{service.title}</h3>
-                <p>{service.text}</p>
-                <ul>
-                  {service.items.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-                <Link href={service.href}>{service.cta}</Link>
-              </article>
+                <span className="sk-row-arrow" aria-hidden="true">-&gt;</span>
+              </Link>
             ))}
           </div>
         </section>
 
-        <section className="section why-section">
-          <div className="why-title">
-            <h2>Clean Design. Solid Code. Built to Be Found.</h2>
+        <section className="sk-process" id="process">
+          <div className="section sk-process-inner">
+            <div className="sk-section-title">
+              <span aria-hidden="true">/</span>
+              <h2>How we work</h2>
+            </div>
+            <div className="sk-steps">
+              {steps.map((step) => (
+                <article className="sk-step" key={step.number}>
+                  <span>{step.number}</span>
+                  <h3>{step.title}</h3>
+                  <p>{step.text}</p>
+                </article>
+              ))}
+            </div>
+            <Link prefetch={false} className="sk-text-link" href="/work/">
+              See selected work <span aria-hidden="true">-&gt;</span>
+            </Link>
           </div>
-          <div className="why-grid">
-            {whyItems.map((item, index) => (
-              <article className="why-item" key={item.title}>
-                <span>{String(index + 1).padStart(2, "0")}</span>
+        </section>
+
+        <section className="sk-proof section">
+          <div className="sk-section-title">
+            <span aria-hidden="true">/</span>
+            <h2>Why work with Softkore</h2>
+          </div>
+          <div className="sk-proof-grid">
+            {proof.map((item) => (
+              <article className="sk-proof-item" key={item.title}>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
               </article>
@@ -175,79 +201,35 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="section seo-section" id="seo">
-          <div className="seo-panel">
-            <div>
-              <h2>SEO Works Better When Someone Keeps an Eye on It.</h2>
-              <p>
-                Many businesses launch a website and hope traffic will arrive.
-                A stronger approach is to fix the technical basics, improve the
-                right pages, and watch what Google is actually doing with the site.
-              </p>
-            </div>
-            <div className="traffic-card">
-              <span>Organic Traffic</span>
-              <strong>+28%</strong>
-              <small>vs last 30 days</small>
-            </div>
+        <section className="sk-focus section">
+          <div>
+            <h2>Minimal on the surface. Serious underneath.</h2>
+            <p>
+              The best digital work feels simple because the hard thinking has
+              already happened: page architecture, conversion paths, search
+              intent, performance, content structure, admin workflows, hosting,
+              and long-term care.
+            </p>
+          </div>
+          <div className="sk-focus-lines" aria-hidden="true">
+            <span>Design</span>
+            <span>SEO</span>
+            <span>Apps</span>
+            <span>Cloud</span>
           </div>
         </section>
 
-        <section className="section areas-section">
-          <h2>Priority Areas We Serve</h2>
-          <p className="section-intro">
-            These are the first local routes to rebuild properly in Next.js, with
-            stronger content before wider rollout.
-          </p>
-          <LinkList items={areas} />
-        </section>
-
-        <section className="section why-section" id="process">
-          <div className="why-title">
-            <h2>A Practical Build Process</h2>
+        <section className="sk-contact section" id="contact">
+          <div className="sk-contact-copy">
+            <h2>Let&apos;s build something that moves your business.</h2>
+            <p>
+              Share the site, workflow, or product you want to improve. We will
+              help you choose the next practical solution and design it with
+              intent.
+            </p>
+            <a href="mailto:info@softkoredigital.co.za">info@softkoredigital.co.za</a>
           </div>
-          <div className="why-grid">
-            <CardGrid
-              items={[
-                {
-                  title: "Plan the route map",
-                  text: "Define the pages that deserve to exist before generating anything at scale.",
-                },
-                {
-                  title: "Build typed content",
-                  text: "Move page content into TypeScript data so metadata, schema, and routes stay consistent.",
-                },
-                {
-                  title: "Ship static pages",
-                  text: "Use Next.js static export for fast pages, clean routing, and easier deployment.",
-                },
-                {
-                  title: "Improve with evidence",
-                  text: "Use Search Console and live checks to decide which pages need deeper content next.",
-                },
-              ]}
-            />
-          </div>
-        </section>
-
-        <section className="section final-cta" id="contact">
-          <div className="final-panel">
-            <div>
-              <h2>Want a website that can grow with your business?</h2>
-              <p>
-                SoftKore Digital can help you plan, design, build, and optimize
-                a professional web presence.
-              </p>
-              <a className="contact-line" href="mailto:info@softkoredigital.co.za">
-                info@softkoredigital.co.za
-              </a>
-            </div>
-            <div className="final-actions">
-              <a className="button button-primary" href="mailto:info@softkoredigital.co.za">
-                Start a Project
-              </a>
-            </div>
-          </div>
+          <ContactForm />
         </section>
       </main>
     </>

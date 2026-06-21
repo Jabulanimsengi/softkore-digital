@@ -61,8 +61,8 @@ export const localSeoPages: LocalSeoPage[] = [
         text: "Core services, supporting pages, and contact paths are structured before design details take over.",
       },
       {
-        title: "Search-ready metadata",
-        text: "Titles, descriptions, canonical URLs, schema, and sitemap inclusion are handled inside the Next.js route layer.",
+        title: "Search-ready structure",
+        text: "Titles, descriptions, canonical URLs, schema, and sitemap inclusion are planned consistently from the start.",
       },
       {
         title: "Conversion focus",
@@ -87,7 +87,7 @@ export const localSeoPages: LocalSeoPage[] = [
       {
         question: "Can the website support SEO from launch?",
         answer:
-          "Yes. The Next.js structure supports clean routes, metadata, schema, sitemap entries, and internal links from the start.",
+          "Yes. The site can launch with clean routes, metadata, schema, sitemap entries, and internal links planned from the start.",
       },
     ],
     related: [
@@ -156,7 +156,7 @@ export const localSeoPages: LocalSeoPage[] = [
       {
         question: "Can you redesign an existing Johannesburg website?",
         answer:
-          "Yes. We can review the current website, keep what is useful, improve structure and content, and rebuild it as a cleaner Next.js site.",
+          "Yes. We can review the current website, keep what is useful, improve structure and content, and rebuild it as a cleaner, faster site.",
       },
       {
         question: "Can Johannesburg pages link to suburb pages later?",
@@ -209,8 +209,8 @@ export const localSeoPages: LocalSeoPage[] = [
         text: "Services, proof, process, FAQs, and contact paths are organized around how customers decide.",
       },
       {
-        title: "Next.js metadata",
-        text: "Page titles, descriptions, Open Graph data, canonical URLs, and schema are generated consistently.",
+        title: "Consistent metadata",
+        text: "Page titles, descriptions, sharing data, canonical URLs, and schema are managed consistently.",
       },
       {
         title: "Clear calls to action",
@@ -233,9 +233,9 @@ export const localSeoPages: LocalSeoPage[] = [
           "Yes. The site can start with Pretoria and later expand into selected areas where the content can be specific and useful.",
       },
       {
-        question: "Is Next.js good for Pretoria service-business SEO?",
+        question: "Can a Pretoria service-business website support SEO properly?",
         answer:
-          "Yes. Next.js is a strong fit when pages are statically generated, metadata is handled carefully, and content is useful rather than mass-produced.",
+          "Yes. The strongest approach is fast pages, carefully handled metadata, useful content, and a structure that avoids mass-produced location pages.",
       },
     ],
     related: [
@@ -348,7 +348,7 @@ export const localSeoPages: LocalSeoPage[] = [
       },
       {
         title: "Technical consistency",
-        text: "Next.js helps keep metadata, schema, static generation, and sitemap entries predictable across priority pages.",
+        text: "A consistent technical foundation keeps metadata, schema, performance, and sitemap entries predictable across priority pages.",
       },
     ],
     proof: [

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { services } from "@/data/services";
+import { PageHeroImage } from "@/components/PageHeroImage";
 
 export default function ServicesIndex() {
   return (
@@ -8,32 +9,33 @@ export default function ServicesIndex() {
         <div className="page-hero-inner">
           <div>
             <nav className="breadcrumb" aria-label="Breadcrumb">
-              <Link href="/">Home</Link>
+              <Link prefetch={false} href="/">Home</Link>
               <span>/</span>
               <span>Services</span>
             </nav>
             <h1>Services Built Around Growth, Operations and Search</h1>
             <p>
-              Start with the core service pages. Location and industry pages
-              will be rebuilt from typed content after the Next.js foundation is
-              stable.
+              Choose the service path that matches what needs to improve first:
+              a clearer website, better search visibility, a custom workflow
+              system, or ongoing maintenance.
             </p>
             <div className="hero-actions">
-              <Link className="button button-primary" href="/#contact">
+              <Link prefetch={false} className="button button-primary" href="/contact/">
                 Start a Project
               </Link>
-              <Link className="button button-secondary" href="/services/web-development/">
+              <Link prefetch={false} className="button button-secondary" href="/services/web-development/">
                 View Web Development
               </Link>
             </div>
           </div>
-          <aside className="page-summary">
-            <strong>Next.js route map</strong>
+          <aside className="page-summary page-summary-media">
+            <PageHeroImage imageKey="services" />
+            <strong>Best starting points</strong>
             <ul>
-              <li>Core service hubs</li>
-              <li>Shared metadata</li>
-              <li>Typed page data</li>
-              <li>Static export ready</li>
+              <li>Website rebuilds</li>
+              <li>Local SEO recovery</li>
+              <li>Custom business systems</li>
+              <li>Maintenance and monitoring</li>
             </ul>
           </aside>
         </div>
@@ -42,7 +44,7 @@ export default function ServicesIndex() {
         <h2>Core Services</h2>
         <div className="area-list">
           {services.map((service) => (
-            <Link key={service.slug} href={`/services/${service.slug}/`}>
+            <Link prefetch={false} key={service.slug} href={`/services/${service.slug}/`}>
               {service.title}
             </Link>
           ))}
@@ -51,3 +53,4 @@ export default function ServicesIndex() {
     </main>
   );
 }
+

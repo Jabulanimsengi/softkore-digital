@@ -1,7 +1,14 @@
 import Link from "next/link";
 import { getAiAgentIndustry, aiAgentIndustryUrl } from "@/data/ai-agents";
 import type { IndustryPage } from "@/data/industries";
-import { CardGrid, FaqList, LinkList, ProofList } from "@/components/PageSections";
+import {
+  CardGrid,
+  ConversionBand,
+  FaqList,
+  LinkList,
+  PageSignalPanel,
+  ProofList,
+} from "@/components/PageSections";
 
 export function IndustryTemplate({ industry }: { industry: IndustryPage }) {
   const aiAgentPage = getAiAgentIndustry(industry.slug);
@@ -12,31 +19,24 @@ export function IndustryTemplate({ industry }: { industry: IndustryPage }) {
         <div className="page-hero-inner">
           <div>
             <nav className="breadcrumb" aria-label="Breadcrumb">
-              <Link href="/">Home</Link>
+              <Link prefetch={false} href="/">Home</Link>
               <span>/</span>
-              <Link href="/industries/">Industries</Link>
+              <Link prefetch={false} href="/industries/">Industries</Link>
               <span>/</span>
               <span>{industry.name}</span>
             </nav>
             <h1>{industry.h1}</h1>
             <p>{industry.intro}</p>
             <div className="hero-actions">
-              <Link className="button button-primary" href="/#contact">
+              <Link prefetch={false} className="button button-primary" href="/contact/">
                 Discuss This Project
               </Link>
-              <Link className="button button-secondary" href="/services/web-development/">
+              <Link prefetch={false} className="button button-secondary" href="/services/web-development/">
                 View Services
               </Link>
             </div>
           </div>
-          <aside className="page-summary">
-            <strong>{industry.category}</strong>
-            <ul>
-              {industry.summary.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </aside>
+          <PageSignalPanel title={industry.category} items={industry.summary} />
         </div>
       </section>
 
@@ -95,6 +95,14 @@ export function IndustryTemplate({ industry }: { industry: IndustryPage }) {
         />
       </section>
 
+      <ConversionBand
+        title={`Planning a better website for ${industry.name.toLowerCase()}?`}
+        text="We can help turn the industry opportunity into a clear page structure, trust-building content, and a conversion path visitors can follow."
+        primaryLabel="Discuss This Project"
+        secondaryHref="/services/web-development/"
+        secondaryLabel="View Website Service"
+      />
+
       <section className="section faq-section">
         <div className="section-heading">
           <h2>Frequently Asked Questions</h2>
@@ -104,3 +112,4 @@ export function IndustryTemplate({ industry }: { industry: IndustryPage }) {
     </main>
   );
 }
+

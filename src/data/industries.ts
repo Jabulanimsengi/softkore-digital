@@ -197,7 +197,7 @@ const baseIndustries: IndustryPage[] = [
       },
       {
         title: "Scalable routes",
-        text: "Next.js gives the store a clean foundation for static pages, metadata, and performance-minded growth.",
+        text: "The store gets a clean foundation for fast pages, metadata, and performance-minded growth.",
       },
     ],
     related: [

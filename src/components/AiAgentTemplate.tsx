@@ -9,19 +9,19 @@ export function AiAgentTemplate({ page }: { page: AiAgentIndustryPage }) {
         <div className="page-hero-inner">
           <div>
             <nav className="breadcrumb" aria-label="Breadcrumb">
-              <Link href="/">Home</Link>
+              <Link prefetch={false} href="/">Home</Link>
               <span>/</span>
-              <Link href="/ai-agents/">AI Agents</Link>
+              <Link prefetch={false} href="/ai-agents/">AI Agents</Link>
               <span>/</span>
               <span>{page.name}</span>
             </nav>
             <h1>{page.h1}</h1>
             <p>{page.intro}</p>
             <div className="hero-actions">
-              <Link className="button button-primary" href="/#contact">
+              <Link prefetch={false} className="button button-primary" href="/contact/">
                 Plan an AI Agent
               </Link>
-              <Link className="button button-secondary" href="/ai-agents/">
+              <Link prefetch={false} className="button button-secondary" href="/ai-agents/">
                 View Industries
               </Link>
             </div>
@@ -107,3 +107,4 @@ export function AiAgentTemplate({ page }: { page: AiAgentIndustryPage }) {
     </main>
   );
 }
+

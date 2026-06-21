@@ -212,12 +212,12 @@ function layout({ depth, title, description, canonical, h1, intro, breadcrumb, s
         <a href="${prefix}index.html">Home</a>
         <a href="${prefix}services/web-development/">Services</a>
         <a href="${prefix}industries/">Industries</a>
-        <a href="${prefix}index.html#work">Work</a>
-        <a href="${prefix}index.html#process">Process</a>
+        <a href="${prefix}work/">Work</a>
+        <a href="${prefix}services/">Process</a>
         <a href="${prefix}services/seo-services/">SEO</a>
-        <a href="${prefix}index.html#contact">Contact</a>
+        <a href="${prefix}contact/">Contact</a>
       </nav>
-      <a class="nav-cta" href="${prefix}index.html#contact">Start a Project</a>
+      <a class="nav-cta" href="${prefix}contact/">Start a Project</a>
     </header>
     <main>
       <section class="section page-hero">
@@ -226,7 +226,7 @@ function layout({ depth, title, description, canonical, h1, intro, breadcrumb, s
             <nav class="breadcrumb" aria-label="Breadcrumb">${breadcrumbHtml}</nav>
             <h1>${escapeHtml(h1)}</h1>
             <p>${escapeHtml(intro)}</p>
-            <div class="hero-actions"><a class="button button-primary" href="${prefix}index.html#contact">Start a Project</a><a class="button button-secondary" href="${prefix}services/${breadcrumb[1]?.serviceSlug || "web-development"}/">View Core Service</a></div>
+            <div class="hero-actions"><a class="button button-primary" href="${prefix}contact/">Start a Project</a><a class="button button-secondary" href="${prefix}services/${breadcrumb[1]?.serviceSlug || "web-development"}/">View Core Service</a></div>
           </div>
           <aside class="page-summary"><strong>${escapeHtml(summaryTitle)}</strong><ul>${summaryItems}</ul></aside>
         </div>

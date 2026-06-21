@@ -2,29 +2,36 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "/services/web-development/" },
+  { label: "Services", href: "/services/" },
   { label: "Industries", href: "/industries/" },
-  { label: "AI Agents", href: "/ai-agents/" },
-  { label: "Work", href: "/#work" },
-  { label: "Process", href: "/#process" },
-  { label: "SEO", href: "/services/seo-services/" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Guides", href: "/guides/" },
+  { label: "Work", href: "/work/" },
+  { label: "Contact", href: "/contact/" },
 ];
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
+  function isActive(href: string) {
+    if (href === "/") {
+      return pathname === "/";
+    }
+    return pathname === href || pathname.startsWith(href);
+  }
 
   return (
     <header className={`site-header ${isOpen ? "is-open" : ""}`} data-header>
-      <Link className="brand" href="/" aria-label="SoftKore Digital home">
+      <Link prefetch={false} className="brand" href="/" aria-label="Softkore Technologies home">
         <Image
           className="brand-logo"
           src="/logo.png"
-          alt="SoftKore Digital"
+          alt="Softkore Technologies"
           width={922}
           height={252}
           priority
@@ -34,7 +41,7 @@ export function Header() {
       <button
         className="menu-toggle"
         type="button"
-        aria-label="Open menu"
+        aria-label={isOpen ? "Close menu" : "Open menu"}
         aria-expanded={isOpen}
         onClick={() => setIsOpen((current) => !current)}
       >
@@ -44,15 +51,22 @@ export function Header() {
 
       <nav className="site-nav" data-nav onClick={() => setIsOpen(false)}>
         {navItems.map((item) => (
-          <Link key={item.href} href={item.href}>
+          <Link
+            prefetch={false}
+            key={item.href}
+            href={item.href}
+            className={isActive(item.href) ? "is-active" : undefined}
+            aria-current={isActive(item.href) ? "page" : undefined}
+          >
             {item.label}
           </Link>
         ))}
       </nav>
 
-      <Link className="nav-cta" href="/#contact">
-        Start a Project
+      <Link prefetch={false} className="nav-cta" href="/contact/">
+        Start a project
       </Link>
     </header>
   );
 }
+

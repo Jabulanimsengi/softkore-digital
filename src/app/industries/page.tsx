@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { aiAgentIndustryPages, aiAgentIndustryUrl } from "@/data/ai-agents";
 import { industries } from "@/data/industries";
+import { PageHeroImage } from "@/components/PageHeroImage";
 import { LinkList } from "@/components/PageSections";
 import { absoluteUrl } from "@/lib/site";
 import { breadcrumbSchema, JsonLd } from "@/lib/schema";
@@ -29,7 +30,7 @@ export default function IndustriesPage() {
           <div className="page-hero-inner">
             <div>
               <nav className="breadcrumb" aria-label="Breadcrumb">
-                <Link href="/">Home</Link>
+                <Link prefetch={false} href="/">Home</Link>
                 <span>/</span>
                 <span>Industries</span>
               </nav>
@@ -40,20 +41,22 @@ export default function IndustriesPage() {
                 SEO plan can directly support enquiries and operations.
               </p>
               <div className="hero-actions">
-                <Link className="button button-primary" href="/#contact">
+                <Link prefetch={false} className="button button-primary" href="/contact/">
                   Discuss an Industry Page
                 </Link>
-                <Link className="button button-secondary" href="/services/web-development/">
+                <Link prefetch={false} className="button button-secondary" href="/services/web-development/">
                   View Services
                 </Link>
               </div>
             </div>
-            <aside className="page-summary">
+            <aside className="page-summary page-summary-media">
+              <PageHeroImage imageKey="industries" />
               <strong>Current priority set</strong>
               <ul>
-                {industries.map((industry) => (
-                  <li key={industry.slug}>{industry.name}</li>
-                ))}
+                <li>{industries.length} industry pages</li>
+                <li>Website, SEO and app pathways</li>
+                <li>Internal links to related services</li>
+                <li>Expandable by priority market</li>
               </ul>
             </aside>
           </div>
@@ -132,3 +135,4 @@ export default function IndustriesPage() {
     </>
   );
 }
+

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { aiAgentIndustryPages, aiAgentIndustryUrl } from "@/data/ai-agents";
+import { PageHeroImage } from "@/components/PageHeroImage";
 import { LinkList } from "@/components/PageSections";
 import { absoluteUrl } from "@/lib/site";
 import { breadcrumbSchema, JsonLd } from "@/lib/schema";
@@ -28,7 +29,7 @@ export default function AiAgentsPage() {
           <div className="page-hero-inner">
             <div>
               <nav className="breadcrumb" aria-label="Breadcrumb">
-                <Link href="/">Home</Link>
+                <Link prefetch={false} href="/">Home</Link>
                 <span>/</span>
                 <span>AI Agents</span>
               </nav>
@@ -39,15 +40,16 @@ export default function AiAgentsPage() {
                 updates, and staff handovers.
               </p>
               <div className="hero-actions">
-                <Link className="button button-primary" href="/#contact">
+                <Link prefetch={false} className="button button-primary" href="/contact/">
                   Plan an AI Agent
                 </Link>
-                <Link className="button button-secondary" href="/industries/">
+                <Link prefetch={false} className="button button-secondary" href="/industries/">
                   View Industries
                 </Link>
               </div>
             </div>
-            <aside className="page-summary">
+            <aside className="page-summary page-summary-media">
+              <PageHeroImage imageKey="aiAgents" />
               <strong>Built for adoption</strong>
               <ul>
                 <li>Start with one workflow</li>
@@ -117,3 +119,4 @@ export default function AiAgentsPage() {
     </>
   );
 }
+

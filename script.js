@@ -14,18 +14,38 @@ nav?.addEventListener("click", (event) => {
   }
 });
 
-const revealItems = document.querySelectorAll(".reveal");
-
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.16 }
+const revealItems = document.querySelectorAll(
+  [
+    "main > section",
+    ".service-card",
+    ".content-card",
+    ".proof-list li",
+    ".area-list a",
+    ".case-card",
+    ".faq-item",
+    ".conversion-band",
+    ".reveal",
+  ].join(",")
 );
 
-revealItems.forEach((item) => observer.observe(item));
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+if (reduceMotion.matches) {
+  revealItems.forEach((item) => item.classList.add("is-visible"));
+} else {
+  revealItems.forEach((item) => item.classList.add("scroll-reveal"));
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { rootMargin: "0px 0px -12% 0px", threshold: 0.12 }
+  );
+
+  revealItems.forEach((item) => observer.observe(item));
+}
