@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHeroImage } from "@/components/PageHeroImage";
+import { caseStudies, type CaseStudy } from "@/data/case-studies";
 import { breadcrumbSchema, JsonLd } from "@/lib/schema";
 import { absoluteUrl } from "@/lib/site";
 
@@ -13,24 +14,30 @@ export const metadata: Metadata = {
   },
 };
 
-const workItems = [
-  {
-    title: "SEO recovery foundation",
-    text: "Cleaned URL structures, rebuilt sitemap coverage, protected old URLs with redirects, and submitted refreshed URLs for faster discovery.",
-  },
-  {
-    title: "Local service page system",
-    text: "Structured service and location templates so priority pages can scale without becoming repeated, low-value SEO content.",
-  },
-  {
-    title: "Static deployment workflow",
-    text: "Built a repeatable export, validation, redirect, Nginx reload, and IndexNow submission flow for safer production releases.",
-  },
-  {
-    title: "Conversion-focused UI refresh",
-    text: "Balanced dark blue authority, white readability, and orange action states so key CTAs and summaries are clearer.",
-  },
-];
+function CaseStudyDiagram({ study, index }: { study: CaseStudy; index: number }) {
+  return (
+    <div className="case-study-diagram" aria-hidden="true">
+      <div className="case-diagram-top">
+        <span>SK-{String(index + 1).padStart(2, "0")}</span>
+        <strong>{study.category}</strong>
+      </div>
+      <div className="case-diagram-canvas">
+        <i className="case-node case-node-main">SK</i>
+        <i className="case-node case-node-a">{study.signals[0]}</i>
+        <i className="case-node case-node-b">{study.signals[1]}</i>
+        <i className="case-node case-node-c">{study.signals[2]}</i>
+        <span className="case-line case-line-a" />
+        <span className="case-line case-line-b" />
+        <span className="case-line case-line-c" />
+      </div>
+      <div className="case-diagram-footer">
+        {study.signals.map((signal) => (
+          <span key={signal}>{signal}</span>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function WorkPage() {
   return (
@@ -52,9 +59,10 @@ export default function WorkPage() {
               </nav>
               <h1>Practical Website, SEO and UX Improvements</h1>
               <p>
-                Our work focuses on the pieces that make a site easier to trust,
-                easier to use, easier to maintain, and easier for search engines
-                to understand.
+                Premium digital work is not just a nicer screen. It is the
+                structure behind the screen: clearer offers, stronger search
+                paths, safer releases, and workflows that keep working after
+                launch.
               </p>
               <div className="hero-actions">
                 <Link prefetch={false} className="button button-primary" href="/contact/">
@@ -67,33 +75,67 @@ export default function WorkPage() {
             </div>
             <aside className="page-summary page-summary-media">
               <PageHeroImage imageKey="work" />
-              <strong>Recent focus</strong>
+              <strong>What the work has to prove</strong>
               <ul>
-                <li>Cleaner URLs</li>
-                <li>Better page coverage</li>
-                <li>Stronger conversion paths</li>
+                <li>Clearer business offer</li>
+                <li>Better page architecture</li>
+                <li>Stronger enquiry paths</li>
                 <li>Safer deployment checks</li>
               </ul>
             </aside>
           </div>
         </section>
 
-        <section className="section work-section">
+        <section className="section work-section premium-work-section">
           <div className="section-heading">
-            <h2>What We Improve</h2>
+            <h2>Selected case patterns</h2>
             <p>
-              These are the kinds of improvements we can repeat for businesses
-              that need a stronger digital foundation.
+              These are representative patterns we can repeat for businesses
+              that need a stronger digital foundation without a bloated rebuild.
             </p>
           </div>
-          <div className="case-grid">
-            {workItems.map((item) => (
-              <article className="case-card" key={item.title}>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
+          <div className="case-study-list">
+            {caseStudies.map((study, index) => (
+              <article className="case-study-card" key={study.title}>
+                <div className="case-study-copy">
+                  <span className="case-study-kicker">{study.category}</span>
+                  <h3>{study.title}</h3>
+                  <dl>
+                    <div>
+                      <dt>Problem</dt>
+                      <dd>{study.challenge}</dd>
+                    </div>
+                    <div>
+                      <dt>Softkore move</dt>
+                      <dd>{study.intervention}</dd>
+                    </div>
+                    <div>
+                      <dt>Outcome</dt>
+                      <dd>{study.outcome}</dd>
+                    </div>
+                  </dl>
+                </div>
+                <CaseStudyDiagram study={study} index={index} />
               </article>
             ))}
           </div>
+        </section>
+
+        <section className="section premium-proof-panel">
+          <div>
+            <h2>What makes the work feel premium?</h2>
+            <p>
+              It is the discipline: sharp first-screen messaging, fewer generic
+              sections, real proof modules, structured search pages, and a site
+              that can be improved without starting again.
+            </p>
+          </div>
+          <ul>
+            <li>Evidence before decoration</li>
+            <li>Mobile-first conversion paths</li>
+            <li>Search architecture built into the page system</li>
+            <li>Deployment and care treated as part of the product</li>
+          </ul>
         </section>
       </main>
     </>

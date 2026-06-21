@@ -60,12 +60,17 @@ export default function ContactPage() {
                 We will look at the structure, conversion path, AI agent fit,
                 and any obvious UI issues before recommending the next step.
               </p>
-          <a className="contact-line" href="mailto:info@softkoredigital.co.za">
-            info@softkoredigital.co.za
-          </a>
-        </div>
-        <ContactForm />
-      </div>
+              <a className="contact-line" href="mailto:info@softkoredigital.co.za">
+                info@softkoredigital.co.za
+              </a>
+              <div className="contact-assurance" aria-label="What happens next">
+                <span>1. We review the current path</span>
+                <span>2. We identify the highest-value move</span>
+                <span>3. You get a practical next-step recommendation</span>
+              </div>
+            </div>
+            <ContactForm />
+          </div>
         </section>
       </main>
     </>

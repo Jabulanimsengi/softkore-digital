@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ContactForm } from "@/components/ContactForm";
+import { caseStudies } from "@/data/case-studies";
 import { JsonLd, organizationSchema } from "@/lib/schema";
 
 const services = [
@@ -38,23 +39,38 @@ const services = [
 const steps = [
   {
     number: "01",
-    title: "Discover",
-    text: "We learn your goals, audience, constraints, and the work your team repeats.",
+    title: "Clarify",
+    text: "We define the offer, the audience, the conversion goal, and the operational work the system must support.",
   },
   {
     number: "02",
-    title: "Design",
-    text: "We shape the message, screens, journeys, and technical path before build.",
+    title: "Map",
+    text: "We shape page architecture, search intent, user journeys, content hierarchy, and the technical path before build.",
   },
   {
     number: "03",
     title: "Build",
-    text: "We develop clean, fast systems with responsive layouts and practical admin thinking.",
+    text: "We develop clean, fast interfaces with responsive layouts, practical admin thinking, and reliable release checks.",
   },
   {
     number: "04",
     title: "Improve",
-    text: "We measure, refine, and keep the parts that create business value moving.",
+    text: "We monitor, refine, and keep the parts that create business value moving after the first launch.",
+  },
+];
+
+const trustSignals = [
+  {
+    label: "Built for",
+    value: "service businesses, operators, and growing teams",
+  },
+  {
+    label: "Focused on",
+    value: "conversion paths, search structure, and workflow clarity",
+  },
+  {
+    label: "Delivered as",
+    value: "fast websites, useful apps, and maintainable systems",
   },
 ];
 
@@ -143,7 +159,34 @@ export default function HomePage() {
           <div className="sk-hero-mark" aria-hidden="true">
             <span />
             <span />
+            <div className="sk-system-preview">
+              <div className="sk-system-top">
+                <strong>Softkore OS</strong>
+                <small>Website to workflow</small>
+              </div>
+              <div className="sk-system-track">
+                <i>Offer</i>
+                <i>Search</i>
+                <i>App</i>
+                <i>Cloud</i>
+              </div>
+              <div className="sk-system-grid">
+                <b>SEO map</b>
+                <b>UX paths</b>
+                <b>Admin flow</b>
+                <b>Release check</b>
+              </div>
+            </div>
           </div>
+        </section>
+
+        <section className="sk-trust-strip section" aria-label="Softkore proof points">
+          {trustSignals.map((signal) => (
+            <article key={signal.label}>
+              <span>{signal.label}</span>
+              <strong>{signal.value}</strong>
+            </article>
+          ))}
         </section>
 
         <section className="sk-services section" id="services">
@@ -167,7 +210,7 @@ export default function HomePage() {
         <section className="sk-process" id="process">
           <div className="section sk-process-inner">
             <div className="sk-section-title">
-              <h2>How we work</h2>
+              <h2>The Softkore Digital Operating System</h2>
             </div>
             <div className="sk-steps">
               {steps.map((step) => (
@@ -182,6 +225,29 @@ export default function HomePage() {
               See selected work <span aria-hidden="true">-&gt;</span>
             </Link>
           </div>
+        </section>
+
+        <section className="sk-featured-work section">
+          <div className="sk-section-title">
+            <h2>Proof in the work, not the pitch.</h2>
+          </div>
+          <div className="sk-featured-case-grid">
+            {caseStudies.map((study, index) => (
+              <article className="sk-featured-case" key={study.title}>
+                <span>{String(index + 1).padStart(2, "0")} / {study.category}</span>
+                <h3>{study.title}</h3>
+                <p>{study.outcome}</p>
+                <ul>
+                  {study.signals.slice(0, 3).map((signal) => (
+                    <li key={signal}>{signal}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+          <Link prefetch={false} className="sk-text-link" href="/work/">
+            View case patterns <span aria-hidden="true">-&gt;</span>
+          </Link>
         </section>
 
         <section className="sk-proof section">

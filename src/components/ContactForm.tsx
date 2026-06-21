@@ -44,6 +44,7 @@ export function ContactForm() {
   const [businessName, setBusinessName] = useState("");
   const [priority, setPriority] = useState("");
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [submitted, setSubmitted] = useState(false);
 
   function validate() {
     const next: Record<string, string> = {};
@@ -60,20 +61,31 @@ export function ContactForm() {
   }
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
     if (!validate()) {
-      e.preventDefault();
       return;
     }
     setErrors({});
+    setSubmitted(true);
   }
 
+  const emailBody = encodeURIComponent(
+    [
+      `Project type: ${projectType}`,
+      `Workflow support: ${aiAgentNeed}`,
+      `Timeline: ${timeline}`,
+      `Investment range: ${investment}`,
+      `Website or business: ${businessName}`,
+      "",
+      "What should improve first?",
+      priority,
+    ].join("\n"),
+  );
+
   return (
-    <>
+    <div className="contact-form-shell">
       <form
         className="contact-form"
-        action="mailto:info@softkoredigital.co.za"
-        method="post"
-        encType="text/plain"
         onSubmit={handleSubmit}
         noValidate
       >
@@ -152,13 +164,29 @@ export function ContactForm() {
           ) : null}
         </label>
         <button className="button button-primary" type="submit">
-          Send Project Brief
+          Prepare Project Brief
         </button>
       </form>
-      <p className="form-note">
-        Your email client will open with the details pre-filled so you can
-        review before sending.
-      </p>
-    </>
+      {submitted ? (
+        <div className="form-success" role="status">
+          <strong>Brief prepared.</strong>
+          <p>
+            Send it to Softkore so we can review the structure, conversion path,
+            and best next move.
+          </p>
+          <a
+            className="button button-dark-secondary"
+            href={`mailto:info@softkoredigital.co.za?subject=Softkore project brief&body=${emailBody}`}
+          >
+            Open email
+          </a>
+        </div>
+      ) : (
+        <p className="form-note">
+          This prepares a clean project brief first. You can review it before
+          sending anything to Softkore.
+        </p>
+      )}
+    </div>
   );
 }
