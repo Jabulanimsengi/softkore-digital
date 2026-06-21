@@ -1,30 +1,51 @@
 "use client";
 
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
+
+const revealSelectors = [
+  ".sk-home .sk-section-title",
+  ".sk-home .sk-service-row",
+  ".sk-home .sk-step",
+  ".sk-home .sk-proof-item",
+  ".sk-home .sk-focus > div",
+  ".sk-home .sk-contact-copy",
+  ".sk-home .sk-contact .contact-form",
+  ".sk-home .form-note",
+  ".page-hero .breadcrumb",
+  ".page-hero h1",
+  ".page-hero p",
+  ".page-hero .hero-actions",
+  ".page-summary",
+  ".section-heading",
+  ".content-copy > *",
+  ".content-panel > *",
+  ".service-grid > *",
+  ".package-grid > *",
+  ".seo-grid > *",
+  ".work-grid > *",
+  ".case-grid > *",
+  ".timeline > *",
+  ".local-insight-grid > *",
+  ".proof-list > li",
+  ".content-list > li",
+  ".area-list > a",
+  ".faq-list > *",
+  ".conversion-band > *",
+  ".maintenance-card > *",
+  ".final-panel > *",
+  ".image-story-card",
+  ".traffic-card",
+  ".dashboard-shell",
+  ".floating-card",
+].join(",");
 
 export function ScrollReveal() {
+  const pathname = usePathname();
+
   useEffect(() => {
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const targets = document.querySelectorAll(
-      [
-        "main:not(.sk-home) > section",
-        ".sk-home .sk-section-title",
-        ".sk-home .sk-service-row",
-        ".sk-home .sk-step",
-        ".sk-home .sk-proof-item",
-        ".sk-home .sk-focus > div",
-        ".sk-home .sk-contact-copy",
-        ".sk-home .sk-contact .contact-form",
-        ".sk-home .form-note",
-        ".service-card",
-        ".content-card",
-        ".proof-list li",
-        ".area-list a",
-        ".case-card",
-        ".faq-item",
-        ".conversion-band",
-      ].join(","),
-    );
+    const targets = Array.from(document.querySelectorAll(revealSelectors));
 
     if (reduceMotion.matches) {
       targets.forEach((target) => target.classList.add("is-visible"));
@@ -48,7 +69,7 @@ export function ScrollReveal() {
     targets.forEach((target) => observer.observe(target));
 
     return () => observer.disconnect();
-  }, []);
+  }, [pathname]);
 
   return null;
 }
