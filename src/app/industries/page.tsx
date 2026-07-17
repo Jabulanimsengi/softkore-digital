@@ -1,138 +1,57 @@
-import Link from "next/link";
 import type { Metadata } from "next";
-import { aiAgentIndustryPages, aiAgentIndustryUrl } from "@/data/ai-agents";
-import { industries } from "@/data/industries";
+import Link from "next/link";
 import { PageHeroImage } from "@/components/PageHeroImage";
-import { LinkList } from "@/components/PageSections";
-import { absoluteUrl } from "@/lib/site";
+import { ConversionBand } from "@/components/PageSections";
+import { industries, industryUrl } from "@/data/industries";
 import { breadcrumbSchema, JsonLd } from "@/lib/schema";
+import { absoluteUrl } from "@/lib/site";
+import { industryImages } from "@/lib/site-images";
 
 export const metadata: Metadata = {
-  title: "Industries We Support",
-  description:
-    "Industry-specific websites, web applications, and SEO pages for South African healthcare, beauty, ecommerce, property, and legal businesses.",
-  alternates: {
-    canonical: "/industries/",
-  },
+  title: "Industries",
+  description: "Digital customer journeys and business systems shaped around how different industries attract and serve customers.",
+  alternates: { canonical: "/industries/" },
 };
 
 export default function IndustriesPage() {
   return (
     <>
-      <JsonLd
-        data={breadcrumbSchema([
-          { name: "Home", url: absoluteUrl("/") },
-          { name: "Industries", url: absoluteUrl("/industries/") },
-        ])}
-      />
+      <JsonLd data={breadcrumbSchema([{ name: "Home", url: absoluteUrl("/") }, { name: "Industries", url: absoluteUrl("/industries/") }])} />
       <main>
         <section className="section page-hero">
           <div className="page-hero-inner">
             <div>
-              <nav className="breadcrumb" aria-label="Breadcrumb">
-                <Link prefetch={false} href="/">Home</Link>
-                <span>/</span>
-                <span>Industries</span>
-              </nav>
-              <h1>Websites, Web Applications and SEO for Priority Industries</h1>
-              <p>
-                Different industries win customers in different ways. These
-                pages focus on markets where a better website, application, or
-                SEO plan can directly support enquiries and operations.
-              </p>
-              <div className="hero-actions">
-                <Link prefetch={false} className="button button-primary" href="/contact/">
-                  Discuss an Industry Page
-                </Link>
-                <Link prefetch={false} className="button button-secondary" href="/services/web-development/">
-                  View Services
-                </Link>
-              </div>
+              <nav className="breadcrumb" aria-label="Breadcrumb"><Link prefetch={false} href="/">Home</Link><span>/</span><span>Industries</span></nav>
+              <h1>Built around how your market actually works.</h1>
+              <p>Different businesses earn trust, complete transactions and deliver value in different ways.</p>
+              <div className="hero-actions"><Link prefetch={false} className="button button-primary" href="/contact/">Discuss your business</Link><Link prefetch={false} className="button button-secondary" href="/services/">View solutions</Link></div>
             </div>
-            <aside className="page-summary page-summary-media">
-              <PageHeroImage imageKey="industries" />
-              <strong>Current priority set</strong>
-              <ul>
-                <li>{industries.length} industry pages</li>
-                <li>Website, SEO and app pathways</li>
-                <li>Internal links to related services</li>
-                <li>Expandable by priority market</li>
-              </ul>
-            </aside>
+            <aside className="page-summary page-summary-media"><PageHeroImage imageKey="industries" /><strong>One connected view</strong><ul><li>Customer expectations</li><li>Trust and conversion</li><li>Daily workflows</li><li>Search opportunity</li></ul></aside>
           </div>
         </section>
 
-        <section className="section areas-section">
-          <h2>Priority Industry Pages</h2>
-          <p className="section-intro">
-            We are starting with a small set of high-intent industry pages so
-            each one can be useful, specific, and properly connected.
-          </p>
-          <LinkList
-            items={industries.map((industry) => ({
-              label: industry.name,
-              href: `/industries/${industry.slug}/`,
-            }))}
-          />
+        <section className="section visual-directory">
+          {industries.map((industry, index) => {
+            const image = industryImages[industry.slug];
+
+            return (
+              <Link prefetch={false} key={industry.slug} href={industryUrl(industry)}>
+                <figure className={image ? undefined : `directory-art directory-art-${index + 1}`}>
+                  {image ? (
+                    <img src={image.src} alt={image.alt} loading="lazy" decoding="async" />
+                  ) : (
+                    <><i aria-hidden="true" /><b aria-hidden="true" /><em aria-hidden="true" /></>
+                  )}
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                </figure>
+                <div><p className="simple-label">{industry.category}</p><h2>{industry.name}</h2><p>{industry.intro}</p><strong>Explore industry -&gt;</strong></div>
+              </Link>
+            );
+          })}
         </section>
 
-        <section className="section content-section">
-          <div className="content-grid">
-            <div className="content-copy">
-              <h2>Why industry pages matter</h2>
-              <p>
-                A medical practice, salon, ecommerce store, law firm, and real
-                estate agency do not persuade customers in the same way. Each
-                market has different trust signals, workflows, search intent,
-                and conversion paths.
-              </p>
-              <p>
-                The goal is not to generate hundreds of pages. The goal is to
-                build selected pages that explain the customer journey and point
-                visitors toward the right service.
-              </p>
-            </div>
-            <div className="content-panel">
-              <article className="content-card">
-                <h3>Sharper positioning</h3>
-                <p>
-                  Industry-specific pages make it easier for serious buyers to
-                  see how the website or app fits their business model.
-                </p>
-              </article>
-              <article className="content-card">
-                <h3>Better internal links</h3>
-                <p>
-                  Industry pages connect naturally to web development, SEO,
-                  custom applications, and priority local pages.
-                </p>
-              </article>
-              <article className="content-card">
-                <h3>Cleaner SEO rollout</h3>
-                <p>
-                  A small typed page set is easier to improve, measure, and
-                  expand than a large duplicated static footprint.
-                </p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section className="section areas-section">
-          <h2>AI Agent Planning by Industry</h2>
-          <p className="section-intro">
-            For teams that want to reduce repetitive admin and improve customer
-            handoffs, these pages show practical starting points.
-          </p>
-          <LinkList
-            items={aiAgentIndustryPages.map((page) => ({
-              label: page.name,
-              href: aiAgentIndustryUrl(page),
-            }))}
-          />
-        </section>
+        <ConversionBand title="Build around the way your business really wins and delivers." text="We will connect the right customer journey, transaction and operational tools." primaryLabel="Discuss Your Business" secondaryHref="/services/" secondaryLabel="Explore Solutions" />
       </main>
     </>
   );
 }
-

@@ -31,7 +31,7 @@ export async function generateMetadata({
   const url = aiAgentIndustryUrl(page);
 
   return {
-    title: page.metaTitle,
+    title: { absolute: page.metaTitle },
     description: page.description,
     alternates: {
       canonical: url,

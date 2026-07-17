@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import Link from "next/link";
 
 export function CardGrid({
@@ -94,6 +95,26 @@ export function PageSignalPanel({
   );
 }
 
+export function DeepDive({
+  label = "More detail",
+  summary,
+  children,
+}: {
+  label?: string;
+  summary?: string;
+  children: ReactNode;
+}) {
+  return (
+    <details className="deep-dive section">
+      <summary>
+        <span>{label}</span>
+        {summary ? <small>{summary}</small> : null}
+        <i aria-hidden="true">+</i>
+      </summary>
+      <div className="deep-dive-body">{children}</div>
+    </details>
+  );
+}
 export function ConversionBand({
   title,
   text,

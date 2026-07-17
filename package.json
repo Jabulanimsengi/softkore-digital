@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev",
+    "dev": "node tools/clean-next.mjs && next dev",
+    "dev:cached": "next dev",
     "dev:fresh": "node tools/clean-next.mjs && next dev",
     "build": "next build",
     "start": "next start",
@@ -17,7 +18,8 @@
     "submit:indexnow": "node tools/submit-indexnow.mjs",
     "generate:redirects": "node tools/generate-redirects.mjs",
     "validate:redirects": "node tools/validate-redirects.mjs",
-    "validate:export": "node tools/validate-next-export.mjs"
+    "validate:export": "node tools/validate-next-export.mjs",
+    "audit:images": "node tools/audit-site-images.mjs"
   },
   "dependencies": {
     "next": "^15.3.2",

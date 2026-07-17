@@ -1,7 +1,11 @@
 import { rm } from "node:fs/promises";
 import path from "node:path";
 
-const nextDir = path.join(process.cwd(), ".next");
+const buildDirs = [".next", ".next-dev"].map((directory) =>
+  path.join(process.cwd(), directory),
+);
 
-await rm(nextDir, { force: true, recursive: true });
-console.log("Removed stale Next build cache.");
+await Promise.all(
+  buildDirs.map((directory) => rm(directory, { force: true, recursive: true })),
+);
+console.log("Removed stale Next build caches.");

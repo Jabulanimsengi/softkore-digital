@@ -2,191 +2,55 @@
 
 import { useState } from "react";
 
-const projectTypes = [
-  "Website review",
-  "New website",
-  "SEO growth",
-  "Custom web application",
-  "Enterprise system",
-  "Cloud or hosting",
-  "Automation workflow",
-  "Website improvements",
-  "Ongoing website care",
+const needs = [
+  "A better website",
+  "More visibility",
+  "Bookings or payments",
+  "An internal system",
+  "Not sure yet",
 ];
 
-const aiAgentOptions = [
-  "Not sure yet",
-  "Yes, include an AI agent",
-  "Maybe later",
-  "No AI agent needed",
-];
-
-const timelines = [
-  "Not sure yet",
-  "This month",
-  "1-3 months",
-  "3+ months",
-];
-
-const investmentRanges = [
-  "Not sure yet",
-  "Under R15k",
-  "R15k-R35k",
-  "R35k-R75k",
-  "R75k+",
-];
+const budgets = ["Still exploring", "Under R25,000", "R25,000 - R75,000", "R75,000 - R150,000", "R150,000+"];
 
 export function ContactForm() {
-  const [projectType, setProjectType] = useState("Website review");
-  const [aiAgentNeed, setAiAgentNeed] = useState("Not sure yet");
-  const [timeline, setTimeline] = useState("Not sure yet");
-  const [investment, setInvestment] = useState("Not sure yet");
-  const [businessName, setBusinessName] = useState("");
-  const [priority, setPriority] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [need, setNeed] = useState(needs[0]);
+  const [business, setBusiness] = useState("");
+  const [budget, setBudget] = useState(budgets[0]);
+  const [detail, setDetail] = useState("");
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitted, setSubmitted] = useState(false);
 
-  function validate() {
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
     const next: Record<string, string> = {};
-    if (!businessName.trim()) {
-      next.businessName = "Please enter your website or business name.";
-    }
-    if (!priority.trim()) {
-      next.priority = "Let us know what should improve first.";
-    } else if (priority.trim().length < 10) {
-      next.priority = "A few more details will help us prepare better.";
-    }
+    if (!name.trim()) next.name = "Add your name.";
+    if (!/^\S+@\S+\.\S+$/.test(email.trim())) next.email = "Add a valid email address.";
+    if (!business.trim()) next.business = "Add your business or website name.";
+    if (detail.trim().length < 10) next.detail = "Tell us a little more about the friction.";
     setErrors(next);
-    return Object.keys(next).length === 0;
+    setSubmitted(Object.keys(next).length === 0);
   }
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    if (!validate()) {
-      return;
-    }
-    setErrors({});
-    setSubmitted(true);
-  }
-
-  const emailBody = encodeURIComponent(
-    [
-      `Project type: ${projectType}`,
-      `Workflow support: ${aiAgentNeed}`,
-      `Timeline: ${timeline}`,
-      `Investment range: ${investment}`,
-      `Website or business: ${businessName}`,
-      "",
-      "What should improve first?",
-      priority,
-    ].join("\n"),
-  );
+  const emailBody = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nBusiness: ${business}\nNeed: ${need}\nBudget: ${budget}\n\nWhat should move better?\n${detail}`);
 
   return (
     <div className="contact-form-shell">
-      <form
-        className="contact-form"
-        onSubmit={handleSubmit}
-        noValidate
-      >
-        <label>
-          Project type
-          <select
-            name="project_type"
-            value={projectType}
-            onChange={(e) => setProjectType(e.target.value)}
-          >
-            {projectTypes.map((type) => (
-              <option key={type}>{type}</option>
-            ))}
-          </select>
-        </label>
-        <label>
-          Workflow support
-          <select
-            name="ai_agent_support"
-            value={aiAgentNeed}
-            onChange={(e) => setAiAgentNeed(e.target.value)}
-          >
-            {aiAgentOptions.map((option) => (
-              <option key={option}>{option}</option>
-            ))}
-          </select>
-        </label>
-        <div className="form-row">
-          <label>
-            Timeline
-            <select
-              name="timeline"
-              value={timeline}
-              onChange={(e) => setTimeline(e.target.value)}
-            >
-              {timelines.map((option) => (
-                <option key={option}>{option}</option>
-              ))}
-            </select>
-          </label>
-          <label>
-            Investment range
-            <select
-              name="investment_range"
-              value={investment}
-              onChange={(e) => setInvestment(e.target.value)}
-            >
-              {investmentRanges.map((option) => (
-                <option key={option}>{option}</option>
-              ))}
-            </select>
-          </label>
+      <form className="contact-form" onSubmit={handleSubmit} noValidate aria-describedby="contact-form-note">
+        <div className="contact-form-row">
+          <label htmlFor="contact-name">Your name<input id="contact-name" name="name" autoComplete="name" value={name} onChange={(event) => setName(event.target.value)} aria-invalid={Boolean(errors.name)} aria-describedby={errors.name ? "contact-name-error" : undefined} />{errors.name ? <span className="field-error" id="contact-name-error">{errors.name}</span> : null}</label>
+          <label htmlFor="contact-email">Email address<input id="contact-email" name="email" type="email" autoComplete="email" value={email} onChange={(event) => setEmail(event.target.value)} aria-invalid={Boolean(errors.email)} aria-describedby={errors.email ? "contact-email-error" : undefined} />{errors.email ? <span className="field-error" id="contact-email-error">{errors.email}</span> : null}</label>
         </div>
-        <label>
-          Website or business name
-          <input
-            name="website_or_business"
-            type="text"
-            value={businessName}
-            onChange={(e) => setBusinessName(e.target.value)}
-          />
-          {errors.businessName ? (
-            <span className="field-error">{errors.businessName}</span>
-          ) : null}
-        </label>
-        <label>
-          What should improve first?
-          <textarea
-            name="priority"
-            rows={4}
-            value={priority}
-            onChange={(e) => setPriority(e.target.value)}
-          />
-          {errors.priority ? (
-            <span className="field-error">{errors.priority}</span>
-          ) : null}
-        </label>
-        <button className="button button-primary" type="submit">
-          Prepare Project Brief
-        </button>
+        <div className="contact-form-row">
+          <label htmlFor="contact-business">Business or website<input id="contact-business" name="business" autoComplete="organization" value={business} onChange={(event) => setBusiness(event.target.value)} aria-invalid={Boolean(errors.business)} aria-describedby={errors.business ? "contact-business-error" : undefined} />{errors.business ? <span className="field-error" id="contact-business-error">{errors.business}</span> : null}</label>
+          <label htmlFor="contact-need">Service of interest<select id="contact-need" name="need" value={need} onChange={(event) => setNeed(event.target.value)}>{needs.map((item) => <option key={item}>{item}</option>)}</select></label>
+        </div>
+        <label htmlFor="contact-budget">Indicative budget range<select id="contact-budget" name="budget" value={budget} onChange={(event) => setBudget(event.target.value)}>{budgets.map((item) => <option key={item}>{item}</option>)}</select></label>
+        <label htmlFor="contact-detail">What should move better?<textarea id="contact-detail" name="detail" rows={5} value={detail} onChange={(event) => setDetail(event.target.value)} aria-invalid={Boolean(errors.detail)} aria-describedby={errors.detail ? "contact-detail-error" : undefined} />{errors.detail ? <span className="field-error" id="contact-detail-error">{errors.detail}</span> : null}</label>
+        <button className="simple-button simple-button-dark" type="submit">Review message <span aria-hidden="true">→</span></button>
       </form>
-      {submitted ? (
-        <div className="form-success" role="status">
-          <strong>Brief prepared.</strong>
-          <p>
-            Send it to Softkore so we can review the structure, conversion path,
-            and best next move.
-          </p>
-          <a
-            className="button button-dark-secondary"
-            href={`mailto:info@softkoredigital.co.za?subject=Softkore project brief&body=${emailBody}`}
-          >
-            Open email
-          </a>
-        </div>
-      ) : (
-        <p className="form-note">
-          This prepares a clean project brief first. You can review it before
-          sending anything to Softkore.
-        </p>
-      )}
+      {submitted ? <div className="form-success" role="status"><strong>Your message is ready to send.</strong><p>We have prepared it in your email app so you can review everything first.</p><a className="simple-link" href={`mailto:info@softkoredigital.co.za?subject=Softkore project enquiry&body=${emailBody}`}>Open email <span>→</span></a></div> : <p className="form-note" id="contact-form-note">Nothing is sent until you review the prepared email.</p>}
     </div>
   );
 }

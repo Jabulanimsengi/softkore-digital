@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { AiAgentIndustryPage } from "@/data/ai-agents";
-import { CardGrid, FaqList, LinkList, ProofList } from "@/components/PageSections";
+import { CardGrid, ConversionBand, DeepDive, FaqList, LinkList, ProofList } from "@/components/PageSections";
 
 export function AiAgentTemplate({ page }: { page: AiAgentIndustryPage }) {
   return (
@@ -9,102 +9,59 @@ export function AiAgentTemplate({ page }: { page: AiAgentIndustryPage }) {
         <div className="page-hero-inner">
           <div>
             <nav className="breadcrumb" aria-label="Breadcrumb">
-              <Link prefetch={false} href="/">Home</Link>
-              <span>/</span>
-              <Link prefetch={false} href="/ai-agents/">AI Agents</Link>
-              <span>/</span>
+              <Link prefetch={false} href="/">Home</Link><span>/</span>
+              <Link prefetch={false} href="/ai-agents/">AI agents</Link><span>/</span>
               <span>{page.name}</span>
             </nav>
             <h1>{page.h1}</h1>
             <p>{page.intro}</p>
             <div className="hero-actions">
-              <Link prefetch={false} className="button button-primary" href="/contact/">
-                Plan an AI Agent
-              </Link>
-              <Link prefetch={false} className="button button-secondary" href="/ai-agents/">
-                View Industries
-              </Link>
+              <Link prefetch={false} className="button button-primary" href="/contact/">Plan an AI agent</Link>
+              <Link prefetch={false} className="button button-secondary" href="/ai-agents/">View workflows</Link>
             </div>
           </div>
-          <aside className="page-summary">
+          <aside className="page-summary page-summary-media">
+            <div className="page-code-visual page-code-visual-ai" aria-hidden="true"><span /><span /><span /><i /></div>
             <strong>{page.category}</strong>
-            <ul>
-              {page.summary.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
+            <ul>{page.summary.slice(0, 4).map((item) => <li key={item}>{item}</li>)}</ul>
           </aside>
         </div>
       </section>
 
-      <section className="section content-section">
-        <div className="content-grid">
-          <div className="content-copy">
-            <h2>Where an agent can help first</h2>
-            <p>{page.operatingReality}</p>
-            <p>{page.adoptionFocus}</p>
-          </div>
-          <div className="content-panel">
-            <CardGrid items={page.agentIdeas} />
-          </div>
+      <section className="section simple-detail">
+        <div>
+          <p className="simple-label">Start with one useful workflow</p>
+          <h2>Where an agent can help first.</h2>
+          <p>{page.operatingReality}</p>
+          <p>{page.adoptionFocus}</p>
         </div>
+        <div className="simple-detail-cards"><CardGrid items={page.agentIdeas.slice(0, 3)} /></div>
       </section>
 
-      <section className="section local-proof-section">
-        <div className="section-heading">
-          <h2>Practical Workflows</h2>
-          <p className="section-intro">
-            We design agents around the small handoffs that happen every day:
-            enquiries, reminders, document requests, summaries, and approvals.
-          </p>
-        </div>
-        <div className="local-insight-grid">
-          <CardGrid items={page.workflowExamples} />
-        </div>
+      <section className="section simple-feature-row">
+        <div><p className="simple-label">Practical workflows</p><h2>Small handoffs, handled better.</h2></div>
+        <div className="local-insight-grid"><CardGrid items={page.workflowExamples.slice(0, 3)} /></div>
       </section>
 
-      <section className="section local-proof-section">
-        <div className="content-grid">
-          <div className="content-copy">
-            <h2>How we introduce it carefully</h2>
-            <p>
-              The first version should be narrow, useful, and easy for your
-              team to supervise. Once the workflow is trusted, it can be
-              connected to more systems and more customer touchpoints.
-            </p>
+      <DeepDive label="How we introduce AI carefully" summary="Adoption, safeguards, related planning and common questions">
+        <section className="deep-dive-section">
+          <div className="content-grid">
+            <div className="content-copy"><h2>Keep the team in control</h2><p>The first version should be narrow, useful and easy to supervise.</p></div>
+            <ProofList items={page.adoptionSteps} />
           </div>
-          <ProofList items={page.adoptionSteps} />
-        </div>
-      </section>
+        </section>
+        <section className="deep-dive-section"><h2>Guardrails</h2><div className="local-insight-grid"><CardGrid items={page.safeguards} /></div></section>
+        <section className="deep-dive-section"><h2>Related planning</h2><LinkList items={page.related} /></section>
+        <section className="deep-dive-section"><h2>Common questions</h2><FaqList items={page.faqs} /></section>
+      </DeepDive>
 
-      <section className="section content-section">
-        <div className="content-grid">
-          <div className="content-copy">
-            <h2>Guardrails matter</h2>
-            <p>
-              AI agents should not guess, overpromise, expose private data, or
-              replace professional judgement. We build the boundaries before we
-              build the conversation.
-            </p>
-          </div>
-          <div className="content-panel">
-            <CardGrid items={page.safeguards} />
-          </div>
-        </div>
-      </section>
-
-      <section className="section areas-section">
-        <h2>Related Planning</h2>
-        <LinkList items={page.related} />
-      </section>
-
-      <section className="section faq-section">
-        <div className="section-heading">
-          <h2>Common Questions</h2>
-        </div>
-        <FaqList items={page.faqs} />
-      </section>
+      <ConversionBand
+        title="Start with one workflow worth improving."
+        text="We will map the handoff, define the guardrails and shape a focused agent your team can trust."
+        primaryLabel="Plan an AI Agent"
+        secondaryHref="/ai-agents/"
+        secondaryLabel="Explore AI Workflows"
+      />
     </main>
   );
 }
-

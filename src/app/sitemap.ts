@@ -15,6 +15,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: `${site.domain}/services/`,
+      priority: 0.92,
+    },
+    {
+      url: `${site.domain}/work/`,
+      priority: 0.86,
+    },
+    {
+      url: `${site.domain}/about/`,
+      priority: 0.8,
+    },
+    {
+      url: `${site.domain}/contact/`,
+      priority: 0.82,
+    },
+    {
       url: `${site.domain}/industries/`,
       priority: 0.82,
     },

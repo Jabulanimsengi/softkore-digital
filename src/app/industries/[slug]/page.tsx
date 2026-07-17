@@ -5,6 +5,7 @@ import { IndustryTemplate } from "@/components/IndustryTemplate";
 import { absoluteUrl } from "@/lib/site";
 import { breadcrumbSchema, faqSchema, JsonLd } from "@/lib/schema";
 import { site } from "@/lib/site";
+import { industryImages } from "@/lib/site-images";
 
 type IndustryRouteProps = {
   params: Promise<{ slug: string }>;
@@ -25,9 +26,10 @@ export async function generateMetadata({
   }
 
   const url = industryUrl(industry);
+  const image = industryImages[industry.slug];
 
   return {
-    title: industry.metaTitle,
+    title: { absolute: industry.metaTitle },
     description: industry.description,
     alternates: {
       canonical: url,
@@ -36,13 +38,13 @@ export async function generateMetadata({
       title: industry.metaTitle,
       description: industry.description,
       url,
-      images: ["/logo.png"],
+      images: image ? [{ url: image.src, alt: image.alt }] : ["/logo.png"],
     },
     twitter: {
       card: "summary_large_image",
       title: industry.metaTitle,
       description: industry.description,
-      images: ["/logo.png"],
+      images: image ? [image.src] : ["/logo.png"],
     },
   };
 }

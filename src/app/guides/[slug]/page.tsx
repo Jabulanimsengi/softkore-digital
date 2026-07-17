@@ -25,7 +25,7 @@ export async function generateMetadata({
   const url = guideUrl(guide);
 
   return {
-    title: guide.metaTitle,
+    title: { absolute: guide.metaTitle },
     description: guide.description,
     alternates: {
       canonical: url,

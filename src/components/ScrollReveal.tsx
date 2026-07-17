@@ -44,6 +44,24 @@ const revealSelectors = [
   ".traffic-card",
   ".dashboard-shell",
   ".floating-card",
+  ".stitch-hero-copy > *",
+  ".stitch-hero-media",
+  ".stitch-trust-band span",
+  ".stitch-section-heading > *",
+  ".stitch-service-grid > *",
+  ".stitch-work-grid > *",
+  ".stitch-process ol > *",
+  ".stitch-cta > *",
+  ".services-bento > *",
+  ".services-connection > *",
+  ".solution-summary-card > *",
+  ".solution-intro > *",
+  ".solution-feature-grid > *",
+  ".solution-process > *",
+  ".solution-support-grid > *",
+  ".contact-heading > *",
+  ".contact-layout > *",
+  ".contact-lower > *",
 ].join(",");
 
 export function ScrollReveal() {
@@ -58,7 +76,18 @@ export function ScrollReveal() {
       return;
     }
 
-    targets.forEach((target) => target.classList.add("scroll-reveal"));
+    const siblingIndexes = new WeakMap<Node, number>();
+
+    targets.forEach((target) => {
+      target.classList.add("scroll-reveal");
+
+      const parent = target.parentNode;
+      if (!parent) return;
+
+      const index = siblingIndexes.get(parent) ?? 0;
+      siblingIndexes.set(parent, index + 1);
+      (target as HTMLElement).style.setProperty("--reveal-delay", `${Math.min(index * 70, 280)}ms`);
+    });
 
     const observer = new IntersectionObserver(
       (entries) => {

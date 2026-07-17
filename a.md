@@ -1,6 +1,6 @@
-# SoftKore Digital Working Instructions
+# Softkore Technologies Working Instructions
 
-These instructions should be followed when working on the SoftKore Digital site.
+These instructions should be followed when working on the Softkore Technologies site.
 
 ## Source of Truth
 

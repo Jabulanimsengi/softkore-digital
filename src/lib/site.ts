@@ -1,9 +1,9 @@
 export const site = {
-  name: "Softkore Technologies",
+  name: "SoftKore Digital",
   domain: "https://www.softkoredigital.co.za",
   email: "info@softkoredigital.co.za",
   description:
-    "Softkore Technologies builds modern websites, SEO systems, web applications, cloud infrastructure, and digital platforms for businesses that want to grow online.",
+    "SoftKore Digital develops websites, business systems, and online growth solutions that help growing businesses operate efficiently, reach more customers, and scale with confidence.",
   logo: "https://www.softkoredigital.co.za/logo.png",
 };
 

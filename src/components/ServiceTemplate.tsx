@@ -1,121 +1,52 @@
 import Link from "next/link";
 import type { ServicePage } from "@/data/services";
-import {
-  CardGrid,
-  ConversionBand,
-  FaqList,
-  LinkList,
-  PageSignalPanel,
-  ProofList,
-} from "@/components/PageSections";
+import { UiIcon, type UiIconName } from "@/components/UiIcon";
+import { ConversionBand, FaqList, LinkList } from "@/components/PageSections";
+
+const featureIcons: UiIconName[] = ["workflow", "layers", "chart", "calendar", "code", "shield"];
 
 export function ServiceTemplate({ service }: { service: ServicePage }) {
   return (
-    <main>
-      <section className="section page-hero">
-        <div className="page-hero-inner">
-          <div>
-            <nav className="breadcrumb" aria-label="Breadcrumb">
-              <Link prefetch={false} href="/">Home</Link>
-              <span>/</span>
-              <span>{service.eyebrow}</span>
-            </nav>
-            <h1>{service.h1}</h1>
-            <p>{service.intro}</p>
-            <div className="hero-actions">
-              <Link prefetch={false} className="button button-primary" href="/contact/">
-                {service.primaryCta}
-              </Link>
-              <Link prefetch={false} className="button button-secondary" href={service.secondaryHref}>
-                {service.secondaryCta}
-              </Link>
-            </div>
-          </div>
-          <PageSignalPanel title={service.summaryTitle} items={service.summary} />
+    <main className="stitch-page solution-detail-page">
+      <section className="section stitch-hero solution-detail-hero">
+        <div className="stitch-hero-copy">
+          <nav className="breadcrumb" aria-label="Breadcrumb"><Link prefetch={false} href="/">Home</Link><span>/</span><Link prefetch={false} href="/services/">Services</Link><span>/</span><span>{service.eyebrow}</span></nav>
+          <p className="stitch-kicker">{service.eyebrow}</p>
+          <h1>{service.h1}</h1>
+          <p className="stitch-lead">{service.intro}</p>
+          <div className="stitch-actions"><Link prefetch={false} className="button button-primary" href="/contact/">{service.primaryCta} <UiIcon name="arrow" /></Link><Link prefetch={false} className="button button-secondary" href={service.secondaryHref}>{service.secondaryCta}</Link></div>
+        </div>
+        <aside className="solution-summary-card">
+          <span className="stitch-icon"><UiIcon name="workflow" /></span>
+          <p className="stitch-kicker">Included capabilities</p>
+          <h2>{service.summaryTitle}</h2>
+          <ul>{service.summary.map((item) => <li key={item}><UiIcon name="arrow" />{item}</li>)}</ul>
+        </aside>
+      </section>
+
+      <section className="section solution-intro">
+        <div className="stitch-section-heading"><p className="stitch-kicker">What this changes</p><h2>{service.bodyHeading}</h2></div>
+        <div className="solution-intro-copy">{service.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
+      </section>
+
+      <section className="section solution-feature-section">
+        <div className="stitch-section-heading stitch-section-heading-center"><p className="stitch-kicker">What we can build</p><h2>{service.featureTitle}</h2><p>{service.featureIntro}</p></div>
+        <div className="solution-feature-grid">
+          {service.features.map((feature, index) => <article className={`solution-feature-card solution-feature-card-${index + 1}`} key={feature.title}><span className="stitch-icon"><UiIcon name={featureIcons[index] ?? "layers"} /></span><h3>{feature.title}</h3><p>{feature.text}</p></article>)}
         </div>
       </section>
 
-      <section className="section content-section">
-        <div className="content-grid">
-          <div className="content-copy">
-            <h2>{service.bodyHeading}</h2>
-            {service.body.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
-            <ul className="content-list">
-              {service.bullets.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </div>
-          <div className="content-panel">
-            <CardGrid items={service.cards} />
-          </div>
-        </div>
+      <section className="section solution-process">
+        <div className="stitch-section-heading"><p className="stitch-kicker">Our approach</p><h2>{service.processTitle}</h2>{service.processBody.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
+        <ol>{service.processItems.map((item, index) => <li key={item.title}><span>{String(index + 1).padStart(2, "0")}</span><div><h3>{item.title}</h3><p>{item.text}</p></div></li>)}</ol>
       </section>
 
-      <section className="section local-proof-section">
-        <div className="section-heading">
-          <h2>{service.featureTitle}</h2>
-          <p className="section-intro">{service.featureIntro}</p>
-        </div>
-        <div className="local-insight-grid">
-          <CardGrid items={service.features} />
-        </div>
+      <section className="section solution-support-grid">
+        <div><p className="stitch-kicker">Related solutions</p><h2>Connect the next part of the journey.</h2><LinkList items={service.related} /></div>
+        <div><p className="stitch-kicker">Common questions</p><h2>Useful answers before we start.</h2><FaqList items={service.faqs} /></div>
       </section>
 
-      <section className="section local-proof-section">
-        <div className="content-grid">
-          <div className="content-copy">
-            <h2>{service.processTitle}</h2>
-            {service.processBody.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
-          </div>
-          <ProofList items={service.processItems} />
-        </div>
-      </section>
-
-      <section className="section areas-section">
-        <h2>Related Services</h2>
-        <LinkList items={service.related} />
-      </section>
-
-      <ConversionBand
-        title={`Need ${service.title.toLowerCase()} that is easier to trust and act on?`}
-        text="Send us the current website, the pages that matter most, and what you want visitors to do. We will help shape the next practical step."
-        primaryLabel={service.primaryCta}
-        secondaryHref="/guides/website-prices-south-africa/"
-        secondaryLabel="View Planning Guide"
-      />
-
-      <section className="section faq-section">
-        <div className="section-heading">
-          <h2>{service.title} FAQs</h2>
-        </div>
-        <FaqList items={service.faqs} />
-      </section>
-
-      <section className="section final-cta" id="contact">
-        <div className="final-panel">
-          <div>
-            <h2>Ready to plan the next version?</h2>
-            <p>
-              SoftKore Digital can help you turn the current website into a
-              cleaner, faster, and easier-to-grow digital foundation.
-            </p>
-            <a className="contact-line" href="mailto:info@softkoredigital.co.za">
-              info@softkoredigital.co.za
-            </a>
-          </div>
-          <div className="final-actions">
-            <a className="button button-primary" href="mailto:info@softkoredigital.co.za">
-              Start a Project
-            </a>
-          </div>
-        </div>
-      </section>
+      <ConversionBand title="Build the simplest system that moves the business forward." text="Tell us what should work better. We will help shape the right next move." primaryLabel={service.primaryCta} secondaryHref="/work/" secondaryLabel="See Our Work" />
     </main>
   );
 }
-

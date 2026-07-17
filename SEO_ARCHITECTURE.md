@@ -1,8 +1,8 @@
-# SoftKore Digital SEO Architecture & Keyword Strategy
+# Softkore Technologies SEO Architecture & Keyword Strategy
 
 ## 1. Strategic Diagnosis
 
-SoftKore Digital currently presents all services on one homepage. That is good for brand clarity, but weak for organic growth because one page cannot deeply satisfy separate search intents such as:
+Softkore Technologies currently presents all services on one homepage. That is good for brand clarity, but weak for organic growth because one page cannot deeply satisfy separate search intents such as:
 
 - "web development agency South Africa"
 - "SEO services Johannesburg"
@@ -324,7 +324,7 @@ The best next implementation step is:
 4. Add an "Areas We Serve" block to the homepage.
 5. Add sitemap, robots, canonical metadata, and Organization schema.
 
-This gives SoftKore Digital a scalable SEO foundation without rushing into thin local pages.
+This gives Softkore Technologies a scalable SEO foundation without rushing into thin local pages.
 
 ## 9. Quality Rules
 

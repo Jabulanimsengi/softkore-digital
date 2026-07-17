@@ -1,69 +1,57 @@
 import Link from "next/link";
+import { PageHeroImage } from "@/components/PageHeroImage";
 import type { GuidePage } from "@/data/guides";
-import { FaqList, LinkList, PageSignalPanel } from "@/components/PageSections";
+import { guideImages } from "@/lib/site-images";
+import { ConversionBand, DeepDive, FaqList, LinkList } from "@/components/PageSections";
 
 export function GuideTemplate({ guide }: { guide: GuidePage }) {
+  const image = guideImages[guide.slug];
   return (
     <main>
       <section className="section page-hero">
         <div className="page-hero-inner">
           <div>
             <nav className="breadcrumb" aria-label="Breadcrumb">
-              <Link prefetch={false} href="/">Home</Link>
-              <span>/</span>
-              <Link prefetch={false} href="/guides/">Guides</Link>
-              <span>/</span>
+              <Link prefetch={false} href="/">Home</Link><span>/</span>
+              <Link prefetch={false} href="/guides/">Insights</Link><span>/</span>
               <span>{guide.title}</span>
             </nav>
             <h1>{guide.title}</h1>
             <p>{guide.intro}</p>
             <div className="hero-actions">
-              <Link prefetch={false} className="button button-primary" href="/contact/">
-                Ask About This
-              </Link>
-              <Link prefetch={false} className="button button-secondary" href="/services/seo-services/">
-                View SEO Services
-              </Link>
+              <Link prefetch={false} className="button button-primary" href="/contact/">Ask about this</Link>
+              <Link prefetch={false} className="button button-secondary" href="/guides/">All insights</Link>
             </div>
           </div>
-          <PageSignalPanel title="Guide covers" items={guide.summary} />
+          <aside className="page-summary page-summary-media">
+            <PageHeroImage image={image} />
+            <strong>In this guide</strong>
+            <ul>{guide.summary.slice(0, 4).map((item) => <li key={item}>{item}</li>)}</ul>
+          </aside>
         </div>
       </section>
 
-      {guide.sections.map((section, index) => (
-        <section className="section content-section" key={section.title}>
-          <div className="content-grid">
-            <div className="content-copy">
-              <h2>{section.title}</h2>
-              {section.body.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
-              ))}
-            </div>
-            <div className="content-panel">
-              <article className="content-card">
-                <h3>{String(index + 1).padStart(2, "0")}</h3>
-                <p>
-                  Use this section as a practical checkpoint before planning
-                  the next page, redirect, or technical improvement.
-                </p>
-              </article>
-            </div>
-          </div>
-        </section>
-      ))}
+      <article className="section simple-guide">
+        {guide.sections.map((section, index) => (
+          <section key={section.title}>
+            <span>{String(index + 1).padStart(2, "0")}</span>
+            <div><h2>{section.title}</h2>{section.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
+          </section>
+        ))}
+      </article>
 
-      <section className="section areas-section">
-        <h2>Related Reading and Services</h2>
-        <LinkList items={guide.related} />
-      </section>
+      <DeepDive label="Related reading and questions" summary="Useful links and quick answers">
+        <section className="deep-dive-section"><h2>Related reading</h2><LinkList items={guide.related} /></section>
+        <section className="deep-dive-section"><h2>Common questions</h2><FaqList items={guide.faqs} /></section>
+      </DeepDive>
 
-      <section className="section faq-section">
-        <div className="section-heading">
-          <h2>Frequently Asked Questions</h2>
-        </div>
-        <FaqList items={guide.faqs} />
-      </section>
+      <ConversionBand
+        title="Turn the guidance into a useful next move."
+        text="We can apply this thinking to your website, search strategy, customer journey or internal workflow."
+        primaryLabel="Discuss Your Project"
+        secondaryHref="/services/"
+        secondaryLabel="Explore Solutions"
+      />
     </main>
   );
 }
-
