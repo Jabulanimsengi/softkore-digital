@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { Marquee } from "@/components/Marquee";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { Analytics } from "@/components/Analytics";
 import { RouteLoadingSpinner } from "@/components/RouteLoadingSpinner";
@@ -56,6 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <RouteLoadingSpinner />
         <span id="main-content" tabIndex={-1} />
         {children}
+        <Marquee />
         <Footer />
         <WhatsAppFloat />
         <ScrollReveal />

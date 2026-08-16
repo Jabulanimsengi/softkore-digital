@@ -23,7 +23,15 @@ export default function ContactPage() {
           <div className="contact-form-card"><h2>Send us a message</h2><ContactForm /></div>
           <aside className="contact-sidebar">
             <div className="contact-info-card"><p className="stitch-kicker">Contact information</p><h2>A practical conversation starts here.</h2><ul><li><span className="stitch-icon"><UiIcon name="map" /></span><div><strong>Based in South Africa</strong><p>Working with growing teams across South Africa and beyond.</p></div></li><li><span className="stitch-icon"><UiIcon name="mail" /></span><div><strong>Email enquiries</strong><a href="mailto:info@softkoredigital.co.za">info@softkoredigital.co.za</a></div></li><li><span className="stitch-icon"><UiIcon name="workflow" /></span><div><strong>Project fit</strong><p>Websites, SEO, custom applications and digital operations.</p></div></li></ul></div>
-            <div className="contact-map-card" aria-label="Softkore works with businesses across South Africa"><div className="contact-map-grid" /><span><UiIcon name="map" /> Serving South Africa</span></div>
+            <div className="contact-map-card" aria-label="Softkore Digital location at 111 Commissioner Street, Johannesburg">
+              <iframe
+                title="Softkore Digital location"
+                src="https://www.google.com/maps?q=111+Commissioner+Street,+Johannesburg,+2001,+South+Africa&output=embed"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              />
+            </div>
           </aside>
         </section>
         <section className="section contact-lower"><div className="contact-faq"><p className="stitch-kicker">Frequently asked questions</p><h2>Before we get started.</h2><FaqList items={faqs} /></div><div className="contact-trust"><p className="stitch-kicker">What you can expect</p><h2>A clear, business-first process.</h2><div><span><UiIcon name="shield" /> Honest scope</span><span><UiIcon name="workflow" /> Practical next steps</span><span><UiIcon name="chart" /> Built for measurable value</span></div></div></section>

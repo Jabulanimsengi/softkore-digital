@@ -4,8 +4,10 @@ qa-*.png
 # Node
 node_modules/
 .next/
+.next-dev/
 out/
 *.log
+*.tsbuildinfo
 
 # OS
 .DS_Store

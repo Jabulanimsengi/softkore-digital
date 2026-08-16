@@ -18,6 +18,8 @@ export function PageHeroImage(props: PageHeroImageProps) {
       <img
         src={image.src}
         alt={image.alt}
+        width={1536}
+        height={1024}
         loading={props.priority ? "eager" : "lazy"}
         fetchPriority={props.priority ? "high" : "auto"}
       />

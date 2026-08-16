@@ -5,6 +5,8 @@ export type CaseStudy = {
   intervention: string;
   outcome: string;
   signals: string[];
+  image: string;
+  imageAlt: string;
 };
 
 export const caseStudies: CaseStudy[] = [
@@ -18,6 +20,8 @@ export const caseStudies: CaseStudy[] = [
     outcome:
       "The business gets a cleaner search footprint, fewer dead paths, and a site structure that can grow without becoming messy.",
     signals: ["Redirect map", "Sitemap coverage", "Search intent", "Release checks"],
+    image: "/images/softkore-case-growth.webp",
+    imageAlt: "A search performance dashboard showing steady digital growth.",
   },
   {
     title: "Conversion path refresh",
@@ -29,6 +33,8 @@ export const caseStudies: CaseStudy[] = [
     outcome:
       "The site becomes easier to trust, easier to scan, and easier to act on from the first meaningful screen.",
     signals: ["Hero clarity", "Mobile CTAs", "Trust proof", "Form flow"],
+    image: "/images/softkore-case-web.webp",
+    imageAlt: "A responsive business website displayed on a laptop and phone.",
   },
   {
     title: "Operations-ready product layer",
@@ -40,5 +46,7 @@ export const caseStudies: CaseStudy[] = [
     outcome:
       "The result is a digital system that supports the work after launch instead of becoming another thing the team has to manage.",
     signals: ["Dashboards", "Admin tools", "Cloud care", "Workflow states"],
+    image: "/images/softkore-case-systems.webp",
+    imageAlt: "A booking and operations dashboard displayed across a laptop and phone.",
   },
 ];

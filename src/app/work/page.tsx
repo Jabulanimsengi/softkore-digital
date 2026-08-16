@@ -12,18 +12,6 @@ export const metadata: Metadata = {
   alternates: { canonical: "/work/" },
 };
 
-const images = [
-  "/images/softkore-case-growth.webp",
-  "/images/softkore-case-web.webp",
-  "/images/softkore-case-systems.webp",
-];
-
-const imageAlts = [
-  "A search performance dashboard showing steady digital growth.",
-  "A responsive business website displayed on a laptop and phone.",
-  "A booking and operations dashboard displayed across a laptop and phone.",
-];
-
 export default function WorkPage() {
   return (
     <>
@@ -45,7 +33,7 @@ export default function WorkPage() {
           <div className="section visual-work-list">
             {caseStudies.map((study, index) => (
               <article key={study.title}>
-                <figure><img src={images[index]} alt={imageAlts[index]} loading="lazy" /><span>{String(index + 1).padStart(2, "0")}</span></figure>
+                <figure><img src={study.image} alt={study.imageAlt} width={1536} height={1024} loading="lazy" /><span>{String(index + 1).padStart(2, "0")}</span></figure>
                 <div><p className="simple-label">{study.category}</p><h2>{study.title}</h2><dl><div><dt>The challenge</dt><dd>{study.challenge}</dd></div><div><dt>The move</dt><dd>{study.intervention}</dd></div><div><dt>The outcome</dt><dd>{study.outcome}</dd></div></dl></div>
               </article>
             ))}

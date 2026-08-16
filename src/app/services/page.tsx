@@ -1,14 +1,25 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { UiIcon, type UiIconName } from "@/components/UiIcon";
 import { ConversionBand } from "@/components/PageSections";
 import { services } from "@/data/services";
+import { breadcrumbSchema, JsonLd } from "@/lib/schema";
+import { absoluteUrl } from "@/lib/site";
+
+export const metadata: Metadata = {
+  title: "Digital Services",
+  description: "Website development, business systems, booking platforms, SEO, maintenance and digital growth services for growing businesses.",
+  alternates: { canonical: "/services/" },
+};
 
 const serviceIcons: UiIconName[] = ["globe", "workflow", "calendar", "search", "shield", "chart"];
 const serviceTags = [["Responsive", "SEO-ready", "Maintainable"], ["Portals", "Dashboards", "Automation"], ["Bookings", "CRM", "Payments"], ["Search strategy", "Content", "Analytics"], ["Monitoring", "Updates", "Support"], ["Campaigns", "Conversion", "Reporting"]];
 
 export default function ServicesIndex() {
   return (
-    <main className="stitch-page stitch-services-page">
+    <>
+      <JsonLd data={breadcrumbSchema([{ name: "Home", url: absoluteUrl("/") }, { name: "Services", url: absoluteUrl("/services/") }])} />
+      <main className="stitch-page stitch-services-page">
       <section className="section stitch-hero stitch-services-hero">
         <div className="stitch-hero-copy">
           <nav className="breadcrumb" aria-label="Breadcrumb"><Link prefetch={false} href="/">Home</Link><span>/</span><span>Services</span></nav>
@@ -17,7 +28,7 @@ export default function ServicesIndex() {
           <p className="stitch-lead">From a high-performing website to the systems behind the business, we build practical digital foundations that can grow with you.</p>
           <div className="stitch-actions"><Link prefetch={false} className="button button-primary" href="/contact/">Start a Project <UiIcon name="arrow" /></Link><Link prefetch={false} className="button button-secondary" href="/work/">See our work</Link></div>
         </div>
-        <figure className="stitch-hero-media"><img src="/images/softkore-services-hero.webp" alt="A connected business operations dashboard displayed on a laptop." /><figcaption><span>Connected capability</span><strong>Clear customer journeys backed by useful systems.</strong></figcaption></figure>
+        <figure className="stitch-hero-media"><img src="/images/softkore-services-hero.webp" alt="A connected business operations dashboard displayed on a laptop." width={1536} height={1024} /><figcaption><span>Connected capability</span><strong>Clear customer journeys backed by useful systems.</strong></figcaption></figure>
       </section>
 
       <section className="section services-bento" aria-label="Softkore solutions">
@@ -40,6 +51,7 @@ export default function ServicesIndex() {
       </section>
 
       <ConversionBand title="Build the digital foundation your next stage needs." text="We will help identify and build the simplest useful next move." primaryLabel="Start a Project" secondaryHref="/work/" secondaryLabel="See Our Work" />
-    </main>
+      </main>
+    </>
   );
 }

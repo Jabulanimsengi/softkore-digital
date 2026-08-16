@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Testimonials } from "@/components/Testimonials";
 import { breadcrumbSchema, JsonLd } from "@/lib/schema";
 import { absoluteUrl } from "@/lib/site";
 
@@ -24,7 +25,7 @@ export default function AboutPage() {
         </section>
 
         <section className="section simple-about-image">
-          <img src="/images/site/about-studio.webp" alt="The Softkore team collaborating in a bright digital studio." />
+          <img src="/images/site/about-studio.webp" alt="The Softkore team collaborating in a bright digital studio." width={1536} height={1024} loading="lazy" />
         </section>
 
         <section className="section simple-about-statement">
@@ -37,6 +38,8 @@ export default function AboutPage() {
           <article><span>02</span><h3>Build the simplest useful thing</h3><p>Clear journeys and focused systems beat unnecessary complexity.</p></article>
           <article><span>03</span><h3>Keep moving after launch</h3><p>The best digital systems improve as the business learns and grows.</p></article>
         </section>
+
+        <Testimonials />
 
         <section className="section simple-final">
           <p className="simple-label">Work with Softkore</p>
