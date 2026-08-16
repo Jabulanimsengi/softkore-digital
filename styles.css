@@ -2307,7 +2307,7 @@ ul {
 }
 
 /* Navigation feedback shared by the generated static SEO pages. */
-.route-loading-overlay{position:fixed;inset:0;z-index:10000;display:grid;place-items:center;pointer-events:none;visibility:hidden;opacity:0;background:rgba(255,255,255,.72);backdrop-filter:blur(5px);transition:opacity .14s ease,visibility 0s linear .14s}
+.route-loading-overlay{position:fixed;inset:0;z-index:10000;display:grid;place-items:center;pointer-events:none;visibility:hidden;opacity:0;background:rgba(255,255,255,.72);transition:opacity .14s ease,visibility 0s linear .14s}
 .route-loading-overlay.is-visible{pointer-events:auto;visibility:visible;opacity:1;transition-delay:0s}
 .route-loading-indicator{display:grid;justify-items:center;gap:12px;min-width:116px;padding:22px 24px;border:1px solid #dce8eb;border-radius:18px;color:#13252d;background:rgba(255,255,255,.96);box-shadow:0 18px 55px rgba(8,31,42,.14);font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
 .route-loading-spinner{width:38px;height:38px;border:3px solid #d8edf3;border-top-color:#079fd5;border-right-color:#071c2c;border-radius:50%;animation:route-spinner-turn .72s linear infinite}
