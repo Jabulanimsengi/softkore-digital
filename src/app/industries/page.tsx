@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import { PageHeroImage } from "@/components/PageHeroImage";
 import { ConversionBand } from "@/components/PageSections";
@@ -7,11 +8,11 @@ import { breadcrumbSchema, JsonLd } from "@/lib/schema";
 import { absoluteUrl } from "@/lib/site";
 import { industryImages } from "@/lib/site-images";
 
-export const metadata: Metadata = {
-  title: "Websites and Systems by Industry South Africa",
-  description: "What a good website or system needs in different industries, from salons and medical practices to law firms, property, construction and logistics in South Africa.",
-  alternates: { canonical: "/industries/" },
-};
+export const metadata: Metadata = pageMetadata(
+  "Websites by Industry South Africa | SoftKore Digital",
+  "What a good website or system needs in different industries, from salons and medical practices to law firms, property, construction and logistics.",
+  "/industries/",
+);
 
 export default function IndustriesPage() {
   return (

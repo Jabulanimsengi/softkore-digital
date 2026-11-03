@@ -9,13 +9,15 @@ export type GuidePage = {
   related: Array<{ label: string; href: string }>;
   faqs: Array<{ question: string; answer: string }>;
   priority: number;
+  published: string;
+  updated: string;
 };
 
 export const guides: GuidePage[] = [
   {
     slug: "website-prices-south-africa",
     title: "Website Prices in South Africa: What Affects the Cost",
-    metaTitle: "Website Prices South Africa: What Affects the Cost | SoftKore Digital",
+    metaTitle: "Website Prices South Africa: What Affects the Cost",
     description:
       "What affects website prices in South Africa, why quotes vary so much, what to check in a quote, and the running costs businesses often forget to budget for.",
     intro:
@@ -92,6 +94,8 @@ export const guides: GuidePage[] = [
       },
     ],
     priority: 0.72,
+    published: "2026-05-06",
+    updated: "2026-11-03",
   },
   {
     slug: "website-vs-web-application",
@@ -170,11 +174,13 @@ export const guides: GuidePage[] = [
       },
     ],
     priority: 0.72,
+    published: "2026-05-06",
+    updated: "2026-11-03",
   },
   {
     slug: "technical-seo-checklist",
     title: "Technical SEO Checklist for South African Business Websites",
-    metaTitle: "Technical SEO Checklist for South African Websites | SoftKore Digital",
+    metaTitle: "Technical SEO Checklist for South African Websites",
     description:
       "A practical technical SEO checklist covering indexing, sitemaps, redirects, duplicate content, internal links, mobile speed and Google Search Console.",
     intro:
@@ -199,13 +205,13 @@ export const guides: GuidePage[] = [
         title: "Understand what the not-indexed reasons mean",
         body: [
           "\"Crawled - currently not indexed\" means Google looked at the page and chose not to include it. This usually points to quality or duplication rather than a technical fault, so requesting indexing again is unlikely to help on its own.",
-          "\"Discovered - currently not indexed\" means Google knows about the page but has not fetched it yet. This is common on large or low-authority sites. Pages blocked by robots.txt or marked noindex usually come down to a setting, which makes them quicker to fix.",
+          "\"Discovered - currently not indexed\" means Google found the page but has not crawled it yet. Google says it usually delays the crawl because it expects crawling to overload the site. Pages blocked by robots.txt or marked noindex usually come down to a setting, which makes them quicker to fix.",
         ],
       },
       {
         title: "Remove thin and near-duplicate pages",
         body: [
-          "This is one of the most damaging patterns we see: hundreds of pages generated from a template, with only the town or industry name changed. Google may index them at first and then drop most of them.",
+          "This is one of the most damaging patterns on a business website: hundreds of pages generated from a template, with only the town or industry name changed. Google may index them at first and then drop most of them.",
           "Compare a few of your pages side by side. If the wording is largely the same, merge them into one strong page and use 301 redirects from the old URLs. A smaller site with useful pages is better than a large one Google does not want.",
         ],
       },
@@ -260,6 +266,8 @@ export const guides: GuidePage[] = [
       },
     ],
     priority: 0.7,
+    published: "2026-05-06",
+    updated: "2026-11-03",
   },
   {
     slug: "website-maintenance-checklist",
@@ -343,6 +351,8 @@ export const guides: GuidePage[] = [
       },
     ],
     priority: 0.7,
+    published: "2026-05-06",
+    updated: "2026-11-03",
   },
   {
     slug: "why-your-website-is-not-ranking",
@@ -440,6 +450,8 @@ export const guides: GuidePage[] = [
       },
     ],
     priority: 0.72,
+    published: "2026-05-06",
+    updated: "2026-11-03",
   },
 ];
 

@@ -43,7 +43,7 @@ export function AiAgentTemplate({ page }: { page: AiAgentIndustryPage }) {
         <div className="local-insight-grid"><CardGrid items={page.workflowExamples.slice(0, 3)} /></div>
       </section>
 
-      <DeepDive label="How we introduce AI carefully" summary="Adoption, safeguards, related planning and common questions">
+      <DeepDive label="How we introduce AI carefully" summary="Adoption, safeguards, related pages and common questions">
         <section className="deep-dive-section">
           <div className="content-grid">
             <div className="content-copy"><h2>Keep the team in control</h2><p>The first version should be narrow, useful and easy to supervise.</p></div>
@@ -51,7 +51,7 @@ export function AiAgentTemplate({ page }: { page: AiAgentIndustryPage }) {
           </div>
         </section>
         <section className="deep-dive-section"><h2>Guardrails</h2><div className="local-insight-grid"><CardGrid items={page.safeguards} /></div></section>
-        <section className="deep-dive-section"><h2>Related planning</h2><LinkList items={page.related} /></section>
+        <section className="deep-dive-section"><h2>Related pages</h2><LinkList items={page.related} /></section>
         <section className="deep-dive-section"><h2>Common questions</h2><FaqList items={page.faqs} /></section>
       </DeepDive>
 

@@ -60,6 +60,11 @@ const nginx = `# SoftKore Digital redirect rules, generated from deploy/page-pla
 # Example:
 #   include /etc/nginx/snippets/softkore-redirects.conf;
 
+error_page 404 /404.html;
+location = /404.html { internal; }
+location = /404/ { return 404; }
+location = /404/index.html { return 404; }
+
 ${sortedRedirects.map(nginxRule).join("\n")}
 `;
 

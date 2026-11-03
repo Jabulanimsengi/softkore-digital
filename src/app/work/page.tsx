@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import { PageHeroImage } from "@/components/PageHeroImage";
 import { ConversionBand } from "@/components/PageSections";
@@ -6,11 +7,11 @@ import { projectTypes } from "@/data/case-studies";
 import { breadcrumbSchema, JsonLd } from "@/lib/schema";
 import { absoluteUrl } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "How We Approach Website, SEO and Software Projects",
-  description: "The website, SEO and web application projects SoftKore Digital takes on, how we approach each one, and what you receive at the end.",
-  alternates: { canonical: "/work/" },
-};
+export const metadata: Metadata = pageMetadata(
+  "How We Approach Website & SEO Projects | SoftKore Digital",
+  "The website, SEO and web application projects SoftKore Digital takes on, how we approach each one, and what you receive at the end.",
+  "/work/",
+);
 
 export default function WorkPage() {
   return (

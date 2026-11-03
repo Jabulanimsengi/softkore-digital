@@ -912,6 +912,8 @@ button, input, select, textarea { font: inherit; }
 
 .solution-support-grid h2 { margin: 0 0 24px; color: var(--st-ink); font-size: 24px; line-height: 32px; }
 .area-list { display: grid; gap: 8px; }
+.solution-support-grid .area-list { grid-template-columns: 1fr; }
+.solution-support-grid .area-list a { position: relative; min-height: 0; padding-right: 48px; }
 .area-list a { padding: 12px 14px; border: 1px solid var(--st-outline-variant); border-radius: var(--st-radius-sm); background: var(--st-surface-low); color: var(--st-secondary); font-size: 14px; font-weight: 600; }
 
 .faq-list { display: grid; gap: 8px; }

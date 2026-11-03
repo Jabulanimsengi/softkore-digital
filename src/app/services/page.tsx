@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import { UiIcon, type UiIconName } from "@/components/UiIcon";
 import { ConversionBand } from "@/components/PageSections";
@@ -6,11 +7,11 @@ import { services } from "@/data/services";
 import { breadcrumbSchema, JsonLd } from "@/lib/schema";
 import { absoluteUrl } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Website, SEO and Software Development Services South Africa",
-  description: "SoftKore Digital's services for South African businesses: website design and development, web applications, online booking systems, SEO, maintenance and digital marketing.",
-  alternates: { canonical: "/services/" },
-};
+export const metadata: Metadata = pageMetadata(
+  "Website, SEO & Software Services South Africa | SoftKore Digital",
+  "Services for South African businesses: website design and development, web applications, online booking systems, SEO, maintenance and digital marketing.",
+  "/services/",
+);
 
 const serviceIcons: UiIconName[] = ["globe", "workflow", "calendar", "search", "shield", "chart"];
 const serviceTags = [["Responsive", "SEO-ready", "Maintainable"], ["Portals", "Dashboards", "Automation"], ["Bookings", "CRM", "Payments"], ["Search strategy", "Content", "Analytics"], ["Monitoring", "Updates", "Support"], ["Campaigns", "Conversion", "Reporting"]];

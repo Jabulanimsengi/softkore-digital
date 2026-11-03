@@ -52,6 +52,8 @@ function articleSchema(guide: NonNullable<ReturnType<typeof getGuide>>) {
     headline: guide.title,
     description: guide.description,
     url: absoluteUrl(guideUrl(guide)),
+    datePublished: guide.published,
+    dateModified: guide.updated,
     author: {
       "@type": "Organization",
       name: site.name,

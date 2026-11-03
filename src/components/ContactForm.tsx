@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const needs = [
   "A better website",
-  "More visibility",
+  "Better Google visibility",
   "Bookings or payments",
   "An internal system",
   "Not sure yet",
@@ -28,12 +28,12 @@ export function ContactForm() {
     if (!name.trim()) next.name = "Add your name.";
     if (!/^\S+@\S+\.\S+$/.test(email.trim())) next.email = "Add a valid email address.";
     if (!business.trim()) next.business = "Add your business or website name.";
-    if (detail.trim().length < 10) next.detail = "Tell us a little more about the friction.";
+    if (detail.trim().length < 10) next.detail = "Tell us a little more about what you need.";
     setErrors(next);
     setSubmitted(Object.keys(next).length === 0);
   }
 
-  const emailBody = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nBusiness: ${business}\nNeed: ${need}\nBudget: ${budget}\n\nWhat should move better?\n${detail}`);
+  const emailBody = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nBusiness: ${business}\nNeed: ${need}\nBudget: ${budget}\n\nWhat do you need help with?\n${detail}`);
 
   return (
     <div className="contact-form-shell">
@@ -47,7 +47,7 @@ export function ContactForm() {
           <label htmlFor="contact-need">Service of interest<select id="contact-need" name="need" value={need} onChange={(event) => setNeed(event.target.value)}>{needs.map((item) => <option key={item}>{item}</option>)}</select></label>
         </div>
         <label htmlFor="contact-budget">Indicative budget range<select id="contact-budget" name="budget" value={budget} onChange={(event) => setBudget(event.target.value)}>{budgets.map((item) => <option key={item}>{item}</option>)}</select></label>
-        <label htmlFor="contact-detail">What should move better?<textarea id="contact-detail" name="detail" rows={5} value={detail} onChange={(event) => setDetail(event.target.value)} aria-invalid={Boolean(errors.detail)} aria-describedby={errors.detail ? "contact-detail-error" : undefined} />{errors.detail ? <span className="field-error" id="contact-detail-error">{errors.detail}</span> : null}</label>
+        <label htmlFor="contact-detail">What do you need help with?<textarea id="contact-detail" name="detail" rows={5} value={detail} onChange={(event) => setDetail(event.target.value)} aria-invalid={Boolean(errors.detail)} aria-describedby={errors.detail ? "contact-detail-error" : undefined} />{errors.detail ? <span className="field-error" id="contact-detail-error">{errors.detail}</span> : null}</label>
         <button className="simple-button simple-button-dark" type="submit">Review message <span aria-hidden="true">→</span></button>
       </form>
       {submitted ? <div className="form-success" role="status"><strong>Your message is ready to send.</strong><p>We have prepared it in your email app so you can review everything first.</p><a className="simple-link" href={`mailto:info@softkoredigital.co.za?subject=SoftKore Digital project enquiry&body=${emailBody}`}>Open email <span>→</span></a></div> : <p className="form-note" id="contact-form-note">Nothing is sent until you review the prepared email.</p>}

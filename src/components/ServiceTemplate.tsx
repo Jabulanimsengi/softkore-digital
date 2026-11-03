@@ -61,7 +61,7 @@ export function ServiceTemplate({ service }: { service: ServicePage }) {
         <div><p className="stitch-kicker">Common questions</p><h2>Answers before you enquire.</h2><FaqList items={service.faqs} /></div>
       </section>
 
-      <ConversionBand title={`Talk to us about ${service.title.toLowerCase()}.`} text="Tell us what you need and where you are based. We work with businesses across South Africa and will give you a straight answer on the best next step." primaryLabel={service.primaryCta} secondaryHref="/services/" secondaryLabel="All Services" />
+      <ConversionBand title={`Talk to us about ${service.title}.`} text="Tell us what you need and where you are based. We work with businesses across South Africa and will give you a straight answer on the best next step." primaryLabel={service.primaryCta} secondaryHref="/services/" secondaryLabel="All Services" />
     </main>
   );
 }

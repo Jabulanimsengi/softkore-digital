@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import { UiIcon, type UiIconName } from "@/components/UiIcon";
 import { projectTypes } from "@/data/case-studies";
@@ -6,17 +7,12 @@ import { HomeMotion } from "@/components/HomeMotion";
 import { FaqList } from "@/components/PageSections";
 import { Testimonials } from "@/components/Testimonials";
 import { faqSchema, JsonLd, organizationSchema } from "@/lib/schema";
-import { site } from "@/lib/site";
 
-const homeTitle = "Website Design, Web Development & SEO South Africa | SoftKore Digital";
-const homeDescription = "South African web company building fast business websites, web applications and booking systems, with SEO and website maintenance. We work with businesses nationwide.";
-
-export const metadata: Metadata = {
-  title: { absolute: homeTitle },
-  description: homeDescription,
-  alternates: { canonical: "/" },
-  openGraph: { title: homeTitle, description: homeDescription, url: "/", siteName: site.name, type: "website", images: ["/logo.png"] },
-};
+export const metadata: Metadata = pageMetadata(
+  "Website Design, Development & SEO South Africa | SoftKore Digital",
+  "South African web company building fast business websites, web applications and booking systems, with SEO and website maintenance. We work with businesses nationwide.",
+  "/",
+);
 
 const keywords = [
   "Website design",
@@ -37,13 +33,6 @@ const serviceRows: Array<{ title: string; text: string; href: string; icon: UiIc
   { title: "SEO services", text: "Technical audits, indexing fixes and better service pages, with honest reporting.", href: "/services/seo-services/", icon: "search" },
   { title: "Website maintenance", text: "Updates, backups, security checks and fixes, including sites we did not build.", href: "/services/website-maintenance/", icon: "shield" },
   { title: "Digital marketing & conversion", text: "Landing pages, campaign planning and tracking that show what brings enquiries.", href: "/services/digital-marketing-conversion/", icon: "chart" },
-];
-
-const stats = [
-  { value: 9, suffix: "", label: "Provinces we can serve remotely" },
-  { value: 6, suffix: "", label: "Connected services" },
-  { value: 10, suffix: "", label: "Industry-specific guides" },
-  { value: 100, suffix: "%", label: "Mobile-first builds" },
 ];
 
 const process = [
@@ -132,19 +121,6 @@ export default function HomePage() {
                   <p>{study.problem}</p>
                   <Link prefetch={false} href={study.href}>See this service <UiIcon name="arrow" /></Link>
                 </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="home-stats">
-          <div className="section">
-            <div className="home-stats-grid">
-              {stats.map((stat) => (
-                <div className="home-stat" key={stat.label}>
-                  <strong data-count={String(stat.value)} data-suffix={stat.suffix}>{stat.value}{stat.suffix}</strong>
-                  <span>{stat.label}</span>
-                </div>
               ))}
             </div>
           </div>

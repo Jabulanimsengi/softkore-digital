@@ -59,7 +59,7 @@ const baseIndustries: IndustryPage[] = [
     features: [
       {
         title: "Treatment menu pages",
-        text: "Organize treatments into clear pages with descriptions, common questions, pricing signals, and booking prompts.",
+        text: "Organise treatments into clear pages with descriptions, common questions, pricing signals, and booking prompts.",
       },
       {
         title: "Online booking requests",
@@ -149,7 +149,7 @@ const baseIndustries: IndustryPage[] = [
       },
       {
         title: "Checkout confidence",
-        text: "Delivery information, payment options, trust signals, returns content, and clear checkout steps reduce friction.",
+        text: "Delivery information, payment options, trust signals, returns content, and clear checkout steps make buying easier.",
       },
       {
         title: "Product SEO",
@@ -166,8 +166,8 @@ const baseIndustries: IndustryPage[] = [
         text: "Connect suitable payment flows and make the transaction step clear for customers.",
       },
       {
-        title: "Checkout optimization",
-        text: "Reduce friction with clear cart steps, delivery notes, trust content, and mobile-friendly forms.",
+        title: "Checkout optimisation",
+        text: "Make buying easier with clear cart steps, delivery notes, trust content, and mobile-friendly forms.",
       },
       {
         title: "Inventory and order workflows",
@@ -267,7 +267,7 @@ const baseIndustries: IndustryPage[] = [
       },
       {
         title: "Appointment requests",
-        text: "Give patients a clear, low-friction way to request appointments or ask first questions.",
+        text: "Give patients a clear and simple way to request appointments or ask first questions.",
       },
       {
         title: "Patient FAQs",
@@ -367,7 +367,7 @@ const baseIndustries: IndustryPage[] = [
       },
       {
         title: "Valuation forms",
-        text: "Capture seller and landlord leads with forms that ask useful questions without creating friction.",
+        text: "Capture seller and landlord leads with forms that ask useful questions without putting people off.",
       },
       {
         title: "Area pages",
@@ -608,10 +608,10 @@ const additionalIndustries: IndustryPage[] = [
       { title: "Reporting and tracking", text: "Monitor enquiries and search performance so the website keeps improving." },
     ],
     proof: [
-      { title: "Service-led structure", text: "Pages are organized around accounting services and client questions." },
+      { title: "Service-led structure", text: "Pages are organised around accounting services and client questions." },
       { title: "Trust-first copy", text: "Professional services need credibility and clarity more than flashy claims." },
       { title: "Search support", text: "Tax and accounting guides can connect to service pages and enquiry paths." },
-      { title: "Conversion paths", text: "Calls to action help business owners take the next step without friction." },
+      { title: "Conversion paths", text: "Calls to action help business owners take the next step easily." },
     ],
     related: [
       { label: "Legal firm SEO services", href: "/industries/legal-firm-seo-services/" },
@@ -660,7 +660,7 @@ const additionalIndustries: IndustryPage[] = [
       { title: "Capability clarity", text: "Visitors should quickly understand what kinds of projects the company handles." },
       { title: "Proof before contact", text: "Project examples and service details help clients decide whether to enquire." },
       { title: "Better quote requests", text: "Structured forms improve enquiry quality and reduce repeated admin." },
-      { title: "SEO discipline", text: "Service and area pages should be useful before they are optimized." },
+      { title: "SEO discipline", text: "Service and area pages should be useful before they are optimised." },
     ],
     related: [
       { label: "Web development", href: "/services/web-development/" },

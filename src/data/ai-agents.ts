@@ -374,7 +374,7 @@ export const aiAgentIndustryPages: AiAgentIndustryPage[] = [
       "Practical AI agent planning for construction companies that need better quote intake, project enquiries, and supplier communication.",
     h1: "AI Agents for Construction Companies",
     intro:
-      "Construction companies can use AI agents to collect project scope, prepare quote requests, organize supplier enquiries, and help teams respond with better context.",
+      "Construction companies can use AI agents to collect project scope, prepare quote requests, organise supplier enquiries, and help teams respond with better context.",
     operatingReality:
       "Prospects often enquire with incomplete project details, unclear budgets, rough timelines, and missing site information.",
     adoptionFocus:
@@ -398,7 +398,7 @@ export const aiAgentIndustryPages: AiAgentIndustryPage[] = [
     safeguards: [
       { title: "No firm estimates", text: "The agent should not promise cost or timelines without staff review." },
       { title: "Safety routing", text: "Hazard, compliance, and access issues should be flagged for qualified review." },
-      { title: "Document control", text: "Plans and project files need organized, secure handling." },
+      { title: "Document control", text: "Plans and project files need organised, secure handling." },
     ],
     related: [
       { label: industryName("construction-company-websites"), href: "/industries/construction-company-websites/" },
@@ -483,7 +483,7 @@ export const aiAgentIndustryPages: AiAgentIndustryPage[] = [
     ],
     workflowExamples: [
       { title: "New shipment request", text: "The agent can gather the information needed before a quote is prepared." },
-      { title: "Repeat customer request", text: "The agent can recognize familiar account details if connected securely." },
+      { title: "Repeat customer request", text: "The agent can recognise familiar account details if connected securely." },
       { title: "Exception handling", text: "The agent can capture issue details and prepare a clean handover for operations." },
     ],
     adoptionSteps: [

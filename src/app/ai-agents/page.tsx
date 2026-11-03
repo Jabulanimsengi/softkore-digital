@@ -1,16 +1,17 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 import { aiAgentIndustryPages, aiAgentIndustryUrl } from "@/data/ai-agents";
 import { PageHeroImage } from "@/components/PageHeroImage";
 import { ConversionBand } from "@/components/PageSections";
 import { absoluteUrl } from "@/lib/site";
 import { breadcrumbSchema, JsonLd } from "@/lib/schema";
 
-export const metadata: Metadata = {
-  title: "AI Agents for Business Workflows",
-  description: "Focused AI agents for repetitive business workflows, with clear guardrails and staff in control.",
-  alternates: { canonical: "/ai-agents/" },
-};
+export const metadata: Metadata = pageMetadata(
+  "AI Agents for Business Workflows | SoftKore Digital",
+  "Focused AI agents for repetitive work in South African businesses, with clear guardrails and your staff in control.",
+  "/ai-agents/",
+);
 
 export default function AiAgentsPage() {
   return (
@@ -23,7 +24,7 @@ export default function AiAgentsPage() {
               <nav className="breadcrumb" aria-label="Breadcrumb"><Link prefetch={false} href="/">Home</Link><span>/</span><span>AI agents</span></nav>
               <h1>Less repeated admin. More useful human attention.</h1>
               <p>We introduce focused AI agents into real workflows, carefully, clearly and with your team in control.</p>
-              <div className="hero-actions"><Link prefetch={false} className="button button-primary" href="/contact/">Plan an AI agent</Link><Link prefetch={false} className="button button-secondary" href="/work/">See our work</Link></div>
+              <div className="hero-actions"><Link prefetch={false} className="button button-primary" href="/contact/">Plan an AI agent</Link><Link prefetch={false} className="button button-secondary" href="/work/">See how we work</Link></div>
             </div>
             <aside className="page-summary page-summary-media"><PageHeroImage imageKey="aiAgents" /><strong>Start narrow</strong><ul><li>One useful workflow</li><li>Approved information</li><li>Human oversight</li><li>Measured improvement</li></ul></aside>
           </div>

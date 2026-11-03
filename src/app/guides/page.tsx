@@ -1,16 +1,17 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 import { guides } from "@/data/guides";
 import { PageHeroImage } from "@/components/PageHeroImage";
 import { ConversionBand } from "@/components/PageSections";
 import { absoluteUrl } from "@/lib/site";
 import { breadcrumbSchema, JsonLd } from "@/lib/schema";
 
-export const metadata: Metadata = {
-  title: "Website and SEO Guides for South African Businesses",
-  description: "Practical guides for South African business owners on website prices, technical SEO, why sites do not rank, website maintenance and web applications.",
-  alternates: { canonical: "/guides/" },
-};
+export const metadata: Metadata = pageMetadata(
+  "Website & SEO Guides South Africa | SoftKore Digital",
+  "Practical guides for South African business owners on website prices, technical SEO, why sites do not rank, website maintenance and web applications.",
+  "/guides/",
+);
 
 export default function GuidesPage() {
   return (

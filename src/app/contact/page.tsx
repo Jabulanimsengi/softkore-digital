@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 import { ContactForm } from "@/components/ContactForm";
 import { FaqList } from "@/components/PageSections";
 import { UiIcon } from "@/components/UiIcon";
 import { breadcrumbSchema, JsonLd } from "@/lib/schema";
 import { absoluteUrl, site } from "@/lib/site";
 
-export const metadata: Metadata = { title: "Contact Us: Website, SEO and Web Development Enquiries", description: "Contact SoftKore Digital about a website, SEO, web application or website maintenance project. We work with businesses across South Africa.", alternates: { canonical: "/contact/" } };
+export const metadata: Metadata = pageMetadata(
+  "Contact SoftKore Digital | Website & SEO Enquiries",
+  "Contact SoftKore Digital about a website, SEO, web application or website maintenance project. We work with businesses across South Africa.",
+  "/contact/",
+);
 
 const faqs = [
   { question: "What happens after I send an enquiry?", answer: "We read through what you need and reply with the most useful next step. That may be a few questions, a short call or an honest suggestion that a different option suits you better." },

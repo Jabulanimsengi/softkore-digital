@@ -18,6 +18,7 @@ export function GuideTemplate({ guide }: { guide: GuidePage }) {
             </nav>
             <h1>{guide.title}</h1>
             <p>{guide.intro}</p>
+            <p className="simple-label">Last updated <time dateTime={guide.updated}>{new Date(guide.updated).toLocaleDateString("en-ZA", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" })}</time></p>
             <div className="hero-actions">
               <Link prefetch={false} className="button button-primary" href="/contact/">Ask about this</Link>
               <Link prefetch={false} className="button button-secondary" href="/guides/">All guides</Link>

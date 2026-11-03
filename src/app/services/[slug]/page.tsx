@@ -62,6 +62,7 @@ export default async function ServiceRoute({ params }: ServiceRouteProps) {
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", url: absoluteUrl("/") },
+          { name: "Services", url: absoluteUrl("/services/") },
           { name: service.eyebrow, url },
         ])}
       />

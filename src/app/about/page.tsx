@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import { Testimonials } from "@/components/Testimonials";
 import { breadcrumbSchema, JsonLd } from "@/lib/schema";
 import { absoluteUrl } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "About Us: South African Web Design & Development Company",
-  description: "SoftKore Digital is a South African web company building websites and web applications, with SEO and maintenance, for businesses across the country.",
-  alternates: { canonical: "/about/" },
-};
+export const metadata: Metadata = pageMetadata(
+  "About SoftKore Digital | South African Web Design Company",
+  "SoftKore Digital is a South African web company building websites and web applications, with SEO and maintenance, for businesses across the country.",
+  "/about/",
+);
 
 export default function AboutPage() {
   return (

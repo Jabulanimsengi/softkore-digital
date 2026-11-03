@@ -6,10 +6,10 @@ export default function NotFound() {
       <section className="section simple-not-found">
         <p className="simple-label">404 / Page not found</p>
         <h1>Wrong turn.<br />Easy fix.</h1>
-        <p>The page has moved or no longer exists. Start again from the work that matters.</p>
+        <p>The page has moved or no longer exists. Try our homepage or browse our services.</p>
         <div className="simple-actions">
           <Link prefetch={false} className="simple-button simple-button-dark" href="/">Go home <span>→</span></Link>
-          <Link prefetch={false} className="simple-link" href="/services/">Explore solutions <span>→</span></Link>
+          <Link prefetch={false} className="simple-link" href="/services/">View services <span>→</span></Link>
         </div>
       </section>
     </main>

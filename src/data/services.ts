@@ -34,7 +34,7 @@ export const services: ServicePage[] = [
   {
     slug: "web-development",
     title: "Website Design & Development",
-    metaTitle: "Website Design & Development Company South Africa | SoftKore Digital",
+    metaTitle: "Website Design & Development South Africa | SoftKore Digital",
     description:
       "Website design and development for South African businesses. Fast, mobile-first websites with clear service pages, built-in SEO and enquiry paths that work.",
     eyebrow: "Website Design & Development",
@@ -157,7 +157,7 @@ export const services: ServicePage[] = [
       {
         question: "Can I update the website myself?",
         answer:
-          "It depends on the build, and we will agree this during discovery. Some clients want a content editor, while others prefer to send changes through a maintenance plan.",
+          "It depends on the build, and we will agree this during discovery. You may want a content editor, or you may prefer to send changes through a maintenance plan.",
       },
       {
         question: "Do you write the website content?",
@@ -240,7 +240,7 @@ export const services: ServicePage[] = [
     processItems: [
       {
         title: "Workflow mapping",
-        text: "We sit with the people doing the work and document the users, permissions, data, approvals and exceptions.",
+        text: "We talk to the people doing the work and document the users, permissions, data, approvals and exceptions.",
       },
       {
         title: "First-version scope",
@@ -433,7 +433,7 @@ export const services: ServicePage[] = [
   {
     slug: "seo-services",
     title: "SEO Services",
-    metaTitle: "SEO Services South Africa | Technical SEO & Content | SoftKore Digital",
+    metaTitle: "SEO Services South Africa | SoftKore Digital",
     description:
       "SEO services for South African businesses: technical audits, indexing fixes, service page improvements and Search Console reporting, with no ranking guarantees.",
     eyebrow: "SEO Services",
@@ -701,7 +701,7 @@ export const services: ServicePage[] = [
   {
     slug: "digital-marketing-conversion",
     title: "Digital Marketing & Conversion",
-    metaTitle: "Digital Marketing & Conversion Services South Africa | SoftKore Digital",
+    metaTitle: "Digital Marketing Services South Africa | SoftKore Digital",
     description:
       "Digital marketing and conversion services for South African businesses: landing pages, campaign planning, tracking and conversion reviews that turn visits into enquiries.",
     eyebrow: "Digital Marketing & Conversion",

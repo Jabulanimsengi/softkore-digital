@@ -1,13 +1,13 @@
 const items = [
   "Website design",
-  "SEO",
-  "Business systems",
-  "Booking platforms",
-  "Payments",
-  "Automation",
-  "Maintenance",
-  "Conversion",
-  "Local SEO",
+  "Web development",
+  "SEO services",
+  "Web applications",
+  "Online bookings",
+  "Website maintenance",
+  "Landing pages",
+  "Tracking",
+  "South Africa",
 ];
 
 export function Marquee() {
