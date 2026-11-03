@@ -7,10 +7,10 @@ import { useEffect, useState } from "react";
 
 const serviceNavItems = [
   { label: "Website Design & Development", href: "/services/web-development/" },
-  { label: "Business Systems & Automation", href: "/services/custom-web-applications/" },
-  { label: "Booking & Customer Management", href: "/services/booking-customer-management/" },
-  { label: "SEO & Online Visibility", href: "/services/seo-services/" },
-  { label: "Maintenance & Technical Support", href: "/services/website-maintenance/" },
+  { label: "Web Applications & Business Systems", href: "/services/custom-web-applications/" },
+  { label: "Online Booking & Customer Management", href: "/services/booking-customer-management/" },
+  { label: "SEO Services", href: "/services/seo-services/" },
+  { label: "Website Maintenance", href: "/services/website-maintenance/" },
   { label: "Digital Marketing & Conversion", href: "/services/digital-marketing-conversion/" },
 ];
 

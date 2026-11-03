@@ -2,7 +2,7 @@ import Link from "next/link";
 import { PageHeroImage } from "@/components/PageHeroImage";
 import type { GuidePage } from "@/data/guides";
 import { guideImages } from "@/lib/site-images";
-import { ConversionBand, DeepDive, FaqList, LinkList } from "@/components/PageSections";
+import { ConversionBand, FaqList, LinkList } from "@/components/PageSections";
 
 export function GuideTemplate({ guide }: { guide: GuidePage }) {
   const image = guideImages[guide.slug];
@@ -13,14 +13,14 @@ export function GuideTemplate({ guide }: { guide: GuidePage }) {
           <div>
             <nav className="breadcrumb" aria-label="Breadcrumb">
               <Link prefetch={false} href="/">Home</Link><span>/</span>
-              <Link prefetch={false} href="/guides/">Insights</Link><span>/</span>
+              <Link prefetch={false} href="/guides/">Guides</Link><span>/</span>
               <span>{guide.title}</span>
             </nav>
             <h1>{guide.title}</h1>
             <p>{guide.intro}</p>
             <div className="hero-actions">
               <Link prefetch={false} className="button button-primary" href="/contact/">Ask about this</Link>
-              <Link prefetch={false} className="button button-secondary" href="/guides/">All insights</Link>
+              <Link prefetch={false} className="button button-secondary" href="/guides/">All guides</Link>
             </div>
           </div>
           <aside className="page-summary page-summary-media">
@@ -40,17 +40,17 @@ export function GuideTemplate({ guide }: { guide: GuidePage }) {
         ))}
       </article>
 
-      <DeepDive label="Related reading and questions" summary="Useful links and quick answers">
-        <section className="deep-dive-section"><h2>Related reading</h2><LinkList items={guide.related} /></section>
-        <section className="deep-dive-section"><h2>Common questions</h2><FaqList items={guide.faqs} /></section>
-      </DeepDive>
+      <section className="section solution-support-grid">
+        <div><p className="stitch-kicker">Related pages</p><h2>Where to go next.</h2><LinkList items={guide.related} /></div>
+        <div><p className="stitch-kicker">Common questions</p><h2>Quick answers.</h2><FaqList items={guide.faqs} /></div>
+      </section>
 
       <ConversionBand
-        title="Turn the guidance into a useful next move."
-        text="We can apply this thinking to your website, search strategy, customer journey or internal workflow."
+        title="Would you like help with this?"
+        text="We work with businesses across South Africa and can apply this to your website, search visibility or business system."
         primaryLabel="Discuss Your Project"
         secondaryHref="/services/"
-        secondaryLabel="Explore Solutions"
+        secondaryLabel="View Services"
       />
     </main>
   );

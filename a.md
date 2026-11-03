@@ -32,6 +32,7 @@ ssh softkoredigital
 cd /var/www/softkoredigital
 git pull origin main
 npm install
+npm run clean:next
 npm run predeploy
 sudo cp deploy/redirects-softkore-nginx.conf /etc/nginx/snippets/softkore-redirects.conf
 sudo nginx -t

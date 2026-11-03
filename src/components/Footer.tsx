@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import { site } from "@/lib/site";
 
 const footerGroups = [
-  { title: "Company", links: [{ label: "About us", href: "/about/" }, { label: "Selected work", href: "/work/" }] },
-  { title: "Explore", links: [{ label: "Services", href: "/services/" }, { label: "Industries", href: "/industries/" }, { label: "Insights", href: "/guides/" }] },
+  { title: "Services", links: [{ label: "Website design", href: "/services/web-development/" }, { label: "SEO services", href: "/services/seo-services/" }, { label: "Web applications", href: "/services/custom-web-applications/" }, { label: "Online booking systems", href: "/services/booking-customer-management/" }, { label: "Website maintenance", href: "/services/website-maintenance/" }] },
+  { title: "Company", links: [{ label: "About us", href: "/about/" }, { label: "How we work", href: "/work/" }, { label: "Industries", href: "/industries/" }, { label: "Guides", href: "/guides/" }, { label: "All services", href: "/services/" }] },
 ];
 
 export function Footer() {
@@ -20,8 +21,8 @@ export function Footer() {
           />
         </Link>
         <p>
-          Websites, business systems, SEO and digital growth solutions designed
-          to help growing companies move forward.
+          Website design, web development, SEO and maintenance for businesses
+          across South Africa.
         </p>
       </div>
 
@@ -36,14 +37,14 @@ export function Footer() {
 
       <div className="footer-contact">
         <strong>Connect</strong>
-        <span>Start with the next useful move.</span>
-        <a href="mailto:info@softkoredigital.co.za">info@softkoredigital.co.za</a>
+        <a href={`mailto:${site.email}`}>{site.email}</a>
+        <a href={`tel:${site.phone}`}>{site.phoneDisplay}</a>
         <Link prefetch={false} href="/contact/">Start a Project →</Link>
       </div>
 
       <div className="footer-legal">
         <span>© {new Date().getFullYear()} SoftKore Digital. All rights reserved.</span>
-        <span>South Africa</span>
+        <span>Serving all nine provinces of South Africa</span>
       </div>
     </footer>
   );

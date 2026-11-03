@@ -8,8 +8,8 @@ import { absoluteUrl } from "@/lib/site";
 import { industryImages } from "@/lib/site-images";
 
 export const metadata: Metadata = {
-  title: "Industries",
-  description: "Digital customer journeys and business systems shaped around how different industries attract and serve customers.",
+  title: "Websites and Systems by Industry South Africa",
+  description: "What a good website or system needs in different industries, from salons and medical practices to law firms, property, construction and logistics in South Africa.",
   alternates: { canonical: "/industries/" },
 };
 
@@ -22,11 +22,11 @@ export default function IndustriesPage() {
           <div className="page-hero-inner">
             <div>
               <nav className="breadcrumb" aria-label="Breadcrumb"><Link prefetch={false} href="/">Home</Link><span>/</span><span>Industries</span></nav>
-              <h1>Built around how your market actually works.</h1>
-              <p>Different businesses earn trust, complete transactions and deliver value in different ways.</p>
-              <div className="hero-actions"><Link prefetch={false} className="button button-primary" href="/contact/">Discuss your business</Link><Link prefetch={false} className="button button-secondary" href="/services/">View solutions</Link></div>
+              <h1>Websites and systems for South African industries.</h1>
+              <p>A patient choosing a dentist and a buyer comparing logistics suppliers need very different things from a website. These pages explain what matters most in each industry.</p>
+              <div className="hero-actions"><Link prefetch={false} className="button button-primary" href="/contact/">Discuss your business</Link><Link prefetch={false} className="button button-secondary" href="/services/">View services</Link></div>
             </div>
-            <aside className="page-summary page-summary-media"><PageHeroImage imageKey="industries" /><strong>One connected view</strong><ul><li>Customer expectations</li><li>Trust and conversion</li><li>Daily workflows</li><li>Search opportunity</li></ul></aside>
+            <aside className="page-summary page-summary-media"><PageHeroImage imageKey="industries" /><strong>What each page covers</strong><ul><li>How customers choose</li><li>What builds trust</li><li>Useful features</li><li>Common questions</li></ul></aside>
           </div>
         </section>
 
@@ -50,7 +50,7 @@ export default function IndustriesPage() {
           })}
         </section>
 
-        <ConversionBand title="Build around the way your business really wins and delivers." text="We will connect the right customer journey, transaction and operational tools." primaryLabel="Discuss Your Business" secondaryHref="/services/" secondaryLabel="Explore Solutions" />
+        <ConversionBand title="Don't see your industry here?" text="We work with other types of business too. Tell us how your customers choose you and we will explain what we would build." primaryLabel="Discuss Your Business" secondaryHref="/services/" secondaryLabel="View Services" />
       </main>
     </>
   );

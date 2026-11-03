@@ -13,14 +13,18 @@ export type ServicePage = {
   summary: string[];
   bodyHeading: string;
   body: string[];
-  bullets: string[];
-  cards: Array<{ title: string; text: string }>;
+  fitHeading: string;
+  fit: string[];
   featureTitle: string;
   featureIntro: string;
   features: Array<{ title: string; text: string }>;
+  southAfricaHeading: string;
+  southAfrica: string[];
   processTitle: string;
   processBody: string[];
   processItems: Array<{ title: string; text: string }>;
+  costHeading: string;
+  cost: string[];
   related: Array<{ label: string; href: string }>;
   faqs: Array<{ question: string; answer: string }>;
   serviceType: string;
@@ -30,624 +34,795 @@ export const services: ServicePage[] = [
   {
     slug: "web-development",
     title: "Website Design & Development",
-    metaTitle: "Website Design & Development South Africa | SoftKore Digital",
+    metaTitle: "Website Design & Development Company South Africa | SoftKore Digital",
     description:
-      "SoftKore Digital designs and develops fast, scalable, SEO-ready websites for growing businesses in South Africa.",
+      "Website design and development for South African businesses. Fast, mobile-first websites with clear service pages, built-in SEO and enquiry paths that work.",
     eyebrow: "Website Design & Development",
-    h1: "Website Design & Development for Growing South African Businesses",
+    h1: "Website Design and Development for South African Businesses",
     intro:
-      "SoftKore Digital builds fast, mobile-friendly websites for businesses that need to look credible and make it easy for customers to enquire.",
+      "We design and build business websites that load quickly on a phone, explain what you do in plain language, and make it easy for the right customers to contact you, wherever they are in the country.",
     primaryCta: "Start a Website Project",
-    secondaryCta: "Explore SEO & Online Visibility",
+    secondaryCta: "See SEO Services",
     secondaryHref: "/services/seo-services/",
-    summaryTitle: "Web development includes",
+    summaryTitle: "Every website build includes",
     summary: [
-      "Business websites and landing pages",
-      "Service page architecture",
-      "Mobile-first responsive design",
-      "Technical SEO foundations",
-      "Performance optimization",
+      "Page structure planned around your services",
+      "Mobile-first design and development",
+      "Technical SEO set up from day one",
+      "Contact forms, call and WhatsApp links",
+      "Analytics and launch checks",
     ],
-    bodyHeading: "A website should make the next step obvious.",
+    bodyHeading: "A website has one job: help the right person choose you.",
     body: [
-      "A business website should explain what you do, why clients should trust you, and how to take the next step. We structure each website around customer needs, service clarity, fast loading, clean code, and future content expansion.",
-      "Search visibility is easier when the site is built properly from the start. That means clear pages, fast loading, useful internal links, and room to add more services or locations later.",
+      "Most small business websites fail in predictable ways. The homepage talks about the company instead of the customer, services are squeezed onto one page, the phone number is hard to find on mobile, and nobody can tell what to do next. A new design does not fix any of that on its own.",
+      "We start with the decisions your customer has to make: do you offer what they need, can they trust you, what will it roughly involve, and how do they get in touch? The page structure, copy and design are then built around those answers, so the site works as a sales tool and not only as an online brochure.",
+      "Because search is built into the structure from the start, you avoid the common and expensive pattern of launching a site first and paying to repair it for Google later.",
     ],
-    bullets: [
-      "Company websites",
-      "Service landing pages",
-      "Lead generation pages",
-      "Local SEO page structures",
-      "Contact forms",
-      "Analytics-ready deployment",
-    ],
-    cards: [
-      {
-        title: "Easy to grow",
-        text: "The site can start small and expand into more services, industries, or locations when the business is ready.",
-      },
-      {
-        title: "Easy to understand",
-        text: "Services, locations, and contact options are organized so customers find what they need quickly.",
-      },
-      {
-        title: "Fast on mobile",
-        text: "Pages stay lean, responsive, and simple to use on the devices your customers already have.",
-      },
+    fitHeading: "Who this is for",
+    fit: [
+      "This service suits service businesses, professional firms, trades, clinics, manufacturers and B2B suppliers that need a website customers can act on. It is also a good fit if your current site looks dated, performs badly on phones, or brings in very few enquiries.",
+      "If your business mainly needs logins, dashboards or internal workflows, a web application may be the better starting point. Our guide on websites versus web applications explains how to tell the difference.",
     ],
     featureTitle: "What We Build",
     featureIntro:
-      "Most business websites need more than a good-looking homepage. They need a structure that helps visitors understand the offer, trust the business, and take action.",
+      "The scope depends on how you sell. These are the website types South African businesses most often need from us.",
     features: [
       {
-        title: "Service websites",
-        text: "Clear pages for each major service, built around the questions customers ask before they enquire.",
-      },
-      {
-        title: "Lead generation pages",
-        text: "Focused landing pages with sharp copy, strong calls to action, enquiry forms, and conversion tracking.",
-      },
-      {
-        title: "Local SEO structures",
-        text: "Province, city, suburb, and industry pages planned carefully so each page has a useful reason to exist.",
+        title: "Business and service websites",
+        text: "A homepage plus a dedicated page for each main service, written around the questions customers ask before they enquire.",
       },
       {
         title: "Website redesigns",
-        text: "Existing websites can be rebuilt with clearer navigation, better mobile layouts, stronger content, and improved technical foundations.",
+        text: "We keep what already works, including URLs that rank, and rebuild the layout, content and technical setup around it, with redirects mapped before launch.",
       },
       {
-        title: "Performance-focused builds",
-        text: "Pages are kept lean, responsive, and easy to crawl so the site is not fighting itself before SEO work begins.",
+        title: "Landing pages",
+        text: "Focused campaign pages with one offer and one action, so your advertising spend goes to a page built to convert.",
       },
       {
-        title: "Launch support",
-        text: "Deployment includes metadata checks, sitemap review, contact path checks, analytics readiness, and basic live-site validation.",
+        title: "Ecommerce websites",
+        text: "Product catalogues, delivery information and checkout flows connected to a South African payment provider.",
+      },
+      {
+        title: "Performance rebuilds",
+        text: "For sites that are too slow or too heavy to maintain, we rebuild on a lean, modern stack without losing your search history.",
+      },
+      {
+        title: "Launch and handover",
+        text: "Metadata, sitemap, redirects, forms, tracking and mobile journeys are all checked on the live site before we call it finished.",
       },
     ],
-    processTitle: "Our Website Development Process",
+    southAfricaHeading: "Built for how South Africans actually browse",
+    southAfrica: [
+      "Most of your visitors will arrive on a phone, often on mobile data, and many would rather send a WhatsApp message than fill in a long form. We keep pages light, put contact options within easy reach, and test the journeys that matter on real mobile screen sizes.",
+      "Practical local requirements are part of the build: a contact form and privacy notice that respect POPIA, a .co.za domain where it suits your brand, pricing shown in rand, and payment options your customers recognise, such as PayFast, Yoco or Ozow.",
+      "We work remotely with businesses in all nine provinces. Briefings, reviews and sign-off happen over video calls, email and WhatsApp, so your location does not limit the project.",
+    ],
+    processTitle: "How a Website Project Runs",
     processBody: [
-      "The process starts with the business goal, not the layout. We clarify who the website must persuade, what they need to know, and what action should happen next.",
-      "From there we plan the page structure, write or refine the content, design the core sections, build the responsive pages, and check the site before launch.",
+      "Good websites come from clear decisions made early. Each stage below ends with something you can review, so nothing important is left to a big reveal at the end.",
     ],
     processItems: [
       {
         title: "Discovery",
-        text: "Services, audience, competitors, locations, trust signals, and enquiry paths are mapped before design starts.",
+        text: "We clarify your services, customers, competitors and what a good enquiry looks like. If you have an existing site, we also review its search data.",
       },
       {
-        title: "Structure",
-        text: "Navigation, service pages, calls to action, and internal links are planned around how customers decide.",
+        title: "Structure and content",
+        text: "We agree the pages, navigation and key messages, then write or refine the copy. Your real proof, such as projects and reviews, goes in here.",
       },
       {
-        title: "Build",
-        text: "The site is coded as a fast, responsive, SEO-ready experience with clean markup and reusable components.",
+        title: "Design and build",
+        text: "You review the design on real pages, not just static mockups, while we build responsive, fast pages with clean code.",
       },
       {
-        title: "Launch",
-        text: "We check pages, metadata, forms, links, sitemap visibility, and live performance after deployment.",
+        title: "Launch and support",
+        text: "We test forms, links, redirects, tracking and mobile journeys, then launch, verify the live site and submit it to Google Search Console.",
       },
     ],
+    costHeading: "What affects the cost of a website",
+    cost: [
+      "The main cost drivers are the number of unique pages, who writes the content, how custom the design is, and whether the site needs features such as booking, payments or integrations. A redesign with many existing pages also needs redirect planning.",
+      "A sensible approach is to launch a strong core site first and add to it once you can see what customers respond to. Share your rough budget on the contact form and we will tell you honestly what it can achieve. Our website prices guide covers this in more detail.",
+    ],
     related: [
-      { label: "Business Systems & Automation", href: "/services/custom-web-applications/" },
-      { label: "SEO & Online Visibility", href: "/services/seo-services/" },
-      { label: "Maintenance & Technical Support", href: "/services/website-maintenance/" },
-      { label: "Industry Website Solutions", href: "/industries/" },
+      { label: "SEO services", href: "/services/seo-services/" },
+      { label: "Website maintenance", href: "/services/website-maintenance/" },
+      { label: "Web applications and business systems", href: "/services/custom-web-applications/" },
+      { label: "Website prices in South Africa", href: "/guides/website-prices-south-africa/" },
+      { label: "Website vs web application", href: "/guides/website-vs-web-application/" },
+      { label: "Websites by industry", href: "/industries/" },
     ],
     faqs: [
       {
-        question: "What should a business prepare before starting a website project?",
+        question: "Do you build websites for businesses outside Johannesburg?",
         answer:
-          "Prepare your main services, target customers, current website details, examples you like, service areas, contact preferences, and any proof that helps customers trust the business.",
+          "Yes. We work remotely with businesses across South Africa. Meetings, reviews and sign-off happen over video calls, email and WhatsApp, so the process is the same wherever you are based.",
       },
       {
-        question: "Can the website support SEO from the start?",
+        question: "What do I need to prepare before starting?",
         answer:
-          "Yes. The structure can include clean URLs, unique titles and descriptions, canonical URLs, schema, internal links, fast pages, and room for future service, location, industry, and guide content.",
+          "A list of your main services, who your best customers are, access to your current website and domain if you have them, examples of sites you like, and any proof such as project photos or reviews.",
       },
       {
-        question: "Do you only build new websites?",
+        question: "Will my new website rank on Google?",
         answer:
-          "No. We can also review and rebuild an existing website, keeping what works while improving the layout, content, technical setup, mobile experience, and conversion paths.",
+          "We build the technical and content foundations search engines need, but no honest provider can guarantee rankings. Results also depend on competition, your content and your reputation online. Ongoing SEO work can be added after launch.",
       },
       {
-        question: "Can a small website grow later?",
+        question: "Can you redesign my site without losing my Google rankings?",
         answer:
-          "Yes. A focused site can start with a homepage and core service pages, then expand into locations, industries, guides, case studies, and maintenance or SEO support over time.",
+          "That is the goal of every redesign we do. We record your existing URLs and search performance, keep the pages that earn traffic where possible, and redirect the rest to the closest replacement. Some short-term movement is still normal after any rebuild.",
+      },
+      {
+        question: "Can I update the website myself?",
+        answer:
+          "It depends on the build, and we will agree this during discovery. Some clients want a content editor, while others prefer to send changes through a maintenance plan.",
+      },
+      {
+        question: "Do you write the website content?",
+        answer:
+          "We can write it or refine what you already have. Either way, we need your input on your services, experience and customers, because accurate detail is what makes a website convincing.",
       },
     ],
     serviceType: "Website Design and Development",
   },
   {
     slug: "custom-web-applications",
-    title: "Business Systems & Automation",
-    metaTitle: "Business Systems & Automation South Africa | SoftKore Digital",
+    title: "Web Applications & Business Systems",
+    metaTitle: "Custom Web Application Development South Africa | SoftKore Digital",
     description:
-      "Custom business systems, portals, dashboards and workflow automation designed around the way your team works.",
-    eyebrow: "Business Systems & Automation",
-    h1: "Business Systems for Work That Has Outgrown Spreadsheets",
+      "Custom web application development for South African businesses: client portals, dashboards, internal tools and workflow automation that replace spreadsheets.",
+    eyebrow: "Web Applications & Business Systems",
+    h1: "Custom Web Application Development in South Africa",
     intro:
-      "SoftKore Digital builds dashboards, portals, admin tools and automated workflows that help teams manage real work in one connected system.",
+      "When spreadsheets, email threads and WhatsApp groups can no longer keep up, we build secure web applications that put your data, approvals and daily work in one place.",
     primaryCta: "Start a Systems Project",
-    secondaryCta: "Need a Website?",
+    secondaryCta: "Need a Website Instead?",
     secondaryHref: "/services/web-development/",
-    summaryTitle: "Application builds include",
+    summaryTitle: "Application builds can include",
     summary: [
-      "Custom UI/UX",
+      "Workflow mapping and interface design",
       "Frontend and backend development",
-      "Database setup",
-      "Authentication",
-      "Admin dashboards and integrations",
+      "Database design and user permissions",
+      "Admin dashboards and reporting",
+      "Payment and third-party integrations",
     ],
-    bodyHeading: "The workflow comes first.",
+    bodyHeading: "Software should fit the way your business really works.",
     body: [
-      "A useful app starts with the way people actually work. Before designing screens, we map the users, permissions, data, payments, notifications, and admin tasks the system needs.",
-      "Whether it is a customer portal, booking platform, marketplace, dashboard, or claims system, the goal is to make daily work easier to manage.",
+      "Off-the-shelf software is often the right first choice, and we will say so when it is. Custom development makes sense when your process is what sets you apart, when you are paying for many tools that do not talk to each other, or when staff spend hours each week moving the same information from one place to another.",
+      "A useful application starts with the work, not the screens. Before any design begins, we map who uses the system, what each person is allowed to see and change, what data has to be stored, and where the decisions and bottlenecks are. Skipping this step is the most common reason custom software projects run over budget.",
     ],
-    bullets: [
-      "Booking systems",
-      "Client portals",
-      "Marketplaces",
-      "Admin dashboards",
-      "Payment integrations",
-      "API integrations",
+    fitHeading: "Signs you may need a custom system",
+    fit: [
+      "Key information lives in spreadsheets that only one person fully understands. Staff retype the same details into several tools. Customers keep phoning to ask for updates they could check themselves. Monthly reports take days to compile, or mistakes keep appearing because nobody can see the latest version of a record.",
+      "If two or more of these sound familiar, a focused system will probably pay for itself in saved time. If not, a well-chosen existing product may be enough for now, and that is a perfectly good outcome.",
     ],
-    cards: [
-      {
-        title: "Workflow design",
-        text: "We map the user roles, business rules, and operational steps before building screens.",
-      },
-      {
-        title: "Scalable architecture",
-        text: "We structure data, permissions, and application logic so the platform can grow with the business.",
-      },
-      {
-        title: "Admin-first control",
-        text: "We include the management tools teams need to update, monitor, and operate the platform.",
-      },
-    ],
-    featureTitle: "Types of Web Applications We Can Build",
+    featureTitle: "Systems We Build",
     featureIntro:
-      "A custom application is useful when a normal website cannot manage the workflow, data, roles, or repeat actions the business depends on.",
+      "Most projects combine a few of these. We usually recommend starting with the part that removes the most manual work.",
     features: [
       {
-        title: "Booking systems",
-        text: "Let customers request or reserve appointments while admins manage availability, confirmations, and follow-ups.",
-      },
-      {
         title: "Client portals",
-        text: "Give customers a secure place to view updates, submit information, download documents, or track progress.",
+        text: "A secure login where customers can check progress, upload documents, download invoices and send requests.",
       },
       {
         title: "Admin dashboards",
-        text: "Help teams manage enquiries, users, records, content, orders, payments, or workflow stages from one place.",
-      },
-      {
-        title: "Marketplaces",
-        text: "Connect customers, providers, listings, payments, notifications, and admin moderation in a structured platform.",
+        text: "One view of enquiries, jobs, orders, staff and payments, with reports that no longer need to be built by hand.",
       },
       {
         title: "Internal tools",
-        text: "Replace fragile spreadsheets with a purpose-built system for approvals, reporting, task tracking, or data management.",
+        text: "Purpose-built systems for approvals, quoting, stock, job cards or compliance records that replace fragile spreadsheets.",
       },
       {
-        title: "Integrations",
-        text: "Connect payment providers, email, analytics, third-party APIs, and operational tools when the workflow needs them.",
+        title: "Invoicing and quoting tools",
+        text: "Create, send and track quotes and invoices in your own format, with a clear history for every customer.",
+      },
+      {
+        title: "Marketplaces and platforms",
+        text: "Listings, user accounts, payments, notifications and moderation tools for platform-style business models.",
+      },
+      {
+        title: "Integrations and automation",
+        text: "Connect accounting software, payment gateways, email and other APIs, so information only has to be captured once.",
       },
     ],
-    processTitle: "How We Scope an Application",
+    southAfricaHeading: "South African requirements, considered from the start",
+    southAfrica: [
+      "Systems that hold customer information must meet POPIA obligations, so we plan access controls, audit history and sensible data retention during design rather than adding them afterwards. Your organisation stays responsible for its own compliance, and your legal adviser should confirm what applies to you.",
+      "We also plan for local realities: rand-based pricing and VAT on quotes and invoices, South African payment gateways, screens that work well on a phone, and interfaces that recover cleanly when a connection drops or the power goes out mid-task.",
+      "Everything is delivered remotely, so teams in any province, or spread across several branches, can use and test the system as it is being built.",
+    ],
+    processTitle: "How We Scope and Build a System",
     processBody: [
-      "The most important work happens before writing code. We map the users, permissions, screens, data, notifications, integrations, and admin actions so the build solves the right problem.",
-      "Once the workflow is clear, we can design the screens, build the frontend and backend, test the main journeys, and prepare the platform for launch and future maintenance.",
+      "We prefer to release a focused first version, get it into real use and improve it from there. This lowers your risk and means later features are based on evidence.",
     ],
     processItems: [
       {
         title: "Workflow mapping",
-        text: "Define who uses the system, what they need to do, what data is required, and where decisions happen.",
+        text: "We sit with the people doing the work and document the users, permissions, data, approvals and exceptions.",
       },
       {
-        title: "Technical plan",
-        text: "Choose the data model, authentication approach, integrations, admin tools, and deployment path.",
+        title: "First-version scope",
+        text: "We agree on what must be in version one and what can wait, along with the data model, integrations and hosting plan.",
       },
       {
         title: "Build and test",
-        text: "Create the screens and application logic, then test the important customer and admin journeys.",
+        text: "You see working software regularly, not just at the end. We test the key customer and admin journeys with real scenarios.",
       },
       {
         title: "Launch and improve",
-        text: "Deploy the application, monitor early use, fix issues, and plan future iterations from real feedback.",
+        text: "We migrate data, train your team, monitor early use, then fix issues and plan the next improvements from real feedback.",
       },
     ],
+    costHeading: "What affects the cost of a custom application",
+    cost: [
+      "Cost depends on the number of user roles, how complex the business rules are, how many integrations are needed, and whether existing data must be migrated. Reporting and mobile requirements also add to the scope.",
+      "Remember to budget for what happens after launch too: hosting, backups, security updates and ongoing improvements. We give you a clear picture of these running costs before you commit, because a system you cannot afford to maintain is not a good investment.",
+    ],
     related: [
-      { label: "Website Design & Development", href: "/services/web-development/" },
-      { label: "SEO & Online Visibility", href: "/services/seo-services/" },
-      { label: "Maintenance & Technical Support", href: "/services/website-maintenance/" },
-      { label: "Industry Application Solutions", href: "/industries/" },
+      { label: "Online booking systems", href: "/services/booking-customer-management/" },
+      { label: "Website design and development", href: "/services/web-development/" },
+      { label: "Website and system maintenance", href: "/services/website-maintenance/" },
+      { label: "Website vs web application", href: "/guides/website-vs-web-application/" },
+      { label: "AI agents for business workflows", href: "/ai-agents/" },
     ],
     faqs: [
       {
-        question: "When does a business need a custom web application?",
+        question: "What is the difference between a website and a web application?",
         answer:
-          "A custom application makes sense when the business needs logins, dashboards, bookings, workflows, payments, reporting, integrations, or structured data that a normal website cannot manage well.",
+          "A website mainly informs and persuades visitors. A web application lets people log in and do work, such as managing bookings, tracking jobs or approving documents. Many businesses eventually need both.",
       },
       {
-        question: "Can you build both the frontend and backend?",
+        question: "Should I buy existing software or build my own?",
         answer:
-          "Yes. The work can include interface design, frontend development, backend logic, database structure, authentication, admin dashboards, and integrations.",
+          "Buy if an existing product covers most of your needs at a fair price. Consider building when your process is a real advantage, or when you are working around several tools every day. We will give you a straight answer during scoping.",
       },
       {
-        question: "Can the platform start small?",
+        question: "Can you connect the system to our accounting software?",
         answer:
-          "Yes. Many applications should start with a focused first version, then add extra roles, reports, automations, integrations, or workflows after the core system proves useful.",
+          "Usually, yes, as long as the software offers an API or a reliable export. We confirm what is possible for your specific tools during scoping, before you commit to the build.",
       },
       {
-        question: "Do you maintain applications after launch?",
+        question: "Can we start small?",
         answer:
-          "Yes. Ongoing support can include bug fixes, feature improvements, security updates, monitoring, backups, and performance checks.",
+          "Yes, and we usually recommend it. A focused first version often solves the most expensive problem, and it gives you real feedback before you spend money on further features.",
+      },
+      {
+        question: "Who owns the system once it is built?",
+        answer:
+          "Ownership, source code access and hosting are agreed in writing before the project starts, so you know exactly what you are getting.",
+      },
+      {
+        question: "Do you support applications after launch?",
+        answer:
+          "Yes. Support can cover bug fixes, security updates, backups, monitoring and new features, so the system keeps working as your business changes.",
       },
     ],
-    serviceType: "Business Systems and Automation",
+    serviceType: "Custom Web Application Development",
   },
-
   {
     slug: "booking-customer-management",
-    title: "Booking & Customer Management",
-    metaTitle: "Booking & Customer Management Systems | SoftKore Digital",
-    description: "Connected booking and customer management systems for appointments, enquiries, payments, reminders, and follow-up.",
-    eyebrow: "Booking & Customer Management",
-    h1: "Booking and Customer Management That Keeps Work Moving",
-    intro: "SoftKore Digital creates connected booking journeys and customer management tools that make it easier to serve clients from first enquiry through follow-up.",
+    title: "Online Booking & Customer Management",
+    metaTitle: "Online Booking Systems South Africa | SoftKore Digital",
+    description:
+      "Online booking and customer management systems for South African service businesses: scheduling, deposits, reminders, customer records and reporting.",
+    eyebrow: "Online Booking & Customer Management",
+    h1: "Online Booking Systems for South African Service Businesses",
+    intro:
+      "We build booking journeys that let customers choose a service and time without the back-and-forth, and give your team one place to manage appointments, deposits and customer history.",
     primaryCta: "Start a Booking Project",
-    secondaryCta: "Explore Business Systems",
+    secondaryCta: "Explore Custom Systems",
     secondaryHref: "/services/custom-web-applications/",
-    summaryTitle: "Booking solutions can include",
-    summary: ["Online appointment requests and scheduling", "Customer records and service history", "Availability, reminders, and notifications", "Payments and deposit workflows", "Admin dashboards and reporting"],
-    bodyHeading: "Make every customer step easier to manage.",
-    body: ["Booking is more than a calendar. Customers need a clear way to choose a service, find a suitable time, provide the right information, pay when required, and know what happens next.", "We connect that customer journey to practical management tools so your team can control availability, records, confirmations, follow-up, and reporting without unnecessary manual work."],
-    bullets: ["Appointment scheduling", "Customer profiles", "Service and staff management", "Deposits and payments", "Email and message notifications", "Operational reporting"],
-    cards: [
-      { title: "Clear customer journeys", text: "Guide customers from service selection to confirmation with fewer confusing steps." },
-      { title: "Better daily control", text: "Give teams one place to manage availability, bookings, customer details, and changes." },
-      { title: "Useful automation", text: "Reduce repetitive work with confirmations, reminders, status changes, and follow-up triggers." },
+    summaryTitle: "Booking systems can include",
+    summary: [
+      "Service and time selection on mobile",
+      "Staff, branch and availability rules",
+      "Deposits and online payments",
+      "Confirmations and reminders",
+      "Customer records and reporting",
+    ],
+    bodyHeading: "Every missed reply can be a missed booking.",
+    body: [
+      "If booking depends on someone answering the phone or a WhatsApp message, you lose customers after hours, during busy periods and whenever a competitor replies first. A manual diary also means double bookings, no-shows and time spent confirming details that a system could capture on its own.",
+      "A good booking system does more than show a calendar. It reflects how your business really runs: how long each service takes, which staff can perform it, when you need buffer time, and when a deposit is required. Your customer sees a simple journey while the system applies those rules behind the scenes.",
+    ],
+    fitHeading: "Who this is for",
+    fit: [
+      "This service suits salons, spas, clinics, therapists, consultants, driving schools, repair services and any business that sells time or appointments. It is especially useful if you have several staff members or branches, each with their own availability.",
+      "If you have one calendar and simple needs, an existing booking app may be all you need, and we will tell you so. Custom work makes sense when your rules, deposits or customer records go beyond what those tools handle well, or when you want booking built properly into your own website.",
     ],
     featureTitle: "What a Connected Booking System Can Do",
-    featureIntro: "The right setup depends on your services, staff, locations, payment rules, and the information your team needs before each booking.",
-    features: [
-      { title: "Online scheduling", text: "Let customers request or reserve suitable services and times from a mobile-friendly journey." },
-      { title: "Customer management", text: "Keep contact details, booking history, notes, preferences, and important records together." },
-      { title: "Availability control", text: "Manage staff, service duration, operating hours, buffers, capacity, and schedule changes." },
-      { title: "Payments and deposits", text: "Connect suitable payment steps to reduce friction and support clearer booking policies." },
-      { title: "Notifications", text: "Send confirmations, reminders, updates, and follow-up messages at the right points." },
-      { title: "Management reporting", text: "Track booking activity, cancellations, service demand, customer patterns, and team workload." },
-    ],
-    processTitle: "How We Design the Booking Journey",
-    processBody: ["We start by mapping the real customer journey and the work your team completes behind it.", "The system is then shaped around service rules, availability, customer data, payments, communications, and the admin controls required to operate confidently."],
-    processItems: [
-      { title: "Map the journey", text: "Define each customer and team step from service discovery through booking and follow-up." },
-      { title: "Set the rules", text: "Clarify availability, staff, locations, deposits, cancellations, notifications, and permissions." },
-      { title: "Build and connect", text: "Create the customer experience, management tools, data structure, and required integrations." },
-      { title: "Launch and refine", text: "Test real scenarios, launch carefully, and improve the workflow using team and customer feedback." },
-    ],
-    related: [
-      { label: "Business Systems & Automation", href: "/services/custom-web-applications/" },
-      { label: "Website Design & Development", href: "/services/web-development/" },
-      { label: "Maintenance & Technical Support", href: "/services/website-maintenance/" },
-    ],
-    faqs: [
-      { question: "Can you connect bookings to payments?", answer: "Yes. The project can include deposits, full payments, payment status, refunds or cancellation rules where the selected payment provider supports them." },
-      { question: "Can staff manage availability and bookings?", answer: "Yes. Admin tools can support staff schedules, services, locations, customer records, booking changes, notes, and reporting." },
-      { question: "Can the system send reminders?", answer: "Yes. Email or messaging integrations can send confirmations, reminders, updates, and follow-up messages when the required provider APIs are available." },
-      { question: "Can an existing booking workflow be improved?", answer: "Yes. We can assess the current customer journey and management process, then improve or replace the parts creating the most friction." },
-    ],
-    serviceType: "Booking and Customer Management",
-  },
-  {
-    slug: "seo-services",
-    title: "SEO & Online Visibility",
-    metaTitle: "SEO & Online Visibility South Africa | SoftKore Digital",
-    description:
-      "SEO and online visibility services for South African businesses, including technical SEO, page improvement, indexing checks, local visibility and reporting.",
-    eyebrow: "SEO & Online Visibility",
-    h1: "SEO & Online Visibility for Businesses That Want to Be Found",
-    intro:
-      "SoftKore Digital fixes the technical basics, improves important pages, and monitors search performance so your website has a better chance of bringing in the right traffic.",
-    primaryCta: "Improve Online Visibility",
-    secondaryCta: "View Website Design",
-    secondaryHref: "/services/web-development/",
-    summaryTitle: "SEO services include",
-    summary: [
-      "Technical SEO audits",
-      "Metadata and page optimization",
-      "Sitemap and indexing checks",
-      "Google Search Console monitoring",
-      "Local SEO page planning",
-    ],
-    bodyHeading: "Good SEO starts with a healthy website.",
-    body: [
-      "A website can look good and still struggle to get found. The technical setup, page quality, internal links, and search data all matter.",
-      "Our work is practical. We check what Google can access, improve the pages that matter, and use Search Console to see what needs attention next.",
-    ],
-    bullets: [
-      "Technical SEO setup",
-      "Search Console checks",
-      "Crawled but not indexed review",
-      "Internal linking plans",
-      "Local service pages",
-      "Monthly reporting",
-    ],
-    cards: [
-      {
-        title: "Technical health",
-        text: "Important pages should be easy for Google to find, understand, and load.",
-      },
-      {
-        title: "Better service pages",
-        text: "Service pages should answer real customer questions and make the next step clear.",
-      },
-      {
-        title: "Monitoring",
-        text: "Search Console data helps show what is working, what is stuck, and what should be improved next.",
-      },
-    ],
-    featureTitle: "What SEO Work Covers",
     featureIntro:
-      "SEO is not one task. It is a mix of technical health, page quality, internal linking, search intent, and ongoing monitoring.",
+      "The right setup depends on your services, staff, branches and payment rules. These are the parts we most often connect.",
     features: [
       {
-        title: "Technical checks",
-        text: "Review indexability, redirects, sitemap visibility, crawl paths, canonical URLs, metadata, page speed, and broken links.",
+        title: "Online scheduling",
+        text: "Customers choose a service, staff member and time on their phone, and only see slots that are actually available.",
       },
       {
-        title: "Search Console reviews",
-        text: "Use real search data to find pages that are discovered but not performing, queries with opportunity, and indexing issues that need attention.",
+        title: "Availability rules",
+        text: "Manage durations, buffers, operating hours, leave, capacity and different rules for each branch or staff member.",
       },
       {
-        title: "Service page improvement",
-        text: "Strengthen important commercial pages so they answer buyer questions and connect to relevant locations, industries, and supporting content.",
+        title: "Deposits and payments",
+        text: "Take deposits or full payment through a South African payment provider, with clear cancellation and refund rules.",
       },
       {
-        title: "Local SEO planning",
-        text: "Build location structures carefully, with useful local context and internal links instead of thin pages that only swap city names.",
+        title: "Reminders",
+        text: "Send automatic confirmations and reminders to reduce no-shows and repeat admin.",
       },
       {
-        title: "Content direction",
-        text: "Identify guide and FAQ topics that support actual services, not random blog posts that never move a customer toward enquiry.",
+        title: "Customer records",
+        text: "Keep contact details, booking history, notes and preferences together, with access limited to the right staff.",
       },
       {
         title: "Reporting",
-        text: "Track what changed, what Google is seeing, which pages need work, and what should be improved next.",
+        text: "See booking volumes, cancellations, popular services and staff workload without compiling it by hand.",
       },
+    ],
+    southAfricaHeading: "Made for how South African customers book",
+    southAfrica: [
+      "Most customers will book from a phone, so the journey must be quick on a small screen and on mobile data. Where it suits your business, WhatsApp can remain part of the process, with the booking link doing the scheduling work once a conversation has started.",
+      "Deposits can run through local payment gateways such as PayFast, Yoco or Ozow, subject to each provider's features and fees. Customer details and appointment notes are personal information under POPIA, and medical or wellness notes need extra care, so we plan who can see what from the start.",
+      "We set up, train and support your team remotely, wherever in South Africa your business operates.",
+    ],
+    processTitle: "How We Design the Booking Journey",
+    processBody: [
+      "We map the real customer journey and the admin behind it first, because that is where the expensive edge cases hide.",
+    ],
+    processItems: [
+      {
+        title: "Map the journey",
+        text: "We follow each step from discovering a service through booking, the appointment itself and follow-up.",
+      },
+      {
+        title: "Set the rules",
+        text: "We agree on availability, staff, branches, deposits, cancellations, notifications and permissions.",
+      },
+      {
+        title: "Build and connect",
+        text: "We build the customer journey and admin tools, then connect payments and messaging.",
+      },
+      {
+        title: "Launch and refine",
+        text: "We test real scenarios, import existing bookings if needed, train your team and adjust based on early use.",
+      },
+    ],
+    costHeading: "What affects the cost of a booking system",
+    cost: [
+      "The biggest factors are the number of services, staff and branches, how complex your availability and deposit rules are, and how much customer history needs to be imported. SMS and payment providers also charge their own usage fees.",
+      "We will compare a custom build against existing booking software during scoping, including monthly subscription costs over time, so you can choose with the full picture.",
+    ],
+    related: [
+      { label: "Web applications and business systems", href: "/services/custom-web-applications/" },
+      { label: "Website design and development", href: "/services/web-development/" },
+      { label: "Salon booking software", href: "/industries/salon-booking-software/" },
+      { label: "Medical practice websites", href: "/industries/medical-practice-websites/" },
+      { label: "Website maintenance", href: "/services/website-maintenance/" },
+    ],
+    faqs: [
+      {
+        question: "Can customers pay a deposit when they book?",
+        answer:
+          "Yes. Deposits or full payments can run through a South African payment provider, along with the cancellation rules you choose. Refund options depend on what the provider supports.",
+      },
+      {
+        question: "Will it work with several staff members and branches?",
+        answer:
+          "Yes. Each staff member or branch can have its own services, hours and availability, and customers only see the slots that genuinely apply.",
+      },
+      {
+        question: "Can the system send WhatsApp reminders?",
+        answer:
+          "Email reminders are the simplest option. SMS and WhatsApp are possible through approved messaging providers, which charge their own fees and have their own rules. We confirm the best option during scoping.",
+      },
+      {
+        question: "Can you add booking to my existing website?",
+        answer:
+          "Usually, yes. We review your site first and either connect the booking system to it or recommend a rebuild if the current setup would get in the way.",
+      },
+      {
+        question: "Can existing customer records be moved across?",
+        answer:
+          "Yes, if your current system or spreadsheet can export the data. We check the quality of the data first and agree on what is worth bringing over.",
+      },
+    ],
+    serviceType: "Online Booking System Development",
+  },
+  {
+    slug: "seo-services",
+    title: "SEO Services",
+    metaTitle: "SEO Services South Africa | Technical SEO & Content | SoftKore Digital",
+    description:
+      "SEO services for South African businesses: technical audits, indexing fixes, service page improvements and Search Console reporting, with no ranking guarantees.",
+    eyebrow: "SEO Services",
+    h1: "SEO Services for South African Businesses",
+    intro:
+      "We find out why your website is not being found, fix what is holding it back, and improve the pages that can bring you paying customers, with plain reporting on what changed.",
+    primaryCta: "Request an SEO Review",
+    secondaryCta: "Need a New Website?",
+    secondaryHref: "/services/web-development/",
+    summaryTitle: "SEO work can include",
+    summary: [
+      "Technical audits and indexing fixes",
+      "Service page and content improvements",
+      "Keyword and search intent research",
+      "Google Business Profile guidance",
+      "Monthly Search Console reporting",
+    ],
+    bodyHeading: "Find the actual problem before you spend on the solution.",
+    body: [
+      "Low traffic can have very different causes. Google may be unable to access your pages, or it may have crawled them and decided they are not worth indexing. Your pages may be indexed but target searches nobody makes, or they may rank on page five because stronger competitors have more authority. Each problem has a different fix, and a generic monthly SEO package rarely identifies which one applies to you.",
+      "We start with your Google Search Console data and a full crawl of your website, so recommendations come from evidence. Then we prioritise the work most likely to bring enquiries, even if that means fixing or removing pages rather than publishing more.",
+    ],
+    fitHeading: "Who this is for",
+    fit: [
+      "This service suits South African businesses with a real offer and a website that gets little search traffic, including sites that rank for the wrong terms, lost traffic after a redesign, or have many pages excluded from Google. It works best when you can share Search Console access and honest information about your customers.",
+      "SEO is not the right first step for everyone. If your site needs rebuilding, or you need enquiries this month, a rebuild or paid campaign may be a better place to start, and we will tell you if that is the case.",
+    ],
+    featureTitle: "What Our SEO Work Covers",
+    featureIntro:
+      "SEO has to address technical health, content quality and authority together. Improving only one of them rarely moves results for long.",
+    features: [
+      {
+        title: "Technical SEO audit",
+        text: "We check indexing, crawl paths, redirects, canonicals, sitemaps, speed and mobile usability across your whole site, not just a sample.",
+      },
+      {
+        title: "Indexing recovery",
+        text: "We investigate pages marked \"Crawled - currently not indexed\" or \"Discovered - currently not indexed\", and decide what to improve, merge or remove.",
+      },
+      {
+        title: "Service page improvements",
+        text: "We rewrite your commercial pages so they answer buyer questions and match what people are actually searching for.",
+      },
+      {
+        title: "Keyword and intent research",
+        text: "We identify searches that indicate a real buyer in your market, then map each one to a single page to avoid pages competing with each other.",
+      },
+      {
+        title: "Local and national visibility",
+        text: "We advise on your Google Business Profile, directory listings and reviews, whether you serve one town or the whole country.",
+      },
+      {
+        title: "Reporting you can read",
+        text: "Each month you see what was done, what changed in Search Console, and what comes next, without jargon or vanity metrics.",
+      },
+    ],
+    southAfricaHeading: "What SEO looks like in South Africa",
+    southAfrica: [
+      "South African search results have their own competitors and their own habits. National searches are often dominated by directories, large agencies and established brands, so a realistic plan looks at what you can win now as well as what will take longer to build.",
+      "Search behaviour also varies. People may search for \"Joburg\" rather than \"Johannesburg\", or include \"near me\" or a province name, and many searches happen on phones. We use your own search data to see how your customers actually phrase things.",
+      "We also take a firm line on location pages. Publishing hundreds of near-identical pages with only the town name changed is a well-known way to get pages dropped from Google. We would rather build a few strong pages than many weak ones, and we only add location content where there is something genuinely useful to say.",
     ],
     processTitle: "How We Improve Search Visibility",
     processBody: [
-      "The first step is finding what is blocking the site. Sometimes the issue is technical. Sometimes the pages are too thin. Sometimes the site has no clear internal linking model.",
-      "After the audit, we prioritize fixes that can improve crawlability, page quality, and conversion. The goal is more qualified visitors landing on pages that make it easy to take the next step.",
+      "SEO is ongoing work, but it should never be vague. Every stage has a clear output that you can check for yourself in Search Console.",
     ],
     processItems: [
       {
         title: "Audit",
-        text: "Review indexation, metadata, crawl paths, internal links, technical health, and the pages that matter commercially.",
+        text: "We crawl your full site and review Search Console, your competitors and the pages that matter commercially.",
       },
       {
-        title: "Improve",
-        text: "Update page structure, headings, copy, links, schema, and technical details where they are limiting visibility.",
+        title: "Prioritise",
+        text: "You receive a ranked list of what is blocking results, with the reason behind each item.",
       },
       {
-        title: "Monitor",
-        text: "Use Search Console and live checks to watch what Google discovers, indexes, and shows.",
+        title: "Fix and improve",
+        text: "We fix technical issues, improve or merge weak pages, and strengthen internal links and content.",
       },
       {
-        title: "Expand",
-        text: "Plan the next useful service, location, industry, or guide pages after the core pages are strong.",
+        title: "Measure and repeat",
+        text: "We track indexing, impressions, positions and enquiries, then use that evidence to choose the next piece of work.",
       },
     ],
+    costHeading: "What affects the cost of SEO",
+    cost: [
+      "Cost depends on the size and condition of your site, how competitive your market is, and whether we are writing content and implementing changes or advising your existing team. A once-off audit is a low-risk way to start before you commit to anything monthly.",
+      "Be careful with very cheap packages that promise fixed rankings or large numbers of links. Bought links and mass-produced content can leave you with a problem that costs more to fix than the service did.",
+    ],
     related: [
-      { label: "Website Design & Development", href: "/services/web-development/" },
-      { label: "Business Systems & Automation", href: "/services/custom-web-applications/" },
-      { label: "Maintenance & Technical Support", href: "/services/website-maintenance/" },
-      { label: "SEO Guides", href: "/guides/" },
+      { label: "Why your website is not ranking", href: "/guides/why-your-website-is-not-ranking/" },
+      { label: "Technical SEO checklist", href: "/guides/technical-seo-checklist/" },
+      { label: "Website design and development", href: "/services/web-development/" },
+      { label: "Website maintenance", href: "/services/website-maintenance/" },
+      { label: "Digital marketing and conversion", href: "/services/digital-marketing-conversion/" },
     ],
     faqs: [
       {
-        question: "What SEO work should happen first?",
+        question: "How long does SEO take to work?",
         answer:
-          "Start with technical health, Search Console review, key page improvements, internal linking, sitemap checks, and clear priorities for the next pages to improve.",
+          "Technical fixes can be picked up within weeks, but meaningful ranking improvements usually take several months, and longer in competitive markets. Anyone promising a fixed timeline is guessing.",
       },
       {
-        question: "How long does SEO take?",
+        question: "Can you guarantee first-page rankings on Google?",
         answer:
-          "Technical fixes can happen quickly, but ranking improvement is usually measured over months. Competition, page quality, links, authority, and consistency all matter.",
+          "No, and you should be wary of anyone who does. Google controls its results. We can guarantee clear work, honest reporting and decisions based on your data.",
       },
       {
-        question: "Do you create location pages?",
+        question: "Why are my pages not being indexed by Google?",
         answer:
-          "Yes, but they need useful local context, service fit, related areas, FAQs, and internal links. Thin pages that only swap city names are risky.",
+          "Common causes include technical blocks, thin or duplicated content, weak internal linking and low site authority. Search Console shows the reason Google gives for each page, which is where we start.",
       },
       {
-        question: "Can SEO support an existing website?",
+        question: "Can you do SEO for a business anywhere in South Africa?",
         answer:
-          "Yes. We can review the existing site, fix technical issues, improve important pages, and plan future content around search demand.",
+          "Yes. We work remotely, whether you serve one town or the whole country. The strategy differs, since a national business and a local one compete for very different searches.",
+      },
+      {
+        question: "Do I need more pages or blog posts to rank?",
+        answer:
+          "Not automatically. Adding pages can make things worse if the existing ones are weak. We often improve or merge what you already have first, and only add content that answers a distinct search need.",
+      },
+      {
+        question: "What access do you need to get started?",
+        answer:
+          "Google Search Console is the most useful. Analytics and access to your website or developer help too. If Search Console is not set up yet, we can guide you through it.",
       },
     ],
-    serviceType: "SEO and Online Visibility",
+    serviceType: "Search Engine Optimisation",
   },
   {
     slug: "website-maintenance",
-    title: "Website Maintenance & Technical Support",
-    metaTitle: "Website Maintenance & Technical Support | SoftKore Digital",
+    title: "Website Maintenance",
+    metaTitle: "Website Maintenance Services South Africa | SoftKore Digital",
     description:
-      "Monthly website maintenance services for updates, bug fixes, security checks, SEO monitoring, Search Console checks, performance checks, and reporting.",
-    eyebrow: "Maintenance & Technical Support",
-    h1: "Ongoing Website Maintenance and Technical Support",
+      "Website maintenance services for South African businesses: updates, backups, security checks, bug fixes, form testing and monthly reporting. Sites we did not build included.",
+    eyebrow: "Website Maintenance",
+    h1: "Website Maintenance Services for South African Businesses",
     intro:
-      "After launch, your website still needs care. SoftKore Digital helps with updates, fixes, SEO checks, and performance monitoring so the site stays useful.",
+      "We keep your website secure, working and up to date, so you are not the one who discovers that your contact form stopped working three weeks ago.",
     primaryCta: "Start a Support Plan",
-    secondaryCta: "Add SEO Monitoring",
-    secondaryHref: "/services/seo-services/",
-    summaryTitle: "Maintenance includes",
+    secondaryCta: "See the Monthly Checklist",
+    secondaryHref: "/guides/website-maintenance-checklist/",
+    summaryTitle: "Maintenance can include",
     summary: [
-      "Website updates",
-      "Security checks",
-      "Bug fixes",
-      "Content changes",
+      "Software and security updates",
+      "Backups and restore checks",
+      "Bug fixes and content changes",
+      "Contact form and link testing",
       "SEO and performance monitoring",
     ],
-    bodyHeading: "A healthy website needs ongoing attention.",
+    bodyHeading: "Websites rarely break all at once. They drift.",
     body: [
-      "Websites can break, slow down, or become outdated as your business changes. Maintenance keeps those small problems from becoming expensive distractions.",
-      "This support is for businesses that want their site to stay stable, current, and easy to improve.",
+      "A plugin update breaks a page layout. An email change means enquiries stop arriving. Old prices stay online, a staff member who left is still listed, and a security update gets missed for months. None of it looks urgent until a customer complains, you get hacked, or you notice the enquiries have dried up.",
+      "Maintenance gives your website a regular routine. Updates happen on schedule, problems are caught early, and small improvements get done instead of piling up until a full rebuild feels like the only option.",
     ],
-    bullets: [
-      "Content changes",
-      "Bug fixes",
-      "Search Console checks",
-      "Page speed checks",
-      "SEO issue monitoring",
-      "Monthly reporting",
+    fitHeading: "Who this is for",
+    fit: [
+      "This service suits businesses that rely on their website for enquiries, bookings or sales but have no one looking after it. That includes owners whose original developer is no longer available and teams who keep putting off small changes because nobody has the time or access.",
+      "We can usually take on websites we did not build, including WordPress sites. We review the site, hosting and access first and tell you about any risks before you sign up.",
     ],
-    cards: [
-      {
-        title: "Keep pages current",
-        text: "We help update service pages, contact details, images, copy, and calls to action as the business changes.",
-      },
-      {
-        title: "Catch technical issues",
-        text: "Regular checks help spot broken pages, slow loading, form problems, and search warnings early.",
-      },
-      {
-        title: "Support ongoing SEO",
-        text: "Maintenance can include search checks and page improvements after launch.",
-      },
-    ],
-    featureTitle: "What Maintenance Can Include",
+    featureTitle: "What Maintenance Covers",
     featureIntro:
-      "A website is a working business asset. Maintenance keeps it accurate, stable, secure, and easier to improve after launch.",
+      "We agree on the scope up front according to how your site is built and how much it matters to your business.",
     features: [
       {
-        title: "Content updates",
-        text: "Update services, team details, images, pricing notes, calls to action, contact details, and location information.",
+        title: "Updates",
+        text: "We keep your CMS, plugins, themes and dependencies current, and check that nothing broke afterwards.",
       },
       {
-        title: "Bug fixes",
-        text: "Fix broken layouts, form issues, mobile problems, missing assets, link errors, and small problems before they grow.",
+        title: "Backups",
+        text: "Regular backups are stored separately from your site. We also check that they can actually be restored.",
       },
       {
         title: "Security checks",
-        text: "Review access, dependencies, server behaviour, suspicious activity, and basic hardening needs where relevant.",
+        text: "We review user access, software vulnerabilities, SSL certificates and suspicious activity, and tighten what needs attention.",
       },
       {
-        title: "SEO monitoring",
-        text: "Check Search Console, sitemap visibility, indexing changes, metadata issues, and pages that need improvement.",
+        title: "Fixes and content changes",
+        text: "We fix broken layouts and errors, and update your services, prices, team details and images when you send them through.",
       },
       {
-        title: "Performance checks",
-        text: "Watch page weight, image loading, caching, mobile usability, and avoidable layout or loading issues.",
+        title: "Form and journey testing",
+        text: "We test your contact forms, WhatsApp and call links, bookings and checkout, because a broken form quietly costs you business.",
       },
       {
-        title: "Reporting",
-        text: "Keep a simple record of completed work, issues found, recommendations, and next actions for the site.",
+        title: "SEO and performance monitoring",
+        text: "We watch Search Console for indexing problems, broken pages and speed issues, then report on what we find and fix.",
       },
     ],
-    processTitle: "Why Maintenance Matters",
+    southAfricaHeading: "Support that suits South African businesses",
+    southAfrica: [
+      "You deal with people in your own time zone, in rand, and all support is remote, so it makes no difference which province you are in. Send change requests by email or WhatsApp and you will have a clear record of what was asked for and what was done.",
+      "Keeping sites light matters here, since many visitors browse on mobile data. Maintenance includes watching page weight, because images and plugins tend to slow a site down gradually over time.",
+      "We also check that your privacy notice and forms still reflect how you collect personal information under POPIA. That is a practical check, not legal advice.",
+    ],
+    processTitle: "How Maintenance Works",
     processBody: [
-      "Most websites slowly drift out of date. Services change, links break, staff details move, forms stop being tested, and Search Console starts showing warnings nobody is watching.",
-      "Maintenance gives the site a rhythm. Small fixes, content improvements, and monitoring happen before they become urgent.",
+      "Before anything else, we need to know what we are looking after. After that, the work settles into a predictable monthly routine.",
     ],
     processItems: [
       {
-        title: "Stability",
-        text: "Regular checks help keep forms, pages, links, scripts, and key customer journeys working.",
+        title: "Website review",
+        text: "We check your site, hosting, access, backups and any existing problems, then agree on the scope.",
       },
       {
-        title: "Accuracy",
-        text: "Service information, contact details, offers, and calls to action can stay aligned with the business.",
+        title: "Secure handover",
+        text: "We set up our own access, take a full backup and record how your site is set up.",
       },
       {
-        title: "Visibility",
-        text: "SEO and indexing checks help catch technical problems that can quietly reduce search performance.",
+        title: "Monthly care",
+        text: "We run updates, backups, security checks and journey tests, and work through your change requests.",
       },
       {
-        title: "Momentum",
-        text: "Maintenance creates space for small improvements instead of waiting for a full redesign.",
+        title: "Plain reporting",
+        text: "You get a short summary of completed work, issues found and what we recommend next.",
       },
     ],
+    costHeading: "What affects the cost of website maintenance",
+    cost: [
+      "The main factors are how your site is built, how many plugins or integrations it uses, whether it handles bookings or payments, and how many content changes you need each month. An online store naturally needs more attention than a small brochure website.",
+      "Also check what a cheaper plan leaves out. A plan without tested backups or journey checks can look like good value until the day you actually need help.",
+    ],
     related: [
-      { label: "Website Design & Development", href: "/services/web-development/" },
-      { label: "SEO & Online Visibility", href: "/services/seo-services/" },
-      { label: "Business Systems & Automation", href: "/services/custom-web-applications/" },
+      { label: "Monthly website maintenance checklist", href: "/guides/website-maintenance-checklist/" },
+      { label: "SEO services", href: "/services/seo-services/" },
+      { label: "Website design and development", href: "/services/web-development/" },
+      { label: "Web applications and business systems", href: "/services/custom-web-applications/" },
+      { label: "Why your website is not ranking", href: "/guides/why-your-website-is-not-ranking/" },
     ],
     faqs: [
       {
         question: "How often should a website be maintained?",
         answer:
-          "Most business websites should be checked at least monthly. Sites with frequent content changes, forms, SEO work, or application features may need more regular support.",
+          "Most business websites should be checked at least monthly. Online stores, booking sites and sites with many plugins often need more frequent attention.",
       },
       {
-        question: "Can maintenance include SEO?",
+        question: "Can you maintain a website you did not build?",
         answer:
-          "Yes. Maintenance can include Search Console checks, sitemap review, metadata improvements, internal link updates, performance checks, and recommendations for pages that need stronger content.",
+          "Usually, yes. We review the site, hosting and access first, and explain any risks before you commit. Occasionally a rebuild is the more sensible option, and we will tell you if so.",
       },
       {
-        question: "Can you maintain a site you did not build?",
+        question: "Do you maintain WordPress websites?",
         answer:
-          "Usually yes. We first review the site structure, access, hosting, codebase, and risk level so we understand what can be safely supported.",
+          "Yes. Many business websites run on WordPress, and it needs regular updates because outdated plugins are a common security risk.",
       },
       {
-        question: "Does maintenance replace a redesign?",
+        question: "My website has been hacked. Can you help?",
         answer:
-          "No. Maintenance keeps a good site healthy and improving. If the structure, design, or content is fundamentally weak, a redesign may still be the better long-term fix.",
+          "Contact us and we will assess the damage, clean or restore the site where possible, and close the security gaps. Recent backups make this much easier, which is one reason they are part of maintenance.",
+      },
+      {
+        question: "Does maintenance include SEO?",
+        answer:
+          "It includes monitoring for technical problems such as indexing drops and broken pages. Work to improve rankings, such as rewriting content, is a separate SEO service, although the two work well together.",
+      },
+      {
+        question: "Is maintenance a replacement for a redesign?",
+        answer:
+          "No. Maintenance keeps a sound website healthy. If the structure or content is fundamentally weak, updates alone will not solve that, and we will recommend a rebuild.",
       },
     ],
-    serviceType: "Website Maintenance and Technical Support",
+    serviceType: "Website Maintenance",
   },
   {
     slug: "digital-marketing-conversion",
     title: "Digital Marketing & Conversion",
-    metaTitle: "Digital Marketing & Conversion Services | SoftKore Digital",
-    description: "Practical digital marketing and conversion services that connect campaigns, landing pages, analytics, and customer action.",
+    metaTitle: "Digital Marketing & Conversion Services South Africa | SoftKore Digital",
+    description:
+      "Digital marketing and conversion services for South African businesses: landing pages, campaign planning, tracking and conversion reviews that turn visits into enquiries.",
     eyebrow: "Digital Marketing & Conversion",
-    h1: "Digital Marketing Built Around Measurable Customer Action",
-    intro: "SoftKore Digital connects campaigns, landing pages, conversion journeys, and reporting so marketing activity has a clear business purpose.",
+    h1: "Digital Marketing and Conversion Services in South Africa",
+    intro:
+      "We connect your campaigns, landing pages and tracking so you can see which marketing brings in enquiries and fix the places where interested people drop off.",
     primaryCta: "Start a Growth Project",
-    secondaryCta: "Explore SEO & Online Visibility",
+    secondaryCta: "See SEO Services",
     secondaryHref: "/services/seo-services/",
     summaryTitle: "Growth work can include",
-    summary: ["Campaign and landing-page strategy", "Conversion-focused page improvements", "Analytics and event tracking", "Lead and enquiry journeys", "Reporting and ongoing optimization"],
-    bodyHeading: "Turn attention into a useful next step.",
-    body: ["Digital marketing works better when the campaign, message, landing page, form, follow-up, and measurement plan are designed as one journey.", "We focus on practical improvements that help the right audience understand the offer, trust the business, and take a measurable next action."],
-    bullets: ["Landing pages", "Campaign planning", "Conversion reviews", "Lead generation journeys", "Analytics setup", "Performance reporting"],
-    cards: [
-      { title: "Clear campaign purpose", text: "Every campaign starts with a defined audience, offer, action, and way to measure progress." },
-      { title: "Stronger conversion paths", text: "Pages, forms, calls to action, and follow-up steps work together instead of creating friction." },
-      { title: "Evidence-led improvement", text: "Analytics and customer behaviour help decide what should change next." },
+    summary: [
+      "Campaign and landing page strategy",
+      "Conversion reviews of your site",
+      "Analytics and event tracking",
+      "Enquiry and follow-up journeys",
+      "Reporting and ongoing improvement",
     ],
-    featureTitle: "How We Support Digital Growth",
-    featureIntro: "The work can support a focused campaign or an ongoing growth programme, depending on your audience, offer, and internal capacity.",
+    bodyHeading: "More traffic will not fix a page that does not convert.",
+    body: [
+      "Many businesses pay for clicks that land on a homepage with no clear offer, a long form and no way to tell whether the advertising worked. Sending more traffic to that setup simply makes the waste bigger.",
+      "We look at the whole journey: the audience and offer, the ad or search result, the landing page, the form or WhatsApp click, and what happens once the enquiry arrives. Fixing the weakest link often does more than raising the budget.",
+    ],
+    fitHeading: "Who this is for",
+    fit: [
+      "This service suits businesses that are advertising without clear results, getting website traffic but few enquiries, or planning a campaign and wanting tracking in place before spending money.",
+      "If you have no clear offer yet or your website is not ready, we will suggest fixing that first. A campaign cannot make up for a weak offer.",
+    ],
+    featureTitle: "How We Support Growth",
+    featureIntro:
+      "This can be a single focused campaign or ongoing work, depending on your market, budget and internal capacity.",
     features: [
-      { title: "Campaign planning", text: "Clarify the audience, offer, channel, message, budget, customer action, and measurement plan." },
-      { title: "Landing pages", text: "Build focused pages that connect campaign intent to a clear and credible next step." },
-      { title: "Conversion reviews", text: "Identify friction in navigation, copy, forms, calls to action, checkout, or booking journeys." },
-      { title: "Lead journeys", text: "Connect enquiries to useful confirmation, qualification, routing, and follow-up processes." },
-      { title: "Analytics", text: "Set up meaningful events and reporting around the actions that matter to the business." },
-      { title: "Optimization", text: "Use performance evidence to improve messages, pages, audiences, and conversion steps over time." },
+      {
+        title: "Campaign planning",
+        text: "We define the audience, offer, channels, budget and what success looks like before any money is spent.",
+      },
+      {
+        title: "Landing pages",
+        text: "We build pages that match the promise in your ad and focus on one clear action.",
+      },
+      {
+        title: "Conversion reviews",
+        text: "We find what is stopping people on your site, whether that is confusing copy, long forms, slow pages or weak proof.",
+      },
+      {
+        title: "Tracking setup",
+        text: "We set up tracking for form submissions, calls, WhatsApp clicks, bookings and purchases, and verify that it works.",
+      },
+      {
+        title: "Enquiry follow-up",
+        text: "We help route enquiries to the right person quickly, with confirmation and follow-up steps, because response time affects sales.",
+      },
+      {
+        title: "Ongoing improvement",
+        text: "We review the data regularly and adjust messages, pages and budgets based on what is actually working.",
+      },
+    ],
+    southAfricaHeading: "Marketing in the South African context",
+    southAfrica: [
+      "Budgets are often tight, so we focus on measuring cost per enquiry rather than reach. Google Ads, Meta and LinkedIn each suit different goals, and the right mix depends on whether your customers are already searching for what you offer.",
+      "Mobile behaviour matters too. Many South African customers want to act immediately through a WhatsApp or call button, so we track those clicks as properly as we track forms. If you market to existing contacts, POPIA's direct marketing rules apply, so we plan your consent and opt-out handling from the start.",
+      "We run this work remotely for businesses anywhere in the country, including those targeting specific provinces or national audiences.",
     ],
     processTitle: "How We Build a Growth Programme",
-    processBody: ["We begin with the business outcome and work backwards through the audience, offer, channel, customer journey, and measurement plan.", "This keeps campaign activity connected to the website and operational process required to turn attention into business value."],
+    processBody: [
+      "We begin with the business result you want and work backwards. Tracking goes in first, so the results can be trusted.",
+    ],
     processItems: [
-      { title: "Define the outcome", text: "Agree on the audience, offer, desired customer action, constraints, and meaningful success signals." },
-      { title: "Build the journey", text: "Shape the campaign message, landing experience, form or transaction, and follow-up path." },
-      { title: "Launch and measure", text: "Release the campaign with appropriate tracking and verify that important customer actions are recorded." },
-      { title: "Learn and improve", text: "Review evidence, identify friction, and refine the highest-value parts of the journey." },
+      {
+        title: "Define the outcome",
+        text: "We agree on the audience, offer, action, budget and the numbers that will show whether it is working.",
+      },
+      {
+        title: "Build the journey",
+        text: "We shape the campaign message, landing page, form or WhatsApp action, and follow-up path.",
+      },
+      {
+        title: "Launch and measure",
+        text: "We launch with tracking in place and verify that key actions are recorded correctly.",
+      },
+      {
+        title: "Learn and improve",
+        text: "We review the evidence, remove what is not working and put more effort behind what is.",
+      },
+    ],
+    costHeading: "What affects the cost of digital marketing",
+    cost: [
+      "There are two separate costs: the media budget you pay to platforms such as Google or Meta, and the fee for planning, building and managing the work. Always ask which of these a quote includes.",
+      "Your total will depend on how competitive your market is, how many campaigns and landing pages you need, and how much reporting and ongoing management you want. Starting with a small tracked test is often the most sensible way to learn before spending more.",
     ],
     related: [
-      { label: "SEO & Online Visibility", href: "/services/seo-services/" },
-      { label: "Website Design & Development", href: "/services/web-development/" },
-      { label: "Booking & Customer Management", href: "/services/booking-customer-management/" },
+      { label: "SEO services", href: "/services/seo-services/" },
+      { label: "Website design and development", href: "/services/web-development/" },
+      { label: "Online booking systems", href: "/services/booking-customer-management/" },
+      { label: "Website prices in South Africa", href: "/guides/website-prices-south-africa/" },
     ],
     faqs: [
-      { question: "Do you guarantee marketing results?", answer: "No. Results depend on the offer, audience, competition, budget, channel, and customer journey. We focus on clear strategy, sound implementation, useful measurement, and evidence-led improvement." },
-      { question: "Can you improve an existing landing page?", answer: "Yes. We can review its message, structure, calls to action, forms, speed, mobile experience, tracking, and connection to follow-up." },
-      { question: "Can marketing connect to a booking or sales system?", answer: "Yes. Campaign journeys can connect to enquiry routing, booking, payment, customer management, or reporting tools where suitable integrations are available." },
-      { question: "Can you set up analytics and conversion tracking?", answer: "Yes. Tracking can be configured around meaningful actions such as form submissions, calls, bookings, purchases, and important journey steps." },
+      {
+        question: "Do you guarantee marketing results?",
+        answer:
+          "No. Results depend on your offer, audience, competition, budget and channel. We commit to sound planning, accurate tracking and honest reporting, and we make decisions from the evidence.",
+      },
+      {
+        question: "Should I use SEO or paid ads?",
+        answer:
+          "Paid ads can bring traffic quickly but stop when the budget stops. SEO takes longer but can keep bringing visitors. Many businesses use ads to learn and generate early enquiries while building SEO over time.",
+      },
+      {
+        question: "Can you improve my existing landing page?",
+        answer:
+          "Yes. We review its message, structure, calls to action, forms, speed, mobile experience and tracking, and then prioritise the changes most likely to help.",
+      },
+      {
+        question: "Can you track WhatsApp clicks and calls?",
+        answer:
+          "Yes. Clicks on WhatsApp and call buttons can be tracked as events. Knowing what happened after the click depends on your follow-up process, so we help set up simple ways to record that too.",
+      },
+      {
+        question: "What budget do I need to start advertising?",
+        answer:
+          "It varies by market, because competitive keywords cost much more per click. We look at your market first and suggest a test budget big enough to learn something useful.",
+      },
     ],
     serviceType: "Digital Marketing and Conversion",
   },

@@ -29,6 +29,11 @@ export function ServiceTemplate({ service }: { service: ServicePage }) {
         <div className="solution-intro-copy">{service.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
       </section>
 
+      <section className="section solution-intro">
+        <div className="stitch-section-heading"><p className="stitch-kicker">Is this right for you?</p><h2>{service.fitHeading}</h2></div>
+        <div className="solution-intro-copy">{service.fit.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
+      </section>
+
       <section className="section solution-feature-section">
         <div className="stitch-section-heading stitch-section-heading-center"><p className="stitch-kicker">What we can build</p><h2>{service.featureTitle}</h2><p>{service.featureIntro}</p></div>
         <div className="solution-feature-grid">
@@ -36,17 +41,27 @@ export function ServiceTemplate({ service }: { service: ServicePage }) {
         </div>
       </section>
 
+      <section className="section solution-intro">
+        <div className="stitch-section-heading"><p className="stitch-kicker">Across South Africa</p><h2>{service.southAfricaHeading}</h2></div>
+        <div className="solution-intro-copy">{service.southAfrica.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
+      </section>
+
       <section className="section solution-process">
         <div className="stitch-section-heading"><p className="stitch-kicker">Our approach</p><h2>{service.processTitle}</h2>{service.processBody.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
         <ol>{service.processItems.map((item, index) => <li key={item.title}><span>{String(index + 1).padStart(2, "0")}</span><div><h3>{item.title}</h3><p>{item.text}</p></div></li>)}</ol>
       </section>
 
-      <section className="section solution-support-grid">
-        <div><p className="stitch-kicker">Related solutions</p><h2>Connect the next part of the journey.</h2><LinkList items={service.related} /></div>
-        <div><p className="stitch-kicker">Common questions</p><h2>Useful answers before we start.</h2><FaqList items={service.faqs} /></div>
+      <section className="section solution-intro">
+        <div className="stitch-section-heading"><p className="stitch-kicker">Budgeting</p><h2>{service.costHeading}</h2></div>
+        <div className="solution-intro-copy">{service.cost.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
       </section>
 
-      <ConversionBand title="Build the simplest system that moves the business forward." text="Tell us what should work better. We will help shape the right next move." primaryLabel={service.primaryCta} secondaryHref="/work/" secondaryLabel="See Our Work" />
+      <section className="section solution-support-grid">
+        <div><p className="stitch-kicker">Related pages</p><h2>Where to go next.</h2><LinkList items={service.related} /></div>
+        <div><p className="stitch-kicker">Common questions</p><h2>Answers before you enquire.</h2><FaqList items={service.faqs} /></div>
+      </section>
+
+      <ConversionBand title={`Talk to us about ${service.title.toLowerCase()}.`} text="Tell us what you need and where you are based. We work with businesses across South Africa and will give you a straight answer on the best next step." primaryLabel={service.primaryCta} secondaryHref="/services/" secondaryLabel="All Services" />
     </main>
   );
 }

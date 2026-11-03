@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHeroImage } from "@/components/PageHeroImage";
 import { ConversionBand } from "@/components/PageSections";
-import { caseStudies } from "@/data/case-studies";
+import { projectTypes } from "@/data/case-studies";
 import { breadcrumbSchema, JsonLd } from "@/lib/schema";
 import { absoluteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Work",
-  description: "Selected SoftKore Digital work across customer journeys, search foundations, and business systems.",
+  title: "How We Approach Website, SEO and Software Projects",
+  description: "The website, SEO and web application projects SoftKore Digital takes on, how we approach each one, and what you receive at the end.",
   alternates: { canonical: "/work/" },
 };
 
@@ -21,26 +21,26 @@ export default function WorkPage() {
           <div className="page-hero-inner">
             <div>
               <nav className="breadcrumb" aria-label="Breadcrumb"><Link prefetch={false} href="/">Home</Link><span>/</span><span>Work</span></nav>
-              <h1>Digital work that creates real business movement.</h1>
-              <p>Clearer customer journeys, stronger search foundations and systems that make daily work easier.</p>
-              <div className="hero-actions"><Link prefetch={false} className="button button-primary" href="/contact/">Start a project</Link><Link prefetch={false} className="button button-secondary" href="/services/">Explore solutions</Link></div>
+              <h1>How we approach website, SEO and software projects.</h1>
+              <p>These are the types of project we take on, how we handle each one and what you receive at the end. Ask us for examples relevant to your business when you get in touch.</p>
+              <div className="hero-actions"><Link prefetch={false} className="button button-primary" href="/contact/">Start a project</Link><Link prefetch={false} className="button button-secondary" href="/services/">View services</Link></div>
             </div>
-            <aside className="page-summary page-summary-media"><PageHeroImage imageKey="work" /><strong>What matters</strong><ul><li>A clearer offer</li><li>An easier next step</li><li>Less operational friction</li><li>Room to keep improving</li></ul></aside>
+            <aside className="page-summary page-summary-media"><PageHeroImage imageKey="work" /><strong>On every project</strong><ul><li>A clear scope before work starts</li><li>Regular reviews on real screens</li><li>Testing on the live site</li><li>Plain-language reporting</li></ul></aside>
           </div>
         </section>
 
         <section className="work-showcase">
           <div className="section visual-work-list">
-            {caseStudies.map((study, index) => (
-              <article key={study.title}>
-                <figure><img src={study.image} alt={study.imageAlt} width={1536} height={1024} loading="lazy" /><span>{String(index + 1).padStart(2, "0")}</span></figure>
-                <div><p className="simple-label">{study.category}</p><h2>{study.title}</h2><dl><div><dt>The challenge</dt><dd>{study.challenge}</dd></div><div><dt>The move</dt><dd>{study.intervention}</dd></div><div><dt>The outcome</dt><dd>{study.outcome}</dd></div></dl></div>
+            {projectTypes.map((project, index) => (
+              <article key={project.title}>
+                <figure><img src={project.image} alt={project.imageAlt} width={1536} height={1024} loading="lazy" /><span>{String(index + 1).padStart(2, "0")}</span></figure>
+                <div><p className="simple-label">{project.category}</p><h2>{project.title}</h2><dl><div><dt>The usual problem</dt><dd>{project.problem}</dd></div><div><dt>Our approach</dt><dd>{project.approach}</dd></div><div><dt>What you receive</dt><dd>{project.deliverable}</dd></div></dl><Link prefetch={false} className="simple-link" href={project.href}>See this service <span>-&gt;</span></Link></div>
               </article>
             ))}
           </div>
         </section>
 
-        <ConversionBand title="What should move better in your business?" text="Bring us the customer journey, search challenge or internal workflow." primaryLabel="Start a Project" secondaryHref="/services/" secondaryLabel="Explore Solutions" />
+        <ConversionBand title="Does one of these sound like your business?" text="Tell us what is happening, and we will tell you honestly what we would do first." primaryLabel="Start a Project" secondaryHref="/services/" secondaryLabel="View Services" />
       </main>
     </>
   );

@@ -1,0 +1,794 @@
+﻿url,page_type,action,redirect_to,clicks_6m,impressions_6m,avg_position,words_before,reason
+/,Homepage,KEEP - REWRITTEN,,7,211,6.49,461,New national South Africa content.
+/about/,Company page,KEEP - REWRITTEN,,0,15,5.6,202,New national South Africa content.
+/ai-agents/,AI agents,KEEP - CONFIRM,,0,0,,188,Content unchanged. Keep only if you sell this service; otherwise redirect to /services/custom-web-applications/.
+/ai-agents/accounting-firm-websites/,AI agents,KEEP - CONFIRM,,0,10,72.9,392,Content unchanged. Keep only if you sell this service; otherwise redirect to /services/custom-web-applications/.
+/ai-agents/construction-company-websites/,AI agents,KEEP - CONFIRM,,0,0,,394,Content unchanged. Keep only if you sell this service; otherwise redirect to /services/custom-web-applications/.
+/ai-agents/dental-practice-websites/,AI agents,KEEP - CONFIRM,,0,1,71,384,Content unchanged. Keep only if you sell this service; otherwise redirect to /services/custom-web-applications/.
+/ai-agents/ecommerce-development/,AI agents,KEEP - CONFIRM,,0,0,,435,Content unchanged. Keep only if you sell this service; otherwise redirect to /services/custom-web-applications/.
+/ai-agents/legal-firm-seo-services/,AI agents,KEEP - CONFIRM,,0,3,33,404,Content unchanged. Keep only if you sell this service; otherwise redirect to /services/custom-web-applications/.
+/ai-agents/logistics-company-websites/,AI agents,KEEP - CONFIRM,,0,2,1,392,Content unchanged. Keep only if you sell this service; otherwise redirect to /services/custom-web-applications/.
+/ai-agents/medical-practice-websites/,AI agents,KEEP - CONFIRM,,0,4,9.5,426,Content unchanged. Keep only if you sell this service; otherwise redirect to /services/custom-web-applications/.
+/ai-agents/plumber-websites/,AI agents,KEEP - CONFIRM,,0,2,4.5,403,Content unchanged. Keep only if you sell this service; otherwise redirect to /services/custom-web-applications/.
+/ai-agents/real-estate-websites/,AI agents,KEEP - CONFIRM,,0,9,66.67,412,Content unchanged. Keep only if you sell this service; otherwise redirect to /services/custom-web-applications/.
+/ai-agents/salon-booking-software/,AI agents,KEEP - CONFIRM,,0,1,5,459,Content unchanged. Keep only if you sell this service; otherwise redirect to /services/custom-web-applications/.
+/contact/,Company page,KEEP - REWRITTEN,,0,12,6.25,231,New national South Africa content.
+/guides/,Guides index,KEEP - REWRITTEN,,0,7,7.29,225,New national South Africa content.
+/guides/choosing-a-website-partner/,Guide,REDIRECT,/guides/website-prices-south-africa/,0,0,,445,Old-template guide; its topic is now covered in the target guide.
+/guides/improve-website-enquiries/,Guide,REDIRECT,/guides/why-your-website-is-not-ranking/,0,2,9,438,Old-template guide; its topic is now covered in the target guide.
+/guides/planning-service-pages/,Guide,REDIRECT,/guides/technical-seo-checklist/,0,5,16,441,Old-template guide; its topic is now covered in the target guide.
+/guides/technical-seo-checklist/,Guide,KEEP - REWRITTEN,,0,0,,317,New in-depth guide content.
+/guides/website-maintenance-checklist/,Guide,KEEP - REWRITTEN,,0,0,,290,New in-depth guide content.
+/guides/website-prices-south-africa/,Guide,KEEP - REWRITTEN,,0,0,,370,New in-depth guide content.
+/guides/website-vs-web-application/,Guide,KEEP - REWRITTEN,,0,0,,327,New in-depth guide content.
+/guides/why-your-website-is-not-ranking/,Guide,KEEP - REWRITTEN,,0,0,,341,New in-depth guide content.
+/industries/,Industries index,KEEP - REWRITTEN,,0,25,10.2,348,New national South Africa content.
+/industries/accounting-firm-websites/,Industry,KEEP - UPDATED,,0,0,,394,"Unique page. National H1, full content shown, location links replaced."
+/industries/accounting-firm-websites/custom-web-applications/,Industry + service,REDIRECT,/industries/accounting-firm-websites/,0,0,,602,Generated sub-page; merged into its kept parent industry.
+/industries/accounting-firm-websites/seo-services/,Industry + service,REDIRECT,/industries/accounting-firm-websites/,0,1,18,600,Generated sub-page; merged into its kept parent industry.
+/industries/accounting-firm-websites/website-design/,Industry + service,REDIRECT,/industries/accounting-firm-websites/,1,9,22,610,Generated sub-page; merged into its kept parent industry.
+/industries/aesthetic-clinic-websites/,Industry,REDIRECT,/industries/salon-booking-software/,0,5,6.6,731,Generated page; merged into the closest kept industry.
+/industries/aesthetic-clinic-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,2,8.5,581,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/aesthetic-clinic-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,6,69,578,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/aesthetic-clinic-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,3,6.33,592,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/agriculture-business-websites/,Industry,REDIRECT,/industries/,0,8,23.88,728,Generated page with no close kept industry; sent to the industries hub.
+/industries/agriculture-business-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,601,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/agriculture-business-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,6,15,599,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/agriculture-business-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,1,6,6.33,609,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/architect-websites/,Industry,REDIRECT,/industries/construction-company-websites/,0,0,,745,Generated page; merged into the closest kept industry.
+/industries/architect-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,590,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/architect-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,588,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/architect-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,11,598,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/auditor-websites/,Industry,REDIRECT,/industries/accounting-firm-websites/,0,0,,705,Generated page; merged into the closest kept industry.
+/industries/auditor-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,571,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/auditor-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,569,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/auditor-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,582,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/automotive-business-websites/,Industry,REDIRECT,/industries/,0,1,9,724,Generated page with no close kept industry; sent to the industries hub.
+/industries/automotive-business-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,582,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/automotive-business-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,3,5.33,579,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/automotive-business-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,2,8,593,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/baby-store-websites/,Industry,REDIRECT,/industries/ecommerce-development/,0,0,,716,Generated page; merged into the closest kept industry.
+/industries/baby-store-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,579,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/baby-store-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,577,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/baby-store-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,2,9,591,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/bakery-websites/,Industry,REDIRECT,/industries/,0,0,,698,Generated page with no close kept industry; sent to the industries hub.
+/industries/bakery-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,1,72,567,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/bakery-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,565,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/bakery-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,5,578,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/barber-shop-websites/,Industry,REDIRECT,/industries/salon-booking-software/,0,0,,731,Generated page; merged into the closest kept industry.
+/industries/barber-shop-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,1,56,587,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/barber-shop-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,584,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/barber-shop-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,2,10,4.2,598,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/beauty-salon-websites/,Industry,REDIRECT,/industries/salon-booking-software/,0,3,10,763,Generated page; merged into the closest kept industry.
+/industries/beauty-salon-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,1,4,607,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/beauty-salon-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,3,20.33,604,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/beauty-salon-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,2,12,614,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/business-coach-websites/,Industry,REDIRECT,/industries/,0,0,,715,Generated page with no close kept industry; sent to the industries hub.
+/industries/business-coach-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,1,9,580,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/business-coach-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,577,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/business-coach-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,2,8,591,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/car-rental-websites/,Industry,REDIRECT,/industries/,1,4,27.5,741,Generated page with no close kept industry; sent to the industries hub.
+/industries/car-rental-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,595,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/car-rental-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,592,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/car-rental-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,3,5.67,607,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/carpenter-websites/,Industry,REDIRECT,/industries/construction-company-websites/,0,6,37.17,727,Generated page; merged into the closest kept industry.
+/industries/carpenter-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,579,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/carpenter-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,3,17.67,577,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/carpenter-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,12,588,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/carpet-cleaning-websites/,Industry,REDIRECT,/industries/,0,3,21,730,Generated page with no close kept industry; sent to the industries hub.
+/industries/carpet-cleaning-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,591,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/carpet-cleaning-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,589,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/carpet-cleaning-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,37,604,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/catering-company-websites/,Industry,REDIRECT,/industries/,0,0,,718,Generated page with no close kept industry; sent to the industries hub.
+/industries/catering-company-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,575,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/catering-company-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,2,8.5,573,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/catering-company-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,3,587,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/childcare-school-websites/,Industry,REDIRECT,/industries/,0,2,11,748,Generated page with no close kept industry; sent to the industries hub.
+/industries/childcare-school-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,598,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/childcare-school-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,1,9,596,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/childcare-school-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,7,6.86,608,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/chiropractor-websites/,Industry,REDIRECT,/industries/medical-practice-websites/,0,0,,706,Generated page; merged into the closest kept industry.
+/industries/chiropractor-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,568,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/chiropractor-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,565,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/chiropractor-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,9,578,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/church-ministry-websites/,Industry,REDIRECT,/industries/,0,3,25.67,744,Generated page with no close kept industry; sent to the industries hub.
+/industries/church-ministry-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,596,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/church-ministry-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,1,2,594,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/church-ministry-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,3,19.67,605,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/cleaning-company-websites/,Industry,REDIRECT,/industries/,0,1,9,718,Generated page with no close kept industry; sent to the industries hub.
+/industries/cleaning-company-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,579,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/cleaning-company-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,577,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/cleaning-company-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,2,5,591,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/coffee-shop-websites/,Industry,REDIRECT,/industries/,0,1,5,716,Generated page with no close kept industry; sent to the industries hub.
+/industries/coffee-shop-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,576,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/coffee-shop-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,9,37.56,574,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/coffee-shop-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,18,588,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/construction-company-websites/,Industry,KEEP - UPDATED,,0,8,19.62,381,"Unique page. National H1, full content shown, location links replaced."
+/industries/construction-company-websites/custom-web-applications/,Industry + service,REDIRECT,/industries/construction-company-websites/,0,0,,583,Generated sub-page; merged into its kept parent industry.
+/industries/construction-company-websites/seo-services/,Industry + service,REDIRECT,/industries/construction-company-websites/,0,23,25.39,581,Generated sub-page; merged into its kept parent industry.
+/industries/construction-company-websites/website-design/,Industry + service,REDIRECT,/industries/construction-company-websites/,0,0,,595,Generated sub-page; merged into its kept parent industry.
+/industries/consulting-firm-websites/,Industry,REDIRECT,/industries/,0,0,,714,Generated page with no close kept industry; sent to the industries hub.
+/industries/consulting-firm-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,1,1,580,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/consulting-firm-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,45,41.22,578,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/consulting-firm-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,592,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/conveyancer-websites/,Industry,REDIRECT,/industries/legal-firm-seo-services/,0,10,51.1,710,Generated page; merged into the closest kept industry.
+/industries/conveyancer-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,567,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/conveyancer-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,565,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/conveyancer-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,578,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/corporate-training-websites/,Industry,REDIRECT,/industries/,0,36,80.94,732,Generated page with no close kept industry; sent to the industries hub.
+/industries/corporate-training-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,592,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/corporate-training-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,1,3,590,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/corporate-training-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,605,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/courier-company-websites/,Industry,REDIRECT,/industries/logistics-company-websites/,0,2,79,716,Generated page; merged into the closest kept industry.
+/industries/courier-company-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,4,41.75,581,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/courier-company-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,10,25.1,579,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/courier-company-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,22,593,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/cybersecurity-company-websites/,Industry,REDIRECT,/industries/,0,0,,720,Generated page with no close kept industry; sent to the industries hub.
+/industries/cybersecurity-company-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,4,75,584,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/cybersecurity-company-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,582,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/cybersecurity-company-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,2,9.5,596,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/debt-counsellor-websites/,Industry,REDIRECT,/industries/,0,3,42.67,717,Generated page with no close kept industry; sent to the industries hub.
+/industries/debt-counsellor-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,1,11,579,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/debt-counsellor-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,1,1,7,577,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/debt-counsellor-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,3,4.33,591,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/dental-practice-websites/,Industry,KEEP - UPDATED,,1,15,35.4,397,"Unique page. National H1, full content shown, location links replaced."
+/industries/dental-practice-websites/custom-web-applications/,Industry + service,REDIRECT,/industries/dental-practice-websites/,0,1,4,586,Generated sub-page; merged into its kept parent industry.
+/industries/dental-practice-websites/seo-services/,Industry + service,REDIRECT,/industries/dental-practice-websites/,0,4,43.25,583,Generated sub-page; merged into its kept parent industry.
+/industries/dental-practice-websites/website-design/,Industry + service,REDIRECT,/industries/dental-practice-websites/,1,11,60.45,597,Generated sub-page; merged into its kept parent industry.
+/industries/dermatologist-websites/,Industry,REDIRECT,/industries/medical-practice-websites/,0,0,,708,Generated page; merged into the closest kept industry.
+/industries/dermatologist-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,575,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/dermatologist-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,2,8.5,572,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/dermatologist-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,585,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/driving-school-websites/,Industry,REDIRECT,/industries/,0,18,6.06,728,Generated page with no close kept industry; sent to the industries hub.
+/industries/driving-school-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,580,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/driving-school-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,577,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/driving-school-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,591,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/ecommerce-development/,Industry,KEEP - UPDATED,,0,2,3,434,"Unique page. National H1, full content shown, location links replaced."
+/industries/ecommerce-development/custom-web-applications/,Industry + service,REDIRECT,/industries/ecommerce-development/,0,11,71.82,583,Generated sub-page; merged into its kept parent industry.
+/industries/ecommerce-development/seo-services/,Industry + service,REDIRECT,/industries/ecommerce-development/,0,4,40.75,581,Generated sub-page; merged into its kept parent industry.
+/industries/ecommerce-development/website-design/,Industry + service,REDIRECT,/industries/ecommerce-development/,0,23,61.7,595,Generated sub-page; merged into its kept parent industry.
+/industries/education-training-websites/,Industry,REDIRECT,/industries/,0,11,88.45,745,Generated page with no close kept industry; sent to the industries hub.
+/industries/education-training-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,2,5,601,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/education-training-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,1,1,3,599,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/education-training-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,2,5,609,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/electrician-websites/,Industry,REDIRECT,/industries/plumber-websites/,0,2,7,713,Generated page; merged into the closest kept industry.
+/industries/electrician-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,570,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/electrician-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,2,9,568,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/electrician-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,5,6.6,581,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/engineering-firm-websites/,Industry,REDIRECT,/industries/construction-company-websites/,0,1,1,720,Generated page; merged into the closest kept industry.
+/industries/engineering-firm-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,584,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/engineering-firm-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,1,10,582,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/engineering-firm-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,596,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/engineering-supplier-websites/,Industry,REDIRECT,/industries/,0,0,,719,Generated page with no close kept industry; sent to the industries hub.
+/industries/engineering-supplier-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,581,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/engineering-supplier-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,1,22,579,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/engineering-supplier-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,9,593,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/estate-agent-websites/,Industry,REDIRECT,/industries/real-estate-websites/,0,16,30.38,718,Generated page; merged into the closest kept industry.
+/industries/estate-agent-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,2,7,576,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/estate-agent-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,95,38.03,574,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/estate-agent-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,75,588,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/event-planner-websites/,Industry,REDIRECT,/industries/,0,0,,720,Generated page with no close kept industry; sent to the industries hub.
+/industries/event-planner-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,574,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/event-planner-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,572,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/event-planner-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,586,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/event-venue-websites/,Industry,REDIRECT,/industries/,0,1,38,767,Generated page with no close kept industry; sent to the industries hub.
+/industries/event-venue-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,606,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/event-venue-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,2,19,604,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/event-venue-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,6,62.83,615,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/farm-equipment-websites/,Industry,REDIRECT,/industries/,0,0,,735,Generated page with no close kept industry; sent to the industries hub.
+/industries/farm-equipment-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,593,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/farm-equipment-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,591,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/farm-equipment-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,606,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/financial-advisor-websites/,Industry,REDIRECT,/industries/,0,1,6,719,Generated page with no close kept industry; sent to the industries hub.
+/industries/financial-advisor-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,1,11,579,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/financial-advisor-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,1,92,577,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/financial-advisor-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,591,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/fitness-studio-websites/,Industry,REDIRECT,/industries/,0,0,,761,Generated page with no close kept industry; sent to the industries hub.
+/industries/fitness-studio-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,603,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/fitness-studio-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,3,91,600,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/fitness-studio-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,612,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/flooring-company-websites/,Industry,REDIRECT,/industries/construction-company-websites/,0,0,,719,Generated page; merged into the closest kept industry.
+/industries/flooring-company-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,578,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/flooring-company-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,576,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/flooring-company-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,590,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/florist-websites/,Industry,REDIRECT,/industries/ecommerce-development/,0,4,6.5,707,Generated page; merged into the closest kept industry.
+/industries/florist-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,1,12,571,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/florist-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,6,46,569,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/florist-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,582,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/food-manufacturer-websites/,Industry,REDIRECT,/industries/,0,0,,721,Generated page with no close kept industry; sent to the industries hub.
+/industries/food-manufacturer-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,581,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/food-manufacturer-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,11,34.18,579,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/food-manufacturer-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,7,39,593,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/freight-forwarder-websites/,Industry,REDIRECT,/industries/logistics-company-websites/,0,3,9.67,721,Generated page; merged into the closest kept industry.
+/industries/freight-forwarder-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,1,10,585,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/freight-forwarder-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,583,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/freight-forwarder-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,3,20.33,597,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/funeral-home-websites/,Industry,REDIRECT,/industries/,0,4,8,730,Generated page with no close kept industry; sent to the industries hub.
+/industries/funeral-home-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,1,10,585,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/funeral-home-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,3,10,583,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/funeral-home-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,5,7.6,597,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/furniture-manufacturer-websites/,Industry,REDIRECT,/industries/,0,1,87,722,Generated page with no close kept industry; sent to the industries hub.
+/industries/furniture-manufacturer-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,579,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/furniture-manufacturer-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,7,21.29,577,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/furniture-manufacturer-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,591,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/furniture-store-websites/,Industry,REDIRECT,/industries/ecommerce-development/,0,0,,715,Generated page; merged into the closest kept industry.
+/industries/furniture-store-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,578,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/furniture-store-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,6,19.67,576,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/furniture-store-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,2,5,590,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/gp-websites/,Industry,REDIRECT,/industries/medical-practice-websites/,0,1,5,732,Generated page; merged into the closest kept industry.
+/industries/gp-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,590,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/gp-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,1,23,587,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/gp-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,4,601,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/guest-house-websites/,Industry,REDIRECT,/industries/,0,4,50.5,727,Generated page with no close kept industry; sent to the industries hub.
+/industries/guest-house-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,583,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/guest-house-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,1,3,580,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/guest-house-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,5,594,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/hardware-store-websites/,Industry,REDIRECT,/industries/ecommerce-development/,0,0,,722,Generated page; merged into the closest kept industry.
+/industries/hardware-store-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,1,6,582,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/hardware-store-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,580,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/hardware-store-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,2,5.5,594,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/home-care-websites/,Industry,REDIRECT,/industries/medical-practice-websites/,0,1,7,743,Generated page; merged into the closest kept industry.
+/industries/home-care-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,597,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/home-care-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,595,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/home-care-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,6,610,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/hotel-lodge-websites/,Industry,REDIRECT,/industries/,0,2,18.5,771,Generated page with no close kept industry; sent to the industries hub.
+/industries/hotel-lodge-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,8,11.25,609,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/hotel-lodge-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,1,3,33.67,606,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/hotel-lodge-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,137,52.88,617,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/hr-consultant-websites/,Industry,REDIRECT,/industries/,0,0,,713,Generated page with no close kept industry; sent to the industries hub.
+/industries/hr-consultant-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,581,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/hr-consultant-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,579,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/hr-consultant-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,2,30,593,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/hvac-company-websites/,Industry,REDIRECT,/industries/plumber-websites/,0,0,,738,Generated page; merged into the closest kept industry.
+/industries/hvac-company-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,607,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/hvac-company-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,605,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/hvac-company-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,3,5.33,614,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/insurance-broker-websites/,Industry,REDIRECT,/industries/,0,1,8,724,Generated page with no close kept industry; sent to the industries hub.
+/industries/insurance-broker-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,5,19.8,579,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/insurance-broker-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,577,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/insurance-broker-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,2,29,30.03,591,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/interior-designer-websites/,Industry,REDIRECT,/industries/,0,1,11,717,Generated page with no close kept industry; sent to the industries hub.
+/industries/interior-designer-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,577,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/interior-designer-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,1,8,575,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/interior-designer-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,589,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/it-company-websites/,Industry,REDIRECT,/industries/,0,3,41.33,748,Generated page with no close kept industry; sent to the industries hub.
+/industries/it-company-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,9,89.89,605,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/it-company-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,162,48.97,603,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/it-company-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,2,615,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/jewellery-store-websites/,Industry,REDIRECT,/industries/ecommerce-development/,0,0,,720,Generated page; merged into the closest kept industry.
+/industries/jewellery-store-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,581,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/jewellery-store-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,579,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/jewellery-store-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,6,4.17,593,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/landscaping-websites/,Industry,REDIRECT,/industries/,0,0,,719,Generated page with no close kept industry; sent to the industries hub.
+/industries/landscaping-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,2,9.5,579,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/landscaping-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,577,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/landscaping-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,4,591,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/laundry-service-websites/,Industry,REDIRECT,/industries/,0,1,1,717,Generated page with no close kept industry; sent to the industries hub.
+/industries/laundry-service-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,1,6,581,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/laundry-service-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,579,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/laundry-service-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,3,34,593,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/law-firm-websites/,Industry,REDIRECT,/industries/legal-firm-seo-services/,0,2,9,732,Generated page; merged into the closest kept industry.
+/industries/law-firm-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,2,37.5,586,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/law-firm-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,4,60.75,584,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/law-firm-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,4,64,598,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/legal-firm-seo-services/,Industry,KEEP - UPDATED,,0,24,45.25,458,"Unique page. National H1, full content shown, location links replaced."
+/industries/letting-agent-websites/,Industry,REDIRECT,/industries/real-estate-websites/,0,0,,727,Generated page; merged into the closest kept industry.
+/industries/letting-agent-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,584,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/letting-agent-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,582,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/letting-agent-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,596,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/logistics-company-websites/,Industry,KEEP - UPDATED,,0,0,,386,"Unique page. National H1, full content shown, location links replaced."
+/industries/logistics-company-websites/custom-web-applications/,Industry + service,REDIRECT,/industries/logistics-company-websites/,0,1,5,599,Generated sub-page; merged into its kept parent industry.
+/industries/logistics-company-websites/seo-services/,Industry + service,REDIRECT,/industries/logistics-company-websites/,0,3,18.33,597,Generated sub-page; merged into its kept parent industry.
+/industries/logistics-company-websites/website-design/,Industry + service,REDIRECT,/industries/logistics-company-websites/,0,10,7,607,Generated sub-page; merged into its kept parent industry.
+/industries/manufacturing-websites/,Industry,REDIRECT,/industries/,0,0,,720,Generated page with no close kept industry; sent to the industries hub.
+/industries/manufacturing-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,581,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/manufacturing-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,579,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/manufacturing-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,5,12.2,593,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/marketing-agency-websites/,Industry,REDIRECT,/industries/,0,4,69,713,Generated page with no close kept industry; sent to the industries hub.
+/industries/marketing-agency-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,12,76.92,579,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/marketing-agency-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,13,81.46,577,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/marketing-agency-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,34,66.88,591,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/mechanic-websites/,Industry,REDIRECT,/industries/,0,0,,754,Generated page with no close kept industry; sent to the industries hub.
+/industries/mechanic-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,1,8,609,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/mechanic-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,2,19.5,606,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/mechanic-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,11,37,615,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/medical-practice-websites/,Industry,KEEP - UPDATED,,0,29,16.41,432,"Unique page. National H1, full content shown, location links replaced."
+/industries/medical-practice-websites/custom-web-applications/,Industry + service,REDIRECT,/industries/medical-practice-websites/,0,3,7,588,Generated sub-page; merged into its kept parent industry.
+/industries/medical-practice-websites/seo-services/,Industry + service,REDIRECT,/industries/medical-practice-websites/,0,20,58.75,585,Generated sub-page; merged into its kept parent industry.
+/industries/medical-practice-websites/website-design/,Industry + service,REDIRECT,/industries/medical-practice-websites/,0,0,,599,Generated sub-page; merged into its kept parent industry.
+/industries/mining-supplier-websites/,Industry,REDIRECT,/industries/,0,0,,728,Generated page with no close kept industry; sent to the industries hub.
+/industries/mining-supplier-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,585,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/mining-supplier-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,583,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/mining-supplier-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,1,597,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/mortgage-broker-websites/,Industry,REDIRECT,/industries/,0,1,7,714,Generated page with no close kept industry; sent to the industries hub.
+/industries/mortgage-broker-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,580,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/mortgage-broker-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,578,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/mortgage-broker-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,592,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/moving-company-websites/,Industry,REDIRECT,/industries/logistics-company-websites/,0,0,,719,Generated page; merged into the closest kept industry.
+/industries/moving-company-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,581,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/moving-company-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,579,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/moving-company-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,33,593,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/municipal-service-provider-websites/,Industry,REDIRECT,/industries/,0,0,,744,Generated page with no close kept industry; sent to the industries hub.
+/industries/municipal-service-provider-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,3,4.67,597,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/municipal-service-provider-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,595,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/municipal-service-provider-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,1,4,25.75,610,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/nonprofit-websites/,Industry,REDIRECT,/industries/,0,3,8.67,741,Generated page with no close kept industry; sent to the industries hub.
+/industries/nonprofit-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,592,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/nonprofit-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,2,82,590,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/nonprofit-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,12,601,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/notary-websites/,Industry,REDIRECT,/industries/legal-firm-seo-services/,0,0,,702,Generated page; merged into the closest kept industry.
+/industries/notary-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,568,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/notary-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,566,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/notary-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,51,579,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/nursery-garden-centre-websites/,Industry,REDIRECT,/industries/,0,0,,745,Generated page with no close kept industry; sent to the industries hub.
+/industries/nursery-garden-centre-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,599,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/nursery-garden-centre-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,597,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/nursery-garden-centre-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,607,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/occupational-therapist-websites/,Industry,REDIRECT,/industries/medical-practice-websites/,0,0,,724,Generated page; merged into the closest kept industry.
+/industries/occupational-therapist-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,583,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/occupational-therapist-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,581,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/occupational-therapist-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,72,35.33,595,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/online-course-websites/,Industry,REDIRECT,/industries/,0,5,33.2,729,Generated page with no close kept industry; sent to the industries hub.
+/industries/online-course-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,1,5,591,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/online-course-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,589,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/online-course-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,604,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/optometrist-websites/,Industry,REDIRECT,/industries/medical-practice-websites/,0,5,6.6,715,Generated page; merged into the closest kept industry.
+/industries/optometrist-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,5,6.2,580,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/optometrist-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,31,41.19,577,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/optometrist-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,11,590,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/packaging-company-websites/,Industry,REDIRECT,/industries/,0,0,,723,Generated page with no close kept industry; sent to the industries hub.
+/industries/packaging-company-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,584,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/packaging-company-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,582,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/packaging-company-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,596,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/painting-contractor-websites/,Industry,REDIRECT,/industries/construction-company-websites/,0,1,7,717,Generated page; merged into the closest kept industry.
+/industries/painting-contractor-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,2,33,577,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/painting-contractor-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,575,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/painting-contractor-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,12,54.33,589,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/panel-beater-websites/,Industry,REDIRECT,/industries/,0,25,14.36,722,Generated page with no close kept industry; sent to the industries hub.
+/industries/panel-beater-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,2,28,578,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/panel-beater-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,1,8,576,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/panel-beater-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,4,590,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/pest-control-websites/,Industry,REDIRECT,/industries/,0,4,5,737,Generated page with no close kept industry; sent to the industries hub.
+/industries/pest-control-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,591,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/pest-control-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,589,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/pest-control-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,11,604,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/pet-store-websites/,Industry,REDIRECT,/industries/ecommerce-development/,0,2,7,721,Generated page; merged into the closest kept industry.
+/industries/pet-store-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,582,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/pet-store-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,580,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/pet-store-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,594,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/pharmacy-websites/,Industry,REDIRECT,/industries/medical-practice-websites/,0,3,6.67,701,Generated page; merged into the closest kept industry.
+/industries/pharmacy-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,572,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/pharmacy-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,570,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/pharmacy-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,2,1.5,583,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/photography-websites/,Industry,REDIRECT,/industries/,0,0,,747,Generated page with no close kept industry; sent to the industries hub.
+/industries/photography-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,594,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/photography-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,6,59.83,591,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/photography-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,3,601,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/physiotherapist-websites/,Industry,REDIRECT,/industries/medical-practice-websites/,0,0,,707,Generated page; merged into the closest kept industry.
+/industries/physiotherapist-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,569,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/physiotherapist-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,2,16.5,566,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/physiotherapist-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,13,56.15,579,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/plumber-websites/,Industry,KEEP - UPDATED,,1,23,30.13,380,"Unique page. National H1, full content shown, location links replaced."
+/industries/plumber-websites/custom-web-applications/,Industry + service,REDIRECT,/industries/plumber-websites/,0,0,,570,Generated sub-page; merged into its kept parent industry.
+/industries/plumber-websites/seo-services/,Industry + service,REDIRECT,/industries/plumber-websites/,0,0,,568,Generated sub-page; merged into its kept parent industry.
+/industries/plumber-websites/website-design/,Industry + service,REDIRECT,/industries/plumber-websites/,0,12,40.67,581,Generated sub-page; merged into its kept parent industry.
+/industries/pool-builder-websites/,Industry,REDIRECT,/industries/construction-company-websites/,0,4,2,724,Generated page; merged into the closest kept industry.
+/industries/pool-builder-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,579,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/pool-builder-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,577,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/pool-builder-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,591,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/printing-company-websites/,Industry,REDIRECT,/industries/,0,3,29,729,Generated page with no close kept industry; sent to the industries hub.
+/industries/printing-company-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,580,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/printing-company-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,2,15,578,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/printing-company-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,9,592,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/property-management-websites/,Industry,REDIRECT,/industries/real-estate-websites/,0,0,,740,Generated page; merged into the closest kept industry.
+/industries/property-management-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,599,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/property-management-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,2,51,597,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/property-management-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,612,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/psychologist-websites/,Industry,REDIRECT,/industries/medical-practice-websites/,0,3,7.67,733,Generated page; merged into the closest kept industry.
+/industries/psychologist-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,1,2,593,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/psychologist-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,3,3.33,591,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/psychologist-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,2,6,602,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/quantity-surveyor-websites/,Industry,REDIRECT,/industries/construction-company-websites/,0,0,,718,Generated page; merged into the closest kept industry.
+/industries/quantity-surveyor-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,579,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/quantity-surveyor-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,577,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/quantity-surveyor-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,2,2,591,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/real-estate-websites/,Industry,KEEP - UPDATED,,0,0,,423,"Unique page. National H1, full content shown, location links replaced."
+/industries/real-estate-websites/custom-web-applications/,Industry + service,REDIRECT,/industries/real-estate-websites/,0,0,,594,Generated sub-page; merged into its kept parent industry.
+/industries/real-estate-websites/seo-services/,Industry + service,REDIRECT,/industries/real-estate-websites/,0,40,81.3,592,Generated sub-page; merged into its kept parent industry.
+/industries/real-estate-websites/website-design/,Industry + service,REDIRECT,/industries/real-estate-websites/,0,22,36.09,607,Generated sub-page; merged into its kept parent industry.
+/industries/recruitment-agency-websites/,Industry,REDIRECT,/industries/,0,3,2.67,719,Generated page with no close kept industry; sent to the industries hub.
+/industries/recruitment-agency-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,1,2,586,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/recruitment-agency-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,3,25.33,584,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/recruitment-agency-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,23,67.35,598,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/restaurant-websites/,Industry,REDIRECT,/industries/,0,14,5.14,757,Generated page with no close kept industry; sent to the industries hub.
+/industries/restaurant-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,1,77,602,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/restaurant-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,2,8,599,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/restaurant-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,4,14.5,609,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/retail-store-websites/,Industry,REDIRECT,/industries/ecommerce-development/,0,1,20,721,Generated page; merged into the closest kept industry.
+/industries/retail-store-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,1,49,580,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/retail-store-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,578,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/retail-store-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,2,7,592,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/roofing-company-websites/,Industry,REDIRECT,/industries/construction-company-websites/,0,1,6,726,Generated page; merged into the closest kept industry.
+/industries/roofing-company-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,582,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/roofing-company-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,2,8,580,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/roofing-company-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,4,12.5,594,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/saas-company-websites/,Industry,REDIRECT,/industries/,0,0,,720,Generated page with no close kept industry; sent to the industries hub.
+/industries/saas-company-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,1,100,583,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/saas-company-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,3,60.33,581,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/saas-company-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,146,595,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/salon-booking-software/,Industry,KEEP - UPDATED,,0,2,29.5,482,"Unique page. National H1, full content shown, location links replaced."
+/industries/security-company-websites/,Industry,REDIRECT,/industries/,0,11,14.73,722,Generated page with no close kept industry; sent to the industries hub.
+/industries/security-company-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,5,59.4,582,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/security-company-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,1,2,3,580,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/security-company-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,2,4.5,594,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/signage-company-websites/,Industry,REDIRECT,/industries/,0,2,31,724,Generated page with no close kept industry; sent to the industries hub.
+/industries/signage-company-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,581,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/signage-company-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,579,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/signage-company-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,593,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/software-company-websites/,Industry,REDIRECT,/industries/,0,0,,716,Generated page with no close kept industry; sent to the industries hub.
+/industries/software-company-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,1,30,580,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/software-company-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,43,63.14,578,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/software-company-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,592,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/solar-installer-websites/,Industry,REDIRECT,/industries/,0,3,35,735,Generated page with no close kept industry; sent to the industries hub.
+/industries/solar-installer-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,580,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/solar-installer-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,578,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/solar-installer-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,592,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/spa-websites/,Industry,REDIRECT,/industries/salon-booking-software/,0,0,,750,Generated page; merged into the closest kept industry.
+/industries/spa-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,596,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/spa-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,593,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/spa-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,16,61.06,603,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/speech-therapist-websites/,Industry,REDIRECT,/industries/medical-practice-websites/,1,1,5,727,Generated page; merged into the closest kept industry.
+/industries/speech-therapist-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,587,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/speech-therapist-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,1,10,584,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/speech-therapist-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,15,25.53,598,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/storage-facility-websites/,Industry,REDIRECT,/industries/logistics-company-websites/,0,0,,730,Generated page; merged into the closest kept industry.
+/industries/storage-facility-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,584,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/storage-facility-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,17,66.94,581,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/storage-facility-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,595,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/student-accommodation-websites/,Industry,REDIRECT,/industries/,0,0,,738,Generated page with no close kept industry; sent to the industries hub.
+/industries/student-accommodation-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,2,6,593,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/student-accommodation-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,2,27.5,590,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/student-accommodation-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,2,605,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/tattoo-studio-websites/,Industry,REDIRECT,/industries/,0,0,,733,Generated page with no close kept industry; sent to the industries hub.
+/industries/tattoo-studio-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,585,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/tattoo-studio-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,5,5,582,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/tattoo-studio-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,2,5.5,596,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/telecom-company-websites/,Industry,REDIRECT,/industries/,0,0,,719,Generated page with no close kept industry; sent to the industries hub.
+/industries/telecom-company-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,578,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/telecom-company-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,5,10,576,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/telecom-company-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,590,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/tourism-business-websites/,Industry,REDIRECT,/industries/,0,0,,739,Generated page with no close kept industry; sent to the industries hub.
+/industries/tourism-business-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,1,3,603,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/tourism-business-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,34,50.29,600,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/tourism-business-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,4,32.75,610,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/tutoring-business-websites/,Industry,REDIRECT,/industries/,0,0,,722,Generated page with no close kept industry; sent to the industries hub.
+/industries/tutoring-business-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,582,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/tutoring-business-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,579,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/tutoring-business-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,593,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/tyre-shop-websites/,Industry,REDIRECT,/industries/,0,0,,720,Generated page with no close kept industry; sent to the industries hub.
+/industries/tyre-shop-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,583,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/tyre-shop-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,581,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/tyre-shop-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,595,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/veterinary-practice-websites/,Industry,REDIRECT,/industries/,0,0,,722,Generated page with no close kept industry; sent to the industries hub.
+/industries/veterinary-practice-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,583,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/veterinary-practice-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,580,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/veterinary-practice-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,1,13,30.38,594,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/veterinary-supplier-websites/,Industry,REDIRECT,/industries/,0,0,,723,Generated page with no close kept industry; sent to the industries hub.
+/industries/veterinary-supplier-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,584,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/veterinary-supplier-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,582,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/veterinary-supplier-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,596,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/virtual-assistant-websites/,Industry,REDIRECT,/industries/,0,1,4,717,Generated page with no close kept industry; sent to the industries hub.
+/industries/virtual-assistant-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,581,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/virtual-assistant-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,578,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/virtual-assistant-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,592,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/warehouse-business-websites/,Industry,REDIRECT,/industries/logistics-company-websites/,0,1,6,716,Generated page; merged into the closest kept industry.
+/industries/warehouse-business-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,581,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/warehouse-business-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,2,99,579,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/warehouse-business-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,7,593,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/waste-management-websites/,Industry,REDIRECT,/industries/,0,2,2,743,Generated page with no close kept industry; sent to the industries hub.
+/industries/waste-management-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,1,11,596,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/waste-management-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,594,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/waste-management-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,609,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/waterproofing-company-websites/,Industry,REDIRECT,/industries/construction-company-websites/,0,4,5.5,726,Generated page; merged into the closest kept industry.
+/industries/waterproofing-company-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,581,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/waterproofing-company-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,579,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/waterproofing-company-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,0,,593,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/wedding-venue-websites/,Industry,REDIRECT,/industries/,0,0,,716,Generated page with no close kept industry; sent to the industries hub.
+/industries/wedding-venue-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,1,9,576,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/wedding-venue-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,0,,574,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/wedding-venue-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,4,11.75,588,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/welding-company-websites/,Industry,REDIRECT,/industries/construction-company-websites/,0,19,16.68,749,Generated page; merged into the closest kept industry.
+/industries/welding-company-websites/custom-web-applications/,Industry + service,REDIRECT,/services/custom-web-applications/,0,0,,595,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/welding-company-websites/seo-services/,Industry + service,REDIRECT,/services/seo-services/,0,1,6,593,Generated page with only the industry name changed; sent to the matching service hub.
+/industries/welding-company-websites/website-design/,Industry + service,REDIRECT,/services/web-development/,0,1,1,603,Generated page with only the industry name changed; sent to the matching service hub.
+/services/,Services index,KEEP - REWRITTEN,,0,44,6.16,369,New national South Africa content.
+/services/booking-customer-management/,Service hub,KEEP - REWRITTEN,,0,21,26.86,517,New national South Africa content.
+/services/custom-web-applications/,Service hub,KEEP - REWRITTEN,,0,53,68.89,555,New national South Africa content.
+/services/custom-web-applications/eastern-cape/,Service + region,REDIRECT,/services/custom-web-applications/,0,1,2,883,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/eastern-cape/buffalo-city/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,885,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/eastern-cape/buffalo-city/east-london/,Service + location,REDIRECT,/services/custom-web-applications/,0,10,14.3,908,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/eastern-cape/buffalo-city/king-williams-town/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,928,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/eastern-cape/nelson-mandela-bay/,Service + location,REDIRECT,/services/custom-web-applications/,0,1,6,914,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/eastern-cape/nelson-mandela-bay/gqeberha/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,899,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/eastern-cape/nelson-mandela-bay/kariega/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,899,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/eastern-cape/nelson-mandela-bay/port-elizabeth/,Service + location,REDIRECT,/services/custom-web-applications/,0,3,33.67,919,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/eastern-cape/nelson-mandela-bay/uitenhage/,Service + location,REDIRECT,/services/custom-web-applications/,0,4,24.25,899,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/free-state/,Service + region,REDIRECT,/services/custom-web-applications/,0,0,,876,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/free-state/lejweleputswa/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,844,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/free-state/lejweleputswa/welkom/,Service + location,REDIRECT,/services/custom-web-applications/,1,9,28.11,865,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/free-state/mangaung/,Service + location,REDIRECT,/services/custom-web-applications/,0,2,51,852,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/free-state/mangaung/bloemfontein/,Service + location,REDIRECT,/services/custom-web-applications/,0,5,16.4,872,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/free-state/mangaung/botshabelo/,Service + location,REDIRECT,/services/custom-web-applications/,0,13,19.54,872,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/gauteng/,Service + region,REDIRECT,/services/custom-web-applications/,0,0,,859,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/gauteng/ekurhuleni/,Service + location,REDIRECT,/services/custom-web-applications/,0,1,85,871,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/gauteng/ekurhuleni/benoni/,Service + location,REDIRECT,/services/custom-web-applications/,0,8,26.88,893,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/gauteng/ekurhuleni/boksburg/,Service + location,REDIRECT,/services/custom-web-applications/,0,4,32.25,893,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/gauteng/ekurhuleni/edenvale/,Service + location,REDIRECT,/services/custom-web-applications/,0,2,21.5,893,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/gauteng/ekurhuleni/germiston/,Service + location,REDIRECT,/services/custom-web-applications/,0,9,42.67,893,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/gauteng/ekurhuleni/kempton-park/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,913,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/gauteng/johannesburg/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,880,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/gauteng/johannesburg/bedfordview/,Service + location,REDIRECT,/services/custom-web-applications/,0,8,8.5,899,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/gauteng/johannesburg/bryanston/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,899,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/gauteng/johannesburg/fourways/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,899,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/gauteng/johannesburg/midrand/,Service + location,REDIRECT,/services/custom-web-applications/,0,5,38.4,899,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/gauteng/johannesburg/randburg/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,899,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/gauteng/johannesburg/rosebank/,Service + location,REDIRECT,/services/custom-web-applications/,0,2,5.5,899,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/gauteng/johannesburg/sandton/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,899,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/gauteng/pretoria/,Service + location,REDIRECT,/services/custom-web-applications/,0,2,5.5,873,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/gauteng/pretoria/brooklyn/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,897,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/gauteng/pretoria/centurion/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,897,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/gauteng/pretoria/hatfield/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,897,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/gauteng/pretoria/menlyn/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,897,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/gauteng/pretoria/pretoria-east/,Service + location,REDIRECT,/services/custom-web-applications/,0,1,36,917,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/kwazulu-natal/,Service + region,REDIRECT,/services/custom-web-applications/,0,0,,870,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/kwazulu-natal/durban/,Service + location,REDIRECT,/services/custom-web-applications/,0,10,81.7,384,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/kwazulu-natal/ethekwini/ballito/,Service + location,REDIRECT,/services/custom-web-applications/,0,17,16.88,907,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/kwazulu-natal/ethekwini/hillcrest/,Service + location,REDIRECT,/services/custom-web-applications/,0,2,34,907,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/kwazulu-natal/ethekwini/pinetown/,Service + location,REDIRECT,/services/custom-web-applications/,0,5,25,907,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/kwazulu-natal/ethekwini/umhlanga/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,907,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/kwazulu-natal/ethekwini/westville/,Service + location,REDIRECT,/services/custom-web-applications/,0,5,17.2,907,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/kwazulu-natal/king-cetshwayo/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,876,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/kwazulu-natal/king-cetshwayo/empangeni/,Service + location,REDIRECT,/services/custom-web-applications/,0,20,10.5,879,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/kwazulu-natal/king-cetshwayo/richards-bay/,Service + location,REDIRECT,/services/custom-web-applications/,0,8,14.75,899,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/kwazulu-natal/msunduzi/,Service + location,REDIRECT,/services/custom-web-applications/,0,1,2,845,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/kwazulu-natal/msunduzi/pietermaritzburg/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,870,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/limpopo/,Service + region,REDIRECT,/services/custom-web-applications/,0,2,10.5,854,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/limpopo/capricorn/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,844,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/limpopo/capricorn/polokwane/,Service + location,REDIRECT,/services/custom-web-applications/,0,9,13.89,868,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/limpopo/mopani/,Service + location,REDIRECT,/services/custom-web-applications/,0,4,21.5,850,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/limpopo/mopani/phalaborwa/,Service + location,REDIRECT,/services/custom-web-applications/,0,22,8.45,871,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/limpopo/mopani/tzaneen/,Service + location,REDIRECT,/services/custom-web-applications/,0,18,14.22,871,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/mpumalanga/,Service + region,REDIRECT,/services/custom-web-applications/,0,0,,854,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/mpumalanga/ehlanzeni/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,859,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/mpumalanga/ehlanzeni/mbombela/,Service + location,REDIRECT,/services/custom-web-applications/,0,1,47,879,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/mpumalanga/ehlanzeni/nelspruit/,Service + location,REDIRECT,/services/custom-web-applications/,0,12,22.75,879,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/mpumalanga/ehlanzeni/white-river/,Service + location,REDIRECT,/services/custom-web-applications/,0,12,21,899,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/mpumalanga/nkangala/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,856,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/mpumalanga/nkangala/emalahleni/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,876,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/mpumalanga/nkangala/middelburg/,Service + location,REDIRECT,/services/custom-web-applications/,0,9,15.22,876,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/mpumalanga/nkangala/witbank/,Service + location,REDIRECT,/services/custom-web-applications/,0,38,15.29,876,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/north-west/,Service + region,REDIRECT,/services/custom-web-applications/,0,1,10,886,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/north-west/bojanala-platinum/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,874,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/north-west/bojanala-platinum/brits/,Service + location,REDIRECT,/services/custom-web-applications/,0,23,5.3,875,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/north-west/bojanala-platinum/rustenburg/,Service + location,REDIRECT,/services/custom-web-applications/,0,20,23.2,875,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/north-west/dr-kenneth-kaunda/,Service + location,REDIRECT,/services/custom-web-applications/,0,1,26,898,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/north-west/dr-kenneth-kaunda/klerksdorp/,Service + location,REDIRECT,/services/custom-web-applications/,0,20,17.85,882,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/north-west/dr-kenneth-kaunda/potchefstroom/,Service + location,REDIRECT,/services/custom-web-applications/,1,23,14.65,882,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/northern-cape/,Service + region,REDIRECT,/services/custom-web-applications/,0,0,,882,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/northern-cape/frances-baard/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,869,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/northern-cape/frances-baard/kimberley/,Service + location,REDIRECT,/services/custom-web-applications/,0,14,5,874,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/northern-cape/zf-mgcawu/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,868,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/northern-cape/zf-mgcawu/upington/,Service + location,REDIRECT,/services/custom-web-applications/,0,12,5.25,872,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/western-cape/,Service + region,REDIRECT,/services/custom-web-applications/,0,2,7.5,889,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/western-cape/cape-town/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,917,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/western-cape/cape-town/bellville/,Service + location,REDIRECT,/services/custom-web-applications/,0,7,30.43,920,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/western-cape/cape-town/cape-town-cbd/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,960,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/western-cape/cape-town/century-city/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,941,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/western-cape/cape-town/claremont/,Service + location,REDIRECT,/services/custom-web-applications/,0,6,6,918,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/western-cape/cape-town/durbanville/,Service + location,REDIRECT,/services/custom-web-applications/,0,12,35.92,918,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/western-cape/cape-town/somerset-west/,Service + location,REDIRECT,/services/custom-web-applications/,0,8,28.75,940,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/western-cape/cape-town/stellenbosch/,Service + location,REDIRECT,/services/custom-web-applications/,0,4,28.5,920,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/western-cape/cape-winelands/,Service + location,REDIRECT,/services/custom-web-applications/,0,1,3,882,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/western-cape/cape-winelands/franschhoek/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,884,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/western-cape/cape-winelands/paarl/,Service + location,REDIRECT,/services/custom-web-applications/,0,1,10,884,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/western-cape/cape-winelands/worcester/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,884,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/western-cape/garden-route/,Service + location,REDIRECT,/services/custom-web-applications/,0,2,7.5,894,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/western-cape/garden-route/george/,Service + location,REDIRECT,/services/custom-web-applications/,0,0,,899,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/western-cape/garden-route/knysna/,Service + location,REDIRECT,/services/custom-web-applications/,0,6,15.33,899,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/western-cape/garden-route/mossel-bay/,Service + location,REDIRECT,/services/custom-web-applications/,0,6,5.83,919,Location page removed for national targeting; sent to the national service page.
+/services/custom-web-applications/western-cape/garden-route/plettenberg-bay/,Service + location,REDIRECT,/services/custom-web-applications/,0,4,16.5,919,Location page removed for national targeting; sent to the national service page.
+/services/digital-marketing-conversion/,Service hub,KEEP - REWRITTEN,,0,14,32.71,514,New national South Africa content.
+/services/seo-services/,Service hub,KEEP - REWRITTEN,,0,15,48.27,593,New national South Africa content.
+/services/seo-services/eastern-cape/,Service + region,REDIRECT,/services/seo-services/,0,67,10.6,895,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/eastern-cape/buffalo-city/,Service + location,REDIRECT,/services/seo-services/,0,0,,897,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/eastern-cape/buffalo-city/east-london/,Service + location,REDIRECT,/services/seo-services/,0,1,75,919,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/eastern-cape/buffalo-city/king-williams-town/,Service + location,REDIRECT,/services/seo-services/,0,10,8.4,940,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/eastern-cape/nelson-mandela-bay/,Service + location,REDIRECT,/services/seo-services/,0,1,85,925,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/eastern-cape/nelson-mandela-bay/gqeberha/,Service + location,REDIRECT,/services/seo-services/,0,26,62.46,907,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/eastern-cape/nelson-mandela-bay/kariega/,Service + location,REDIRECT,/services/seo-services/,1,3,3,907,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/eastern-cape/nelson-mandela-bay/port-elizabeth/,Service + location,REDIRECT,/services/seo-services/,0,15,71.27,928,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/eastern-cape/nelson-mandela-bay/uitenhage/,Service + location,REDIRECT,/services/seo-services/,0,0,,907,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/free-state/,Service + region,REDIRECT,/services/seo-services/,0,2,3.5,885,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/free-state/lejweleputswa/,Service + location,REDIRECT,/services/seo-services/,0,9,39.89,851,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/free-state/lejweleputswa/welkom/,Service + location,REDIRECT,/services/seo-services/,0,25,5.8,873,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/free-state/mangaung/,Service + location,REDIRECT,/services/seo-services/,0,23,15.3,859,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/free-state/mangaung/bloemfontein/,Service + location,REDIRECT,/services/seo-services/,0,4,18,879,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/free-state/mangaung/botshabelo/,Service + location,REDIRECT,/services/seo-services/,0,34,1.85,879,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/gauteng/,Service + region,REDIRECT,/services/seo-services/,0,121,75.65,866,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/gauteng/ekurhuleni/,Service + location,REDIRECT,/services/seo-services/,0,35,70.14,877,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/gauteng/ekurhuleni/benoni/,Service + location,REDIRECT,/services/seo-services/,0,53,18.43,900,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/gauteng/ekurhuleni/boksburg/,Service + location,REDIRECT,/services/seo-services/,0,58,15.43,900,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/gauteng/ekurhuleni/edenvale/,Service + location,REDIRECT,/services/seo-services/,0,198,26.49,900,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/gauteng/ekurhuleni/germiston/,Service + location,REDIRECT,/services/seo-services/,0,140,43.66,900,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/gauteng/ekurhuleni/kempton-park/,Service + location,REDIRECT,/services/seo-services/,0,18,13.94,921,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/gauteng/johannesburg/,Service + location,REDIRECT,/services/seo-services/,0,15,90.8,883,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/gauteng/johannesburg/bedfordview/,Service + location,REDIRECT,/services/seo-services/,0,8,17.38,904,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/gauteng/johannesburg/bryanston/,Service + location,REDIRECT,/services/seo-services/,0,16,12.88,904,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/gauteng/johannesburg/fourways/,Service + location,REDIRECT,/services/seo-services/,0,18,7.78,904,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/gauteng/johannesburg/midrand/,Service + location,REDIRECT,/services/seo-services/,0,73,61.78,904,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/gauteng/johannesburg/randburg/,Service + location,REDIRECT,/services/seo-services/,0,5,9.4,904,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/gauteng/johannesburg/rosebank/,Service + location,REDIRECT,/services/seo-services/,0,35,20.03,904,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/gauteng/johannesburg/sandton/,Service + location,REDIRECT,/services/seo-services/,0,0,,904,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/gauteng/pretoria/,Service + location,REDIRECT,/services/seo-services/,0,228,87.3,879,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/gauteng/pretoria/brooklyn/,Service + location,REDIRECT,/services/seo-services/,0,0,,904,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/gauteng/pretoria/centurion/,Service + location,REDIRECT,/services/seo-services/,0,70,63.87,904,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/gauteng/pretoria/hatfield/,Service + location,REDIRECT,/services/seo-services/,0,43,38.51,904,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/gauteng/pretoria/menlyn/,Service + location,REDIRECT,/services/seo-services/,0,4,59.5,904,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/gauteng/pretoria/pretoria-east/,Service + location,REDIRECT,/services/seo-services/,0,112,33.31,925,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/gauteng/sandton/,Service + location,REDIRECT,/services/seo-services/,0,76,81.3,397,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/kwazulu-natal/,Service + region,REDIRECT,/services/seo-services/,0,173,78.43,880,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/kwazulu-natal/ethekwini/,Service + location,REDIRECT,/services/seo-services/,0,41,78.1,928,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/kwazulu-natal/ethekwini/ballito/,Service + location,REDIRECT,/services/seo-services/,0,47,13.51,912,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/kwazulu-natal/ethekwini/durban/,Service + location,REDIRECT,/services/seo-services/,0,18,86.11,912,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/kwazulu-natal/ethekwini/hillcrest/,Service + location,REDIRECT,/services/seo-services/,0,5,32.6,912,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/kwazulu-natal/ethekwini/pinetown/,Service + location,REDIRECT,/services/seo-services/,0,7,6.71,912,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/kwazulu-natal/ethekwini/umhlanga/,Service + location,REDIRECT,/services/seo-services/,0,3,21.33,912,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/kwazulu-natal/ethekwini/westville/,Service + location,REDIRECT,/services/seo-services/,1,39,13.41,912,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/kwazulu-natal/king-cetshwayo/,Service + location,REDIRECT,/services/seo-services/,0,3,46.67,886,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/kwazulu-natal/king-cetshwayo/empangeni/,Service + location,REDIRECT,/services/seo-services/,0,29,11.31,887,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/kwazulu-natal/king-cetshwayo/richards-bay/,Service + location,REDIRECT,/services/seo-services/,0,28,21.68,908,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/kwazulu-natal/msunduzi/,Service + location,REDIRECT,/services/seo-services/,0,0,,852,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/kwazulu-natal/msunduzi/pietermaritzburg/,Service + location,REDIRECT,/services/seo-services/,0,9,10.22,878,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/limpopo/,Service + region,REDIRECT,/services/seo-services/,0,11,8.27,861,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/limpopo/capricorn/,Service + location,REDIRECT,/services/seo-services/,0,3,6.67,851,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/limpopo/capricorn/polokwane/,Service + location,REDIRECT,/services/seo-services/,1,7,18.43,876,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/limpopo/mopani/,Service + location,REDIRECT,/services/seo-services/,0,3,30.67,857,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/limpopo/mopani/phalaborwa/,Service + location,REDIRECT,/services/seo-services/,0,9,22.33,878,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/limpopo/mopani/tzaneen/,Service + location,REDIRECT,/services/seo-services/,0,3,16,878,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/mpumalanga/,Service + region,REDIRECT,/services/seo-services/,0,18,19.28,861,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/mpumalanga/ehlanzeni/,Service + location,REDIRECT,/services/seo-services/,0,3,87,867,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/mpumalanga/ehlanzeni/mbombela/,Service + location,REDIRECT,/services/seo-services/,0,3,24.33,887,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/mpumalanga/ehlanzeni/nelspruit/,Service + location,REDIRECT,/services/seo-services/,0,0,,887,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/mpumalanga/ehlanzeni/white-river/,Service + location,REDIRECT,/services/seo-services/,0,5,22.8,908,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/mpumalanga/nkangala/,Service + location,REDIRECT,/services/seo-services/,0,0,,863,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/mpumalanga/nkangala/emalahleni/,Service + location,REDIRECT,/services/seo-services/,0,14,57.36,883,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/mpumalanga/nkangala/middelburg/,Service + location,REDIRECT,/services/seo-services/,0,6,22,883,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/mpumalanga/nkangala/witbank/,Service + location,REDIRECT,/services/seo-services/,0,10,34.1,883,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/north-west/,Service + region,REDIRECT,/services/seo-services/,0,1,20,898,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/north-west/bojanala-platinum/,Service + location,REDIRECT,/services/seo-services/,0,9,27.22,883,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/north-west/bojanala-platinum/brits/,Service + location,REDIRECT,/services/seo-services/,0,33,4,882,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/north-west/bojanala-platinum/rustenburg/,Service + location,REDIRECT,/services/seo-services/,0,24,41.96,882,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/north-west/dr-kenneth-kaunda/,Service + location,REDIRECT,/services/seo-services/,0,5,77.6,909,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/north-west/dr-kenneth-kaunda/klerksdorp/,Service + location,REDIRECT,/services/seo-services/,0,9,70.89,889,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/north-west/dr-kenneth-kaunda/potchefstroom/,Service + location,REDIRECT,/services/seo-services/,0,26,66.08,889,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/northern-cape/,Service + region,REDIRECT,/services/seo-services/,0,28,10.18,893,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/northern-cape/frances-baard/,Service + location,REDIRECT,/services/seo-services/,0,2,65.5,878,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/northern-cape/frances-baard/kimberley/,Service + location,REDIRECT,/services/seo-services/,1,24,36.21,882,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/northern-cape/zf-mgcawu/,Service + location,REDIRECT,/services/seo-services/,0,0,,877,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/northern-cape/zf-mgcawu/upington/,Service + location,REDIRECT,/services/seo-services/,0,0,,880,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/western-cape/,Service + region,REDIRECT,/services/seo-services/,0,38,10.37,901,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/western-cape/cape-town/,Service + location,REDIRECT,/services/seo-services/,0,4051,89.98,381,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/western-cape/cape-town/bellville/,Service + location,REDIRECT,/services/seo-services/,0,1,9,928,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/western-cape/cape-town/cape-town-cbd/,Service + location,REDIRECT,/services/seo-services/,0,2,41.5,970,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/western-cape/cape-town/century-city/,Service + location,REDIRECT,/services/seo-services/,0,5,3.4,950,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/western-cape/cape-town/claremont/,Service + location,REDIRECT,/services/seo-services/,0,3,28.67,925,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/western-cape/cape-town/durbanville/,Service + location,REDIRECT,/services/seo-services/,0,4,28.5,925,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/western-cape/cape-town/somerset-west/,Service + location,REDIRECT,/services/seo-services/,0,53,28.74,949,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/western-cape/cape-town/stellenbosch/,Service + location,REDIRECT,/services/seo-services/,0,21,36.76,928,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/western-cape/cape-winelands/,Service + location,REDIRECT,/services/seo-services/,0,9,33.22,891,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/western-cape/cape-winelands/franschhoek/,Service + location,REDIRECT,/services/seo-services/,0,1,53,891,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/western-cape/cape-winelands/paarl/,Service + location,REDIRECT,/services/seo-services/,0,9,13.56,891,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/western-cape/cape-winelands/worcester/,Service + location,REDIRECT,/services/seo-services/,0,25,3.76,891,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/western-cape/garden-route/,Service + location,REDIRECT,/services/seo-services/,0,2,13.5,903,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/western-cape/garden-route/george/,Service + location,REDIRECT,/services/seo-services/,0,37,28.43,908,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/western-cape/garden-route/knysna/,Service + location,REDIRECT,/services/seo-services/,0,4,22,908,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/western-cape/garden-route/mossel-bay/,Service + location,REDIRECT,/services/seo-services/,0,6,8.33,929,Location page removed for national targeting; sent to the national service page.
+/services/seo-services/western-cape/garden-route/plettenberg-bay/,Service + location,REDIRECT,/services/seo-services/,0,8,10.88,929,Location page removed for national targeting; sent to the national service page.
+/services/web-development/,Service hub,KEEP - REWRITTEN,,0,551,64.55,612,New national South Africa content.
+/services/web-development/eastern-cape/,Service + region,REDIRECT,/services/web-development/,1,21,31.33,909,Location page removed for national targeting; sent to the national service page.
+/services/web-development/eastern-cape/buffalo-city/,Service + location,REDIRECT,/services/web-development/,0,0,,911,Location page removed for national targeting; sent to the national service page.
+/services/web-development/eastern-cape/buffalo-city/east-london/,Service + location,REDIRECT,/services/web-development/,0,13,22.38,932,Location page removed for national targeting; sent to the national service page.
+/services/web-development/eastern-cape/buffalo-city/king-williams-town/,Service + location,REDIRECT,/services/web-development/,0,1,10,951,Location page removed for national targeting; sent to the national service page.
+/services/web-development/eastern-cape/nelson-mandela-bay/,Service + location,REDIRECT,/services/web-development/,0,6,6.33,937,Location page removed for national targeting; sent to the national service page.
+/services/web-development/eastern-cape/nelson-mandela-bay/gqeberha/,Service + location,REDIRECT,/services/web-development/,0,5,65.6,922,Location page removed for national targeting; sent to the national service page.
+/services/web-development/eastern-cape/nelson-mandela-bay/kariega/,Service + location,REDIRECT,/services/web-development/,0,11,8.18,922,Location page removed for national targeting; sent to the national service page.
+/services/web-development/eastern-cape/nelson-mandela-bay/port-elizabeth/,Service + location,REDIRECT,/services/web-development/,0,29,61.17,941,Location page removed for national targeting; sent to the national service page.
+/services/web-development/eastern-cape/nelson-mandela-bay/uitenhage/,Service + location,REDIRECT,/services/web-development/,0,33,21.33,922,Location page removed for national targeting; sent to the national service page.
+/services/web-development/free-state/,Service + region,REDIRECT,/services/web-development/,0,0,,899,Location page removed for national targeting; sent to the national service page.
+/services/web-development/free-state/lejweleputswa/,Service + location,REDIRECT,/services/web-development/,0,0,,867,Location page removed for national targeting; sent to the national service page.
+/services/web-development/free-state/lejweleputswa/welkom/,Service + location,REDIRECT,/services/web-development/,0,42,26.71,888,Location page removed for national targeting; sent to the national service page.
+/services/web-development/free-state/mangaung/,Service + location,REDIRECT,/services/web-development/,0,4,6.75,875,Location page removed for national targeting; sent to the national service page.
+/services/web-development/free-state/mangaung/bloemfontein/,Service + location,REDIRECT,/services/web-development/,0,13,33.23,894,Location page removed for national targeting; sent to the national service page.
+/services/web-development/free-state/mangaung/botshabelo/,Service + location,REDIRECT,/services/web-development/,0,29,8.52,894,Location page removed for national targeting; sent to the national service page.
+/services/web-development/gauteng/,Service + region,REDIRECT,/services/web-development/,0,10,27,427,Location page removed for national targeting; sent to the national service page.
+/services/web-development/gauteng/ekurhuleni/,Service + location,REDIRECT,/services/web-development/,0,0,,893,Location page removed for national targeting; sent to the national service page.
+/services/web-development/gauteng/ekurhuleni/benoni/,Service + location,REDIRECT,/services/web-development/,0,32,46.5,915,Location page removed for national targeting; sent to the national service page.
+/services/web-development/gauteng/ekurhuleni/boksburg/,Service + location,REDIRECT,/services/web-development/,0,11,42.82,915,Location page removed for national targeting; sent to the national service page.
+/services/web-development/gauteng/ekurhuleni/edenvale/,Service + location,REDIRECT,/services/web-development/,0,5,28,915,Location page removed for national targeting; sent to the national service page.
+/services/web-development/gauteng/ekurhuleni/germiston/,Service + location,REDIRECT,/services/web-development/,0,16,31.44,915,Location page removed for national targeting; sent to the national service page.
+/services/web-development/gauteng/ekurhuleni/kempton-park/,Service + location,REDIRECT,/services/web-development/,0,0,,934,Location page removed for national targeting; sent to the national service page.
+/services/web-development/gauteng/johannesburg/,Service + location,REDIRECT,/services/web-development/,0,5,55,427,Location page removed for national targeting; sent to the national service page.
+/services/web-development/gauteng/johannesburg/bedfordview/,Service + location,REDIRECT,/services/web-development/,1,17,23,919,Location page removed for national targeting; sent to the national service page.
+/services/web-development/gauteng/johannesburg/bryanston/,Service + location,REDIRECT,/services/web-development/,0,1,9,919,Location page removed for national targeting; sent to the national service page.
+/services/web-development/gauteng/johannesburg/fourways/,Service + location,REDIRECT,/services/web-development/,0,9,57.67,919,Location page removed for national targeting; sent to the national service page.
+/services/web-development/gauteng/johannesburg/midrand/,Service + location,REDIRECT,/services/web-development/,0,2,48,919,Location page removed for national targeting; sent to the national service page.
+/services/web-development/gauteng/johannesburg/randburg/,Service + location,REDIRECT,/services/web-development/,0,0,,919,Location page removed for national targeting; sent to the national service page.
+/services/web-development/gauteng/johannesburg/rosebank/,Service + location,REDIRECT,/services/web-development/,0,5,21.2,919,Location page removed for national targeting; sent to the national service page.
+/services/web-development/gauteng/johannesburg/sandton/,Service + location,REDIRECT,/services/web-development/,0,0,,919,Location page removed for national targeting; sent to the national service page.
+/services/web-development/gauteng/pretoria/,Service + location,REDIRECT,/services/web-development/,0,139,88.53,398,Location page removed for national targeting; sent to the national service page.
+/services/web-development/gauteng/pretoria/brooklyn/,Service + location,REDIRECT,/services/web-development/,0,0,,919,Location page removed for national targeting; sent to the national service page.
+/services/web-development/gauteng/pretoria/centurion/,Service + location,REDIRECT,/services/web-development/,0,13,36.92,919,Location page removed for national targeting; sent to the national service page.
+/services/web-development/gauteng/pretoria/hatfield/,Service + location,REDIRECT,/services/web-development/,0,3,58,919,Location page removed for national targeting; sent to the national service page.
+/services/web-development/gauteng/pretoria/menlyn/,Service + location,REDIRECT,/services/web-development/,0,6,8.5,919,Location page removed for national targeting; sent to the national service page.
+/services/web-development/gauteng/pretoria/pretoria-east/,Service + location,REDIRECT,/services/web-development/,0,5,43.4,938,Location page removed for national targeting; sent to the national service page.
+/services/web-development/kwazulu-natal/,Service + region,REDIRECT,/services/web-development/,0,0,,896,Location page removed for national targeting; sent to the national service page.
+/services/web-development/kwazulu-natal/ethekwini/,Service + location,REDIRECT,/services/web-development/,0,5,72.4,940,Location page removed for national targeting; sent to the national service page.
+/services/web-development/kwazulu-natal/ethekwini/ballito/,Service + location,REDIRECT,/services/web-development/,0,18,25,927,Location page removed for national targeting; sent to the national service page.
+/services/web-development/kwazulu-natal/ethekwini/durban/,Service + location,REDIRECT,/services/web-development/,0,1,63,927,Location page removed for national targeting; sent to the national service page.
+/services/web-development/kwazulu-natal/ethekwini/hillcrest/,Service + location,REDIRECT,/services/web-development/,0,14,9.36,927,Location page removed for national targeting; sent to the national service page.
+/services/web-development/kwazulu-natal/ethekwini/pinetown/,Service + location,REDIRECT,/services/web-development/,0,0,,927,Location page removed for national targeting; sent to the national service page.
+/services/web-development/kwazulu-natal/ethekwini/umhlanga/,Service + location,REDIRECT,/services/web-development/,0,6,23.17,927,Location page removed for national targeting; sent to the national service page.
+/services/web-development/kwazulu-natal/ethekwini/westville/,Service + location,REDIRECT,/services/web-development/,0,8,21,927,Location page removed for national targeting; sent to the national service page.
+/services/web-development/kwazulu-natal/king-cetshwayo/,Service + location,REDIRECT,/services/web-development/,0,1,41,900,Location page removed for national targeting; sent to the national service page.
+/services/web-development/kwazulu-natal/king-cetshwayo/empangeni/,Service + location,REDIRECT,/services/web-development/,0,42,28.24,902,Location page removed for national targeting; sent to the national service page.
+/services/web-development/kwazulu-natal/king-cetshwayo/richards-bay/,Service + location,REDIRECT,/services/web-development/,0,20,19.7,921,Location page removed for national targeting; sent to the national service page.
+/services/web-development/kwazulu-natal/msunduzi/,Service + location,REDIRECT,/services/web-development/,0,2,5.5,868,Location page removed for national targeting; sent to the national service page.
+/services/web-development/kwazulu-natal/msunduzi/pietermaritzburg/,Service + location,REDIRECT,/services/web-development/,0,7,29.57,893,Location page removed for national targeting; sent to the national service page.
+/services/web-development/limpopo/,Service + region,REDIRECT,/services/web-development/,0,10,72.2,877,Location page removed for national targeting; sent to the national service page.
+/services/web-development/limpopo/capricorn/,Service + location,REDIRECT,/services/web-development/,0,0,,867,Location page removed for national targeting; sent to the national service page.
+/services/web-development/limpopo/capricorn/polokwane/,Service + location,REDIRECT,/services/web-development/,0,12,36.25,891,Location page removed for national targeting; sent to the national service page.
+/services/web-development/limpopo/mopani/,Service + location,REDIRECT,/services/web-development/,0,4,34.25,873,Location page removed for national targeting; sent to the national service page.
+/services/web-development/limpopo/mopani/phalaborwa/,Service + location,REDIRECT,/services/web-development/,0,10,7.8,893,Location page removed for national targeting; sent to the national service page.
+/services/web-development/limpopo/mopani/tzaneen/,Service + location,REDIRECT,/services/web-development/,0,13,69,893,Location page removed for national targeting; sent to the national service page.
+/services/web-development/mpumalanga/,Service + region,REDIRECT,/services/web-development/,0,0,,877,Location page removed for national targeting; sent to the national service page.
+/services/web-development/mpumalanga/ehlanzeni/,Service + location,REDIRECT,/services/web-development/,0,1,34,883,Location page removed for national targeting; sent to the national service page.
+/services/web-development/mpumalanga/ehlanzeni/mbombela/,Service + location,REDIRECT,/services/web-development/,0,3,47.33,902,Location page removed for national targeting; sent to the national service page.
+/services/web-development/mpumalanga/ehlanzeni/nelspruit/,Service + location,REDIRECT,/services/web-development/,0,10,42.8,902,Location page removed for national targeting; sent to the national service page.
+/services/web-development/mpumalanga/ehlanzeni/white-river/,Service + location,REDIRECT,/services/web-development/,0,20,12.05,921,Location page removed for national targeting; sent to the national service page.
+/services/web-development/mpumalanga/nkangala/,Service + location,REDIRECT,/services/web-development/,0,2,55.5,879,Location page removed for national targeting; sent to the national service page.
+/services/web-development/mpumalanga/nkangala/emalahleni/,Service + location,REDIRECT,/services/web-development/,0,1,9,898,Location page removed for national targeting; sent to the national service page.
+/services/web-development/mpumalanga/nkangala/middelburg/,Service + location,REDIRECT,/services/web-development/,0,12,17.08,898,Location page removed for national targeting; sent to the national service page.
+/services/web-development/mpumalanga/nkangala/witbank/,Service + location,REDIRECT,/services/web-development/,0,59,22.54,898,Location page removed for national targeting; sent to the national service page.
+/services/web-development/north-west/,Service + region,REDIRECT,/services/web-development/,0,7,27.14,912,Location page removed for national targeting; sent to the national service page.
+/services/web-development/north-west/bojanala-platinum/,Service + location,REDIRECT,/services/web-development/,0,1,37,897,Location page removed for national targeting; sent to the national service page.
+/services/web-development/north-west/bojanala-platinum/brits/,Service + location,REDIRECT,/services/web-development/,0,36,6.92,897,Location page removed for national targeting; sent to the national service page.
+/services/web-development/north-west/bojanala-platinum/rustenburg/,Service + location,REDIRECT,/services/web-development/,0,36,41.17,897,Location page removed for national targeting; sent to the national service page.
+/services/web-development/north-west/dr-kenneth-kaunda/,Service + location,REDIRECT,/services/web-development/,0,1,4,921,Location page removed for national targeting; sent to the national service page.
+/services/web-development/north-west/dr-kenneth-kaunda/klerksdorp/,Service + location,REDIRECT,/services/web-development/,0,16,22.06,904,Location page removed for national targeting; sent to the national service page.
+/services/web-development/north-west/dr-kenneth-kaunda/potchefstroom/,Service + location,REDIRECT,/services/web-development/,0,23,40.52,904,Location page removed for national targeting; sent to the national service page.
+/services/web-development/northern-cape/,Service + region,REDIRECT,/services/web-development/,1,10,12.5,907,Location page removed for national targeting; sent to the national service page.
+/services/web-development/northern-cape/frances-baard/,Service + location,REDIRECT,/services/web-development/,0,0,,892,Location page removed for national targeting; sent to the national service page.
+/services/web-development/northern-cape/frances-baard/kimberley/,Service + location,REDIRECT,/services/web-development/,0,22,42.32,897,Location page removed for national targeting; sent to the national service page.
+/services/web-development/northern-cape/zf-mgcawu/,Service + location,REDIRECT,/services/web-development/,0,2,67,891,Location page removed for national targeting; sent to the national service page.
+/services/web-development/northern-cape/zf-mgcawu/upington/,Service + location,REDIRECT,/services/web-development/,0,34,25.24,895,Location page removed for national targeting; sent to the national service page.
+/services/web-development/western-cape/,Service + region,REDIRECT,/services/web-development/,0,0,,915,Location page removed for national targeting; sent to the national service page.
+/services/web-development/western-cape/cape-town/,Service + location,REDIRECT,/services/web-development/,0,10,81.9,938,Location page removed for national targeting; sent to the national service page.
+/services/web-development/western-cape/cape-town/bellville/,Service + location,REDIRECT,/services/web-development/,0,5,32.4,943,Location page removed for national targeting; sent to the national service page.
+/services/web-development/western-cape/cape-town/cape-town-cbd/,Service + location,REDIRECT,/services/web-development/,0,1,9,981,Location page removed for national targeting; sent to the national service page.
+/services/web-development/western-cape/cape-town/century-city/,Service + location,REDIRECT,/services/web-development/,0,2,9,963,Location page removed for national targeting; sent to the national service page.
+/services/web-development/western-cape/cape-town/claremont/,Service + location,REDIRECT,/services/web-development/,0,4,6.25,940,Location page removed for national targeting; sent to the national service page.
+/services/web-development/western-cape/cape-town/durbanville/,Service + location,REDIRECT,/services/web-development/,0,9,55.44,940,Location page removed for national targeting; sent to the national service page.
+/services/web-development/western-cape/cape-town/somerset-west/,Service + location,REDIRECT,/services/web-development/,0,75,26.13,962,Location page removed for national targeting; sent to the national service page.
+/services/web-development/western-cape/cape-town/stellenbosch/,Service + location,REDIRECT,/services/web-development/,0,14,33.14,943,Location page removed for national targeting; sent to the national service page.
+/services/web-development/western-cape/cape-winelands/,Service + location,REDIRECT,/services/web-development/,0,0,,905,Location page removed for national targeting; sent to the national service page.
+/services/web-development/western-cape/cape-winelands/franschhoek/,Service + location,REDIRECT,/services/web-development/,0,0,,906,Location page removed for national targeting; sent to the national service page.
+/services/web-development/western-cape/cape-winelands/paarl/,Service + location,REDIRECT,/services/web-development/,0,17,27.47,906,Location page removed for national targeting; sent to the national service page.
+/services/web-development/western-cape/cape-winelands/worcester/,Service + location,REDIRECT,/services/web-development/,0,3,8.67,906,Location page removed for national targeting; sent to the national service page.
+/services/web-development/western-cape/garden-route/,Service + location,REDIRECT,/services/web-development/,0,4,48,917,Location page removed for national targeting; sent to the national service page.
+/services/web-development/western-cape/garden-route/george/,Service + location,REDIRECT,/services/web-development/,0,1,8,923,Location page removed for national targeting; sent to the national service page.
+/services/web-development/western-cape/garden-route/knysna/,Service + location,REDIRECT,/services/web-development/,0,4,28.25,923,Location page removed for national targeting; sent to the national service page.
+/services/web-development/western-cape/garden-route/mossel-bay/,Service + location,REDIRECT,/services/web-development/,0,14,23.14,942,Location page removed for national targeting; sent to the national service page.
+/services/web-development/western-cape/garden-route/plettenberg-bay/,Service + location,REDIRECT,/services/web-development/,0,2,31,942,Location page removed for national targeting; sent to the national service page.
+/services/website-maintenance/,Service hub,KEEP - REWRITTEN,,0,365,51.61,526,New national South Africa content.
+/sitemap/,HTML sitemap,REDIRECT,/services/,0,5,7.8,805,Nothing links here and it listed every removed page.
+/work/,Company page,KEEP - REWRITTEN,,0,14,6.29,282,New national South Africa content.

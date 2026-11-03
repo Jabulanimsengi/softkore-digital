@@ -21,7 +21,7 @@ const siteFont = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL(site.domain),
   title: {
-    default: "SoftKore Digital | Digital Business Solutions Built for Growth",
+    default: "Website Design, Web Development & SEO South Africa | SoftKore Digital",
     template: "%s | SoftKore Digital",
   },
   description: site.description,
@@ -33,14 +33,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: site.name,
-    title: "SoftKore Digital | Digital Business Solutions Built for Growth",
+    title: "Website Design, Web Development & SEO South Africa | SoftKore Digital",
     description: site.description,
     url: site.domain,
     images: ["/logo.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SoftKore Digital | Digital Business Solutions Built for Growth",
+    title: "Website Design, Web Development & SEO South Africa | SoftKore Digital",
     description: site.description,
     images: ["/logo.png"],
   },

@@ -19,9 +19,11 @@ export function organizationSchema() {
     "@type": "Organization",
     name: site.name,
     url: `${site.domain}/`,
+    description: site.description,
     email: site.email,
+    telephone: site.phone,
     logo: site.logo,
-    sameAs: [],
+    areaServed: { "@type": "Country", name: "South Africa" },
   };
 }
 
@@ -35,7 +37,7 @@ export function serviceSchema(name: string, serviceType: string, url: string) {
       name: site.name,
       url: `${site.domain}/`,
     },
-    areaServed: "South Africa",
+    areaServed: { "@type": "Country", name: "South Africa" },
     serviceType,
     url,
   };

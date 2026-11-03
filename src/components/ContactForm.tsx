@@ -50,7 +50,7 @@ export function ContactForm() {
         <label htmlFor="contact-detail">What should move better?<textarea id="contact-detail" name="detail" rows={5} value={detail} onChange={(event) => setDetail(event.target.value)} aria-invalid={Boolean(errors.detail)} aria-describedby={errors.detail ? "contact-detail-error" : undefined} />{errors.detail ? <span className="field-error" id="contact-detail-error">{errors.detail}</span> : null}</label>
         <button className="simple-button simple-button-dark" type="submit">Review message <span aria-hidden="true">→</span></button>
       </form>
-      {submitted ? <div className="form-success" role="status"><strong>Your message is ready to send.</strong><p>We have prepared it in your email app so you can review everything first.</p><a className="simple-link" href={`mailto:info@softkoredigital.co.za?subject=Softkore project enquiry&body=${emailBody}`}>Open email <span>→</span></a></div> : <p className="form-note" id="contact-form-note">Nothing is sent until you review the prepared email.</p>}
+      {submitted ? <div className="form-success" role="status"><strong>Your message is ready to send.</strong><p>We have prepared it in your email app so you can review everything first.</p><a className="simple-link" href={`mailto:info@softkoredigital.co.za?subject=SoftKore Digital project enquiry&body=${emailBody}`}>Open email <span>→</span></a></div> : <p className="form-note" id="contact-form-note">Nothing is sent until you review the prepared email.</p>}
     </div>
   );
 }

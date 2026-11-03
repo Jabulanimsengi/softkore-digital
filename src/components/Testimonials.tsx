@@ -3,29 +3,13 @@
 import { useRef } from "react";
 import { UiIcon } from "@/components/UiIcon";
 
-const testimonials = [
-  {
-    quote:
-      "Softkore rebuilt our website around a clear customer journey and the enquiries started coming through cleaner. It finally feels like the site works for the business.",
-    name: "Business owner",
-    role: "Professional services",
-  },
-  {
-    quote:
-      "They tightened our search foundations and restructured the service pages. We now show up for the searches that actually matter to us.",
-    name: "Managing director",
-    role: "Construction & trade",
-  },
-  {
-    quote:
-      "The booking and payment system took real admin off my team. It is simple, fast and it just keeps working without us babysitting it.",
-    name: "Founder",
-    role: "Health & wellness",
-  },
-];
+// Add only real client testimonials, used with the client's permission. The section stays hidden while this is empty.
+const testimonials: Array<{ quote: string; name: string; role: string }> = [];
 
 export function Testimonials() {
   const gridRef = useRef<HTMLDivElement>(null);
+
+  if (testimonials.length === 0) return null;
 
   const scrollNext = () => {
     const grid = gridRef.current;

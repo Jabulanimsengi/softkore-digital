@@ -1,5 +1,7 @@
 # Softkore Technologies SEO Architecture & Keyword Strategy
 
+> **Superseded by [SEO_PAGE_PLAN.md](SEO_PAGE_PLAN.md).** The site now targets South Africa nationally and no longer has province, city or suburb pages. This document is kept for history.
+
 ## 1. Strategic Diagnosis
 
 Softkore Technologies currently presents all services on one homepage. That is good for brand clarity, but weak for organic growth because one page cannot deeply satisfy separate search intents such as:

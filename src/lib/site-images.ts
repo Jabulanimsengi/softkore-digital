@@ -68,14 +68,3 @@ export const guideImages: Record<string, SiteImage> = {
     alt: "A consultant and business owner diagnosing search visibility trends.",
   },
 };
-
-export const localSeoImages: Record<string, SiteImage> = {
-  "web-development/gauteng": {
-    src: "/images/site/local-gauteng.webp",
-    alt: "A business owner and digital strategist meeting with Johannesburg in the background.",
-  },
-};
-
-export function localSeoImageKey(serviceSlug: string, regionSlug: string, areaSlug?: string) {
-  return [serviceSlug, regionSlug, areaSlug].filter(Boolean).join("/");
-}

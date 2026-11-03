@@ -1,6 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
 
+const domain = "https://www.softkoredigital.co.za";
+
 const requiredFiles = [
   "out/index.html",
   "out/sitemap.xml",
@@ -8,6 +10,7 @@ const requiredFiles = [
   "out/logo.png",
   "out/b7f4c9a62e1d4a0f8c3b59d7126e4a90.txt",
   "out/indexnow-key.txt",
+  "deploy/page-plan.json",
   "deploy/redirects-softkore-nginx.conf",
   "deploy/redirects-softkore.json",
 ];
@@ -16,17 +19,6 @@ const nginxFiles = [
   "deploy/nginx.conf",
   "deploy/nginx-live.conf",
   "deploy-softkore-nginx.conf",
-];
-
-const requiredUrls = [
-  "https://www.softkoredigital.co.za/",
-  "https://www.softkoredigital.co.za/services/web-development/",
-  "https://www.softkoredigital.co.za/services/web-development/gauteng/johannesburg/",
-  "https://www.softkoredigital.co.za/services/seo-services/western-cape/cape-town/",
-  "https://www.softkoredigital.co.za/industries/plumber-websites/",
-  "https://www.softkoredigital.co.za/ai-agents/",
-  "https://www.softkoredigital.co.za/ai-agents/plumber-websites/",
-  "https://www.softkoredigital.co.za/guides/technical-seo-checklist/",
 ];
 
 function fail(message) {
@@ -55,42 +47,43 @@ for (const file of nginxFiles) {
   }
 }
 
+const plan = JSON.parse(fs.readFileSync("deploy/page-plan.json", "utf8"));
+const keptRoutes = new Set(plan.keep);
+
+function indexFile(route) {
+  return path.join("out", route, "index.html");
+}
+
+for (const route of keptRoutes) {
+  if (!fs.existsSync(indexFile(route))) {
+    fail(`Missing kept page in export: ${route}`);
+  }
+}
+
 if (fs.existsSync("out/sitemap.xml")) {
   const sitemap = fs.readFileSync("out/sitemap.xml", "utf8");
-  const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
-  if (sitemapUrls.length < 700) {
-    fail(`Expected deployed sitemap to contain at least 700 URLs, found ${sitemapUrls.length}.`);
-  }
+  const sitemapRoutes = new Set(
+    [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1].replace(domain, "")),
+  );
 
-  for (const url of requiredUrls) {
-    if (!sitemap.includes(`<loc>${url}</loc>`)) {
-      fail(`Missing required sitemap URL: ${url}`);
-    }
+  for (const route of keptRoutes) {
+    if (!sitemapRoutes.has(route)) fail(`Kept page missing from sitemap: ${route}`);
   }
-
-  const forbiddenSitemapTokens = [
-    "city-of-johannesburg",
-    "city-of-tshwane",
-    "city-of-cape-town",
-    "law-firm-websites-seo",
-    "salon-beauty-websites",
-    "real-estate-website-design",
-  ];
-  for (const token of forbiddenSitemapTokens) {
-    if (sitemap.includes(token)) {
-      fail(`Sitemap contains legacy URL token: ${token}`);
-    }
+  for (const route of sitemapRoutes) {
+    if (!keptRoutes.has(route)) fail(`Sitemap lists a page that is not in the plan: ${route}`);
   }
+}
 
-  if (fs.existsSync("deploy/redirects-softkore.json")) {
-    const redirects = JSON.parse(fs.readFileSync("deploy/redirects-softkore.json", "utf8")).redirects || [];
-    const redirectSources = new Set(redirects.map((redirect) => redirect.from));
-    for (const url of sitemapUrls) {
-      const pathName = new URL(url).pathname;
-      if (redirectSources.has(pathName)) {
-        fail(`Sitemap contains a redirected URL: ${url}`);
-      }
-    }
+// Every internal link on a kept page must go directly to another kept page.
+for (const route of keptRoutes) {
+  const file = indexFile(route);
+  if (!fs.existsSync(file)) continue;
+
+  const html = fs.readFileSync(file, "utf8");
+  for (const match of html.matchAll(/<a\b[^>]*\bhref="([^"#?]+)/g)) {
+    const href = match[1].replace(domain, "");
+    if (!href.startsWith("/")) continue;
+    if (!keptRoutes.has(href)) fail(`${route} links to ${href}, which is not a kept page.`);
   }
 }
 
@@ -101,40 +94,8 @@ if (fs.existsSync("out/b7f4c9a62e1d4a0f8c3b59d7126e4a90.txt")) {
   }
 }
 
-if (fs.existsSync("out")) {
-  const requiredGeneratedPages = [
-    "out/services/web-development/gauteng/johannesburg/sandton/index.html",
-    "out/services/seo-services/western-cape/cape-town/cape-town-cbd/index.html",
-    "out/industries/plumber-websites/seo-services/index.html",
-    "out/industries/beauty-salon-websites/website-design/index.html",
-    "out/contact/index.html",
-    "out/sitemap/index.html",
-  ];
-
-  for (const file of requiredGeneratedPages) {
-    if (!fs.existsSync(file)) {
-      fail(`Missing generated SEO page in export: ${file}`);
-    }
-  }
-
-  function countHtmlPages(directory) {
-    let count = 0;
-    for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
-      const fullPath = path.join(directory, entry.name);
-      if (entry.isDirectory()) count += countHtmlPages(fullPath);
-      else if (entry.name === "index.html" || (directory === "out" && entry.name.endsWith(".html"))) count += 1;
-    }
-    return count;
-  }
-
-  const htmlPages = countHtmlPages("out");
-  if (htmlPages < 300) {
-    fail(`Expected deployed export to contain at least 300 HTML pages, found ${htmlPages}.`);
-  }
-}
-
 if (process.exitCode) {
   process.exit(process.exitCode);
 }
 
-console.log("Next static export validation passed.");
+console.log(`Next static export validation passed for ${keptRoutes.size} pages.`);

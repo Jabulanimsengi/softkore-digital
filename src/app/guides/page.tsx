@@ -7,8 +7,8 @@ import { absoluteUrl } from "@/lib/site";
 import { breadcrumbSchema, JsonLd } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Insights",
-  description: "Practical website, SEO, maintenance and web application guidance for businesses planning their next digital move.",
+  title: "Website and SEO Guides for South African Businesses",
+  description: "Practical guides for South African business owners on website prices, technical SEO, why sites do not rank, website maintenance and web applications.",
   alternates: { canonical: "/guides/" },
 };
 
@@ -21,11 +21,11 @@ export default function GuidesPage() {
           <div className="page-hero-inner">
             <div>
               <nav className="breadcrumb" aria-label="Breadcrumb"><Link prefetch={false} href="/">Home</Link><span>/</span><span>Insights</span></nav>
-              <h1>Clear guidance for the next digital decision.</h1>
-              <p>Practical thinking for websites, search, platforms and the systems behind a growing business.</p>
-              <div className="hero-actions"><Link prefetch={false} className="button button-primary" href="/contact/">Ask a question</Link><Link prefetch={false} className="button button-secondary" href="/services/">Explore solutions</Link></div>
+              <h1>Website and SEO guides for South African businesses.</h1>
+              <p>Plain-language answers on what websites cost, why sites do not rank on Google and how to keep your website working.</p>
+              <div className="hero-actions"><Link prefetch={false} className="button button-primary" href="/contact/">Ask a question</Link><Link prefetch={false} className="button button-secondary" href="/services/">View services</Link></div>
             </div>
-            <aside className="page-summary page-summary-media"><PageHeroImage imageKey="guides" /><strong>Useful, not inflated</strong><ul><li>Planning</li><li>Costs and choices</li><li>Technical foundations</li><li>Practical next steps</li></ul></aside>
+            <aside className="page-summary page-summary-media"><PageHeroImage imageKey="guides" /><strong>What you will find</strong><ul><li>Website costs and choices</li><li>SEO and indexing checks</li><li>Maintenance checklists</li><li>Practical next steps</li></ul></aside>
           </div>
         </section>
 
@@ -37,7 +37,7 @@ export default function GuidesPage() {
           ))}
         </section>
 
-        <ConversionBand title="Turn the research into a useful next move." text="We can apply the right guidance to your website, search strategy or business system." primaryLabel="Start a Conversation" secondaryHref="/services/" secondaryLabel="Explore Solutions" />
+        <ConversionBand title="Would you rather have someone handle this?" text="We can apply these checks to your website and tell you what to fix first." primaryLabel="Start a Conversation" secondaryHref="/services/" secondaryLabel="View Services" />
       </main>
     </>
   );

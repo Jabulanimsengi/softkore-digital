@@ -26,7 +26,7 @@ const baseIndustries: IndustryPage[] = [
     metaTitle: "Salon Booking Software Developers South Africa | SoftKore Digital",
     description:
       "Salon booking software and beauty business websites for South African salons, spas, nail bars, clinics, and mobile beauty professionals.",
-    h1: "Salon Booking Software and Beauty Business Websites",
+    h1: "Salon Booking Software and Beauty Websites in South Africa",
     intro:
       "SoftKore Digital helps salons and beauty businesses turn treatment menus, bookings, enquiries, galleries, and client communication into a clearer digital experience.",
     audience:
@@ -104,7 +104,7 @@ const baseIndustries: IndustryPage[] = [
       { label: "Custom web applications", href: "/services/custom-web-applications/" },
       { label: "Web development", href: "/services/web-development/" },
       { label: "SEO services", href: "/services/seo-services/" },
-      { label: "Sandton SEO services", href: "/services/seo-services/gauteng/sandton/" },
+      { label: "Online booking systems", href: "/services/booking-customer-management/" },
     ],
     faqs: [
       {
@@ -204,7 +204,7 @@ const baseIndustries: IndustryPage[] = [
       { label: "Web development", href: "/services/web-development/" },
       { label: "Custom web applications", href: "/services/custom-web-applications/" },
       { label: "SEO services", href: "/services/seo-services/" },
-      { label: "Cape Town SEO services", href: "/services/seo-services/western-cape/cape-town/" },
+      { label: "Website maintenance", href: "/services/website-maintenance/" },
     ],
     faqs: [
       {
@@ -232,7 +232,7 @@ const baseIndustries: IndustryPage[] = [
     metaTitle: "Medical Practice Website Design South Africa | SoftKore Digital",
     description:
       "Medical practice website design for doctors, clinics, specialists, and healthcare groups that need service pages, appointment paths, and patient trust.",
-    h1: "Medical Practice Website Design",
+    h1: "Medical Practice Website Design in South Africa",
     intro:
       "SoftKore Digital builds medical practice websites that help patients understand services, trust the practice, find location details, and request appointments.",
     audience:
@@ -304,7 +304,7 @@ const baseIndustries: IndustryPage[] = [
       { label: "Web development", href: "/services/web-development/" },
       { label: "SEO services", href: "/services/seo-services/" },
       { label: "Website maintenance", href: "/services/website-maintenance/" },
-      { label: "Pretoria web development", href: "/services/web-development/gauteng/pretoria/" },
+      { label: "Online booking systems", href: "/services/booking-customer-management/" },
     ],
     faqs: [
       {
@@ -332,7 +332,7 @@ const baseIndustries: IndustryPage[] = [
     metaTitle: "Real Estate Website Developers South Africa | SoftKore Digital",
     description:
       "Real estate website development for agencies, brokers, and property teams that need listings, agent profiles, valuation forms, and lead capture.",
-    h1: "Real Estate Website Development",
+    h1: "Real Estate Website Development in South Africa",
     intro:
       "SoftKore Digital builds real estate websites that help buyers, sellers, landlords, and tenants find property information and take the next step.",
     audience:
@@ -404,7 +404,7 @@ const baseIndustries: IndustryPage[] = [
       { label: "Web development", href: "/services/web-development/" },
       { label: "Custom web applications", href: "/services/custom-web-applications/" },
       { label: "SEO services", href: "/services/seo-services/" },
-      { label: "Johannesburg web development", href: "/services/web-development/gauteng/johannesburg/" },
+      { label: "Website maintenance", href: "/services/website-maintenance/" },
     ],
     faqs: [
       {
@@ -432,7 +432,7 @@ const baseIndustries: IndustryPage[] = [
     metaTitle: "Law Firm SEO Services South Africa | SoftKore Digital",
     description:
       "Law firm SEO services and legal website planning for South African attorneys, conveyancers, and specialist legal practices.",
-    h1: "Law Firm SEO Services and Legal Website Planning",
+    h1: "Law Firm SEO and Legal Websites in South Africa",
     intro:
       "SoftKore Digital helps legal practices build clearer practice-area pages, stronger technical SEO, and confidential enquiry paths for serious clients.",
     audience:
@@ -504,7 +504,7 @@ const baseIndustries: IndustryPage[] = [
       { label: "SEO services", href: "/services/seo-services/" },
       { label: "Web development", href: "/services/web-development/" },
       { label: "Website maintenance", href: "/services/website-maintenance/" },
-      { label: "Sandton SEO services", href: "/services/seo-services/gauteng/sandton/" },
+      { label: "Why your website is not ranking", href: "/guides/why-your-website-is-not-ranking/" },
     ],
     faqs: [
       {
@@ -535,7 +535,7 @@ const additionalIndustries: IndustryPage[] = [
     metaTitle: "Dental Practice Website Design South Africa | SoftKore Digital",
     description:
       "Dental practice website design for dentists, orthodontists, and cosmetic dental clinics that need treatment pages, booking paths, and local SEO.",
-    h1: "Dental Practice Website Design",
+    h1: "Dental Practice Website Design in South Africa",
     intro:
       "SoftKore Digital builds dental websites that explain treatments, build patient trust, and make appointment enquiries easier.",
     audience:
@@ -584,7 +584,7 @@ const additionalIndustries: IndustryPage[] = [
     metaTitle: "Accounting Firm Website Design South Africa | SoftKore Digital",
     description:
       "Accounting firm website design for accountants, tax consultants, bookkeepers, payroll providers, and advisory firms.",
-    h1: "Accounting Firm Website Design",
+    h1: "Accounting Firm Website Design in South Africa",
     intro:
       "SoftKore Digital builds service-led websites for accounting and tax firms that need clearer packages, stronger trust, and better enquiry paths.",
     audience:
@@ -633,7 +633,7 @@ const additionalIndustries: IndustryPage[] = [
     metaTitle: "Construction Company Website Design South Africa | SoftKore Digital",
     description:
       "Construction company website design for builders, contractors, renovation companies, civil contractors, and construction suppliers.",
-    h1: "Construction Company Website Design",
+    h1: "Construction Company Website Design in South Africa",
     intro:
       "SoftKore Digital builds construction websites that show capability, project proof, service scope, and a clear quote path.",
     audience:
@@ -666,7 +666,7 @@ const additionalIndustries: IndustryPage[] = [
       { label: "Web development", href: "/services/web-development/" },
       { label: "SEO services", href: "/services/seo-services/" },
       { label: "Website maintenance", href: "/services/website-maintenance/" },
-      { label: "Gauteng web development", href: "/services/web-development/gauteng/" },
+      { label: "Website prices in South Africa", href: "/guides/website-prices-south-africa/" },
     ],
     faqs: [
       { question: "What should a construction website include?", answer: "It should include service pages, project portfolios, credentials, quote forms, service areas, and strong contact paths." },
@@ -682,7 +682,7 @@ const additionalIndustries: IndustryPage[] = [
     metaTitle: "Plumber Website Design and SEO South Africa | SoftKore Digital",
     description:
       "Plumber website design and SEO for plumbing companies, emergency plumbers, maintenance teams, and leak detection specialists.",
-    h1: "Plumber Website Design and SEO",
+    h1: "Plumber Website Design and SEO in South Africa",
     intro:
       "SoftKore Digital builds plumbing websites that support urgent searches, local service pages, fast contact, and practical quote requests.",
     audience:
@@ -731,7 +731,7 @@ const additionalIndustries: IndustryPage[] = [
     metaTitle: "Logistics Company Website Design South Africa | SoftKore Digital",
     description:
       "Logistics company website design for transport, courier, freight, warehouse, and supply chain businesses that need B2B credibility and quote workflows.",
-    h1: "Logistics Company Website Design",
+    h1: "Logistics Company Website Design in South Africa",
     intro:
       "SoftKore Digital builds logistics websites and portals that explain capabilities, capture quote requests, and support B2B trust.",
     audience:
@@ -763,7 +763,7 @@ const additionalIndustries: IndustryPage[] = [
     related: [
       { label: "Custom web applications", href: "/services/custom-web-applications/" },
       { label: "Web development", href: "/services/web-development/" },
-      { label: "Durban custom web applications", href: "/services/custom-web-applications/kwazulu-natal/durban/" },
+      { label: "Website vs web application", href: "/guides/website-vs-web-application/" },
       { label: "SEO services", href: "/services/seo-services/" },
     ],
     faqs: [

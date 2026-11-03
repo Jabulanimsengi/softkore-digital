@@ -1,24 +1,19 @@
 import fs from "node:fs";
 
 const redirectsPath = "deploy/redirects-softkore.json";
+const planPath = "deploy/page-plan.json";
 
 const requiredMappings = new Map([
-  ["/services/web-development/gauteng/city-of-johannesburg/", "/services/web-development/gauteng/johannesburg/"],
-  ["/services/web-development/gauteng/city-of-johannesburg/index.html", "/services/web-development/gauteng/johannesburg/"],
-  ["/services/seo-services/western-cape/city-of-cape-town/", "/services/seo-services/western-cape/cape-town/"],
-  ["/services/custom-web-applications/kwazulu-natal/ethekwini/durban/", "/services/custom-web-applications/kwazulu-natal/durban/"],
-  ["/industries/law-firm-websites-seo/", "/industries/law-firm-websites/"],
-  ["/industries/salon-beauty-websites/", "/industries/beauty-salon-websites/"],
+  ["/services/web-development/gauteng/city-of-johannesburg/", "/services/web-development/"],
+  ["/services/web-development/gauteng/johannesburg/", "/services/web-development/"],
+  ["/services/web-development/gauteng/johannesburg/index.html", "/services/web-development/"],
+  ["/services/seo-services/western-cape/cape-town/", "/services/seo-services/"],
+  ["/services/custom-web-applications/kwazulu-natal/durban/", "/services/custom-web-applications/"],
+  ["/industries/law-firm-websites-seo/", "/industries/legal-firm-seo-services/"],
+  ["/industries/salon-beauty-websites/", "/industries/salon-booking-software/"],
   ["/guides/website-prices-south-africa/index.html", "/guides/website-prices-south-africa/"],
   ["/guides/website-vs-web-application/index.html", "/guides/website-vs-web-application/"],
 ]);
-
-const forbiddenDestinationPatterns = [
-  /city-of-/,
-  /law-firm-websites-seo/,
-  /salon-beauty-websites/,
-  /real-estate-website-design/,
-];
 
 function fail(message) {
   console.error(message);
@@ -31,6 +26,8 @@ if (!fs.existsSync(redirectsPath)) {
 }
 
 const data = JSON.parse(fs.readFileSync(redirectsPath, "utf8"));
+const plan = JSON.parse(fs.readFileSync(planPath, "utf8"));
+const keptRoutes = new Set(plan.keep);
 const redirects = data.redirects || [];
 const seen = new Set();
 const map = new Map();
@@ -53,10 +50,12 @@ for (const redirect of redirects) {
     fail(`Duplicate redirect source found: ${redirect.from}`);
   }
 
-  for (const pattern of forbiddenDestinationPatterns) {
-    if (!redirect.from.endsWith("/index.html") && pattern.test(redirect.to)) {
-      fail(`Forbidden old slug in redirect destination: ${redirect.from} -> ${redirect.to}`);
-    }
+  if (!keptRoutes.has(redirect.to)) {
+    fail(`Redirect does not end on a kept page: ${redirect.from} -> ${redirect.to}`);
+  }
+
+  if (keptRoutes.has(redirect.from)) {
+    fail(`Kept page must not redirect: ${redirect.from}`);
   }
 
   seen.add(redirect.from);

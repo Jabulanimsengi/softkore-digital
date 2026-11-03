@@ -1,64 +1,89 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { UiIcon, type UiIconName } from "@/components/UiIcon";
-import { caseStudies } from "@/data/case-studies";
+import { projectTypes } from "@/data/case-studies";
 import { HomeMotion } from "@/components/HomeMotion";
+import { FaqList } from "@/components/PageSections";
 import { Testimonials } from "@/components/Testimonials";
-import { JsonLd, organizationSchema } from "@/lib/schema";
+import { faqSchema, JsonLd, organizationSchema } from "@/lib/schema";
+import { site } from "@/lib/site";
+
+const homeTitle = "Website Design, Web Development & SEO South Africa | SoftKore Digital";
+const homeDescription = "South African web company building fast business websites, web applications and booking systems, with SEO and website maintenance. We work with businesses nationwide.";
+
+export const metadata: Metadata = {
+  title: { absolute: homeTitle },
+  description: homeDescription,
+  alternates: { canonical: "/" },
+  openGraph: { title: homeTitle, description: homeDescription, url: "/", siteName: site.name, type: "website", images: ["/logo.png"] },
+};
 
 const keywords = [
-  "Websites",
+  "Website design",
+  "Web development",
   "SEO",
-  "Business systems",
-  "Bookings",
-  "Payments",
-  "Conversion",
-  "Growth",
-  "Maintenance",
-  "Automation",
+  "Web applications",
+  "Online bookings",
+  "Website maintenance",
+  "Landing pages",
+  "Tracking",
+  "South Africa",
 ];
 
 const serviceRows: Array<{ title: string; text: string; href: string; icon: UiIconName }> = [
-  { title: "Website design & development", text: "Fast, credible websites structured to convert.", href: "/services/web-development/", icon: "globe" },
-  { title: "Business systems & automation", text: "Portals, dashboards and workflows that remove friction.", href: "/services/custom-web-applications/", icon: "workflow" },
-  { title: "Booking & customer management", text: "Bookings, payments and follow-up that run themselves.", href: "/services/booking-customer-management/", icon: "calendar" },
-  { title: "SEO & online visibility", text: "Search-led growth so the right customers find you.", href: "/services/seo-services/", icon: "search" },
-  { title: "Maintenance & technical support", text: "Ongoing updates, monitoring and performance care.", href: "/services/website-maintenance/", icon: "shield" },
-  { title: "Digital marketing & conversion", text: "Campaigns and conversion systems that turn attention into action.", href: "/services/digital-marketing-conversion/", icon: "chart" },
+  { title: "Website design & development", text: "Fast, mobile-first business websites with clear service pages and enquiry paths.", href: "/services/web-development/", icon: "globe" },
+  { title: "Web applications & business systems", text: "Client portals, dashboards and internal tools that replace spreadsheets.", href: "/services/custom-web-applications/", icon: "workflow" },
+  { title: "Online booking & customer management", text: "Scheduling, deposits, reminders and customer records in one place.", href: "/services/booking-customer-management/", icon: "calendar" },
+  { title: "SEO services", text: "Technical audits, indexing fixes and better service pages, with honest reporting.", href: "/services/seo-services/", icon: "search" },
+  { title: "Website maintenance", text: "Updates, backups, security checks and fixes, including sites we did not build.", href: "/services/website-maintenance/", icon: "shield" },
+  { title: "Digital marketing & conversion", text: "Landing pages, campaign planning and tracking that show what brings enquiries.", href: "/services/digital-marketing-conversion/", icon: "chart" },
 ];
 
 const stats = [
-  { value: 6, suffix: "", label: "Core services" },
-  { value: 10, suffix: "", label: "Industries served" },
-  { value: 5, suffix: "", label: "Practical guides" },
+  { value: 9, suffix: "", label: "Provinces we can serve remotely" },
+  { value: 6, suffix: "", label: "Connected services" },
+  { value: 10, suffix: "", label: "Industry-specific guides" },
   { value: 100, suffix: "%", label: "Mobile-first builds" },
 ];
 
 const process = [
-  ["01", "Discover", "We clarify the business goal, customers and friction before deciding what to build."],
-  ["02", "Shape", "We map the journey, content and technical foundation."],
-  ["03", "Build", "We design, develop and test the journeys that matter most."],
-  ["04", "Improve", "We launch carefully, measure what matters and refine from real use."],
+  ["01", "Discover", "We learn your services, customers and goals, and review any existing site and search data."],
+  ["02", "Plan", "We agree on the pages or system, the content, the technical approach and the budget."],
+  ["03", "Build", "We design, develop and test on real screens, with regular reviews so you can see progress."],
+  ["04", "Improve", "We launch, check everything on the live site, track enquiries and improve from real use."],
+];
+
+const homeFaqs = [
+  { question: "Do you work with businesses across South Africa?", answer: "Yes. We work remotely with businesses in all nine provinces. Discovery, reviews and sign-off happen over video calls, email and WhatsApp." },
+  { question: "How much does a website cost in South Africa?", answer: "It depends on the number of pages, who writes the content, how custom the design is and which features you need. Our website prices guide explains the main cost drivers, and you can share your budget on the contact form for an honest view of what it can achieve." },
+  { question: "Can you guarantee a first-page ranking on Google?", answer: "No. Nobody can honestly guarantee that, because Google decides its own results. We fix what is holding your site back, improve the pages that matter and report clearly on what changes." },
+  { question: "Can you take over a website another developer built?", answer: "Usually, yes. We review the site, hosting and access first and tell you about any risks before you commit to maintenance or further work." },
+  { question: "Do I need a website or a web application?", answer: "A website explains your business and brings in enquiries. A web application lets people log in and do work, such as booking, tracking jobs or managing records. Many businesses start with a website and add a system later." },
 ];
 
 const signals = [
-  "Search architecture",
-  "Website UX",
-  "Apps & systems",
-  "Mobile-first",
-  "Performance",
-  "Conversion",
+  "Eastern Cape",
+  "Free State",
+  "Gauteng",
+  "KwaZulu-Natal",
+  "Limpopo",
+  "Mpumalanga",
+  "North West",
+  "Northern Cape",
+  "Western Cape",
 ];
 
 export default function HomePage() {
   return (
     <>
       <JsonLd data={organizationSchema()} />
+      <JsonLd data={faqSchema(homeFaqs)} />
       <main className="home">
         <section className="home-hero">
           <div className="home-hero-bg" data-parallax="0.12">
             <img
               src="/images/softkore-home-hero.webp"
-              alt="A South African business team collaborating on a practical digital growth plan."
+              alt="A business team planning a new website together."
               width={1536}
               height={1024}
               fetchPriority="high"
@@ -68,12 +93,12 @@ export default function HomePage() {
 
           <div className="home-hero-content">
             <div className="section">
-              <p className="home-kicker">Website design · SEO · Growth systems</p>
-              <h1>Websites &amp; SEO that <em>grow your business.</em></h1>
-              <p className="home-hero-lead">SoftKore Digital designs fast, search-ready websites and the systems behind them — so growing businesses get found, get trusted and get more done.</p>
+              <p className="home-kicker">Website design · Web development · SEO</p>
+              <h1>Website design, development &amp; SEO for <em>South African businesses.</em></h1>
+              <p className="home-hero-lead">SoftKore Digital builds fast websites and web applications, and helps your customers find them on Google. We work with businesses in all nine provinces.</p>
               <div className="home-actions">
                 <Link prefetch={false} className="home-btn home-btn-primary" href="/contact/">Start a Project <UiIcon name="arrow" /></Link>
-                <Link prefetch={false} className="home-btn home-btn-ghost" href="/work/">See our work</Link>
+                <Link prefetch={false} className="home-btn home-btn-ghost" href="/services/">View our services</Link>
               </div>
             </div>
           </div>
@@ -90,22 +115,22 @@ export default function HomePage() {
           <div className="section">
             <div className="home-section-head">
               <div>
-                <p className="home-eyebrow">Selected work</p>
-                <h2>Digital work that creates real business movement.</h2>
+                <p className="home-eyebrow">What we help with</p>
+                <h2>The problems businesses usually bring to us.</h2>
               </div>
-              <Link prefetch={false} className="home-text-link" href="/work/">See all work <UiIcon name="arrow" /></Link>
+              <Link prefetch={false} className="home-text-link" href="/work/">How we approach projects <UiIcon name="arrow" /></Link>
             </div>
 
             <div className="home-work-grid">
-              {caseStudies.slice(0, 3).map((study) => (
+              {projectTypes.map((study) => (
                 <article className="home-work-card" key={study.title}>
                   <figure>
                     <img src={study.image} alt={study.imageAlt} width={1536} height={1024} loading="lazy" />
                     <span>{study.category}</span>
                   </figure>
                   <h3>{study.title}</h3>
-                  <p>{study.outcome}</p>
-                  <Link prefetch={false} href="/work/">View case <UiIcon name="arrow" /></Link>
+                  <p>{study.problem}</p>
+                  <Link prefetch={false} href={study.href}>See this service <UiIcon name="arrow" /></Link>
                 </article>
               ))}
             </div>
@@ -130,7 +155,7 @@ export default function HomePage() {
             <div className="home-section-head">
               <div>
                 <p className="home-eyebrow">What we do</p>
-                <h2>One partner for the whole digital journey.</h2>
+                <h2>Our web design, development and SEO services.</h2>
               </div>
               <Link prefetch={false} className="home-text-link" href="/services/">Explore services <UiIcon name="arrow" /></Link>
             </div>
@@ -153,7 +178,7 @@ export default function HomePage() {
             <div className="home-section-head">
               <div>
                 <p className="home-eyebrow">How we work</p>
-                <h2>A clear process, from problem to useful solution.</h2>
+                <h2>A clear process from first call to launch.</h2>
               </div>
             </div>
             <div className="home-process-grid">
@@ -170,7 +195,7 @@ export default function HomePage() {
 
         <section className="home-quote">
           <div className="section">
-            <blockquote>We care less about clever technology and more about the <mark>business result</mark> it creates.</blockquote>
+            <blockquote>Based in South Africa, working <mark>nationwide</mark>. Wherever you are, the process is the same.</blockquote>
             <div className="home-quote-signals">
               {signals.map((signal) => <span key={signal}>{signal}</span>)}
             </div>
@@ -179,11 +204,24 @@ export default function HomePage() {
 
         <Testimonials />
 
+        <section className="home-services">
+          <div className="section">
+            <div className="home-section-head">
+              <div>
+                <p className="home-eyebrow">Common questions</p>
+                <h2>What South African businesses ask us first.</h2>
+              </div>
+              <Link prefetch={false} className="home-text-link" href="/guides/">Read our guides <UiIcon name="arrow" /></Link>
+            </div>
+            <FaqList items={homeFaqs} />
+          </div>
+        </section>
+
         <section className="home-cta">
           <div className="section home-cta-inner">
             <div>
-              <h2>What should work better in your business?</h2>
-              <p>Bring us the customer journey, search challenge or internal workflow. We&apos;ll help identify the simplest valuable next move.</p>
+              <h2>Tell us what you need from your website.</h2>
+              <p>Whether you need a new website, better Google visibility or a system to replace your spreadsheets, we will give you a straight answer on the best next step.</p>
             </div>
             <div className="home-actions">
               <Link prefetch={false} className="home-btn home-btn-primary" href="/contact/">Start a Project <UiIcon name="arrow" /></Link>

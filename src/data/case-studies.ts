@@ -1,52 +1,52 @@
-export type CaseStudy = {
+export type ProjectType = {
   title: string;
   category: string;
-  challenge: string;
-  intervention: string;
-  outcome: string;
-  signals: string[];
+  problem: string;
+  approach: string;
+  deliverable: string;
   image: string;
   imageAlt: string;
+  href: string;
 };
 
-export const caseStudies: CaseStudy[] = [
+export const projectTypes: ProjectType[] = [
   {
-    title: "SEO recovery foundation",
-    category: "Search architecture",
-    challenge:
-      "A site can look modern and still leak search value through weak URL structure, missing redirects, thin location coverage, and unclear page intent.",
-    intervention:
-      "We rebuild the technical foundation: sitemap coverage, redirect rules, service-page structure, page metadata, and safer release checks.",
-    outcome:
-      "The business gets a cleaner search footprint, fewer dead paths, and a site structure that can grow without becoming messy.",
-    signals: ["Redirect map", "Sitemap coverage", "Search intent", "Release checks"],
-    image: "/images/softkore-case-growth.webp",
-    imageAlt: "A search performance dashboard showing steady digital growth.",
-  },
-  {
-    title: "Conversion path refresh",
-    category: "Website UX",
-    challenge:
-      "Visitors often understand the service only after too much scrolling, while calls to action compete with vague copy and generic sections.",
-    intervention:
-      "We clarify the offer, tighten the first viewport, restructure service pages, and make contact paths feel deliberate on mobile and desktop.",
-    outcome:
-      "The site becomes easier to trust, easier to scan, and easier to act on from the first meaningful screen.",
-    signals: ["Hero clarity", "Mobile CTAs", "Trust proof", "Form flow"],
+    title: "Website rebuilds that protect search traffic",
+    category: "Website & SEO",
+    problem:
+      "A business has outgrown its website, but it is worried that a rebuild will damage the rankings and enquiries it already has.",
+    approach:
+      "We record existing URLs and search performance, keep the pages that earn traffic, redirect the rest to the closest replacement, and check everything again on the live site.",
+    deliverable:
+      "A faster, mobile-first website with clear service pages, a tested redirect map and tracking in place from launch.",
     image: "/images/softkore-case-web.webp",
     imageAlt: "A responsive business website displayed on a laptop and phone.",
+    href: "/services/web-development/",
   },
   {
-    title: "Operations-ready product layer",
-    category: "Apps and systems",
-    challenge:
-      "Internal workflows often begin as spreadsheets, inboxes, and repeated manual checks that slow teams down as the business grows.",
-    intervention:
-      "We design practical portals, dashboards, admin views, workflow states, deployment paths, and care plans around daily operations.",
-    outcome:
-      "The result is a digital system that supports the work after launch instead of becoming another thing the team has to manage.",
-    signals: ["Dashboards", "Admin tools", "Cloud care", "Workflow states"],
+    title: "SEO audits and indexing recovery",
+    category: "Search",
+    problem:
+      "A website gets little traffic from Google, or Search Console shows that many of its pages are not being indexed.",
+    approach:
+      "We crawl every page, review the Search Console data, and work out whether the problem is technical, content quality or authority before recommending any changes.",
+    deliverable:
+      "A prioritised fix list, improved or merged pages, a cleaner sitemap and monthly reporting in plain language.",
+    image: "/images/softkore-case-growth.webp",
+    imageAlt: "A search performance dashboard on a laptop.",
+    href: "/services/seo-services/",
+  },
+  {
+    title: "Business systems that replace spreadsheets",
+    category: "Web applications",
+    problem:
+      "Daily work runs on spreadsheets, inboxes and WhatsApp groups, so information gets lost and admin grows with the business.",
+    approach:
+      "We map the real workflow, users and permissions, then build a focused first version around the task that wastes the most time.",
+    deliverable:
+      "A secure web application with admin views, user roles, reports and integrations, plus support after launch.",
     image: "/images/softkore-case-systems.webp",
     imageAlt: "A booking and operations dashboard displayed across a laptop and phone.",
+    href: "/services/custom-web-applications/",
   },
 ];
