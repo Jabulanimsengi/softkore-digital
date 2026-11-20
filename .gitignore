@@ -1,6 +1,11 @@
 # QA screenshots
 qa-*.png
 
+# Env
+.env
+.env.*
+!.env.example
+
 # Node
 node_modules/
 .next/

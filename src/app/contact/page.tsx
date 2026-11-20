@@ -1,46 +1,127 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
 import { ContactForm } from "@/components/ContactForm";
-import { FaqList } from "@/components/PageSections";
+import { PagePeopleHero } from "@/components/PagePeopleHero";
 import { UiIcon } from "@/components/UiIcon";
 import { breadcrumbSchema, JsonLd } from "@/lib/schema";
 import { absoluteUrl, site } from "@/lib/site";
+import { contactConsultationImage, pageHeroImages } from "@/lib/site-images";
 
 export const metadata: Metadata = pageMetadata(
-  "Contact SoftKore Digital | Website & SEO Enquiries",
-  "Contact SoftKore Digital about a website, SEO, web application or website maintenance project. We work with businesses across South Africa.",
+  "Contact SoftKore Digital | Website Design, SEO & Security",
+  "Contact SoftKore Digital about website design & development, SEO services or website & cyber security. View our Johannesburg address, direct contact details and enquiry form.",
   "/contact/",
 );
-
-const faqs = [
-  { question: "What happens after I send an enquiry?", answer: "We read through what you need and reply with the most useful next step. That may be a few questions, a short call or an honest suggestion that a different option suits you better." },
-  { question: "Do you work with existing websites and systems?", answer: "Yes. We can improve, rebuild or take over an existing website or system when that makes more sense than starting again." },
-  { question: "Do you work with businesses outside Gauteng?", answer: "Yes. We work remotely with businesses in all nine provinces, using video calls, email and WhatsApp." },
-  { question: "Can you help if I am not sure what I need yet?", answer: "Yes. Tell us what you want to achieve and what is not working. Working out the right scope is often the first step." },
-];
 
 export default function ContactPage() {
   return (
     <>
-      <JsonLd data={breadcrumbSchema([{ name: "Home", url: absoluteUrl("/") }, { name: "Contact", url: absoluteUrl("/contact/") }])} />
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", url: absoluteUrl("/") },
+          { name: "Contact", url: absoluteUrl("/contact/") },
+        ])}
+      />
+
       <main className="stitch-page contact-stitch-page">
-        <section className="section contact-heading"><p className="stitch-kicker">Start a conversation</p><h1>Contact SoftKore Digital.</h1><p>Tell us about your website, SEO or system project. We work with businesses across South Africa and will give you a straight answer on the best next step.</p></section>
-        <section className="section contact-layout">
-          <div className="contact-form-card"><h2>Send us a message</h2><ContactForm /></div>
-          <aside className="contact-sidebar">
-            <div className="contact-info-card"><p className="stitch-kicker">Contact information</p><h2>How to reach us.</h2><ul><li><span className="stitch-icon"><UiIcon name="map" /></span><div><strong>Based in South Africa</strong><p>Working remotely with businesses in all nine provinces.</p></div></li><li><span className="stitch-icon"><UiIcon name="mail" /></span><div><strong>Email enquiries</strong><a href="mailto:info@softkoredigital.co.za">info@softkoredigital.co.za</a></div></li><li><span className="stitch-icon"><UiIcon name="workflow" /></span><div><strong>Phone and WhatsApp</strong><a href={`tel:${site.phone}`}>{site.phoneDisplay}</a></div></li></ul></div>
-            <div className="contact-map-card" aria-label="SoftKore Digital location at 111 Commissioner Street, Johannesburg">
+        <PagePeopleHero
+          breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
+          kicker="Contact SoftKore Digital"
+          title="Get in touch."
+          lead="Send us an enquiry using the form below or reach us directly by email, phone or WhatsApp."
+          image={pageHeroImages.contact}
+          actions={[
+            { label: "Send an Enquiry", href: "#contact-form", variant: "primary" },
+            {
+              label: "Chat on WhatsApp",
+              href: "https://wa.me/27738021196?text=Hi%20SoftKore%20Digital%2C%20I%27d%20like%20to%20discuss%20a%20project.",
+              variant: "secondary",
+              external: true,
+            },
+          ]}
+        />
+
+        <section className="section contact-main-grid">
+          <aside className="contact-details-card" aria-label="Address and contact details">
+            <figure className="contact-details-media">
+              <img
+                src={contactConsultationImage.src}
+                alt={contactConsultationImage.alt}
+                width={1536}
+                height={1024}
+                loading="lazy"
+              />
+            </figure>
+            <p className="stitch-kicker">Direct contact</p>
+            <h2>Address &amp; contact details</h2>
+            <ul className="contact-details-list">
+              <li>
+                <span className="stitch-icon"><UiIcon name="map" /></span>
+                <div>
+                  <strong>Office Address</strong>
+                  <p>111 Commissioner Street, Johannesburg, 2001, South Africa</p>
+                  <small>Serving businesses nationwide across all nine provinces</small>
+                </div>
+              </li>
+              <li>
+                <span className="stitch-icon"><UiIcon name="mail" /></span>
+                <div>
+                  <strong>Email</strong>
+                  <a href={`mailto:${site.email}`}>{site.email}</a>
+                </div>
+              </li>
+              <li>
+                <span className="stitch-icon"><UiIcon name="phone" /></span>
+                <div>
+                  <strong>Phone &amp; WhatsApp</strong>
+                  <a href={`tel:${site.phone}`}>{site.phoneDisplay}</a>
+                  <a
+                    className="contact-whatsapp-link"
+                    href="https://wa.me/27738021196?text=Hi%20SoftKore%20Digital%2C%20I%27d%20like%20to%20discuss%20a%20project."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Chat on WhatsApp →
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </aside>
+
+          <div className="contact-form-card" id="contact-form">
+            <div className="contact-form-head">
+              <p className="stitch-kicker">Enquiry form</p>
+              <h2>Send us a message</h2>
+            </div>
+            <ContactForm />
+          </div>
+        </section>
+
+        <section className="section contact-bottom-map" aria-label="SoftKore Digital map">
+          <div className="contact-map-wrapper">
+            <div className="contact-map-bar">
+              <div>
+                <strong>111 Commissioner Street, Johannesburg, 2001, South Africa</strong>
+              </div>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=111+Commissioner+Street,+Johannesburg,+2001,+South+Africa"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open in Google Maps ↗
+              </a>
+            </div>
+            <div className="contact-map-frame">
               <iframe
-                title="SoftKore Digital location"
+                title="SoftKore Digital address map"
                 src="https://www.google.com/maps?q=111+Commissioner+Street,+Johannesburg,+2001,+South+Africa&output=embed"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 allowFullScreen
               />
             </div>
-          </aside>
+          </div>
         </section>
-        <section className="section contact-lower"><div className="contact-faq"><p className="stitch-kicker">Frequently asked questions</p><h2>Before we get started.</h2><FaqList items={faqs} /></div><div className="contact-trust"><p className="stitch-kicker">What you can expect</p><h2>A clear and honest process.</h2><div><span><UiIcon name="shield" /> Honest scope</span><span><UiIcon name="workflow" /> Practical next steps</span><span><UiIcon name="chart" /> Reporting you can check</span></div></div></section>
       </main>
     </>
   );

@@ -2,11 +2,11 @@ const items = [
   "Website design",
   "Web development",
   "SEO services",
-  "Web applications",
-  "Online bookings",
-  "Website maintenance",
-  "Landing pages",
-  "Tracking",
+  "Cyber security",
+  "Website security",
+  "Technical SEO",
+  "Malware protection",
+  "Security audits",
   "South Africa",
 ];
 

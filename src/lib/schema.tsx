@@ -1,3 +1,4 @@
+import { stripInlineMarkdown } from "@/components/RichText";
 import { site } from "@/lib/site";
 
 type JsonLdProps = {
@@ -23,6 +24,13 @@ export function organizationSchema() {
     email: site.email,
     telephone: site.phone,
     logo: site.logo,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "111 Commissioner Street",
+      addressLocality: "Johannesburg",
+      postalCode: "2001",
+      addressCountry: "ZA",
+    },
     areaServed: { "@type": "Country", name: "South Africa" },
   };
 }
@@ -62,10 +70,10 @@ export function faqSchema(faqs: Array<{ question: string; answer: string }>) {
     "@type": "FAQPage",
     mainEntity: faqs.map((faq) => ({
       "@type": "Question",
-      name: faq.question,
+      name: stripInlineMarkdown(faq.question),
       acceptedAnswer: {
         "@type": "Answer",
-        text: faq.answer,
+        text: stripInlineMarkdown(faq.answer),
       },
     })),
   };

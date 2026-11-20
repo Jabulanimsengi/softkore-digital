@@ -8,11 +8,15 @@ const requiredMappings = new Map([
   ["/services/web-development/gauteng/johannesburg/", "/services/web-development/"],
   ["/services/web-development/gauteng/johannesburg/index.html", "/services/web-development/"],
   ["/services/seo-services/western-cape/cape-town/", "/services/seo-services/"],
-  ["/services/custom-web-applications/kwazulu-natal/durban/", "/services/custom-web-applications/"],
-  ["/industries/law-firm-websites-seo/", "/industries/legal-firm-seo-services/"],
-  ["/industries/salon-beauty-websites/", "/industries/salon-booking-software/"],
+  ["/services/custom-web-applications/kwazulu-natal/durban/", "/services/web-development/"],
+  ["/services/website-maintenance/", "/services/website-security/"],
+  ["/industries/cybersecurity-company-websites/", "/services/website-security/"],
+  ["/industries/law-firm-websites-seo/", "/services/seo-services/"],
+  ["/industries/salon-beauty-websites/", "/services/web-development/"],
+  ["/ai-agents/", "/services/web-development/"],
   ["/guides/website-prices-south-africa/index.html", "/guides/website-prices-south-africa/"],
-  ["/guides/website-vs-web-application/index.html", "/guides/website-vs-web-application/"],
+  ["/guides/website-maintenance-checklist/", "/guides/website-security-checklist/"],
+  ["/guides/website-vs-web-application/index.html", "/services/web-development/"],
 ]);
 
 function fail(message) {

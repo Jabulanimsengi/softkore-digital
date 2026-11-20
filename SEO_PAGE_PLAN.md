@@ -1,69 +1,48 @@
-# SoftKore Digital: National SEO Cleanup
+# SoftKore Digital: Focused SEO & Security Cleanup
 
-Status: **built and validated locally. Not committed or deployed.**
-Page-by-page record: [seo-page-plan.csv](seo-page-plan.csv) (all 793 old sitemap URLs).
+Status: **built and validated locally. Ready to merge/commit, push to GitHub, and deploy to production.**
+Historical URL record: [seo-page-plan.csv](seo-page-plan.csv) (all 793 legacy sitemap URLs).
 
-## Goal
+## Diagnosis & Goal
 
-Search Console showed 81 of 793 pages indexed and 711 as "Crawled - currently not indexed". The site now targets the whole of South Africa with 39 strong pages instead of 793 mostly generated ones.
+Search Console showed 81 of 793 pages indexed and 711 as "Crawled - currently not indexed" on the live `main` site because the production site still served hundreds of programmatic location and industry doorway templates, while the prior cleanup branch (`seo/national-cleanup`) had not been merged or deployed and still contained 22 off-focus `/ai-agents/*` and `/industries/*` pages plus non-core service pages.
 
-## The result
+The site now focuses exclusively on SoftKore Digital's three core pillars across South Africa with **13 high-authority pages**:
+1. **Website Design & Development** (`/services/web-development/`)
+2. **SEO Services** (`/services/seo-services/`)
+3. **Website Security & Cyber Security** (`/services/website-security/`)
 
-| Action | Pages | Notes |
+## Kept Pages (13)
+
+| Type | Count | Routes |
 |---|---:|---|
-| Rewritten with new national content | 18 | Homepage, company pages, indexes, 6 service pages and 5 guides |
-| Updated | 10 | Rebuilt industry pages: national H1, full content shown, location links removed |
-| Kept unchanged, needs confirmation | 11 | AI agents section |
-| Redirected (301) | 754 | Includes all location pages and generated industry pages |
+| Core & company pages | 5 | `/`, `/about/`, `/contact/`, `/work/`, `/services/` |
+| Core service pages | 3 | `/services/web-development/`, `/services/seo-services/`, `/services/website-security/` |
+| Guides index & guides | 5 | `/guides/`, `/guides/website-prices-south-africa/`, `/guides/technical-seo-checklist/`, `/guides/why-your-website-is-not-ranking/`, `/guides/website-security-checklist/` |
 
-Redirects go to the closest kept page:
+## Retired Pages & Single-Hop 301 Redirects
 
-- **Location pages:** the matching national service page.
-- **Industry + service pages:** the parent industry if kept, otherwise the matching service page.
-- **Other industries:** the closest kept industry, otherwise `/industries/`.
-- **Old guides:** the current guide covering the same topic.
+All legacy location pages, industry pages, AI agent pages, and retired service/guide URLs (876 source paths in `deploy/page-plan.json`, expanding to 2,000+ Nginx rules including slash/no-slash/index.html variants) 301-redirect in a single hop to the closest kept page:
 
-## How it now works
+- **Website maintenance & cybersecurity industry URLs:** `/services/website-security/` and `/guides/website-security-checklist/`.
+- **SEO & marketing URLs:** `/services/seo-services/`.
+- **Web development, custom web apps, bookings, industries & AI agents URLs:** `/services/web-development/`.
+
+## How it works
 
 - `deploy/page-plan.json` is the single source of truth for kept pages and redirects.
-- `npm run predeploy` generates the nginx rules from it, validates them, builds the site and checks the export.
-- The checks fail if a redirect does not end on a kept page, the sitemap and the plan disagree, or a kept page links to anything outside the plan.
-- Removed: the legacy static HTML, its generators and the location routes.
+- `npm run predeploy` generates `deploy/redirects-softkore-nginx.conf` and `deploy/redirects-softkore.json`, validates all redirects (no chains, no self-redirects, all targets in `keep`), builds the Next.js static export (`out/`), and validates that `sitemap.xml` and every internal link match the 13 kept routes.
+- Removed from the codebase: `src/app/ai-agents/`, `src/app/industries/`, `src/data/ai-agents.ts`, `src/data/industries.ts`, `src/components/AiAgentTemplate.tsx`, `src/components/IndustryTemplate.tsx`, and non-core service/guide entries.
 
-To add a page later, build it, add it to `keep` in the plan, and include it in `src/app/sitemap.ts`.
+## Release steps
 
-## Needed from you
-
-1. **Prices:** real price ranges for the website prices guide. It explains cost drivers only, because no real prices were available.
-2. **Proof:** named case studies and real testimonials, with client permission. The anonymous testimonials are hidden and the case studies are now described as project types. Add real testimonials in `src/components/Testimonials.tsx`.
-3. **About:** who runs the business, plus any registered company details.
-4. **AI agents:** confirm you sell this. If not, redirect the 11 pages to `/services/custom-web-applications/`.
-5. **Address:** confirm 111 Commissioner Street is a real public address. It remains in the contact map only, and is not in the schema or page text.
-6. **GA4:** provide the measurement ID for `NEXT_PUBLIC_GA4_ID`. Tracking remains off until then.
-7. **Content review:** check that claims are accurate, especially remote work in all nine provinces, the services offered and the WhatsApp number shown as a phone number.
-
-## Release (each step separately authorised)
-
-1. Review the changes and commit them.
-2. Push to GitHub.
-3. On the server: pull, run `npm install`, `npm run clean:next` and `npm run predeploy`, copy the redirect snippet, test nginx and reload it.
-4. Audit live: all 793 old URLs, the new sitemap, and the body of every kept page.
-5. Submit the new sitemap in Search Console and request indexing for the main pages.
-6. Use "Validate Fix" on the not-indexed reasons.
-
-Rollback: revert the commit on the server, run `npm run clean:next` and `npm run predeploy`, copy the redirect snippet and reload nginx.
-
-## After release
-
-- Set up a Google Business Profile if the address qualifies.
-- List on Clutch, DesignRush and Bizcommunity.
-- Earn links from client sites and suppliers.
-- Check the Pages report monthly. Do not generate new location or industry pages until the kept pages are indexed and earning impressions.
-
-## What this does not promise
-
-- Google does not say why a page is excluded. The quality explanation is an inference.
-- Recovery usually takes months, and national terms are highly competitive. Authority and proof still have to be built.
-- The 24 clicks earned by redirected pages over six months may not all transfer.
-- The list of 81 indexed pages was not checked before this cleanup. Any redirected page can be restored from git.
-- Backlinks and Core Web Vitals have not been measured.
+1. Merge/commit changes to `main` and push to GitHub (`origin/main`).
+2. On the Hetzner server (`ssh softkoredigital` -> `/var/www/softkoredigital`):
+   - `git pull origin main`
+   - `npm install`
+   - `npm run clean:next`
+   - `npm run predeploy`
+   - `sudo cp deploy/redirects-softkore-nginx.conf /etc/nginx/snippets/softkore-redirects.conf`
+   - `sudo nginx -t && sudo systemctl reload nginx`
+3. Verify live URLs (redirects, `sitemap.xml`, and all 13 kept pages).
+4. Submit `https://www.softkoredigital.co.za/sitemap.xml` in Google Search Console, run `npm run submit:indexnow`, and request indexing on the 13 kept pages.

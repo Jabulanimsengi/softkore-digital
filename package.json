@@ -9,6 +9,7 @@
     "dev:fresh": "node tools/clean-next.mjs && next dev",
     "build": "next build",
     "start": "next start",
+    "start:api": "node tools/contact-api-server.mjs",
     "lint": "next lint",
     "predeploy": "npm run generate:redirects && npm run validate:redirects && npm run clean:export && npm run build && npm run validate:export",
     "clean:next": "node tools/clean-next.mjs",
@@ -18,7 +19,9 @@
     "validate:redirects": "node tools/validate-redirects.mjs",
     "validate:export": "node tools/validate-next-export.mjs",
     "audit:images": "node tools/audit-site-images.mjs",
-    "audit:css": "node tools/consolidate-shared-css.mjs"
+    "audit:css": "node tools/consolidate-shared-css.mjs",
+    "guides:schedule": "node tools/publish-next-guide.mjs --list",
+    "publish:guide": "node tools/publish-next-guide.mjs"
   },
   "dependencies": {
     "next": "^15.3.2",

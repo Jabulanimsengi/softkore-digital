@@ -1,5 +1,8 @@
 export type ProjectType = {
   title: string;
+  problemHeadline: string;
+  problemSummary: string;
+  ctaLabel: string;
   category: string;
   problem: string;
   approach: string;
@@ -12,20 +15,28 @@ export type ProjectType = {
 export const projectTypes: ProjectType[] = [
   {
     title: "Website rebuilds that protect search traffic",
-    category: "Website & SEO",
+    problemHeadline: "Outdated websites that lose enquiries",
+    problemSummary:
+      "Slow load times, broken mobile layouts, and unclear service pages cost you leads every day. We rebuild your site for speed and conversions while protecting your existing Google rankings with clean redirects.",
+    ctaLabel: "Explore web development",
+    category: "Website Development",
     problem:
       "A business has outgrown its website, but it is worried that a rebuild will damage the rankings and enquiries it already has.",
     approach:
       "We record existing URLs and search performance, keep the pages that earn traffic, redirect the rest to the closest replacement, and check everything again on the live site.",
     deliverable:
-      "A faster, mobile-first website with clear service pages, a tested redirect map and tracking in place from launch.",
+      "A faster, mobile-first website with clear service pages, a tested redirect map, security headers and tracking in place from launch.",
     image: "/images/softkore-case-web.webp",
     imageAlt: "A responsive business website displayed on a laptop and phone.",
     href: "/services/web-development/",
   },
   {
     title: "SEO audits and indexing recovery",
-    category: "Search",
+    problemHeadline: "Websites invisible on Google search",
+    problemSummary:
+      "Pages stuck out of Google's index, technical crawl errors, and weak service copy keep qualified buyers from finding you. We audit Search Console, fix indexing blockers, and strengthen the pages that drive enquiries.",
+    ctaLabel: "Explore SEO services",
+    category: "Search & SEO",
     problem:
       "A website gets little traffic from Google, or Search Console shows that many of its pages are not being indexed.",
     approach:
@@ -37,16 +48,20 @@ export const projectTypes: ProjectType[] = [
     href: "/services/seo-services/",
   },
   {
-    title: "Business systems that replace spreadsheets",
-    category: "Web applications",
+    title: "Website security hardening and hack recovery",
+    problemHeadline: "Hacked, vulnerable, or unmonitored sites",
+    problemSummary:
+      "Malware, spam redirects, outdated plugins, and missing backups put client trust and uptime at risk. We clean compromised sites, harden servers and headers, configure WAF protection, and keep automated backups running.",
+    ctaLabel: "Explore website security",
+    category: "Cyber Security",
     problem:
-      "Daily work runs on spreadsheets, inboxes and WhatsApp groups, so information gets lost and admin grows with the business.",
+      "A business website has been compromised by malware or spam redirects, or runs on outdated software with weak access controls and no tested recovery plan.",
     approach:
-      "We map the real workflow, users and permissions, then build a focused first version around the task that wastes the most time.",
+      "We audit the site and hosting environment, clean malicious code, patch vulnerabilities, enforce strong authentication and firewall rules, and set up off-site backups.",
     deliverable:
-      "A secure web application with admin views, user roles, reports and integrations, plus support after launch.",
+      "A cleaned, hardened website with SSL and security headers, firewall protection, verified backups and ongoing security monitoring.",
     image: "/images/softkore-case-systems.webp",
-    imageAlt: "A booking and operations dashboard displayed across a laptop and phone.",
-    href: "/services/custom-web-applications/",
+    imageAlt: "A website security monitoring and protection dashboard displayed on a laptop.",
+    href: "/services/website-security/",
   },
 ];

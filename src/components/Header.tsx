@@ -4,14 +4,32 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { UiIcon, type UiIconName } from "@/components/UiIcon";
 
-const serviceNavItems = [
-  { label: "Website Design & Development", href: "/services/web-development/" },
-  { label: "Web Applications & Business Systems", href: "/services/custom-web-applications/" },
-  { label: "Online Booking & Customer Management", href: "/services/booking-customer-management/" },
-  { label: "SEO Services", href: "/services/seo-services/" },
-  { label: "Website Maintenance", href: "/services/website-maintenance/" },
-  { label: "Digital Marketing & Conversion", href: "/services/digital-marketing-conversion/" },
+const serviceNavItems: Array<{
+  label: string;
+  description: string;
+  href: string;
+  icon: UiIconName;
+}> = [
+  {
+    label: "Website Design & Development",
+    description: "Fast, mobile-first sites built to convert and rank.",
+    href: "/services/web-development/",
+    icon: "globe",
+  },
+  {
+    label: "SEO Services",
+    description: "Technical audits, indexing fixes & search growth.",
+    href: "/services/seo-services/",
+    icon: "search",
+  },
+  {
+    label: "Website & Cyber Security",
+    description: "Hardening, WAF protection, malware removal & monitoring.",
+    href: "/services/website-security/",
+    icon: "shield",
+  },
 ];
 
 export function Header() {
@@ -91,6 +109,9 @@ export function Header() {
               aria-current={pathname === "/services/" ? "page" : undefined}
             >
               Services
+              <svg className="nav-chevron" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <path d="m4 6 4 4 4-4" />
+              </svg>
             </Link>
             <div className="service-menu" aria-label="Service pages">
               {serviceNavItems.map((item) => (
@@ -98,13 +119,17 @@ export function Header() {
                   prefetch={false}
                   key={item.href}
                   href={item.href}
-                  className={isActive(item.href) ? "is-active" : undefined}
+                  className={`service-menu-card${isActive(item.href) ? " is-active" : ""}`}
                 >
-                  {item.label}
+                  <span className="service-menu-icon"><UiIcon name={item.icon} /></span>
+                  <span className="service-menu-copy">
+                    <strong>{item.label}</strong>
+                    <span>{item.description}</span>
+                  </span>
                 </Link>
               ))}
               <Link prefetch={false} href="/services/" className="service-menu-all">
-                Explore all services →
+                Explore all services <UiIcon name="arrow" />
               </Link>
             </div>
           </div>

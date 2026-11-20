@@ -1,5 +1,7 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
+import { RichText } from "@/components/RichText";
+import { UiIcon } from "@/components/UiIcon";
 
 export function CardGrid({
   items,
@@ -44,8 +46,12 @@ export function FaqList({
     <div className="faq-list">
       {items.map((faq) => (
         <details className="faq-item" key={faq.question}>
-          <summary>{faq.question}</summary>
-          <p>{faq.answer}</p>
+          <summary>
+            <RichText text={faq.question} />
+          </summary>
+          <p>
+            <RichText text={faq.answer} />
+          </p>
         </details>
       ))}
     </div>
@@ -79,8 +85,8 @@ export function PageSignalPanel({
     <aside className="page-summary page-signal-panel">
       <div className="signal-visual" aria-hidden="true">
         <span className="signal-node signal-node-main">SK</span>
-        <span className="signal-node signal-node-a">UX</span>
-        <span className="signal-node signal-node-b">AI</span>
+        <span className="signal-node signal-node-a">SEO</span>
+        <span className="signal-node signal-node-b">SEC</span>
         <span className="signal-line signal-line-a" />
         <span className="signal-line signal-line-b" />
         <span className="signal-pulse" />
@@ -138,7 +144,7 @@ export function ConversionBand({
       </div>
       <div className="conversion-actions">
         <Link prefetch={false} className="button button-primary" href={primaryHref}>
-          {primaryLabel}
+          {primaryLabel} <UiIcon name="arrow" />
         </Link>
         {secondaryHref && secondaryLabel ? (
           <Link prefetch={false} className="button button-dark-secondary" href={secondaryHref}>

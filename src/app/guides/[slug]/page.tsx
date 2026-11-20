@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { GuideTemplate } from "@/components/GuideTemplate";
 import { getGuide, guides, guideUrl } from "@/data/guides";
+import { getGuideReadingStats } from "@/lib/guide-metrics";
 import { absoluteUrl } from "@/lib/site";
 import { breadcrumbSchema, faqSchema, JsonLd } from "@/lib/schema";
 import { site } from "@/lib/site";
+import { getGuideHeroImage } from "@/lib/site-images";
 
 type GuideRouteProps = {
   params: Promise<{ slug: string }>;
@@ -23,6 +25,7 @@ export async function generateMetadata({
   if (!guide) return {};
 
   const url = guideUrl(guide);
+  const ogImage = getGuideHeroImage(guide.slug, guide.category).src;
 
   return {
     title: { absolute: guide.metaTitle },
@@ -34,23 +37,30 @@ export async function generateMetadata({
       title: guide.metaTitle,
       description: guide.description,
       url,
-      images: ["/logo.png"],
+      images: [ogImage],
     },
     twitter: {
       card: "summary_large_image",
       title: guide.metaTitle,
       description: guide.description,
-      images: ["/logo.png"],
+      images: [ogImage],
     },
   };
 }
 
 function articleSchema(guide: NonNullable<ReturnType<typeof getGuide>>) {
+  const stats = getGuideReadingStats(guide);
+  const ogImage = getGuideHeroImage(guide.slug, guide.category).src;
   return {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: guide.title,
     description: guide.description,
+    image: absoluteUrl(ogImage),
+    articleSection: guide.category,
+    wordCount: stats.words,
+    timeRequired: stats.isoDuration,
+    inLanguage: "en-ZA",
     url: absoluteUrl(guideUrl(guide)),
     datePublished: guide.published,
     dateModified: guide.updated,
