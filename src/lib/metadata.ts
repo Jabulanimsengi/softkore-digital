@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 import { site } from "@/lib/site";
 
-export function pageMetadata(title: string, description: string, path: string): Metadata {
+export function pageMetadata(
+  title: string,
+  description: string,
+  path: string,
+  image = "/logo.png",
+): Metadata {
   return {
     title: { absolute: title },
     description,
@@ -12,13 +17,13 @@ export function pageMetadata(title: string, description: string, path: string): 
       title,
       description,
       url: path,
-      images: ["/logo.png"],
+      images: [image],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: ["/logo.png"],
+      images: [image],
     },
   };
 }

@@ -1,3 +1,4 @@
+import { stripInlineMarkdown } from "@/components/RichText";
 import type {
   GuideCategory,
   GuideMidCta,
@@ -29,7 +30,7 @@ export function slugifyHeading(text: string): string {
 
 function wordCountOf(value: string | undefined): number {
   if (!value) return 0;
-  const trimmed = value.trim();
+  const trimmed = stripInlineMarkdown(value).trim();
   if (!trimmed) return 0;
   return trimmed.split(/\s+/).length;
 }
@@ -134,6 +135,8 @@ export function getGuideCategoryAnchor(category: GuideCategory): string {
       return "/guides/#seo";
     case "Website & Cyber Security":
       return "/guides/#security";
+    case "Industry Playbooks":
+      return "/guides/#industries";
   }
 }
 
@@ -148,10 +151,10 @@ export function getDefaultMidCta(category: GuideCategory): GuideMidCta {
       };
     case "SEO Services":
       return {
-        heading: "Want us to audit what is holding your rankings back?",
-        text: "We inspect Search Console, indexing blockers, page structure and local demand to give you a clear priority plan.",
-        href: "/services/seo-services/",
-        label: "Explore SEO Services",
+        heading: "Want a free SEO audit of your website?",
+        text: "We inspect Search Console, indexing blockers, page structure and local demand to give you a clear priority plan — free with no obligation.",
+        href: "/contact/?service=free-seo-audit#contact-form",
+        label: "Get a Free SEO Audit",
       };
     case "Website & Cyber Security":
       return {
@@ -159,6 +162,13 @@ export function getDefaultMidCta(category: GuideCategory): GuideMidCta {
         text: "We audit headers, SSL, backups, malware exposure, email authentication and POPIA risks across South African business sites.",
         href: "/services/website-security/",
         label: "Explore Website Security",
+      };
+    case "Industry Playbooks":
+      return {
+        heading: "Want a website and SEO audit tailored to your industry?",
+        text: "We review your Google Search Console indexing, service page structure, conversion paths and security posture — free with no obligation.",
+        href: "/contact/?service=free-seo-audit#contact-form",
+        label: "Get a Free SEO Audit",
       };
   }
 }

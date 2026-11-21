@@ -3,12 +3,16 @@ import type { ServicePage } from "@/data/services";
 import { PagePeopleHero } from "@/components/PagePeopleHero";
 import { UiIcon, type UiIconName } from "@/components/UiIcon";
 import { ConversionBand, FaqList, LinkList } from "@/components/PageSections";
+import { RichText } from "@/components/RichText";
 import { pageHeroImages, serviceDetailImages } from "@/lib/site-images";
 
 const featureIcons: UiIconName[] = ["workflow", "layers", "chart", "calendar", "code", "shield"];
 
 export function ServiceTemplate({ service }: { service: ServicePage }) {
-  const contactHref = `/contact/?service=${service.slug}`;
+  const contactHref =
+    service.slug === "seo-services"
+      ? "/contact/?service=free-seo-audit#contact-form"
+      : `/contact/?service=${service.slug}#contact-form`;
   const heroImage =
     pageHeroImages[service.slug as keyof typeof pageHeroImages] ?? pageHeroImages.services;
   const visuals = serviceDetailImages[service.slug];
@@ -60,7 +64,7 @@ export function ServiceTemplate({ service }: { service: ServicePage }) {
             </figure>
           ) : null}
         </div>
-        <div className="solution-intro-copy">{service.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
+        <div className="solution-intro-copy">{service.body.map((paragraph) => <p key={paragraph}><RichText text={paragraph} /></p>)}</div>
       </section>
 
       <section className="section solution-callout-section">
@@ -72,7 +76,7 @@ export function ServiceTemplate({ service }: { service: ServicePage }) {
               <h2>{service.fitHeading}</h2>
             </div>
           </div>
-          <div className="solution-intro-copy">{service.fit.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
+          <div className="solution-intro-copy">{service.fit.map((paragraph) => <p key={paragraph}><RichText text={paragraph} /></p>)}</div>
         </div>
       </section>
 
@@ -108,7 +112,7 @@ export function ServiceTemplate({ service }: { service: ServicePage }) {
               </figure>
             ) : null}
           </div>
-          <div className="solution-intro-copy">{service.southAfrica.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
+          <div className="solution-intro-copy">{service.southAfrica.map((paragraph) => <p key={paragraph}><RichText text={paragraph} /></p>)}</div>
         </div>
       </section>
 
@@ -119,7 +123,7 @@ export function ServiceTemplate({ service }: { service: ServicePage }) {
 
       <section className="section solution-intro">
         <div className="stitch-section-heading"><p className="stitch-kicker">Budgeting</p><h2>{service.costHeading}</h2></div>
-        <div className="solution-intro-copy">{service.cost.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
+        <div className="solution-intro-copy">{service.cost.map((paragraph) => <p key={paragraph}><RichText text={paragraph} /></p>)}</div>
       </section>
 
       <section className="section solution-support-grid">

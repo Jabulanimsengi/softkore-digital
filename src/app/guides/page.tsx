@@ -6,16 +6,17 @@ import { getGuideReadingStats } from "@/lib/guide-metrics";
 import { PagePeopleHero } from "@/components/PagePeopleHero";
 import { GuideVisualCover } from "@/components/GuideVisualCover";
 import { guideImages, pageHeroImages } from "@/lib/site-images";
-import { ConversionBand } from "@/components/PageSections";
+import { ConversionBand, FaqList } from "@/components/PageSections";
 import { RichText } from "@/components/RichText";
 import { UiIcon } from "@/components/UiIcon";
 import { absoluteUrl } from "@/lib/site";
-import { breadcrumbSchema, JsonLd } from "@/lib/schema";
+import { breadcrumbSchema, faqSchema, JsonLd } from "@/lib/schema";
 
 export const metadata: Metadata = pageMetadata(
   "Website, SEO & Cyber Security Guides SA | SoftKore Digital",
-  "39 practical South African guides on website & SEO prices, Google indexing fixes, hacked site recovery, POPIA compliance and safe redesigns.",
+  "Practical South African guides and industry playbooks on website & SEO prices, Google indexing fixes, hacked site recovery, POPIA compliance and vertical SEO.",
   "/guides/",
+  pageHeroImages.guides.src,
 );
 
 const pillarGroups: Array<{
@@ -49,12 +50,54 @@ const pillarGroups: Array<{
     summary:
       "Hacked site clean-ups, Safe Browsing recovery, SPF/DKIM/DMARC, SSL, firewalls, POPIA checks and domain protection.",
   },
+  {
+    id: "industries",
+    category: "Industry Playbooks",
+    eyebrow: "Pillar 04",
+    heading: "Industry Playbooks",
+    summary:
+      "Search-intent website architecture, local & national SEO strategies, ZAR budgets and security safeguards tailored to South African sectors.",
+  },
+];
+
+const guidesFaqs = [
+  {
+    question: "Who are SoftKore Digital's website, SEO and industry guides written for?",
+    answer:
+      "They are written for South African business owners, practice managers and marketing teams comparing quotes in rand, diagnosing Google indexing drops or securing websites under POPIA.",
+  },
+  {
+    question: "How realistic are the ZAR website and SEO price ranges in these guides?",
+    answer:
+      "Every budget table reflects active South African supplier scoping across brochure builds, service websites, ecommerce stores and monthly maintenance—see our [website prices guide](/guides/website-prices-south-africa/) and [SEO prices guide](/guides/seo-prices-south-africa/).",
+  },
+  {
+    question: "Can our internal developer or agency follow your technical checklists?",
+    answer:
+      "Yes. All checklists—from [technical SEO](/guides/technical-seo-checklist/) and [HTTP security headers](/guides/http-security-headers-explained/) to industry playbooks—are written so internal developers or existing agencies can verify and ship every step.",
+  },
+  {
+    question: "When should we request a Free SEO Audit instead of fixing issues ourselves?",
+    answer:
+      "Request a [free SEO audit](/contact/?service=free-seo-audit#contact-form) if Search Console shows rising unindexed URLs, sudden post-redesign traffic drops or suspect site security so you pinpoint the real root cause first.",
+  },
+  {
+    question: "How often are SoftKore guides and industry playbooks updated?",
+    answer:
+      "We update existing guides whenever South African payment gateways, Google indexing policies, POPIA guidance or security threat patterns change, and expand our industry playbook library regularly.",
+  },
+  {
+    question: "Can you write a guide or audit plan for a specific South African industry?",
+    answer:
+      "Yes. Share your industry and website URL on our [contact form](/contact/) and we will prepare sector-specific recommendations covering conversion structure, search intent keywords and security.",
+  },
 ];
 
 export default function GuidesPage() {
   return (
     <>
       <JsonLd data={breadcrumbSchema([{ name: "Home", url: absoluteUrl("/") }, { name: "Guides", url: absoluteUrl("/guides/") }])} />
+      <JsonLd data={faqSchema(guidesFaqs)} />
       <main>
         <PagePeopleHero
           breadcrumbs={[{ label: "Home", href: "/" }, { label: "Guides" }]}
@@ -63,8 +106,8 @@ export default function GuidesPage() {
           lead="Plain-language answers on what websites cost, why sites do not rank on Google and how to protect your website against attacks."
           image={pageHeroImages.guides}
           actions={[
-            { label: "Start a Project", href: "/contact/", variant: "primary" },
-            { label: "View Services", href: "/services/", variant: "secondary" },
+            { label: "Get a Free SEO Audit", href: "/contact/?service=free-seo-audit#contact-form", variant: "primary" },
+            { label: "Start a Project", href: "/contact/", variant: "secondary" },
           ]}
           highlights={[
             "Website & SEO pricing ranges (ZAR)",
@@ -155,7 +198,16 @@ export default function GuidesPage() {
           );
         })}
 
-        <ConversionBand title="Would you rather have someone handle this?" text="We can apply these SEO and security checks to your website and tell you what to fix first." primaryLabel="Start a Project" secondaryHref="/services/" secondaryLabel="View Services" />
+        <section className="section page-faq-section" aria-label="Guides frequently asked questions">
+          <div className="page-faq-head">
+            <p className="stitch-kicker">About these guides</p>
+            <h2>Questions about using our South African playbooks.</h2>
+            <p>How to apply these checklists, pricing guides and sector strategies to your own business website.</p>
+          </div>
+          <FaqList items={guidesFaqs} />
+        </section>
+
+        <ConversionBand title="Would you rather have someone handle this?" text="Request a free SEO audit and we can apply these SEO and security checks to your website and tell you what to fix first." primaryHref="/contact/?service=free-seo-audit#contact-form" primaryLabel="Get a Free SEO Audit" secondaryHref="/services/" secondaryLabel="View Services" />
       </main>
     </>
   );

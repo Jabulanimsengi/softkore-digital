@@ -128,6 +128,19 @@ export function Header() {
                   </span>
                 </Link>
               ))}
+              <Link
+                prefetch={false}
+                href="/contact/?service=free-seo-audit#contact-form"
+                className="service-menu-card service-menu-card-featured"
+              >
+                <span className="service-menu-icon">
+                  <UiIcon name="search" />
+                </span>
+                <span className="service-menu-copy">
+                  <strong>Free SEO Audit</strong>
+                  <span>Request a free review of your Google indexing, rankings &amp; technical SEO.</span>
+                </span>
+              </Link>
               <Link prefetch={false} href="/services/" className="service-menu-all">
                 Explore all services <UiIcon name="arrow" />
               </Link>
@@ -200,6 +213,14 @@ export function Header() {
                     {item.label}
                   </Link>
                 ))}
+                <Link
+                  prefetch={false}
+                  href="/contact/?service=free-seo-audit#contact-form"
+                  className="mobile-menu-sublink mobile-menu-sublink-featured"
+                  onClick={close}
+                >
+                  Free SEO Audit →
+                </Link>
                 <Link prefetch={false} href="/services/" className="mobile-menu-sublink mobile-menu-sublink-all" onClick={close}>
                   Explore all services →
                 </Link>

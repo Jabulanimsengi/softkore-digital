@@ -104,20 +104,41 @@ export function GuideTemplate({ guide }: { guide: GuidePage }) {
             </p>
 
             <div className="hero-actions">
-              <Link
-                prefetch={false}
-                className="button button-primary"
-                href="/contact/"
-              >
-                Start a Project <UiIcon name="arrow" />
-              </Link>
-              <Link
-                prefetch={false}
-                className="button button-secondary"
-                href="/guides/"
-              >
-                All Guides
-              </Link>
+              {guide.category === "SEO Services" ? (
+                <>
+                  <Link
+                    prefetch={false}
+                    className="button button-primary"
+                    href="/contact/?service=free-seo-audit#contact-form"
+                  >
+                    Get a Free SEO Audit <UiIcon name="arrow" />
+                  </Link>
+                  <Link
+                    prefetch={false}
+                    className="button button-secondary"
+                    href="/guides/"
+                  >
+                    All Guides
+                  </Link>
+                </>
+              ) : (
+                <>
+                  <Link
+                    prefetch={false}
+                    className="button button-primary"
+                    href="/contact/"
+                  >
+                    Start a Project <UiIcon name="arrow" />
+                  </Link>
+                  <Link
+                    prefetch={false}
+                    className="button button-secondary"
+                    href="/contact/?service=free-seo-audit#contact-form"
+                  >
+                    Free SEO Audit
+                  </Link>
+                </>
+              )}
             </div>
           </div>
         </div>
@@ -334,11 +355,36 @@ export function GuideTemplate({ guide }: { guide: GuidePage }) {
       </section>
 
       <ConversionBand
-        title="Would you like help applying this to your site?"
-        text="We work with South African businesses across website design, technical SEO and website security."
-        primaryLabel="Start a Project"
-        secondaryHref="/services/"
-        secondaryLabel="View Services"
+        title={
+          guide.category === "SEO Services"
+            ? "Want a free SEO audit of your website?"
+            : "Would you like help applying this to your site?"
+        }
+        text={
+          guide.category === "SEO Services"
+            ? "We review Google indexing, technical SEO blockers and page structure across South Africa — free with no obligation."
+            : "We work with South African businesses across website design, technical SEO and website security."
+        }
+        primaryHref={
+          guide.category === "SEO Services"
+            ? "/contact/?service=free-seo-audit#contact-form"
+            : "/contact/"
+        }
+        primaryLabel={
+          guide.category === "SEO Services"
+            ? "Get a Free SEO Audit"
+            : "Start a Project"
+        }
+        secondaryHref={
+          guide.category === "SEO Services"
+            ? "/services/seo-services/"
+            : "/contact/?service=free-seo-audit#contact-form"
+        }
+        secondaryLabel={
+          guide.category === "SEO Services"
+            ? "View SEO Services"
+            : "Get a Free SEO Audit"
+        }
       />
     </main>
   );

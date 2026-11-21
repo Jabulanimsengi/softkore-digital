@@ -208,6 +208,12 @@ const categoryFallbackMeta: Record<GuideCategory, ArtworkMeta> = {
     stat: "Hardened · Monitored",
     caption: "Layered protection across DNS, TLS, headers and clean backups.",
   },
+  "Industry Playbooks": {
+    motif: "conversion",
+    badge: "INDUSTRY PLAYBOOK",
+    stat: "Search Intent",
+    caption: "Sector-specific web architecture, local SEO and POPIA safeguards.",
+  },
 };
 
 function DiagramSvg({ motif }: { motif: ArtworkMotif }) {

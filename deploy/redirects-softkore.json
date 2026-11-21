@@ -1,6 +1,6 @@
 {
   "host": "www.softkoredigital.co.za",
-  "count": 2676,
+  "count": 2682,
   "redirects": [
     {
       "from": "/about/index.html",
@@ -195,6 +195,10 @@
       "to": "/guides/co-za-vs-com-domain-south-africa/"
     },
     {
+      "from": "/guides/construction-company-website-seo-south-africa/index.html",
+      "to": "/guides/construction-company-website-seo-south-africa/"
+    },
+    {
       "from": "/guides/core-web-vitals-guide-south-africa/index.html",
       "to": "/guides/core-web-vitals-guide-south-africa/"
     },
@@ -271,6 +275,14 @@
       "to": "/guides/local-seo-vs-national-seo-south-africa/"
     },
     {
+      "from": "/guides/logistics-company-website-seo-south-africa/index.html",
+      "to": "/guides/logistics-company-website-seo-south-africa/"
+    },
+    {
+      "from": "/guides/medical-practice-website-seo-south-africa/index.html",
+      "to": "/guides/medical-practice-website-seo-south-africa/"
+    },
+    {
       "from": "/guides/mobile-first-website-design-south-africa/index.html",
       "to": "/guides/mobile-first-website-design-south-africa/"
     },
@@ -303,8 +315,16 @@
       "to": "/guides/protecting-domain-hijacking-co-za/"
     },
     {
+      "from": "/guides/real-estate-website-seo-south-africa/index.html",
+      "to": "/guides/real-estate-website-seo-south-africa/"
+    },
+    {
       "from": "/guides/remove-google-deceptive-site-ahead-warning/index.html",
       "to": "/guides/remove-google-deceptive-site-ahead-warning/"
+    },
+    {
+      "from": "/guides/salon-aesthetics-booking-website-seo-south-africa/index.html",
+      "to": "/guides/salon-aesthetics-booking-website-seo-south-africa/"
     },
     {
       "from": "/guides/seo-copywriting-guide-south-africa/index.html",
@@ -325,6 +345,10 @@
     {
       "from": "/guides/technical-seo-checklist/index.html",
       "to": "/guides/technical-seo-checklist/"
+    },
+    {
+      "from": "/guides/trades-plumber-solar-website-seo-south-africa/index.html",
+      "to": "/guides/trades-plumber-solar-website-seo-south-africa/"
     },
     {
       "from": "/guides/website-firewall-waf-cloudflare-south-africa/index.html",

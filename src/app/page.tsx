@@ -6,10 +6,12 @@ import { projectTypes } from "@/data/case-studies";
 import { HomeMotion } from "@/components/HomeMotion";
 import { FaqList } from "@/components/PageSections";
 import { Testimonials } from "@/components/Testimonials";
-import { faqSchema, JsonLd, organizationSchema } from "@/lib/schema";
+import { faqSchema, JsonLd, organizationSchema, websiteSchema } from "@/lib/schema";
 import { getGuide } from "@/data/guides";
 import { getGuideReadingStats } from "@/lib/guide-metrics";
 import { guideImages, homeIndustryCards, homeProcessImages, homeServiceImages } from "@/lib/site-images";
+
+const homeHeroImageSrc = "/images/softkore-home-hero.webp";
 
 const featuredGuideSlugs = [
   "website-prices-south-africa",
@@ -21,12 +23,14 @@ export const metadata: Metadata = pageMetadata(
   "Website Design, SEO & Cyber Security SA | SoftKore Digital",
   "South African web agency building fast business websites, fixing Google SEO & indexing issues, and protecting sites from hacks and malware nationwide.",
   "/",
+  homeHeroImageSrc,
 );
 
 const keywords = [
   "Website design",
   "Web development",
   "SEO services",
+  "Free SEO audit",
   "Cyber security",
   "Website security",
   "Technical SEO",
@@ -84,11 +88,66 @@ const process = [
 ];
 
 const homeFaqs = [
-  { question: "Do you work with businesses across South Africa?", answer: "Yes. We work remotely with businesses in all nine provinces. Discovery, reviews and sign-off happen over video calls, email and WhatsApp." },
-  { question: "How much does a website cost in South Africa?", answer: "It depends on the number of pages, who writes the content, how custom the design is and which features you need. Our website prices guide explains the main cost drivers, and you can share your budget on the contact form for an honest view of what it can achieve." },
-  { question: "Can you guarantee a first-page ranking on Google?", answer: "No. Nobody can honestly guarantee that, because Google decides its own results. We fix what is holding your site back, improve the pages that matter and report clearly on what changes." },
-  { question: "Can you take over and secure a website another developer built?", answer: "Usually, yes. We review the site, hosting, access and security gaps first and tell you about any risks before you commit to ongoing security or development work." },
-  { question: "Can you help if my website has been hacked or dropped out of Google?", answer: "Yes. We clean compromised websites, close the security vulnerabilities that allowed the breach, set up firewalls and off-site backups, and resolve indexing or Search Console security warnings." },
+  {
+    question: "Do you work with businesses across all nine provinces of South Africa?",
+    answer:
+      "Yes. We work remotely with businesses across Gauteng, Western Cape, KwaZulu-Natal and every other province. Discovery, screen reviews and launch sign-off run via video calls, email and WhatsApp through our [contact page](/contact/).",
+  },
+  {
+    question: "How much does a business website cost in South Africa?",
+    answer:
+      "Most focused brochure sites cost R15,000 to R25,000 once-off, while lead-generating service sites typically sit between R25,000 and R75,000 and ecommerce builds start around R35,000. See our [website prices guide](/guides/website-prices-south-africa/) for full ZAR scope breakdowns.",
+  },
+  {
+    question: "How long does it take to design and launch a new website?",
+    answer:
+      "A focused business website normally takes three to six weeks from discovery to launch, while ecommerce stores and larger redesigns take six to ten weeks. Read our [website timeline guide](/guides/how-long-to-build-a-website-south-africa/) or view our [website development service](/services/web-development/).",
+  },
+  {
+    question: "Do you build mobile-first websites for PayFast, Yoco and Ozow payments?",
+    answer:
+      "Yes. Every site is engineered mobile-first to load cleanly on South African cellular networks, with WhatsApp lead capture and local payment integrations when selling online. Compare options in our [PayFast vs Yoco vs Ozow guide](/guides/payfast-vs-yoco-vs-ozow-south-africa/).",
+  },
+  {
+    question: "What is included in your free SEO audit?",
+    answer:
+      "Our free audit inspects your Google Search Console indexing coverage, crawl blockers, Core Web Vitals, service page structure and local visibility signals, returning a prioritised fix list. Request yours on our [Free SEO Audit form](/contact/?service=free-seo-audit#contact-form).",
+  },
+  {
+    question: "Can any agency guarantee a number-one Google ranking in South Africa?",
+    answer:
+      "No, because Google controls search rankings and algorithm updates. We guarantee evidence-based technical fixes, clearer service pages matched to buyer search intent and honest monthly tracking inside our [SEO services](/services/seo-services/).",
+  },
+  {
+    question: "Why is my website showing 'Crawled - currently not indexed' in Search Console?",
+    answer:
+      "Googlebot visited those URLs but chose not to index them because of thin copy, duplicated town templates or weak internal linking. Follow our step-by-step [indexing recovery guide](/guides/fix-crawled-currently-not-indexed/) to consolidate and fix affected pages.",
+  },
+  {
+    question: "Which industries do you build and optimise websites for?",
+    answer:
+      "We work with medical clinics, construction and engineering firms, logistics fleets, real estate agencies, trades and solar installers, salons, law firms, accountants and South African retailers. Explore our dedicated [industry playbooks](/guides/#industries).",
+  },
+  {
+    question: "Can you clean and restore a website that has already been hacked?",
+    answer:
+      "Yes. We isolate compromised hosting, strip injected malware and spam pages, rotate exposed credentials, patch vulnerabilities and help clear Google Safe Browsing warnings. Read our [hacked website recovery guide](/guides/hacked-website-recovery-south-africa/) or view [website security services](/services/website-security/).",
+  },
+  {
+    question: "Can you take over and harden a WordPress or custom website another agency built?",
+    answer:
+      "Yes. We start with an audit of your hosting, admin accounts, plugins, SSL setup, DNS and firewall rules, then provide a practical remediation plan through our [website and cyber security team](/services/website-security/).",
+  },
+  {
+    question: "What does website security cover under South Africa's POPIA requirements?",
+    answer:
+      "POPIA requires reasonable technical safeguards for personal information submitted via forms and portals, including HTTPS/HSTS encryption, least-privilege access, spam filtering and tested backups. Check our [POPIA website compliance checklist](/guides/popia-website-compliance-checklist/).",
+  },
+  {
+    question: "Do I own my .co.za domain, website code and Search Console data once built?",
+    answer:
+      "Yes. Your `.co.za` or `.com` domain stays registered in your company's name and full site code, Analytics and Search Console ownership remain yours. See our [.co.za vs .com domain guide](/guides/co-za-vs-com-domain-south-africa/) for registrar governance tips.",
+  },
 ];
 
 const signals = [
@@ -107,12 +166,13 @@ export default function HomePage() {
   return (
     <>
       <JsonLd data={organizationSchema()} />
+      <JsonLd data={websiteSchema()} />
       <JsonLd data={faqSchema(homeFaqs)} />
       <main className="home">
         <section className="home-hero">
           <div className="home-hero-bg" data-parallax="0.12">
             <img
-              src="/images/softkore-home-hero.webp"
+              src={homeHeroImageSrc}
               alt="A business team planning a fast, secure website together."
               width={1536}
               height={1024}
@@ -123,10 +183,11 @@ export default function HomePage() {
 
           <div className="home-hero-content">
             <div className="section">
-              <p className="home-kicker">Website design &amp; development · SEO services · Website &amp; cyber security</p>
+              <p className="home-kicker">Website design &amp; development · Free SEO audit · Website &amp; cyber security</p>
               <h1>Website development, SEO &amp; cyber security for <em>South African businesses.</em></h1>
-              <p className="home-hero-lead">SoftKore Digital builds fast business websites, gets them properly indexed and ranking on Google, and protects them against hacks, malware and data leaks across all nine provinces.</p>
+              <p className="home-hero-lead">SoftKore Digital builds fast business websites, starts with a free SEO audit to get them properly indexed and ranking on Google, and protects them against hacks, malware and data leaks across all nine provinces.</p>
               <div className="home-actions">
+                <Link prefetch={false} className="home-btn home-btn-audit" href="/contact/?service=free-seo-audit#contact-form">Free SEO Audit <UiIcon name="search" /></Link>
                 <Link prefetch={false} className="home-btn home-btn-primary" href="/contact/">Start a Project <UiIcon name="arrow" /></Link>
                 <Link prefetch={false} className="home-btn home-btn-ghost" href="/services/">View Services</Link>
               </div>
@@ -259,14 +320,15 @@ export default function HomePage() {
             </div>
             <div className="home-industries-grid">
               {homeIndustryCards.map((card) => (
-                <article className="home-industry-card" key={card.sector}>
+                <Link prefetch={false} href={card.href} className="home-industry-card" key={card.sector}>
                   <figure>
                     <img src={card.image.src} alt={card.image.alt} width={1536} height={1024} loading="lazy" />
                     <span>{card.sector}</span>
                   </figure>
                   <h3>{card.title}</h3>
                   <p>{card.summary}</p>
-                </article>
+                  <strong>Read industry playbook <UiIcon name="arrow" /></strong>
+                </Link>
               ))}
             </div>
           </div>
@@ -332,9 +394,10 @@ export default function HomePage() {
           <div className="section home-cta-inner">
             <div>
               <h2>Tell us what you need from your website.</h2>
-              <p>Whether you need a new website, better Google visibility or stronger website security, we will give you a straight answer on the best next step.</p>
+              <p>Request a free SEO audit or start a project chat — whether you need a new website, better Google visibility or stronger website security, we will give you a straight answer on the best next step.</p>
             </div>
             <div className="home-actions">
+              <Link prefetch={false} className="home-btn home-btn-audit" href="/contact/?service=free-seo-audit#contact-form">Free SEO Audit <UiIcon name="search" /></Link>
               <Link prefetch={false} className="home-btn home-btn-primary" href="/contact/">Start a Project <UiIcon name="arrow" /></Link>
             </div>
           </div>

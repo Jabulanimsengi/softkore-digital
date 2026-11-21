@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
 import { ContactForm } from "@/components/ContactForm";
+import { FaqList } from "@/components/PageSections";
 import { PagePeopleHero } from "@/components/PagePeopleHero";
 import { UiIcon } from "@/components/UiIcon";
-import { breadcrumbSchema, JsonLd } from "@/lib/schema";
+import { breadcrumbSchema, faqSchema, JsonLd } from "@/lib/schema";
 import { absoluteUrl, site } from "@/lib/site";
 import { contactConsultationImage, pageHeroImages } from "@/lib/site-images";
 
@@ -11,7 +12,51 @@ export const metadata: Metadata = pageMetadata(
   "Contact SoftKore Digital | Website Design, SEO & Security",
   "Contact SoftKore Digital about website design & development, SEO services or website & cyber security. View our Johannesburg address, direct contact details and enquiry form.",
   "/contact/",
+  pageHeroImages.contact.src,
 );
+
+const contactFaqs = [
+  {
+    question: "How quickly does SoftKore Digital reply to website or SEO enquiries?",
+    answer:
+      "We reply to every enquiry within one South African business day by email or WhatsApp, and urgent hacked-website reports are triaged as soon as they arrive.",
+  },
+  {
+    question: "What happens after I submit a Free SEO Audit request?",
+    answer:
+      "We review your domain, Google Search Console indexing status (where accessible), mobile speed, security headers and main service pages, then send back a clear summary of what is blocking visibility.",
+  },
+  {
+    question: "Is there any cost or obligation attached to the Free SEO Audit?",
+    answer:
+      "No. The initial review is free with zero obligation, whether you later ask SoftKore to implement the fixes under our [SEO services](/services/seo-services/) or hand the list to your own team.",
+  },
+  {
+    question: "What details help you prepare an accurate website quote in rand?",
+    answer:
+      "Share your current website URL (if you have one), main services or products, target market across South Africa, any integrations such as PayFast or booking tools, and your indicative ZAR budget range on our [website prices guide](/guides/website-prices-south-africa/).",
+  },
+  {
+    question: "Should I message on WhatsApp or use the email enquiry form?",
+    answer:
+      "Use the enquiry form when you want to share a website URL, budget range and service brief cleanly in writing, or message WhatsApp directly for quick questions and urgent site issues.",
+  },
+  {
+    question: "Do we need an in-person meeting in Johannesburg to work together?",
+    answer:
+      "No. Although our office is at 111 Commissioner Street in Johannesburg, almost all client projects across Gauteng, Western Cape, KwaZulu-Natal and other provinces run remotely via video call and live staging links.",
+  },
+  {
+    question: "How is my enquiry data handled under POPIA?",
+    answer:
+      "We only collect the contact and project details needed to respond to your enquiry, never sell or share leads, and apply strict technical transport and access controls outlined in our [POPIA website checklist](/guides/popia-website-compliance-checklist/).",
+  },
+  {
+    question: "How should I reach out if my website has been hacked right now?",
+    answer:
+      "Select 'Hacked site recovery' in the form above or call/WhatsApp `073 802 1196` immediately with your domain name so we can begin [emergency cleanup and containment](/services/website-security/).",
+  },
+];
 
 export default function ContactPage() {
   return (
@@ -22,13 +67,14 @@ export default function ContactPage() {
           { name: "Contact", url: absoluteUrl("/contact/") },
         ])}
       />
+      <JsonLd data={faqSchema(contactFaqs)} />
 
       <main className="stitch-page contact-stitch-page">
         <PagePeopleHero
           breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
           kicker="Contact SoftKore Digital"
           title="Get in touch."
-          lead="Send us an enquiry using the form below or reach us directly by email, phone or WhatsApp."
+          lead="Request a free SEO audit or send us a project enquiry using the form below, or reach us directly by email, phone or WhatsApp."
           image={pageHeroImages.contact}
           actions={[
             { label: "Send an Enquiry", href: "#contact-form", variant: "primary" },
@@ -95,6 +141,15 @@ export default function ContactPage() {
             </div>
             <ContactForm />
           </div>
+        </section>
+
+        <section className="section page-faq-section" aria-label="Contact and onboarding questions">
+          <div className="page-faq-head">
+            <p className="stitch-kicker">Before you message</p>
+            <h2>What happens when you get in touch.</h2>
+            <p>Response times, Free SEO Audit scope, remote onboarding across South Africa and urgent hack escalation.</p>
+          </div>
+          <FaqList items={contactFaqs} />
         </section>
 
         <section className="section contact-bottom-map" aria-label="SoftKore Digital map">

@@ -10,6 +10,7 @@ type DropdownOption = {
 
 const serviceOptions: DropdownOption[] = [
   { label: "Website design & development", icon: "globe" },
+  { label: "Free SEO audit", icon: "search" },
   { label: "SEO & Google indexing", icon: "search" },
   { label: "Website & cyber security", icon: "shield" },
   { label: "Hacked site recovery", icon: "code" },
@@ -18,9 +19,10 @@ const serviceOptions: DropdownOption[] = [
 
 const serviceSlugToNeed: Record<string, string> = {
   "web-development": serviceOptions[0].label,
-  "seo-services": serviceOptions[1].label,
-  "website-security": serviceOptions[2].label,
-  "hack-recovery": serviceOptions[3].label,
+  "free-seo-audit": serviceOptions[1].label,
+  "seo-services": serviceOptions[2].label,
+  "website-security": serviceOptions[3].label,
+  "hack-recovery": serviceOptions[4].label,
 };
 
 const budgets = [
@@ -178,6 +180,7 @@ export function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [need, setNeed] = useState(serviceOptions[0].label);
+  const isFreeAudit = need === "Free SEO audit";
   const [business, setBusiness] = useState("");
   const [budget, setBudget] = useState(budgets[0]);
   const [openDropdown, setOpenDropdown] = useState<"service" | "budget" | null>(null);
@@ -339,13 +342,26 @@ export function ContactForm() {
           {errors.business ? <span className="field-error" id="contact-business-error">{errors.business}</span> : null}
         </label>
 
+        {isFreeAudit ? (
+          <div className="contact-audit-note" role="note">
+            <strong>Free SEO audit included — no obligation</strong>
+            <p>
+              Include your website URL below and we will review your Google indexing, technical SEO health, page structure, and local search visibility within one business day.
+            </p>
+          </div>
+        ) : null}
+
         <label htmlFor="contact-detail">
           What do you need help with?
           <textarea
             id="contact-detail"
             name="detail"
             rows={5}
-            placeholder="Tell us about your current website, what is not working, or what you want to achieve..."
+            placeholder={
+              isFreeAudit
+                ? "Share your website URL (e.g. https://yourdomain.co.za), target locations or services, and any ranking or traffic drops..."
+                : "Tell us about your current website, what is not working, or what you want to achieve..."
+            }
             value={detail}
             onChange={(event) => setDetail(event.target.value)}
             aria-invalid={Boolean(errors.detail)}
@@ -356,7 +372,11 @@ export function ContactForm() {
 
         <div className="contact-submit-row">
           <button className="simple-button simple-button-dark" type="submit" disabled={sending}>
-            {sending ? "Sending enquiry..." : <>Send enquiry <UiIcon name="arrow" /></>}
+            {sending ? "Sending enquiry..." : (
+              <>
+                {isFreeAudit ? "Request Free SEO Audit" : "Send enquiry"} <UiIcon name="arrow" />
+              </>
+            )}
           </button>
           <p className="form-note" id="contact-form-note">
             Sent directly to info@softkoredigital.co.za · Your details are kept private under POPIA.

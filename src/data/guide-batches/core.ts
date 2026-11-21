@@ -193,12 +193,47 @@ export const coreGuides: GuidePage[] = [
       {
         question: "How much does website maintenance cost per month in South Africa?",
         answer:
-          "WordPress sites needing active plugin patching, backups and security monitoring typically cost R950 to R2,500 per month. Static/Next.js builds with fewer server plugins often require lower ongoing upkeep.",
+          "WordPress sites needing active plugin patching, backups and security monitoring typically cost R950 to R2,500 per month. Static/Next.js builds with fewer server plugins often require lower ongoing upkeep—read our [website maintenance cost guide](/guides/website-maintenance-cost-south-africa/).",
+      },
+      {
+        question: "Do website design prices in South Africa usually include VAT and copywriting?",
+        answer:
+          "Many SME quotes exclude VAT and professional copywriting unless listed explicitly. Always check whether commercial writing, stock photography and VAT are itemised before comparing two web design proposals side by side.",
+      },
+      {
+        question: "Why do custom Next.js websites cost more upfront than basic WordPress templates?",
+        answer:
+          "Custom Next.js engineering funds bespoke page components, mobile speed optimisation and minimal attack surface upfront, whereas template WordPress builds defer costs into monthly plugin licences, patching and security retainers. Compare both in our [WordPress vs custom guide](/guides/wordpress-vs-custom-website-south-africa/).",
+      },
+      {
+        question: "Can a small business pay for a South African website build in milestone stages?",
+        answer:
+          "Yes—reputable studios typically split projects into two or three milestones: a discovery/deposit payment to lock scope, a mid-project staging review milestone and final settlement upon live launch checks.",
+      },
+      {
+        question: "What hidden post-launch website costs catch South African SMEs off guard?",
+        answer:
+          "Common surprises include annual `.co.za` domain and SSL renewals, Google Workspace or Microsoft 365 email hosting, premium WordPress plugin renewals, 301 redirect migrations and paid [website security hardening](/services/website-security/).",
+      },
+      {
+        question: "Is it cheaper to fix a slow existing website or rebuild from scratch?",
+        answer:
+          "If your underlying domain authority and layout are sound, speed tuning and service-page rewrites cost less than rebuilding; if bloated page-builder themes or hacked code slow everything down, a clean rebuild via [website development](/services/web-development/) usually saves money over twelve months.",
+      },
+      {
+        question: "How much extra does bilingual or multi-currency functionality add to a website budget?",
+        answer:
+          "Supporting additional languages or multi-currency checkouts generally adds 20% to 40% to design, QA and content-translation scope—worth budgeting separately after validating your primary South African rand funnel first.",
+      },
+      {
+        question: "Should startups launch a landing page first and expand into a full site later?",
+        answer:
+          "Yes, when budgets sit tight under R20,000. Starting with a fast homepage, core service breakdown and clear WhatsApp/form capture lets you win early clients before investing in deeper [SEO service pages](/services/seo-services/) and guides.",
       },
     ],
     priority: 0.72,
     published: "2026-05-06",
-    updated: "2026-11-20",
+    updated: "2026-11-21",
   },
   {
     slug: "technical-seo-checklist",
@@ -742,10 +777,45 @@ export const coreGuides: GuidePage[] = [
         answer:
           "Review Performance and Indexing trends once monthly rather than panicking over daily rank fluctuations, using South Africa country filters with branded queries separated.",
       },
+      {
+        question: "Why does my site rank well for our company name but not our services?",
+        answer:
+          "Branded search requires almost no competition, whereas non-branded service queries demand dedicated commercial pages matching buyer search intent, internal link signals and stronger local authority. Explore our [SEO services](/services/seo-services/) to close service-keyword gaps.",
+      },
+      {
+        question: "Can a sluggish hosting server in Europe hurt our South African Google rankings?",
+        answer:
+          "High Time to First Byte and weak mobile [Core Web Vitals](/guides/core-web-vitals-guide-south-africa/) frustrate mobile users and hurt conversion rates. Pairing lean static builds with edge CDN caching keeps response times fast nationwide.",
+      },
+      {
+        question: "Why do national directories rank above local business websites in South Africa?",
+        answer:
+          "Large directories carry huge link profiles and broad category coverage, yet specialist service providers beat them by publishing deeper local proof, transparent ZAR pricing guides and focused [service pages built to convert](/guides/what-makes-a-service-page-convert/).",
+      },
+      {
+        question: "Can two similar pages on our own website prevent either one from ranking?",
+        answer:
+          "Yes—keyword cannibalisation splits Google's ranking signals across competing URLs. Merging overlapping pages via clean 301 redirects concentrates authority onto one clear primary target page.",
+      },
+      {
+        question: "How do I tell whether technical SEO or backlinks are holding our site back?",
+        answer:
+          "Check Search Console Indexing and Performance first: if valid service pages are excluded or suffer slow mobile speed, technical issues come first; if pages sit indexed cleanly on page two, deeper copy and authority matter most. Book a [free SEO audit](/contact/?service=free-seo-audit#contact-form) to pinpoint which applies.",
+      },
+      {
+        question: "Does switching from HTTP to HTTPS or changing domains temporarily affect rankings?",
+        answer:
+          "Without tight canonicals and single-hop 301 redirects across every legacy URL, domain or protocol moves can wipe out rankings overnight. Follow our [website redesign SEO checklist](/guides/website-redesign-seo-checklist/) before making any domain changes.",
+      },
+      {
+        question: "Can weak WordPress security or hidden spam links cause rankings to collapse?",
+        answer:
+          "Yes—silent pharma or redirect injections drain trust signals and can trigger Search Console security warnings. Run a rapid check via our [hacked website recovery guide](/guides/hacked-website-recovery-south-africa/) if suspicious URLs appear.",
+      },
     ],
     priority: 0.72,
     published: "2026-05-06",
-    updated: "2026-11-20",
+    updated: "2026-11-21",
   },
   {
     slug: "hacked-website-recovery-south-africa",
@@ -922,10 +992,45 @@ export const coreGuides: GuidePage[] = [
         answer:
           "Yes—Section 22 applies regardless of SME size if stored customer/enquiry personal information may reasonably have been accessed without authorisation; verify quickly with legal counsel using preserved forensic logs.",
       },
+      {
+        question: "What is the very first thing to do after discovering a website has been hacked?",
+        answer:
+          "Capture forensic backups and server logs, rotate hosting, FTP, database and admin passwords immediately, isolate compromised plugins and avoid blindly deleting logs you may need under POPIA. Contact our [website security team](/services/website-security/) for urgent containment.",
+      },
+      {
+        question: "Why does a hacked WordPress site often get re-infected within days?",
+        answer:
+          "Simply deleting visible spam files misses hidden PHP backdoors, rogue scheduled cron jobs, extra admin users or the original vulnerable plugin. Full remediation closes every persistence point and enables a [Cloudflare edge WAF](/guides/website-firewall-waf-cloudflare-south-africa/).",
+      },
+      {
+        question: "How do I check if Google has already indexed Japanese or pharma spam on our domain?",
+        answer:
+          "Search `site:yourdomain.co.za` on Google and inspect Security & Manual Actions plus Pages in Google Search Console to surface injected foreign-language URLs or cloaked redirects.",
+      },
+      {
+        question: "How much does emergency hacked website recovery typically cost in South Africa?",
+        answer:
+          "Costs vary by CMS complexity, hosting access and whether clean backups exist, though emergency incident clean-up consistently costs several times more than proactive [website security monitoring](/services/website-security/) and patching.",
+      },
+      {
+        question: "Can attackers steal domain ownership during a hosting breach?",
+        answer:
+          "Yes—if hosting, email and domain registrar logins share weak reused passwords without 2FA. Lock down registrar transfer protection immediately following our [domain hijacking guide](/guides/protecting-domain-hijacking-co-za/).",
+      },
+      {
+        question: "Should we trust automated hosting malware scanners alone after an attack?",
+        answer:
+          "No. Automated scanners routinely miss obfuscated database injections, `.htaccess` conditional mobile redirects and rogue SSH/API keys—manual code and server review is essential.",
+      },
+      {
+        question: "How do off-site backups cut downtime during ransomware or server hacks?",
+        answer:
+          "Clean encrypted snapshots stored off your main hosting account let you restore known-good files and databases onto a freshly hardened server without paying ransoms. See our [off-site website backups guide](/guides/offsite-website-backups-south-africa/).",
+      },
     ],
     priority: 0.74,
     published: "2026-11-19",
-    updated: "2026-11-20",
+    updated: "2026-11-21",
   },
   {
     slug: "fix-crawled-currently-not-indexed",
@@ -1105,10 +1210,45 @@ export const coreGuides: GuidePage[] = [
         answer:
           "Focus on unique value over arbitrary counts: real original advice tailored cleanly to South African buyers—often 1,200+ clear scannable words with concrete tables, steps and FAQs rather than padded 400-word AI rehashes.",
       },
+      {
+        question: "What is the difference between 'Crawled - currently not indexed' and 'Discovered - currently not indexed'?",
+        answer:
+          "`Crawled - currently not indexed` means Google fetched the page and judged it below its indexing bar, whereas `Discovered - currently not indexed` means Google knows the URL exists but deferred crawling to avoid overloading weak architecture. See our [Discovered not indexed guide](/guides/fix-discovered-currently-not-indexed/).",
+      },
+      {
+        question: "Should I submit individual unindexed URLs repeatedly in Search Console?",
+        answer:
+          "No. Clicking 'Request Indexing' repeatedly without improving thin content, merging doorway duplicates or fixing internal links will leave URLs dropping right back out on the next crawl.",
+      },
+      {
+        question: "Can JavaScript-heavy client rendering cause pages to stay 'Crawled - currently not indexed'?",
+        answer:
+          "Yes—if core body copy and links require slow client-side API fetches or time out during rendering, Googlebot may see sparse shells. Server-rendering or statically exporting clean HTML via [website development](/services/web-development/) ensures instant crawl visibility.",
+      },
+      {
+        question: "Should I 301 redirect thin pages or use HTTP 410 / noindex?",
+        answer:
+          "301-redirect legacy service or location pages that have a close canonical parent page, and use HTTP 410 or `noindex` only for truly obsolete, zero-value system URLs you want purged cleanly from Google's index.",
+      },
+      {
+        question: "How do internal links fix pages stuck in 'Crawled - currently not indexed'?",
+        answer:
+          "Pages reachable only through `sitemap.xml` with zero contextual links look low-priority to Googlebot. Adding descriptive anchor links from your homepage, service hubs and guides signals commercial importance—follow our [internal linking guide](/guides/internal-linking-guide-for-business-websites/).",
+      },
+      {
+        question: "Do query parameters like ?utm_source or ?replytocom pollute indexing reports?",
+        answer:
+          "Yes—tracking parameters, search queries and filter strings inflate unindexed counts unless self-referencing canonical tags and clean link formatting keep Google focused strictly on canonical URLs.",
+      },
+      {
+        question: "Can a free SEO audit pinpoint why specific pages are excluded?",
+        answer:
+          "Yes. Request a [free SEO audit](/contact/?service=free-seo-audit#contact-form) and we inspect Search Console URL inspection outputs, redirect chains and duplicate clusters across your site.",
+      },
     ],
     priority: 0.74,
     published: "2026-11-19",
-    updated: "2026-11-20",
+    updated: "2026-11-21",
   },
   {
     slug: "seo-prices-south-africa",
@@ -1286,10 +1426,45 @@ export const coreGuides: GuidePage[] = [
         answer:
           "Keep them clearly itemized even under one partner: infrastructure hosting/security patching preserves uptime, while SEO actively expands search capture and buyer leads.",
       },
+      {
+        question: "What is a realistic monthly SEO budget for a competitive South African SME?",
+        answer:
+          "Most South African service firms investing in steady technical fixes, service-page upgrades, content and Search Console reporting budget between R4,500 and R12,000 per month—scaling to R15,000+ in high-competition national markets.",
+      },
+      {
+        question: "How much does a once-off technical SEO audit cost compared to a monthly retainer?",
+        answer:
+          "Once-off comprehensive audits generally sit around R4,500 to R12,000 depending on site size, giving you a concrete fix roadmap upfront—or start with our [free SEO audit](/contact/?service=free-seo-audit#contact-form) to surface urgent blockers first.",
+      },
+      {
+        question: "Are ecommerce SEO retainers more expensive than brochure-site SEO?",
+        answer:
+          "Usually yes, because ecommerce involves category taxonomy, faceted filter crawl hygiene, schema validation, product feeds and larger URL inventories than a 10-page B2B site.",
+      },
+      {
+        question: "Does paying more for SEO speed up how fast Google ranks my website?",
+        answer:
+          "Higher budgets accelerate how fast technical bottlenecks, rewrites and content gaps get shipped—though Google still controls crawl cadence and evaluation timelines over several months. Read our [SEO timeline guide](/guides/how-long-does-seo-take-south-africa/).",
+      },
+      {
+        question: "What deliverables should a monthly South African SEO retainer always include?",
+        answer:
+          "Look for logged technical fixes, improved commercial copy or industry playbooks, internal link updates, Google Business Profile maintenance and monthly Search Console progress tied to real enquiry conversions.",
+      },
+      {
+        question: "Should a startup split early marketing spend between Google Ads and SEO?",
+        answer:
+          "When cashflow needs immediate phone calls this week, allocate part of budget to tightly scoped Google Ads while investing steadily in technical foundations and [SEO services](/services/seo-services/) so cost per lead drops over time.",
+      },
+      {
+        question: "How do I know if our current SEO agency is delivering fair value for money?",
+        answer:
+          "Inspect non-branded clicks, indexed commercial page counts and actual completed tasks inside your own Google Search Console account rather than relying on automated PDF scorecards.",
+      },
     ],
     priority: 0.74,
     published: "2026-11-19",
-    updated: "2026-11-20",
+    updated: "2026-11-21",
   },
   {
     slug: "popia-website-compliance-checklist",

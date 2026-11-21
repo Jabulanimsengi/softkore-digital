@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
 import Link from "next/link";
+import { FaqList } from "@/components/PageSections";
 import { PagePeopleHero } from "@/components/PagePeopleHero";
 import { Testimonials } from "@/components/Testimonials";
 import { UiIcon } from "@/components/UiIcon";
-import { breadcrumbSchema, JsonLd } from "@/lib/schema";
+import { breadcrumbSchema, faqSchema, JsonLd } from "@/lib/schema";
 import { absoluteUrl } from "@/lib/site";
 import { aboutGalleryImages, pageHeroImages } from "@/lib/site-images";
 
@@ -12,7 +13,41 @@ export const metadata: Metadata = pageMetadata(
   "About SoftKore Digital | Web Development, SEO & Cyber Security",
   "SoftKore Digital is a South African web company focused on website design and development, SEO services, and website & cyber security for businesses across the country.",
   "/about/",
+  pageHeroImages.about.src,
 );
+
+const aboutFaqs = [
+  {
+    question: "Who is SoftKore Digital and where are you based?",
+    answer:
+      "SoftKore Digital is a South African engineering-led web studio based at 111 Commissioner Street in Johannesburg, building, optimising and securing business websites nationwide. Reach our team via the [contact page](/contact/).",
+  },
+  {
+    question: "Why does SoftKore focus on web development, SEO and security instead of social media ads?",
+    answer:
+      "A business website only compounds revenue when code speed, technical Google indexing and cyber security reinforce each other. Focusing purely on those three engineering pillars avoids shallow generalist retainers.",
+  },
+  {
+    question: "How do you keep remote web projects predictable across all nine provinces?",
+    answer:
+      "Every stage ends with a concrete deliverable—written scope, staging site links you test on your own phone and live launch checks—so businesses in Cape Town, Durban, Pretoria or regional towns get equal clarity.",
+  },
+  {
+    question: "What technology stack does SoftKore prefer for South African business websites?",
+    answer:
+      "We prioritise lean static and modern React/Next.js builds for speed and minimal attack surface, and support hardened WordPress builds where editorial teams need familiar self-editing. Compare both in our [WordPress vs custom guide](/guides/wordpress-vs-custom-website-south-africa/).",
+  },
+  {
+    question: "How do you keep SEO reporting transparent and verifiable?",
+    answer:
+      "All work is measured inside your own Google Search Console and Analytics accounts—showing indexed page counts, search clicks and technical fixes without hiding behind proprietary scorecards.",
+  },
+  {
+    question: "Will you audit an existing website built by another agency or freelancer?",
+    answer:
+      "Yes. Many clients come to us after previous agencies disappeared or left bloated themes behind. Start with a [free SEO audit](/contact/?service=free-seo-audit#contact-form) or a [website security audit](/services/website-security/) to see your real position first.",
+  },
+];
 
 export default function AboutPage() {
   return (
@@ -21,6 +56,7 @@ export default function AboutPage() {
         { name: "Home", url: absoluteUrl("/") },
         { name: "About", url: absoluteUrl("/about/") },
       ])} />
+      <JsonLd data={faqSchema(aboutFaqs)} />
       <main className="simple-page">
         <PagePeopleHero
           breadcrumbs={[{ label: "Home", href: "/" }, { label: "About" }]}
@@ -61,6 +97,15 @@ export default function AboutPage() {
         </section>
 
         <Testimonials />
+
+        <section className="section page-faq-section" aria-label="About SoftKore Digital questions">
+          <div className="page-faq-head">
+            <p className="simple-label">About our studio</p>
+            <h2>Questions about how SoftKore Digital works.</h2>
+            <p>Our engineering philosophy, technology preferences and remote delivery standards across South Africa.</p>
+          </div>
+          <FaqList items={aboutFaqs} />
+        </section>
 
         <section className="section simple-final">
           <p className="simple-label">Work with SoftKore Digital</p>

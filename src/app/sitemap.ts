@@ -5,7 +5,7 @@ import { site } from "@/lib/site";
 
 export const dynamic = "force-static";
 
-const lastModified = new Date("2026-11-20");
+const lastModified = new Date("2026-11-21");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -46,7 +46,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...guides.map((guide) => ({
       url: `${site.domain}${guideUrl(guide)}`,
-      lastModified,
+      lastModified: new Date(guide.updated),
       priority: guide.priority,
     })),
   ];

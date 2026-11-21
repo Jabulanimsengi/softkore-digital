@@ -123,7 +123,7 @@ export const services: ServicePage[] = [
     costHeading: "What affects the cost of a website",
     cost: [
       "The main cost drivers are the number of unique pages, who writes the content, how custom the design is, and whether the site needs features such as online payments or custom integrations. A redesign with many existing pages also needs redirect planning.",
-      "A sensible approach is to launch a strong core site first and add to it once you can see what customers respond to. Share your rough budget on the contact form and we will tell you honestly what it can achieve. Our website prices guide covers this in more detail.",
+      "A sensible approach is to launch a strong core site first and add to it once you can see what customers respond to. Share your rough budget on the [contact form](/contact/) and we will tell you honestly what it can achieve. Our [website prices guide](/guides/website-prices-south-africa/) covers this in more detail.",
     ],
     related: [
       { label: "SEO services", href: "/services/seo-services/" },
@@ -131,37 +131,70 @@ export const services: ServicePage[] = [
       { label: "Website prices in South Africa", href: "/guides/website-prices-south-africa/" },
       { label: "Website redesign SEO checklist", href: "/guides/website-redesign-seo-checklist/" },
       { label: "POPIA website checklist", href: "/guides/popia-website-compliance-checklist/" },
+      { label: "Medical practice websites & SEO", href: "/guides/medical-practice-website-seo-south-africa/" },
+      { label: "Construction firm websites & SEO", href: "/guides/construction-company-website-seo-south-africa/" },
+      { label: "Salon booking websites & SEO", href: "/guides/salon-aesthetics-booking-website-seo-south-africa/" },
     ],
     faqs: [
       {
         question: "Do you build websites for businesses outside Johannesburg?",
         answer:
-          "Yes. We work remotely with businesses across South Africa. Meetings, reviews and sign-off happen over video calls, email and WhatsApp, so the process is the same wherever you are based.",
+          "Yes. We work remotely with businesses across all nine provinces of South Africa. Discovery meetings, live staging reviews and sign-off happen over video calls, email and WhatsApp through our [contact page](/contact/).",
       },
       {
-        question: "What do I need to prepare before starting?",
+        question: "What do I need to prepare before starting a website project?",
         answer:
-          "A list of your main services, who your best customers are, access to your current website and domain if you have them, examples of sites you like, and any proof such as project photos or reviews.",
+          "Prepare a list of your core services, ideal customers, access to your current domain or hosting if you have them, examples of websites you like and real proof such as project photos or reviews. We guide the rest during discovery.",
       },
       {
-        question: "Will my new website rank on Google?",
+        question: "Will my new website rank on Google automatically at launch?",
         answer:
-          "We build the technical and content foundations search engines need, but no honest provider can guarantee rankings. Results also depend on competition, your content and your reputation online. Ongoing SEO work can be added after launch.",
+          "Launch engineering gives Google fast crawlable pages, metadata, sitemaps and schema, while ongoing visibility depends on competition, search demand and content depth. Pair your build with our [SEO services](/services/seo-services/) or start with our [technical SEO checklist](/guides/technical-seo-checklist/).",
       },
       {
-        question: "Can you redesign my site without losing my Google rankings?",
+        question: "Can you redesign my site without losing existing Google rankings?",
         answer:
-          "That is the goal of every redesign we do. We record your existing URLs and search performance, keep the pages that earn traffic where possible, and redirect the rest to the closest replacement. Some short-term movement is still normal after any rebuild.",
+          "Yes. We export your current Search Console URLs, keep high-performing pages where possible and map single-hop 301 redirects for every moved URL before launch. Follow our full [website redesign SEO checklist](/guides/website-redesign-seo-checklist/).",
       },
       {
-        question: "Can I update the website myself?",
+        question: "Can I update the website content and pages myself after launch?",
         answer:
-          "It depends on the build, and we will agree this during discovery. You may want a content editor, or you may prefer to send changes through an ongoing website support and security plan.",
+          "Yes, when a self-managed editor makes sense for your workflow. During discovery we decide between a clean CMS setup you control directly or a leaner custom codebase supported through our [monthly maintenance plans](/guides/website-maintenance-cost-south-africa/).",
       },
       {
-        question: "Do you write the website content?",
+        question: "Do you write the website copy or refine existing drafts?",
         answer:
-          "We can write it or refine what you already have. Either way, we need your input on your services, experience and customers, because accurate detail is what makes a website convincing.",
+          "We do both. We interview your team to extract real proof, service scope and local buyer answers, then write or tighten the commercial copy so pages convert cleanly and match [SEO copywriting best practices](/guides/seo-copywriting-guide-south-africa/).",
+      },
+      {
+        question: "What is the typical timeline to build a South African business website?",
+        answer:
+          "Most focused company websites launch in three to six weeks once scope and content inputs are ready, while ecommerce stores and complex redesigns take six to ten weeks. See week-by-week stages in our [website build timeline guide](/guides/how-long-to-build-a-website-south-africa/).",
+      },
+      {
+        question: "Should we choose WordPress or a custom Next.js website?",
+        answer:
+          "Choose a lean custom Next.js build when speed, low maintenance overhead and tight security matter most, or WordPress when your team needs familiar daily publishing without plugins getting out of hand. Compare both stacks in our [WordPress vs custom website guide](/guides/wordpress-vs-custom-website-south-africa/).",
+      },
+      {
+        question: "Which South African payment gateways do you integrate for ecommerce?",
+        answer:
+          "We integrate PayFast, Yoco and Ozow so local buyers can pay via Visa/Mastercard, Capitec Pay or Instant EFT alongside courier rules for Bob Go or The Courier Guy. Compare fees in our [PayFast vs Yoco vs Ozow guide](/guides/payfast-vs-yoco-vs-ozow-south-africa/).",
+      },
+      {
+        question: "What affects the final cost of a new website build in rand?",
+        answer:
+          "Pricing depends on custom page count, copywriting scope, bespoke design vs starter structure, ecommerce or booking integrations and migration complexity. Read realistic ZAR brackets in our [website prices guide](/guides/website-prices-south-africa/) or [ecommerce cost guide](/guides/ecommerce-website-cost-south-africa/).",
+      },
+      {
+        question: "Who owns the hosting account, code and domain name?",
+        answer:
+          "Your business owns the domain, hosting account and completed codebase outright upon final settlement, with zero agency lock-in. Read our [guide to choosing a web design company](/guides/how-to-choose-web-design-company-south-africa/) to see what contracts should state.",
+      },
+      {
+        question: "What happens with hosting, updates and backups after launch?",
+        answer:
+          "Every build passes a live QA checklist covering forms, HTTPS, security headers and Search Console submission, and can continue on a proactive [website security and maintenance plan](/services/website-security/) covering patching, uptime checks and [off-site backups](/guides/offsite-website-backups-south-africa/).",
       },
     ],
     serviceType: "Website Design and Development",
@@ -175,8 +208,8 @@ export const services: ServicePage[] = [
     eyebrow: "SEO Services",
     h1: "SEO services for South African businesses.",
     intro:
-      "We find out why your website is not being found, fix what is holding it back, and improve the pages that can bring you paying customers, with plain reporting on what changed.",
-    primaryCta: "Request an SEO Review",
+      "Start with a free SEO audit: we find out why your website is not being found, fix what is holding it back, and improve the pages that can bring you paying customers, with plain reporting on what changed.",
+    primaryCta: "Get a Free SEO Audit",
     secondaryCta: "Need a New Website?",
     secondaryHref: "/services/web-development/",
     summaryTitle: "SEO work can include",
@@ -256,7 +289,7 @@ export const services: ServicePage[] = [
     ],
     costHeading: "What affects the cost of SEO",
     cost: [
-      "Cost depends on the size and condition of your site, how competitive your market is, and whether we are writing content and implementing changes or advising your existing team. A once-off audit is a low-risk way to start before you commit to anything monthly.",
+      "Cost depends on the size and condition of your site, how competitive your market is, and whether we are writing content and implementing changes or advising your existing team. See realistic monthly and audit ranges in our [SEO prices guide](/guides/seo-prices-south-africa/), or start with a [free SEO audit](/contact/?service=free-seo-audit#contact-form) before committing to monthly work.",
       "Be careful with very cheap packages that promise fixed rankings or large numbers of links. Bought links and mass-produced content can leave you with a problem that costs more to fix than the service did.",
     ],
     related: [
@@ -265,37 +298,70 @@ export const services: ServicePage[] = [
       { label: "Why your website is not ranking", href: "/guides/why-your-website-is-not-ranking/" },
       { label: "Technical SEO checklist", href: "/guides/technical-seo-checklist/" },
       { label: "Website design & development", href: "/services/web-development/" },
+      { label: "Real estate SEO & listings", href: "/guides/real-estate-website-seo-south-africa/" },
+      { label: "Trades, plumbing & solar SEO", href: "/guides/trades-plumber-solar-website-seo-south-africa/" },
+      { label: "Logistics & freight SEO", href: "/guides/logistics-company-website-seo-south-africa/" },
     ],
     faqs: [
       {
-        question: "How long does SEO take to work?",
+        question: "How long does SEO take to show measurable results in South Africa?",
         answer:
-          "Technical fixes can be picked up within weeks, but meaningful ranking improvements usually take several months, and longer in competitive markets. Anyone promising a fixed timeline is guessing.",
+          "Technical and indexing repairs typically show inside two to six weeks, while competitive commercial keywords generally take four to nine months to compound. Read realistic milestones in our [SEO timeline guide](/guides/how-long-does-seo-take-south-africa/).",
       },
       {
-        question: "Can you guarantee first-page rankings on Google?",
+        question: "Why should businesses avoid agencies that guarantee page-one Google rankings?",
         answer:
-          "No, and you should be wary of anyone who does. Google controls its results. We can guarantee clear work, honest reporting and decisions based on your data.",
+          "No third party can control Google's ranking algorithm, so guarantees usually hide low-value brand terms or risky automated links. We back every recommendation with live Search Console evidence you can verify yourself.",
       },
       {
-        question: "Why are my pages not being indexed by Google?",
+        question: "Why are my website pages not being indexed by Google?",
         answer:
-          "Common causes include technical blocks, thin or duplicated content, weak internal linking and low site authority. Search Console shows the reason Google gives for each page, which is where we start.",
+          "Pages stay out of Google's index due to technical crawl blocks, weak internal links, thin content or hundreds of duplicate doorway URLs. Check our guides for fixing ['Crawled - currently not indexed'](/guides/fix-crawled-currently-not-indexed/) and ['Discovered - currently not indexed'](/guides/fix-discovered-currently-not-indexed/).",
       },
       {
-        question: "Can you do SEO for a business anywhere in South Africa?",
+        question: "How does local SEO differ from national SEO in South Africa?",
         answer:
-          "Yes. We work remotely, whether you serve one town or the whole country. The strategy differs, since a national business and a local one compete for very different searches.",
+          "Local SEO targets metro Map Pack packs and verified branches via Google Business Profile, while national SEO builds authoritative service hubs and buyer guides across all nine provinces. Compare both in our [local vs national SEO guide](/guides/local-seo-vs-national-seo-south-africa/).",
       },
       {
-        question: "Do I need more pages or blog posts to rank?",
+        question: "Do I need more blog posts to rank higher on Google?",
         answer:
-          "Not automatically. Adding pages can make things worse if the existing ones are weak. We often improve or merge what you already have first, and only add content that answers a distinct search need.",
+          "Not automatically. Publishing more weak posts can drag site quality down; strengthening core service pages, internal links and Search Console errors first usually drives faster leads. See our [why your website is not ranking guide](/guides/why-your-website-is-not-ranking/).",
       },
       {
-        question: "What access do you need to get started?",
+        question: "What account access do you need to begin SEO work?",
         answer:
-          "Google Search Console is the most useful. Analytics and access to your website or developer help too. If Search Console is not set up yet, we can guide you through it.",
+          "Google Search Console is the primary starting point, followed by analytics and read or developer access to your CMS or codebase. If Search Console is not configured yet, our [Search Console guide](/guides/google-search-console-guide-business-owners/) walks through setup.",
+      },
+      {
+        question: "What does your free SEO audit check first?",
+        answer:
+          "We review indexing coverage, canonical and redirect chains, mobile Core Web Vitals, service page search intent and local trust signals, delivering an actionable priority list. Request yours on the [Free SEO Audit form](/contact/?service=free-seo-audit#contact-form).",
+      },
+      {
+        question: "Should a South African business invest in Google Ads or SEO?",
+        answer:
+          "Google Ads delivers immediate enquiries while campaigns stay funded, whereas SEO lowers long-term acquisition cost across organic and Map Pack searches. Compare budgets in our [Google Ads vs SEO guide](/guides/google-ads-vs-seo-south-africa/).",
+      },
+      {
+        question: "Can you optimise our Google Business Profile for Maps visibility?",
+        answer:
+          "Yes. We align primary categories, service-area settings, clean UTM website links, photo cadence and review workflows while avoiding suspension triggers. Read our [Google Business Profile guide](/guides/google-business-profile-south-africa/).",
+      },
+      {
+        question: "How much do SEO services cost per month or once-off in South Africa?",
+        answer:
+          "Once-off technical audits and focused fixes suit lean teams, while ongoing SME SEO campaigns typically range from R4,500 to R15,000+ per month depending on market competition and content scope. Check our [SEO prices guide](/guides/seo-prices-south-africa/).",
+      },
+      {
+        question: "How do you build authority without risky backlinks or doorway pages?",
+        answer:
+          "We consolidate duplicate town templates, craft high-intent service pages and industry playbooks that earn genuine citations, and reinforce [internal link architecture](/guides/internal-linking-guide-for-business-websites/). See why [duplicate location pages hurt SEO](/guides/why-duplicate-location-pages-hurt-seo/).",
+      },
+      {
+        question: "What do your monthly Google Search Console reports show?",
+        answer:
+          "Monthly reports track indexed page counts, non-branded query impressions, clicks to money pages, completed technical tasks and the next month's priorities in plain business language—never vanity metrics.",
       },
     ],
     serviceType: "Search Engine Optimisation",
@@ -391,8 +457,8 @@ export const services: ServicePage[] = [
     ],
     costHeading: "What affects the cost of website security",
     cost: [
-      "Cost depends on whether you need a once-off security audit and hardening, urgent malware clean-up on a hacked site, or ongoing monthly patching, monitoring and backups. Site complexity, hosting access and the number of plugins or integrations also affect scope.",
-      "Emergency hack recovery almost always costs more than preventative hardening. Starting with a focused security audit is a practical way to see your real exposure before deciding on ongoing cover.",
+      "Cost depends on whether you need a once-off [security audit](/guides/website-security-audit-what-it-checks/) and hardening, urgent malware clean-up on a hacked site, or ongoing monthly patching, monitoring and backups. Site complexity, hosting access and the number of plugins or integrations also affect scope.",
+      "Emergency hack recovery almost always costs more than preventative hardening. Starting with a focused security audit or [website maintenance review](/guides/website-maintenance-cost-south-africa/) is a practical way to see your real exposure before deciding on ongoing cover.",
     ],
     related: [
       { label: "Hacked website recovery guide", href: "/guides/hacked-website-recovery-south-africa/" },
@@ -400,37 +466,70 @@ export const services: ServicePage[] = [
       { label: "POPIA website checklist", href: "/guides/popia-website-compliance-checklist/" },
       { label: "Website design & development", href: "/services/web-development/" },
       { label: "SEO services", href: "/services/seo-services/" },
+      { label: "Medical practice POPIA & security", href: "/guides/medical-practice-website-seo-south-africa/" },
+      { label: "Construction invoice-fraud protection", href: "/guides/construction-company-website-seo-south-africa/" },
+      { label: "Real estate trust-account security", href: "/guides/real-estate-website-seo-south-africa/" },
     ],
     faqs: [
       {
         question: "My website has been hacked or shows spam in Google. Can you fix it?",
         answer:
-          "Yes. We inspect the site and server to find how attackers got in, remove malware and hidden backdoors, rotate credentials, patch the vulnerability, and help clear any Google Safe Browsing or Search Console warnings.",
+          "Yes. We trace how attackers breached the site, strip malware and hidden backdoors, rotate passwords and keys, close entry points and submit clean Search Console reviews. Read our [hacked website recovery guide](/guides/hacked-website-recovery-south-africa/).",
       },
       {
-        question: "Does having an SSL padlock mean my website is secure?",
+        question: "Does having an SSL padlock mean my website is fully secure?",
         answer:
-          "No. SSL only encrypts traffic between the browser and server. Attackers still break in through outdated plugins, weak admin passwords, vulnerable code or exposed hosting accounts.",
+          "No. HTTPS only encrypts traffic in transit between browser and server; attackers still exploit unpatched plugins, weak admin passwords, missing [HTTP security headers](/guides/http-security-headers-explained/) and exposed hosting panels.",
       },
       {
-        question: "Can you secure a WordPress site you did not build?",
+        question: "Can you secure a WordPress website you did not originally build?",
         answer:
-          "Yes. WordPress sites are a frequent target because of outdated plugins and themes. We review the site, hosting and user accounts first and give you a clear plan before making changes.",
+          "Yes. WordPress sites are targeted frequently via outdated themes, abandoned developer logins and file permissions. Read [why WordPress sites get hacked in South Africa](/guides/why-wordpress-websites-get-hacked-south-africa/) or request an audit via our [contact page](/contact/).",
       },
       {
-        question: "How does website security relate to POPIA?",
+        question: "How does website security support POPIA compliance in South Africa?",
         answer:
-          "POPIA expects businesses to protect personal information they collect, including contact form submissions and customer records. Hardening access, encrypting data in transit, keeping software patched and monitoring for breaches are practical technical safeguards, though legal compliance advice should come from your legal adviser.",
+          "POPIA requires reasonable technical safeguards for personal information collected through enquiry forms and customer portals, including encryption, access control, spam filtering and breach readiness. See our [POPIA website checklist](/guides/popia-website-compliance-checklist/).",
       },
       {
-        question: "Will a website hack hurt my Google SEO rankings?",
+        question: "Will a website hack or malware infection damage Google SEO rankings?",
         answer:
-          "Yes. Injected spam pages, malicious redirects, downtime and browser security warnings can cause Google to drop pages or remove trust quickly. Fast clean-up and ongoing monitoring protect both your customers and your rankings.",
+          "Yes. Injected pharma or casino spam pages, malicious redirects and browser warnings quickly drop rankings and customer trust. Fast clean-up and clean HTTP 410 handling let Google re-index legitimate pages safely.",
       },
       {
         question: "Do you offer ongoing security monitoring after a site is hardened?",
         answer:
-          "Yes. We offer monthly security care covering patches, off-site backups, restore tests, uptime and integrity checks, and form testing so gaps do not quietly reopen.",
+          "Yes. Monthly security cover includes controlled patching, verified off-site backups, SSL and uptime monitoring, WAF checks and live form delivery tests so security gaps do not creep back in.",
+      },
+      {
+        question: "How do you remove a Google 'Deceptive site ahead' warning?",
+        answer:
+          "First we eradicate all malicious payloads, redirects and compromised admin accounts across your server, then submit a verified cleanup review in Google Search Console. Follow our [Google deceptive warning guide](/guides/remove-google-deceptive-site-ahead-warning/).",
+      },
+      {
+        question: "How does a Cloudflare WAF protect against bots and automated attacks?",
+        answer:
+          "An edge Web Application Firewall filters SQL injection, XSS probes, credential-stuffing bots and abusive scraping before requests touch your origin server. Learn more in our [Cloudflare WAF guide](/guides/website-firewall-waf-cloudflare-south-africa/).",
+      },
+      {
+        question: "Can you fix SPF, DKIM and DMARC records so scammers stop spoofing our domain?",
+        answer:
+          "Yes. We audit and configure DNS SPF, DKIM and enforced DMARC policies so mail servers block spoofed invoices and phishing sent in your brand's name. Read our [SPF, DKIM and DMARC guide](/guides/spf-dkim-dmarc-guide-south-africa/).",
+      },
+      {
+        question: "How should off-site website backups be structured for reliable recovery?",
+        answer:
+          "Follow a 3-2-1 approach: encrypted snapshots stored off your main hosting server in separate accounts with regular restore tests so ransomware cannot wipe backups too. Check our [off-site backup guide](/guides/offsite-website-backups-south-africa/).",
+      },
+      {
+        question: "How do we prevent .co.za domain hijacking and unauthorised registrar transfers?",
+        answer:
+          "Keep domain registration in your company's own name, lock transfer settings, enable phishing-resistant 2FA on registrar and DNS dashboards and restrict billing contacts. See our [domain hijacking protection guide](/guides/protecting-domain-hijacking-co-za/).",
+      },
+      {
+        question: "How quickly can you respond to an urgent site compromise or security audit?",
+        answer:
+          "We triage urgent hacked sites immediately and typically complete cleanup, credential rotation and baseline hardening within 24 to 72 hours, while preventative [security audits](/guides/website-security-audit-what-it-checks/) deliver a ranked report within days.",
       },
     ],
     serviceType: "Website and Cyber Security",

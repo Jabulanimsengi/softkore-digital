@@ -95,6 +95,21 @@ const industrySalonImage: SiteImage = {
   alt: "South African salon owners managing client bookings and service menus at a bright studio reception desk.",
 };
 
+const industryMedicalImage: SiteImage = {
+  src: "/images/site/industry-medical.webp",
+  alt: "Medical practitioner and clinic manager reviewing a responsive appointment workflow on a tablet.",
+};
+
+const industryConstructionImage: SiteImage = {
+  src: "/images/site/industry-construction.webp",
+  alt: "South African construction engineers reviewing site plans and project documentation on a tablet.",
+};
+
+const industryPlumberImage: SiteImage = {
+  src: "/images/site/industry-plumber.webp",
+  alt: "South African tradespeople checking incoming mobile job requests beside a service van.",
+};
+
 const homeServiceWeb: SiteImage = {
   src: "/images/site/home-service-web.webp",
   alt: "Minimalist studio desk with a laptop and smartphone displaying a clean white-and-emerald business website layout.",
@@ -208,8 +223,8 @@ export const pageHeroImages: Record<
   },
   guides: {
     ...detailSecuritySa,
-    badge: "39 practical guides",
-    caption: "Plain-language playbooks on pricing in rand, Google indexing and website security.",
+    badge: "Practical SA guides",
+    caption: "Plain-language playbooks on pricing in rand, industry SEO, Google indexing and website security.",
   },
 };
 
@@ -235,6 +250,46 @@ export const guideImages: Record<string, SiteImage> = {
     alt: "A South African business team reviewing website architecture plans around a studio table.",
   },
   "google-business-profile-south-africa": industryDentalImage,
+  "medical-practice-website-seo-south-africa": {
+    ...industryMedicalImage,
+    alt: "South African medical practitioners planning patient booking pages and POPIA-safe clinic enquiry forms.",
+  },
+  "construction-company-website-seo-south-africa": {
+    ...industryConstructionImage,
+    alt: "South African civil and construction directors reviewing CIDB tender proof and project portfolio pages.",
+  },
+  "logistics-company-website-seo-south-africa": {
+    ...industryLogisticsImage,
+    alt: "South African freight and fleet managers reviewing corridor SEO pages and online quote workflows.",
+  },
+  "real-estate-website-seo-south-africa": {
+    ...industryRealEstateImage,
+    alt: "A South African property practitioner showcasing clean suburb landing pages and fast listings on a tablet.",
+  },
+  "trades-plumber-solar-website-seo-south-africa": {
+    ...industryPlumberImage,
+    alt: "South African field-service contractors checking urgent mobile call and WhatsApp enquiries from Google Maps.",
+  },
+  "salon-aesthetics-booking-website-seo-south-africa": {
+    ...industrySalonImage,
+    alt: "South African salon and aesthetics owners reviewing treatment menus, online bookings and local search visibility.",
+  },
+  "law-firm-website-seo-south-africa": {
+    ...industryLegalImage,
+    alt: "South African attorneys reviewing practice-area SEO structure and domain email spoofing safeguards.",
+  },
+  "accounting-firm-website-seo-south-africa": {
+    ...industryAccountingImage,
+    alt: "South African accounting partners planning tax and compliance search pages with secure client intake.",
+  },
+  "ecommerce-store-seo-conversion-south-africa": {
+    ...industryEcommerceImage,
+    alt: "A South African ecommerce founder reviewing category SEO, PayFast checkout UX and store security.",
+  },
+  "dental-practice-website-seo-south-africa": {
+    ...industryDentalImage,
+    alt: "South African dental practice team reviewing treatment pages and local Google Business Profile bookings.",
+  },
 };
 
 const extraGuideHeroImages: Record<string, SiteImage> = {
@@ -352,6 +407,7 @@ const guideCategoryFallbackImages: Record<GuideCategory, SiteImage> = {
   "Website Design & Development": detailWebShowcase,
   "SEO Services": serviceCardSeo,
   "Website & Cyber Security": detailSecurityShowcase,
+  "Industry Playbooks": overviewIndustriesImage,
 };
 
 export function getGuideHeroImage(slug: string, category: GuideCategory): SiteImage {
@@ -375,51 +431,49 @@ export const homeIndustryCards: Array<{
   sector: string;
   title: string;
   summary: string;
+  href: string;
   image: SiteImage;
 }> = [
   {
     sector: "Medical & Clinics",
     title: "Trustworthy booking paths for patients",
     summary: "Fast mobile pages, practitioner profiles and clear WhatsApp or form bookings.",
-    image: {
-      src: "/images/site/industry-medical.webp",
-      alt: "Medical practitioner and clinic manager reviewing a responsive appointment workflow on a tablet.",
-    },
+    href: "/guides/medical-practice-website-seo-south-africa/",
+    image: industryMedicalImage,
   },
   {
     sector: "Construction & Engineering",
     title: "Credible project proof for tender buyers",
     summary: "Structured service capabilities, safety compliance pages and direct quote requests.",
-    image: {
-      src: "/images/site/industry-construction.webp",
-      alt: "South African construction engineers reviewing site plans and project documentation on a tablet.",
-    },
+    href: "/guides/construction-company-website-seo-south-africa/",
+    image: industryConstructionImage,
   },
   {
     sector: "Logistics & Fleet",
     title: "Clear service corridors and quote intake",
     summary: "Built to convert B2B freight enquiries quickly while keeping route pages indexed.",
+    href: "/guides/logistics-company-website-seo-south-africa/",
     image: industryLogisticsImage,
   },
   {
     sector: "Property & Real Estate",
     title: "High-speed listings and local search reach",
     summary: "Lightweight image handling and suburb search architecture that ranks across regions.",
+    href: "/guides/real-estate-website-seo-south-africa/",
     image: industryRealEstateImage,
   },
   {
     sector: "Trades & Field Services",
     title: "Instant call & WhatsApp conversion on site",
     summary: "Designed for urgent mobile searches with clean service-area pages and fast tap targets.",
-    image: {
-      src: "/images/site/industry-plumber.webp",
-      alt: "South African tradespeople checking incoming mobile job requests beside a service van.",
-    },
+    href: "/guides/trades-plumber-solar-website-seo-south-africa/",
+    image: industryPlumberImage,
   },
   {
     sector: "Salons & Wellness",
     title: "Effortless mobile menus and repeat bookings",
     summary: "Visual treatment pages, transparent pricing in rand and protected booking integrations.",
+    href: "/guides/salon-aesthetics-booking-website-seo-south-africa/",
     image: industrySalonImage,
   },
 ];

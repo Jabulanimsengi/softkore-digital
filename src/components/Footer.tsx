@@ -9,6 +9,7 @@ const footerGroups = [
     links: [
       { label: "Website design & development", href: "/services/web-development/" },
       { label: "SEO services", href: "/services/seo-services/" },
+      { label: "Free SEO audit", href: "/contact/?service=free-seo-audit#contact-form" },
       { label: "Website & cyber security", href: "/services/website-security/" },
       { label: "All services", href: "/services/" },
     ],
@@ -97,6 +98,7 @@ export function Footer() {
         <strong>Connect</strong>
         <a href={`mailto:${site.email}`}>{site.email}</a>
         <a href={`tel:${site.phone}`}>{site.phoneDisplay}</a>
+        <Link prefetch={false} href="/contact/?service=free-seo-audit#contact-form">Free SEO Audit →</Link>
         <Link prefetch={false} href="/contact/">Start a Project →</Link>
       </div>
 

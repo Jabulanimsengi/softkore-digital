@@ -1,7 +1,8 @@
 export type GuideCategory =
   | "Website Design & Development"
   | "SEO Services"
-  | "Website & Cyber Security";
+  | "Website & Cyber Security"
+  | "Industry Playbooks";
 
 export type GuideStatus = "published" | "scheduled";
 

@@ -181,10 +181,45 @@ export const websiteGuides: GuidePage[] = [
         answer:
           "Not always for early stores handling 5 to 15 daily orders—clean CSV exports work neatly initially until volume makes automated invoice sync worth the extra integration cost.",
       },
+      {
+        question: "What monthly platform and transaction fees apply to South African online stores?",
+        answer:
+          "Beyond hosting or Shopify subscriptions, budget roughly 2.0% to 3.5% per card transaction plus small EFT fees across PayFast, Yoco or Ozow, alongside monthly backup and security upkeep.",
+      },
+      {
+        question: "Is WooCommerce actually cheaper than Shopify once security and plugins are added?",
+        answer:
+          "Upfront licensing looks lower on WooCommerce, yet paid shipping, payment and security plugins plus active patching retainers frequently bring three-year total cost close to Shopify or lean custom Next.js builds.",
+      },
+      {
+        question: "How much does adding The Courier Guy or Bob Go automated shipping cost?",
+        answer:
+          "Configuring standard weight-bracket or plugin-based courier rates sits cleanly inside mid-tier store builds (R35,000–R70,000), while custom multi-warehouse or hazardous-freight rules add engineering scope.",
+      },
+      {
+        question: "Does an ecommerce build normally include product photography and descriptions?",
+        answer:
+          "Supplier quotes typically exclude photography and large-catalogue SKU entry unless explicitly scoped. Writing unique descriptions for top-selling categories and products improves Google rankings far more than pasting supplier feeds.",
+      },
+      {
+        question: "Can B2B wholesalers hide retail pricing or enforce tiered trade logins?",
+        answer:
+          "Yes—B2B trade portals with role-based ZAR price lists, minimum order quantities and account-on-terms workflows sit in the R75,000–R150,000+ custom platform bracket via [website development](/services/web-development/).",
+      },
+      {
+        question: "Should my online store include WhatsApp order assistance and cart recovery?",
+        answer:
+          "Yes. Placing subtle WhatsApp stock-check links on product pages reassures South African buyers unsure about sizing or regional courier cut-offs before checkout.",
+      },
+      {
+        question: "How can I audit whether our existing online store is losing organic sales?",
+        answer:
+          "Start with a [free SEO audit](/contact/?service=free-seo-audit#contact-form) to inspect category page indexing, faceted URL crawl bloat, Core Web Vitals speed and checkout security headers.",
+      },
     ],
     priority: 0.72,
     published: "2026-11-20",
-    updated: "2026-11-20",
+    updated: "2026-11-21",
   },
   {
     slug: "payfast-vs-yoco-vs-ozow-south-africa",
@@ -928,12 +963,47 @@ export const websiteGuides: GuidePage[] = [
       {
         question: "Why do quotes for 'a 10-page website' vary from R12,000 to R65,000?",
         answer:
-          "Lower quotes drop template blocks onto supplied copy without SEO engineering; higher quotes fund research, conversion writing, bespoke performance design, structured data and launch hardening.",
+          "Lower quotes drop template blocks onto supplied copy without SEO engineering; higher quotes fund research, conversion writing, bespoke performance design, structured data and launch hardening. Check our [website prices guide](/guides/website-prices-south-africa/).",
+      },
+      {
+        question: "What are the biggest red flags when hiring a South African web design agency?",
+        answer:
+          "Watch out for registering your `.co.za` domain under the agency's name, locking code behind proprietary closed builders, zero mention of 301 redirects on redesigns, vague guaranteed-ranking claims and no exclusion list.",
+      },
+      {
+        question: "Should a web design company also handle technical SEO and security?",
+        answer:
+          "Yes—separating design from [technical SEO](/services/seo-services/) and [website security](/services/website-security/) regularly leaves launched sites fast visually yet unindexed in Search Console or vulnerable to plugin hacks.",
+      },
+      {
+        question: "How do I verify whether a web design agency builds fast websites?",
+        answer:
+          "Test three live client sites from their portfolio on your own phone over cellular signal and inspect PageSpeed Insights or Core Web Vitals rather than trusting compressed desktop screenshots.",
+      },
+      {
+        question: "Is it risky to pay 100% upfront or hire a freelancer without written scope?",
+        answer:
+          "Yes. Always tie payments to clear deliverables—discovery sign-off, live staging site review and verified post-launch QA—backed by written IP ownership terms.",
+      },
+      {
+        question: "What happens if an agency relies on cracked or nulled WordPress themes?",
+        answer:
+          "Nulled themes and pirated plugins are one of the fastest ways South African SME sites get injected with hidden spam and malware—leaving you facing costly [hacked site recovery](/guides/hacked-website-recovery-south-africa/).",
+      },
+      {
+        question: "Should we ask to see Search Console or conversion results, not just pretty mockups?",
+        answer:
+          "Yes. Visual polish matters, yet credible studios explain how page layout, copy hierarchy, speed and internal linking turn visitors into real WhatsApp messages, calls and form enquiries.",
+      },
+      {
+        question: "Can SoftKore review a competing web quote or inspect our current site first?",
+        answer:
+          "Yes—send your URL or brief via our [contact form](/contact/?service=free-seo-audit#contact-form) and we will share an honest assessment of what your current site needs before you commit budget.",
       },
     ],
     priority: 0.72,
     published: "2026-11-20",
-    updated: "2026-11-20",
+    updated: "2026-11-21",
   },
   {
     slug: "website-maintenance-cost-south-africa",

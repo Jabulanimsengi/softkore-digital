@@ -17,13 +17,14 @@ export function JsonLd({ data }: JsonLdProps) {
 export function organizationSchema() {
   return {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": ["Organization", "ProfessionalService"],
     name: site.name,
     url: `${site.domain}/`,
     description: site.description,
     email: site.email,
     telephone: site.phone,
     logo: site.logo,
+    priceRange: "ZAR",
     address: {
       "@type": "PostalAddress",
       streetAddress: "111 Commissioner Street",
@@ -32,6 +33,21 @@ export function organizationSchema() {
       addressCountry: "ZA",
     },
     areaServed: { "@type": "Country", name: "South Africa" },
+  };
+}
+
+export function websiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: site.name,
+    url: `${site.domain}/`,
+    inLanguage: "en-ZA",
+    publisher: {
+      "@type": "Organization",
+      name: site.name,
+      url: `${site.domain}/`,
+    },
   };
 }
 

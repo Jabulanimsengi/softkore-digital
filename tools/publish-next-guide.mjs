@@ -6,6 +6,7 @@ const BATCH_FILES = [
   "src/data/guide-batches/websites.ts",
   "src/data/guide-batches/seo.ts",
   "src/data/guide-batches/security.ts",
+  "src/data/guide-batches/industries.ts",
 ];
 const PAGE_PLAN_PATH = "deploy/page-plan.json";
 

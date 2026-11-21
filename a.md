@@ -66,3 +66,13 @@ If an urgent server hotfix is ever needed, copy it only as a temporary measure, 
 - Live web root served by nginx: `/var/www/softkoredigital/out`
 - Git branch: `main`
 - GitHub remote: `https://github.com/Jabulanimsengi/softkore-digital.git`
+
+## Contact API Service
+
+- Systemd service: `softkore-contact-api.service` (runs `tools/contact-api-server.mjs` on `127.0.0.1:3099`, proxied via `location ^~ /api/contact` in `/etc/nginx/sites-available/softkoredigital`)
+- Server env file: `/var/www/softkoredigital/.env` (gitignored, mode `600`, holds `RESEND_API_KEY`, `RESEND_TO_EMAIL`, `RESEND_FROM_EMAIL`)
+- Restart after changes to `tools/contact-api-server.mjs` or `.env`:
+
+```bash
+sudo systemctl restart softkore-contact-api
+```

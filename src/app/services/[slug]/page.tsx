@@ -4,6 +4,7 @@ import { services, getService } from "@/data/services";
 import { ServiceTemplate } from "@/components/ServiceTemplate";
 import { absoluteUrl } from "@/lib/site";
 import { breadcrumbSchema, faqSchema, JsonLd, serviceSchema } from "@/lib/schema";
+import { pageHeroImages } from "@/lib/site-images";
 
 type ServiceRouteProps = {
   params: Promise<{ slug: string }>;
@@ -24,6 +25,8 @@ export async function generateMetadata({
   }
 
   const url = `/services/${service.slug}/`;
+  const ogImage =
+    pageHeroImages[service.slug as keyof typeof pageHeroImages]?.src ?? "/logo.png";
 
   return {
     title: { absolute: service.metaTitle },
@@ -35,13 +38,13 @@ export async function generateMetadata({
       title: service.metaTitle,
       description: service.description,
       url,
-      images: ["/logo.png"],
+      images: [ogImage],
     },
     twitter: {
       card: "summary_large_image",
       title: service.metaTitle,
       description: service.description,
-      images: ["/logo.png"],
+      images: [ogImage],
     },
   };
 }

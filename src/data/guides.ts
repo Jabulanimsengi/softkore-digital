@@ -1,4 +1,5 @@
 import { coreGuides } from "./guide-batches/core";
+import { industryGuides } from "./guide-batches/industries";
 import { seoGuides } from "./guide-batches/seo";
 import { securityGuides } from "./guide-batches/security";
 import type { GuidePage } from "./guide-batches/types";
@@ -20,6 +21,7 @@ export const allGuides: GuidePage[] = [
   ...websiteGuides,
   ...seoGuides,
   ...securityGuides,
+  ...industryGuides,
 ];
 
 export const guides: GuidePage[] = allGuides.filter((guide) => guide.status === "published");

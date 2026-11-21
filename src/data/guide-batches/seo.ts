@@ -187,10 +187,45 @@ export const seoGuides: GuidePage[] = [
         answer:
           "Point single-branch profiles directly to your canonical HTTPS homepage (using clean UTM parameters) and point genuine secondary branches straight to their dedicated branch landing page.",
       },
+      {
+        question: "Can adding a suburb or service keyword to our Google Business Profile name boost rankings?",
+        answer:
+          "Stuffing extra keywords that do not appear on your CIPC registration, signage and invoices risks automated or competitor-reported suspension. Always use your genuine real-world trading name.",
+      },
+      {
+        question: "How many Google reviews does a South African business need to compete in Maps?",
+        answer:
+          "Consistency beats sudden spikes: earning 2 to 5 genuine customer reviews per month—paired with timely owner replies—helps surpass older inactive listings across most local metro categories.",
+      },
+      {
+        question: "Should I fill out the Services and Products tabs inside Google Business Profile?",
+        answer:
+          "Yes. Adding structured Services and ZAR descriptions helps Google match your profile cleanly to long-tail treatment, trade or B2B searches while giving mobile searchers immediate clarity.",
+      },
+      {
+        question: "How often should we upload fresh photos to Google Business Profile?",
+        answer:
+          "Upload 2 to 4 genuine team, premises or completed-project photos per month rather than recycled stock graphics so potential buyers recognise your business immediately.",
+      },
+      {
+        question: "Does a strong Google Business Profile replace needing a dedicated business website?",
+        answer:
+          "No. Maps listings link directly to your website to verify topical relevance and service depth—and strong [mobile-first service pages](/guides/what-makes-a-service-page-convert/) drive far higher Maps visibility and enquiry conversion.",
+      },
+      {
+        question: "How do we handle an unfair or spammy 1-star Google review in South Africa?",
+        answer:
+          "Reply calmly and factually without revealing private client details, and flag clear policy violations (fake bots, competitor abuse or off-topic posts) inside Google Business Profile Manager.",
+      },
+      {
+        question: "Can SoftKore audit our Google Business Profile alongside our website SEO?",
+        answer:
+          "Yes. Request a [free SEO audit](/contact/?service=free-seo-audit#contact-form) and we check profile category alignment, NAP consistency, UTM tracking and supporting [local SEO landing pages](/services/seo-services/).",
+      },
     ],
     priority: 0.72,
     published: "2026-11-20",
-    updated: "2026-11-20",
+    updated: "2026-11-21",
   },
   {
     slug: "fix-discovered-currently-not-indexed",
