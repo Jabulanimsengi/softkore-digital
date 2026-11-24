@@ -34,8 +34,8 @@ export function PagePeopleHero({
         <img
           src={image.src}
           alt={image.alt}
-          width={1536}
-          height={1024}
+          width={1920}
+          height={1288}
           loading="eager"
           fetchPriority="high"
         />

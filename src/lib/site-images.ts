@@ -175,6 +175,52 @@ const detailSecuritySa: SiteImage = {
   alt: "Two South African specialists reviewing printed website checklists and a laptop dashboard in a bright meeting room.",
 };
 
+// Page heroes: each image is used only as its own page's hero (never reused as a card).
+export const homeHeroImage: SiteImage = {
+  src: "/images/site/hero-home.webp",
+  alt: "A smiling South African café owner checking a new online order on her phone while customers pay by tap at her bakery counter.",
+};
+
+const heroServicesImage: SiteImage = {
+  src: "/images/site/hero-services.webp",
+  alt: "Three South African digital specialists laughing and high-fiving at a standing desk in a Cape Town studio with Table Mountain behind them.",
+};
+
+const heroWebDevelopmentImage: SiteImage = {
+  src: "/images/site/hero-web-development.webp",
+  alt: "A South African furniture store owner holding up his new mobile website on a smartphone beside his smiling web designer.",
+};
+
+const heroSeoServicesImage: SiteImage = {
+  src: "/images/site/hero-seo-services.webp",
+  alt: "A South African plumber grinning on a customer call beside his service van on a jacaranda-lined street.",
+};
+
+const heroWebsiteSecurityImage: SiteImage = {
+  src: "/images/site/hero-website-security.webp",
+  alt: "A relaxed South African security engineer and a relieved business owner beside a monitor showing a green shield status.",
+};
+
+const heroWorkImage: SiteImage = {
+  src: "/images/site/hero-work.webp",
+  alt: "Two South African team members cheering a website launch while their client applauds on a video call.",
+};
+
+const heroAboutImage: SiteImage = {
+  src: "/images/site/hero-about.webp",
+  alt: "A diverse group of young South African professionals laughing together on a Johannesburg rooftop at golden hour.",
+};
+
+const heroContactImage: SiteImage = {
+  src: "/images/site/hero-contact.webp",
+  alt: "A friendly South African consultant smiling and waving on a video call from a bright café workspace.",
+};
+
+const heroGuidesImage: SiteImage = {
+  src: "/images/site/hero-guides.webp",
+  alt: "A South African business owner in an emerald head wrap smiling as she reads a guide on her tablet and takes notes.",
+};
+
 export const pageHeroImages: Record<
   | "services"
   | "web-development"
@@ -187,42 +233,42 @@ export const pageHeroImages: Record<
   PageHeroImageEntry
 > = {
   services: {
-    ...overviewIndustriesImage,
+    ...heroServicesImage,
     badge: "All nine provinces",
     caption: "Website builds, technical SEO and cyber security delivered together.",
   },
   "web-development": {
-    ...detailWebShowcase,
+    ...heroWebDevelopmentImage,
     badge: "Mobile-first builds",
     caption: "Fast business websites structured around clear customer enquiries.",
   },
   "seo-services": {
-    ...serviceCardSeo,
+    ...heroSeoServicesImage,
     badge: "Search visibility",
     caption: "Technical audits, Google indexing fixes and honest Search Console reporting.",
   },
   "website-security": {
-    ...serviceCardSecurity,
+    ...heroWebsiteSecurityImage,
     badge: "Hardened & monitored",
     caption: "Security audits, WAF protection, hack recovery and verified off-site backups.",
   },
   work: {
-    ...overviewWorkImage,
+    ...heroWorkImage,
     badge: "How we deliver",
     caption: "Clear scope, real-screen reviews and launch checks on every project.",
   },
   about: {
-    ...aboutStudioImage,
+    ...heroAboutImage,
     badge: "South African studio",
     caption: "Plain-language engineering focused on build quality, SEO and security.",
   },
   contact: {
-    ...processDiscover,
+    ...heroContactImage,
     badge: "Start a conversation",
     caption: "Direct replies by email, phone or WhatsApp across all nine provinces.",
   },
   guides: {
-    ...detailSecuritySa,
+    ...heroGuidesImage,
     badge: "Practical SA guides",
     caption: "Plain-language playbooks on pricing in rand, industry SEO, Google indexing and website security.",
   },

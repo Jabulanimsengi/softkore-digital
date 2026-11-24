@@ -1195,16 +1195,23 @@ main:not(.home-v2) .page-hero{position:relative;overflow:hidden;padding-top:clam
   height: 100%;
   object-fit: cover;
   object-position: center 24%;
-  filter: saturate(0.88) contrast(1.03) brightness(0.92);
+  filter: saturate(1.06) contrast(1.02);
   transform: scale(1.12);
+}
+
+@media (max-width: 760px) {
+  /* Keep the café owner in frame on narrow screens instead of the bright window. */
+  .home-hero-bg img {
+    object-position: 74% 24%;
+  }
 }
 
 .home-hero-shade {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 78% 22%, rgba(5, 150, 105, 0.18), transparent 38%),
-    linear-gradient(180deg, rgba(8, 17, 31, 0.52) 0%, rgba(8, 17, 31, 0.2) 42%, rgba(8, 17, 31, 0.94) 100%);
+    linear-gradient(90deg, rgba(8, 17, 31, 0.74) 0%, rgba(8, 17, 31, 0.5) 40%, rgba(8, 17, 31, 0.08) 68%, rgba(8, 17, 31, 0) 100%),
+    linear-gradient(180deg, rgba(8, 17, 31, 0.34) 0%, rgba(8, 17, 31, 0.04) 34%, rgba(8, 17, 31, 0.3) 58%, rgba(8, 17, 31, 0.9) 100%);
 }
 
 .home-hero-content {

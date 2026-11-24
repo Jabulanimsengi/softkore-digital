@@ -9,9 +9,9 @@ import { Testimonials } from "@/components/Testimonials";
 import { faqSchema, JsonLd, organizationSchema, websiteSchema } from "@/lib/schema";
 import { getGuide } from "@/data/guides";
 import { getGuideReadingStats } from "@/lib/guide-metrics";
-import { guideImages, homeIndustryCards, homeProcessImages, homeServiceImages } from "@/lib/site-images";
+import { guideImages, homeHeroImage, homeIndustryCards, homeProcessImages, homeServiceImages } from "@/lib/site-images";
 
-const homeHeroImageSrc = "/images/softkore-home-hero.webp";
+const homeHeroImageSrc = homeHeroImage.src;
 
 const featuredGuideSlugs = [
   "website-prices-south-africa",
@@ -173,9 +173,9 @@ export default function HomePage() {
           <div className="home-hero-bg" data-parallax="0.12">
             <img
               src={homeHeroImageSrc}
-              alt="A business team planning a fast, secure website together."
-              width={1536}
-              height={1024}
+              alt={homeHeroImage.alt}
+              width={1920}
+              height={1288}
               fetchPriority="high"
             />
             <span className="home-hero-shade" />
