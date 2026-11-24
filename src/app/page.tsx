@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
 import Link from "next/link";
-import { UiIcon, type UiIconName } from "@/components/UiIcon";
+import { UiIcon } from "@/components/UiIcon";
 import { projectTypes } from "@/data/case-studies";
 import { HomeMotion } from "@/components/HomeMotion";
 import { FaqList } from "@/components/PageSections";
@@ -9,7 +9,8 @@ import { Testimonials } from "@/components/Testimonials";
 import { faqSchema, JsonLd, organizationSchema, websiteSchema } from "@/lib/schema";
 import { getGuide } from "@/data/guides";
 import { getGuideReadingStats } from "@/lib/guide-metrics";
-import { guideImages, homeHeroImage, homeIndustryCards, homeProcessImages, homeServiceImages } from "@/lib/site-images";
+import { homeHeroImage, homeIndustryCards, homeProcessImages, homeServiceImages, homeTeamImage } from "@/lib/site-images";
+import "./home.css";
 
 const homeHeroImageSrc = homeHeroImage.src;
 
@@ -51,7 +52,8 @@ const serviceRows: Array<{
   title: string;
   text: string;
   href: string;
-  icon: UiIconName;
+  badge: string;
+  linkLabel: string;
   tags: string[];
 }> = [
   {
@@ -59,7 +61,8 @@ const serviceRows: Array<{
     title: "Website design & development",
     text: "Fast, mobile-first business websites with clear service pages, built-in SEO and clean enquiry paths.",
     href: "/services/web-development/",
-    icon: "globe",
+    badge: "Mobile-first builds",
+    linkLabel: "Explore web development",
     tags: ["Responsive UI", "SEO-ready", "Fast load"],
   },
   {
@@ -67,7 +70,8 @@ const serviceRows: Array<{
     title: "SEO services",
     text: "Technical audits, Google indexing recovery and stronger service pages, with honest reporting.",
     href: "/services/seo-services/",
-    icon: "search",
+    badge: "Starts with a free audit",
+    linkLabel: "Explore SEO services",
     tags: ["Technical audits", "Indexing fixes", "Search Console"],
   },
   {
@@ -75,7 +79,8 @@ const serviceRows: Array<{
     title: "Website & cyber security",
     text: "Security audits, website hardening, firewall protection, malware removal and ongoing monitoring.",
     href: "/services/website-security/",
-    icon: "shield",
+    badge: "Hardened & monitored",
+    linkLabel: "Explore website security",
     tags: ["Security audits", "WAF & hardening", "Hack recovery"],
   },
 ];
@@ -150,27 +155,33 @@ const homeFaqs = [
   },
 ];
 
-const signals = [
-  "Eastern Cape",
-  "Free State",
-  "Gauteng",
-  "KwaZulu-Natal",
-  "Limpopo",
-  "Mpumalanga",
-  "North West",
-  "Northern Cape",
-  "Western Cape",
+const auditChecks = ["Google indexing", "Crawl blockers", "Mobile speed", "Local visibility"];
+
+const aboutPoints = [
+  "Remote projects over video, email and WhatsApp, with the same process in every province.",
+  "Built for local conditions: light on mobile data, South African payments and POPIA-aligned security.",
+  "We stay after launch, including for websites we did not build.",
 ];
 
+function CheckIcon() {
+  return (
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M5 12l5 5L20 7" />
+    </svg>
+  );
+}
+
 export default function HomePage() {
+  const closingImage = homeProcessImages[0];
+
   return (
     <>
       <JsonLd data={organizationSchema()} />
       <JsonLd data={websiteSchema()} />
       <JsonLd data={faqSchema(homeFaqs)} />
-      <main className="home">
-        <section className="home-hero">
-          <div className="home-hero-bg" data-parallax="0.12">
+      <main className="hx">
+        <section className="hx-hero">
+          <div className="hx-hero-bg" data-parallax="0.1">
             <img
               src={homeHeroImageSrc}
               alt={homeHeroImage.alt}
@@ -178,198 +189,198 @@ export default function HomePage() {
               height={1288}
               fetchPriority="high"
             />
-            <span className="home-hero-shade" />
+            <span className="hx-hero-shade" aria-hidden="true" />
           </div>
 
-          <div className="home-hero-content">
-            <div className="section">
-              <p className="home-kicker">Website design &amp; development · Free SEO audit · Website &amp; cyber security</p>
-              <h1>Website development, SEO &amp; cyber security for <em>South African businesses.</em></h1>
-              <p className="home-hero-lead">SoftKore Digital builds fast business websites, starts with a free SEO audit to get them properly indexed and ranking on Google, and protects them against hacks, malware and data leaks across all nine provinces.</p>
-              <div className="home-actions">
-                <Link prefetch={false} className="home-btn home-btn-audit" href="/contact/?service=free-seo-audit#contact-form">Free SEO Audit <UiIcon name="search" /></Link>
-                <Link prefetch={false} className="home-btn home-btn-primary" href="/contact/">Start a Project <UiIcon name="arrow" /></Link>
-                <Link prefetch={false} className="home-btn home-btn-ghost" href="/services/">View Services</Link>
-              </div>
+          <div className="hx-wrap hx-hero-content">
+            <p className="hx-kicker">Web development · SEO · Cyber security</p>
+            <h1 className="hx-hero-title">
+              <span className="hx-hero-title-lead">Website development, SEO &amp; cyber security for South African businesses.</span>
+              <span className="hx-hero-title-main">Built to be found. <em>Built to be trusted.</em></span>
+            </h1>
+            <p className="hx-hero-lead">SoftKore Digital builds fast business websites, starts with a free SEO audit to get them properly indexed and ranking on Google, and protects them against hacks, malware and data leaks across all nine provinces.</p>
+            <div className="hx-actions">
+              <Link prefetch={false} className="hx-btn hx-btn-primary" href="/contact/?service=free-seo-audit#contact-form">Get my free SEO audit <UiIcon name="arrow" /></Link>
+              <Link prefetch={false} className="hx-btn hx-btn-outline-light" href="/services/">View services</Link>
             </div>
+            <ul className="hx-hero-checks" aria-label="What the free SEO audit checks">
+              <li className="hx-hero-checks-label">Free audit checks</li>
+              {auditChecks.map((item) => (
+                <li key={item}><CheckIcon />{item}</li>
+              ))}
+            </ul>
           </div>
 
-          <div className="home-marquee" aria-hidden="true">
-            <div className="home-marquee-track">
-              <ul>{keywords.map((keyword) => <li key={keyword}>{keyword}</li>)}</ul>
-              <ul>{keywords.map((keyword) => <li key={keyword}>{keyword}</li>)}</ul>
-            </div>
+          <div className="hx-strip" aria-hidden="true">
+            <ul className="hx-wrap">
+              {keywords.map((keyword) => <li key={keyword}>{keyword}</li>)}
+            </ul>
           </div>
         </section>
 
-        <section className="home-work" id="work">
-          <div className="section">
-            <div className="home-section-head">
+        <section className="hx-section hx-statement">
+          <div className="hx-wrap">
+            <div className="hx-statement-row">
+              <p className="hx-eyebrow">Why SoftKore</p>
+              <h2>A website can look fine and still lose customers: <mark>invisible on Google</mark>, <mark>slow on mobile</mark>, or <mark>one outdated plugin away from a hack</mark>. We fix all three, in plain language.</h2>
+            </div>
+            <dl className="hx-standards" aria-label="Standards we build and audit to">
+              {standards.map((item) => (
+                <div key={item.metric}>
+                  <dt>{item.label}</dt>
+                  <dd>{item.metric}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
+
+        <section className="hx-section hx-problems" id="work">
+          <div className="hx-wrap">
+            <div className="hx-head">
               <div>
-                <p className="home-eyebrow">Common challenges</p>
+                <p className="hx-eyebrow">Common challenges</p>
                 <h2>The problems we solve.</h2>
               </div>
-              <Link prefetch={false} className="home-text-link" href="/work/">See how we work <UiIcon name="arrow" /></Link>
+              <Link prefetch={false} className="hx-link" href="/work/">See how we work <UiIcon name="arrow" /></Link>
             </div>
-
-            <div className="home-work-grid">
+            <div className="hx-problem-grid">
               {projectTypes.map((study) => (
-                <article className="home-work-card" key={study.title}>
+                <article className="hx-problem-card" key={study.title}>
                   <figure>
                     <img src={study.image} alt={study.imageAlt} width={1536} height={1024} loading="lazy" />
-                    <span>{study.category}</span>
                   </figure>
-                  <h3>{study.problemHeadline}</h3>
-                  <p>{study.problemSummary}</p>
-                  <Link prefetch={false} href={study.href}>{study.ctaLabel} <UiIcon name="arrow" /></Link>
+                  <div>
+                    <p className="hx-card-label">{study.category}</p>
+                    <h3>{study.problemHeadline}</h3>
+                    <p>{study.problemSummary}</p>
+                    <Link prefetch={false} className="hx-link" href={study.href}>{study.ctaLabel} <UiIcon name="arrow" /></Link>
+                  </div>
                 </article>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="home-stats" aria-label="Standards we build and audit to">
-          <div className="section">
-            <div className="home-stats-grid">
-              {standards.map((item) => (
-                <div className="home-stat" key={item.metric}>
-                  <strong>{item.metric}</strong>
-                  <span>{item.label}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="home-services">
-          <div className="section">
-            <div className="home-section-head">
+        <section className="hx-section hx-services">
+          <div className="hx-wrap">
+            <div className="hx-head">
               <div>
-                <p className="home-eyebrow">What we do</p>
-                <h2>Website design &amp; development, SEO and cyber security services.</h2>
+                <p className="hx-eyebrow">What we do</p>
+                <h2>Three services. One goal: more of the right customers.</h2>
               </div>
-              <Link prefetch={false} className="home-text-link" href="/services/">Explore services <UiIcon name="arrow" /></Link>
+              <Link prefetch={false} className="hx-link" href="/services/">Explore services <UiIcon name="arrow" /></Link>
             </div>
-
-            <div className="home-services-list">
+            <div className="hx-service-list">
               {serviceRows.map((service, index) => {
-                const thumb = homeServiceImages[service.slug];
+                const image = homeServiceImages[service.slug];
                 return (
-                <Link prefetch={false} href={service.href} className="home-service-row" key={service.href}>
-                  <span>{String(index + 1).padStart(2, "0")}</span>
-                  {thumb ? (
-                    <figure className="home-service-thumb">
-                      <img src={thumb.src} alt={thumb.alt} width={1536} height={1024} loading="lazy" />
-                    </figure>
-                  ) : null}
-                  <div className="home-service-title-wrap">
-                    <div className="home-service-heading">
-                      <span className="home-service-row-icon"><UiIcon name={service.icon} /></span>
-                      <h3>{service.title}</h3>
-                    </div>
-                    <ul className="home-service-tags" aria-label={`${service.title} focus areas`}>
-                      {service.tags.map((tag) => <li key={tag}>{tag}</li>)}
-                    </ul>
-                  </div>
-                  <p>{service.text}</p>
-                  <span className="home-service-arrow"><UiIcon name="arrow" /></span>
-                </Link>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-
-        <section className="home-process">
-          <div className="section">
-            <div className="home-section-head">
-              <div>
-                <p className="home-eyebrow">How we work</p>
-                <h2>A clear process from first call to launch.</h2>
-              </div>
-            </div>
-            <div className="home-process-grid">
-              {process.map(([number, title, text], index) => {
-                const media = homeProcessImages[index];
-                return (
-                  <div className="home-step" key={number}>
-                    {media ? (
-                      <figure className="home-step-media">
-                        <img src={media.src} alt={media.alt} width={1536} height={1024} loading="lazy" />
-                        <span>{number}</span>
+                  <article className="hx-service" key={service.href}>
+                    {image ? (
+                      <figure className="hx-service-media">
+                        <img src={image.src} alt={image.alt} width={1536} height={1024} loading="lazy" />
+                        <figcaption>{service.badge}</figcaption>
                       </figure>
                     ) : null}
-                    <span>{number}</span>
-                    <h3>{title}</h3>
-                    <p>{text}</p>
-                  </div>
+                    <div className="hx-service-body">
+                      <span className="hx-service-number" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
+                      <h3>{service.title}</h3>
+                      <p>{service.text}</p>
+                      <ul className="hx-tags" aria-label={`${service.title} focus areas`}>
+                        {service.tags.map((tag) => <li key={tag}>{tag}</li>)}
+                      </ul>
+                      <Link prefetch={false} className="hx-underline-link" href={service.href}>{service.linkLabel}</Link>
+                    </div>
+                  </article>
                 );
               })}
             </div>
           </div>
         </section>
 
-        <section className="home-industries">
-          <div className="section">
-            <div className="home-section-head">
+        <section className="hx-section hx-process">
+          <div className="hx-wrap">
+            <div className="hx-head">
               <div>
-                <p className="home-eyebrow">Who we work with</p>
+                <p className="hx-eyebrow">How we work</p>
+                <h2>A clear process from first call to launch.</h2>
+              </div>
+              <p className="hx-head-note">A focused business website normally takes three to six weeks; ecommerce stores and larger redesigns take six to ten.</p>
+            </div>
+            <ol className="hx-steps">
+              {process.map(([number, title, text]) => (
+                <li key={number}>
+                  <span aria-hidden="true">{number}</span>
+                  <h3>{title}</h3>
+                  <p>{text}</p>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </section>
+
+        <section className="hx-section hx-industries">
+          <div className="hx-wrap">
+            <div className="hx-head">
+              <div>
+                <p className="hx-eyebrow">Who we work with</p>
                 <h2>Websites built for how your customers buy.</h2>
               </div>
-              <Link prefetch={false} className="home-text-link" href="/contact/">Talk about your industry <UiIcon name="arrow" /></Link>
+              <Link prefetch={false} className="hx-link" href="/contact/">Talk about your industry <UiIcon name="arrow" /></Link>
             </div>
-            <div className="home-industries-grid">
+            <div className="hx-industry-grid">
               {homeIndustryCards.map((card) => (
-                <Link prefetch={false} href={card.href} className="home-industry-card" key={card.sector}>
+                <Link prefetch={false} href={card.href} className="hx-industry" key={card.sector}>
                   <figure>
                     <img src={card.image.src} alt={card.image.alt} width={1536} height={1024} loading="lazy" />
-                    <span>{card.sector}</span>
                   </figure>
+                  <span className="hx-card-label">{card.sector}</span>
                   <h3>{card.title}</h3>
                   <p>{card.summary}</p>
-                  <strong>Read industry playbook <UiIcon name="arrow" /></strong>
+                  <span className="hx-link">Read industry playbook <UiIcon name="arrow" /></span>
                 </Link>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="home-quote">
-          <div className="section">
-            <blockquote>Based in South Africa, working <mark>nationwide</mark>. Wherever you are, the process is the same.</blockquote>
-            <div className="home-quote-signals">
-              {signals.map((signal) => <span key={signal}>{signal}</span>)}
-            </div>
+        <section className="hx-team">
+          <img src={homeTeamImage.src} alt={homeTeamImage.alt} width={1536} height={1024} loading="lazy" />
+          <span className="hx-team-shade" aria-hidden="true" />
+          <div className="hx-wrap hx-team-content">
+            <p className="hx-eyebrow">A South African studio</p>
+            <h2>Plain-language engineering. All nine provinces.</h2>
+            <ul>
+              {aboutPoints.map((point) => (
+                <li key={point}><CheckIcon />{point}</li>
+              ))}
+            </ul>
+            <Link prefetch={false} className="hx-btn hx-btn-light" href="/about/">About SoftKore</Link>
           </div>
         </section>
 
         <Testimonials />
 
-        <section className="home-guides">
-          <div className="section">
-            <div className="home-section-head">
+        <section className="hx-section hx-guides">
+          <div className="hx-wrap">
+            <div className="hx-head">
               <div>
-                <p className="home-eyebrow">Practical guides</p>
+                <p className="hx-eyebrow">Practical guides</p>
                 <h2>Straight answers before you spend a rand.</h2>
               </div>
-              <Link prefetch={false} className="home-text-link" href="/guides/">All guides <UiIcon name="arrow" /></Link>
+              <Link prefetch={false} className="hx-link" href="/guides/">All guides <UiIcon name="arrow" /></Link>
             </div>
-            <div className="home-guides-grid">
+            <div className="hx-guide-list">
               {featuredGuideSlugs.map((slug) => {
                 const guide = getGuide(slug);
-                const image = guideImages[slug];
-                if (!guide || !image) return null;
+                if (!guide) return null;
                 const stats = getGuideReadingStats(guide);
                 return (
-                  <Link prefetch={false} href={`/guides/${guide.slug}/`} className="home-guide-card" key={slug}>
-                    <figure>
-                      <img src={image.src} alt={image.alt} width={1536} height={1024} loading="lazy" />
-                    </figure>
-                    <div>
-                      <span className="home-guide-meta">{guide.category} · {stats.label}</span>
-                      <h3>{guide.title}</h3>
-                      <strong>Read guide <UiIcon name="arrow" /></strong>
-                    </div>
+                  <Link prefetch={false} href={`/guides/${guide.slug}/`} className="hx-guide" key={slug}>
+                    <span className="hx-card-label">{guide.category}</span>
+                    <strong>{guide.title}</strong>
+                    <span className="hx-guide-meta">{stats.label}</span>
+                    <span className="hx-guide-arrow" aria-hidden="true"><UiIcon name="arrow" /></span>
                   </Link>
                 );
               })}
@@ -377,28 +388,29 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="home-services">
-          <div className="section">
-            <div className="home-section-head">
-              <div>
-                <p className="home-eyebrow">Common questions</p>
-                <h2>What South African businesses ask us first.</h2>
-              </div>
-              <Link prefetch={false} className="home-text-link" href="/guides/">Read our guides <UiIcon name="arrow" /></Link>
+        <section className="hx-section hx-faq">
+          <div className="hx-wrap hx-faq-layout">
+            <div className="hx-faq-head">
+              <p className="hx-eyebrow">Common questions</p>
+              <h2>What South African businesses ask us first.</h2>
+              <Link prefetch={false} className="hx-link" href="/guides/">Read our guides <UiIcon name="arrow" /></Link>
             </div>
             <FaqList items={homeFaqs} />
           </div>
         </section>
 
-        <section className="home-cta">
-          <div className="section home-cta-inner">
+        <section className="hx-section hx-closing">
+          <div className="hx-wrap hx-closing-layout">
+            {closingImage ? (
+              <img src={closingImage.src} alt={closingImage.alt} width={1536} height={1024} loading="lazy" />
+            ) : null}
             <div>
-              <h2>Tell us what you need from your website.</h2>
-              <p>Request a free SEO audit or start a project chat — whether you need a new website, better Google visibility or stronger website security, we will give you a straight answer on the best next step.</p>
-            </div>
-            <div className="home-actions">
-              <Link prefetch={false} className="home-btn home-btn-audit" href="/contact/?service=free-seo-audit#contact-form">Free SEO Audit <UiIcon name="search" /></Link>
-              <Link prefetch={false} className="home-btn home-btn-primary" href="/contact/">Start a Project <UiIcon name="arrow" /></Link>
+              <h2>Start with a free SEO audit. <em>Decide after.</em></h2>
+              <p>Tell us what you need from your website. Whether it is a new site, better Google visibility or stronger security, we will give you a straight answer on the best next step, by email, phone or WhatsApp.</p>
+              <div className="hx-actions">
+                <Link prefetch={false} className="hx-btn hx-btn-primary" href="/contact/?service=free-seo-audit#contact-form">Request my free audit <UiIcon name="search" /></Link>
+                <Link prefetch={false} className="hx-btn hx-btn-outline-light" href="/contact/">Start a project <UiIcon name="arrow" /></Link>
+              </div>
             </div>
           </div>
         </section>

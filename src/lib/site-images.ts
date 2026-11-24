@@ -186,6 +186,12 @@ const heroServicesImage: SiteImage = {
   alt: "Three South African digital specialists laughing and high-fiving at a standing desk in a Cape Town studio with Table Mountain behind them.",
 };
 
+// Homepage "A South African studio" band (replace with a dedicated image when one is generated).
+export const homeTeamImage: SiteImage = {
+  ...aboutStudioImage,
+  alt: "A diverse South African digital team smiling together around laptops in a bright studio.",
+};
+
 const heroWebDevelopmentImage: SiteImage = {
   src: "/images/site/hero-web-development.webp",
   alt: "A South African furniture store owner holding up his new mobile website on a smartphone beside his smiling web designer.",

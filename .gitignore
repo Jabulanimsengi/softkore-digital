@@ -20,3 +20,6 @@ Thumbs.db
 
 # Archives
 *.tar.gz
+
+# Full-size image originals (converted copies live in public/images/site)
+image-originals/
