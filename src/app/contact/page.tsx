@@ -19,42 +19,42 @@ const contactFaqs = [
   {
     question: "How quickly does SoftKore Digital reply to website or SEO enquiries?",
     answer:
-      "We reply to every enquiry within one South African business day by email or WhatsApp, and urgent hacked-website reports are triaged as soon as they arrive.",
+      "We reply to every enquiry within one South African business day, by email or WhatsApp, whichever you prefer. If your website has been hacked, tell us in your message or call us: urgent reports are looked at as soon as they arrive, so we can stop the damage quickly.",
   },
   {
     question: "What happens after I submit a Free SEO Audit request?",
     answer:
-      "We review your domain, Google Search Console indexing status (where accessible), mobile speed, security headers and main service pages, then send back a clear summary of what is blocking visibility.",
+      "We look at your website, check how many of your pages Google is showing (using Google Search Console if you can give us access), test its speed on phones and its basic security settings, and read your main service pages. Then we send you a clear summary of what is stopping customers from finding you.",
   },
   {
     question: "Is there any cost or obligation attached to the Free SEO Audit?",
     answer:
-      "No. The initial review is free with zero obligation, whether you later ask SoftKore to implement the fixes under our [SEO services](/services/seo-services/) or hand the list to your own team.",
+      "No. The audit is free and there is no obligation. The fix list is yours to keep, whether you later ask us to do the work through our [SEO services](/services/seo-services/), hand it to your own team or simply use it to understand what is holding your website back.",
   },
   {
     question: "What details help you prepare an accurate website quote in rand?",
     answer:
-      "Share your current website URL (if you have one), main services or products, target market across South Africa, any integrations such as PayFast or booking tools, and your indicative ZAR budget range on our [website prices guide](/guides/website-prices-south-africa/).",
+      "Tell us your current website address (if you have one), your main services or products, where your customers are, anything the site must connect to (such as PayFast or a booking tool) and a rough budget in rand. Our [website prices guide](/guides/website-prices-south-africa/) can help you pick a budget range.",
   },
   {
     question: "Should I message on WhatsApp or use the email enquiry form?",
     answer:
-      "Use the enquiry form when you want to share a website URL, budget range and service brief cleanly in writing, or message WhatsApp directly for quick questions and urgent site issues.",
+      "Use the enquiry form when you want to give us your website address, budget and what you need in writing, so nothing gets lost. Message us on WhatsApp for quick questions, or if something is wrong with your website right now and you need a fast answer.",
   },
   {
     question: "Do we need an in-person meeting in Johannesburg to work together?",
     answer:
-      "No. Although our office is at 111 Commissioner Street in Johannesburg, almost all client projects across Gauteng, Western Cape, KwaZulu-Natal and other provinces run remotely via video call and live staging links.",
+      "No. Although our office is at 111 Commissioner Street in Johannesburg, almost all client projects across Gauteng, the Western Cape, KwaZulu-Natal and other provinces run remotely, by video call and with a private online preview of your new site. Everything happens online, so nobody needs to travel.",
   },
   {
     question: "How is my enquiry data handled under POPIA?",
     answer:
-      "We only collect the contact and project details needed to respond to your enquiry, never sell or share leads, and apply strict technical transport and access controls outlined in our [POPIA website checklist](/guides/popia-website-compliance-checklist/).",
+      "We only collect the contact and project details we need to reply to you, and we never sell or share them as leads. Your message travels over a secure connection and only the people handling your enquiry can see it. Our [privacy policy](/privacy-policy/) explains exactly how we handle your information.",
   },
   {
     question: "How should I reach out if my website has been hacked right now?",
     answer:
-      "Select 'Hacked site recovery' in the form above or call/WhatsApp `073 802 1196` immediately with your domain name so we can begin [emergency cleanup and containment](/services/website-security/).",
+      "Choose 'Hacked site recovery' in the form above, or call or WhatsApp us on 073 802 1196 straight away with your website address. The sooner we know, the sooner we can cut the hackers off and start the [emergency clean-up](/services/website-security/), before more damage is done.",
   },
 ];
 
@@ -71,8 +71,7 @@ export default function ContactPage() {
 
       <main className="stitch-page contact-stitch-page">
         <PagePeopleHero
-          breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
-          kicker="Contact SoftKore Digital"
+          breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
           title="Get in touch."
           lead="Request a free SEO audit or send us a project enquiry using the form below, or reach us directly by email, phone or WhatsApp."
           image={pageHeroImages.contact}
@@ -98,14 +97,14 @@ export default function ContactPage() {
                 loading="lazy"
               />
             </figure>
-            <p className="stitch-kicker">Direct contact</p>
+
             <h2>Address &amp; contact details</h2>
             <ul className="contact-details-list">
               <li>
                 <span className="stitch-icon"><UiIcon name="map" /></span>
                 <div>
                   <strong>Office Address</strong>
-                  <p>111 Commissioner Street, Johannesburg, 2001, South Africa</p>
+                  <p>111 Commissioner Street, Johannesburg, 2000, South Africa</p>
                   <small>Serving businesses nationwide across all nine provinces</small>
                 </div>
               </li>
@@ -136,7 +135,7 @@ export default function ContactPage() {
 
           <div className="contact-form-card" id="contact-form">
             <div className="contact-form-head">
-              <p className="stitch-kicker">Enquiry form</p>
+
               <h2>Send us a message</h2>
             </div>
             <ContactForm />
@@ -145,9 +144,9 @@ export default function ContactPage() {
 
         <section className="section page-faq-section" aria-label="Contact and onboarding questions">
           <div className="page-faq-head">
-            <p className="stitch-kicker">Before you message</p>
+
             <h2>What happens when you get in touch.</h2>
-            <p>Response times, Free SEO Audit scope, remote onboarding across South Africa and urgent hack escalation.</p>
+            <p>How fast we reply, what the free SEO audit covers, working with us from anywhere in South Africa and what to do if you've been hacked.</p>
           </div>
           <FaqList items={contactFaqs} />
         </section>
@@ -156,10 +155,10 @@ export default function ContactPage() {
           <div className="contact-map-wrapper">
             <div className="contact-map-bar">
               <div>
-                <strong>111 Commissioner Street, Johannesburg, 2001, South Africa</strong>
+                <strong>111 Commissioner Street, Johannesburg, 2000, South Africa</strong>
               </div>
               <a
-                href="https://www.google.com/maps/search/?api=1&query=111+Commissioner+Street,+Johannesburg,+2001,+South+Africa"
+                href="https://www.google.com/maps/search/?api=1&query=111+Commissioner+Street,+Johannesburg,+2000,+South+Africa"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -169,7 +168,7 @@ export default function ContactPage() {
             <div className="contact-map-frame">
               <iframe
                 title="SoftKore Digital address map"
-                src="https://www.google.com/maps?q=111+Commissioner+Street,+Johannesburg,+2001,+South+Africa&output=embed"
+                src="https://www.google.com/maps?q=111+Commissioner+Street,+Johannesburg,+2000,+South+Africa&output=embed"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 allowFullScreen

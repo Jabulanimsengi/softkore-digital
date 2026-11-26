@@ -31,8 +31,7 @@ export function ServiceTemplate({ service }: { service: ServicePage }) {
           { label: "Home", href: "/" },
           { label: "Services", href: "/services/" },
           { label: service.eyebrow },
-        ]}
-        kicker={service.eyebrow}
+        ]}
         title={service.h1}
         lead={service.intro}
         image={heroImage}
@@ -47,7 +46,7 @@ export function ServiceTemplate({ service }: { service: ServicePage }) {
           <div className="solution-summary-band-head">
             <span className="stitch-icon"><UiIcon name="workflow" /></span>
             <div>
-              <p className="stitch-kicker">Included capabilities</p>
+
               <h2>{service.summaryTitle}</h2>
             </div>
           </div>
@@ -57,7 +56,7 @@ export function ServiceTemplate({ service }: { service: ServicePage }) {
 
       <section className="section solution-intro">
         <div className="solution-intro-lead">
-          <div className="stitch-section-heading"><p className="stitch-kicker">What this changes</p><h2>{service.bodyHeading}</h2></div>
+          <div className="stitch-section-heading"><h2>{service.bodyHeading}</h2></div>
           {visuals ? (
             <figure className="solution-visual-card">
               <img src={visuals.showcase.src} alt={visuals.showcase.alt} width={1536} height={1024} loading="lazy" />
@@ -72,7 +71,7 @@ export function ServiceTemplate({ service }: { service: ServicePage }) {
           <div className="solution-callout-head">
             <span className="stitch-icon"><UiIcon name="layers" /></span>
             <div>
-              <p className="stitch-kicker">Is this right for you?</p>
+
               <h2>{service.fitHeading}</h2>
             </div>
           </div>
@@ -81,7 +80,7 @@ export function ServiceTemplate({ service }: { service: ServicePage }) {
       </section>
 
       <section className="section solution-feature-section">
-        <div className="stitch-section-heading stitch-section-heading-center"><p className="stitch-kicker">What we deliver</p><h2>{service.featureTitle}</h2><p>{service.featureIntro}</p></div>
+        <div className="stitch-section-heading stitch-section-heading-center"><h2>{service.featureTitle}</h2><p>{service.featureIntro}</p></div>
         <div className="solution-feature-grid">
           {service.features.map((feature, index) => (
             <article className={`solution-feature-card solution-feature-card-${index + 1}`} key={feature.title}>
@@ -102,7 +101,7 @@ export function ServiceTemplate({ service }: { service: ServicePage }) {
             <div className="solution-callout-head">
               <span className="stitch-icon"><UiIcon name="shield" /></span>
               <div>
-                <p className="stitch-kicker">Across South Africa</p>
+
                 <h2>{service.southAfricaHeading}</h2>
               </div>
             </div>
@@ -117,18 +116,18 @@ export function ServiceTemplate({ service }: { service: ServicePage }) {
       </section>
 
       <section className="section solution-process">
-        <div className="stitch-section-heading"><p className="stitch-kicker">Our approach</p><h2>{service.processTitle}</h2>{service.processBody.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
+        <div className="stitch-section-heading"><h2>{service.processTitle}</h2>{service.processBody.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
         <ol>{service.processItems.map((item, index) => <li key={item.title}><span>{String(index + 1).padStart(2, "0")}</span><div><h3>{item.title}</h3><p>{item.text}</p></div></li>)}</ol>
       </section>
 
       <section className="section solution-intro">
-        <div className="stitch-section-heading"><p className="stitch-kicker">Budgeting</p><h2>{service.costHeading}</h2></div>
+        <div className="stitch-section-heading"><h2>{service.costHeading}</h2></div>
         <div className="solution-intro-copy">{service.cost.map((paragraph) => <p key={paragraph}><RichText text={paragraph} /></p>)}</div>
       </section>
 
       <section className="section solution-support-grid">
-        <div><p className="stitch-kicker">Related pages</p><h2>Where to go next.</h2><LinkList items={service.related} /></div>
-        <div><p className="stitch-kicker">Common questions</p><h2>Answers before you enquire.</h2><FaqList items={service.faqs} /></div>
+        <div><h2>Where to go next.</h2><LinkList items={service.related} /></div>
+        <div><h2>Answers before you enquire.</h2><FaqList items={service.faqs} /></div>
       </section>
 
       <ConversionBand title={`Talk to us about ${ctaTopic}.`} text="Tell us what you need and where you are based. We work with businesses across South Africa and will give you a straight answer on the best next step." primaryHref={contactHref} primaryLabel={service.primaryCta} secondaryHref="/services/" secondaryLabel="All Services" />

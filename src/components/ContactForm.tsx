@@ -379,7 +379,8 @@ export function ContactForm() {
             )}
           </button>
           <p className="form-note" id="contact-form-note">
-            Sent directly to info@softkoredigital.co.za · Your details are kept private under POPIA.
+            Sent directly to info@softkoredigital.co.za · Your details are handled under POPIA, as set out in our{" "}
+            <a href="/privacy-policy/">privacy policy</a>.
           </p>
         </div>
       </form>

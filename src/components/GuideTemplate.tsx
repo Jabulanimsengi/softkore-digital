@@ -302,9 +302,6 @@ export function GuideTemplate({ guide }: { guide: GuidePage }) {
                   {index === midCtaAfterIndex ? (
                     <aside className="article-mid-cta">
                       <div>
-                        <span className="article-mid-cta-kicker">
-                          Practical support
-                        </span>
                         <strong>
                           <RichText text={midCta.heading} />
                         </strong>
@@ -348,7 +345,7 @@ export function GuideTemplate({ guide }: { guide: GuidePage }) {
 
       <section className="section article-related">
         <div className="article-related-head">
-          <p className="stitch-kicker">Continue reading</p>
+
           <h2>Related guides and services</h2>
         </div>
         <LinkList items={guide.related} />

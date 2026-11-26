@@ -1,3 +1,20 @@
+/**
+ * SEO Services Guides (10 published).
+ *
+ * FAQ status:
+ * - 12 search-intent FAQs (upgraded 2026-11-21):
+ *   google-business-profile-south-africa
+ * - 5 FAQs (candidates for future 12-FAQ expansion):
+ *   fix-discovered-currently-not-indexed, google-ads-vs-seo-south-africa,
+ *   local-seo-vs-national-seo-south-africa, why-duplicate-location-pages-hurt-seo,
+ *   how-long-does-seo-take-south-africa, core-web-vitals-guide-south-africa,
+ *   internal-linking-guide-for-business-websites, google-search-console-guide-business-owners,
+ *   seo-copywriting-guide-south-africa
+ *
+ * Editorial notes: keep FAQ answers answer-first (40–75 words), put [anchor](/path/)
+ * links in answers/prose only (never in questions), avoid cross-page duplicate
+ * questions, and bump `updated` (YYYY-MM-DD) whenever revising a guide.
+ */
 import type { GuidePage } from "./types";
 
 export const seoGuides: GuidePage[] = [
@@ -1108,17 +1125,17 @@ export const seoGuides: GuidePage[] = [
         title: "Worked turnaround benchmarks: rescuing established vs brand-new sites",
         body: [
           "Two South African websites starting identical monthly SEO budgets on Monday morning will still move along very different timelines depending entirely on starting history. Knowing which factors compress or lengthen wait windows lets leadership budget marketing cash realistically without premature panic.",
-          "Compare clean technical rescue recoveries against ground-up organic authority building below:",
+          "Compare two illustrative scenarios below (typical patterns, not client case studies): a clean technical rescue versus ground-up organic authority building.",
         ],
         subsections: [
           {
-            heading: "Case A: Established 6-year domain held back by indexing & redirect errors",
+            heading: "Example A: Established 6-year domain held back by indexing & redirect errors",
             body: [
-              "An established Cape Town logistics supplier already carries reputable partner mentions and age, yet traffic collapsed after a messy agency redesign dropped old URLs into 404s and uploaded thin template clones. Fixing the 301 map cleanly, trimming index bloat and restoring clear service copy routinely rebounds lost impressions within 3 to 6 weeks directly.",
+              "Picture an established logistics supplier that already carries reputable partner mentions and age, yet traffic collapsed after a messy agency redesign dropped old URLs into 404s and uploaded thin template clones. Fixing the 301 map cleanly, trimming index bloat and restoring clear service copy routinely rebounds lost impressions within 3 to 6 weeks directly.",
             ],
           },
           {
-            heading: "Case B: Fresh .co.za startup competing cold in crowded metros",
+            heading: "Example B: Fresh .co.za startup competing cold in crowded metros",
             body: [
               "Launching fresh domains against ten-year incumbents involves earning initial crawl confidence cleanly first. Months 1–3 build rock-solid technical foundations, fast guides and early Google Business Profile citations; Months 4–6 begin converting specific pricing/checklist queries onto Page 1 before tackling fierce head terms across Months 7–12.",
             ],
@@ -1171,7 +1188,7 @@ export const seoGuides: GuidePage[] = [
     ],
     priority: 0.72,
     published: "2026-11-20",
-    updated: "2026-11-20",
+    updated: "2026-11-26",
   },
   {
     slug: "core-web-vitals-guide-south-africa",

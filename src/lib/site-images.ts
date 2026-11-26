@@ -1,3 +1,14 @@
+/**
+ * Central site image registry.
+ *
+ * IMPORTANT (`npm run audit:images`):
+ * - Every /images/site/... path literal must appear ONLY ONCE across all src/ files
+ *   (including comments — never write quoted image paths inside comments).
+ * - Define each asset once as a top-level `const` here, then reuse it by variable/spread
+ *   across pageHeroImages, guideImages, homeIndustryCards, and Open Graph metadata.
+ * - `homeIndustryCards` drives the 6 homepage sector cards, each linking directly to its
+ *   corresponding published Industry Playbook in src/data/guide-batches/industries.ts.
+ */
 import type { GuideCategory } from "@/data/guides";
 
 export type SiteImage = {
@@ -175,6 +186,12 @@ const detailSecuritySa: SiteImage = {
   alt: "Two South African specialists reviewing printed website checklists and a laptop dashboard in a bright meeting room.",
 };
 
+// Homepage "A South African studio" band (replace with a dedicated image when one is generated).
+export const homeTeamImage: SiteImage = {
+  ...aboutStudioImage,
+  alt: "South African professionals smiling together around laptops in a bright, modern office.",
+};
+
 // Page heroes: each image is used only as its own page's hero (never reused as a card).
 export const homeHeroImage: SiteImage = {
   src: "/images/site/hero-home.webp",
@@ -183,13 +200,7 @@ export const homeHeroImage: SiteImage = {
 
 const heroServicesImage: SiteImage = {
   src: "/images/site/hero-services.webp",
-  alt: "Three South African digital specialists laughing and high-fiving at a standing desk in a Cape Town studio with Table Mountain behind them.",
-};
-
-// Homepage "A South African studio" band (replace with a dedicated image when one is generated).
-export const homeTeamImage: SiteImage = {
-  ...aboutStudioImage,
-  alt: "A diverse South African digital team smiling together around laptops in a bright studio.",
+  alt: "Three South African professionals laughing and high-fiving at a standing desk with Table Mountain visible through the window.",
 };
 
 const heroWebDevelopmentImage: SiteImage = {
@@ -482,49 +493,42 @@ export const homeProcessImages: SiteImage[] = [
 export const homeIndustryCards: Array<{
   sector: string;
   title: string;
-  summary: string;
   href: string;
   image: SiteImage;
 }> = [
   {
     sector: "Medical & Clinics",
     title: "Trustworthy booking paths for patients",
-    summary: "Fast mobile pages, practitioner profiles and clear WhatsApp or form bookings.",
     href: "/guides/medical-practice-website-seo-south-africa/",
     image: industryMedicalImage,
   },
   {
     sector: "Construction & Engineering",
     title: "Credible project proof for tender buyers",
-    summary: "Structured service capabilities, safety compliance pages and direct quote requests.",
     href: "/guides/construction-company-website-seo-south-africa/",
     image: industryConstructionImage,
   },
   {
     sector: "Logistics & Fleet",
-    title: "Clear service corridors and quote intake",
-    summary: "Built to convert B2B freight enquiries quickly while keeping route pages indexed.",
+    title: "Clear delivery routes and easy quote requests",
     href: "/guides/logistics-company-website-seo-south-africa/",
     image: industryLogisticsImage,
   },
   {
     sector: "Property & Real Estate",
     title: "High-speed listings and local search reach",
-    summary: "Lightweight image handling and suburb search architecture that ranks across regions.",
     href: "/guides/real-estate-website-seo-south-africa/",
     image: industryRealEstateImage,
   },
   {
     sector: "Trades & Field Services",
-    title: "Instant call & WhatsApp conversion on site",
-    summary: "Designed for urgent mobile searches with clean service-area pages and fast tap targets.",
+    title: "More calls and WhatsApp messages from your site",
     href: "/guides/trades-plumber-solar-website-seo-south-africa/",
     image: industryPlumberImage,
   },
   {
     sector: "Salons & Wellness",
     title: "Effortless mobile menus and repeat bookings",
-    summary: "Visual treatment pages, transparent pricing in rand and protected booking integrations.",
     href: "/guides/salon-aesthetics-booking-website-seo-south-africa/",
     image: industrySalonImage,
   },

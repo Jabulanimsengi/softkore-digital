@@ -76,3 +76,11 @@ If an urgent server hotfix is ever needed, copy it only as a temporary measure, 
 ```bash
 sudo systemctl restart softkore-contact-api
 ```
+
+## Articles, Industry Playbooks & SEO Notes
+
+- **Where guides live:** `src/data/guide-batches/core.ts`, `websites.ts`, `seo.ts`, `security.ts`, and `industries.ts`, aggregated in `src/data/guides.ts` across four pillars (`Website Design & Development`, `SEO Services`, `Website & Cyber Security`, `Industry Playbooks`).
+- **Scheduled weekly publishing:** inspect live vs queued guides with `npm run guides:schedule`, promote the next due entry with `npm run publish:guide` (which updates `deploy/page-plan.json` automatically), then run `npm run predeploy`, deploy, and run `npm run submit:indexnow`.
+- **Search-intent & no-doorway rule:** publish new vertical articles as deep Industry Playbooks under `/guides/<slug>/` rather than reopening retired `/industries/*` doorway URLs; never link to `status: "scheduled"` articles from published pages (`validate:export` enforces `deploy/page-plan.json` `keep`).
+- **FAQ & linking standards:** pillar pages (`/` and `/services/*`), Industry Playbooks, and top commercial guides target `12` unique, answer-first FAQs (`40–75` words) with zero duplicate questions across pages. Root-relative `[anchor](/path/)` links are supported by `RichText` in body prose and FAQ `answer` strings (never inside FAQ `question` strings).
+- **Image & build checks:** keep every `/images/...` path defined once in `src/lib/site-images.ts` and validate with `npx tsc --noEmit`, `npm run audit:images`, and `npm run predeploy` before pushing.

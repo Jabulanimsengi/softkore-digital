@@ -3,77 +3,150 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
-import { UiIcon, type UiIconName } from "@/components/UiIcon";
+import { useEffect, useRef, useState } from "react";
+import { site } from "@/lib/site";
+import "./header.css";
 
-const serviceNavItems: Array<{
-  label: string;
-  description: string;
-  href: string;
-  icon: UiIconName;
-}> = [
-  {
-    label: "Website Design & Development",
-    description: "Fast, mobile-first sites built to convert and rank.",
-    href: "/services/web-development/",
-    icon: "globe",
-  },
-  {
-    label: "SEO Services",
-    description: "Technical audits, indexing fixes & search growth.",
-    href: "/services/seo-services/",
-    icon: "search",
-  },
-  {
-    label: "Website & Cyber Security",
-    description: "Hardening, WAF protection, malware removal & monitoring.",
-    href: "/services/website-security/",
-    icon: "shield",
-  },
+/*
+ * Site navbar — "Navy over hero" (option B).
+ * - On pages that open with a photo hero it sits transparently over the photo.
+ * - Once you scroll past the hero it turns solid navy.
+ * - Scrolling down hides it; scrolling up brings it straight back.
+ * - Services opens a navy dropdown (hover, click or keyboard); phones get a slide-in panel.
+ */
+
+const serviceNavItems = [
+  { label: "Website design & development", description: "Fast websites that bring enquiries", href: "/services/web-development/" },
+  { label: "SEO services", description: "Get found on Google", href: "/services/seo-services/" },
+  { label: "Website & cyber security", description: "Protection and hack clean-ups", href: "/services/website-security/" },
+  { label: "Free SEO audit", description: "No cost, no obligation", href: "/contact/?service=free-seo-audit#contact-form" },
 ];
 
+const HERO_SELECTOR = ".hx-hero, .page-people-hero, .article-hero";
+
 export function Header() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
   const pathname = usePathname();
+  const headerRef = useRef<HTMLElement>(null);
+  const servicesRef = useRef<HTMLLIElement>(null);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const [overlay, setOverlay] = useState(true);
+  const [solid, setSolid] = useState(false);
+  const [hidden, setHidden] = useState(false);
+
+  // Publish the header's height so heroes and full-screen sections can account for it.
+  useEffect(() => {
+    const header = headerRef.current;
+    if (!header) return;
+    const update = () =>
+      document.documentElement.style.setProperty("--site-header-h", `${Math.round(header.getBoundingClientRect().height)}px`);
+    update();
+    const observer = new ResizeObserver(update);
+    observer.observe(header);
+    return () => observer.disconnect();
+  }, []);
+
+  // Decide per page whether the bar sits over a photo hero, then track scrolling.
+  useEffect(() => {
+    setMenuOpen(false);
+    setServicesOpen(false);
+    setHidden(false);
+
+    const main = document.querySelector("body > main");
+    // First block in normal flow (skips floating bits such as the guide reading-progress bar).
+    const first =
+      Array.from(main?.children ?? []).find((el) => {
+        const position = window.getComputedStyle(el).position;
+        return position !== "fixed" && position !== "absolute" && (el as HTMLElement).offsetHeight > 0;
+      }) ?? null;
+    const hero = first && first.matches(HERO_SELECTOR) ? (first as HTMLElement) : null;
+    const hasOverlay = Boolean(hero);
+    setOverlay(hasOverlay);
+    document.documentElement.classList.toggle("has-overlay-hero", hasOverlay);
+
+    let lastY = window.scrollY;
+    let ticking = false;
+
+    function update() {
+      ticking = false;
+      const y = window.scrollY;
+      const headerH = headerRef.current?.offsetHeight ?? 80;
+      // Transparent only at the very top; solid as soon as the visitor starts scrolling, so hero
+      // content never shows through the bar.
+      const isSolid = !hero || y > 40;
+      setSolid(isSolid);
+
+      const hideFrom = hero ? hero.offsetHeight : headerH * 3;
+      const delta = y - lastY;
+      if (Math.abs(delta) > 4) {
+        // Only hide once the visitor is past the hero and scrolling down.
+        setHidden(delta > 0 && y > hideFrom);
+        lastY = y;
+      }
+    }
+
+    function onScroll() {
+      if (!ticking) {
+        ticking = true;
+        window.requestAnimationFrame(update);
+      }
+    }
+
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    };
+  }, [pathname]);
+
+  // Lock page scrolling while the phone menu is open; Escape closes menus.
+  useEffect(() => {
+    document.body.classList.toggle("menu-open", menuOpen);
+    return () => document.body.classList.remove("menu-open");
+  }, [menuOpen]);
+
+  useEffect(() => {
+    function onKey(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        setMenuOpen(false);
+        setServicesOpen(false);
+      }
+    }
+    function onPointer(event: PointerEvent) {
+      if (servicesRef.current && !servicesRef.current.contains(event.target as Node)) setServicesOpen(false);
+    }
+    window.addEventListener("keydown", onKey);
+    window.addEventListener("pointerdown", onPointer);
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      window.removeEventListener("pointerdown", onPointer);
+    };
+  }, []);
 
   function isActive(href: string) {
-    if (href === "/") {
-      return pathname === "/";
-    }
+    if (href === "/") return pathname === "/";
     return pathname === href || pathname.startsWith(href);
   }
 
-  useEffect(() => {
-    setIsOpen(false);
-    setServicesOpen(false);
-  }, [pathname]);
-
-  useEffect(() => {
-    document.body.classList.toggle("menu-open", isOpen);
-    return () => document.body.classList.remove("menu-open");
-  }, [isOpen]);
-
-  useEffect(() => {
-    if (!isOpen) return;
-    function onKey(event: KeyboardEvent) {
-      if (event.key === "Escape") setIsOpen(false);
-    }
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [isOpen]);
-
-  function close() {
-    setIsOpen(false);
+  function closeAll() {
+    setMenuOpen(false);
     setServicesOpen(false);
   }
 
+  const stateClasses = [
+    "nb",
+    overlay && !solid ? "is-transparent" : "is-solid",
+    hidden && !menuOpen && !servicesOpen ? "is-hidden" : "",
+    menuOpen ? "is-open" : "",
+  ].filter(Boolean).join(" ");
+
   return (
-    <>
-      <header className={`site-header ${isOpen ? "is-open" : ""}`} data-header>
-        <Link prefetch={false} className="brand" href="/" aria-label="SoftKore Digital home">
+    <header ref={headerRef} className={stateClasses}>
+      <div className="nb-bar">
+        <Link prefetch={false} className="nb-logo" href="/" aria-label="SoftKore Digital home" onClick={closeAll}>
           <Image
-            className="brand-logo"
             src="/images/logo/softkore-digital-logo-trimmed.png"
             alt="SoftKore Digital"
             width={362}
@@ -82,169 +155,93 @@ export function Header() {
           />
         </Link>
 
-        <nav className="site-nav" data-nav>
-          <Link
-            prefetch={false}
-            href="/"
-            className={isActive("/") ? "is-active" : undefined}
-            aria-current={isActive("/") ? "page" : undefined}
-          >
-            Home
-          </Link>
-
-          <Link
-            prefetch={false}
-            href="/about/"
-            className={isActive("/about/") ? "is-active" : undefined}
-            aria-current={isActive("/about/") ? "page" : undefined}
-          >
-            About
-          </Link>
-
-          <div className="nav-item nav-item-services">
-            <Link
-              prefetch={false}
-              href="/services/"
-              className={isActive("/services/") ? "is-active" : undefined}
-              aria-current={pathname === "/services/" ? "page" : undefined}
+        <nav className="nb-nav" aria-label="Main">
+          <ul>
+            <li>
+              <Link prefetch={false} href="/" className={isActive("/") ? "is-active" : undefined} aria-current={isActive("/") ? "page" : undefined}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link prefetch={false} href="/about/" className={isActive("/about/") ? "is-active" : undefined} aria-current={isActive("/about/") ? "page" : undefined}>
+                About
+              </Link>
+            </li>
+            <li
+              ref={servicesRef}
+              className={`nb-has-menu${servicesOpen ? " is-open" : ""}`}
+              onMouseEnter={() => setServicesOpen(true)}
+              onMouseLeave={() => setServicesOpen(false)}
             >
-              Services
-              <svg className="nav-chevron" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                <path d="m4 6 4 4 4-4" />
-              </svg>
-            </Link>
-            <div className="service-menu" aria-label="Service pages">
-              {serviceNavItems.map((item) => (
-                <Link
-                  prefetch={false}
-                  key={item.href}
-                  href={item.href}
-                  className={`service-menu-card${isActive(item.href) ? " is-active" : ""}`}
-                >
-                  <span className="service-menu-icon"><UiIcon name={item.icon} /></span>
-                  <span className="service-menu-copy">
-                    <strong>{item.label}</strong>
-                    <span>{item.description}</span>
-                  </span>
-                </Link>
-              ))}
-              <Link
-                prefetch={false}
-                href="/contact/?service=free-seo-audit#contact-form"
-                className="service-menu-card service-menu-card-featured"
+              <button
+                type="button"
+                className={isActive("/services/") ? "is-active" : undefined}
+                aria-expanded={servicesOpen}
+                aria-controls="nb-services"
+                onClick={() => setServicesOpen((open) => !open)}
               >
-                <span className="service-menu-icon">
-                  <UiIcon name="search" />
-                </span>
-                <span className="service-menu-copy">
-                  <strong>Free SEO Audit</strong>
-                  <span>Request a free review of your Google indexing, rankings &amp; technical SEO.</span>
-                </span>
+                Services
+                <svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" strokeWidth="1.6" /></svg>
+              </button>
+              <div className="nb-drop" id="nb-services">
+                {serviceNavItems.map((item) => (
+                  <Link prefetch={false} key={item.href} href={item.href} onClick={closeAll}>
+                    <span>
+                      <strong>{item.label}</strong>
+                      <small>{item.description}</small>
+                    </span>
+                    <i aria-hidden="true">→</i>
+                  </Link>
+                ))}
+                <Link prefetch={false} href="/services/" className="nb-drop-all" onClick={closeAll}>
+                  <span><strong>All services</strong></span>
+                  <i aria-hidden="true">→</i>
+                </Link>
+              </div>
+            </li>
+            <li>
+              <Link prefetch={false} href="/contact/" className={isActive("/contact/") ? "is-active" : undefined} aria-current={isActive("/contact/") ? "page" : undefined}>
+                Contact
               </Link>
-              <Link prefetch={false} href="/services/" className="service-menu-all">
-                Explore all services <UiIcon name="arrow" />
-              </Link>
-            </div>
-          </div>
-
-          <Link
-            prefetch={false}
-            href="/contact/"
-            className={isActive("/contact/") ? "is-active" : undefined}
-            aria-current={isActive("/contact/") ? "page" : undefined}
-          >
-            Contact
-          </Link>
+            </li>
+          </ul>
         </nav>
 
-        <Link prefetch={false} className="nav-cta" href="/contact/">
-          Start a Project
+        <Link prefetch={false} className="nb-cta" href="/contact/">
+          Start a project
         </Link>
 
         <button
-          className="menu-toggle"
+          className="nb-burger"
           type="button"
-          aria-label={isOpen ? "Close menu" : "Open menu"}
-          aria-expanded={isOpen}
-          aria-controls="mobile-menu"
-          onClick={() => setIsOpen((current) => !current)}
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
+          aria-controls="nb-panel"
+          onClick={() => setMenuOpen((open) => !open)}
         >
-          <span />
-          <span />
-          <span />
+          <i />
         </button>
-      </header>
-
-      <div className={`mobile-menu ${isOpen ? "is-open" : ""}`} id="mobile-menu" role="dialog" aria-modal="true" aria-hidden={!isOpen} inert={!isOpen}>
-        <div className="mobile-menu-panel">
-          <nav className="mobile-menu-nav" aria-label="Mobile">
-            <Link
-              prefetch={false}
-              href="/"
-              className={`mobile-menu-link ${isActive("/") ? "is-active" : ""}`}
-              onClick={close}
-            >
-              Home
-            </Link>
-
-            <Link
-              prefetch={false}
-              href="/about/"
-              className={`mobile-menu-link ${isActive("/about/") ? "is-active" : ""}`}
-              onClick={close}
-            >
-              About
-            </Link>
-
-            <button
-              className={`mobile-menu-services-toggle ${servicesOpen ? "is-open" : ""}`}
-              type="button"
-              aria-expanded={servicesOpen}
-              onClick={() => setServicesOpen((current) => !current)}
-            >
-              Services
-              <span className="mobile-menu-services-icon" aria-hidden="true" />
-            </button>
-
-            <div className={`mobile-menu-services-list ${servicesOpen ? "is-open" : ""}`} inert={!servicesOpen}>
-              <div className="mobile-menu-services-list-inner">
-                {serviceNavItems.map((item) => (
-                  <Link prefetch={false} key={item.href} href={item.href} className="mobile-menu-sublink" onClick={close}>
-                    {item.label}
-                  </Link>
-                ))}
-                <Link
-                  prefetch={false}
-                  href="/contact/?service=free-seo-audit#contact-form"
-                  className="mobile-menu-sublink mobile-menu-sublink-featured"
-                  onClick={close}
-                >
-                  Free SEO Audit →
-                </Link>
-                <Link prefetch={false} href="/services/" className="mobile-menu-sublink mobile-menu-sublink-all" onClick={close}>
-                  Explore all services →
-                </Link>
-              </div>
-            </div>
-
-            <Link
-              prefetch={false}
-              href="/contact/"
-              className={`mobile-menu-link ${isActive("/contact/") ? "is-active" : ""}`}
-              onClick={close}
-            >
-              Contact
-            </Link>
-          </nav>
-
-          <div className="mobile-menu-footer">
-            <Link prefetch={false} className="mobile-menu-cta" href="/contact/" onClick={close}>
-              Start a Project →
-            </Link>
-            <a className="mobile-menu-email" href="mailto:info@softkoredigital.co.za">info@softkoredigital.co.za</a>
-          </div>
-        </div>
       </div>
-    </>
+
+      <div className="nb-backdrop" aria-hidden="true" onClick={closeAll} />
+
+      <nav className="nb-panel" id="nb-panel" aria-label="Mobile" aria-hidden={!menuOpen} inert={!menuOpen}>
+        <Link prefetch={false} href="/" className={isActive("/") ? "is-active" : undefined} onClick={closeAll}>Home</Link>
+        <Link prefetch={false} href="/about/" className={isActive("/about/") ? "is-active" : undefined} onClick={closeAll}>About</Link>
+        <Link prefetch={false} href="/services/" className={pathname === "/services/" ? "is-active" : undefined} onClick={closeAll}>Services</Link>
+        <div className="nb-panel-sub">
+          {serviceNavItems.slice(0, 3).map((item) => (
+            <Link prefetch={false} key={item.href} href={item.href} className={isActive(item.href) ? "is-active" : undefined} onClick={closeAll}>
+              {item.label}
+            </Link>
+          ))}
+        </div>
+        <Link prefetch={false} href="/contact/" className={isActive("/contact/") ? "is-active" : undefined} onClick={closeAll}>Contact</Link>
+        <Link prefetch={false} href="/contact/?service=free-seo-audit#contact-form" className="nb-panel-cta" onClick={closeAll}>
+          Get my free SEO audit
+        </Link>
+        <a className="nb-panel-email" href={`mailto:${site.email}`}>{site.email}</a>
+      </nav>
+    </header>
   );
 }

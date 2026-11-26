@@ -17,7 +17,7 @@ export const projectTypes: ProjectType[] = [
     title: "Website rebuilds that protect search traffic",
     problemHeadline: "Outdated websites that lose enquiries",
     problemSummary:
-      "Slow load times, broken mobile layouts, and unclear service pages cost you leads every day. We rebuild your site for speed and conversions while protecting your existing Google rankings with clean redirects.",
+      "Slow, outdated pages cost you enquiries every day.",
     ctaLabel: "Explore web development",
     category: "Website Development",
     problem:
@@ -25,7 +25,7 @@ export const projectTypes: ProjectType[] = [
     approach:
       "We record existing URLs and search performance, keep the pages that earn traffic, redirect the rest to the closest replacement, and check everything again on the live site.",
     deliverable:
-      "A faster, mobile-first website with clear service pages, a tested redirect map, security headers and tracking in place from launch.",
+      "A faster website that works well on phones, with clear service pages, every old link still working, security switched on and visitor tracking ready from day one.",
     image: "/images/softkore-case-web.webp",
     imageAlt: "A responsive business website displayed on a laptop and phone.",
     href: "/services/web-development/",
@@ -34,15 +34,15 @@ export const projectTypes: ProjectType[] = [
     title: "SEO audits and indexing recovery",
     problemHeadline: "Websites invisible on Google search",
     problemSummary:
-      "Pages stuck out of Google's index, technical crawl errors, and weak service copy keep qualified buyers from finding you. We audit Search Console, fix indexing blockers, and strengthen the pages that drive enquiries.",
+      "If Google can't show your pages, customers can't find you.",
     ctaLabel: "Explore SEO services",
     category: "Search & SEO",
     problem:
-      "A website gets little traffic from Google, or Search Console shows that many of its pages are not being indexed.",
+      "A website gets few visitors from Google, or Google's own report (Search Console) shows that many of its pages are not appearing in search.",
     approach:
-      "We crawl every page, review the Search Console data, and work out whether the problem is technical, content quality or authority before recommending any changes.",
+      "We scan every page, read your Google Search Console report and work out whether the problem is technical, the wording on your pages, or how much Google trusts your site, before we recommend anything.",
     deliverable:
-      "A prioritised fix list, improved or merged pages, a cleaner sitemap and monthly reporting in plain language.",
+      "A fix list in order of importance, stronger or combined pages, a tidier page list for Google and a plain-language monthly report.",
     image: "/images/softkore-case-growth.webp",
     imageAlt: "A search performance dashboard on a laptop.",
     href: "/services/seo-services/",
@@ -51,15 +51,15 @@ export const projectTypes: ProjectType[] = [
     title: "Website security hardening and hack recovery",
     problemHeadline: "Hacked, vulnerable, or unmonitored sites",
     problemSummary:
-      "Malware, spam redirects, outdated plugins, and missing backups put client trust and uptime at risk. We clean compromised sites, harden servers and headers, configure WAF protection, and keep automated backups running.",
+      "Hacks, spam and missing backups put your business at risk.",
     ctaLabel: "Explore website security",
     category: "Cyber Security",
     problem:
-      "A business website has been compromised by malware or spam redirects, or runs on outdated software with weak access controls and no tested recovery plan.",
+      "A business website has been hacked, is sending visitors to spam sites, or runs on outdated software with weak passwords and no tested way to restore it.",
     approach:
-      "We audit the site and hosting environment, clean malicious code, patch vulnerabilities, enforce strong authentication and firewall rules, and set up off-site backups.",
+      "We check the website and its hosting, remove harmful code, close security gaps, switch on strong logins and a firewall, and set up backups stored somewhere safe.",
     deliverable:
-      "A cleaned, hardened website with SSL and security headers, firewall protection, verified backups and ongoing security monitoring.",
+      "A clean, locked-down website with the padlock (HTTPS) on, a firewall, tested backups and ongoing security checks.",
     image: "/images/softkore-case-systems.webp",
     imageAlt: "A website security monitoring and protection dashboard displayed on a laptop.",
     href: "/services/website-security/",

@@ -1,0 +1,148 @@
+/* Privacy policy page. Square, readable single column. */
+
+.privacy-page {
+  --pp-navy: #08111f;
+  --pp-emerald-dark: #047857;
+  --pp-muted: #3d4a5c;
+  --pp-line: #dfe6e3;
+  background: #ffffff;
+  color: var(--pp-navy);
+}
+
+.privacy-head,
+.privacy-body {
+  width: min(820px, 100% - 40px);
+  margin-inline: auto;
+}
+
+.privacy-head {
+  display: grid;
+  gap: 16px;
+  padding: clamp(48px, 7vw, 88px) 0 clamp(28px, 4vw, 40px);
+  border-bottom: 1px solid var(--pp-line);
+}
+
+.privacy-breadcrumb {
+  color: #64748b;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.privacy-breadcrumb a {
+  color: var(--pp-muted);
+}
+
+.privacy-cap {
+  margin: 0;
+  color: var(--pp-emerald-dark);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.privacy-head h1 {
+  margin: 0;
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.privacy-head p {
+  margin: 0;
+  color: var(--pp-muted);
+  line-height: 1.7;
+}
+
+.privacy-head .privacy-updated {
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.privacy-body {
+  display: grid;
+  gap: 36px;
+  padding: clamp(36px, 5vw, 56px) 0 clamp(64px, 8vw, 96px);
+}
+
+.privacy-body h2 {
+  margin: 0 0 12px;
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.privacy-body p,
+.privacy-body li {
+  color: var(--pp-muted);
+  line-height: 1.75;
+}
+
+.privacy-body p {
+  margin: 0 0 12px;
+}
+
+.privacy-body ul {
+  display: grid;
+  gap: 8px;
+  margin: 0 0 12px;
+  padding-left: 20px;
+}
+
+.privacy-body strong {
+  color: var(--pp-navy);
+}
+
+.privacy-body a {
+  color: var(--pp-emerald-dark);
+  font-weight: 700;
+  text-underline-offset: 3px;
+}
+
+.privacy-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 16px 0 0;
+  border: 1px solid var(--pp-line);
+}
+
+.privacy-facts > div {
+  display: grid;
+  gap: 6px;
+  padding: 16px 18px;
+}
+
+.privacy-facts > div + div {
+  border-left: 1px solid var(--pp-line);
+}
+
+.privacy-facts dt {
+  color: var(--pp-emerald-dark);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.privacy-facts dd {
+  margin: 0;
+  color: var(--pp-navy);
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .privacy-facts {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .privacy-facts > div + div {
+    border-left: 0;
+    border-top: 1px solid var(--pp-line);
+  }
+}

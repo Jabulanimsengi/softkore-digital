@@ -1,6 +1,6 @@
 # SoftKore Digital: Focused SEO & Security Cleanup
 
-Status: **built and validated locally. Ready to merge/commit, push to GitHub, and deploy to production.**
+Status: **deployed and updated (`54` kept routes as of 2026-11-21).** After completing the initial 13-page cleanup and adding single-hop 301 redirects for legacy doorway URLs, the site deliberately expanded with `39` deep guides (`core.ts`, `websites.ts`, `seo.ts`, `security.ts`) plus `6` published Industry Playbooks (`industries.ts`, linked from the homepage) and `4` weekly `scheduled` Industry Playbooks queued via `tools/publish-next-guide.mjs`—keeping all retired `/industries/*`, `/ai-agents/*`, and city/suburb URLs on strict single-hop 301 redirects.
 Historical URL record: [seo-page-plan.csv](seo-page-plan.csv) (all 793 legacy sitemap URLs).
 
 ## Diagnosis & Goal

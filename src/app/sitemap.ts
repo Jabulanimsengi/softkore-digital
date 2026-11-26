@@ -35,6 +35,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.82,
     },
     {
+      url: `${site.domain}/privacy-policy/`,
+      lastModified: new Date("2026-11-26"),
+      priority: 0.3,
+    },
+    {
       url: `${site.domain}/guides/`,
       lastModified,
       priority: 0.74,

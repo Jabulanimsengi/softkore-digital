@@ -1,0 +1,222 @@
+/* Site footer ("sf"): navy, square, professional. Used by Footer.tsx on every page. */
+
+.sf {
+  --sf-navy: #08111f;
+  --sf-line: rgba(255, 255, 255, 0.12);
+  --sf-text: #c8dbd4;
+  --sf-muted: #8fa3b4;
+  --sf-mint: #a7f3d0;
+  background: var(--sf-navy);
+  color: var(--sf-text);
+  font-size: 0.92rem;
+}
+
+.sf *,
+.sf *::before,
+.sf *::after {
+  border-radius: 0;
+}
+
+.sf-wrap {
+  width: min(1240px, 100% - 48px);
+  margin-inline: auto;
+}
+
+.sf-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) repeat(3, minmax(0, 1fr));
+  gap: 40px 36px;
+  padding: clamp(56px, 7vw, 84px) 0 clamp(40px, 5vw, 56px);
+}
+
+.sf h2 {
+  margin: 0 0 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--sf-line);
+  color: #ffffff;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.sf ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sf a {
+  color: var(--sf-text);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.sf a:hover,
+.sf a:focus-visible {
+  color: var(--sf-mint);
+}
+
+.sf a:focus-visible {
+  outline: 2px solid var(--sf-mint);
+  outline-offset: 3px;
+}
+
+/* Brand column */
+.sf-brand {
+  display: grid;
+  align-content: start;
+  gap: 20px;
+}
+
+.sf-logo-link {
+  justify-self: start;
+}
+
+.sf-logo {
+  display: block;
+  width: 168px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+.sf-about {
+  max-width: 34ch;
+  margin: 0;
+  line-height: 1.65;
+}
+
+.sf-contact {
+  display: grid;
+  gap: 10px;
+}
+
+.sf-contact a,
+.sf-contact span {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.45;
+}
+
+.sf-contact a {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.sf-contact svg {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  color: var(--sf-mint);
+}
+
+/* Link columns */
+.sf-col ul {
+  display: grid;
+  gap: 11px;
+}
+
+.sf-col a {
+  line-height: 1.4;
+}
+
+/* Bottom bar */
+.sf-bottom {
+  border-top: 1px solid var(--sf-line);
+  background: #050b15;
+}
+
+.sf-bottom-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 32px;
+  padding: 20px 0;
+  color: var(--sf-muted);
+  font-size: 0.8rem;
+}
+
+.sf-bottom-inner p {
+  margin: 0;
+}
+
+.sf-bottom nav {
+  display: flex;
+  gap: 24px;
+}
+
+.sf-bottom a {
+  color: var(--sf-text);
+  font-weight: 700;
+}
+
+.sf-fineprint {
+  display: grid;
+  gap: 4px;
+}
+
+.sf-fineprint p:first-child {
+  color: var(--sf-text);
+  font-size: 0.74rem;
+  letter-spacing: 0.02em;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .sf-main {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sf-brand {
+    grid-column: span 3;
+  }
+
+  .sf-brand {
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: start;
+    column-gap: 40px;
+  }
+
+  .sf-brand .sf-contact {
+    grid-column: 2;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .sf-wrap {
+    width: calc(100% - 32px);
+  }
+
+  .sf-main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 36px 24px;
+  }
+
+  .sf-brand {
+    grid-column: 1 / -1;
+  }
+
+  .sf-brand {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .sf-brand .sf-contact {
+    grid-column: auto;
+  }
+
+  .sf-col:last-of-type {
+    grid-column: 1 / -1;
+  }
+
+
+  .sf-bottom-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    /* Leave room so the floating WhatsApp button doesn't cover the legal links */
+    padding-bottom: 96px;
+  }
+}

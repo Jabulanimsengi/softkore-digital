@@ -14,49 +14,44 @@ import { breadcrumbSchema, faqSchema, JsonLd } from "@/lib/schema";
 
 export const metadata: Metadata = pageMetadata(
   "Website, SEO & Cyber Security Guides SA | SoftKore Digital",
-  "Practical South African guides and industry playbooks on website & SEO prices, Google indexing fixes, hacked site recovery, POPIA compliance and vertical SEO.",
+  "Practical South African guides on website and SEO prices, getting your pages onto Google, recovering a hacked site, POPIA and what works in your industry.",
   "/guides/",
   pageHeroImages.guides.src,
 );
 
 const pillarGroups: Array<{
   id: string;
-  category: GuideCategory;
-  eyebrow: string;
+  category: GuideCategory;
   heading: string;
   summary: string;
 }> = [
   {
     id: "websites",
-    category: "Website Design & Development",
-    eyebrow: "Pillar 01",
+    category: "Website Design & Development",
     heading: "Website Design & Development",
     summary:
-      "Pricing brackets, ecommerce platforms, payment gateways, domain choices, hosting and conversion-focused page structure.",
+      "What websites cost, online store options, payment providers, choosing a domain and hosting, and pages that turn visitors into enquiries.",
   },
   {
     id: "seo",
-    category: "SEO Services",
-    eyebrow: "Pillar 02",
+    category: "SEO Services",
     heading: "SEO Services & Google Visibility",
     summary:
-      "Fixing indexing blockers, Search Console workflows, local vs national strategy, copywriting, speed and realistic SEO budgets.",
+      "Getting your pages onto Google, using Google Search Console, local vs national SEO, writing pages that rank, speed and realistic SEO budgets.",
   },
   {
     id: "security",
-    category: "Website & Cyber Security",
-    eyebrow: "Pillar 03",
+    category: "Website & Cyber Security",
     heading: "Website & Cyber Security",
     summary:
-      "Hacked site clean-ups, Safe Browsing recovery, SPF/DKIM/DMARC, SSL, firewalls, POPIA checks and domain protection.",
+      "Cleaning up a hacked site, removing Google's security warnings, stopping fake emails in your name, the padlock, firewalls, POPIA and protecting your domain.",
   },
   {
     id: "industries",
-    category: "Industry Playbooks",
-    eyebrow: "Pillar 04",
+    category: "Industry Playbooks",
     heading: "Industry Playbooks",
     summary:
-      "Search-intent website architecture, local & national SEO strategies, ZAR budgets and security safeguards tailored to South African sectors.",
+      "The pages your customers look for, local and national SEO, budgets in rand and the security each South African industry needs.",
   },
 ];
 
@@ -64,32 +59,32 @@ const guidesFaqs = [
   {
     question: "Who are SoftKore Digital's website, SEO and industry guides written for?",
     answer:
-      "They are written for South African business owners, practice managers and marketing teams comparing quotes in rand, diagnosing Google indexing drops or securing websites under POPIA.",
+      "They are written for South African business owners, practice managers and marketing teams. That includes anyone comparing website quotes in rand, trying to work out why their pages have dropped out of Google, or making sure their website protects customer information under POPIA.",
   },
   {
     question: "How realistic are the ZAR website and SEO price ranges in these guides?",
     answer:
-      "Every budget table reflects active South African supplier scoping across brochure builds, service websites, ecommerce stores and monthly maintenance—see our [website prices guide](/guides/website-prices-south-africa/) and [SEO prices guide](/guides/seo-prices-south-africa/).",
+      "They are typical South African price ranges for simple company websites, service websites, online stores and monthly maintenance, based on how projects like these are usually scoped. Your own quote depends on your needs. See our [website prices guide](/guides/website-prices-south-africa/) and [SEO prices guide](/guides/seo-prices-south-africa/).",
   },
   {
     question: "Can our internal developer or agency follow your technical checklists?",
     answer:
-      "Yes. All checklists—from [technical SEO](/guides/technical-seo-checklist/) and [HTTP security headers](/guides/http-security-headers-explained/) to industry playbooks—are written so internal developers or existing agencies can verify and ship every step.",
+      "Yes. Every checklist, from [technical SEO](/guides/technical-seo-checklist/) and [browser security settings (HTTP security headers)](/guides/http-security-headers-explained/) to our industry playbooks, is written step by step, so your own developer or current agency can check each item and put it in place without needing us.",
   },
   {
     question: "When should we request a Free SEO Audit instead of fixing issues ourselves?",
     answer:
-      "Request a [free SEO audit](/contact/?service=free-seo-audit#contact-form) if Search Console shows rising unindexed URLs, sudden post-redesign traffic drops or suspect site security so you pinpoint the real root cause first.",
+      "Request a [free SEO audit](/contact/?service=free-seo-audit#contact-form) if Google Search Console shows more and more of your pages left out of Google, your traffic dropped suddenly after a redesign, or you suspect a security problem. The audit finds the real cause first, so you don't spend money fixing the wrong thing.",
   },
   {
     question: "How often are SoftKore guides and industry playbooks updated?",
     answer:
-      "We update existing guides whenever South African payment gateways, Google indexing policies, POPIA guidance or security threat patterns change, and expand our industry playbook library regularly.",
+      "We update our guides whenever something important changes, such as South African payment providers, how Google decides which pages to show, POPIA guidance or the way hackers are attacking websites. Each guide shows the date it was last updated, and we add new industry playbooks regularly.",
   },
   {
     question: "Can you write a guide or audit plan for a specific South African industry?",
     answer:
-      "Yes. Share your industry and website URL on our [contact form](/contact/) and we will prepare sector-specific recommendations covering conversion structure, search intent keywords and security.",
+      "Yes. Send us your industry and website address through our [contact form](/contact/) and we will prepare recommendations for your type of business: which pages turn visitors into enquiries, what your customers actually search for, and the security your site needs.",
   },
 ];
 
@@ -100,8 +95,7 @@ export default function GuidesPage() {
       <JsonLd data={faqSchema(guidesFaqs)} />
       <main>
         <PagePeopleHero
-          breadcrumbs={[{ label: "Home", href: "/" }, { label: "Guides" }]}
-          kicker="South African guides"
+          breadcrumbs={[{ label: "Home", href: "/" }, { label: "Guides" }]}
           title="Website, SEO and security guides for South African businesses."
           lead="Plain-language answers on what websites cost, why sites do not rank on Google and how to protect your website against attacks."
           image={pageHeroImages.guides}
@@ -111,7 +105,7 @@ export default function GuidesPage() {
           ]}
           highlights={[
             "Website & SEO pricing ranges (ZAR)",
-            "Google indexing & ranking fixes",
+            "Getting found on Google",
             "Hacked site recovery & security",
             "POPIA & redesign checklists",
           ]}
@@ -140,7 +134,7 @@ export default function GuidesPage() {
               style={{ paddingTop: "clamp(48px, 6vw, 84px)" }}
             >
               <div style={{ marginBottom: "28px" }}>
-                <p className="stitch-kicker">{group.eyebrow}</p>
+
                 <h2
                   style={{
                     margin: "0 0 8px",
@@ -200,9 +194,9 @@ export default function GuidesPage() {
 
         <section className="section page-faq-section" aria-label="Guides frequently asked questions">
           <div className="page-faq-head">
-            <p className="stitch-kicker">About these guides</p>
+
             <h2>Questions about using our South African playbooks.</h2>
-            <p>How to apply these checklists, pricing guides and sector strategies to your own business website.</p>
+            <p>How to use these checklists, price guides and industry playbooks on your own business website.</p>
           </div>
           <FaqList items={guidesFaqs} />
         </section>

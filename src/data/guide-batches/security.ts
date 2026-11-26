@@ -1,3 +1,15 @@
+/**
+ * Website & Cyber Security Guides (10 published).
+ *
+ * FAQ status:
+ * - All 10 guides currently carry 5 FAQs (expand highest-intent ones like
+ *   spf-dkim-dmarc-guide-south-africa, remove-google-deceptive-site-ahead-warning,
+ *   and why-wordpress-websites-get-hacked-south-africa to 12 FAQs when revising).
+ *
+ * Editorial notes: keep FAQ answers answer-first (40–75 words), put [anchor](/path/)
+ * links in answers/prose only (never in questions), avoid cross-page duplicate
+ * questions, and bump `updated` (YYYY-MM-DD) whenever revising a guide.
+ */
 import type { GuidePage } from "./types";
 
 export const securityGuides: GuidePage[] = [

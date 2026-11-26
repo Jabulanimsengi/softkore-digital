@@ -1,3 +1,12 @@
+/**
+ * Editorial & SEO conventions for GuidePage entries:
+ * - metaTitle: <= 60 characters; description: 140–160 characters; priority: ~0.72–0.78.
+ * - updated (YYYY-MM-DD): drives sitemap.xml <lastmod>, so bump whenever an article changes.
+ * - RichText inline formatting: **bold**, *italic*, `code`, and root-relative [anchor](/path/)
+ *   links work in intro, takeaways, section prose/lists/tables/callouts, and faqs[].answer.
+ * - Never put markdown links inside faqs[].question (renders inside <summary>).
+ * - Do not put `= [` inside comments in guide-batch files (publish-next-guide.mjs scans for `= [`).
+ */
 export type GuideCategory =
   | "Website Design & Development"
   | "SEO Services"

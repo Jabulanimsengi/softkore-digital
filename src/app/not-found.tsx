@@ -4,7 +4,7 @@ export default function NotFound() {
   return (
     <main className="simple-page">
       <section className="section simple-not-found">
-        <p className="simple-label">404 / Page not found</p>
+
         <h1>Wrong turn.<br />Easy fix.</h1>
         <p>The page has moved or no longer exists. Try our homepage or browse our services.</p>
         <div className="simple-actions">

@@ -1,3 +1,31 @@
+/**
+ * Industry Playbooks (Pillar 04) — deep South African sector guides under /guides/<slug>/.
+ * Never reopen retired /industries/* or /ai-agents/* doorway URLs (they 301-redirect in Nginx).
+ *
+ * Playbook blueprint:
+ * - Target 3 search-intent layers: commercial investigation + SA compliance/pain points
+ *   (e.g. HPCSA, LPC, CIDB/NHBRC, SAICA/SAIPA, Property24, POPIA) + all 3 SoftKore pillars.
+ * - Include ZAR pricing/scope table, practical checklists/callouts, and 12 unique
+ *   answer-first FAQs (40–75 words, inline [anchor](/path/) links in answers only).
+ *
+ * Currently published (6 — linked directly from homepage homeIndustryCards):
+ *   medical-practice-website-seo-south-africa
+ *   construction-company-website-seo-south-africa
+ *   logistics-company-website-seo-south-africa
+ *   real-estate-website-seo-south-africa
+ *   trades-plumber-solar-website-seo-south-africa
+ *   salon-aesthetics-booking-website-seo-south-africa
+ *
+ * Scheduled weekly queue (4 — DO NOT link to these from live pages until published):
+ *   2026-11-28: law-firm-website-seo-south-africa
+ *   2026-12-05: accounting-firm-website-seo-south-africa
+ *   2026-12-12: ecommerce-store-seo-conversion-south-africa
+ *   2026-12-19: dental-practice-website-seo-south-africa
+ *
+ * Wave 2 candidates (not yet drafted):
+ *   Hospitality & Guest Houses, Private Schools & Training, Manufacturing & B2B Suppliers,
+ *   Private Security & Guarding Companies.
+ */
 import type { GuidePage } from "./types";
 
 export const industryGuides: GuidePage[] = [

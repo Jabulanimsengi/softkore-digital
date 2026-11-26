@@ -1,0 +1,101 @@
+/* Square call-to-action box: uppercase, tracked label. Used by SquareButton.tsx. */
+
+.sq-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 0 28px;
+  border: 1px solid transparent;
+  border-radius: 0;
+  font-size: 0.74rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 0.16em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.sq-btn-sm {
+  min-height: 40px;
+  padding: 0 18px;
+  font-size: 0.68rem;
+}
+
+.sq-btn:focus-visible {
+  outline: 3px solid #059669;
+  outline-offset: 3px;
+}
+
+/* White box: on photos and dark panels */
+.sq-btn-white {
+  background: #ffffff;
+  color: #08111f;
+}
+
+.sq-btn-white:hover,
+.sq-btn-white:focus-visible,
+a:hover > .sq-btn-white {
+  background: #08111f;
+  color: #ffffff;
+}
+
+/* Ghost box: translucent dark with a light outline, on photos */
+.sq-btn-ghost {
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(8, 17, 31, 0.45);
+  color: #ffffff;
+}
+
+.sq-btn-ghost:hover,
+.sq-btn-ghost:focus-visible {
+  border-color: #059669;
+  background: #059669;
+  color: #ffffff;
+}
+
+/* Navy box: on light surfaces */
+.sq-btn-navy {
+  background: #08111f;
+  color: #ffffff;
+}
+
+.sq-btn-navy:hover,
+.sq-btn-navy:focus-visible,
+a:hover > .sq-btn-navy {
+  background: #047857;
+  color: #ffffff;
+}
+
+/* Line box: outlined navy, on light surfaces */
+.sq-btn-line {
+  border-color: #08111f;
+  background: transparent;
+  color: #08111f;
+}
+
+.sq-btn-line:hover,
+.sq-btn-line:focus-visible {
+  background: #08111f;
+  color: #ffffff;
+}
+
+/* Emerald box: the main conversion action */
+.sq-btn-emerald {
+  background: #059669;
+  color: #ffffff;
+}
+
+.sq-btn-emerald:hover,
+.sq-btn-emerald:focus-visible {
+  background: #047857;
+  color: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sq-btn {
+    transition: none;
+  }
+}

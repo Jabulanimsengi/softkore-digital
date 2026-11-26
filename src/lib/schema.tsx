@@ -1,5 +1,5 @@
 import { stripInlineMarkdown } from "@/components/RichText";
-import { site } from "@/lib/site";
+import { company, site } from "@/lib/site";
 
 type JsonLdProps = {
   data: unknown;
@@ -19,6 +19,13 @@ export function organizationSchema() {
     "@context": "https://schema.org",
     "@type": ["Organization", "ProfessionalService"],
     name: site.name,
+    legalName: company.legalName,
+    identifier: {
+      "@type": "PropertyValue",
+      propertyID: "CIPC company registration number",
+      value: company.registrationNumber,
+    },
+    foundingDate: company.registrationDate,
     url: `${site.domain}/`,
     description: site.description,
     email: site.email,
@@ -27,10 +34,11 @@ export function organizationSchema() {
     priceRange: "ZAR",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "111 Commissioner Street",
-      addressLocality: "Johannesburg",
-      postalCode: "2001",
-      addressCountry: "ZA",
+      streetAddress: company.address.street,
+      addressLocality: company.address.locality,
+      addressRegion: company.address.region,
+      postalCode: company.address.postalCode,
+      addressCountry: company.address.country,
     },
     areaServed: { "@type": "Country", name: "South Africa" },
   };

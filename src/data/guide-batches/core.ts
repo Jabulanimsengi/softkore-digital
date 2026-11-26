@@ -1,3 +1,19 @@
+/**
+ * Core Pillar Guides (9 published).
+ *
+ * FAQ status:
+ * - 12 search-intent FAQs (upgraded 2026-11-21):
+ *   website-prices-south-africa, why-your-website-is-not-ranking,
+ *   hacked-website-recovery-south-africa, fix-crawled-currently-not-indexed,
+ *   seo-prices-south-africa
+ * - 5 FAQs (candidates for future 12-FAQ expansion):
+ *   technical-seo-checklist, website-security-checklist,
+ *   popia-website-compliance-checklist, website-redesign-seo-checklist
+ *
+ * Editorial notes: open FAQ answers directly (40–75 words), keep [anchor](/path/)
+ * links in answers/prose only (never in questions), avoid duplicating questions across
+ * pages, and bump `updated` (YYYY-MM-DD) when editing a guide.
+ */
 import type { GuidePage } from "./types";
 
 export const coreGuides: GuidePage[] = [

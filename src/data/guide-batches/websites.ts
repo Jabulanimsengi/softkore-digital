@@ -1,3 +1,19 @@
+/**
+ * Website Design & Development Guides (10 published).
+ *
+ * FAQ status:
+ * - 12 search-intent FAQs (upgraded 2026-11-21):
+ *   ecommerce-website-cost-south-africa, how-to-choose-web-design-company-south-africa
+ * - 5 FAQs (candidates for future 12-FAQ expansion):
+ *   payfast-vs-yoco-vs-ozow-south-africa, wordpress-vs-custom-website-south-africa,
+ *   how-long-to-build-a-website-south-africa, website-maintenance-cost-south-africa,
+ *   co-za-vs-com-domain-south-africa, mobile-first-website-design-south-africa,
+ *   what-makes-a-service-page-convert, website-hosting-guide-south-africa
+ *
+ * Editorial notes: keep FAQ answers answer-first (40–75 words), put [anchor](/path/)
+ * links in answers/prose only (never in questions), avoid cross-page duplicate
+ * questions, and bump `updated` (YYYY-MM-DD) whenever revising a guide.
+ */
 import type { GuidePage } from "./types";
 
 export const websiteGuides: GuidePage[] = [

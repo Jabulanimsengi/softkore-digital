@@ -24,7 +24,7 @@ export function Testimonials() {
       <div className="section">
         <div className="tm-head">
           <div>
-            <p className="tm-eyebrow">Client feedback</p>
+
             <h2>Trusted to move businesses forward.</h2>
           </div>
         </div>

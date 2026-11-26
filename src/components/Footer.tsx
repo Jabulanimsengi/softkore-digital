@@ -1,26 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
-import { guides } from "@/data/guides";
-import { site } from "@/lib/site";
+import { UiIcon } from "@/components/UiIcon";
+import { company, companyAddressLine, site } from "@/lib/site";
+import "./footer.css";
 
-const footerGroups = [
+const whatsappHref = `https://wa.me/${site.phone.replace(/\D/g, "")}?text=Hi%20SoftKore%20Digital%2C%20I%27d%20like%20to%20discuss%20a%20project.`;
+
+const footerColumns = [
   {
     title: "Services",
     links: [
       { label: "Website design & development", href: "/services/web-development/" },
       { label: "SEO services", href: "/services/seo-services/" },
-      { label: "Free SEO audit", href: "/contact/?service=free-seo-audit#contact-form" },
       { label: "Website & cyber security", href: "/services/website-security/" },
+      { label: "Free SEO audit", href: "/contact/?service=free-seo-audit#contact-form" },
       { label: "All services", href: "/services/" },
-    ],
-  },
-  {
-    title: "Guides",
-    links: [
-      { label: "All guides", href: "/guides/" },
-      { label: "Website guides", href: "/guides/#websites" },
-      { label: "SEO guides", href: "/guides/#seo" },
-      { label: "Security guides", href: "/guides/#security" },
     ],
   },
   {
@@ -28,100 +22,86 @@ const footerGroups = [
     links: [
       { label: "About us", href: "/about/" },
       { label: "How we work", href: "/work/" },
+      { label: "Guides", href: "/guides/" },
       { label: "Contact", href: "/contact/" },
+      { label: "Privacy policy", href: "/privacy-policy/" },
+    ],
+  },
+  {
+    title: "Popular guides",
+    links: [
+      { label: "Website prices in South Africa", href: "/guides/website-prices-south-africa/" },
+      { label: "SEO prices in South Africa", href: "/guides/seo-prices-south-africa/" },
+      { label: "Fix pages Google won't show", href: "/guides/fix-crawled-currently-not-indexed/" },
+      { label: "Hacked website recovery", href: "/guides/hacked-website-recovery-south-africa/" },
+      { label: "POPIA website checklist", href: "/guides/popia-website-compliance-checklist/" },
     ],
   },
 ];
 
-const featuredArticles = [
-  {
-    topic: "Websites",
-    title: "Website Prices in South Africa",
-    href: "/guides/website-prices-south-africa/",
-  },
-  {
-    topic: "Websites",
-    title: "Ecommerce Website Cost in South Africa",
-    href: "/guides/ecommerce-website-cost-south-africa/",
-  },
-  {
-    topic: "SEO",
-    title: "SEO Prices in South Africa",
-    href: "/guides/seo-prices-south-africa/",
-  },
-  {
-    topic: "SEO",
-    title: "Fix 'Crawled - Currently Not Indexed'",
-    href: "/guides/fix-crawled-currently-not-indexed/",
-  },
-  {
-    topic: "Security",
-    title: "Hacked Website Recovery Guide (SA)",
-    href: "/guides/hacked-website-recovery-south-africa/",
-  },
-  {
-    topic: "Security",
-    title: "POPIA Website Compliance Checklist",
-    href: "/guides/popia-website-compliance-checklist/",
-  },
-];
-
 export function Footer() {
+  const year = new Date().getFullYear();
+
   return (
-    <footer className="site-footer">
-      <div className="footer-brand">
-        <Link prefetch={false} href="/" aria-label="SoftKore Digital home">
-          <Image
-            className="footer-logo"
-            src="/images/logo/softkore-digital-logo-trimmed.png"
-            alt="SoftKore Digital"
-            width={362}
-            height={136}
-          />
-        </Link>
-        <p>
-          Website design &amp; development, SEO services, and website &amp; cyber
-          security for businesses across South Africa.
-        </p>
-      </div>
-
-      {footerGroups.map((group) => (
-        <nav className="footer-links" aria-label={group.title} key={group.title}>
-          <strong>{group.title}</strong>
-          {group.links.map((item) => (
-            <Link prefetch={false} href={item.href} key={item.href}>{item.label}</Link>
-          ))}
-        </nav>
-      ))}
-
-      <div className="footer-contact">
-        <strong>Connect</strong>
-        <a href={`mailto:${site.email}`}>{site.email}</a>
-        <a href={`tel:${site.phone}`}>{site.phoneDisplay}</a>
-        <Link prefetch={false} href="/contact/?service=free-seo-audit#contact-form">Free SEO Audit →</Link>
-        <Link prefetch={false} href="/contact/">Start a Project →</Link>
-      </div>
-
-      <section className="footer-articles" aria-label="Featured articles">
-        <div className="footer-articles-head">
-          <strong>Articles</strong>
-          <Link prefetch={false} className="footer-articles-all" href="/guides/">
-            Browse all {guides.length} articles →
+    <footer className="sf">
+      <div className="sf-wrap sf-main">
+        <div className="sf-brand">
+          <Link prefetch={false} href="/" aria-label="SoftKore Digital home" className="sf-logo-link">
+            <Image
+              className="sf-logo"
+              src="/images/logo/softkore-digital-logo-trimmed.png"
+              alt="SoftKore Digital"
+              width={362}
+              height={136}
+            />
           </Link>
+          <p className="sf-about">
+            Fast websites, SEO and website security for South African businesses. Based in Johannesburg, working
+            remotely in all nine provinces.
+          </p>
+          <ul className="sf-contact">
+            <li>
+              <a href={`mailto:${site.email}`}><UiIcon name="mail" />{site.email}</a>
+            </li>
+            <li>
+              <a href={`tel:${site.phone}`}><UiIcon name="phone" />{site.phoneDisplay}</a>
+            </li>
+            <li>
+              <a href={whatsappHref} target="_blank" rel="noopener noreferrer"><UiIcon name="phone" />WhatsApp us</a>
+            </li>
+            <li>
+              <span><UiIcon name="map" />{companyAddressLine}</span>
+            </li>
+          </ul>
         </div>
-        <div className="footer-articles-grid">
-          {featuredArticles.map((article) => (
-            <Link prefetch={false} className="footer-article-link" href={article.href} key={article.href}>
-              <span>{article.topic}</span>
-              <strong>{article.title}</strong>
-            </Link>
-          ))}
-        </div>
-      </section>
 
-      <div className="footer-legal">
-        <span>© {new Date().getFullYear()} SoftKore Digital. All rights reserved.</span>
-        <span>Serving all nine provinces of South Africa</span>
+        {footerColumns.map((column) => (
+          <nav className="sf-col" aria-label={column.title} key={column.title}>
+            <h2>{column.title}</h2>
+            <ul>
+              {column.links.map((link) => (
+                <li key={link.href}>
+                  <Link prefetch={false} href={link.href}>{link.label}</Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        ))}
+      </div>
+
+      <div className="sf-bottom">
+        <div className="sf-wrap sf-bottom-inner">
+          <div className="sf-fineprint">
+            <p>
+              {company.legalName} T/A {company.tradingName} · Reg. No. {company.registrationNumber}
+            </p>
+            <p>© {year} {company.tradingName}. All rights reserved.</p>
+          </div>
+          <nav aria-label="Legal">
+            <Link prefetch={false} href="/privacy-policy/">Privacy policy (POPIA)</Link>
+            <Link prefetch={false} href="/contact/">Contact</Link>
+          </nav>
+        </div>
       </div>
     </footer>
   );

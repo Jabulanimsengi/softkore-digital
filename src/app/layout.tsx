@@ -7,6 +7,7 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { Analytics } from "@/components/Analytics";
 import { RouteLoadingSpinner } from "@/components/RouteLoadingSpinner";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
+import { BackToTop } from "@/components/BackToTop";
 import { site } from "@/lib/site";
 import "./globals.css";
 import "./design-system.css";
@@ -60,6 +61,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Marquee />
         <Footer />
         <WhatsAppFloat />
+        <BackToTop />
         <ScrollReveal />
         <Analytics />
       </body>

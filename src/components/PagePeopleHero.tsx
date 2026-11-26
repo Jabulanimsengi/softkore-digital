@@ -11,7 +11,6 @@ type HeroAction = {
 
 type PagePeopleHeroProps = {
   breadcrumbs: Array<{ label: string; href?: string }>;
-  kicker: string;
   title: string;
   lead: string;
   image: PageHeroImageEntry;
@@ -21,7 +20,6 @@ type PagePeopleHeroProps = {
 
 export function PagePeopleHero({
   breadcrumbs,
-  kicker,
   title,
   lead,
   image,
@@ -58,8 +56,6 @@ export function PagePeopleHero({
               </span>
             ))}
           </nav>
-
-          <p className="page-people-hero-kicker">{kicker}</p>
           <h1>{title}</h1>
           <p className="page-people-hero-lead">{lead}</p>
 

@@ -34,17 +34,14 @@ const revealSelectors = [
   ".contact-heading > *",
   ".contact-layout > *",
   ".contact-lower > *",
-  ".hx-head",
-  ".hx-statement-row",
+  ".hx-title > *",
   ".hx-standards > div",
-  ".hx-problem-card",
-  ".hx-service",
+  ".hx-tile",
+  ".hx-problem",
   ".hx-steps > li",
-  ".hx-industry",
-  ".hx-team-content > *",
+  ".hx-team-copy > *",
   ".hx-guide",
-  ".hx-faq-head",
-  ".hx-closing-layout > *",
+  ".hx-closing-copy > *",
 ].join(",");
 
 export function ScrollReveal() {
@@ -53,6 +50,19 @@ export function ScrollReveal() {
   useEffect(() => {
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     const targets = Array.from(document.querySelectorAll(revealSelectors));
+
+    // Every content section animates: any section without its own reveal targets gets its
+    // content blocks revealed automatically (page heroes are excluded; they animate on load).
+    const heroes = ".hx-hero, .page-people-hero, .article-hero, .page-hero";
+    document.querySelectorAll("main section").forEach((section) => {
+      if (section.closest(heroes)) return;
+      if (targets.some((t) => section.contains(t) || t.contains(section))) return;
+      let blocks = Array.from(section.children);
+      while (blocks.length === 1 && blocks[0].children.length > 1) blocks = Array.from(blocks[0].children);
+      blocks.forEach((block) => {
+        if (!targets.includes(block)) targets.push(block);
+      });
+    });
 
     if (reduceMotion.matches) {
       targets.forEach((target) => target.classList.add("is-visible"));
@@ -81,7 +91,7 @@ export function ScrollReveal() {
           }
         });
       },
-      { rootMargin: "0px 0px -12% 0px", threshold: 0.12 },
+      { rootMargin: "0px 0px -10% 0px", threshold: 0 },
     );
 
     targets.forEach((target) => observer.observe(target));
