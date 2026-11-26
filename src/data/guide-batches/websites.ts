@@ -25,81 +25,81 @@ export const websiteGuides: GuidePage[] = [
     title: "Ecommerce Website Cost in South Africa: Shopify vs WooCommerce vs Custom Builds",
     metaTitle: "Ecommerce Website Cost South Africa (2026) | SoftKore",
     description:
-      "How much does an ecommerce website cost in South Africa? Compare Shopify, WooCommerce and custom ZAR build budgets, gateway fees and courier integration.",
+      "How much does an ecommerce website cost in South Africa? Compare Shopify, WooCommerce and custom build budgets in rand, payment fees and courier setup.",
     intro:
-      "A reliable South African online store typically costs R25,000 to R45,000 for a focused starter catalogue and R45,000 to R150,000+ for established retail brands or custom B2B portals. Your total spend splits between once-off store engineering and ongoing monthly licences, gateway transaction fees and local courier subscriptions.",
+      "A reliable South African online store usually costs R25,000 to R45,000 for a starter catalogue and R45,000 to R150,000+ for established retail brands or custom trade portals. You pay once to build the store, then budget monthly for software plans, card fees and couriers.",
     summary: [
       "Indicative ZAR build tiers",
       "Shopify vs WooCommerce",
-      "When custom ecommerce makes sense",
+      "When custom online stores make sense",
       "Payment & courier costs to budget",
     ],
     takeaways: [
-      "Expect R25,000–R45,000 for a clean starter store (under 50 products) and R45,000–R150,000+ for multi-category or integrated retail.",
-      "Shopify trades predictable hosting and security for USD monthly subscriptions plus paid third-party app fees.",
-      "WooCommerce avoids per-order SaaS cuts in rand, yet demands active plugin patching, clean VPS hosting and skimmer defence.",
-      "Custom headless or Next.js stores pay back when B2B account pricing, speed at scale or ERP stock syncing drives volume.",
-      "Budget ongoing margins separately for gateway fees (~2%–3.5% cards, lower on Instant EFT), Bob Go/courier subscriptions and photography.",
+      "Expect R25,000–R45,000 for a starter online store (under 50 products) and R45,000–R150,000+ for multi-category or custom-linked retail.",
+      "Shopify gives you reliable hosting and built-in security in exchange for monthly US dollar plans and paid add-on apps.",
+      "WooCommerce avoids dollar per-order platform fees, yet needs regular software updates, dedicated local hosting and card-skimmer protection.",
+      "Custom Next.js stores pay off when wholesale account pricing, high phone speeds or live warehouse stock links drive sales.",
+      "Budget ongoing costs separately for payment fees (~2%–3.5% on cards, less on Instant EFT), Bob Go or courier plans and product photos.",
     ],
     sections: [
       {
         title: "Typical ecommerce build and platform budgets in South Africa (ZAR)",
         body: [
-          "Launching a profitable online store in South Africa demands far more than loading product photos onto a shopping cart. Local shoppers expect smooth mobile payment options (PayFast, Yoco, Ozow or Capitec Pay), accurate main-centre vs outlying courier pricing, clean VAT invoicing and reliable stock updates.",
-          "Separate once-off setup investment from ongoing monthly platform overhead early so USD exchange-rate swings or app fees never ambush tighter retail margins six months post-launch.",
+          "Launching a profitable online store in South Africa takes far more than adding product photos to a cart. Local shoppers expect easy phone payment choices (PayFast, Yoco, Ozow or Capitec Pay), accurate city versus outlying courier rates, proper VAT invoices and reliable stock counts.",
+          "Separate your once-off build cost from monthly running expenses early so dollar exchange-rate swings or app fees never catch your margins off guard six months after launch.",
         ],
         table: {
-          caption: "Comparing ecommerce platforms and ZAR budgets in South Africa",
+          caption: "Comparing online store platforms and rand budgets in South Africa",
           headers: ["Platform route", "Once-off build range", "Ongoing software cost", "Best suited for"],
           rows: [
             [
               "Starter Shopify Store",
               "R25,000 – R50,000",
               "USD monthly plan + paid apps",
-              "Retailers prioritising fast launch, zero server maintenance and standard courier apps",
+              "Retailers who want a fast launch, zero server upkeep and standard courier apps",
             ],
             [
               "WordPress + WooCommerce",
               "R30,000 – R85,000",
-              "Managed SA VPS + licence renewals",
-              "Content-heavy catalogues, custom shipping rules or quote-and-buy hybrids",
+              "Managed SA hosting + licence renewals",
+              "Content-heavy catalogues, custom shipping rules or quote-and-buy stores",
             ],
             [
               "Mid-Market Brand Store",
               "R55,000 – R115,000",
-              "Managed infrastructure + gateway/courier fees",
-              "100+ SKUs, accounting sync (Xero/Sage), variant filters and brand-led UX",
+              "Managed hosting + payment & courier fees",
+              "100+ products, Xero or Sage syncing, product filters and custom design",
             ],
             [
-              "Custom Next.js / Headless",
+              "Custom Next.js Store",
               "R90,000 – R180,000+",
-              "Cloud hosting + engineered API support",
-              "High-speed DTC brands or B2B trade portals with account tiers & warehouse APIs",
+              "Cloud hosting + custom link support",
+              "High-speed direct-to-consumer brands or B2B trade portals with account pricing",
             ],
           ],
         },
         callout: {
           tone: "note",
-          heading: "Separate build capital from transaction margin early",
-          text: "Lower-margin retail categories often underestimate how quickly Shopify USD base plans plus foreign-card FX charges and four paid USD apps squeeze profit on sub-R400 average orders.",
+          heading: "Separate build capital from monthly transaction margins early",
+          text: "Lower-margin retail categories often underestimate how quickly Shopify US dollar plans, foreign-card conversion fees and four paid dollar apps eat into profit on orders under R400.",
         },
       },
       {
         title: "Shopify in South Africa: stability vs USD recurring costs",
         body: [
-          "Shopify remains a preferred starting option because server uptime during Black Friday surges, PCI compliance, automatic software patches and built-in SSL happen behind the scenes automatically. Official integrations handle PayFast, Yoco, Ozow, Payflex, The Courier Guy and Bob Go reliably out of the box.",
+          "Shopify is a popular starting choice because server stability during Black Friday sales, card-security rules, automatic software updates and an active HTTPS security certificate run in the background without extra setup. Official apps connect PayFast, Yoco, Ozow, Payflex, The Courier Guy and Bob Go reliably.",
         ],
         subsections: [
           {
             heading: "Where Shopify saves operational stress",
             body: [
-              "Small retail teams skip debugging PHP memory exhaustion, plugin update clashes or broken WordPress checkouts before payday sales. Stock counts, refund workflows, order labels and retail POS connections operate inside one streamlined dashboard.",
+              "Small retail teams avoid fixing server memory errors, clashing WordPress plugins or broken checkouts right before payday promotions. Stock counts, refunds, courier labels and in-store card terminal links sit inside one straightforward dashboard.",
             ],
           },
           {
             heading: "Watch app creep and dollar exchange exposure",
             body: [
-              "Base Shopify tiers intentionally restrict advanced wholesale tier pricing, bundle logic, wishlist sync or detailed VAT invoice formatting—prompting stores to install three to six USD-billed add-on apps. Factor total monthly USD fees cleanly into your rand budget upfront.",
+              "Base Shopify plans leave out features such as wholesale price tiers, product bundles, wishlists or detailed South African VAT invoice layouts. Most growing stores end up adding three to six dollar-billed apps, so factor those total monthly dollar fees into your rand budget upfront.",
             ],
           },
         ],
@@ -107,63 +107,63 @@ export const websiteGuides: GuidePage[] = [
       {
         title: "WooCommerce: total customisation with real security duties",
         body: [
-          "WooCommerce dominates South African B2B and specialist catalogues because you pay zero percentage cut to a foreign SaaS vendor and hold total freedom over custom checkout fields, request-a-quote hybrids, tiered trade discounts and multi-warehouse South African courier logic.",
-          "That flexibility requires operational discipline: bargain shared cPanel plans bog down fast once faceted product filters query thousands of SKU variations, and neglected WooCommerce plugins invite automated JavaScript card skimmers unless active security care stays live.",
+          "WooCommerce is widely used for South African wholesale and specialist online stores because you pay zero percentage cut to an overseas software vendor and have full control over checkout fields, request-a-quote workflows, trade discounts and multi-warehouse courier rules.",
+          "That freedom demands steady upkeep. Bargain shared hosting plans slow down fast once product filters search thousands of product options, and neglected WordPress plugins invite automated card-skimming scripts unless active security protection stays in place.",
         ],
         bullets: [
-          "Run WooCommerce exclusively on isolated managed WordPress or SA VPS servers—never crowded R80 shared cPanel.",
-          "Limit plugins strictly to reputable, licensed vendors updated cleanly behind staging verification.",
-          "Protect `/wp-admin/` behind app-based MFA, Cloudflare WAF rules and encrypted daily off-site SQL snapshots.",
-          "Keep order transaction histories clean under POPIA Section 19 access controls and restricted employee permissions.",
+          "Run WooCommerce on isolated managed WordPress or dedicated South African server hosting, never crowded R80 shared cPanel plans.",
+          "Limit plugins to reputable, licensed vendors and test updates on a private preview site before updating the live shop.",
+          "Lock down `/wp-admin/` with two-step login verification (MFA), a website firewall that blocks attacks before they reach your site, and encrypted daily off-site database backups.",
+          "Keep customer order records secure under POPIA Section 19 rules with tight staff access permissions.",
         ],
       },
       {
         title: "When custom Next.js or headless ecommerce is worth the investment",
         body: [
-          "Bespoke Next.js storefronts make clear commercial sense once rigid templates directly hold back conversion or warehouse efficiency. Real examples include B2B trade portals logging buyers into account-specific contract pricing, custom dimension/area material calculators or ultra-fast mobile storefronts serving 5,000+ SKUs across congested mobile data networks.",
-          "Pairing a pre-rendered React/Next.js frontend with hardened payment APIs and strict server-side webhooks delivers lightning Core Web Vitals while cleanly separating customer database access from public edge pages.",
+          "Custom Next.js online stores make clear business sense once rigid templates directly hold back sales or warehouse efficiency. Good examples include business-to-business trade portals where buyers log in for contract pricing, custom size or area calculators, or ultra-fast phone storefronts serving 5,000+ products across patchy mobile networks.",
+          "Pairing pre-built Next.js pages with locked-down payment connections and verified server-side confirmations delivers strong results on Google's speed and stability tests while keeping customer database access separate from public pages.",
         ],
         callout: {
           tone: "tip",
-          heading: "Launch focused, then fund custom ERP sync with real order volume",
-          text: "Do not sink R140,000 into bespoke warehouse integration before proving customers convert online smoothly. Ship a disciplined core storefront first, watch analytics drop-offs and invest in automation once order volume warrants engineering.",
+          heading: "Launch focused, then fund custom stock links with real order volume",
+          text: "Do not spend R140,000 on bespoke warehouse syncing before proving customers will buy from you online. Launch a focused store first, watch where shoppers drop off, and invest in custom automation once order volume pays for it.",
         },
       },
       {
         title: "Ongoing ecommerce expenses people miss in launch budgets",
         body: [
-          "Even neatly scoped ecommerce proposals commonly exclude essential launch operations required before collecting real rand safely across South Africa:",
+          "Even well-written store proposals often leave out essential running items you need before taking real rand safely in South Africa:",
         ],
         numbered: [
-          "Payment gateway transaction fees: typically ~2.0% to 3.5% (+ VAT/per-item charge) for local cards, often lower on Ozow or Capitec Pay Instant EFT.",
-          "Courier aggregation & dispatch tools: Bob Go / uAfrica / The Courier Guy integrations, packaging cartons and thermal label hardware.",
-          "Authenticated transactional email infrastructure: SPF, DKIM and DMARC records properly verified so customer order receipts never drop into Gmail spam.",
-          "Clean SKU spreadsheets, consistent product photography (cropped cleanly for fast mobile WebP weights) and transparent CPA return/refund policy drafting.",
-          "Monthly technical maintenance: gateway API testing, stock audits, seasonal landing promos and off-site SQL restore verification.",
+          "Payment gateway fees: roughly 2.0% to 3.5% (plus VAT or a small per-order fee) for local cards, and usually lower on Ozow or Capitec Pay Instant EFT.",
+          "Courier tools and packing supplies: Bob Go, uAfrica or The Courier Guy plugins, boxes and thermal shipping label printers.",
+          "Properly authenticated order emails: email sender security records (SPF, DKIM and DMARC) set up in your domain settings so customer receipts do not land in Gmail spam.",
+          "Clean product spreadsheets, consistent compressed WebP photos that load quickly on phones, and clear Consumer Protection Act return and refund terms.",
+          "Monthly technical care: live checkout tests, stock audits, seasonal promo updates and tested off-site database restores.",
         ],
         callout: {
           tone: "warning",
-          heading: "Never skip Consumer Protection Act refund & POPIA checkout clarity",
-          text: "South African payment gateways reject merchant underwriting straight away unless live HTTPS URLs show genuine SA contact details, clear shipping windows, transparent CPA return/refund terms and an accurate POPIA privacy notice.",
+          heading: "Never skip Consumer Protection Act refund and POPIA checkout clarity",
+          text: "South African payment providers turn down merchant applications straight away unless your live HTTPS site displays real South African contact details, delivery times, Consumer Protection Act return terms and a clear POPIA privacy policy.",
         },
       },
       {
         title: "Decision framework: matching your store budget safely",
         body: [
-          "Before locking quotes, write down your active SKU count, net margin per parcel, whether trade clients require bulk account pricing, and who updates stock daily inside the business.",
+          "Before asking for quotes, write down your active product count, profit margin per parcel, whether trade clients need bulk account pricing, and who will update stock inside your team each day.",
         ],
         bullets: [
-          "Under 40 products, standard retail margin, no developer on staff -> Lean Shopify or disciplined WooCommerce.",
-          "Custom provincial courier tiers, hybrid quote/buy B2B workflows or predictable ZAR costs -> Managed WooCommerce + Cloudflare WAF.",
-          "Contract account pricing, heavy SKU filtering or custom stock/ERP integrations -> Custom Next.js architecture.",
+          "Under 40 products, standard retail margin, no developer on staff -> Simple Shopify or lean WooCommerce.",
+          "Custom provincial courier tiers, quote-and-buy trade workflows or predictable rand costs -> Managed WooCommerce with a website firewall.",
+          "Contract account pricing, heavy product filtering or custom stock-system links -> Custom Next.js online store.",
         ],
       },
     ],
     midCta: {
       heading: "Planning an online store or replacing a sluggish WooCommerce build?",
-      text: "Share your SKU count, payment gateways and courier workflow—we advise honestly on Shopify, WooCommerce or custom Next.js scope in ZAR.",
+      text: "Share your product count, payment gateways and courier setup. We give honest advice on Shopify, WooCommerce or custom Next.js costs in rand.",
       href: "/services/web-development/",
-      label: "Plan Your Online Store",
+      label: "Plan your online store",
     },
     related: [
       { label: "Website design & development", href: "/services/web-development/" },
@@ -175,67 +175,67 @@ export const websiteGuides: GuidePage[] = [
       {
         question: "What is the cheapest safe way to start selling online in South Africa?",
         answer:
-          "Launch a lean, curated catalogue under 30 SKUs using clean mobile design, PayFast or Yoco + Instant EFT, clear Courier Guy flat regional rates and clean compressed photos—keeping scoped build investment disciplined around R25,000–R35,000.",
+          "Start with a focused shop under 30 products using a clean phone layout, PayFast or Yoco plus Instant EFT, simple Courier Guy flat regional delivery rates, and small compressed product photos. Keeping the first version tight holds your build budget around R25,000 to R35,000 while letting you test real buyer demand safely.",
       },
       {
         question: "Which payment methods should every South African store offer?",
         answer:
-          "Offer BOTH Visa/Mastercard debit and credit cards PLUS Instant EFT (Ozow, Capitec Pay or PayFast EFT). Many local shoppers carry cheque accounts without international card limits enabled, making Instant EFT vital for conversions.",
+          "Offer both Visa and Mastercard debit or credit cards and Instant EFT through PayFast, Yoco, Ozow, or Capitec Pay. Many South African shoppers use cheque accounts with online card spending switched off or capped, so missing Instant EFT means losing paid orders right at the final checkout step on phones and laptops.",
       },
       {
         question: "Does an ecommerce website cost more to keep secure than a brochure site?",
         answer:
-          "Yes—handling orders, delivery addresses and checkout redirects demands strict HTTPS/HSTS, daily off-site SQL backups, tight admin MFA and ongoing WAF coverage.",
+          "Yes, because an online store handles customer addresses, orders, and live payment handoffs every day. Protecting that setup takes an active HTTPS security certificate, daily off-site backups stored away from your main server, two-step login verification for staff, regular software updates, and a website firewall that blocks automated card-skimming attacks.",
       },
       {
         question: "Can SoftKore migrate an existing store without losing Google product rankings?",
         answer:
-          "Yes. We map every existing product and category slug beforehand, preserve strong URLs wherever feasible and engineer single-hop 301 redirect rules so Search Console authority stays untouched.",
+          "Yes. Before changing anything, we list every product and category page already showing on Google. We keep your best-performing web addresses wherever possible, and set up direct redirects that send any old links straight to their matching new pages so your search traffic and Google visibility stay intact across launch.",
       },
       {
         question: "Do I still need Xero or Sage sync right on day one?",
         answer:
-          "Not always for early stores handling 5 to 15 daily orders—clean CSV exports work neatly initially until volume makes automated invoice sync worth the extra integration cost.",
+          "No, most new online stores handling 5 to 15 orders a day do not need live accounting integration on launch day. Clean spreadsheet exports from your shop dashboard work well at the start, letting you save budget and add automated Xero or Sage invoice syncing once higher order numbers justify it.",
       },
       {
         question: "What monthly platform and transaction fees apply to South African online stores?",
         answer:
-          "Beyond hosting or Shopify subscriptions, budget roughly 2.0% to 3.5% per card transaction plus small EFT fees across PayFast, Yoco or Ozow, alongside monthly backup and security upkeep.",
+          "Alongside monthly hosting or your Shopify subscription, budget roughly 2.0% to 3.5% per card sale plus smaller fees on Instant EFT payments across PayFast, Yoco, or Ozow. You should also allow for monthly courier tool plans, paid WordPress plugin renewals if used, off-site backups, regular security upkeep and email delivery tools.",
       },
       {
         question: "Is WooCommerce actually cheaper than Shopify once security and plugins are added?",
         answer:
-          "Upfront licensing looks lower on WooCommerce, yet paid shipping, payment and security plugins plus active patching retainers frequently bring three-year total cost close to Shopify or lean custom Next.js builds.",
+          "WooCommerce has no monthly platform fee in dollars, which makes it look cheaper at first. Once you add paid courier and payment add-ons, proper local server hosting, a website firewall, and monthly update checks, the three-year cost often ends up close to Shopify or a custom online store built for speed.",
       },
       {
         question: "How much does adding The Courier Guy or Bob Go automated shipping cost?",
         answer:
-          "Configuring standard weight-bracket or plugin-based courier rates sits cleanly inside mid-tier store builds (R35,000–R70,000), while custom multi-warehouse or hazardous-freight rules add engineering scope.",
+          "Adding standard weight-based rates or an official Bob Go or The Courier Guy plugin fits inside a normal mid-tier store budget of R35,000 to R70,000. Costs rise when your store needs custom split-warehouse rules, bulk pallet quotes, or special rules for fragile and hazardous goods across South African provinces.",
       },
       {
         question: "Does an ecommerce build normally include product photography and descriptions?",
         answer:
-          "Supplier quotes typically exclude photography and large-catalogue SKU entry unless explicitly scoped. Writing unique descriptions for top-selling categories and products improves Google rankings far more than pasting supplier feeds.",
+          "Most online store quotes exclude studio product photography and writing copy for large product catalogues unless those items are specifically included. Writing original descriptions for your best-selling products and main categories helps your pages show up higher on Google far better than pasting generic text straight from wholesale supplier spreadsheets.",
       },
       {
         question: "Can B2B wholesalers hide retail pricing or enforce tiered trade logins?",
         answer:
-          "Yes—B2B trade portals with role-based ZAR price lists, minimum order quantities and account-on-terms workflows sit in the R75,000–R150,000+ custom platform bracket via [website development](/services/web-development/).",
+          "Yes, business-to-business trade portals can hide prices until approved dealers sign in, apply different rand price lists per account, enforce minimum order rules, and handle quotes on terms. Those custom trade systems sit in the R75,000 to R150,000+ custom build bracket through our [website development](/services/web-development/) service, depending on stock system links.",
       },
       {
         question: "Should my online store include WhatsApp order assistance and cart recovery?",
         answer:
-          "Yes. Placing subtle WhatsApp stock-check links on product pages reassures South African buyers unsure about sizing or regional courier cut-offs before checkout.",
+          "Yes, adding a simple WhatsApp link on product pages helps South African shoppers check product sizing, live stock availability, or regional delivery cut-off times before paying. Automated email reminders for unfinished checkouts also recover lost sales without spam, provided you keep messages helpful and follow POPIA marketing consent rules.",
       },
       {
         question: "How can I audit whether our existing online store is losing organic sales?",
         answer:
-          "Start with a [free SEO audit](/contact/?service=free-seo-audit#contact-form) to inspect category page indexing, faceted URL crawl bloat, Core Web Vitals speed and checkout security headers.",
+          "Start with a [free SEO audit](/contact/?service=free-seo-audit#contact-form) so we can check whether your category and product pages are showing on Google, whether filter links waste Google's scan of your site, how fast pages load on mobile data, and whether checkout security settings are configured properly to win buyer trust.",
       },
     ],
     priority: 0.72,
     published: "2026-11-20",
-    updated: "2026-11-21",
+    updated: "2026-11-26",
   },
   {
     slug: "payfast-vs-yoco-vs-ozow-south-africa",
@@ -245,49 +245,49 @@ export const websiteGuides: GuidePage[] = [
     title: "PayFast vs Yoco vs Ozow: Comparing South African Website Payment Gateways",
     metaTitle: "PayFast vs Yoco vs Ozow for SA Websites | SoftKore",
     description:
-      "Compare PayFast, Yoco and Ozow for South African online stores: card vs Instant EFT fees, payout timing, WooCommerce or custom APIs and webhook security.",
+      "Compare PayFast, Yoco and Ozow for South African online stores: card vs Instant EFT fees, payout timing, WooCommerce links and payment security.",
     intro:
-      "Picking between PayFast, Yoco and Ozow decides how smoothly South African buyers finish mobile checkouts and how reliably settlements reach your bank account. Offering both cards and verified Instant EFT options usually prevents the highest number of dropped baskets.",
+      "PayFast, Yoco and Ozow all let South African online stores take payments safely, though each fits a different kind of shop. Offering both bank cards and Instant EFT cuts lost sales and gets money to your bank fast.",
     summary: [
       "Card vs Instant EFT coverage",
       "Fees & payout considerations",
-      "Developer & plugin integration",
-      "Security & webhook checks",
+      "Store & custom site connections",
+      "Security & payment confirmation checks",
     ],
     takeaways: [
-      "PayFast bundles cards, Instant EFT, SnapScan, Zapper, Capitec Pay and BNPL inside one merchant integration.",
-      "Yoco fits best when you already use Yoco card machines in-store and want unified card + Apple/Google Pay simplicity.",
-      "Ozow focuses squarely on fast mobile Instant EFT—essential when card limits or declined debit cards hold buyers back.",
-      "Never mark an order paid inside the browser 'success' redirect URL alone; verify cryptographic webhooks server-to-server.",
-      "Submit FICA docs, live HTTPS refund policies and contact pages early so merchant underwriting clears before launch week.",
+      "PayFast bundles cards, Instant EFT, SnapScan, Zapper, Capitec Pay and buy-now-pay-later inside one merchant account.",
+      "Yoco fits best if you already use Yoco card machines in-store and want unified card, Apple Pay and Google Pay sales.",
+      "Ozow focuses on fast phone-friendly Instant EFT, which saves sales when bank card limits or declined debit cards hold buyers back.",
+      "Never mark an order paid just because a browser opens your 'thank you' page; always confirm the payment server-to-server first.",
+      "Submit your business verification (FICA) documents and publish live refund and contact pages early so approvals clear before launch week.",
     ],
     sections: [
       {
         title: "PayFast vs Yoco vs Ozow compared side by side",
         body: [
-          "South African ecommerce conversion behaves differently from US or European markets because online cheque-card fraud blocks, daily cap defaults and failed OTP prompts frequently stop ordinary debit cards cold—making Instant EFT and local wallet rails critical revenue savers.",
-          "Benchmark your basket size, target buyer profile and integration stack honestly against the matrix below:",
+          "Online stores in South Africa behave differently from US or European shops because online fraud blocks, daily card caps and failed bank OTP prompts often stop ordinary debit cards. Having Instant EFT and local wallet choices saves real sales.",
+          "Compare your average order value, how your buyers prefer to pay, and your website software against the table below:",
         ],
         table: {
           caption: "Practical comparison of major South African online payment gateways",
-          headers: ["Gateway", "Primary payment rails", "Ideal use case", "Key engineering watchout"],
+          headers: ["Gateway", "Main payment methods", "Ideal use case", "Key setup watchout"],
           rows: [
             [
               "PayFast",
               "Cards, Instant EFT, Capitec Pay, SnapScan, Zapper, Mobicred/Payflex",
-              "Stores wanting maximum local methods under a single dashboard & contract",
-              "Verify server-to-server ITN signature, ZAR amount total and valid PayFast IP",
+              "Stores wanting maximum local payment options under one contract",
+              "Confirm the server-to-server notification signature, rand total and valid PayFast IP",
             ],
             [
               "Yoco Online",
               "Visa/Mastercard, Apple Pay, Google Pay",
-              "Retailers linking physical Yoco counter terminals with fast mobile web card sales",
-              "Pair alongside an Instant EFT gateway if non-card buyers form a large share",
+              "Retailers linking physical Yoco counter machines with mobile card sales",
+              "Pair with an Instant EFT option if many of your customers do not use cards online",
             ],
             [
               "Ozow",
               "Instant EFT across major SA banks (zero card needed)",
-              "Higher-ticket deposits, B2B invoices or mobile bank-transfer buyers",
+              "Higher-value deposits, B2B invoices or buyers paying straight from bank apps",
               "Keep a card gateway enabled beside Ozow for credit card and overseas buyers",
             ],
           ],
@@ -296,86 +296,86 @@ export const websiteGuides: GuidePage[] = [
       {
         title: "PayFast: broadest built-in South African payment mix",
         body: [
-          "PayFast has powered South African online retail for over a decade because a single approved merchant contract enables credit/debit cards, Instant EFT, Capitec Pay, QR scan wallets and Payflex/Mobicred credit rails simultaneously without maintaining five separate agreements.",
-          "Official extensions cover Shopify and WooCommerce cleanly out of the box, while custom Next.js builds validate server-to-server Instant Transaction Notification (ITN) callbacks cleanly in TypeScript backend handlers before writing paid orders.",
+          "PayFast has served South African online retail for over a decade because one approved merchant account turns on credit and debit cards, Instant EFT, Capitec Pay, QR scan apps and Payflex or Mobicred credit options at the same time.",
+          "Official add-ons work out of the box on Shopify and WooCommerce. For custom Next.js stores, your developer checks PayFast's server-to-server payment confirmation (webhook) in backend code before marking any order as paid.",
         ],
         callout: {
           tone: "note",
           heading: "Confirm live rate cards directly before setting product pricing",
-          text: "Published transaction charges shift across turnover tiers and payment rails—cards generally carry ~2.8%–3.5% plus small fixed/VAT items while Instant EFT rails sit lower alongside nominal payout fees. Verify live pricing directly with each provider.",
+          text: "Published fees vary by turnover tier and payment method. Card payments generally cost ~2.8% to 3.5% plus small fixed or VAT items, while Instant EFT sits lower alongside small payout fees. Always check live rates directly with each provider.",
         },
       },
       {
         title: "Yoco and Ozow: specialised strengths for retail vs bank-transfer buyers",
         body: [
-          "Instead of viewing gateways as identical switches, align provider strengths directly to how your specific customers already pay you offline or on mobile.",
+          "Rather than treating payment gateways as identical switches, match each provider's strengths to how your customers already pay you in person or on their phones.",
         ],
         subsections: [
           {
-            heading: "Yoco Online: clean card + mobile wallet bridge for counter retailers",
+            heading: "Yoco Online: smooth card and phone wallet bridge for shops",
             body: [
-              "If your boutique, salon or coffee roastery already reconciles counter takings via Yoco card terminals, linking Yoco's online SDK or WooCommerce/Shopify extension keeps cash flow, settlements and daily Xero reconciliations consolidated under one portal alongside smooth Apple Pay and Google Pay checkouts.",
+              "If your boutique, salon or coffee shop already takes counter payments on Yoco card machines, adding Yoco's online checkout for WooCommerce or Shopify keeps settlements, cash flow and daily Xero reconciliations in one portal alongside Apple Pay and Google Pay.",
             ],
           },
           {
-            heading: "Ozow: rapid verified EFT for larger invoices and card-shy buyers",
+            heading: "Ozow: fast verified EFT for larger invoices and card-shy buyers",
             body: [
-              "Traditional manual EFT creates painful operational lag—clerks chasing proof-of-payment screenshots over WhatsApp while waiting two business days for inter-bank funds clearing. Ozow authenticates verified Instant EFT transfers inside seconds via major SA banks so operations dispatch goods the exact same afternoon safely.",
+              "Manual EFT creates frustrating delays, with staff chasing proof-of-payment screenshots on WhatsApp while waiting two days for inter-bank clearance. Ozow confirms verified Instant EFT transfers in seconds across major South African banks so your team can pack and dispatch orders the same afternoon.",
             ],
           },
         ],
         bullets: [
-          "Consider running dual gateways cleanly at checkout (for example Yoco Cards + Ozow Instant EFT, or PayFast multi-rail) when orders exceed R1,500.",
-          "Test checkout flows visually across Android Chrome, Safari iOS and WhatsApp in-app browsers—banks frequently trigger biometric verification apps mid-flow.",
+          "Consider running two payment options side by side at checkout (such as Yoco cards plus Ozow Instant EFT, or PayFast's multi-method hub) when orders exceed R1,500.",
+          "Test your checkout on Android Chrome, iPhone Safari and WhatsApp's built-in browser because South African banking apps often open mid-payment for biometric approval.",
         ],
       },
       {
         title: "Merchant FICA verification, reserves and payout timing pitfalls",
         body: [
-          "Dozens of smooth store builds stall awkwardly two days before launch because owners apply for merchant activation at the last minute without compliant store pages live yet. Compliance checks routinely take 5 to 10 working days.",
+          "Many store launches stall awkwardly two days before opening because owners apply for payment approval at the last minute without required policy pages live yet. Compliance reviews routinely take 5 to 10 working days.",
         ],
         bullets: [
-          "Company CIPC registration certificates, director/UBO ID copies and verified official bank confirmation letters.",
-          "Live HTTPS website URL displaying physical South African address, local contact email and active phone details.",
-          "Explicit Shipping, Delivery Lead Times, Consumer Protection Act Refunds/Returns and POPIA Privacy pages linked cleanly in the footer.",
-          "Advance clarity around rolling reserves or delayed settlement windows for pre-orders, custom manufacturing, tickets or supplements.",
+          "Company CIPC registration papers, director ID copies and an official bank confirmation letter.",
+          "A live website with an active HTTPS security certificate showing a real South African address, local email and working phone number.",
+          "Clear Shipping, Delivery Lead Times, Consumer Protection Act Refunds/Returns and POPIA Privacy pages linked in your footer.",
+          "Written clarity on rolling reserves or delayed payouts for pre-orders, custom-made items, event tickets or supplements.",
         ],
         callout: {
           tone: "tip",
-          heading: "Apply for merchant underwriting two weeks ahead of launch",
-          text: "Submit FICA paperwork and staging live URLs (unlocked cleanly for compliance reviewers) while finishing final visual QA so payouts go live on launch morning.",
+          heading: "Apply for payment approval two weeks before launch",
+          text: "Submit your verification documents and a private preview link (unlocked for compliance reviewers) while finishing final checks so payouts are approved for launch morning.",
         },
       },
       {
         title: "Critical webhook security every checkout developer must verify",
         body: [
-          "One severe recurring custom-checkout bug trusts the browser redirect URL (`/checkout/thank-you?paid=true`) to trigger stock release or PDF downloads—allowing anyone clever enough to bookmark the success URL to steal orders without paying a single cent.",
+          "A dangerous custom-checkout mistake is trusting the browser 'thank you' page (`/checkout/thank-you?paid=true`) to trigger stock dispatch or digital downloads. Anyone who visits or bookmarks that address could trigger a free order without paying.",
         ],
         numbered: [
-          "Confirm actual funds settlement strictly inside backend server-to-server webhook/ITN handlers—NEVER inside client browser success pages.",
-          "Validate HMAC signatures, shared passphrases and provider IP origin rules inside backend route handlers on every callback.",
-          "Re-verify received ZAR totals and currency (`ZAR`) directly against your own database order record before flipping order state to Paid.",
-          "Maintain complete separation between sandbox keys on staging and production environment variables, logging webhook failures cleanly for quick alerting.",
+          "Confirm actual payment only inside backend server-to-server payment confirmation (webhook) handlers, never inside browser 'thank you' pages.",
+          "Verify the provider's cryptographic signature, shared passphrase and allowed IP address on every payment confirmation message.",
+          "Cross-check the received rand total and currency (`ZAR`) against your own database order record before changing the order status to Paid.",
+          "Keep test keys only on your private preview site and live keys on your production environment, logging failed notifications so issues are caught fast.",
         ],
         callout: {
           tone: "warning",
           heading: "Never handle raw card numbers inside your own website server",
-          text: "Stick cleanly to hosted checkout redirects or official gateway tokenised SDK modals so card PAN and CVV secrets touch only PCI-DSS certified gateway servers—never your WordPress or Next.js database.",
+          text: "Use hosted checkout pages or official gateway tokenised popups so card numbers and security codes stay inside certified payment-provider servers and never touch your WordPress or Next.js database.",
         },
       },
       {
         title: "Pre-launch checkout test sequence before accepting real orders",
         body: [
-          "Never launch an online store after only seeing a sandbox payment logo load once on desktop. Walk through one complete live end-to-end transaction in production using an actual small R10 test SKU on mobile data before advertising publicly.",
-          "Confirm that paid bank authorization transitions the order cleanly from Pending to Processing inside your store admin, fires verified transactional confirmation email via SPF/DKIM aligned routes into Gmail rather than junk folders, and deducts inventory accurately without duplicate webhook triggers. Testing refund voids cleanly upfront also saves panicked frantic calls during your first real customer return.",
+          "Never launch an online store just because a test payment logo loaded once on a laptop. Complete one real small transaction (such as a R10 test item) on mobile data in your live shop before advertising publicly.",
+          "Check that payment switches the order from Pending to Processing in your shop admin, sends a verified receipt email that lands in a real Gmail inbox rather than spam, and deducts stock once without duplicate triggers. Testing a void or refund upfront also prevents panic during your first real return.",
         ],
       },
     ],
     midCta: {
-      heading: "Integrating South African payment rails without fragile webhook bugs?",
-      text: "We engineer reliable PayFast, Yoco and Ozow checkouts with verified server-to-server webhook validation for Next.js and WooCommerce.",
+      heading: "Setting up South African payments without fragile checkout bugs?",
+      text: "We build reliable PayFast, Yoco and Ozow checkouts with verified server-to-server payment confirmation for Next.js and WooCommerce.",
       href: "/services/web-development/",
-      label: "Discuss Checkout Engineering",
+      label: "Discuss checkout setup",
     },
     related: [
       { label: "Ecommerce website cost in SA", href: "/guides/ecommerce-website-cost-south-africa/" },
@@ -387,32 +387,32 @@ export const websiteGuides: GuidePage[] = [
       {
         question: "Can our online store run two payment gateways side by side?",
         answer:
-          "Yes—offering Yoco for slick mobile cards alongside Ozow Instant EFT (or using PayFast's multi-method hub) prevents lost baskets when one bank's 3D-Secure prompt acts up.",
+          "Yes, running Yoco for fast mobile card checkouts alongside Ozow Instant EFT (or using PayFast's combined multi-method screen) gives shoppers a reliable backup at checkout. When one bank's card approval app times out or declines a daily limit, shoppers can switch straight to Instant EFT instead of abandoning their basket.",
       },
       {
         question: "Do we store customer card numbers ourselves with PayFast, Yoco or Ozow?",
         answer:
-          "No—hosted payment redirects and official tokenised gateway modals keep sensitive card numbers off your server, keeping PCI burden tiny.",
+          "No, your website should never collect or save raw card numbers or CVV security codes. Using hosted checkout pages or official gateway popups keeps sensitive card details inside certified payment-provider systems. That protects your customers, keeps card-security rules simple for your business, and lowers the risk if your website is ever probed.",
       },
       {
         question: "How long do gateway payouts take to clear into South African business banks?",
         answer:
-          "Standard EFT settlement clearing typically spans 1 to 3 business days post-transaction depending on provider policies, merchant risk tier and public holidays.",
+          "Standard payouts usually take 1 to 3 business days to clear into a South African business bank account after a customer pays. Exact timing depends on your chosen provider, whether you use automatic or manual payouts, public holidays, and whether your business category carries pre-order or refund reserve rules.",
       },
       {
         question: "Can Cloudflare WAF accidentally block PayFast or Ozow ITN webhooks?",
         answer:
-          "Yes if overly strict Bot Fight or country rules hit `/api/webhooks/` POST calls. Always explicitly allowlist and test verified sandbox callbacks through Cloudflare before go-live.",
+          "Yes, an overly strict website firewall (WAF) or aggressive bot-blocking rule can block automated payment confirmations sent by PayFast or Ozow to your server. When that happens, customers get charged while orders stay marked unpaid. Always allow verified payment-provider traffic through your firewall and run a live test purchase before launch.",
       },
       {
         question: "Is Capitec Pay worth enabling for South African retail stores?",
         answer:
-          "Yes—Capitec serves millions of South African retail banking customers cleanly via direct app-approved transfers inside PayFast and compatible Instant EFT rails.",
+          "Yes, Capitec serves millions of South African shoppers who prefer approving payments straight inside their banking app instead of entering card details on a phone screen. Enabling Capitec Pay through PayFast or compatible Instant EFT providers removes card-limit failures, reduces friction on mobile checkouts, and lifts completed everyday retail orders.",
       },
     ],
     priority: 0.72,
     published: "2026-11-20",
-    updated: "2026-11-20",
+    updated: "2026-11-26",
   },
   {
     slug: "wordpress-vs-custom-website-south-africa",
@@ -422,54 +422,54 @@ export const websiteGuides: GuidePage[] = [
     title: "WordPress vs Custom Websites (Next.js): Which Fits Your Business Best?",
     metaTitle: "WordPress vs Custom Next.js Websites SA | SoftKore",
     description:
-      "Compare WordPress vs custom Next.js websites in South Africa across load speed, security maintenance, SEO performance, content editing and 3-year total cost.",
+      "Compare WordPress vs custom Next.js websites in South Africa across load speed, security upkeep, Google visibility, page editing and 3-year total cost.",
     intro:
-      "Most South African agencies pitch WordPress reflexively for every brief, while pure coding shops sometimes over-build tiny brochure websites. Deciding calmly between WordPress and a modern Next.js architecture comes down to who publishes updates weekly, how fast mobile Core Web Vitals must run and how little plugin security upkeep you want to carry.",
+      "Many agencies pitch WordPress for every job, while coding shops sometimes over-build simple websites. Choosing between WordPress and a custom Next.js website comes down to how often your team edits pages, how fast your site must load on mobile data, and how little plugin upkeep you want.",
     summary: [
       "Where WordPress works best",
       "Where custom Next.js wins",
-      "Security & maintenance reality",
+      "Security & upkeep reality",
       "How to decide for your team",
     ],
     takeaways: [
-      "Choose lean WordPress when in-house staff launch campaign landing pages weekly or run plugin-rich WooCommerce stores.",
-      "Choose custom Next.js when instant mobile speed, minimal security exposure and clean technical SEO structure drive revenue.",
-      "Heavy page builders (Elementor/Divi stacked with 30 plugins) drive nearly all SA complaints around sluggishness and hacks.",
-      "Over 36 months, lean Next.js builds frequently cost less in security maintenance and hosting rescues than fragile CMS sites.",
-      "Pairing a fast Next.js frontend with clean Markdown files or a lightweight headless CMS bridges control and speed seamlessly.",
+      "Choose lean WordPress when in-house staff launch campaign landing pages weekly or run plugin-rich WooCommerce online stores.",
+      "Choose custom Next.js when instant phone speeds, fewer ways in for hackers and solid technical Google setup bring enquiries.",
+      "Slow and overloaded page builders (Elementor or Divi stacked with 30 plugins) cause most complaints about sluggishness and hacks.",
+      "Over 36 months, lean Next.js sites often cost less in security maintenance and hosting rescues than fragile editing systems.",
+      "Pairing pre-built Next.js pages with simple content files or a separate editing dashboard gives you speed without losing control.",
     ],
     sections: [
       {
         title: "WordPress vs Next.js compared on real day-to-day factors",
         body: [
-          "Google awards zero bonus points merely for framework brand names. Real commercial differences come straight down to cellular load speed, editing flexibility, resistance against automated malware bots and cumulative 3-year operating spend.",
+          "Google gives zero ranking bonus just for the name of the tool used to build your site. The real business differences come down to how fast pages load on mobile data, how easy it is for staff to update text, resistance against automated spam bots, and total cost over three years.",
         ],
         table: {
           caption: "Practical comparison: WordPress vs Custom Next.js for SA SMEs",
-          headers: ["Factor", "WordPress (Plugin CMS)", "Custom Next.js / Static", "Operational impact"],
+          headers: ["Factor", "WordPress (editing system)", "Custom Next.js / Pre-built", "Business impact"],
           rows: [
             [
               "Mobile page speed",
-              "Depends heavily on caching & builder restraint",
-              "Pre-rendered HTML + lean assets fast out of the box",
-              "Stronger Core Web Vitals on South African 4G handsets",
+              "Depends heavily on caching and keeping plugins light",
+              "Pre-built pages and small images load fast out of the box",
+              "Better results on Google's speed tests over South African 4G phones",
             ],
             [
-              "Security risk surface",
-              "Higher if plugins, themes & logins go unpatched",
-              "Minimal (no exposed PHP plugins or open SQL endpoints)",
-              "Dramatically fewer automated bot compromises & spam hacks",
+              "Ways in for hackers",
+              "Higher if plugins, themes and logins go unpatched",
+              "Minimal (no exposed PHP plugins or open database logins)",
+              "Far fewer automated bot break-ins and spam page injections",
             ],
             [
               "Self-service editing",
               "Visual dashboard familiar to marketing teams",
-              "Code/Markdown updates (or optional lightweight headless CMS)",
-              "WordPress suits active daily non-technical marketing squads",
+              "Developer updates or an optional separate editing dashboard",
+              "WordPress suits active marketing teams publishing weekly pages",
             ],
             [
               "3-year upkeep",
-              "Ongoing updates, compatibility fixes & WAF",
-              "Low routine maintenance after clean launch",
+              "Ongoing updates, plugin checks and website firewall",
+              "Low routine maintenance after a proper launch",
               "Fewer surprise breakages on steady B2B service sites",
             ],
           ],
@@ -478,94 +478,94 @@ export const websiteGuides: GuidePage[] = [
       {
         title: "Where WordPress genuinely still shines in South Africa",
         body: [
-          "Despite justified fatigue around sloppy agency installs, disciplined WordPress remains genuinely hard to beat inside specific business setups.",
+          "Despite fair frustration with messy agency builds, well-built WordPress is still hard to beat for certain businesses.",
         ],
         subsections: [
           {
-            heading: "Frequent internal publishing & campaign teams",
+            heading: "Frequent internal publishing and campaign teams",
             body: [
-              "If marketing coordinators launch press releases, webinar promos, downloadable tenders or visual layouts weekly without touching developers, WordPress's native Gutenberg block editor gives comfortable self-service freedom.",
+              "If marketing staff launch press releases, event promos, downloadable tenders or new landing layouts every week without calling a developer, WordPress's built-in block editor gives them straightforward self-service control.",
             ],
           },
           {
-            heading: "Mature South African ecommerce via WooCommerce",
+            heading: "Mature South African online stores via WooCommerce",
             body: [
-              "Online shops demanding custom courier matrices, PayFast/Ozow extensions, multi-tier coupons and Xero invoices tap cleanly into thousands of existing tested WooCommerce tools.",
+              "Online shops needing custom courier rules, PayFast or Ozow payment links, multi-tier coupons and Xero invoices plug straight into thousands of tested WooCommerce add-ons.",
             ],
           },
         ],
         callout: {
           tone: "warning",
-          heading: "The 35-plugin trap ruins WordPress performance and uptime",
-          text: "Stacking Elementor, slider suites, multiple analytics helpers and pirated ('nulled') themes onto R70 shared hosting guarantees sluggish LCP scores and perpetual vulnerability emergencies.",
+          heading: "The 35-plugin trap ruins WordPress speed and uptime",
+          text: "Stacking Elementor, heavy slider tools, extra analytics plugins and pirated themes onto R70 shared hosting guarantees slow, overloaded pages and constant security emergencies.",
         },
       },
       {
         title: "Why custom Next.js architectures run faster and stay secure",
         body: [
-          "Look honestly at 80% of established South African B2B firms—legal practices, accountants, freight operators, engineering contractors, SaaS firms and agencies. Core service pages evolve twice a year—not every afternoon! What hurts them on traditional CMS sites isn't lack of drag-and-drop panels; it's slow mobile loads and constant security patching anxiety.",
-          "With Next.js pre-rendered output served globally from local Johannesburg and Cape Town CDN edge caches, pages render practically instantly without booting PHP or querying MySQL on arrival—while stripping automated `/wp-login.php` brute-force probes completely out of the equation.",
+          "Look honestly at 80% of established South African B2B firms: law practices, accountants, freight operators, construction contractors, software companies and consultancies. Their core service pages change twice a year, not every afternoon. What hurts them on traditional editing systems is not missing drag-and-drop buttons, it is slow phone loading and constant security worry.",
+          "When pre-built Next.js pages are served from local Johannesburg and Cape Town content delivery network (CDN) caches, pages open almost instantly without booting server code or querying a database on every visit, while shutting down automated `/wp-login.php` password-guessing attacks completely.",
         ],
         bullets: [
-          "Crisp mobile-first HTML/CSS with minimal JavaScript payloads tuned cleanly for prepaid cellular networks.",
-          "Strict control over single-hop 301 redirect rules, JSON-LD structured schemas, trailing slashes and XML sitemaps in version control.",
-          "Zero plugin deprecation conflicts—package dependencies update cleanly on predictable developer schedules.",
+          "Lean phone-first page code and tiny asset sizes built for prepaid mobile data networks.",
+          "Full control over direct redirects, structured Google business info, page addresses and XML sitemaps.",
+          "Zero plugin clash surprises, because software updates happen smoothly on a predictable schedule.",
         ],
       },
       {
-        title: "Handling copy and article edits cleanly on Next.js sites",
+        title: "How to edit text and articles on a custom Next.js website",
         body: [
-          "Directors reasonably worry: 'Will a custom website trap us waiting three weeks to swap a phone number or add an article?' Two clean practices remove that snag completely.",
-          "First, businesses refreshing core pages quarterly often find a lean light-support arrangement vastly cleaner—handing revisions to an engineer who checks layout balance, WebP compression and SEO canonical integrity simultaneously. Second, teams publishing continuously can attach a structured headless CMS (or structured batch TypeScript/MDX publishing queue with automated scheduling workflows) keeping the public site static while editors draft safely.",
+          "Directors reasonably ask: 'Will a custom website leave us waiting three weeks just to change a phone number or post an article?' Two simple setups solve that problem.",
+          "First, businesses that refresh core pages quarterly often find a light support arrangement much easier, handing updates to a developer who checks layout balance, image compression and SEO settings at the same time. Second, teams that publish often can plug in a lightweight separate editing dashboard (or structured article publishing queue) that keeps the live site fast while editors draft safely.",
         ],
         callout: {
           tone: "tip",
           heading: "Already running a steady WordPress site? Do not rebuild out of fashion",
-          text: "If an existing clean WordPress domain ranks comfortably and converts leads daily, pruning unused plugins, shifting onto clean VPS hosting and adding Cloudflare WAF delivers smart ROI far cheaper than a premature rewrite.",
+          text: "If your current WordPress website already shows up well on Google and brings steady enquiries, removing unused plugins, moving to dedicated hosting and adding a website firewall often gives a better return than starting over.",
         },
       },
       {
-        title: "Evaluating true 3-year total cost of ownership cleanly",
+        title: "How to work out the true 3-year cost of each option",
         body: [
-          "Initial template deposits lie when hidden plugin licences, hosting upgrades, emergency hack clean-ups and early rebuilds arrive inside 24 months. Step calmly through this quick total-cost exercise before signing any agency stack choice:",
+          "Cheap upfront quotes look misleading once paid plugin renewals, hosting upgrades, emergency hack clean-ups and early rebuilds arrive within two years. Walk through these three steps before choosing a platform:",
         ],
         numbered: [
-          "Log realistically how many staff edit copy or layouts each month—true daily publishers vs quarterly refinements.",
-          "Price 36 months of premium plugin subscriptions, managed hosting tiers, WAF layers and maintenance hours alongside day-one quote costs.",
-          "Factor commercial downtime risk: what does one week offline behind Google's red 'Deceptive site ahead' block cost in missed leads?",
+          "Count honestly how many staff edit text or layouts each month, separating true weekly publishers from quarterly updates.",
+          "Add up 36 months of paid plugin licences, managed hosting, website firewalls and monthly care hours alongside the build quote.",
+          "Consider business downtime risk: what does one week offline behind Google's red 'Deceptive site ahead' warning cost in missed enquiries?",
         ],
       },
       {
-        title: "Worked South African scenarios: matching platform to team reality",
+        title: "Illustrative South African examples: matching platform to team reality",
         body: [
-          "Seeing how comparable businesses experience both stacks clarifies the decision far better than theoretical feature charts. Most regrettable builds happen when firms pick tools based on what the developer likes billing rather than matching internal publishing habits.",
-          "Compare two realistic South African commercial profiles side by side before committing capital or tying internal staff into unnecessary dashboards.",
+          "Walking through illustrative examples makes the trade-offs clearer than comparing feature checklists. Most disappointing websites happen when firms pick a tool their supplier prefers instead of matching how their own staff work.",
+          "Compare two realistic South African setups side by side before committing budget or locking staff into dashboards they rarely open.",
         ],
         subsections: [
           {
-            heading: "Scenario A: Established Pretoria engineering consultancy (static Next.js win)",
+            heading: "Illustrative example: Pretoria technical consultancy (pre-built Next.js)",
             body: [
-              "A 28-person structural engineering firm updates service briefs twice yearly, adds two technical case studies per quarter and prioritizes instant mobile speeds when tender boards inspect credentials on cellular networks. Moving away from a 24-plugin WordPress build onto static Next.js wiped recurring plugin maintenance headaches completely, cut Largest Contentful Paint from 4.6s down to 1.1s cleanly and eliminated constant `/wp-login.php` brute-force floods.",
+              "Imagine a 28-person technical consultancy that updates service briefs twice a year, adds two project write-ups a quarter, and needs instant phone speed when tender boards check credentials on mobile data. Moving from a 24-plugin WordPress site to pre-built Next.js removes weekly plugin updates, cuts main content load time from 4.6 seconds down to around 1.1 seconds, and stops automated `/wp-login.php` login floods.",
             ],
           },
           {
-            heading: "Scenario B: Cape Town lifestyle retail & event brand (lean WordPress win)",
+            heading: "Illustrative example: Cape Town lifestyle retailer (lean WordPress)",
             body: [
-              "An active consumer brand running weekly workshops, WooCommerce gift hampers and frequent seasonal promo landing pages needs three in-house coordinators launching draft layouts independently on Tuesday mornings. Disciplined WordPress with fewer than twelve vetted plugins, Cloudflare WAF protection and dedicated South African NVMe VPS hosting empowers agile staff autonomy safely.",
+              "Imagine an active consumer brand running weekly workshops, WooCommerce gift hampers and regular seasonal promo pages where three staff coordinators publish draft layouts every Tuesday morning. Disciplined WordPress with fewer than twelve vetted plugins, a website firewall and dedicated South African server hosting gives the team daily freedom safely.",
             ],
           },
         ],
         bullets: [
-          "Audit true edit velocity over the last 12 months—did staff genuinely log into CMS dashboards weekly, or did the agency handle everything anyway?",
-          "If migrating from WordPress toward Next.js, freeze existing URL slugs or build complete single-hop 301 maps beforehand so Search Console history transfers cleanly.",
+          "Check how often your team truly edited pages over the past 12 months: did staff log into the editing system weekly, or did your agency handle every change anyway?",
+          "If moving from WordPress to Next.js, keep existing page addresses wherever possible or map every retired link with a direct redirect (301) before launch so your Google history stays intact.",
         ],
       },
     ],
     midCta: {
-      heading: "Unsure whether to tune existing WordPress or build cleanly in Next.js?",
-      text: "Share your current URL and update habits—we work across both and advise candidly which stack gives the cleanest 3-year return.",
+      heading: "Unsure whether to tune existing WordPress or build in Next.js?",
+      text: "Share your current website address and how often you edit pages. We work with both and advise honestly which option gives the best 3-year value.",
       href: "/services/web-development/",
-      label: "Compare Build Options",
+      label: "Compare build options",
     },
     related: [
       { label: "Website design & development", href: "/services/web-development/" },
@@ -577,32 +577,32 @@ export const websiteGuides: GuidePage[] = [
       {
         question: "Does Google automatically rank Next.js higher than WordPress?",
         answer:
-          "Google rewards clear search relevance, technical cleanliness, mobile speed and authority rather than framework names—though Next.js makes hitting green mobile Core Web Vitals noticeably smoother.",
+          "No, Google does not rank a website higher just because of the software behind it. Google rewards helpful pages, clear site structure, reliable mobile speed, and trusted local links. A well-built Next.js website simply makes passing Google's speed and stability tests much easier without fighting slow, overloaded WordPress themes or plugins.",
       },
       {
         question: "Can we migrate an old WordPress website onto Next.js without dropping Google rankings?",
         answer:
-          "Yes—by exporting top Search Console URLs first, retaining winning paths and mapping every retired tag/archive slug via clean single-hop 301 redirects.",
+          "Yes, as long as you plan the move carefully before launch. We export your top pages from Google Search Console (Google's free report on how your site shows up in search), keep strong page addresses unchanged, and add direct redirects sending any retired links straight to matching new pages.",
       },
       {
         question: "Are static Next.js builds 100% immune to every cyber risk?",
         answer:
-          "Nothing connected to registrars and APIs is zero-risk—registrar MFA, HTTP security headers and form API validation still matter—yet removing exposed PHP/SQL databases eliminates 95%+ of automated website bot exploits.",
+          "No website connected to a domain provider and contact forms is completely risk-free. You still need two-step login protection on your domain account, browser security settings, and spam-protected form handling. However, removing WordPress login pages, PHP scripts, and open databases shuts down the vast majority of automated website attacks.",
       },
       {
         question: "How fast can a commercial Next.js business site go live?",
         answer:
-          "Typically 3 to 6 weeks once service scope, proof material and domain DNS access align cleanly.",
+          "A focused business website built with Next.js typically goes live in 3 to 6 weeks once the page list, written text, photos, and domain settings are ready. Clear sign-offs on copy and design keep the build moving smoothly, whereas waiting on text or domain logins is what usually slows launches down.",
       },
       {
         question: "Is WordPress ever simpler if we sell online courses or complex memberships?",
         answer:
-          "Yes—mature WordPress/WooCommerce membership plugins or specialised SaaS tools can get rich gated member features online faster than coding custom portals from zero.",
+          "Yes, mature WordPress and WooCommerce membership plugins or dedicated course platforms can launch paid member logins, video lessons, and recurring billing much faster than building a custom portal from scratch. In those cases, keeping plugins to a tight minimum on managed hosting gives you reliable speed and simpler upkeep.",
       },
     ],
     priority: 0.72,
     published: "2026-11-20",
-    updated: "2026-11-20",
+    updated: "2026-11-26",
   },
   {
     slug: "how-long-to-build-a-website-south-africa",
@@ -612,9 +612,9 @@ export const websiteGuides: GuidePage[] = [
     title: "How Long Does It Take to Build a Business Website in South Africa?",
     metaTitle: "How Long to Build a Website in South Africa? | SoftKore",
     description:
-      "Realistic website development timelines in South Africa: week-by-week stages from brief to launch, common bottlenecks, and how to go live cleanly without delays.",
+      "Realistic website timelines in South Africa: week-by-week stages from brief to launch, common bottlenecks, and how to go live without delays.",
     intro:
-      "A focused 4-to-6-page South African business website typically launches cleanly in 2 to 4 weeks when copy and photos are ready upfront; commercial service builds with bespoke copywriting and launch SEO run 4 to 7 weeks, and full ecommerce or complex redesigns take 6 to 12 weeks. Nearly every late website launch stalls on missing copy or missing domain logins—never code speed.",
+      "A focused 4-to-6-page South African business website usually goes live in 2 to 4 weeks once your wording and photos are ready, while commercial service sites run 4 to 7 weeks and online stores take 6 to 12 weeks. Most late launches stall on missing text or missing domain logins, not build speed.",
     summary: [
       "Realistic week-by-week ranges",
       "Stage breakdown from brief to live",
@@ -622,41 +622,41 @@ export const websiteGuides: GuidePage[] = [
       "How to launch smoothly faster",
     ],
     takeaways: [
-      "Focused brochure builds finish inside 2–4 weeks once logo vectors, service outlines and registrar credentials arrive day one.",
-      "Allow 4–7 weeks for structured commercial copywriting, mobile-first layout polish, JSON-LD schema and 301 redirect testing.",
-      "Waiting weeks on unfinished client copy, staff photos, gateway FICA paperwork or missing ZACR registrar transfers causes 80%+ of slips.",
-      "Launch a clean 8-to-12-page core revenue site promptly rather than stalling months waiting on optional secondary resources.",
-      "Reserve 4–5 final pre-launch days purely for QA: enquiry inbox checks, narrow Android testing, SSL verification and Search Console setup.",
+      "Focused brochure websites finish in 2–4 weeks once logo files, service outlines and domain logins arrive on day one.",
+      "Allow 4–7 weeks for clear business copywriting, mobile layout polish, structured Google data and redirect testing.",
+      "Waiting weeks on unfinished wording, staff photos, payment FICA papers or missing `.co.za` domain transfers causes over 80% of delays.",
+      "Launch a sharp 8-to-12-page core revenue site first instead of holding everything back for optional secondary pages.",
+      "Keep 4–5 final pre-launch days free for testing enquiry forms, small Android phones, HTTPS security certificates and Google Search Console.",
     ],
     sections: [
       {
         title: "Realistic website development timeframes by build scope",
         body: [
-          "Guaranteeing a bespoke lead-generating commercial site in five working days usually signals skipped mobile testing, zero competitor positioning research and unmapped legacy 301 redirects. Grounded schedules map directly to copy depth, unique page layouts and third-party checkout or CRM testing.",
+          "Promising a custom lead-generating business website in five working days usually means skipping mobile checks, competitor research and old-link redirects. Realistic schedules depend on how much writing is needed, how many custom layouts are built, and what payment or CRM tools must be tested.",
         ],
         table: {
-          caption: "Typical website design & engineering schedules in South Africa",
+          caption: "Typical website design and build schedules in South Africa",
           headers: ["Project scope", "Realistic duration", "Key schedule driver"],
           rows: [
             [
               "Focused Starter Brochure (4–6 pages)",
               "2 – 4 weeks",
-              "Client supplies approved text & photos upfront; concise enquiry flow",
+              "Client supplies approved wording and photos upfront; simple enquiry flow",
             ],
             [
               "Commercial Service Website (8–15 pages)",
               "4 – 7 weeks",
-              "Search Console audit, commercial copywriting, technical SEO & 301 testing",
+              "Google Search Console check, business copywriting, Google setup and redirect tests",
             ],
             [
-              "Ecommerce Store (Shopify / WooCommerce)",
+              "Online Store (Shopify / WooCommerce)",
               "5 – 9 weeks",
-              "Clean SKU prep, courier rules & PayFast/Yoco merchant underwriting",
+              "Clean product lists, courier setup and PayFast or Yoco business checks",
             ],
             [
               "Complex Redesign / Custom Portal",
               "7 – 12 weeks",
-              "Legacy URL consolidation, bespoke API webhooks & acceptance QA",
+              "Cleaning up legacy links, custom software connections and acceptance testing",
             ],
           ],
         },
@@ -664,25 +664,25 @@ export const websiteGuides: GuidePage[] = [
       {
         title: "Stage-by-stage breakdown of how clean launches stay predictable",
         body: [
-          "Clear weekly milestones remove grey areas so directors always see concrete browser progress rather than waiting weeks in dark silence.",
+          "Clear weekly milestones remove guesswork so business owners always see real browser progress instead of waiting weeks without updates.",
         ],
         subsections: [
           {
-            heading: "Weeks 1–2: Architecture, Search Console baseline & core messaging",
+            heading: "Weeks 1–2: Structure, Google Search Console check and core messaging",
             body: [
-              "Audit Search Console top URLs on existing domains, lock clean final URL slugs and single-hop redirect maps early, clarify real South African buyer objections, and approve plain-language commercial copy.",
+              "Review your existing site's top pages in Google Search Console (Google's free report on how your site shows up in search), lock final page addresses and direct redirect maps early, clarify common South African buyer questions, and approve plain-English wording.",
             ],
           },
           {
-            heading: "Weeks 3–5: Interactive browser build, mobile layout & integrations",
+            heading: "Weeks 3–5: Interactive browser build, mobile layout and connections",
             body: [
-              "Inspect live interactive staging links straight on your phone rather than commenting endlessly on flat static graphics. Connect enquiry routes, budget dropdowns, payment gateway test sandboxes and schema data cleanly.",
+              "Test live private preview links straight on your phone instead of guessing from flat PDF mockups. Connect enquiry forms, dropdowns, test payment checkouts and structured Google business info.",
             ],
           },
           {
-            heading: "Final Week: Hardening QA, 301 testing & smooth DNS cutover",
+            heading: "Final Week: Security checks, redirect testing and domain cutover",
             body: [
-              "Crawl staging links for zero 404 errors, confirm form emails land reliably with clean SPF/DKIM alignment, check HTTP security headers, confirm clean SAN SSL coverage and strip staging blocks carefully on launch morning.",
+              "Scan the private preview for broken links, confirm form emails land reliably in your inbox, check browser security settings, verify the HTTPS security certificate across `www` and non-`www`, and remove preview locks on launch morning.",
             ],
           },
         ],
@@ -690,76 +690,76 @@ export const websiteGuides: GuidePage[] = [
       {
         title: "Five hidden delays that stretch South African launches into months",
         body: [
-          "Across nearly every overrun website timeline, engineering finishes swiftly while non-technical preparation quietly grinds to a halt:",
+          "In almost every overdue website project, the coding work finishes quickly while non-technical preparation grinds to a halt:",
         ],
         bullets: [
-          "Empty copy commitments: promising internal teams will draft ten pages next weekend—leaving projects stalled six weeks while directors field day-to-day fires.",
-          "Lost `.co.za` registrar credentials: scrambling during launch week to contact a freelance designer from 2019 who holds domain ownership.",
-          "Late gateway FICA approvals: applying for PayFast, Yoco or Ozow accounts after design wraps instead of Week 2.",
-          "Mid-project scope drift: inserting major calculators or three new departments after visual staging sign-off resets testing loops.",
-          "Slow feedback loops: holding back review comments for three weeks waiting for a partner away on leave.",
+          "Empty copy promises: saying your team will write ten pages 'next weekend', leaving the build paused for six weeks while everyone puts out daily fires.",
+          "Lost `.co.za` domain logins: hunting during launch week for a freelance designer from 2019 who still holds your domain registration.",
+          "Late payment gateway FICA checks: applying for PayFast, Yoco or Ozow accounts after design ends instead of in Week 2.",
+          "Mid-build scope changes: adding custom calculators or three extra departments after the preview design is already signed off.",
+          "Slow feedback loops: holding back review notes for three weeks because one decision-maker is away on leave.",
         ],
         callout: {
           tone: "warning",
-          heading: "Resolve domain registrar and email DNS access in Week 1—not Launch Day",
-          text: "Inspect ZACR WHOIS ownership, registrar login rights and live email MX/SPF/DKIM zone records right on day two of kick-off so launching never puts company email at risk.",
+          heading: "Sort out domain registrar and email access in Week 1, not Launch Day",
+          text: "Check your ZACR ownership record, domain login rights and live mail records (MX, SPF and DKIM) on day two of kick-off so launching never puts company email at risk.",
         },
       },
       {
         title: "The lean core launch model: capture Google leads sooner",
         body: [
-          "Many SMEs delay launching for four months trying to draft thirty guides, twenty team bios and a massive project gallery upfront. Flip the sequence cleanly: ship the crisp 8-to-12-page core revenue site in Week 5 so Google indexes services and paid ads can run immediately—then roll out additional weekly articles steadily afterward.",
+          "Many SMEs delay going live for four months while trying to finish thirty articles, twenty staff bios and a giant photo gallery upfront. Flip the order: launch a sharp 8-to-12-page core revenue website in Week 5 so Google starts showing your services and paid ads can run, then publish extra guides week by week afterward.",
         ],
         callout: {
           tone: "tip",
-          heading: "Consolidate staging feedback into single 48-hour check-ins",
-          text: "Assigning one decision-maker to gather internal team feedback into a single bulleted list inside 48 hours of staging delivery reliably saves 10 to 15 calendar days per build.",
+          heading: "Bundle private preview feedback into one 48-hour check-in",
+          text: "Appointing one person to collect internal team notes into one clear bulleted list within 48 hours of seeing the private preview regularly saves 10 to 15 days on a build.",
         },
       },
       {
         title: "Final launch-week verification checklist before DNS goes live",
         body: [
-          "Never push domain records live Friday afternoon without stepping through every launch gate below:",
+          "Never switch your domain settings live on a Friday afternoon without checking every launch item below:",
         ],
         numbered: [
-          "Submit every contact, quote and newsletter trigger end-to-end and verify real inbox receipt inside 15 seconds.",
-          "Test phone layouts physically across compact 360px Android viewports with crisp spacing and zero horizontal clipping.",
-          "Script-check 100% of legacy URL redirects against staging to guarantee clean single-hop 301 paths.",
-          "Confirm clean SSL SAN coverage across apex and `www` alongside enabled HTTP security headers.",
-          "Submit live clean `sitemap.xml` inside Google Search Console immediately post-DNS cutover.",
+          "Submit every contact, quote and newsletter form end-to-end and verify emails reach your real inbox within 15 seconds.",
+          "Test phone layouts physically on narrow 360px Android screens with comfortable spacing and zero sideways clipping.",
+          "Check 100% of old page addresses against the preview site to ensure direct redirects (301) send visitors straight to the new page.",
+          "Confirm your HTTPS security certificate works on both `www` and bare domain versions, with browser security settings turned on.",
+          "Submit your updated `sitemap.xml` inside Google Search Console right after the domain switch.",
         ],
       },
       {
         title: "Realistic delay prevention schedule for South African teams",
         body: [
-          "Experienced project managers spot slipping website launches inside Week 1—almost never in Week 5. Keeping an internal preparation sprint moving in parallel with engineering cuts calendar duration almost in half without sacrificing visual craft or thorough QA testing.",
-          "Assign clear ownership internally across copy approvals, photographic assets and domain registrar verification right when signing quotes so paid engineering sprints never stall idle waiting on inbox attachments.",
+          "Experienced project managers spot slipping website launches in Week 1, almost never in Week 5. Running your internal prep list alongside the build cuts calendar time nearly in half without rushing design quality or pre-launch testing.",
+          "Assign one clear owner for text approvals, photos and domain logins when signing the quote so paid build sprints never sit idle waiting for inbox attachments.",
         ],
         subsections: [
           {
-            heading: "Prepare payment gateway FICA and domain EPP codes simultaneously",
+            heading: "Prepare payment gateway FICA and domain transfer codes together",
             body: [
-              "South African ecommerce stores frequently wait ten extra business days solely for PayFast, Yoco or Ozow compliance teams reviewing bank letters, CIPC certificates and CPA shipping/refund URLs. Starting merchant FICA registration inside Week 2 alongside staging setup prevents completed stores sitting dark waiting on banking clearance.",
+              "South African online stores often wait ten extra business days solely because PayFast, Yoco or Ozow teams need to check bank letters, CIPC papers and refund pages. Starting merchant verification in Week 2 while the private preview is built avoids finished shops sitting offline waiting on banking clearance.",
             ],
           },
           {
-            heading: "Handle photo and proof bottlenecks without halting core go-live",
+            heading: "Handle photo and proof delays without holding back go-live",
             body: [
-              "Never push an entire revenue-generating website launch back two months waiting for directors' delayed portrait studio sessions or unfinished secondary blog pieces. Launch cleanly with crisp compressed site imagery and top core services live first, then slot updated team portraits or new guides seamlessly onto live URLs as ready.",
+              "Never push an entire website launch back two months waiting for directors' delayed portrait shoots or optional blog drafts. Go live with compressed site photos and core services ready first, then drop updated portraits or extra articles onto live pages as soon as they arrive.",
             ],
           },
         ],
         bullets: [
-          "Week 0 prep checklist: ZACR `.co.za` registrar login, DNS provider credentials, high-res vector logos, service bullets and 4+ named client testimonials.",
-          "Agree strictly on two bundled stakeholder feedback rounds per milestone so informal WhatsApp change requests mid-build do not loop deadlines endlessly.",
+          "Week 0 prep checklist: ZACR `.co.za` registrar login, domain settings login, vector logo files, service bullet notes and 4+ named client testimonials.",
+          "Agree on two bundled feedback rounds per stage upfront so scattered WhatsApp edits mid-build do not push timelines out endlessly.",
         ],
       },
     ],
     midCta: {
       heading: "Need a dependable launch date you can line marketing campaigns up to?",
-      text: "We manage realistic weekly milestones cleanly—handling copy clarity, Search Console safety and final DNS cutover without last-minute panic.",
+      text: "We manage realistic weekly milestones, clear wording, Google Search Console safety and smooth domain switches without last-minute panic.",
       href: "/services/web-development/",
-      label: "Start Your Build Plan",
+      label: "Start your build plan",
     },
     related: [
       { label: "Website design & development", href: "/services/web-development/" },
@@ -771,32 +771,32 @@ export const websiteGuides: GuidePage[] = [
       {
         question: "Can a business website legitimately go live in 7 days?",
         answer:
-          "Only very lean 1-to-3-page digital cards where final approved wording, photos and domain logins arrive immediately. Serious multi-page commercial builds require 3–6+ weeks for clear copy, UX polish and SEO/security checks.",
+          "Only a very simple 1-to-3-page digital brochure can launch in 7 days, and only if your final wording, approved photos, and domain logins arrive on day one. Serious multi-page business websites need 3 to 6 weeks or more for clear writing, mobile speed checks, Google setup, and direct redirect testing.",
       },
       {
         question: "What single preparation pack cuts weeks off our build timeline?",
         answer:
-          "Assemble registrar/DNS logins, high-resolution logo vector files, concise bullet notes per core service, honest client testimonials, real photos and Google Search Console access before kick-off.",
+          "Pull together your domain provider login, high-resolution logo files, short bullet notes for each service, honest client reviews you have permission to share, real workplace photos, and Google Search Console access before kick-off. Having those basics ready in week one stops your site sitting idle waiting for missing inbox attachments.",
       },
       {
         question: "Does cutting over to a new website interrupt company email?",
         answer:
-          "No—copying exact MX, SPF, DKIM and DMARC records onto new DNS ahead of switching web `A`/`CNAME` pointers preserves company mail seamlessly.",
+          "No, launching a new website should never stop company email when handled properly. Copying your exact mail records (MX, SPF, DKIM and DMARC) into your domain settings before pointing only the web records to the new host keeps Microsoft 365 or Google Workspace mailboxes working smoothly throughout the switch.",
       },
       {
         question: "When is it safe to activate Google Ads after launching?",
         answer:
-          "Test analytics goals, live forms and mobile SSL cleanliness right after DNS cutover—then turn Search Ads on confidently within 24–48 hours.",
+          "Wait 24 to 48 hours after the domain switch so you can test live contact forms, check that your HTTPS security certificate loads on mobile data, and confirm tracking works. Once enquiry emails arrive reliably in your inbox and pages open fast on phones, you can safely switch Google Ads on.",
       },
       {
         question: "How long does DNS switching take to propagate across South Africa?",
         answer:
-          "Lowering TTL cleanly to 300 seconds a day beforehand ensures South African fibre and mobile networks reflect the updated website inside 5 to 60 minutes.",
+          "Most South African fibre and mobile networks update within 5 to 60 minutes when your developer lowers the domain update timer (TTL) to 300 seconds a day before launch. Some corporate or mobile caches hold old settings slightly longer, so keeping your previous site running quietly for 48 hours avoids downtime.",
       },
     ],
     priority: 0.72,
     published: "2026-11-20",
-    updated: "2026-11-20",
+    updated: "2026-11-26",
   },
   {
     slug: "how-to-choose-web-design-company-south-africa",
@@ -806,40 +806,40 @@ export const websiteGuides: GuidePage[] = [
     title: "How to Choose a Web Design Company in South Africa (And Red Flags to Avoid)",
     metaTitle: "Choose a Web Design Company in South Africa | SoftKore",
     description:
-      "How to vet and select a trustworthy web design agency in South Africa: test live mobile portfolio sites, verify .co.za domain ownership, SEO redirects and contracts.",
+      "How to vet and pick a trustworthy web design agency in South Africa: test live client websites on phones, verify .co.za ownership, SEO redirects and contracts.",
     intro:
-      "South Africa has hundreds of freelancers, template agencies and digital marketers quoting websites—yet SMEs regularly pay twice after hiring slick sales proposals that deliver slow pages, broken SEO redirects and hostage domain registrations. Checking five tangible proof points exposes real engineering quality before you pay a deposit.",
+      "South African firms often pay twice when a slick pitch leaves them with slow pages, lost Google links and a locked domain. Check phone speed, domain ownership, redirect plans and handover terms before you pay a deposit.",
     summary: [
       "Testing live portfolio speed",
       "Domain & code ownership rules",
       "SEO & security competence",
-      "Contract red flags to walk away from",
+      "Contract red flags to avoid",
     ],
     takeaways: [
-      "Test recent live client builds on your phone over mobile data—never hire purely off cropped design mockups.",
-      "Guarantee `.co.za` legal ownership and Google Search Console stay in YOUR company's name from day one.",
-      "Ask specifically how they migrate older domains with 301 redirects—blank answers invite post-launch ranking crashes.",
-      "Verify clear responsibility for copywriting, revision limits, security headers, backups and full exit handover.",
+      "Test recent live client websites on your phone over mobile data; never hire off pretty mockups alone.",
+      "Make sure `.co.za` legal ownership and Google Search Console stay in YOUR company's name from day one.",
+      "Ask specifically how they keep old Google links working with direct redirects; blank looks warn of post-launch traffic drops.",
+      "Get clear written responsibility for wording, revision limits, browser security settings, backups and exit handover.",
       "Walk away from long non-ownership rentals, '#1 Google guarantees' and 200-suburb duplicate template schemes.",
     ],
     sections: [
       {
-        title: "Test recent live websites on mobile data—never rely on portfolio mockups",
+        title: "Test recent live websites on mobile data, never rely on portfolio mockups",
         body: [
-          "Static presentation screenshots hide slow hosting, broken menus, missing copy and clumsy mobile layouts. Before hiring anyone, request links to three South African client websites built inside the past year and spend five minutes testing them honestly on cellular data.",
+          "Static screenshots hide slow hosting, broken menus, thin copy and awkward phone layouts. Before hiring anyone, ask for links to three South African client websites built in the past year and spend five minutes testing them on normal mobile data.",
         ],
         bullets: [
-          "Speed on 4G: Does primary helpful copy render smoothly in under 2 seconds without jumping wildly as oversized photos load?",
-          "Thumb ergonomics: Do menus, dropdowns and buttons tap accurately without tiny pinch-zoom gymnastics?",
-          "Commercial clarity: After scrolling ten seconds, can an outsider describe plainly what that client sells and how to enquire?",
-          "Google indexing & padlock health: Run `site:clientdomain.co.za` quickly on Google to confirm valid HTTPS and clean indexed service URLs with zero spam links.",
+          "Speed on 4G: Does the main headline and text appear inside 2 seconds without the layout jumping around as large photos load?",
+          "Thumb comfort: Do menus, dropdowns and buttons tap accurately without pinching to zoom?",
+          "Plain clarity: After scrolling for ten seconds, can an outsider tell what that business sells and how to enquire?",
+          "Google listing and security check: Search `site:clientdomain.co.za` on Google to verify a working HTTPS security certificate and clean service pages with zero spam links.",
         ],
       },
       {
         title: "Insist on direct domain, Search Console and code ownership upfront",
         body: [
-          "One of the most stressful disputes across South African small business occurs when an outgoing web agency retains primary `.co.za` registrant ownership inside their reseller dashboard—stalling transfers or demanding hefty release invoices.",
-          "Insist every foundational digital asset belongs legally and operationally to your business from day one.",
+          "One of the most stressful fights for South African SMEs happens when an outgoing agency keeps the `.co.za` domain registered in its own reseller account, stalling transfers or charging hefty release fees.",
+          "Insist that every core digital asset belongs legally and practically to your business from day one.",
         ],
         table: {
           caption: "Asset ownership checklist before paying any website deposit",
@@ -847,48 +847,48 @@ export const websiteGuides: GuidePage[] = [
           rows: [
             [
               ".co.za / .com Domain",
-              "Registered in your company legal entity & monitored domain email",
-              "Agency registers themselves as legal owner & withholds EPP transfer control",
+              "Registered in your company legal name using a monitored company email",
+              "Agency registers itself as legal owner and withholds domain transfer codes",
             ],
             [
               "Search Console & Analytics",
-              "Owned by your company Google account; agency invited as delegated user",
-              "Agency refuses admin ownership & exports selective PDF screenshots only",
+              "Owned by your company Google account; agency invited as a user",
+              "Agency refuses admin ownership and only sends selective PDF screenshots",
             ],
             [
               "Code & Copy IP",
-              "Full codebase, assets & written copy assigned clearly on final payment",
-              "Opaque rental locking layout & pages indefinitely onto supplier server",
+              "Full codebase, assets and written copy assigned clearly once paid",
+              "Opaque rental locking your pages forever onto a supplier's system",
             ],
             [
               "Hosting & Email",
-              "Decoupled business mail (M365/Workspace) + clean hosting handover terms",
-              "Bundled shared mystery box holding company email hostage",
+              "Separate company mail (M365/Workspace) + clear hosting handover terms",
+              "Bundled mystery server holding company email hostage",
             ],
           ],
         },
         callout: {
           tone: "warning",
           heading: "Skip 'free build / R1,500pm 36-month website rental' contracts",
-          text: "Rental agreements routinely collect R54,000+ across three years while leaving you owning zero files or domain control when upgrading later.",
+          text: "Rental contracts routinely take R54,000+ over three years while leaving you owning zero website files or domain control when you want to leave later.",
         },
       },
       {
         title: "Test technical depth on SEO migrations and cyber security",
         body: [
-          "Many creative boutiques treat Google rankings and basic security engineering as optional post-launch upgrades. Ask two specific operational questions on your initial call and listen carefully for concrete precision over buzzwords:",
+          "Many design studios treat showing on Google and locking down security as optional add-ons after launch. Ask two specific questions on your first call and listen for plain, concrete answers rather than buzzwords:",
         ],
         subsections: [
           {
             heading: "How will our existing Google traffic stay protected across launch?",
             body: [
-              "Competent teams immediately ask for Search Console exports, evaluate top-traffic paths, keep proven slugs intact and configure verified single-hop 301 redirect rules cleanly—never shrugging off broken URLs with 'Google will re-index automatically later'.",
+              "Reliable teams immediately ask for Google Search Console exports (Google's free report on how your site shows up in search), check your top pages, keep winning web addresses intact, and build verified direct redirects (301) so old links send visitors straight to the matching new page.",
             ],
           },
           {
             heading: "Which security baselines and backup standards are configured at launch?",
             body: [
-              "Listen for tangible measures: HTTP security headers (`HSTS`, `nosniff`, framing rules), server-side form rate limits, MFA logins, verified transactional email authentication (`SPF`/`DKIM`/`DMARC`) and isolated off-site backups.",
+              "Listen for tangible steps: browser security settings (`HSTS`, `nosniff`, framing rules), contact form spam limits, two-step login verification, verified email sender records (`SPF`/`DKIM`/`DMARC`) and off-site backups stored away from the main server.",
             ],
           },
         ],
@@ -896,56 +896,56 @@ export const websiteGuides: GuidePage[] = [
       {
         title: "Spot communication discipline and agency red flags early",
         body: [
-          "Notice closely how an agency qualifies your brief. Strong partners ask pointed business questions around buyer doubts, pricing transparency, core revenue services and internal team bottlenecks BEFORE drafting quotes. Weak sellers email cookie-cutter R8,500 PDF bundles blindly within fifteen minutes.",
+          "Pay close attention to how an agency qualifies your brief. Strong partners ask practical business questions about buyer doubts, pricing clarity, core services and team bottlenecks BEFORE sending a quote. Weak sellers fire off cookie-cutter R8,500 PDF quotes within fifteen minutes.",
         ],
         callout: {
           tone: "tip",
           heading: "Honest partners tell you when a targeted fix beats a full rebuild",
-          text: "If an agency advises fixing broken 301 redirects, mobile speed and service copy on a healthy domain instead of pushing a costly scratch redesign, you found trustworthy advisers.",
+          text: "If an agency suggests fixing broken redirects, phone speed and service wording on your current domain instead of pushing an expensive full rebuild, you have found trustworthy advisers.",
         },
       },
       {
         title: "Use this 4-step vetting scorecard before signing any agreement",
         body: [
-          "Place two or three shortlisted South African proposals side by side against identical criteria rather than chasing the lowest headline rand figure blindly:",
+          "Compare two or three shortlisted South African proposals against the exact same four checks rather than picking the cheapest headline number:",
         ],
         numbered: [
-          "Verify explicit page count, copywriting authorship, image sourcing and revision structure in writing.",
-          "Check explicit launch SEO scope: clean semantic headings, metadata, JSON-LD, XML sitemap and 301 testing.",
-          "Confirm baseline security, POPIA form hygiene, MFA handover and asset ownership clauses cleanly.",
-          "Verify ongoing support turnaround promises, realistic ad-hoc update rates and zero exit hostage clauses.",
+          "Verify exact page count, who writes the wording, photo sourcing and revision limits in writing.",
+          "Check launch Google setup: clean page headings, page titles, structured business data, XML sitemap and redirect testing.",
+          "Confirm baseline security, POPIA form clarity, two-step login handover and full asset ownership clauses.",
+          "Verify ongoing support turnaround times, realistic update rates and zero exit lock-in penalties.",
         ],
       },
       {
         title: "Real contract clauses and onboarding questions to protect your company",
         body: [
-          "Even pleasant discovery calls hide painful disputes months later unless key governance rights sit explicitly inside your signed Statement of Work. South African SMEs protect themselves best by confirming asset ownership, post-launch accountability and realistic exit portability ahead of paying the initial deposit.",
-          "Treat refusal to clarify these five operational standards in writing as an immediate signal to shortlist stronger candidates instead.",
+          "Friendly discovery calls can still turn into messy disputes months later if key ownership rights are missing from your signed scope of work. South African SMEs protect themselves best by confirming asset ownership, post-launch accountability and clear exit rights before paying the deposit.",
+          "Treat any refusal to put these five practical standards in writing as a clear signal to move on to better candidates.",
         ],
         subsections: [
           {
-            heading: "Mandate clean exit portability and source code ownership upfront",
+            heading: "Require clean exit portability and source code ownership upfront",
             body: [
-              "Ensure written terms explicitly confirm that upon settlement of agreed final build invoices, full intellectual property rights for bespoke layouts, copywriting, photographic media and non-proprietary codebase pass permanently to your business—alongside clean zip/Git exports and database dumps upon departure without artificial 'offboarding release' surcharges.",
+              "Make sure written terms state clearly that once final build invoices are settled, full ownership of custom layouts, written copy, photos and non-proprietary website code belongs permanently to your business, including full code and database exports on request with no artificial 'release fee'.",
             ],
           },
           {
-            heading: "Verify post-launch bug warranty and response SLAs",
+            heading: "Verify post-launch bug warranty and response timeframes",
             body: [
-              "Every responsible developer includes a defined 30-to-60 day post-launch defect resolution window after DNS cutover covering responsive layout edge bugs, form delivery glitches or unexpected 404/301 misfires at zero extra billing—separate cleanly from optional monthly retainers or future feature sprints.",
+              "Every dependable developer includes a clear 30-to-60 day post-launch fix window after going live to solve layout bugs on odd phone sizes, form delivery hiccups or missed redirects at zero extra cost, separate from optional monthly retainers or future upgrades.",
             ],
           },
         ],
         bullets: [
-          "Insist all project progress links run on live private staging URLs clickable on your own smartphone rather than locked inside static screenshot decks.",
-          "Verify who configures Google Analytics/Search Console tracking events and confirms test form notifications hit company inboxes before sign-off.",
-          "Compare realistic maintenance terms upfront so a seemingly cheap build price does not disguise mandatory R3,000/month lock-in tie-ins.",
+          "Insist that work-in-progress runs on live private preview links you can tap on your own smartphone rather than static screenshot decks.",
+          "Verify who sets up Google Analytics and Search Console tracking and tests that form enquiries reach your inbox before final sign-off.",
+          "Compare realistic ongoing upkeep terms upfront so a cheap build fee does not hide mandatory R3,000/month lock-in tie-ins.",
         ],
       },
     ],
     midCta: {
       heading: "Comparing web design quotes in South Africa right now?",
-      text: "Send what you want the site to achieve—we share transparent written scope with full ownership guarantees, technical SEO and launch security included.",
+      text: "Tell us what you need your site to achieve. We send transparent written scopes with full ownership guarantees, Google setup and launch security included.",
       href: "/services/web-development/",
       label: "Talk to SoftKore Digital",
     },
@@ -959,67 +959,67 @@ export const websiteGuides: GuidePage[] = [
       {
         question: "Does it matter whether our web company sits in our immediate suburb?",
         answer:
-          "Rarely—live browser staging walkthroughs, video calls and concise documentation work smoothly across Johannesburg, Cape Town, Durban and nationwide, letting you prioritise skill and communication over postcode.",
+          "Rarely. Live private preview links you can test on your own phone, short video calls, and clear written updates work well across Johannesburg, Cape Town, Durban, and smaller towns. Choosing a web partner on proven skill, clear communication, and reliable support matters far more than sitting ten minutes down the road.",
       },
       {
         question: "Can an agency configure our DNS if we keep legal registrar ownership?",
         answer:
-          "Yes—maintaining `.co.za` legal registrant control inside your own registrar account while granting delegated technical DNS access is the gold standard.",
+          "Yes, and that is the safest setup for your company. Keep your `.co.za` domain registered in your business name inside your own registrar account with two-step login verification turned on, then invite your developer as a technical user or share temporary access so they can update domain settings without owning your name.",
       },
       {
         question: "How many agency proposals should a South African SME compare?",
         answer:
-          "Two or three detailed line-by-line written scopes give far better comparisons than gathering ten vague one-paragraph price guesses.",
+          "Comparing two or three detailed written proposals works much better than gathering ten vague one-paragraph price guesses. Ask each shortlisted company to explain the exact page list, who writes the wording, how old links will be redirected, what security checks are included, and what you own once the final invoice clears.",
       },
       {
         question: "What if an ex-agency disappeared with our WordPress logins or domain?",
         answer:
-          "Recover ZACR registrant access first via formal registry ID procedures, secure clean DNS, rebuild priority content cleanly on modern architecture and rescue indexed URLs smoothly via single-hop 301s.",
+          "Recover your `.co.za` domain ownership first by verifying your company registration and director ID through South Africa's domain registry (ZACR) and your domain registrar. Once you control the domain settings again, you can move the site to clean hosting, reset all staff logins, or rebuild and redirect old links safely.",
       },
       {
         question: "Why do quotes for 'a 10-page website' vary from R12,000 to R65,000?",
         answer:
-          "Lower quotes drop template blocks onto supplied copy without SEO engineering; higher quotes fund research, conversion writing, bespoke performance design, structured data and launch hardening. Check our [website prices guide](/guides/website-prices-south-africa/).",
+          "Lower quotes usually drop standard template blocks onto wording you supply yourself, with little Google setup or speed tuning. Higher quotes pay for buyer research, clear sales writing, custom mobile layouts, structured Google business data, redirect mapping, and launch security. Read our [website prices guide](/guides/website-prices-south-africa/) for full South African price brackets.",
       },
       {
         question: "What are the biggest red flags when hiring a South African web design agency?",
         answer:
-          "Watch out for registering your `.co.za` domain under the agency's name, locking code behind proprietary closed builders, zero mention of 301 redirects on redesigns, vague guaranteed-ranking claims and no exclusion list.",
+          "Walk away if an agency registers your `.co.za` domain under its own name, locks your website inside a closed rental system you cannot export, ignores redirects when replacing an old site, promises '#1 on Google' guarantees, or gives a vague quote with no clear list of what is included and excluded.",
       },
       {
         question: "Should a web design company also handle technical SEO and security?",
         answer:
-          "Yes—separating design from [technical SEO](/services/seo-services/) and [website security](/services/website-security/) regularly leaves launched sites fast visually yet unindexed in Search Console or vulnerable to plugin hacks.",
+          "Yes, because splitting design away from [technical SEO](/services/seo-services/) and [website security](/services/website-security/) often leaves a good-looking website stuck off Google or open to plugin hacks. Structure, page speed, redirects, HTTPS security certificates, browser security settings, and spam protection should all be built in properly from launch day instead of fixed later.",
       },
       {
         question: "How do I verify whether a web design agency builds fast websites?",
         answer:
-          "Test three live client sites from their portfolio on your own phone over cellular signal and inspect PageSpeed Insights or Core Web Vitals rather than trusting compressed desktop screenshots.",
+          "Ask for three live South African websites they built recently and open them on your own smartphone over normal mobile data. Watch how fast the main headline appears, check if buttons tap easily without zooming, and run those web addresses through Google PageSpeed Insights instead of trusting cropped desktop screenshots.",
       },
       {
         question: "Is it risky to pay 100% upfront or hire a freelancer without written scope?",
         answer:
-          "Yes. Always tie payments to clear deliverables—discovery sign-off, live staging site review and verified post-launch QA—backed by written IP ownership terms.",
+          "Yes, paying everything upfront removes your leverage if deadlines slip or quality drops. Tie milestone payments to clear deliverables instead: brief sign-off, testing a live private preview on your phone, and final launch checks. Also make sure your agreement states clearly that you own the code, wording, and domain.",
       },
       {
         question: "What happens if an agency relies on cracked or nulled WordPress themes?",
         answer:
-          "Nulled themes and pirated plugins are one of the fastest ways South African SME sites get injected with hidden spam and malware—leaving you facing costly [hacked site recovery](/guides/hacked-website-recovery-south-africa/).",
+          "Pirated ('nulled') themes and cracked plugins often come with hidden malware built in, giving attackers an easy way into your site to inject spam links or steal enquiries. Worse, they never receive security patches, which frequently leaves South African businesses paying for emergency [hacked site recovery](/guides/hacked-website-recovery-south-africa/) within a few months of launching.",
       },
       {
         question: "Should we ask to see Search Console or conversion results, not just pretty mockups?",
         answer:
-          "Yes. Visual polish matters, yet credible studios explain how page layout, copy hierarchy, speed and internal linking turn visitors into real WhatsApp messages, calls and form enquiries.",
+          "Yes. Clean visual design matters, yet a credible web company should explain how page layout, plain-English wording, phone speed, and internal links work together to turn visitors into calls, WhatsApp messages, and quote forms. Ask how they measure live enquiry actions once a new website goes live for your business.",
       },
       {
         question: "Can SoftKore review a competing web quote or inspect our current site first?",
         answer:
-          "Yes—send your URL or brief via our [contact form](/contact/?service=free-seo-audit#contact-form) and we will share an honest assessment of what your current site needs before you commit budget.",
+          "Yes, send your website address or brief through our [contact form](/contact/?service=free-seo-audit#contact-form) and we will share an honest written view of what your current site needs before you commit budget. We tell you plainly whether a targeted fix makes more sense than paying for a full rebuild from scratch.",
       },
     ],
     priority: 0.72,
     published: "2026-11-20",
-    updated: "2026-11-21",
+    updated: "2026-11-26",
   },
   {
     slug: "website-maintenance-cost-south-africa",
@@ -1029,153 +1029,153 @@ export const websiteGuides: GuidePage[] = [
     title: "Website Maintenance Costs in South Africa: Hosting, Domains, Updates & Support",
     metaTitle: "Website Maintenance Costs in South Africa | SoftKore",
     description:
-      "Monthly website maintenance costs in South Africa explained: realistic ZAR prices for hosting, .co.za renewals, security updates, off-site backups and support plans.",
+      "Monthly website maintenance costs in South Africa: realistic ZAR prices for hosting, .co.za renewals, security updates, off-site backups and support plans.",
     intro:
-      "Ongoing website running costs in South Africa generally sit between R250 and R750/month for lean infrastructure on static Next.js builds, and R1,200 to R4,500+/month for WordPress/WooCommerce security patching, encrypted off-site backups and monthly content hours. Knowing exactly what your software stack requires keeps retainers clean without risking silent downtime.",
+      "Monthly website running costs in South Africa usually sit between R250 and R750 for lean Next.js hosting, or R1,200 to R4,500+ for WordPress updates, off-site backups and support. Knowing what your site needs keeps monthly bills fair without risking downtime.",
     summary: [
       "Infrastructure & renewal basics",
-      "Security patching & backups",
-      "Ongoing content & SEO care",
+      "Security updates & off-site backups",
+      "Ongoing content & Google checks",
       "Avoiding unnecessary retainers",
     ],
     takeaways: [
-      "Separate base hosting/domain costs cleanly from reactive CMS plugin care, content edit hours and active SEO retainers.",
-      "Budget R50/month shared cPanel accounts regularly impair mobile load times and shared email delivery.",
-      "Ignored WordPress sites quietly gather unpatched plugin CVEs, PHP deprecation crashes and broken lead forms.",
-      "Lean Next.js static builds eliminate weekly plugin firefighting, reducing long-term security support overhead noticeably.",
-      "Ensure any care plan checks live form inbox delivery, SSL renewals and staging backup restores—not empty software update logs.",
+      "Separate basic hosting and domain renewals from reactive editing-system plugin care, monthly content edits and ongoing SEO work.",
+      "Budget R50/month shared cPanel hosting accounts regularly hurt mobile page speed and email delivery.",
+      "Ignored WordPress websites quietly pick up unpatched plugin security flaws, server upgrade crashes and broken enquiry forms.",
+      "Pre-built Next.js websites remove weekly plugin firefighting, which noticeably lowers long-term security support costs.",
+      "Make sure any monthly care plan tests live enquiry emails, HTTPS security certificate renewals and off-site backup restores, not just auto-update logs.",
     ],
     sections: [
       {
         title: "Indicative monthly website maintenance ranges in South Africa (ZAR)",
         body: [
-          "Fair monthly pricing tracks directly with technical risk and how often pages evolve. Static pre-rendered websites require minimal ongoing plugin intervention compared with active WooCommerce stores managing constant extensions and live database checkouts.",
+          "Fair monthly pricing depends on technical risk and how often your pages change. Pre-built websites need far less hands-on plugin work than active WooCommerce online stores running regular add-on updates and live checkouts.",
         ],
         table: {
           caption: "Indicative South African monthly website running & care ranges",
           headers: ["Care tier", "Typical ZAR cost", "What is covered", "Ideal website type"],
           rows: [
             [
-              "Essential Infrastructure Only",
+              "Essential Hosting & Alerts Only",
               "R250 – R750 / mo (approx. equiv.)",
-              "Domain renewal provision, fast hosting/CDN, auto TLS & uptime ping monitoring",
-              "Lean static or Next.js corporate builds with rare text edits",
+              "Domain renewal provision, fast hosting/CDN, auto HTTPS security certificate & alerts if your site goes down",
+              "Lean pre-built or Next.js company sites with rare wording updates",
             ],
             [
-              "Security & Patching Care Plan",
+              "Security & Update Care Plan",
               "R950 – R2,200 / mo",
-              "Staged CMS/plugin updates, Cloudflare WAF tuning, off-site backups & monthly form QA",
-              "WordPress business sites needing active security care without breakages",
+              "Preview-tested editing system/plugin updates, website firewall tuning, off-site backups & monthly form checks",
+              "WordPress business sites needing active security care without update breakages",
             ],
             [
               "Active Growth & Support Retainer",
               "R2,200 – R4,500+ / mo",
-              "Full security care + quarterly restore drills + 2–5 hrs monthly content edits & Search Console checks",
-              "Active service SMEs & ecommerce stores rolling out ongoing updates cleanly",
+              "Full security care + quarterly backup restore tests + 2–5 hrs monthly content edits & Search Console checks",
+              "Active service businesses and online stores rolling out regular updates",
             ],
           ],
         },
         callout: {
           tone: "note",
           heading: "Active SEO campaigns remain separate from technical maintenance",
-          text: "Technical maintenance keeps existing sites upright, secure and patched. Strategic keyword work, comprehensive guides and ranking campaigns belong in dedicated SEO budgets.",
+          text: "Technical maintenance keeps your existing site upright, secure and updated. Keyword strategy, new service pages and ranking growth belong in dedicated SEO budgets.",
         },
       },
       {
         title: "Fixed infrastructure costs: domains, hosting tiers and email separation",
         body: [
-          "Every company site carries baseline annual and monthly utility commitments regardless of agency contracts.",
+          "Every business website carries fixed monthly or yearly running costs, whether you keep an agency on retainer or not.",
         ],
         subsections: [
           {
-            heading: "Domain renewals & DNS infrastructure",
+            heading: "Domain renewals and domain settings",
             body: [
-              "`.co.za` renewals stay inexpensive in rand (~R100–R350/year depending on registrar), while `.com` renewals track USD rates. Host authoritative DNS on a resilient provider locked via MFA with Transfer Lock active.",
+              "`.co.za` renewals stay inexpensive in rand (~R100–R350/year depending on your registrar), while `.com` renewals follow US dollar rates. Keep your domain settings (DNS) with a reliable provider protected by two-step login verification and Transfer Lock turned on.",
             ],
           },
           {
-            heading: "Hosting selection & keeping office mail strictly separate",
+            heading: "Hosting selection and keeping company email separate",
             body: [
-              "Crowded shared cPanel servers overload PHP workers and expose company invoices to noisy neighbours' spam IP blacklists. Host dynamic CMS databases on isolated managed VPS tiers or Next.js builds on global/SA edge networks—keeping employee email completely separate on Microsoft 365 or Google Workspace.",
+              "Crowded shared cPanel servers slow down database queries and expose your invoices to spam blacklists caused by neighbouring websites. Host dynamic WordPress databases on dedicated virtual servers (VPS) or pre-built Next.js sites on fast local networks, and keep staff email separate on Microsoft 365 or Google Workspace.",
             ],
           },
         ],
         bullets: [
-          "Automated TLS/SSL: Modern hosting and Cloudflare provision valid SSL free—skip expensive generic R2,000/yr DV SSL upsells.",
-          "Licensed plugin renewals: Track Elementor Pro, WooCommerce courier or form add-on annual fees inside your own company card.",
+          "Free HTTPS security certificates: modern hosts and Cloudflare provide valid HTTPS certificates free, so skip expensive R2,000/year basic upsells.",
+          "Paid plugin licences: pay for Elementor Pro, WooCommerce courier or form add-ons directly on your own company card.",
         ],
       },
       {
         title: "Security, tested backups and silent form failure checks",
         body: [
-          "Business owners regularly dismiss ongoing checks while the homepage looks unchanged—missing subtle breakages costing months of enquiries silently.",
-          "Solid monthly care routinely uncovers broken enquiry forms after hosting PHP updates, expired payment gateway API secrets, rogue former staff logins and silent indexing drops before revenue suffers.",
+          "Many owners assume a website is fine just because the homepage looks normal, missing silent faults that cost months of lost enquiries.",
+          "Routine monthly checks regularly catch broken contact forms after server PHP upgrades, expired payment gateway keys, old former-staff logins left active and sudden drops in Google visibility before revenue takes a hit.",
         ],
         bullets: [
-          "Staging-verified patching: Test CMS/plugin updates safely on staging first before touching live conversion paths.",
-          "Immutable off-site backups: Store daily encrypted SQL + media archives cleanly off-server, verifying restores quarterly.",
-          "End-to-end contact form submission testing: Verify notifications arrive reliably via authenticated SPF/DKIM routes monthly.",
-          "24/7 external uptime, SSL expiry and Search Console Security Issues alerting.",
+          "Preview-tested updates: test WordPress and plugin updates on a private preview site before updating the live website.",
+          "Off-site backups: save daily encrypted website and database copies away from your hosting account, and test a real restore every quarter.",
+          "End-to-end contact form checks: submit a real test enquiry every month to confirm notifications reach your inbox through proper email sender records (SPF/DKIM).",
+          "24/7 alerts if your site goes down, HTTPS certificate expiry alerts and Google Search Console security warnings.",
         ],
         callout: {
           tone: "warning",
           heading: "Same-server host backups vanish alongside hacks",
-          text: "Do not equate default hosting folder backups with real disaster recovery—ransomware or account suspension wipes host-local snapshots right alongside production files.",
+          text: "Do not treat your hosting provider's local folder backup as safe disaster recovery. Ransomware or a suspended hosting account can wipe local host backups right alongside your live files.",
         },
       },
       {
         title: "Why static Next.js builds slash ongoing upkeep permanently",
         body: [
-          "Much recurring South African maintenance spend exists purely to babysit brittle WordPress plugins. Re-architecting steady corporate service websites cleanly onto Next.js static exports cuts database queries and PHP plugin vectors down near zero—turning monthly maintenance into calm monitoring, rare package security updates and smooth intentional content updates.",
+          "A huge share of monthly South African maintenance bills exists purely to babysit fragile WordPress plugins. Rebuilding steady business service sites as pre-built Next.js pages removes exposed database queries and PHP plugin risks, turning monthly care into calm outage alerts, occasional package updates and planned wording refreshes.",
         ],
       },
       {
-        title: "Audit support value once a year to avoid bloated unused retainers",
+        title: "Audit support value once a year to avoid slow, overloaded retainers",
         body: [
-          "Never stay stuck paying R3,800/month out of habit while sending only two small wording swaps all year. Review maintenance summaries annually against actual tickets closed:",
+          "Never stay locked into a R3,800/month retainer out of habit if you only send two small wording changes all year. Check your support value once a year against real work delivered:",
         ],
         numbered: [
-          "Inspect documented monthly patch logs, uptime numbers and last verified off-site restore timestamp.",
-          "Verify unused edit hours match your true publishing cadence—scale down neatly if edits drop to quarterly.",
-          "Confirm your contract grants clean full handover of Git source, backups and domain records anytime you transition.",
+          "Ask for documented monthly update logs, uptime reports and the date of your last tested off-site backup restore.",
+          "Check whether included monthly edit hours match how often you actually update pages, and step down to a lighter plan if edits happen quarterly.",
+          "Confirm your contract lets you leave smoothly with full copies of your website code, backups and domain control.",
         ],
         callout: {
           tone: "tip",
-          heading: "Audit overlapping software & SSL bills before renewing",
-          text: "Reviewing bank debits yearly frequently catches redundant hosting boxes, duplicate SSL certificates and dead staging servers quietly billing for years.",
+          heading: "Check overlapping hosting and certificate debit orders once a year",
+          text: "Reviewing bank statements once a year often turns up spare hosting accounts, duplicate certificate fees and forgotten old test servers that have quietly billed for years.",
         },
       },
       {
         title: "Worked cost comparison: reactive emergency fixes vs predictable monthly care",
         body: [
-          "Business owners occasionally cancel disciplined R1,400/month care contracts believing websites run static forever once paid off—only to pay four times as much inside eighteen months rescuing broken plugin updates, expired certificates or silent spam injections.",
-          "Comparing predictable preventative care against realistic South African reactive rescue fees illustrates quickly why right-sized ongoing stewardship pays for itself across years two and three.",
+          "Business owners sometimes cancel a steady R1,400/month care plan thinking a paid-off website runs untouched forever, only to spend four times as much within eighteen months rescuing crashed plugin updates, expired security certificates or hidden spam injections.",
+          "Comparing steady preventative care against typical South African emergency rescue bills shows quickly why right-sized ongoing upkeep pays for itself.",
         ],
         subsections: [
           {
-            heading: "What reactive firefighting actually bills when neglect catches up",
+            heading: "What emergency rescue work actually costs when neglect catches up",
             body: [
-              "Emergency malware cleanups paired with Google Safe Browsing blacklisting recovery typically cost R4,500 to R12,000+ once-off depending on infection spread—excluding days of halted enquiries and wrecked Search Ads spend. Broken WordPress core/PHP incompatibilities left two years behind often trigger unexpected R5,000–R15,000 rescue rebuild sprints.",
+              "Emergency malware clean-ups and removing Google's red 'Deceptive site ahead' warning typically cost R4,500 to R12,000+ once-off depending on how deep the infection goes, on top of days of lost enquiries and paused Google Ads. WordPress sites left two years behind server PHP updates often need R5,000 to R15,000 rescue rebuild sprints.",
             ],
           },
           {
-            heading: "Right-sizing ongoing budgets honestly by website stack",
+            heading: "Right-sizing ongoing budgets honestly by website type",
             body: [
-              "If paying R2,500/month purely to baby-sit twenty fragile plugins feels excessive for a straightforward B2B service website, channel budget intentionally once into refactoring onto static Next.js instead—lowering ongoing monthly upkeep comfortably to light hosting, monitoring and ad-hoc campaign updates.",
+              "If paying R2,500/month just to babysit twenty delicate plugins feels wasteful for a normal B2B service website, investing once to move onto pre-built Next.js can bring ongoing monthly costs down to basic hosting, outage alerts and occasional planned updates.",
             ],
           },
         ],
         bullets: [
-          "Request itemized monthly summary logs showing exact plugin patches tested, last off-site backup restore verification date, uptime score and Search Console alerts cleared.",
-          "Confirm billing flexibility upfront so scaling support hours down during quiet business quarters stays straightforward.",
+          "Ask for an itemised monthly summary showing which plugins were tested, the latest backup restore test date, uptime score and any Google Search Console warnings cleared.",
+          "Confirm flexible notice terms upfront so stepping down support hours during quiet quarters stays simple.",
         ],
       },
     ],
     midCta: {
       heading: "Paying unclear maintenance bills with zero proof of what gets checked?",
-      text: "We inspect plugins, backup health, SSL monitoring and hosting speed—matching you cleanly to lean infrastructure or security care built for your stack.",
+      text: "We check your plugins, backup health, HTTPS security certificate alerts and hosting speed, then match you to honest hosting or security care built for your site.",
       href: "/services/website-security/",
-      label: "Review Website Care Options",
+      label: "Review website care options",
     },
     related: [
       { label: "Website & cyber security", href: "/services/website-security/" },
@@ -1187,32 +1187,32 @@ export const websiteGuides: GuidePage[] = [
       {
         question: "What happens if we leave WordPress completely unmaintained for two years?",
         answer:
-          "Sites eventually clash against mandatory server PHP upgrades—causing fatal errors—or suffer automated bots exploiting unpatched form/builder plugins to inject search spam.",
+          "Eventually, unmaintained WordPress sites clash with mandatory server software updates and crash with fatal errors. Worse, automated bots scan websites daily looking for outdated form or page-builder plugins, giving hackers an easy way in to inject hidden spam links, hijack redirects, or lock your team out of your website.",
       },
       {
         question: "Should automated SSL certificates still cost money every year?",
         answer:
-          "Generally no for standard company websites—reputable modern hosts and CDNs include automated Let's Encrypt or managed TLS at zero extra surcharge.",
+          "Usually no for ordinary business websites. Reputable South African hosts and content delivery networks include free automated HTTPS security certificates (such as Let's Encrypt) at no extra annual charge. Paying R1,500 to R2,500 a year for a basic certificate is almost always an unnecessary legacy agency markup on standard company sites.",
       },
       {
         question: "Can SoftKore maintain or rescue a website built by an earlier supplier?",
         answer:
-          "Usually yes—starting with a short technical access, plugin and backup inspection so any hidden liabilities or dead licences get cleaned up neatly upfront.",
+          "Yes, in most cases we start with a short check of your domain access, hosting setup, plugins, and existing backups. That shows us any hidden risks, expired licences, or messy leftovers from your previous supplier so we can clean them up upfront before placing your site onto steady monthly care.",
       },
       {
         question: "Do Next.js sites require any ongoing technical monitoring?",
         answer:
-          "They avoid weekly CMS plugin patching, though external uptime/SSL monitoring, form endpoint verification, npm security updates and Search Console reviews keep operations reliable.",
+          "Yes, although far less than WordPress. Because pre-built Next.js sites have no weekly plugin patches to manage, ongoing care focuses on alerts if your site goes down, checking HTTPS security certificate renewals, testing live contact forms, applying occasional software updates, and watching Google Search Console for unexpected site scan or listing errors.",
       },
       {
         question: "Why test live contact forms monthly when nobody edited the form?",
         answer:
-          "Third-party mail API keys expire, DNS TXT records drift or server PHP/Node upgrades occasionally silently reject form payloads without leaving visible errors on the webpage itself.",
+          "Contact forms break silently when third-party email keys expire, domain sender records change, or hosting providers update background server software. The form page can still look normal on screen while enquiry emails quietly fail behind the scenes, costing you weeks of missed customer leads before anyone in your office notices.",
       },
     ],
     priority: 0.72,
     published: "2026-11-20",
-    updated: "2026-11-20",
+    updated: "2026-11-26",
   },
   {
     slug: "co-za-vs-com-domain-south-africa",
@@ -1222,75 +1222,75 @@ export const websiteGuides: GuidePage[] = [
     title: ".co.za vs .com Domains: Which Is Better for South African Businesses?",
     metaTitle: ".co.za vs .com Domain for SA Businesses | SoftKore",
     description:
-      "Should your South African business pick .co.za or .com? Compare local trust, Google South Africa geo-targeting, domain security, dual-domain redirects and email.",
+      "Should your South African business pick .co.za or .com? Compare local trust, Google South Africa targeting, domain security, dual-domain redirects and email.",
     intro:
-      "For companies serving clients inside South Africa, `.co.za` stands out as the clear default for local buyer confidence and automatic South African search geo-targeting—whereas `.com` wins when primary revenue comes from international consulting, global SaaS or cross-border export. Owning both works smartly ONLY when one domain stays primary and the second points via a clean single-hop 301 redirect.",
+      "For businesses selling mainly inside South Africa, a `.co.za` domain gives instant local trust and signals South Africa to Google automatically. A `.com` domain makes more sense if most of your customers live overseas, and if you buy both, one must be the main address while the other uses a direct redirect.",
     summary: [
       "Local South African buyer trust",
       "How Google treats .co.za vs .com",
-      "Why running two live domains hurts SEO",
+      "Why running two live domains hurts Google rankings",
       "Safest redirect & email setup",
     ],
     takeaways: [
-      "`.co.za` assures South African shoppers immediately that you operate locally, price in ZAR and deliver inside the Republic.",
-      "Google recognises `.co.za` natively as South Africa-targeted; `.com` relies more heavily on SA address, content and backlink signals.",
-      "Never allow BOTH domains to serve duplicate websites simultaneously—Google splits ranking equity across duplicate mirrors.",
-      "Point secondary/defensive domains straight to your single primary canonical URL with clean HTTP 301 forwarding.",
-      "Publish `v=spf1 -all` and `p=reject` DMARC records even on unused parked domains so criminals cannot spoof them.",
+      "`.co.za` shows South African buyers straight away that you operate locally, price in rand and deliver inside the country.",
+      "Google knows automatically that `.co.za` targets South Africa, while `.com` needs stronger local address and link proof.",
+      "Never serve the exact same website on BOTH domains at once, because Google splits ranking strength across duplicate copies.",
+      "Point spare defensive domains straight to your single main web address using a direct redirect (301).",
+      "Publish `v=spf1 -all` and `p=reject` email security records even on unused parked domains so scammers cannot spoof your name.",
     ],
     sections: [
       {
         title: "Buyer perception and Google geo-targeting: .co.za vs .com",
         body: [
-          "Changing your live domain name later involves invoice edits, printed vehicle/stationery updates and delicate Search Console migration work. Matching extension selection upfront cleanly to commercial growth saves headaches across years.",
+          "Changing your live domain name later means updating invoices, vehicle signage, email signatures and delicate Google Search Console settings. Picking the right extension upfront saves years of headaches.",
         ],
         table: {
-          caption: "Comparing .co.za vs .com across trust, SEO and administration",
+          caption: "Comparing .co.za vs .com across trust, Google targeting and administration",
           headers: ["Dimension", ".co.za Domain", ".com Domain", "Practical decision rule"],
           rows: [
             [
               "SA buyer familiarity",
               "Strong instant local trust signal",
-              "Neutral; can look offshore to local trades buyers",
-              "Use `.co.za` for SA trades, practices, logistics & local retail",
+              "Neutral; can look overseas to local trades buyers",
+              "Use `.co.za` for SA trades, practices, logistics and local retail",
             ],
             [
-              "Google geo-targeting",
-              "Explicit South African country signal",
-              "Globally neutral; relies on SA proof & links",
-              "`.co.za` anchors local visibility across all nine provinces cleanly",
+              "Google location targeting",
+              "Clear South African country signal",
+              "Global by default; relies on SA address proof and links",
+              "`.co.za` strengthens local visibility across all nine provinces",
             ],
             [
               "International expansion",
-              "Can feel country-bound to London/US prospects",
-              "Global commercial baseline",
-              "Use `.com` when >50% of leads target international buyers",
+              "Can feel country-bound to London or US buyers",
+              "Global business standard",
+              "Use `.com` when over 50% of leads come from outside South Africa",
             ],
             [
               "Renewal stability",
-              "Inexpensive local ZAR rates via ZACR",
-              "Higher renewals pegged to USD rates",
-              "Protect both with auto-renew, Registrar Lock & company ownership",
+              "Low local rand rates via ZACR",
+              "Higher renewals linked to US dollar rates",
+              "Protect both with auto-renew, Transfer Lock and company ownership",
             ],
           ],
         },
       },
       {
-        title: "Picking cleanly based on where tomorrow's buyers live",
+        title: "How to choose .co.za or .com based on where your buyers live",
         body: [
-          "Avoid choosing domain extensions solely around agency trends—match extensions strictly to genuine revenue geography.",
+          "Do not pick a domain ending based on agency fashion. Match your domain extension to where your real customers pay you from.",
         ],
         subsections: [
           {
             heading: "When .co.za wins clearly",
             body: [
-              "Accountants, attorneys, aesthetic clinics, contractors, residential plumbers, estate teams and local ecommerce stores trading inside South Africa convert fastest on `.co.za`. Shoppers recognise familiar local Courier Guy logistics, VAT invoices and `+27` service expectations straight away.",
+              "Accountants, attorneys, aesthetic clinics, contractors, residential plumbers, estate agencies and local online stores selling across South Africa convert best on `.co.za`. Shoppers recognise familiar local Courier Guy shipping, VAT invoices and `+27` local support right away.",
             ],
           },
           {
             heading: "When .com makes stronger long-term sense",
             body: [
-              "Software platforms billing global teams in dollars or euros, remote design/engineering exporters or pan-African logistics providers targeting overseas supply chains communicate borderless scale effortlessly on `.com` without regional friction.",
+              "Software platforms billing overseas teams in dollars or euros, remote design or technical exporters, and cross-border freight companies working global supply chains show international reach smoothly on `.com`.",
             ],
           },
         ],
@@ -1298,74 +1298,74 @@ export const websiteGuides: GuidePage[] = [
       {
         title: "The duplicate-site trap: why serving both domains simultaneously hurts SEO",
         body: [
-          "Buying `brand.co.za` alongside `brand.com` defensively costs pennies compared with trademark fights later—good practice. Trouble hits when web hosts configure both domains as active 'domain aliases' rendering identical pages at two distinct addresses simultaneously.",
-          "Serving duplicates splits inbound client links across competing hosts and pushes Google's duplicate-content selector to suppress one version silently while cluttering Search Console indexing reports.",
+          "Buying `brand.co.za` alongside `brand.com` to protect your name costs very little compared with trademark fights later. Problems start when web hosts set both domains up as active aliases showing identical pages at two web addresses at the same time.",
+          "Serving duplicate websites splits incoming links between two competing addresses and leaves Google choosing which copy to hide in Search Console (Google's free report on how your site shows up in search).",
         ],
         bullets: [
-          "Pick strictly ONE single primary canonical URL (`https://www.yourcompany.co.za/`).",
-          "Configure bare apex (`http://` + `https://`) AND secondary domain variants (`yourcompany.com`) to execute a clean single-hop HTTP 301 redirect straight to your primary host.",
-          "Audit canonical tags, navigation links and `sitemap.xml` so 100% reference the primary domain strictly.",
+          "Pick ONE main web address (`https://www.yourcompany.co.za/`).",
+          "Point the bare domain (`http://` and `https://`) AND any spare domain (`yourcompany.com`) straight to your main address using a direct redirect (301).",
+          "Check your main-page tags, menu links and `sitemap.xml` so 100% point to that single chosen main address.",
         ],
         callout: {
           tone: "warning",
           heading: "Protect parked defensive domains against email spoofing too",
-          text: "Even if `yourbrand.com` serves strictly as a 301 redirect onto `.co.za`, publish explicit `v=spf1 -all` and `v=DMARC1; p=reject;` DNS TXT policies so phishing scammers cannot send fake emails pretending to originate from the redirected extension.",
+          text: "Even if `yourbrand.com` only redirects to `.co.za`, add `v=spf1 -all` and `v=DMARC1; p=reject;` text records in your domain settings (DNS) so phishing scammers cannot send fake emails pretending to come from your spare domain.",
         },
       },
       {
         title: "Clean company email consistency and ZACR ownership security",
         body: [
-          "Run every staff inbox and contact notification strictly on your primary chosen domain (`@brand.co.za`) rather than mixing extensions between signatures and quotes. Confirm ZACR WHOIS records list your legal company entity—never a 2020 contractor—with Registrar Transfer Lock and authenticator MFA enabled.",
+          "Run all staff email addresses and website notifications from your chosen main domain (`@brand.co.za`) instead of mixing `.co.za` and `.com` across quotes and signatures. Check that South Africa's domain registry (ZACR) lists your real company entity as owner, not an old contractor, with Transfer Lock and two-step login verification turned on.",
         ],
         callout: {
           tone: "tip",
-          heading: "Never let legacy domains expire cleanly after rebranding",
-          text: "If your company moves domains later (`oldname.co.za` -> `newname.co.za`), maintain registration on the legacy domain permanently with exact 301 rules—dropping it invites domain squatters to hijack residual traffic and send lookalike scams.",
+          heading: "Never let old domains expire after a rebrand",
+          text: "If your business rebrands later (`oldname.co.za` to `newname.co.za`), keep paying the small renewal on the old domain permanently with direct redirects in place. Letting it expire lets domain squatters buy it to steal traffic or run lookalike scams.",
         },
       },
       {
         title: "How to switch domains safely without crashing search traffic",
         body: [
-          "If expansion eventually requires moving permanently between `.co.za` and `.com` (or updating brand identity), follow strict cross-domain migration controls:",
+          "If business growth eventually requires moving between `.co.za` and `.com` (or changing brand names), follow these four safeguards:",
         ],
         numbered: [
-          "Export full existing Search Console top URLs, queries and inbound partner backlinks ahead of switching.",
-          "Deploy identical matching URL paths where sensible alongside exact 1-to-1 single-hop cross-domain 301 redirects for every legacy slug.",
-          "Verify BOTH properties inside Google Search Console and file the official Change of Address notice cleanly.",
-          "Keep the legacy domain renewed permanently while tracking organic recovery across 60–90 days.",
+          "Export your full list of top pages, search queries and external links from Google Search Console before switching.",
+          "Keep matching page paths wherever sensible and build exact one-to-one direct redirects (301) for every old address.",
+          "Verify BOTH domains inside Google Search Console and submit the official Change of Address tool.",
+          "Keep the old domain renewed permanently while watching search traffic settle over 60 to 90 days.",
         ],
       },
       {
         title: "Practical domain architecture examples for South African groups",
         body: [
-          "Growing groups often accumulate confusing domain tangles over time—owning an original `.co.za` trademark alongside a `.com` bought for overseas investors plus two defensive regional names acquired years ago. Keeping traffic signals unified demands clear canonical architecture across both web servers and company mailboxes.",
-          "Follow clean primary-vs-alias patterns so search equity compounds safely onto ONE authoritative web address rather than fracturing backward links.",
+          "Growing businesses often collect messy domain bundles over time, such as an original `.co.za` brand, a `.com` registered for overseas partners, and two spare regional names bought years ago. Keeping all Google authority flowing to one place takes a tidy setup across your web server and mailboxes.",
+          "Follow one clear main-versus-alias rule so search strength builds on ONE web address instead of splitting across copies.",
         ],
         subsections: [
           {
-            heading: "Consolidating national brand variants without splitting link equity",
+            heading: "Illustrative example: unifying brand variants onto one main address",
             body: [
-              "Suppose your legal firm trades as `apexlegal.co.za` domestically while holding `apexlegal.com` and `apexattorneys.co.za` defensively. Configure Cloudflare Bulk Redirects or Nginx rules so every request hitting `http://`, bare root `apexlegal.co.za` or either secondary domain executes ONE clean 301 permanent hop directly onto `https://www.apexlegal.co.za/` preserving path segments cleanly.",
+              "Suppose a Johannesburg law firm trades on `apexlegal.co.za` locally while holding `apexlegal.com` and `apexattorneys.co.za` defensively. Setting up Cloudflare Bulk Redirects or server redirect rules ensures every request to `http://`, bare `apexlegal.co.za`, or either spare domain makes ONE direct redirect hop to `https://www.apexlegal.co.za/` while keeping the exact page path intact.",
             ],
           },
           {
-            heading: "Handling South African brand email signatures and SSL alignment",
+            heading: "Handling South African brand email signatures and security certificates",
             body: [
-              "Train staff never to print or link secondary alias URLs on quotes, truck signage or LinkedIn bios even when 301s work properly. Ensure SAN SSL certificates explicitly cover every active domain variant before applying redirects so visitors clicking legacy HTTPS bookmarks never trigger privacy warnings ahead of redirection.",
+              "Remind staff never to print or link spare alias domains on quotes, vehicle wraps or LinkedIn profiles even when redirects work. Also ensure your HTTPS security certificate covers every active domain variant before applying redirects so visitors opening old HTTPS bookmarks never see a browser warning first.",
             ],
           },
         ],
         bullets: [
-          "Register core company extensions under ONE unified business registrar login guarded by MFA and Transfer Lock (`clientTransferProhibited`).",
-          "Verify ZACR records annually against active billing addresses so domain expirations never catch finance unaware.",
+          "Hold core company domains inside ONE business registrar account guarded by two-step login verification and Transfer Lock (`clientTransferProhibited`).",
+          "Check ZACR contact details once a year against live finance emails so missed renewal notices never let a core domain expire.",
         ],
       },
     ],
     midCta: {
       heading: "Sorting messy domain aliases or migrating from .com to .co.za?",
-      text: "We wire clean single-hop 301 domain consolidation, matching SSL SAN certs, DMARC domain locks and smooth Search Console transitions.",
+      text: "We set up direct redirects across domains, matching HTTPS security certificates, DMARC email locks and safe Google Search Console switches.",
       href: "/services/web-development/",
-      label: "Get Domain & Migration Help",
+      label: "Get domain and migration help",
     },
     related: [
       { label: "Protecting .co.za domain hijacking", href: "/guides/protecting-domain-hijacking-co-za/" },
@@ -1377,32 +1377,32 @@ export const websiteGuides: GuidePage[] = [
       {
         question: "Should we buy both .co.za and .com if both match our company name?",
         answer:
-          "Yes—defensive registration avoids competitor confusion for negligible annual cost. Serve your real site strictly on ONE primary choice and 301-redirect the second cleanly straight to it.",
+          "Yes, registering both protects your brand name from competitors and lookalike scammers for a modest yearly fee. Make sure your real website lives on one main address only, and point the spare domain straight to it using a direct redirect (301) so Google never sees two duplicate copies of your website.",
       },
       {
         question: "Does www vs non-www affect Google rankings on .co.za?",
         answer:
-          "Zero difference once locked consistently. Pick one canonical variant (`https://www.` or bare apex) and force the alternate via one clean HTTP 301 hop matching sitemaps and canonical tags.",
+          "No, Google treats `www.company.co.za` and `company.co.za` equally as long as you pick one main version and stick to it everywhere. Set up a direct redirect from the spare version to your chosen main address, and use that exact same main web address in your Google Search Console sitemap and page tags.",
       },
       {
         question: "Can a .co.za business website ever rank overseas?",
         answer:
-          "Yes for brand queries and tightly specialised phrases, though competitive overseas commercial searches lean heavily toward `.com` or domestic ccTLDs because `.co.za` explicitly signals South Africa.",
+          "Yes, a `.co.za` site can show up overseas for your brand name and very specific searches. However, `.co.za` explicitly tells Google your primary market is South Africa, so when competing for busy commercial searches in the UK, Europe, or the United States, a `.com` or local country domain usually has an advantage.",
       },
       {
         question: "What if our old developer refuses or forgets to transfer .co.za ownership?",
         answer:
-          "Verify exact ZACR registrant records first; formal ZACR/registrar recovery protocols restore ownership cleanly when business registration matches legitimate trading records.",
+          "Check the public ownership record first to see whose name and email sit on the `.co.za` registration. If your former developer registered it under their own details, South Africa's domain registry (ZACR) and accredited registrars have formal dispute and verification steps that restore ownership once you prove company registration.",
       },
       {
         question: "What about newer extensions like .za.com or .africa for South African companies?",
         answer:
-          "Familiar `.co.za` (or clean `.com`) consistently earns stronger recognition and click trust from everyday South African consumers and B2B procurement teams.",
+          "Familiar `.co.za` and `.com` domains still earn the strongest instant recognition and click trust from everyday South African customers and company buyers. Newer endings like `.africa` or `.za.com` work fine technically, yet buyers are more likely to misremember the ending or question whether an unfamiliar domain is genuine or trustworthy.",
       },
     ],
     priority: 0.72,
     published: "2026-11-20",
-    updated: "2026-11-20",
+    updated: "2026-11-26",
   },
   {
     slug: "mobile-first-website-design-south-africa",
@@ -1412,28 +1412,28 @@ export const websiteGuides: GuidePage[] = [
     title: "Why Mobile-First Website Design Matters Most on South African Mobile Networks",
     metaTitle: "Mobile-First Web Design in South Africa | SoftKore",
     description:
-      "Why mobile-first design converts best in South Africa: lean WebP pages on cellular data, Google mobile-first indexing, thumb ergonomics and fast WhatsApp CTAs.",
+      "Why mobile-first design brings more South African enquiries: fast pages on mobile data, how Google scans phones first, thumb-friendly forms and WhatsApp.",
     intro:
-      "Most South African prospects tap Google results on smartphones over prepaid or contract mobile data between meetings—rarely sitting behind 27-inch monitors on office fibre. Websites designed desktop-first and squashed down onto 360px phones load slowly, jump unexpectedly beneath fingers and lose high-intent buyers before enquiry controls appear.",
+      "Most South African buyers check Google on a phone over mobile data, not on a big office screen. Websites built for laptops first load slowly on phones, jump under your thumb and lose enquiries before the contact button shows.",
     summary: [
       "Real mobile data constraints",
-      "Google mobile-first indexing",
+      "How Google scans phones first",
       "Thumb-friendly SA contact paths",
       "Checking quality on real phones",
     ],
     takeaways: [
-      "Keep mobile payload weight tight (compressed WebP assets, lean fonts and minimal JavaScript) to respect costly SA mobile data.",
-      "Googlebot crawls and grades mobile HTML, links and Core Web Vitals first when setting search positions.",
-      "Position core calls to action cleanly within effortless thumb reach with roomy 44px+ tap targets.",
-      "Eliminate aggressive mobile conversion killers: arrival popups covering headlines, clipped horizontal tables and awkward sticky banners.",
-      "Validate staging builds physically on mid-range Android devices over throttled 4G rather than relying solely on wide monitor zoom.",
+      "Keep phone page sizes small (compressed WebP photos, lean fonts and minimal background scripts) to respect mobile data costs.",
+      "Google scans and ranks websites primarily by how they load and work on a smartphone.",
+      "Place main call-to-action buttons within easy thumb reach with comfortable 44px+ tap targets.",
+      "Remove phone enquiry killers: full-screen popups on arrival, tables cut off at the side and jumpy sticky banners.",
+      "Test private previews physically on mid-range Android phones over normal 4G data rather than only zooming out on a big office monitor.",
     ],
     sections: [
       {
         title: "South African mobile browsing constraints desktop designers overlook",
         body: [
-          "Testing builds inside an agency studio on dual Mac displays and gigabit fibre creates dangerous blind spots. Across South Africa, prepaid cellular data costs remain sensitive, mid-tier Android chipsets throttle heavy client bundles noticeably, and patchy 4G connectivity punishes bloated assets ruthlessly.",
-          "Mobile-first architecture establishes strict speed and layout clarity constraints right from page one rather than hoping a desktop mockup collapses gracefully.",
+          "Checking websites inside an agency studio on dual big screens and fast office fibre hides real customer friction. Across South Africa, prepaid data costs matter, mid-range Android phones slow down on heavy page scripts, and patchy 4G signal punishes oversized websites.",
+          "Building mobile-first sets clear speed and layout rules from page one instead of hoping a wide desktop design shrinks neatly later.",
         ],
         table: {
           caption: "Desktop-first compromises vs mobile-first South African standards",
@@ -1441,23 +1441,23 @@ export const websiteGuides: GuidePage[] = [
           rows: [
             [
               "Hero photography",
-              "4 MB uncompressed PNG carousel eating data allowances",
-              "Crisp WebP image (`<120 KB`), fixed dimensions & eager priority",
+              "4 MB uncompressed PNG carousel eating mobile data",
+              "Compressed WebP photo (`<120 KB`), fixed dimensions and fast first load",
             ],
             [
-              "Typography & measure",
-              "Tiny 13px text or cramped multi-column tables overflowing right",
-              "Readable `16px–18px` copy, crisp H1/H2/H3 step contrast & relaxed breathing room",
+              "Text size & layout",
+              "Tiny 13px text or multi-column tables overflowing off screen",
+              "Readable `16px–18px` copy, clear heading hierarchy and clean vertical spacing",
             ],
             [
               "Contact & WhatsApp",
-              "Buried inside cluttered hamburger menus or floating collisions",
-              "Roomy thumb-sized buttons (`46px+` height), `tel:` & instant WhatsApp pathways",
+              "Buried inside cluttered mobile menus or overlapping floating icons",
+              "Comfortable thumb-sized buttons (`46px+` high), `tel:` and instant WhatsApp links",
             ],
             [
-              "Tables & Dropdowns",
-              "Sideways broken layouts or awkward tiny browser select hacks",
-              "Scroll-safe overflow containers & custom accessible large-tap dropdowns",
+              "Tables & dropdowns",
+              "Sideways broken layouts or tiny cramped browser dropdowns",
+              "Scroll-safe table containers and accessible large-tap dropdowns",
             ],
           ],
         },
@@ -1465,19 +1465,19 @@ export const websiteGuides: GuidePage[] = [
       {
         title: "How Google's mobile-first indexing rewards disciplined mobile layouts",
         body: [
-          "Google predominantly crawls, parses and ranks websites using smartphone rendering. If agencies hide half your explanatory service paragraphs inside collapsed hidden sections on mobile, clip internal links out of mobile nav drawers or fail mobile Core Web Vitals, search visibility pays the penalty directly.",
+          "Google mostly scans, reads and ranks your website based on how it loads and behaves on a smartphone. If your agency hides half your service wording inside collapsed mobile sections, drops important links from the phone menu, or fails Google's speed and stability tests on mobile, your Google visibility suffers directly.",
         ],
         subsections: [
           {
-            heading: "Maintain full HTML content parity across phones and laptops",
+            heading: "Keep full content parity across phones and laptops",
             body: [
-              "Ensure primary headlines, key takeaways, structured service descriptions, FAQ answers, internal contextual links and JSON-LD scripts remain cleanly rendered inside the mobile DOM—organised smoothly into readable vertical stacks.",
+              "Make sure your main headings, key takeaways, service explanations, FAQ answers, internal page links and structured Google business info all appear clearly in the phone version, arranged into a tidy single-column flow.",
             ],
           },
           {
-            heading: "Eliminate layout shifts (CLS) under thumbs",
+            heading: "Stop buttons jumping under fingers while loading",
             body: [
-              "Reserve explicit `width` and `height` image proportions plus stable font fallbacks (`font-display: swap`) so buttons never lurch downward mid-load causing buyers to tap the wrong link unintentionally.",
+              "Set explicit width and height sizes on every image and use smooth font loading (`font-display: swap`) so buttons never jump down mid-load and make buyers tap the wrong link by mistake.",
             ],
           },
         ],
@@ -1485,76 +1485,76 @@ export const websiteGuides: GuidePage[] = [
       {
         title: "Designing effortless mobile enquiry paths for South African buyers",
         body: [
-          "Smartphone buyers often reject filling twelve-field enterprise quote spreadsheets while riding passenger or walking a warehouse. Designing around genuine mobile intent converts significantly higher shares of visitors:",
+          "Phone visitors rarely want to fill in twelve-field quote spreadsheets while sitting in traffic or walking a warehouse floor. Designing around how people use phones brings noticeably more enquiries:",
         ],
         bullets: [
-          "Use smart HTML input modes (`type='tel'`, `type='email'`) popping numeric or `@` mobile keyboards effortlessly.",
-          "Offer immediate dual conversion choice upfront: concise dropdown-powered enquiry forms for project briefs OR instant WhatsApp / direct `tel:` links for fast callers.",
-          "Separate interactive buttons cleanly vertically so large thumbs never slip across Privacy links when tapping Submit.",
-          "Keep floating WhatsApp buttons subtle and static out of the way of navigation toggles and bottom footers.",
+          "Use proper phone input types (`type='tel'`, `type='email'`) so number pads or `@` keyboards open automatically.",
+          "Offer two quick choices upfront: a short form with clear dropdowns for detailed project briefs OR direct WhatsApp and `tel:` call links.",
+          "Leave breathing space vertically between buttons so large thumbs never tap the Privacy link by mistake when aiming for Submit.",
+          "Keep floating WhatsApp buttons calm and well clear of menu buttons and bottom footers.",
         ],
         callout: {
           tone: "warning",
           heading: "Ban full-screen entry popups on mobile phones immediately",
-          text: "Dropping a 90%-screen newsletter wheel or discount banner straight over mobile arrival headlines destroys user patience and violates Google's intrusive interstitial guidance.",
+          text: "Dropping a 90%-screen newsletter wheel or discount banner straight over your mobile opening headline annoys buyers and breaks Google's rule against intrusive popups.",
         },
       },
       {
         title: "Cutting script bloat from chat widgets, videos and font packages",
         body: [
-          "Many ordinary service websites unknowingly ship 3+ megabytes of blocking third-party JavaScript for heavy live-chat apps, embedded social feeds and five unused Google Fonts weights—forcing modest Android phones to freeze for four seconds before taps even register.",
-          "Audit third-party scripts strictly, keep fonts self-hosted cleanly, compress imagery uniformly to WebP and pre-render informational views statically so every tap stays instant.",
+          "Many ordinary business sites quietly force visitors to download 3+ megabytes of heavy third-party code for live-chat boxes, embedded social feeds and five unused font weights. On a modest Android handset, that freezes taps for several seconds.",
+          "Trim unnecessary third-party scripts, host fonts locally on your own site, compress images to WebP, and pre-build info pages so every tap responds straight away.",
         ],
         callout: {
           tone: "tip",
-          heading: "Throttle Chrome DevTools onto Slow 4G during every visual check",
-          text: "Flipping Chrome DevTools device emulator onto 'Moto G Power' + 'Slow 4G' reveals layout jumps, oversized banners and sluggish form validation straight away ahead of real buyers.",
+          heading: "Test on 'Slow 4G' in Chrome before approving any design",
+          text: "Switching Chrome DevTools to a mid-range Android screen on 'Slow 4G' exposes layout jumps, oversized photos and sluggish forms right away before real customers hit them.",
         },
       },
       {
         title: "Five 60-second smartphone checks to test on your site today",
         body: [
-          "Disconnect office Wi-Fi, turn cellular data on and run your own website through these five honest buyer tests right now:",
+          "Turn off office Wi-Fi, switch onto normal mobile data and run your own website through these five honest checks right now:",
         ],
         numbered: [
-          "Tap your live Google search snippet and count actual seconds until headline and primary CTA render clearly.",
-          "Confirm main value proposition AND 'Contact' or 'WhatsApp' action fit clearly on screen without scrolling or zooming.",
-          "Open mobile menu drawers, service lists and contact dropdowns—confirm snappy opening, clear contrast and smooth closing.",
-          "Complete a test quote submission right on your keyboard without weird scroll-lock jumps.",
-          "Scan comparison tables cleanly side-to-side to verify smooth inner scroll without stretching the entire viewport.",
+          "Tap your Google listing and count real seconds until the main headline and first button appear clearly.",
+          "Check that what you do AND your 'Contact' or 'WhatsApp' button show on the first screen without scrolling or zooming.",
+          "Open your mobile menu, service list and contact dropdowns to confirm smooth opening, clear contrast and easy closing.",
+          "Fill in and submit a real test enquiry on your phone keyboard without weird screen jumps.",
+          "Swipe any pricing or comparison tables sideways to verify smooth scrolling inside the table without stretching the whole page.",
         ],
       },
       {
         title: "Mobile form UX and South African data-saving craft in action",
         body: [
-          "Winning mobile conversions across South Africa means engineering specifically for distraction, small one-handed screens and metered cellular connections. Small friction points designers rarely notice on studio monitors frequently double mobile enquiry abandonment overnight.",
-          "Examine every interactive control physically over narrow 360px widths right down to autocomplete tags and validation contrast before approving staging sign-offs.",
+          "Winning more phone enquiries in South Africa means designing for busy one-handed users and metered mobile data. Small friction points designers rarely see on studio screens often double form abandonment on phones.",
+          "Check every interactive field on a narrow 360px screen, including error alerts and keyboard behaviour, before signing off a private preview.",
         ],
         subsections: [
           {
-            heading: "Eliminate frustrating mobile form traps completely",
+            heading: "Fix frustrating mobile form traps",
             body: [
-              "Never hide inline error warnings off-screen above scrollable folds where shoppers tap Submit repeatedly thinking the button died silently. Ensure service-of-interest and budget dropdowns open crisply on iOS Safari and Android Chrome with clear selected states, keyboard focus visibility and instant scrolling onto errors if incomplete.",
+              "Never show form error warnings out of sight above the scroll line so visitors tap Submit three times wondering if the button is broken. Make sure service and budget dropdowns open smoothly on iPhone Safari and Android Chrome with clear selected states and automatic scroll to missing fields.",
             ],
           },
           {
-            heading: "Respect prepaid cellular data limits without losing visual authority",
+            heading: "Respect mobile data limits without sacrificing trust",
             body: [
-              "Serve pre-sized WebP assets matched accurately to mobile container widths (`max-width: 760px`), strip autoplay background videos on cellular breakpoints entirely, and limit client-side font files to two clean weights of one readable typeface. Saving 1.8 MB per arrival translates directly into faster paint speed on crowded 4G towers and stronger trust.",
+              "Serve properly sized WebP photos matched to phone widths (`max-width: 760px`), skip autoplay background videos on mobile screens, and stick to two clean weights of one clear font. Saving 1.8 MB per visit makes pages open noticeably faster on congested 4G towers.",
             ],
           },
         ],
         bullets: [
-          "Pair clickable `+27` `tel:` links and pre-filled contextual WhatsApp CTAs cleanly for mobile users rushing between site meetings.",
-          "Verify all horizontal comparison tables scroll smoothly inside contained wrappers without dragging entire page text awkwardly wider than the screen.",
+          "Pair clickable `+27` `tel:` links and pre-filled contextual WhatsApp links for phone buyers rushing between site visits.",
+          "Wrap wide comparison tables in clean scroll containers so pages never stretch wider than the phone screen.",
         ],
       },
     ],
     midCta: {
       heading: "Does your current site lag or look awkward on phones?",
-      text: "We design crisp mobile-first Next.js and hardened WordPress sites tuned specifically for fast South African cellular browsing and clean leads.",
+      text: "We design fast mobile-first Next.js and locked-down WordPress websites tuned for South African mobile networks and steady enquiries.",
       href: "/services/web-development/",
-      label: "Upgrade Mobile Experience",
+      label: "Upgrade your mobile site",
     },
     related: [
       { label: "Website design & development", href: "/services/web-development/" },
@@ -1564,34 +1564,34 @@ export const websiteGuides: GuidePage[] = [
     ],
     faqs: [
       {
-        question: "What separates mobile-first engineering from ordinary responsive design?",
+        question: "What separates mobile-first web design from ordinary responsive design?",
         answer:
-          "Responsive builds start on wide studio desktops and squash grids down awkwardly at the end. Mobile-first designs prioritise phone reading hierarchy, touch clarity and strict asset weight budgets first, scaling upward smoothly onto wider screens.",
+          "Ordinary responsive sites are designed for wide office screens first and squeezed onto narrow phones at the end, often leaving tiny buttons and oversized files behind. Mobile-first design plans the phone reading flow, comfortable tap targets, and tight image size budgets first, then expands smoothly for larger laptop screens.",
       },
       {
         question: "Will simplifying layouts for phones make big desktop monitors feel sparse?",
         answer:
-          "Not at all—restrained whitespace, clear typographic scale and wide CSS grids look far cleaner and more executive on desktops than dense 2014 widget clutter.",
+          "Not at all. Clean spacing, readable type sizes, and simple multi-column desktop grids actually look far sharper and easier to read and trust on large monitors than cluttered sidebars and cramped legacy boxes. Buyers on laptops also prefer scanning clear headlines and direct buttons instead of hunting through crowded boxes.",
       },
       {
         question: "Do floating WhatsApp buttons hurt mobile usability or rankings?",
         answer:
-          "Clean static SVG link buttons add minimal overhead cleanly when placed carefully above safe padding. Giant bouncing animations or intrusive chat popups that obscure content DO annoy visitors and hurt CWV.",
+          "A simple static WhatsApp button placed neatly above the bottom edge does not hurt rankings when it stays out of the way of menus and page text. Problems start with giant bouncing badges or popups that cover buttons, slow down everyday phone screens, and fail Google's speed and stability tests.",
       },
       {
         question: "What mobile load target should South African SME websites chase?",
         answer:
-          "Deliver readable headline and hero actions comfortably under 2.0 seconds on standard 4G networks while staying safely green across Google's Core Web Vitals (`LCP < 2.5s`, `INP < 200ms`, `CLS < 0.1`).",
+          "Aim for your main headline, opening text, and call-to-action button to appear in under 2 seconds on ordinary 4G mobile data. Keep your pages passing Google's speed and stability tests (Core Web Vitals: main content under 2.5 seconds, button response under 200 milliseconds, and near-zero layout shifting while loading).",
       },
       {
         question: "How often should mobile usability be re-checked after launch?",
         answer:
-          "Re-test physically across Android and iOS viewports whenever deploying new banners, contact form fields, pricing tables or third-party scripts.",
+          "Test your website on real Android and iPhone screens every time you publish new promotional banners, add contact form fields, upload pricing tables, or install third-party scripts like chat widgets. Even one oversized image or broken wide table added months after launch can silently break phone layouts and drop enquiries.",
       },
     ],
     priority: 0.72,
     published: "2026-11-20",
-    updated: "2026-11-20",
+    updated: "2026-11-26",
   },
   {
     slug: "what-makes-a-service-page-convert",
@@ -1601,82 +1601,82 @@ export const websiteGuides: GuidePage[] = [
     title: "How to Structure Business Service Pages That Actually Generate Enquiries",
     metaTitle: "Service Pages That Convert SA Enquiries | SoftKore",
     description:
-      "Structure South African business service pages to earn buyer trust and qualified enquiries: above-the-fold clarity, concrete deliverables, ZAR context, proof and FAQs.",
+      "Structure South African business service pages to earn trust and bring enquiries: clear opening headings, deliverables, budget context, proof and FAQs.",
     intro:
-      "Traffic without enquiries turns both SEO work and paid search clicks into wasted spend. When busy South African buyers click a service page stuffed with vague motivational slogans and zero clues about deliverables, process or price brackets, they tap Back immediately. Converting pages answer a cautious buyer's exact mental checklist cleanly from top to bottom.",
+      "Visitors who click a service page full of vague slogans and no clues about what you deliver or what it costs usually hit the Back button in seconds. Service pages win enquiries when they explain clearly what you do, who it fits, how the process works and what to do next.",
     summary: [
       "Clarity in the first 5 seconds",
       "Explaining who it fits & deliverables",
-      "Real proof & transparent budget context",
+      "Real proof & honest budget context",
       "Friction-free next steps",
     ],
     takeaways: [
-      "Assign ONE dedicated URL per core commercial service instead of cramming five offers onto one diluted page.",
-      "State literally what service you perform, who in South Africa benefits and the next CTA inside the top screen.",
-      "Define ideal client fit AND non-fit candidly—qualification raises authority while saving wasted quoting calls.",
-      "Supply honest budget drivers or indicative ZAR bracket links instead of trapping curious prospects behind mystery sales calls.",
-      "Pair tangible proof (real problem/solution summaries, physical SA identity, specific steps) with direct FAQs and low-friction CTAs.",
+      "Give EACH core business service its own dedicated page instead of cramming five unrelated offers onto one vague page.",
+      "State literally what service you deliver, who in South Africa you help and the main button right in the opening screen.",
+      "Explain honestly who the service fits best AND who it does not fit, building trust while avoiding wasted quote calls.",
+      "Share real price drivers or indicative rand ranges instead of forcing every curious buyer onto a blind discovery call.",
+      "Back up your offer with real local details, step-by-step deliverables, clear FAQs and direct contact buttons.",
     ],
     sections: [
       {
         title: "Pass the five-second buyer clarity check right above the fold",
         body: [
-          "Skeptical commercial visitors grant about five seconds before deciding whether a page matches their requirement. Cute agency slogans like 'Crafting Tomorrow's Digital Journeys' convey zero information to buyers comparing real suppliers—and give search engines minimal semantic clue either.",
-          "State the exact service plainly in H1, pair one tight value sentence naming clear business outcomes across South Africa, and sit one primary action button cleanly beside an honest secondary exploration link.",
+          "Busy business buyers give a page roughly five seconds to prove it matches what they typed into Google. Fluffy slogans like 'Crafting Tomorrow's Digital Journeys' tell visitors nothing useful and give Google very little clue what you sell either.",
+          "Put the exact service name in plain words inside your H1 heading, pair it with one clear sentence explaining the business result in South Africa, and place one obvious main button right beside a calm secondary link.",
         ],
         table: {
-          caption: "High-converting commercial service page wireframe blueprint",
-          headers: ["Page section", "Buyer question solved", "Practical block to render"],
+          caption: "High-converting commercial service page blueprint",
+          headers: ["Page section", "Buyer question solved", "Practical block to show"],
           rows: [
             [
-              "Hero above the fold",
-              "Am I in the right spot & how do I engage right now?",
-              "Clear service H1, outcome lead, primary CTA & crisp summary highlights",
+              "Opening hero",
+              "Am I in the right place and how do I enquire?",
+              "Plain service H1, one-line outcome, main action button and short summary",
             ],
             [
-              "Problem & Fit framing",
-              "Do they truly understand our sector & specific headache?",
-              "Common failure symptoms fixed + candid 'Best suited for' boundaries",
+              "Problem & fit framing",
+              "Do they understand our business and specific problem?",
+              "Common issues you solve + candid 'Best suited for' boundaries",
             ],
             [
               "Concrete deliverables",
               "What tangible outputs am I actually paying for?",
-              "Scannable breakdown listing technical steps, assets & post-launch handovers",
+              "Scannable breakdown listing real tasks, assets and launch handovers",
             ],
             [
-              "Scope & Budget context",
-              "Roughly does this align with our financial range?",
-              "Cost variables, timeline range & links directly to candid ZAR guides",
+              "Scope & budget context",
+              "Roughly does this fit our available budget?",
+              "Cost drivers, typical timelines and links to transparent rand guides",
             ],
             [
-              "Proof & Engagement workflow",
-              "Have they solved this practically & how cleanly do we start?",
-              "Grounded case snapshots, 3–4 step execution plan & verified SA details",
+              "Proof & process steps",
+              "How does working together actually start and run?",
+              "3–4 step work plan, real SA business details and honest proof",
             ],
             [
-              "Focused FAQs & CTA Band",
-              "What final doubts stop me submitting an enquiry today?",
-              "4–5 objection-clearing FAQs + seamless CTA straight into `/contact/`",
+              "Focused FAQs & CTA band",
+              "What last questions stop me asking for a quote today?",
+              "4–5 objection-answering FAQs + direct button straight to `/contact/`",
             ],
           ],
         },
       },
       {
-        title: "Clarify ideal fit—and name upfront who the service is NOT for",
+        title: "Clarify ideal fit, and name upfront who the service is NOT for",
         body: [
-          "Empty universal promises ('Built for every business from solopreneurs to banks!') dilute credibility immediately. Telling serious prospects candidly what works best filters mismatches while signalling calm domain confidence.",
+          "Empty universal promises ('Built for everyone from solo startups to global banks!') make sceptical buyers tune out. Explaining calmly who gets the best value out of your service filters mismatches early and signals genuine expertise.",
         ],
         subsections: [
           {
-            heading: "Swap fluffy claims for specific engineering deliverables",
+            heading: "Swap fluffy claims for concrete deliverables",
             body: [
-              "Replace unprovable slogans like 'comprehensive bespoke security' with plain concrete deliverables: 'HTTP security headers, off-site SQL backup testing, Search Console review management, MFA governance and DMARC domain locks'. Tangible detail earns trust before any call runs.",
+              "Replace vague phrases like 'comprehensive enterprise security' with concrete plain-English outputs: 'browser security settings, tested off-site backups, Google Search Console clean-up, two-step login verification and email sender locks'. Specific facts build trust before a phone call even happens.",
             ],
           },
           {
             heading: "Visualise the exact onboarding sequence",
             body: [
-              "Uncertainty around agency chaos pauses signatures. Showing four clear numbered steps—1. Technical & brief audit, 2. Fixed written scope, 3. Staging browser review & QA, 4. Clean go-live + full handover—de-risks taking the first step dramatically.",
+              "Fear of messy supplier projects stops buyers from clicking Submit. Showing four straightforward steps (1. Brief & site check, 2. Fixed written quote, 3. Private preview review on phones, 4. Safe launch and full handover) makes taking the first step feel calm and safe.",
             ],
           },
         ],
@@ -1684,73 +1684,73 @@ export const websiteGuides: GuidePage[] = [
       {
         title: "Offer practical ZAR scope context without fear",
         body: [
-          "South African directors dislike jumping through three discovery Zoom calls purely to find out if a service starts at R15,000 or R120,000. Where tailored builds depend on brief scope, share transparent pricing drivers, typical timelines and clear links to supporting ZAR cost guides—qualifying serious leads upfront cleanly.",
+          "South African business owners hate sitting through three Zoom calls just to learn whether a project starts at R15,000 or R120,000. Even when custom quotes depend on scope, listing what affects price, typical timelines and links to honest rand cost guides qualifies serious leads right on the page.",
         ],
         callout: {
           tone: "tip",
-          heading: "Transparency streamlines sales conversations immediately",
-          text: "Prospects who reach your contact page straight after scanning clear scope criteria and ZAR brackets arrive ready to discuss deliverables constructively rather than fighting sticker shock.",
+          heading: "Transparency makes sales calls shorter and better",
+          text: "Prospects who enquire after reading clear scope notes and rand price guides arrive ready to discuss real priorities instead of fighting sticker shock.",
         },
       },
       {
         title: "Ground authority using verifiable South African evidence",
         body: [
-          "Stock smiling office handshakes and anonymous five-star quotes ('Great work! — J.S.') add practically zero modern credibility. Back every core page through tangible local trust markers:",
+          "Stock office handshake photos and anonymous quotes ('Great service! - J.S.') carry almost zero trust today. Back every service page with tangible local proof:",
         ],
         bullets: [
-          "Concrete problem -> engineering fix -> measurable outcome summaries (even compact anonymous project write-ups beat empty adjectives).",
-          "Consistent local operational footprint: physical Johannesburg/SA business street presence, `+27` WhatsApp/telephone line and matched schema markup.",
-          "Supporting high-depth articles proving real mastery right on your domain via hub-and-spoke internal links.",
-          "Zero visual glitches: crisp typography, fast 4G speed, green SSL lock and zero spelling errors.",
+          "Clear problem -> practical fix -> business result examples (keep worked examples clearly labelled if illustrative, and never invent client claims).",
+          "Consistent local business details: registered South African company details, `+27` phone and WhatsApp line, and matching Google business info.",
+          "Supporting plain-English guides on your own website linked right from the service page.",
+          "Zero careless glitches: clean layout, fast 4G speed, active HTTPS security certificate and zero spelling mistakes.",
         ],
         callout: {
           tone: "warning",
           heading: "Do not cram five unrelated services onto a single combined page",
-          text: "Combining Web Design, SEO, Cyber Security, Branding and Hosting onto one sprawling '/services' sheet confuses Google rankings and forces buyers to wade past irrelevant noise.",
+          text: "Squeezing Web Design, SEO, Cyber Security, Branding and Hosting onto one sprawling `/services` sheet confuses Google search matching and forces buyers to scroll past stuff they never asked for.",
         },
       },
       {
         title: "Give every scrolled section a smooth, frictionless step forward",
         body: [
-          "Once a prospect reads your FAQs two-thirds down a page and thinks 'these folks know what they're talking about', do not force them scrolling all the way back to the top navbar. Anchor crisp contextual conversion bands straight onto `/contact/` with clean service and budget dropdowns, plus visible phone/WhatsApp links side by side.",
+          "When a visitor finishes reading your FAQs two-thirds down the page and decides 'these people know their craft', do not force them to scroll all the way back to the top bar. Place calm, helpful action panels right down the page linking to `/contact/` with service and budget dropdowns plus clickable phone and WhatsApp links.",
         ],
         numbered: [
-          "Use calm, action-oriented CTA button phrasing ('Request a scoped quote' vs generic 'Submit').",
-          "Address top four budget, timeline and ownership objections right inside structured page FAQs.",
-          "Track live form completions, `tel:` clicks and WhatsApp link clicks consistently inside analytics.",
+          "Use clear, calm button labels ('Request a scoped quote' rather than generic 'Submit').",
+          "Answer top budget, timeline and ownership questions inside structured page FAQs.",
+          "Track live form submissions, `tel:` taps and WhatsApp clicks inside analytics.",
         ],
       },
       {
         title: "Comparing weak template service copy vs high-converting structure",
         body: [
-          "Seeing concrete before-and-after wording clarifies immediately why one South African company earns fifteen steady monthly enquiries from identical visitor traffic while another complains websites 'never work'. Specificity persuades skeptical executives far faster than polished abstractions.",
-          "Audit your top service headlines and proof panels honestly against real buyer hesitation right now:",
+          "Comparing weak template copy against clear, structured service wording shows right away why two companies with the exact same visitor numbers get completely different enquiry volumes. Specific, plain answers persuade busy buyers far faster than slick slogans.",
+          "Check your own core service headlines and proof blocks honestly against real buyer doubts:",
         ],
         subsections: [
           {
-            heading: "Replacing vague clichés with commercial specificity",
+            heading: "Replacing vague slogans with real clarity",
             body: [
-              "Weak template H1: 'Tailored Digital Excellence For Modern Enterprises.' Strong commercial H1: 'Technical SEO & Search Console Recovery for South African B2B Websites.' Notice how immediately the second version tells business owners suffering 'Crawled - currently not indexed' plateaus what problem you solve, who you serve and why your service merits reading past line one.",
+              "Weak template H1: 'Tailored Digital Excellence For Modern Enterprises.' Clear commercial H1: 'Technical SEO & Google Search Console Fixes for South African Businesses.' Straight away, an owner struggling with pages missing from Google knows what problem you solve, who you help, and why your page is worth reading.",
             ],
           },
           {
-            heading: "Answering silent executive fears before booking calls",
+            heading: "Answering silent buyer doubts before they leave",
             body: [
-              "South African directors consistently hold back enquiring over four unvoiced doubts: hidden monthly lock-in traps, unclear timeline interruptions, losing Google rankings during rebuilds, and whether they own assets outright. Naming those answers candidly inside process steps and FAQs removes silent conversion friction cleanly.",
+              "South African directors often hesitate to enquire over four quiet worries: sneaky monthly lock-ins, launch delays, losing Google rankings during a redesign, and losing ownership of their domain or code. Answering those four points plainly in your process steps and FAQs removes silent hesitation.",
             ],
           },
         ],
         bullets: [
-          "Pre-select contextual intent gently where helpful (e.g. clicking 'Enquire about SEO' linking straight onto `/contact/` cleanly ready to choose service & budget).",
-          "Keep visual proof honest and readable cleanly beside every key action button rather than burying credentials inside tiny footer grey text.",
+          "Link contextually to `/contact/` (for example pre-selecting the service parameter in the URL) so visitors land ready to choose their service and budget range.",
+          "Keep local trust signals easy to see near main action buttons instead of hiding company details in tiny grey footer print.",
         ],
       },
     ],
     midCta: {
-      heading: "Receiving traffic onto service pages with sluggish enquiry rates?",
-      text: "We transform flat agency brochures into structured, fast South African conversion pages pairing crystal positioning with technical SEO.",
+      heading: "Getting traffic onto your service pages without enough enquiries?",
+      text: "We turn flat template brochures into fast South African service pages with clear wording, honest scope context and solid Google setup.",
       href: "/services/web-development/",
-      label: "Improve Your Service Pages",
+      label: "Improve your service pages",
     },
     related: [
       { label: "Website design & development", href: "/services/web-development/" },
@@ -1762,32 +1762,32 @@ export const websiteGuides: GuidePage[] = [
       {
         question: "How long should a primary commercial service page be?",
         answer:
-          "Long enough to communicate positioning, scope, ideal fit, cost drivers, proof and common FAQs cleanly—typically 700 to 1,200 disciplined scannable words rather than thin 200-word blurbs.",
+          "Write as much as a careful buyer needs to see what you deliver, who the service suits, what drives cost, and how to get started. That usually takes 700 to 1,200 clear, scannable words using short paragraphs, bullet points, and tables rather than vague 200-word template blurbs that leave questions unanswered.",
       },
       {
         question: "Should every individual service page embed a giant form inline?",
         answer:
-          "Dedicated `/contact/` routes paired with prominent contextual CTA buttons keep service layouts crisp and uncluttered on phones—particularly when dropdowns make choosing service and budget fast cleanly.",
+          "No, sending visitors to a dedicated `/contact/` page with clear buttons throughout the service page usually keeps layouts faster and tidier on phones. When dropdown menus let buyers pick their service and budget in seconds, a central enquiry page captures better briefs without cluttering every individual service page.",
       },
       {
         question: "Will giving price context give competitors free intel?",
         answer:
-          "Rivals already estimate your rates anyway; transparent ZAR guidance mainly reassures ideal serious clients while respectfully steering poor budget fits elsewhere early.",
+          "Competitors already know or can easily estimate standard market rates in South Africa. Sharing honest price drivers and indicative rand ranges does far more good for your business: it reassures serious buyers you have nothing to hide and filters out poor-fit enquiries before anyone wastes call time.",
       },
       {
         question: "How do educational guides feed conversions back to service pages?",
         answer:
-          "Detailed guides capture prospects researching prices or troubleshooting errors earlier, earn confidence through transparent depth and guide readers naturally into service hubs via contextual links.",
+          "Detailed guides capture people researching prices, comparing tools, or fixing problems earlier in their buying journey. By answering those questions plainly without fluff, the guide builds confidence and links naturally to your core service page and contact form when the buyer is ready to ask for a quote.",
       },
       {
         question: "What single change usually lifts service-page enquiries fastest?",
         answer:
-          "Clarifying the first H1 + opening sentence so visitors grasp literally what service you deliver, who you serve in South Africa and how to enquire inside five seconds.",
+          "Rewrite your top heading and opening sentence so any visitor knows within five seconds exactly what service you offer, who you help in South Africa, and what button to click next. Replacing clever slogans with plain, concrete answers stops confused visitors from leaving straight back to Google.",
       },
     ],
     priority: 0.72,
     published: "2026-11-20",
-    updated: "2026-11-20",
+    updated: "2026-11-26",
   },
   {
     slug: "website-hosting-guide-south-africa",
@@ -1797,55 +1797,55 @@ export const websiteGuides: GuidePage[] = [
     title: "Local vs International Website Hosting for South African Businesses",
     metaTitle: "SA vs Overseas Website Hosting Guide | SoftKore",
     description:
-      "Compare local South African hosting (Cape Town/Johannesburg) vs global CDNs & European servers across latency, WordPress speed, POPIA data residency and uptime.",
+      "Compare local South African hosting (Cape Town/Johannesburg) vs global CDNs and European servers for speed, WordPress performance, POPIA rules and uptime.",
     intro:
-      "Where your website sits hosted affects Time to First Byte (TTFB), mobile bounce rates, POPIA data residency clarity and whether ordinary campaign spikes crash overloaded plans. For dynamic WordPress/WooCommerce databases, hosting inside Cape Town or Johannesburg cuts network lag drastically; for pre-rendered static Next.js websites, global edge CDNs with local South African edge nodes deliver sub-50 ms responses anywhere.",
+      "Where your website is hosted decides how fast pages respond on mobile data, how smoothly POPIA data rules fit, and whether traffic spikes slow your site down. WordPress and WooCommerce shops run faster on Cape Town or Johannesburg servers, while pre-built Next.js sites load fast from local South African CDN caches anywhere.",
     summary: [
       "Latency for SA visitors",
-      "Dynamic PHP vs static CDN hosting",
+      "Dynamic PHP vs pre-built CDN hosting",
       "POPIA & data residency factors",
       "Picking reliable server support",
     ],
     takeaways: [
-      "Dynamic PHP/SQL websites (WordPress, WooCommerce) run visibly snappier for local shoppers on Johannesburg or Cape Town servers.",
-      "Pre-rendered static Next.js builds cached across CDNs with Johannesburg/Cape Town PoPs feel instant regardless of origin country.",
-      "Budget R60/month shared cPanel boxes hurt performance via crowded CPU throttling and shared outbound spam IP blacklists.",
-      "Decouple company email (Microsoft 365 / Google Workspace) and DNS cleanly from your web hosting account.",
-      "Hosting customer databases inside South Africa simplifies POPIA Section 72 cross-border transfer paperwork.",
+      "Dynamic sites like WordPress and WooCommerce feel visibly faster for local shoppers on Johannesburg or Cape Town servers.",
+      "Pre-built Next.js sites stored on local CDN caches in Johannesburg and Cape Town load almost instantly from anywhere.",
+      "Budget R60/month shared cPanel boxes hurt speed through overloaded servers and shared email spam blacklists.",
+      "Keep company email (Microsoft 365 or Google Workspace) and domain settings separate from your web hosting account.",
+      "Hosting customer databases inside South Africa keeps POPIA Section 72 cross-border rules simpler to manage.",
     ],
     sections: [
       {
         title: "Comparing South African hosting architectures side by side",
         body: [
-          "Selecting hosting depends far more on whether your site executes live database queries on every visit—or streams static pre-built HTML straight from local edge caches—than blindly picking flags alone.",
+          "Picking good hosting depends far more on whether your website runs live database lookups on every click, or serves pre-built pages straight from local edge caches, than just picking a country flag.",
         ],
         table: {
-          caption: "Hosting architectures for South African business websites",
-          headers: ["Hosting setup", "Typical SA TTFB latency", "Best suited for", "Main risk to watch"],
+          caption: "Hosting setups for South African business websites",
+          headers: ["Hosting setup", "Typical SA server response speed", "Best suited for", "Main risk to watch"],
           rows: [
             [
               "Cheap Shared cPanel (Local/EU)",
               "350 ms – 1,800 ms+",
-              "Tiny non-critical personal hobby sites",
-              "Crowded noisy neighbours, CPU caps & shared spam mail blacklists",
+              "Small personal or non-critical hobby sites",
+              "Crowded neighbours slowing your site & shared email spam blacklists",
             ],
             [
               "Managed SA VPS / WordPress",
               "80 ms – 250 ms",
-              "Active WooCommerce stores & dynamic PHP web apps serving SA buyers",
-              "Requires scheduled patching, off-site backups & edge WAF coverage",
+              "Active WooCommerce online stores & dynamic PHP apps serving SA buyers",
+              "Needs scheduled updates, off-site backups & a website firewall",
             ],
             [
-              "Edge CDN / Static Hosting",
-              "20 ms – 65 ms (SA edge PoPs)",
-              "Static / Next.js builds cached directly inside JHB, CPT & DBN",
-              "Verify origin firewalls & secure API endpoints properly",
+              "Edge CDN / Pre-built Hosting",
+              "20 ms – 65 ms (SA local caches)",
+              "Pre-built / Next.js websites cached inside JHB, CPT & DBN",
+              "Ensure origin firewalls & form endpoints are locked down properly",
             ],
             [
-              "Overseas Origin (no SA edge)",
-              "170 ms – 320 ms+ per hop",
-              "Global SaaS focused primarily outside Africa",
-              "Sluggish uncached shopping cart & wp-admin saves over SA mobile",
+              "Overseas Server (no SA cache)",
+              "170 ms – 320 ms+ per round trip",
+              "Global software serving users mainly outside Africa",
+              "Sluggish uncached shopping carts & slow dashboard edits on SA mobile",
             ],
           ],
         },
@@ -1853,106 +1853,106 @@ export const websiteGuides: GuidePage[] = [
       {
         title: "Speed & latency differences: Dynamic WordPress vs Edge Static Next.js",
         body: [
-          "Understanding how browsers talk to servers clarifies why static marketing websites behave completely differently from database-heavy online stores on South African networks.",
+          "Understanding how a phone talks to a web server explains why static company websites behave completely differently from database-heavy online stores on South African networks.",
         ],
         subsections: [
           {
-            heading: "Dynamic PHP/SQL apps suffer oversea fibre round-trips",
+            heading: "Dynamic WordPress and WooCommerce sites suffer overseas fibre delays",
             body: [
-              "Every undersea packet travelling Johannesburg to London or Frankfurt adds roughly 150–190 milliseconds round-trip latency by physics alone. On an uncached WooCommerce checkout firing dynamic Ajax cart calculations, filter queries and API calls sequentially, those hops accumulate quickly into multi-second stalls on mobile data. Local Cape Town or Johannesburg data centres strip pure distance delay away.",
+              "Every round trip from Johannesburg to London or Frankfurt adds roughly 150 to 190 milliseconds just in undersea cable distance. On a WooCommerce checkout running live cart updates, product filters and courier calculations one after another, those delays add up to multi-second stalls on mobile data. Cape Town or Johannesburg servers cut that distance delay right down.",
             ],
           },
           {
-            heading: "Global CDN edges transform pre-rendered Next.js pages",
+            heading: "Local edge CDN servers speed up pre-built Next.js sites",
             body: [
-              "When service sites build into pre-rendered static HTML behind Cloudflare or equivalent edge networks holding local PoPs in Johannesburg, Cape Town and Durban, South African browsers pull full pages straight from local fibre caches inside 20–50 milliseconds—surviving viral traffic surges effortlessly without database bottlenecks.",
+              "When business sites are pre-built behind Cloudflare or global content delivery networks with local servers in Johannesburg, Cape Town and Durban, South African browsers fetch finished pages straight from local fibre caches in 20 to 50 milliseconds, handling sudden ad spikes without database slowdowns.",
             ],
           },
         ],
         callout: {
           tone: "tip",
           heading: "Check Crawl Stats in Search Console to expose sluggish hosting",
-          text: "Inspect Google Search Console > Settings > Crawl Stats for Average Response Time. Consistent readings climbing past 500–800 ms warn that slow origin servers are throttling Googlebot crawls.",
+          text: "Open Google Search Console (Google's free report on how your site shows up in search) and check Settings > Crawl Stats for Average Response Time. Readings consistently above 500–800 ms warn that slow hosting is slowing down Google's scan of your site.",
         },
       },
       {
         title: "Why R60 shared cPanel hosting ends up costing far more than it saves",
         body: [
-          "Almost every South African complaint about sluggish WordPress speed originates on budget shared plans cramming hundreds of unrelated domains onto single disks with strict PHP worker ceilings and zero isolation.",
-          "Stepping up modestly onto clean NVMe managed hosting or isolated VPS servers cures sluggish backend edits, eliminates random 503 timeouts during ad campaigns and boosts Mobile Core Web Vitals straight away.",
+          "Almost every complaint about sluggish WordPress sites in South Africa starts on budget shared plans that pack hundreds of unrelated websites onto one server with tight processing caps.",
+          "Moving up modestly onto dedicated managed hosting or an isolated virtual server fixes sluggish admin dashboards, stops random timeout errors during Google Ads pushes, and improves results on Google's speed and stability tests.",
         ],
         bullets: [
-          "Dedicated isolated PHP workers & clean server object caching (Redis / FastCGI).",
-          "Independent SFTP/SSH isolation per website rather than dumping five domains inside one shared folder.",
-          "Reliable automatic HTTP/2 or HTTP/3 TLS handshakes without weird redirect loops.",
+          "Dedicated server resources and built-in object caching so database queries stay quick.",
+          "Separate file accounts per website rather than dumping five company domains inside one shared folder.",
+          "Fast automatic HTTPS security certificates without weird redirect loops.",
         ],
       },
       {
         title: "POPIA Section 72 cross-border transfer considerations",
         body: [
-          "If your application captures sensitive personal information, customer account databases, medical records or uploaded CVs directly onto hosting disks, selecting cloud regions inside Cape Town or Johannesburg simplifies POPIA Section 72 cross-border legal governance alongside your compliance adviser.",
-          "Whenever offshore SaaS CRMs, analytics or mail APIs handle international processing legs, verify strong contractual security standards and disclose offshore transfer jurisdictions openly inside your Privacy Notice.",
+          "If your website stores personal details, customer accounts, medical files or uploaded CVs straight onto your server disk, picking cloud servers inside Cape Town or Johannesburg simplifies POPIA Section 72 cross-border transfer checks with your compliance adviser.",
+          "Whenever overseas CRM tools, analytics or email APIs process data internationally, verify strong contractual security terms and explain cross-border processing clearly inside your Privacy Policy.",
         ],
       },
       {
         title: "Keep website hosting, DNS and company email completely decoupled",
         body: [
-          "Bundling `.co.za` domain control, authoritative DNS, website hosting AND company employee email onto a single cPanel login creates catastrophic single-point failure: one overloaded inbox quota, spam blacklist or billing glitch cuts off every customer communication channel simultaneously.",
+          "Putting your `.co.za` registration, domain settings (DNS), website hosting AND staff mailboxes inside one cPanel account creates a single point of failure: one full mailbox, spam blacklist or billing mistake knocks out your website and email at the exact same time.",
         ],
         bullets: [
-          "Host office email on dedicated enterprise mail suites (Microsoft 365 or Google Workspace).",
-          "Keep authoritative DNS cleanly under MFA-locked edge infrastructure (such as Cloudflare DNS).",
-          "Point encrypted automated off-site website backups onto independent cloud storage away from the main host.",
+          "Host company email on dedicated business mail platforms (Microsoft 365 or Google Workspace).",
+          "Keep domain settings under an account protected by two-step login verification (such as Cloudflare DNS).",
+          "Store daily encrypted off-site backups on separate cloud storage away from your web host.",
         ],
         callout: {
           tone: "warning",
           heading: "Shared hosting IP addresses quietly destroy invoice deliverability",
-          text: "Sending website quotes and notifications through shared cPanel mail servers exposes your domain directly to spam blacklists triggered by unrelated domains sharing that exact IP.",
+          text: "Sending website quotes and order receipts through shared cPanel mail servers exposes your domain directly to spam blacklists triggered by unrelated websites sharing that same server IP.",
         },
       },
       {
-        title: "How to switch website hosting cleanly without downtime or SEO drops",
+        title: "How to switch website hosting without downtime or SEO drops",
         body: [
-          "Upgrading away from weak hosting does not require weekend downtime or broken mailboxes when staged methodically beforehand:",
+          "Moving away from slow hosting does not require weekend downtime or broken mailboxes when planned step by step:",
         ],
         numbered: [
-          "Back up complete live files, SQL databases, `.env` secrets and exact existing DNS zone records (`MX`, `TXT`, `SPF`, `DKIM`, `DMARC`).",
-          "Replicate the full website onto new replacement hosting and validate every route, asset and contact form privately via hosts/staging preview.",
-          "Drop DNS record TTL values cleanly to 300 seconds 24 hours prior to migration, ensuring mail `MX`/`TXT` entries stay 100% preserved.",
-          "Flip web `A`/`AAAA`/`CNAME` records cleanly while keeping old hosting active 48 hours for cached DNS stragglers before closing out.",
+          "Back up all live website files, databases, environment keys and exact domain mail records (`MX`, `TXT`, `SPF`, `DKIM`, `DMARC`).",
+          "Copy the full site onto the new hosting and test every page, photo and contact form on a private preview link.",
+          "Lower your domain update timer (TTL) to 300 seconds 24 hours before switching, while keeping every email record 100% untouched.",
+          "Point the website records (`A`/`AAAA`/`CNAME`) to the new host and keep the old hosting active for 48 hours for cached users before closing it.",
         ],
       },
       {
         title: "Worked hosting decision checklist for common SA business profiles",
         body: [
-          "Choosing hosting shouldn't involve sifting endlessly through meaningless 'unlimited SSD bandwidth' marketing charts. Match physical server proximity, database demands and backup control straight to what your website architecture genuinely runs daily.",
-          "Review how cleanly these real deployment pairings align cost, speed and operational calm across typical South African commercial setups:",
+          "Choosing hosting should never mean wading through vague 'unlimited bandwidth' marketing claims. Match server location, database needs and backup control to how your site actually runs day to day.",
+          "See how these practical setups balance cost, speed and calm upkeep across typical South African businesses:",
         ],
         subsections: [
           {
-            heading: "High-trust B2B service website (Edge static / Next.js CDN)",
+            heading: "Illustrative example: B2B service website (pre-built Next.js on local edge CDN)",
             body: [
-              "Serving pre-rendered static HTML behind Cloudflare or global CDN nodes operating physically inside Johannesburg, Cape Town and Durban puts initial byte response cleanly around 25–60 milliseconds across all nine provinces—removing shared SQL bottlenecks completely while scaling effortlessly during ad pushes.",
+              "Serving pre-built pages through Cloudflare or edge servers physically located in Johannesburg, Cape Town and Durban keeps initial response times around 25 to 60 milliseconds across all nine provinces, removing database slowdowns while handling ad-campaign traffic bursts smoothly.",
             ],
           },
           {
-            heading: "Active WooCommerce retailer (Managed SA VPS + Cloudflare WAF)",
+            heading: "Illustrative example: active WooCommerce retailer (managed SA VPS + firewall)",
             body: [
-              "Because shopping carts, stock checks and PayFast/Ozow webhooks require dynamic server execution on every checkout request, run live PHP workers on an isolated Johannesburg or Cape Town cloud/VPS server using NVMe storage, Redis object caching, Cloudflare WAF edge rules and independent off-site daily SQL backups.",
+              "Because live carts, stock lookups and PayFast or Ozow confirmations run live database requests on every checkout, host WooCommerce on an isolated Johannesburg or Cape Town virtual server with fast NVMe storage, caching, a website firewall that blocks attacks before they reach your site, and daily off-site backups.",
             ],
           },
         ],
         bullets: [
-          "Never tie employee email mailboxes onto the exact shared box hosting marketing websites.",
-          "Confirm hosting includes HTTP/2 or HTTP/3 support, clean TLS auto-renewal and SSH/SFTP key authentication rather than dusty cPanel defaults.",
+          "Never keep employee mailboxes on the exact same cheap shared server hosting your marketing site.",
+          "Confirm your host supports modern HTTP/2 or HTTP/3 connections, free auto-renewing HTTPS security certificates and secure key-based file access.",
         ],
       },
     ],
     midCta: {
-      heading: "Fighting slow hosting TTFB or unsure how to migrate servers safely?",
-      text: "We handle seamless migrations onto fast SA/CDN hosting—preserving email delivery, Search Console SEO continuity and off-site backups.",
+      heading: "Fighting slow hosting speeds or unsure how to move servers safely?",
+      text: "We handle smooth moves onto fast South African or local CDN hosting while keeping your email working, Google visibility intact and off-site backups safe.",
       href: "/services/web-development/",
-      label: "Plan a Safe Migration",
+      label: "Plan a safe migration",
     },
     related: [
       { label: "Website design & development", href: "/services/web-development/" },
@@ -1964,31 +1964,31 @@ export const websiteGuides: GuidePage[] = [
       {
         question: "Does server physical country alter Google.co.za search rankings directly?",
         answer:
-          "For `.co.za` domains Google relies on extension & business locality signals—actual server speed (TTFB and Core Web Vitals) influences UX and crawling far more heavily than raw IP coordinates.",
+          "For a `.co.za` domain, Google already knows from the domain ending and your local contact details that you serve South Africa. Server speed matters far more than server coordinates: slow overseas hosting delays page loading and Google's scan of your site, which can hurt visitor patience and rankings indirectly.",
       },
       {
         question: "Is cheap R50–R90/month cPanel hosting ever acceptable for SMEs?",
         answer:
-          "Only for hobby or placeholder sites with zero lead reliance. Any revenue-generating commercial site merits isolated NVMe resources, automated off-site backups and crisp response speeds.",
+          "Only for temporary placeholder sites or hobby projects that do not bring in leads or sales. Any website your business relies on for enquiries needs isolated server memory, reliable daily off-site backups, fast response times, and email hosted separately so noisy neighbours never slow your site or blacklist your invoices.",
       },
       {
         question: "Will shifting hosts disrupt Google Search Console data or indexed pages?",
         answer:
-          "Not when migrated properly—keep all live URLs, HTTP 200 codes, canonicals and content intact across cutover and Search Console records continue unbroken.",
+          "Not when the move is tested on a private preview and checked properly before switching domain records. As long as all your existing page addresses, wording, main-page tags, and direct redirects stay identical on the new host, your site stays listed on Google and Google Search Console tracking continues unbroken.",
       },
       {
         question: "Should free SSL still work smoothly on South African local hosting?",
         answer:
-          "Yes—reputable SA web hosts automate Let's Encrypt / AutoSSL provisioning with zero extra annual surcharge.",
+          "Yes, almost all reputable South African hosts now include free automated HTTPS security certificates (such as Let's Encrypt or AutoSSL) that renew automatically in the background. You should not pay high annual fees for a standard certificate unless your business specifically requires an organisation-validated enterprise certificate for compliance.",
       },
       {
         question: "Can static websites live cheaply without traditional PHP cPanel servers?",
         answer:
-          "Yes—Next.js static exports deploy cleanly onto ultra-fast CDN edge networks with local Johannesburg/Cape Town caching, removing database server costs completely.",
+          "Yes, pre-built Next.js websites can run directly on modern edge networks with local servers in Johannesburg and Cape Town instead of renting traditional PHP and database servers. That cuts monthly hosting expenses, handles sudden traffic bursts easily, and removes database server maintenance and slow cPanel load bottlenecks altogether.",
       },
     ],
     priority: 0.72,
     published: "2026-11-20",
-    updated: "2026-11-20",
+    updated: "2026-11-26",
   },
 ];

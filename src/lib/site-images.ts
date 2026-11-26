@@ -262,12 +262,12 @@ export const pageHeroImages: Record<
   "seo-services": {
     ...heroSeoServicesImage,
     badge: "Search visibility",
-    caption: "Technical audits, Google indexing fixes and honest Search Console reporting.",
+    caption: "Website audits, Google visibility fixes and honest Search Console reporting.",
   },
   "website-security": {
     ...heroWebsiteSecurityImage,
-    badge: "Hardened & monitored",
-    caption: "Security audits, WAF protection, hack recovery and verified off-site backups.",
+    badge: "Protected & monitored",
+    caption: "Security checks, website firewalls, hack recovery and off-site backups.",
   },
   work: {
     ...heroWorkImage,
@@ -277,7 +277,7 @@ export const pageHeroImages: Record<
   about: {
     ...heroAboutImage,
     badge: "South African studio",
-    caption: "Plain-language engineering focused on build quality, SEO and security.",
+    caption: "Clear advice and solid websites focused on speed, SEO and security.",
   },
   contact: {
     ...heroContactImage,
@@ -287,7 +287,7 @@ export const pageHeroImages: Record<
   guides: {
     ...heroGuidesImage,
     badge: "Practical SA guides",
-    caption: "Plain-language playbooks on pricing in rand, industry SEO, Google indexing and website security.",
+    caption: "Practical playbooks on pricing in rand, industry SEO, showing up on Google and website security.",
   },
 };
 
@@ -497,38 +497,38 @@ export const homeIndustryCards: Array<{
   image: SiteImage;
 }> = [
   {
-    sector: "Medical & Clinics",
-    title: "Trustworthy booking paths for patients",
+    sector: "Medical & clinics",
+    title: "Clear treatment pages and easier patient bookings",
     href: "/guides/medical-practice-website-seo-south-africa/",
     image: industryMedicalImage,
   },
   {
-    sector: "Construction & Engineering",
+    sector: "Construction & engineering",
     title: "Credible project proof for tender buyers",
     href: "/guides/construction-company-website-seo-south-africa/",
     image: industryConstructionImage,
   },
   {
-    sector: "Logistics & Fleet",
-    title: "Clear delivery routes and easy quote requests",
+    sector: "Logistics & freight",
+    title: "Clear delivery routes and fast quote requests",
     href: "/guides/logistics-company-website-seo-south-africa/",
     image: industryLogisticsImage,
   },
   {
-    sector: "Property & Real Estate",
-    title: "High-speed listings and local search reach",
+    sector: "Property & real estate",
+    title: "Fast suburb listings that show up on Google",
     href: "/guides/real-estate-website-seo-south-africa/",
     image: industryRealEstateImage,
   },
   {
-    sector: "Trades & Field Services",
-    title: "More calls and WhatsApp messages from your site",
+    sector: "Plumbers, solar & trades",
+    title: "More calls and WhatsApp enquiries from local searches",
     href: "/guides/trades-plumber-solar-website-seo-south-africa/",
     image: industryPlumberImage,
   },
   {
-    sector: "Salons & Wellness",
-    title: "Effortless mobile menus and repeat bookings",
+    sector: "Salons & aesthetics",
+    title: "Mobile treatment lists and smoother online bookings",
     href: "/guides/salon-aesthetics-booking-website-seo-south-africa/",
     image: industrySalonImage,
   },
@@ -561,11 +561,11 @@ export const serviceDetailImages: Record<
 export const aboutGalleryImages: Array<SiteImage & { caption: string }> = [
   {
     ...processBuild,
-    caption: "Hands-on engineering reviews across real desktop and mobile screens.",
+    caption: "Every page tested on real phones and laptops before launch.",
   },
   {
     ...processDiscover,
-    caption: "Direct remote collaboration with businesses in all nine provinces.",
+    caption: "Remote collaboration with business owners across South Africa.",
   },
 ];
 

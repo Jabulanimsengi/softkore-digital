@@ -111,14 +111,14 @@ export function GuideTemplate({ guide }: { guide: GuidePage }) {
                     className="button button-primary"
                     href="/contact/?service=free-seo-audit#contact-form"
                   >
-                    Get a Free SEO Audit <UiIcon name="arrow" />
+                    Get my free SEO audit <UiIcon name="arrow" />
                   </Link>
                   <Link
                     prefetch={false}
                     className="button button-secondary"
                     href="/guides/"
                   >
-                    All Guides
+                    All guides
                   </Link>
                 </>
               ) : (
@@ -128,14 +128,14 @@ export function GuideTemplate({ guide }: { guide: GuidePage }) {
                     className="button button-primary"
                     href="/contact/"
                   >
-                    Start a Project <UiIcon name="arrow" />
+                    Start a project <UiIcon name="arrow" />
                   </Link>
                   <Link
                     prefetch={false}
                     className="button button-secondary"
                     href="/contact/?service=free-seo-audit#contact-form"
                   >
-                    Free SEO Audit
+                    Free SEO audit
                   </Link>
                 </>
               )}
@@ -359,8 +359,8 @@ export function GuideTemplate({ guide }: { guide: GuidePage }) {
         }
         text={
           guide.category === "SEO Services"
-            ? "We review Google indexing, technical SEO blockers and page structure across South Africa — free with no obligation."
-            : "We work with South African businesses across website design, technical SEO and website security."
+            ? "Send us your website address. We'll check why Google isn't showing your pages and reply with a clear fix list within one business day, for free."
+            : "We help South African businesses build faster websites, show up on Google and keep hackers out. Tell us what you need and we'll recommend the best first step."
         }
         primaryHref={
           guide.category === "SEO Services"
@@ -369,8 +369,8 @@ export function GuideTemplate({ guide }: { guide: GuidePage }) {
         }
         primaryLabel={
           guide.category === "SEO Services"
-            ? "Get a Free SEO Audit"
-            : "Start a Project"
+            ? "Get my free SEO audit"
+            : "Start a project"
         }
         secondaryHref={
           guide.category === "SEO Services"
@@ -379,8 +379,8 @@ export function GuideTemplate({ guide }: { guide: GuidePage }) {
         }
         secondaryLabel={
           guide.category === "SEO Services"
-            ? "View SEO Services"
-            : "Get a Free SEO Audit"
+            ? "View SEO services"
+            : "Get my free SEO audit"
         }
       />
     </main>

@@ -16,13 +16,6 @@ export function ServiceTemplate({ service }: { service: ServicePage }) {
   const heroImage =
     pageHeroImages[service.slug as keyof typeof pageHeroImages] ?? pageHeroImages.services;
   const visuals = serviceDetailImages[service.slug];
-  const ctaTopic = service.title
-    .replace(/Website/g, "website")
-    .replace(/Design/g, "design")
-    .replace(/Development/g, "development")
-    .replace(/Services/g, "services")
-    .replace(/Cyber/g, "cyber")
-    .replace(/Security/g, "security");
 
   return (
     <main className="stitch-page solution-detail-page">
@@ -126,11 +119,11 @@ export function ServiceTemplate({ service }: { service: ServicePage }) {
       </section>
 
       <section className="section solution-support-grid">
-        <div><h2>Where to go next.</h2><LinkList items={service.related} /></div>
+        <div><h2>Related services and guides.</h2><LinkList items={service.related} /></div>
         <div><h2>Answers before you enquire.</h2><FaqList items={service.faqs} /></div>
       </section>
 
-      <ConversionBand title={`Talk to us about ${ctaTopic}.`} text="Tell us what you need and where you are based. We work with businesses across South Africa and will give you a straight answer on the best next step." primaryHref={contactHref} primaryLabel={service.primaryCta} secondaryHref="/services/" secondaryLabel="All Services" />
+      <ConversionBand title={service.closingTitle} text={service.closingText} primaryHref={contactHref} primaryLabel={service.primaryCta} secondaryHref="/services/" secondaryLabel="All services" />
     </main>
   );
 }

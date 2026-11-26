@@ -44,7 +44,7 @@ const contactFaqs = [
   {
     question: "Do we need an in-person meeting in Johannesburg to work together?",
     answer:
-      "No. Although our office is at 111 Commissioner Street in Johannesburg, almost all client projects across Gauteng, the Western Cape, KwaZulu-Natal and other provinces run remotely, by video call and with a private online preview of your new site. Everything happens online, so nobody needs to travel.",
+      "No. Our registered office is in Johannesburg, and client projects across Gauteng, the Western Cape, KwaZulu-Natal and every other province run remotely by video call, email and WhatsApp. You review a live private preview of your site on your own phone and laptop, so nobody needs to travel.",
   },
   {
     question: "How is my enquiry data handled under POPIA?",
@@ -72,11 +72,11 @@ export default function ContactPage() {
       <main className="stitch-page contact-stitch-page">
         <PagePeopleHero
           breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
-          title="Get in touch."
-          lead="Request a free SEO audit or send us a project enquiry using the form below, or reach us directly by email, phone or WhatsApp."
+          title="Tell us what your website needs."
+          lead="Request a free SEO audit or send a project enquiry below. We reply within one South African business day by email, phone or WhatsApp."
           image={pageHeroImages.contact}
           actions={[
-            { label: "Send an Enquiry", href: "#contact-form", variant: "primary" },
+            { label: "Send an enquiry", href: "#contact-form", variant: "primary" },
             {
               label: "Chat on WhatsApp",
               href: "https://wa.me/27738021196?text=Hi%20SoftKore%20Digital%2C%20I%27d%20like%20to%20discuss%20a%20project.",
@@ -103,9 +103,9 @@ export default function ContactPage() {
               <li>
                 <span className="stitch-icon"><UiIcon name="map" /></span>
                 <div>
-                  <strong>Office Address</strong>
+                  <strong>Registered office</strong>
                   <p>111 Commissioner Street, Johannesburg, 2000, South Africa</p>
-                  <small>Serving businesses nationwide across all nine provinces</small>
+                  <small>We work remotely across all nine provinces — meetings happen by video call</small>
                 </div>
               </li>
               <li>
@@ -155,7 +155,7 @@ export default function ContactPage() {
           <div className="contact-map-wrapper">
             <div className="contact-map-bar">
               <div>
-                <strong>111 Commissioner Street, Johannesburg, 2000, South Africa</strong>
+                <strong>Registered office: 111 Commissioner Street, Johannesburg, 2000, South Africa</strong>
               </div>
               <a
                 href="https://www.google.com/maps/search/?api=1&query=111+Commissioner+Street,+Johannesburg,+2000,+South+Africa"

@@ -56,8 +56,8 @@ export function Footer() {
             />
           </Link>
           <p className="sf-about">
-            Fast websites, SEO and website security for South African businesses. Based in Johannesburg, working
-            remotely in all nine provinces.
+            Fast websites, SEO and cyber security for South African businesses. Remote-first from Johannesburg, serving
+            all nine provinces.
           </p>
           <ul className="sf-contact">
             <li>
@@ -70,7 +70,7 @@ export function Footer() {
               <a href={whatsappHref} target="_blank" rel="noopener noreferrer"><UiIcon name="phone" />WhatsApp us</a>
             </li>
             <li>
-              <span><UiIcon name="map" />{companyAddressLine}</span>
+              <span><UiIcon name="map" />Registered office: {companyAddressLine}</span>
             </li>
           </ul>
         </div>

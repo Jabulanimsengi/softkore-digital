@@ -37,6 +37,8 @@ export type ServicePage = {
   cost: string[];
   related: Array<{ label: string; href: string }>;
   faqs: Array<{ question: string; answer: string }>;
+  closingTitle: string;
+  closingText: string;
   serviceType: string;
 };
 
@@ -50,22 +52,22 @@ export const services: ServicePage[] = [
     eyebrow: "Website Design & Development",
     h1: "Website design & development for South African businesses.",
     intro:
-      "We design and build business websites that load quickly on a phone, explain what you do in plain language, and make it easy for the right customers to contact you, wherever they are in the country.",
-    primaryCta: "Start a Website Project",
-    secondaryCta: "See SEO Services",
+      "We build fast business websites that look sharp on any phone and explain clearly what you offer. Every site is structured around customer enquiries and set up for Google and security from day one.",
+    primaryCta: "Start a website project",
+    secondaryCta: "See SEO services",
     secondaryHref: "/services/seo-services/",
     summaryTitle: "Every website build includes",
     summary: [
       "Page structure planned around your services",
       "Mobile-first design and development",
       "Set up for Google from day one",
-      "Built securely, with the padlock (HTTPS) and working forms",
+      "Built securely, with a secure HTTPS connection and working forms",
       "Visitor tracking and checks before launch",
     ],
     bodyHeading: "A website has one job: help the right person choose you.",
     body: [
       "Most small business websites fail in predictable ways. The homepage talks about the company instead of the customer, services are squeezed onto one page, the phone number is hard to find on mobile, and nobody can tell what to do next. A new design does not fix any of that on its own.",
-      "We start with the decisions your customer has to make: do you offer what they need, can they trust you, what will it roughly involve, and how do they get in touch? The page structure, copy and design are then built around those answers, so the site works as a sales tool and not only as an online brochure.",
+      "We start with the decisions your customer has to make: do you offer what they need, can they trust you, roughly what it costs and how long it takes, and how do they get in touch? The page structure, copy and design are then built around those answers, so the site works as a sales tool and not only as an online brochure.",
       "Because the Google set-up and security are built in from the start, you avoid a common and expensive mistake: launching first, then paying later to fix the site for Google or close its security gaps.",
     ],
     fitHeading: "Who this is for",
@@ -90,7 +92,7 @@ export const services: ServicePage[] = [
         text: "One offer, one clear action, no distractions.",
       },
       {
-        title: "Ecommerce websites",
+        title: "Online stores (ecommerce)",
         text: "Online stores with local payments and delivery options.",
       },
       {
@@ -132,8 +134,8 @@ export const services: ServicePage[] = [
     ],
     costHeading: "What affects the cost of a website",
     cost: [
-      "The main cost drivers are the number of unique pages, who writes the content, how custom the design is, and whether the site needs features such as online payments or custom integrations. A redesign with many existing pages also needs planning so old links keep working.",
-      "A sensible approach is to launch a strong core site first and add to it once you can see what customers respond to. Share your rough budget on the [contact form](/contact/) and we will tell you honestly what it can achieve. Our [website prices guide](/guides/website-prices-south-africa/) covers this in more detail.",
+      "Most simple company websites cost R15,000 to R25,000 once-off, while lead-generating service websites typically cost R25,000 to R75,000 and online stores start from R35,000. The final quote depends on the number of unique page layouts, who writes the copy, custom design work and any payment or booking integrations.",
+      "A sensible approach is to launch a strong core site first and add more pages once you see what customers respond to. Share your rough budget on the [contact form](/contact/) and we'll tell you honestly what it can achieve, or read our [website prices guide](/guides/website-prices-south-africa/).",
     ],
     related: [
       { label: "SEO services", href: "/services/seo-services/" },
@@ -204,9 +206,12 @@ export const services: ServicePage[] = [
       {
         question: "What happens with hosting, updates and backups after launch?",
         answer:
-          "Before launch every site passes a final checklist: forms working, the padlock (HTTPS) on, security settings in place and the site submitted to Google. After that, a [website security and maintenance plan](/services/website-security/) can keep it updated, check it stays online and keep [backups stored away from your server](/guides/offsite-website-backups-south-africa/).",
+          "Before launch every site passes a final checklist: forms working, a secure HTTPS connection active, security settings in place and the site submitted to Google. After that, a [website security and maintenance plan](/services/website-security/) can keep it updated, check it stays online and keep [backups stored away from your server](/guides/offsite-website-backups-south-africa/).",
       },
     ],
+    closingTitle: "Ready for a website that actually brings enquiries?",
+    closingText:
+      "Share your goals and rough budget in rand. We'll tell you honestly what it can achieve and send a clear written scope before you commit.",
     serviceType: "Website Design and Development",
   },
   {
@@ -218,9 +223,9 @@ export const services: ServicePage[] = [
     eyebrow: "SEO Services",
     h1: "SEO services for South African businesses.",
     intro:
-      "Start with a free SEO audit: we find out why your website is not being found, fix what is holding it back, and improve the pages that can bring you paying customers, with plain reporting on what changed.",
-    primaryCta: "Get a Free SEO Audit",
-    secondaryCta: "Need a New Website?",
+      "Start with a free SEO audit to see why Google isn't sending you enough enquiries. We find and fix what is holding your site back, strengthen your service pages, and report clearly using your own Google data.",
+    primaryCta: "Get my free SEO audit",
+    secondaryCta: "Need a new website?",
     secondaryHref: "/services/web-development/",
     summaryTitle: "SEO work can include",
     summary: [
@@ -258,11 +263,11 @@ export const services: ServicePage[] = [
       },
       {
         title: "Keyword research",
-        text: "The searches real buyers use, one page for each.",
+        text: "Finding the exact phrases buyers type and matching them to clear pages.",
       },
       {
         title: "Local and national visibility",
-        text: "Google Business Profile, listings and reviews, local or national.",
+        text: "Showing up in Google Maps locally and in search across South Africa.",
       },
       {
         title: "Reporting you can read",
@@ -299,8 +304,8 @@ export const services: ServicePage[] = [
     ],
     costHeading: "What affects the cost of SEO",
     cost: [
-      "Cost depends on the size and condition of your site, how competitive your market is, and whether we are writing content and implementing changes or advising your existing team. See realistic monthly and audit ranges in our [SEO prices guide](/guides/seo-prices-south-africa/), or start with a [free SEO audit](/contact/?service=free-seo-audit#contact-form) before committing to monthly work.",
-      "Be careful with very cheap packages that promise fixed rankings or large numbers of links. Bought links and mass-produced content can leave you with a problem that costs more to fix than the service did.",
+      "A once-off audit and focused fix sprint suits smaller budgets, while ongoing monthly SEO for South African businesses typically ranges from R4,500 to R15,000+ per month depending on your market and how much content we write. See full breakdowns in our [SEO prices guide](/guides/seo-prices-south-africa/), or start with a [free SEO audit](/contact/?service=free-seo-audit#contact-form) first.",
+      "Be careful with very cheap packages that promise guaranteed number-one rankings or hundreds of backlinks. Bought links and mass-produced content often create a mess that costs more to clean up than the package did.",
     ],
     related: [
       { label: "Fix 'Crawled - currently not indexed'", href: "/guides/fix-crawled-currently-not-indexed/" },
@@ -374,6 +379,9 @@ export const services: ServicePage[] = [
           "Each month you see how many of your pages Google shows, how often people find you through searches that don't include your business name, clicks to the pages that bring in sales, the work we completed and what comes next. It is all in plain business language, with no numbers that only look good.",
       },
     ],
+    closingTitle: "Find out why Google isn't showing your pages.",
+    closingText:
+      "Send us your website address for a free SEO audit. Within one business day we'll reply with the biggest blockers and what we would fix first.",
     serviceType: "Search Engine Optimisation",
   },
   {
@@ -385,16 +393,16 @@ export const services: ServicePage[] = [
     eyebrow: "Website & Cyber Security",
     h1: "Website & cyber security for South African businesses.",
     intro:
-      "We protect business websites from hacks, malware, defacement and data leaks, clean and restore compromised sites, and lock down weak points before attackers find them.",
-    primaryCta: "Request a Security Review",
-    secondaryCta: "See the Security Checklist",
+      "If your website has been hacked, we clean it up fast. If it hasn't, we close the gaps, lock down logins and set up backups before attackers find a way in.",
+    primaryCta: "Request a security review",
+    secondaryCta: "See the security checklist",
     secondaryHref: "/guides/website-security-checklist/",
     summaryTitle: "Website security work can include",
     summary: [
       "Security checks to find weak spots",
       "Locking down your site and adding a firewall",
       "Malware removal and hacked site recovery",
-      "The padlock (HTTPS), browser security settings and domain protection",
+      "Secure HTTPS connections, browser security settings and domain protection",
       "Backups, safe updates and security monitoring",
     ],
     bodyHeading: "Most website breaches start with a small gap that nobody was watching.",
@@ -440,7 +448,7 @@ export const services: ServicePage[] = [
     southAfricaHeading: "Practical cyber security for South African websites",
     southAfrica: [
       "Under POPIA, any South African business collecting names, email addresses, phone numbers or customer records through a website must take reasonable technical measures to secure that personal information against loss or unauthorised access. We secure your forms, the connection to your site and who can see customer data, as practical safeguards alongside your legal advice.",
-      "We also look beyond the website itself: protecting your .co.za domain from being transferred without permission, setting up email security records (SPF, DKIM and DMARC) so scammers can't send fake emails in your name, and checking that your padlock certificate and redirects can't be misused.",
+      "We also protect what surrounds the website: locking your .co.za domain against unauthorised transfers, setting up email security records (SPF, DKIM and DMARC) so scammers can't spoof invoices in your name, and making sure your HTTPS security certificate and redirects can't be misused.",
       "Whether your site runs on WordPress or is custom-built, we do security checks, lock-downs and emergency clean-ups remotely for businesses across all nine provinces.",
     ],
     processTitle: "How we secure a website",
@@ -467,8 +475,8 @@ export const services: ServicePage[] = [
     ],
     costHeading: "What affects the cost of website security",
     cost: [
-      "Cost depends on whether you need a once-off [security audit](/guides/website-security-audit-what-it-checks/) and lock-down, an urgent clean-up of a hacked site, or ongoing monthly updates, monitoring and backups. Site complexity, hosting access and the number of plugins or integrations also affect scope.",
-      "Fixing a hacked site almost always costs more than preventing the hack. Starting with a focused security audit or [website maintenance review](/guides/website-maintenance-cost-south-africa/) is a practical way to see your real risks before deciding on ongoing cover.",
+      "Urgent hack clean-ups are normally quoted as a fixed project and resolved within 24 to 72 hours, while ongoing updates, off-site backups and monitoring typically run from R950 to R3,500+ per month depending on site size and complexity. A once-off [security audit](/guides/website-security-audit-what-it-checks/) sits in between when you want a clear risk picture first.",
+      "Fixing a hacked site almost always costs more than preventing the breach. Starting with a focused security check or [website maintenance review](/guides/website-maintenance-cost-south-africa/) shows your real risks before you commit to monthly cover.",
     ],
     related: [
       { label: "Hacked website recovery guide", href: "/guides/hacked-website-recovery-south-africa/" },
@@ -484,7 +492,7 @@ export const services: ServicePage[] = [
       {
         question: "My website has been hacked or shows spam in Google. Can you fix it?",
         answer:
-          "Yes. We find out how the hackers got in, remove the harmful code and hidden back doors, change passwords and access keys, close the gap they used and ask Google to review the cleaned site. Read our [hacked website recovery guide](/guides/hacked-website-recovery-south-africa/).",
+          "Yes. We find out how the hackers got in, remove the harmful code and hidden backdoors, change passwords and access keys, close the gap they used and ask Google to review the cleaned site. Read our [hacked website recovery guide](/guides/hacked-website-recovery-south-africa/).",
       },
       {
         question: "Does having an SSL padlock mean my website is fully secure?",
@@ -509,7 +517,7 @@ export const services: ServicePage[] = [
       {
         question: "Do you offer ongoing security monitoring after a site is hardened?",
         answer:
-          "Yes. Once your site is locked down, monthly security cover keeps it that way: careful software updates, tested backups stored away from your server, padlock and downtime monitoring, firewall checks and regular test messages through your forms, so security gaps don't creep back in.",
+          "Yes. Once your site is locked down, monthly security cover keeps it that way: careful software updates, tested backups stored away from your server, HTTPS certificate and downtime monitoring, firewall checks and regular test messages through your forms, so security gaps don't creep back in.",
       },
       {
         question: "How do you remove a Google 'Deceptive site ahead' warning?",
@@ -542,6 +550,9 @@ export const services: ServicePage[] = [
           "We look at urgent hacked sites straight away and usually finish the clean-up, password changes and basic lock-down within 24 to 72 hours. A preventative [security audit](/guides/website-security-audit-what-it-checks/) gives you a ranked report within days, listing what to fix first and why each item matters.",
       },
     ],
+    closingTitle: "Need a security check — or dealing with a hack right now?",
+    closingText:
+      "Request a security review for a ranked risk report, or call or WhatsApp 073 802 1196 straight away if your site is hacked and needs urgent clean-up.",
     serviceType: "Website and Cyber Security",
   },
 ];

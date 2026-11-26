@@ -60,24 +60,24 @@ export default function AboutPage() {
       <main className="simple-page">
         <PagePeopleHero
           breadcrumbs={[{ label: "Home", href: "/" }, { label: "About" }]}
-          title="A South African web company focused on build quality, SEO and security."
-          lead="We specialise in three connected areas for businesses across South Africa: website design & development, getting found on Google (SEO), and website & cyber security. We explain everything in plain language and focus on results you can measure."
+          title="Clear advice, solid websites, and no agency lock-in."
+          lead="We specialise in three connected areas for South African businesses: website builds, Google SEO and cyber security — handled together so you never pay twice to fix agency gaps."
           image={pageHeroImages.about}
           actions={[
-            { label: "Start a Project", href: "/contact/", variant: "primary" },
-            { label: "Explore Services", href: "/services/", variant: "secondary" },
+            { label: "Start a project", href: "/contact/", variant: "primary" },
+            { label: "Explore services", href: "/services/", variant: "secondary" },
           ]}
         />
 
         <section className="section simple-about-statement">
 
-          <h2>We help businesses launch fast websites, get found on Google, and protect their sites from threats.</h2>
+          <h2>Most agencies split websites, SEO and security across separate teams. We build all three in properly from day one.</h2>
         </section>
 
         <section className="section simple-about-values">
-          <article><span>01</span><h3>We tell you what you actually need</h3><p>Sometimes that means fixing the problems stopping Google from showing your current site, tightening security, or replacing a few weak pages rather than rebuilding everything. We give you a straight answer first.</p></article>
+          <article><span>01</span><h3>We tell you what you actually need</h3><p>Sometimes that means fixing the problems stopping Google from showing your current site, tightening security, or replacing a few weak pages rather than rebuilding everything. We give you an honest assessment first.</p></article>
           <article><span>02</span><h3>We build light, secure sites</h3><p>Well-built, uncluttered websites load faster, rank better on Google and leave hackers fewer ways in.</p></article>
-          <article><span>03</span><h3>We stay honest about results</h3><p>Nobody can guarantee Google rankings or 100% immunity from attacks. We promise careful, solid work and honest reports you can check yourself in your own Google accounts.</p></article>
+          <article><span>03</span><h3>We stay honest about results</h3><p>We measure progress in your own Google accounts — never made-up agency scores. Nobody can honestly guarantee a #1 ranking or 100% immunity from hacks, so we show you the real numbers and the exact work completed.</p></article>
         </section>
 
         <section className="section simple-about-gallery" aria-label="How we work">
@@ -144,7 +144,7 @@ export default function AboutPage() {
         <section className="section simple-final">
 
           <h2>Tell us what your website needs to do.</h2>
-          <Link prefetch={false} className="simple-button simple-button-light" href="/contact/">Start a Project <UiIcon name="arrow" /></Link>
+          <Link prefetch={false} className="simple-button simple-button-light" href="/contact/">Start a project <UiIcon name="arrow" /></Link>
         </section>
       </main>
     </>

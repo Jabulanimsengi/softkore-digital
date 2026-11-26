@@ -61,9 +61,9 @@ const servicesFaqs = [
 
 // One short line per card; the full detail lives on each service page.
 const serviceCardLines = [
-  "Fast websites that turn visitors into enquiries.",
-  "Get found on Google and win more enquiries.",
-  "Protect your site from hacks, and fix it if it's hacked.",
+  "Fast, mobile-first websites that turn visitors into enquiries.",
+  "Show up on Google when South African buyers search for what you do.",
+  "Block attacks before they happen, and clean up fast if you've been hit.",
 ];
 
 export default function ServicesIndex() {
@@ -78,8 +78,8 @@ export default function ServicesIndex() {
           lead="We focus on the three things that decide whether a business website works: building it properly, helping customers find it on Google (starting with a free SEO audit) and keeping it safe from hackers."
           image={pageHeroImages.services}
           actions={[
-            { label: "Get a Free SEO Audit", href: "/contact/?service=free-seo-audit#contact-form", variant: "primary" },
-            { label: "Start a Project", href: "/contact/", variant: "secondary" },
+            { label: "Get my free SEO audit", href: "/contact/?service=free-seo-audit#contact-form", variant: "primary" },
+            { label: "Start a project", href: "/contact/", variant: "secondary" },
           ]}
         />
 
@@ -103,19 +103,19 @@ export default function ServicesIndex() {
 
         <section className="section stitch-process stitch-services-process">
           <div className="stitch-section-heading"><h2>Build it right, get found, stay protected.</h2><p>A fast website is wasted if nobody finds it on Google. Good Google traffic is wasted if a hack takes the site offline or fills it with spam. Start with whichever one needs attention most.</p></div>
-          <div className="services-connection"><div><UiIcon name="globe" /><strong>Build it right</strong><span>Website design &amp; development</span></div><i /><div><UiIcon name="search" /><strong>Get found</strong><span>SEO: getting found on Google</span></div><i /><div><UiIcon name="shield" /><strong>Stay protected</strong><span>Website &amp; cyber security</span></div></div>
+          <div className="services-connection"><div><UiIcon name="globe" /><strong>Build it right</strong><span>Website design &amp; development</span></div><i /><div><UiIcon name="search" /><strong>Get found</strong><span>SEO services</span></div><i /><div><UiIcon name="shield" /><strong>Stay protected</strong><span>Website &amp; cyber security</span></div></div>
         </section>
 
         <section className="section page-faq-section" aria-label="Services frequently asked questions">
           <div className="page-faq-head">
 
             <h2>Questions about how our services fit together.</h2>
-            <p>Straight answers on combining a new website, SEO and security for your business.</p>
+            <p>How combining a new website, SEO and security saves money and avoids rework.</p>
           </div>
           <FaqList items={servicesFaqs} />
         </section>
 
-        <ConversionBand title="Not sure which service you need?" text="Start with a free SEO audit or tell us what is not working. We will tell you honestly what we would do first, wherever you are in South Africa." primaryHref="/contact/?service=free-seo-audit#contact-form" primaryLabel="Get a Free SEO Audit" secondaryHref="/guides/" secondaryLabel="Read Our Guides" />
+        <ConversionBand title="Not sure which service you need?" text="Start with a free SEO audit or tell us what is not working. We'll tell you honestly what we would do first, wherever you are in South Africa." primaryHref="/contact/?service=free-seo-audit#contact-form" primaryLabel="Get my free SEO audit" secondaryHref="/guides/" secondaryLabel="Read our guides" />
       </main>
     </>
   );

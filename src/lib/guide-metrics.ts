@@ -144,31 +144,31 @@ export function getDefaultMidCta(category: GuideCategory): GuideMidCta {
   switch (category) {
     case "Website Design & Development":
       return {
-        heading: "Planning a website or ecommerce build?",
-        text: "Get a clear written scope in ZAR—pages, performance, SEO setup and security—before you commit to a supplier.",
+        heading: "Planning a website or online store build?",
+        text: "Get a clear written scope in rand covering your pages, mobile speed, Google set-up and security before you commit to a supplier.",
         href: "/services/web-development/",
-        label: "Explore Website Development",
+        label: "Explore web development",
       };
     case "SEO Services":
       return {
         heading: "Want a free SEO audit of your website?",
-        text: "We inspect Search Console, indexing blockers, page structure and local demand to give you a clear priority plan — free with no obligation.",
+        text: "We check Google Search Console, what is stopping your pages from showing up, and how local buyers search, then send a clear fix list for free.",
         href: "/contact/?service=free-seo-audit#contact-form",
-        label: "Get a Free SEO Audit",
+        label: "Get my free SEO audit",
       };
     case "Website & Cyber Security":
       return {
         heading: "Need a hands-on website security review?",
-        text: "We audit headers, SSL, backups, malware exposure, email authentication and POPIA risks across South African business sites.",
+        text: "We check your site's logins, HTTPS certificate, backups, email security records and POPIA risks and list what to fix first.",
         href: "/services/website-security/",
-        label: "Explore Website Security",
+        label: "Explore website security",
       };
     case "Industry Playbooks":
       return {
         heading: "Want a website and SEO audit tailored to your industry?",
-        text: "We review your Google Search Console indexing, service page structure, conversion paths and security posture — free with no obligation.",
+        text: "Send us your website address and we'll check how you show up on Google, how clear your service pages are and any obvious security gaps, for free.",
         href: "/contact/?service=free-seo-audit#contact-form",
-        label: "Get a Free SEO Audit",
+        label: "Get my free SEO audit",
       };
   }
 }

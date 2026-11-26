@@ -44,7 +44,7 @@ const pillarGroups: Array<{
     category: "Website & Cyber Security",
     heading: "Website & Cyber Security",
     summary:
-      "Cleaning up a hacked site, removing Google's security warnings, stopping fake emails in your name, the padlock, firewalls, POPIA and protecting your domain.",
+      "Cleaning up a hacked site, removing Google's security warnings, stopping fake emails in your name, HTTPS security, firewalls, POPIA and protecting your domain.",
   },
   {
     id: "industries",
@@ -100,8 +100,8 @@ export default function GuidesPage() {
           lead="Plain-language answers on what websites cost, why sites do not rank on Google and how to protect your website against attacks."
           image={pageHeroImages.guides}
           actions={[
-            { label: "Get a Free SEO Audit", href: "/contact/?service=free-seo-audit#contact-form", variant: "primary" },
-            { label: "Start a Project", href: "/contact/", variant: "secondary" },
+            { label: "Get my free SEO audit", href: "/contact/?service=free-seo-audit#contact-form", variant: "primary" },
+            { label: "Start a project", href: "/contact/", variant: "secondary" },
           ]}
           highlights={[
             "Website & SEO pricing ranges (ZAR)",
@@ -201,7 +201,7 @@ export default function GuidesPage() {
           <FaqList items={guidesFaqs} />
         </section>
 
-        <ConversionBand title="Would you rather have someone handle this?" text="Request a free SEO audit and we can apply these SEO and security checks to your website and tell you what to fix first." primaryHref="/contact/?service=free-seo-audit#contact-form" primaryLabel="Get a Free SEO Audit" secondaryHref="/services/" secondaryLabel="View Services" />
+        <ConversionBand title="Would you rather have someone handle this?" text="Request a free SEO audit and we can apply these SEO and security checks to your website and tell you what to fix first." primaryHref="/contact/?service=free-seo-audit#contact-form" primaryLabel="Get my free SEO audit" secondaryHref="/services/" secondaryLabel="View services" />
       </main>
     </>
   );

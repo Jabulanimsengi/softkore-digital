@@ -22,7 +22,7 @@ const featuredGuideSlugs = [
 
 export const metadata: Metadata = pageMetadata(
   "Website Design, SEO & Cyber Security SA | SoftKore Digital",
-  "South African web agency building fast business websites, fixing Google SEO & indexing issues, and protecting sites from hacks and malware nationwide.",
+  "South African web agency building fast business websites, helping sites show up on Google, and protecting them from hacks and malware nationwide.",
   "/",
   homeHeroImageSrc,
 );
@@ -44,7 +44,7 @@ const standards = [
   },
   {
     metric: "Anywhere in SA",
-    label: "We work remotely with businesses in all nine provinces, by video call, email and WhatsApp.",
+    label: "Working remotely across all nine provinces over video, email and WhatsApp.",
   },
 ];
 
@@ -113,7 +113,7 @@ const homeFaqs = [
   {
     question: "What is included in your free SEO audit?",
     answer:
-      "We check whether Google is listing your pages, whether anything is blocking Google from reading them, how fast your site is on phones, how clear your service pages are and how easily local customers can find you. You get a short fix list in order of importance. Request yours on our [Free SEO Audit form](/contact/?service=free-seo-audit#contact-form).",
+      "We check whether Google is listing your pages, whether anything is blocking Google from reading them, how fast your site is on phones, how clear your service pages are and how easily local customers can find you. You get a short fix list ranked by priority. Request yours on our [Free SEO Audit form](/contact/?service=free-seo-audit#contact-form).",
   },
   {
     question: "Can any agency guarantee a number-one Google ranking in South Africa?",
@@ -138,12 +138,12 @@ const homeFaqs = [
   {
     question: "Can you take over and secure a WordPress or custom website another agency built?",
     answer:
-      "Yes. We start by checking your hosting, admin logins, plugins, the padlock (SSL), your domain settings and your firewall. Then we give you a clear, practical plan to fix what we find, in order of importance. This is part of our [website and cyber security service](/services/website-security/).",
+      "Yes. We start by checking your hosting, admin logins, plugins, your HTTPS security certificate, your domain settings and your firewall. Then we give you a clear, practical plan to fix what we find, in order of importance. This is part of our [website and cyber security service](/services/website-security/).",
   },
   {
     question: "What does website security cover under South Africa's POPIA requirements?",
     answer:
-      "POPIA expects you to take reasonable steps to protect the personal information people send through your website. In practice that means a secure connection (the padlock), giving staff only the access they need, blocking spam and keeping tested backups. Check our [POPIA website compliance checklist](/guides/popia-website-compliance-checklist/).",
+      "POPIA expects you to take reasonable steps to protect the personal information people send through your website. In practice that means a secure HTTPS connection, giving staff only the access they need, blocking spam and keeping tested backups. Check our [POPIA website compliance checklist](/guides/popia-website-compliance-checklist/).",
   },
   {
     question: "Do I own my .co.za domain, website code and Search Console data once built?",
@@ -153,9 +153,9 @@ const homeFaqs = [
 ];
 
 const aboutPoints = [
-  "Remote projects over video, email and WhatsApp, with the same process in every province.",
-  "Built for local conditions: light on mobile data, South African payments and POPIA-aligned security.",
-  "We stay after launch, including for websites we did not build.",
+  "You own 100% of your .co.za domain, website code and Google accounts from day one.",
+  "Fixed prices on builds and month-to-month support, with no 12-month lock-in contracts.",
+  "CIPC-registered, Level 1 B-BBEE (135% recognition) with a registered POPIA Information Officer.",
 ];
 
 function CheckIcon() {
@@ -188,7 +188,7 @@ export default function HomePage() {
           <div className="hx-wrap hx-hero-content">
             <p className="hx-hero-title-main">Built to be found. <em>Built to be trusted.</em></p>
             <h1 className="hx-hero-h1" id="hx-hero-title">
-              Website development, SEO &amp; cyber security for South African businesses. <span>Start with a free SEO audit: no cost, no obligation.</span>
+              Website development, SEO &amp; cyber security for South African businesses. <span>Start with a free SEO audit — get a clear fix list within one business day.</span>
             </h1>
             <div className="hx-actions">
               <SquareButton variant="white" href="/contact/?service=free-seo-audit#contact-form">Get my free SEO audit</SquareButton>
@@ -201,7 +201,7 @@ export default function HomePage() {
         <section className="hx-section hx-statement">
           <div className="hx-wrap">
             <div className="hx-title">
-              <h2 className="hx-statement-text">A website can look fine and still lose customers: <mark>invisible on Google</mark>, <mark>slow on mobile</mark>, or <mark>one outdated plugin away from a hack</mark>. We fix all three, in plain language.</h2>
+              <h2 className="hx-statement-text">A website can look fine and still lose customers: <mark>invisible on Google</mark>, <mark>slow on mobile</mark>, or <mark>one outdated plugin away from a hack</mark>. We fix all three, and explain every step without the jargon.</h2>
             </div>
             <dl className="hx-standards" aria-label="Included in every SoftKore website">
               {standards.map((item) => (
@@ -272,7 +272,7 @@ export default function HomePage() {
           <div className="hx-wrap">
             <div className="hx-title">
               <h2 id="hx-process-title">A clear process from first call to launch.</h2>
-              <p>A focused business website normally takes three to six weeks; ecommerce stores and larger redesigns take six to ten.</p>
+              <p>A focused business website normally takes three to six weeks; online stores and larger redesigns take six to ten.</p>
             </div>
             <ol className="hx-steps">
               {process.map(([number, title, text]) => (
@@ -297,7 +297,8 @@ export default function HomePage() {
                 <Link prefetch={false} href={card.href} className="hx-tile" key={card.sector}>
                   <img src={card.image.src} alt={card.image.alt} width={1536} height={1024} loading="lazy" />
                   <div className="hx-tile-body">
-                    <h3>{card.title}</h3>
+                    <h3>{card.sector}</h3>
+                    <p>{card.title}</p>
                     <SquareButtonShape variant="white" size="sm">Read playbook</SquareButtonShape>
                   </div>
                 </Link>
@@ -315,7 +316,7 @@ export default function HomePage() {
             <img src={homeTeamImage.src} alt={homeTeamImage.alt} width={1536} height={1024} loading="lazy" />
           </figure>
           <div className="hx-team-copy">
-            <h2 id="hx-team-title">Clear advice, solid work. All nine provinces.</h2>
+            <h2 id="hx-team-title">Built for South African businesses. No agency lock-in.</h2>
             <ul>
               {aboutPoints.map((point) => (
                 <li key={point}><CheckIcon />{point}</li>
@@ -373,9 +374,9 @@ export default function HomePage() {
           ) : null}
           <div className="hx-wrap hx-closing-copy">
             <h2 id="hx-closing-title">Start with a free SEO audit. <em>Decide after.</em></h2>
-            <p>Tell us what you need from your website. Whether it is a new site, better Google visibility or stronger security, we will give you a straight answer on the best next step, by email, phone or WhatsApp.</p>
+            <p>Tell us what you need from your website — a new build, better Google visibility or stronger security — and we will reply with an honest next step within one business day.</p>
             <div className="hx-actions">
-              <SquareButton variant="emerald" href="/contact/?service=free-seo-audit#contact-form">Request my free audit</SquareButton>
+              <SquareButton variant="emerald" href="/contact/?service=free-seo-audit#contact-form">Get my free SEO audit</SquareButton>
               <SquareButton variant="ghost" href="/contact/">Start a project</SquareButton>
             </div>
           </div>

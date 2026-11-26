@@ -11,7 +11,7 @@ type DropdownOption = {
 const serviceOptions: DropdownOption[] = [
   { label: "Website design & development", icon: "globe" },
   { label: "Free SEO audit", icon: "search" },
-  { label: "SEO & Google indexing", icon: "search" },
+  { label: "SEO & Google visibility", icon: "search" },
   { label: "Website & cyber security", icon: "shield" },
   { label: "Hacked site recovery", icon: "code" },
   { label: "Not sure yet", icon: "layers" },
@@ -333,7 +333,7 @@ export function ContactForm() {
             id="contact-business"
             name="business"
             autoComplete="organization"
-            placeholder="e.g. Acme Services · https://acme.co.za"
+            placeholder="e.g. Karoo Solar · https://karoosolar.co.za"
             value={business}
             onChange={(event) => setBusiness(event.target.value)}
             aria-invalid={Boolean(errors.business)}
@@ -344,9 +344,9 @@ export function ContactForm() {
 
         {isFreeAudit ? (
           <div className="contact-audit-note" role="note">
-            <strong>Free SEO audit included — no obligation</strong>
+            <strong>Free SEO audit — reply within one business day</strong>
             <p>
-              Include your website URL below and we will review your Google indexing, technical SEO health, page structure, and local search visibility within one business day.
+              Share your website address below. Within one business day we&apos;ll check whether Google is showing your pages, how fast your site loads on phones, and what&apos;s holding back enquiries — free, with no sales pressure.
             </p>
           </div>
         ) : null}
@@ -374,7 +374,7 @@ export function ContactForm() {
           <button className="simple-button simple-button-dark" type="submit" disabled={sending}>
             {sending ? "Sending enquiry..." : (
               <>
-                {isFreeAudit ? "Request Free SEO Audit" : "Send enquiry"} <UiIcon name="arrow" />
+                {isFreeAudit ? "Get my free SEO audit" : "Send enquiry"} <UiIcon name="arrow" />
               </>
             )}
           </button>
@@ -388,7 +388,7 @@ export function ContactForm() {
       {submitted ? (
         <div className="form-success" role="status">
           <strong>Your enquiry has been sent to SoftKore Digital.</strong>
-          <p>We will reply to {submittedEmail} shortly. Need an urgent response? You can also reach us directly on WhatsApp:</p>
+          <p>We will reply to {submittedEmail} within one business day. Need an urgent response? You can also reach us directly on WhatsApp:</p>
           <div className="form-success-actions">
             <a className="form-action-btn form-action-whatsapp" href={whatsappHref} target="_blank" rel="noopener noreferrer">
               <UiIcon name="phone" /> Message on WhatsApp

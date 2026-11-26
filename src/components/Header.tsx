@@ -19,7 +19,7 @@ const serviceNavItems = [
   { label: "Website design & development", description: "Fast websites that bring enquiries", href: "/services/web-development/" },
   { label: "SEO services", description: "Get found on Google", href: "/services/seo-services/" },
   { label: "Website & cyber security", description: "Protection and hack clean-ups", href: "/services/website-security/" },
-  { label: "Free SEO audit", description: "No cost, no obligation", href: "/contact/?service=free-seo-audit#contact-form" },
+  { label: "Free SEO audit", description: "No cost, reply in one business day", href: "/contact/?service=free-seo-audit#contact-form" },
 ];
 
 const HERO_SELECTOR = ".hx-hero, .page-people-hero, .article-hero";

@@ -20,7 +20,7 @@ const workFaqs = [
   {
     question: "Can I see live website or SEO audit examples relevant to my industry?",
     answer:
-      "Ask through our [contact page](/contact/) and we will share examples relevant to your industry where we can. In the meantime, our [industry playbooks](/guides/#industries) show the pages, price ranges in rand and security steps we recommend for each type of business, so you can see how we think before we talk.",
+      "Get in touch through our [contact page](/contact/) and we will walk you through a sample audit or live preview relevant to your industry. In the meantime, our [industry playbooks](/guides/#industries) set out the page structure, rand budgets and security steps we recommend for South African businesses.",
   },
   {
     question: "What happens during project discovery before coding starts?",
@@ -40,7 +40,7 @@ const workFaqs = [
   {
     question: "What launch checks do you run before calling a project finished?",
     answer:
-      "Before launch we check, by hand and with tools, that every old link still works, Google can find every page and knows which version is the main one, the padlock (HTTPS) and security settings are on, your forms actually send email, and the site passes Google's speed tests on phones.",
+      "Before launch we check, by hand and with tools, that every old link still works, Google can find every page and knows which version is the main one, a secure HTTPS connection and browser security settings are on, your forms actually send email, and the site passes Google's speed tests on phones.",
   },
   {
     question: "What deliverables do we receive when a project wraps up?",
@@ -58,17 +58,17 @@ export default function WorkPage() {
         <PagePeopleHero
           breadcrumbs={[{ label: "Home", href: "/" }, { label: "Work" }]}
           title="How we approach website, SEO and security projects."
-          lead="These are the types of project we take on, how we handle each one and what you receive at the end. Ask us for examples relevant to your business when you get in touch."
+          lead="These are the projects we take on, how we run each stage, and what you receive at handover. Get in touch to request a sample audit or live preview relevant to your industry."
           image={pageHeroImages.work}
           actions={[
-            { label: "Start a Project", href: "/contact/", variant: "primary" },
-            { label: "View Services", href: "/services/", variant: "secondary" },
+            { label: "Start a project", href: "/contact/", variant: "primary" },
+            { label: "View services", href: "/services/", variant: "secondary" },
           ]}
           highlights={[
             "A clear scope before work starts",
             "Regular reviews on real screens",
             "Security and broken-link checks at launch",
-            "Plain-language reporting",
+            "Clear monthly reporting",
           ]}
         />
 
@@ -92,7 +92,7 @@ export default function WorkPage() {
           <FaqList items={workFaqs} />
         </section>
 
-        <ConversionBand title="Does one of these sound like your business?" text="Start with a free SEO audit or tell us what is happening, and we will tell you honestly what we would do first." primaryLabel="Start a Project" secondaryHref="/contact/?service=free-seo-audit#contact-form" secondaryLabel="Get a Free SEO Audit" />
+        <ConversionBand title="Does one of these sound like your business?" text="Start with a free SEO audit or tell us what is happening, and we'll reply with what we would fix first." primaryLabel="Start a project" secondaryHref="/contact/?service=free-seo-audit#contact-form" secondaryLabel="Get my free SEO audit" />
       </main>
     </>
   );

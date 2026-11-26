@@ -21,148 +21,148 @@ export const securityGuides: GuidePage[] = [
     title: "SPF, DKIM & DMARC Guide for .co.za Domains: Stop Email Spoofing & Spam Issues",
     metaTitle: "SPF, DKIM & DMARC Guide for .co.za Domains | SoftKore",
     description:
-      "Stop scammers spoofing your .co.za email domain and prevent contact-form emails hitting Gmail spam. Clear SPF, DKIM and DMARC DNS setup guide for SA businesses.",
+      "Stop scammers faking your .co.za email and keep website enquiry emails out of Gmail spam. Plain SPF, DKIM and DMARC setup guide for SA firms.",
     intro:
-      "If fraudsters can send bogus banking-change invoices pretending to come from `@yourcompany.co.za`—or if legitimate quotes and website contact alerts vanish silently into clients' Gmail and Outlook junk folders—the fix lives inside three DNS TXT records: SPF, DKIM and DMARC.",
+      "Scammers can send fake invoice emails that look like they came from your .co.za address, and real website enquiries can land straight in Gmail spam. Fixing three simple domain email settings (SPF, DKIM and DMARC) stops fake senders and helps your real emails reach the inbox.",
     summary: [
       "What SPF, DKIM and DMARC stop",
-      "Checking existing DNS records",
-      "Authorising website enquiry mail",
-      "Enforcing DMARC safely",
+      "Checking your current domain settings",
+      "Fixing website contact emails",
+      "Turning on DMARC safely",
     ],
     takeaways: [
-      "Without DMARC enforcement, anyone online can spoof your `.co.za` From address in convincing invoice phishing scams.",
-      "Publish strictly ONE consolidated `v=spf1` record per domain—publishing two separate SPF lines invalidates both permanently.",
-      "Pair 2048-bit DKIM signatures across BOTH office email (M365/Workspace) and website transactional mail (Resend/Postmark).",
-      "Roll DMARC calmly in stages: monitor at `p=none` (`rua=`), fix sender gaps, test `p=quarantine`, then lock `p=reject`.",
-      "Publish `v=spf1 -all` and `p=reject` even on unused or parked defensive `.co.za`/`.com` domains so attackers cannot spoof them.",
+      "Without DMARC set to block fakes, anyone can pretend to email from your `.co.za` address in bank-change scams.",
+      "Use only ONE combined `v=spf1` line per domain, because adding a second SPF line breaks both.",
+      "Turn on 2048-bit DKIM signing for both your office email (Microsoft 365 or Google Workspace) and your website mail sender (such as Resend or Postmark).",
+      "Roll out DMARC in stages: watch reports at `p=none`, fix missing senders, test `p=quarantine`, then lock in `p=reject`.",
+      "Set `v=spf1 -all` and `p=reject` on unused spare domains too so scammers cannot fake emails from them.",
     ],
     sections: [
       {
         title: "How SPF, DKIM and DMARC protect your brand and website enquiries together",
         body: [
-          "Many South African directors treat email DNS authentication as an isolated office IT detail—ignoring how it breaks website contact notifications and WooCommerce receipts simultaneously. Strict bulk-sender rules enforced by Gmail and Microsoft now quarantine or drop unauthenticated form alerts straight into junk folders unless SPF, DKIM and DMARC align.",
-          "Think of all three records working cleanly as one verification chain: authorised infrastructure (SPF), cryptographic integrity (DKIM) and domain enforcement (DMARC).",
+          "Many South African business owners treat email domain settings (called DNS) as an office IT job. They often miss how those same settings break website contact alerts and online store receipts. Gmail and Microsoft now send unverified website emails straight to spam unless SPF, DKIM and DMARC match up.",
+          "Think of the three settings as one simple chain of proof: which servers may send for you (SPF), a digital stamp proving the email was not changed (DKIM), and a rule telling inboxes what to do with fakes (DMARC).",
         ],
         table: {
-          caption: "Email DNS authentication roles for South African domains",
-          headers: ["DNS Record", "Record Name", "What it verifies", "Common SME mistake"],
+          caption: "How the three domain email settings work for South African sites",
+          headers: ["Setting", "Where it sits", "What it checks", "Common business mistake"],
           rows: [
             [
               "SPF (Sender Policy Framework)",
-              "`@` (root TXT)",
-              "Lists exact servers & API IPs allowed to send email for the domain",
-              "Publishing two `v=spf1` strings or crossing the hard 10 DNS-lookup limit",
+              "`@` (main domain text line)",
+              "Lists the exact mail servers and tools allowed to send from your domain",
+              "Adding two separate `v=spf1` lines or going over the 10-lookup limit",
             ],
             [
               "DKIM (DomainKeys Identified Mail)",
               "`selector._domainkey`",
-              "Cryptographically signs headers/body so bank details cannot alter in transit",
-              "Enabling DKIM for M365/Gmail while website form mail sends unsigned",
+              "Adds a tamper-proof stamp so bank details cannot be changed on the way",
+              "Turning on DKIM for office email while leaving website form emails unsigned",
             ],
             [
               "DMARC",
-              "`_dmarc` (TXT)",
-              "Ties visible `From:` domain to SPF/DKIM alignment & blocks spoofed mail",
-              "Flipping straight to `p=reject` day one before checking payroll/site senders",
+              "`_dmarc` (text line)",
+              "Checks that the `From:` address matches SPF or DKIM and blocks fakes",
+              "Switching straight to `p=reject` on day one before listing payroll and site senders",
             ],
           ],
         },
       },
       {
-        title: "Configure SPF cleanly without tripping duplicate or lookup errors",
+        title: "Configure SPF without tripping duplicate or lookup errors",
         body: [
-          "An SPF record is a single TXT string on your root zone declaring every mail provider authorised to originate messages on your domain's behalf. Combining Microsoft 365 with an API website mailer and accounting notifications belongs cleanly inside ONE combined entry rather than adding stacked TXT rows.",
+          "An SPF record is a single text line inside your domain settings that lists every service allowed to send email for you. If you use Microsoft 365 plus a website mail tool and invoicing software, all of them must sit inside ONE combined line instead of separate rows.",
         ],
         subsections: [
           {
-            heading: "Never publish duplicate `v=spf1` TXT records",
+            heading: "Never publish two `v=spf1` lines on one domain",
             body: [
-              "One frequent South African DNS blunder happens when staff configure Xero, Sage or Mailchimp by clicking 'Add TXT Record' without deleting the previous SPF line. RFC standards treat multiple SPF strings as an instant `PermError`, causing authentication checks to fail globally.",
+              "A common mistake happens when staff set up Xero, Sage or Mailchimp by adding a new SPF line without removing the old one. Mail servers treat two SPF lines as a broken rule (`PermError`), so your email check fails everywhere.",
             ],
           },
           {
-            heading: "Stay strictly beneath the 10-lookup DNS ceiling",
+            heading: "Stay under the 10-lookup limit",
             body: [
-              "Every `include:`, `a`, `mx` or nested sub-include counts against a strict hard cap of 10 DNS lookups per check. Exceeding ten causes `PermError` silently across large marketing clouds—strip dead tools and ancient hosting IPs yearly to preserve crisp slack.",
+              "Every `include:`, `a` or `mx` entry inside your SPF line triggers a quick domain lookup. You only get 10 lookups in total before the check fails (`PermError`). Remove old marketing apps and retired hosting servers once a year to keep room spare.",
             ],
           },
         ],
         bullets: [
-          "Consolidate legitimate office and API relays inside one single `v=spf1` TXT record ending cleanly with `~all` during rollout or `-all` post-verification.",
-          "Inspect old marketing services annually so long-cancelled email apps no longer retain domain sending permission.",
+          "Keep all approved office and website senders in one `v=spf1` line ending in `~all` while testing, then `-all` once checked.",
+          "Check your list once a year so cancelled email tools do not keep permission to send as you.",
         ],
       },
       {
         title: "Activate 2048-bit DKIM across office suites AND website transactional mail",
         body: [
-          "Unlike SPF—which occasionally fails when customers auto-forward messages internally—DKIM stamps a tamper-proof cryptographic signature directly onto email headers checked cleanly against your DNS public key.",
+          "SPF can sometimes break when a customer auto-forwards your email inside their company. DKIM avoids that problem by adding a hidden digital stamp to each message, which the inbox checks against a public key in your domain settings.",
         ],
         bullets: [
-          "Office mailboxes: Activate both DKIM selectors inside Microsoft 365 Defender or generate 2048-bit keys inside Google Workspace Admin before clicking Enable.",
-          "Website & WooCommerce alerts: Ditch unauthenticated shared cPanel PHP `mail()` calls altogether; send notifications via dedicated transactional APIs (Resend, Postmark or SES) verified via isolated subdomains such as `mail.yourdomain.co.za`.",
-          "Accounting & CRM mailers: Authenticate Xero, Sage, HubSpot and ticketing platforms cleanly using vendor DKIM CNAMEs so PDF statements reach client primary inboxes cleanly.",
+          "Office mailboxes: Turn on both DKIM keys inside Microsoft 365 Defender, or create a 2048-bit key inside Google Workspace Admin.",
+          "Website and store alerts: Stop using your hosting server's basic PHP `mail()` tool. Send alerts through a trusted mail service (like Resend, Postmark or Amazon SES) on its own subdomain such as `mail.yourdomain.co.za`.",
+          "Accounting and CRM tools: Add the vendor's DKIM records for Xero, Sage, HubSpot or your booking tool so invoices and quotes reach the main inbox.",
         ],
         callout: {
           tone: "warning",
-          heading: "Shared cPanel PHP mail relays wreck customer inbox placement",
-          text: "Cheap shared hosting servers broadcast thousands of messages across one pooled IP shared with strangers—getting genuine quote replies flagged as junk whenever another site sends spam.",
+          heading: "Cheap shared hosting mail often sends quotes to spam",
+          text: "Budget shared hosting servers send mail for hundreds of websites from one shared address. When another site on that server sends spam, your own quote emails can be blocked too.",
         },
       },
       {
         title: "Roll out DMARC enforcement smoothly without dropping genuine invoices",
         body: [
-          "Jumping recklessly to `p=reject` afternoon one often bounces real payslips, accounting reminders or website enquiries originating from forgotten software tools. Step systematically through these four checkpoints:",
+          "Jumping straight to `p=reject` on day one can bounce real payslips, accounting reminders or website enquiries from tools you forgot about. Move through these four steps instead:",
         ],
         numbered: [
-          "Publish monitoring baseline (`v=DMARC1; p=none; rua=mailto:dmarc@yourdomain.co.za;`) and inspect aggregate XML summaries over 2–4 weeks until 100% of legitimate senders surface clearly.",
-          "Fix unaligned services: configure website APIs, invoicing software and booking systems so their visible `From:` aligns cleanly with authenticated DKIM or SPF.",
-          "Move cleanly to `p=quarantine` (`pct=25` then `pct=100`) directing suspicious unaligned emails straight into junk folders while scanning alerts closely.",
-          "Lock final enforcement at `v=DMARC1; p=reject; pct=100;` so Gmail, M365 and local South African ISPs drop forged spoofing attempts outright.",
+          "Start in watch mode (`v=DMARC1; p=none; rua=mailto:dmarc@yourdomain.co.za;`) and check weekly reports for 2 to 4 weeks until every real sender shows up.",
+          "Fix any missed tools so your website mail service, invoicing app and booking system send with matching DKIM or SPF.",
+          "Move to `p=quarantine` (`pct=25`, then `pct=100`) so suspect emails go to junk while you watch for any missed sender.",
+          "Lock in `v=DMARC1; p=reject; pct=100;` so Gmail, Microsoft 365 and local South African providers block fake emails outright.",
         ],
         callout: {
           tone: "tip",
-          heading: "Remember to publish zero-send locks on parked brand domains too",
-          text: "On secondary `.com` or defensive `.co.za` redirects carrying no email accounts, set explicit `v=spf1 -all` and `v=DMARC1; p=reject;` DNS policies blocking attackers from forging parked extensions.",
+          heading: "Lock unused spare domains too",
+          text: "On spare `.com` or `.co.za` domains that send no email, publish `v=spf1 -all` and `v=DMARC1; p=reject;` so scammers cannot spoof those lookalike names either.",
         },
       },
       {
         title: "Test live email headers end-to-end before wrapping up",
         body: [
-          "After DNS propagation completes, trigger genuine live test messages from every channel—office Outlook/Gmail, your `/contact/` form, and any checkout/invoicing system—to external consumer Gmail and Outlook test accounts. Open 'Show Original' headers directly inside Gmail and verify three matching green lines (`SPF: PASS`, `DKIM: PASS`, `DMARC: PASS`) across every sending source.",
+          "Once your domain settings update, send real test emails from your office inbox, your `/contact/` form and your invoicing tool to a personal Gmail and Outlook address. Open 'Show Original' in Gmail and confirm three green results (`SPF: PASS`, `DKIM: PASS`, `DMARC: PASS`) for every sender.",
         ],
       },
       {
         title: "Decoding real DMARC XML reports and avoiding silent forwarding traps",
         body: [
-          "Moving safely past `p=none` onto `p=quarantine` and `p=reject` stops getting scary once you know how to read aggregate DMARC feedback cleanly. Weekly aggregate reports list every mail IP worldwide claiming your `@yourcompany.co.za` domain—exposing legitimate forgotten software tools right alongside genuine spoofing attempts.",
-          "Resolve misaligned cloud apps methodically before locking strict `p=reject` across live company correspondence:",
+          "Moving from `p=none` to `p=quarantine` and `p=reject` feels much safer once you can read your weekly DMARC reports. Those reports list every server around the world sending mail as your domain, showing both forgotten office tools and real scam attempts.",
+          "Fix any unverified tools before you turn on `p=reject` across the whole business:",
         ],
         subsections: [
           {
-            heading: "Inspect forgotten automated senders inside DMARC `rua` summaries",
+            heading: "Spot forgotten senders inside DMARC reports",
             body: [
-              "Even without building custom XML parsers, free DMARC report viewers highlight quickly when an old client portal, Xerox scanner emailing PDFs, Xero invoice link or WordPress SMTP plugin fails DKIM alignment. Either configure custom domain DKIM on that vendor platform cleanly or route notifications via your verified domain transactional API.",
+              "Free DMARC report readers show quickly if an old client portal, office scanner, Xero link or WordPress mail plugin is failing its check. Either add that tool's own DKIM settings or send its emails through your verified website mail service.",
             ],
           },
           {
-            heading: "Understand why DKIM survives corporate mail forwarding safely",
+            heading: "Why DKIM still passes when clients forward email",
             body: [
-              "Many South African legal and engineering clients forward incoming domain emails straight to secondary mailboxes (`director@firm.co.za` forwarding to private Gmail). Forwarding frequently alters the transmitting server IP—breaking SPF checks! Valid 2048-bit DKIM signatures stay intact across forwards so aligned DMARC continues passing reliably.",
+              "Many directors and office staff forward work mail to a second inbox (for example `director@firm.co.za` forwarding to Gmail). Forwarding changes the sending server and often breaks SPF, while a valid 2048-bit DKIM stamp stays intact so DMARC still passes.",
             ],
           },
         ],
         bullets: [
-          "Keep DNS TXT length cleanly formatted without broken quote splits across vendor control panels.",
-          "Review DNS TXT mail entries twice yearly whenever adopting new accounting, payroll or booking software.",
+          "Make sure long text entries inside your domain panel have no broken quote marks or extra spaces.",
+          "Review your domain email settings twice a year whenever you add new accounting, payroll or booking software.",
         ],
       },
     ],
     midCta: {
-      heading: "Tired of quote replies hitting Gmail spam—or worried about invoice fraud?",
-      text: "We audit DNS zones, replace risky shared web mailers with verified APIs and guide your .co.za domain cleanly onto `p=reject`.",
+      heading: "Quotes hitting Gmail spam, or worried about invoice fraud?",
+      text: "We check your domain settings, replace unreliable hosting mailers with verified senders and move your .co.za domain safely to `p=reject`.",
       href: "/services/website-security/",
-      label: "Secure Email & DNS",
+      label: "Explore website security",
     },
     related: [
       { label: "Website & cyber security", href: "/services/website-security/" },
@@ -174,32 +174,32 @@ export const securityGuides: GuidePage[] = [
       {
         question: "Will SPF, DKIM and DMARC stop criminals buying lookalike typo domains?",
         answer:
-          "Email authentication protects strictly your exact registered domain (`@yourcompany.co.za`). Registering obvious typo variants defensively (`-sa.co.za`, `.com`) alongside staff/finance callback verification stops lookalike bank-change fraud completely.",
+          "No, email settings protect only your exact domain name, such as `@yourcompany.co.za`. They cannot stop scammers from buying a lookalike domain with an extra hyphen or `.com` ending. To block fake bank-change scams completely, register common typo variants defensively and require a phone callback before staff change any supplier payment details.",
       },
       {
         question: "Why did website contact notifications break after setting DMARC to p=reject?",
         answer:
-          "Almost certainly because your website server sent alerts pretending `From: info@yourdomain.co.za` via unsigned hosting PHP mail failing both SPF IP lists and DKIM signatures. Routing alerts cleanly through verified transactional mail APIs fixes this permanently.",
+          "Your website probably sent contact alerts using basic hosting mail that claimed to be from `info@yourdomain.co.za` without permission. Once `p=reject` is active, Gmail and Microsoft block any server not listed in your SPF or DKIM settings. Routing website alerts through a verified mail service on a subdomain fixes this permanently.",
       },
       {
         question: "Does SoftKore Digital configure SPF, DKIM and DMARC for South African businesses?",
         answer:
-          "Yes—resolving DNS mail auth conflicts and wiring clean API contact delivery sit directly inside our website security hardening work.",
+          "Yes, setting up SPF, DKIM and DMARC is part of our [website security](/services/website-security/) service. We audit your current domain settings, combine duplicate SPF lines, connect verified website mail delivery for your enquiry forms and monitor reports before locking in DMARC protection so real invoices and quote replies never bounce.",
       },
       {
         question: "How long do SPF and DMARC DNS updates take to propagate across South Africa?",
         answer:
-          "Most DNS TXT records refresh globally inside 15 minutes to a few hours depending on existing TTL windows.",
+          "Most domain email updates take between 15 minutes and a few hours to show up across South Africa and overseas. The exact wait depends on your domain panel's refresh timer, called a TTL. We lower that timer before making edits, then test live headers on Gmail and Outlook once changes settle.",
       },
       {
         question: "Does DMARC help stop inbound spam coming INTO our own company inbox?",
         answer:
-          "It stops fraudsters spoofing YOUR brand toward clients and internal staff (`ceo@yourcompany.co.za`)—pair it cleanly with M365/Workspace inbound anti-phishing policies too.",
+          "DMARC stops scammers from faking your own domain name when emailing your staff or your customers, such as fake messages pretending to come from your director. It does not block normal marketing spam from strangers. For general junk mail, pair DMARC with inbound filtering in Microsoft 365 or Google Workspace.",
       },
     ],
     priority: 0.72,
     published: "2026-11-20",
-    updated: "2026-11-20",
+    updated: "2026-11-26",
   },
   {
     slug: "remove-google-deceptive-site-ahead-warning",
@@ -209,46 +209,46 @@ export const securityGuides: GuidePage[] = [
     title: "How to Remove Google's 'Deceptive Site Ahead' & Safe Browsing Warning",
     metaTitle: "Remove Google 'Deceptive Site Ahead' Warning | SoftKore",
     description:
-      "Chrome or Safari blocking visitors with 'Deceptive site ahead'? Step-by-step phishing kit removal, backdoor cleanup, cache purge and Safe Browsing review guide.",
+      "Chrome or Safari blocking visitors with 'Deceptive site ahead'? Remove hidden phishing pages, clear backdoors and pass Google's safety review fast.",
     intro:
-      "Seeing Chrome's full-screen red 'Deceptive site ahead' warning locks out nearly 100% of website visitors overnight. Google Safe Browsing triggers that block when scanners detect fake phishing sign-in kits, social-engineering redirects or injected malware sitting anywhere on your domain or forgotten subdomains—demanding thorough backdoor removal before submitting Search Console review.",
+      "A red 'Deceptive site ahead' screen in Chrome locks out almost every visitor overnight. Google shows this warning when it spots fake login pages or hidden malware on your domain, so you need to remove every trace and close the security gap before asking for a review.",
     summary: [
-      "Why Chrome triggers red warnings",
-      "Locating hidden phishing scripts",
-      "Cleaning & closing the entry point",
-      "Clearing Search Console safely",
+      "Why Chrome shows the red warning",
+      "Finding hidden phishing pages",
+      "Cleaning files and closing the gap",
+      "Asking Google for a review",
     ],
     takeaways: [
-      "`Deceptive site ahead` is an active Safe Browsing malware/phishing flag—completely separate from an ordinary expired SSL certificate.",
-      "Intruders routinely plant disguised bank/courier phishing pages deep inside `/wp-content/uploads/` or stale subdomains while your homepage looks fine.",
-      "Inspect Google Search Console > Security Issues first for exact flagged paths, and capture forensic snapshots before editing files.",
-      "Never click 'Request Review' after deleting only the flagged folder—lingering backdoors re-infect sites and lengthen re-review penalties.",
-      "Purge Cloudflare/CDN caches and verify flagged URLs return clean HTTP 404/410 BEFORE requesting Google review.",
+      "`Deceptive site ahead` means Google Safe Browsing flagged phishing or malware on your site, not an expired HTTPS security certificate.",
+      "Hackers often hide fake bank or courier login pages inside upload folders or old subdomains while your homepage still looks normal.",
+      "Check Google Search Console (Google's free report on how your site shows up in search) under Security Issues to see the exact flagged links.",
+      "Never click 'Request Review' after deleting only one folder, because leftover backdoors re-infect the site and delay clearance.",
+      "Clear your website cache and check that removed spam links return a 404 or 410 'not found' status before requesting a review.",
     ],
     sections: [
       {
         title: "Confirm what 'Deceptive site ahead' means vs other browser alerts",
         body: [
-          "Reading the exact Chrome warning string immediately separates domain infection responses from simple TLS renewal hiccups.",
+          "Reading the exact warning on screen tells you right away whether hackers placed bad files on your site or whether an HTTPS security certificate simply expired.",
         ],
         table: {
-          caption: "Decoding urgent browser security warnings accurately",
-          headers: ["Browser alert", "Actual underlying cause", "Immediate first inspection"],
+          caption: "What urgent browser security warnings mean",
+          headers: ["Browser warning", "What caused it", "What to check first"],
           rows: [
             [
               "Deceptive site ahead (red)",
-              "Safe Browsing detected phishing logins, spoofing kits or sneaky redirects",
-              "Google Search Console > Security Issues + Hosting access log audit",
+              "Google spotted fake login pages, scams or sneaky redirects",
+              "Google Search Console > Security Issues and server access logs",
             ],
             [
               "The site ahead contains malware (red)",
-              "Host serves infected executables or malicious third-party scripts",
-              "Search Console > Security Issues + Core/plugin file diffing",
+              "Your host is serving infected downloads or bad scripts",
+              "Search Console > Security Issues and recent file changes",
             ],
             [
               "Your connection is not private (grey)",
-              "Expired/mismatched SSL certificate or broken SAN coverage",
-              "Hosting SSL panel / Cloudflare Full Strict check",
+              "Your HTTPS security certificate expired or misses `www`",
+              "Hosting SSL panel or Cloudflare Full (Strict) settings",
             ],
           ],
         },
@@ -256,98 +256,98 @@ export const securityGuides: GuidePage[] = [
       {
         title: "Locate every infected folder, subdomain and conditional redirect",
         body: [
-          "Owners feel bewildered when opening their own homepage on office laptops looks spotless. Automated attackers hide deceptive phishing clones inside writable subfolders mimicking Capitec, SARS, DHL or Microsoft 365 login pages strictly for external phishing victims—while hiding from site owners.",
+          "Many business owners feel confused because their homepage opens normally on their office laptop. Hackers often hide fake Capitec, SARS, DHL or Microsoft 365 login pages inside writable folders, or show bad redirects only to visitors coming from Google.",
         ],
         subsections: [
           {
-            heading: "Extract exact clues inside Search Console > Security Issues",
+            heading: "Get the exact flagged links inside Google Search Console",
             body: [
-              "Navigate straight to Security & Manual Actions > Security Issues inside Search Console. Google routinely prints sample paths (for example `/wp-content/uploads/2026/secure-verify/`) alongside breach categories. Search server modification timestamps around the exact creation hour of those flagged folders to uncover sibling payloads dropped during the exact same intrusion.",
+              "Open Google Search Console (Google's free report on how your site shows up in search) and click Security & Manual Actions > Security Issues. Google usually lists example links, such as `/wp-content/uploads/2026/secure-verify/`. Check server file dates around the same hour to find any other bad files uploaded in the same attack.",
             ],
           },
           {
-            heading: "Sweep legacy subdomains and orphaned DNS pointers",
+            heading: "Check old subdomains and forgotten folders",
             body: [
-              "Check every directory sharing your cPanel root plus DNS subdomains (`test.`, `mail.`, `portal.`). Safe Browsing frequently escalates penalties across your entire root `.co.za` brand whenever one forgotten, unpatched WordPress install sits exposed under `staging.yourdomain.co.za`.",
+              "Check every folder in your hosting account and every subdomain, such as `test.`, `mail.` or `portal.`. Google can block your whole `.co.za` domain if even one forgotten, unpatched site sits on a private preview subdomain like `staging.yourdomain.co.za`.",
             ],
           },
         ],
         bullets: [
-          "Inspect live rendered HTML via Google Search Console > URL Inspection > Test Live URL to catch cloaked malware triggered purely for Chrome or Googlebot user agents.",
-          "Scan server cron jobs (`crontab`) and WordPress `wp_options` rows for encoded JavaScript redirect injections.",
+          "Run Google Search Console > URL Inspection > Test Live URL to spot hidden hacks that only show up for Chrome users or Google's scan of your site.",
+          "Check scheduled server tasks (`crontab`) and database tables like `wp_options` for hidden redirect scripts.",
         ],
       },
       {
         title: "Clean the phishing payload AND eradicate hidden backdoors together",
         body: [
-          "Removing ONLY the specific phishing subfolder Chrome noticed while skipping root-cause investigation guarantees rapid repeat infection—and second flags trigger stricter manual delays.",
+          "Deleting only the single folder Chrome found while ignoring how the hacker got in guarantees the site will be hacked again. Second warnings often take longer to clear.",
         ],
         numbered: [
-          "Download an encrypted offline forensic copy of compromised files, database SQL dumps and past 30 days of access logs first.",
-          "Pause public site exposure via maintenance HTTP 503 screen or strict Cloudflare rule while cleaning.",
-          "Rebuild CMS core, themes and plugins cleanly directly from verified upstream vendor downloads; strip inactive themes and verify zero executable `.php` files hide inside `/uploads/`.",
-          "Remove unrecognised WordPress admin accounts and clean any rogue inline `<script>` or obfuscated `base64` snippets inside DB tables.",
-          "Rotate ALL credentials (hosting cPanel, FTP/SSH, SQL user, CMS admins, Cloudflare DNS, SMTP/payment API secrets), patch vulnerabilities and enforce MFA.",
+          "Save a safe offline copy of the hacked files, database and the past 30 days of server logs in case you need proof later.",
+          "Put up a temporary holding screen (HTTP 503) or block public access in Cloudflare while you clean the site.",
+          "Replace your editing system core, themes and plugins with fresh official copies, delete unused themes and remove any `.php` files inside `/uploads/`.",
+          "Delete unknown admin users and strip bad `<script>` or hidden encoded snippets out of database tables.",
+          "Change every password (hosting, FTP, database, site admins, domain settings, mail and payment keys), update old software and turn on two-step login checks.",
         ],
         callout: {
           tone: "warning",
-          heading: "Wait until every layer is clean before submitting Request Review!",
-          text: "Clicking 'Request Review' hastily while one dormant PHP dropper or cached Cloudflare edge copy remains infected triggers instant rejection and extends automated waiting delays.",
+          heading: "Wait until every layer is clean before requesting a review",
+          text: "If you click 'Request Review' while one hidden backdoor or cached page still holds the hack, Google rejects the request and makes you wait longer next time.",
         },
       },
       {
         title: "Verify dead spam URLs return HTTP 404/410 and purge all edge caches",
         body: [
-          "Test every single sample phishing/spam URL cited by Search Console via uncached headers (`curl -I`) after cleaning. Confirm every deleted malicious address outputs clean `HTTP/2 404` or `HTTP/2 410 Gone`—NEVER redirect phishing folders onto `/`!",
-          "Next, open Cloudflare or server Varnish/LiteSpeed caches and execute a full **Purge Everything** flush immediately so edge servers never hand stale infected HTML to Google's review scanner.",
+          "After cleaning, test every flagged link listed in Google Search Console. Each removed scam link must return a clear `404` or `410 Gone` 'not found' response, and you must NEVER redirect scam pages to your homepage.",
+          "Next, open Cloudflare or your hosting cache tool and run a full **Purge Everything** clear so visitors and Google do not see an old cached copy of the infected page.",
         ],
         bullets: [
-          "Check Googlebot response cleanly via URL Inspection > Test Live URL on your homepage before submitting review.",
-          "Confirm valid HTTPS and HTTP security headers (`HSTS`, `X-Frame-Options`, `nosniff`) stand solid across kept pages.",
+          "Test your homepage with URL Inspection > Test Live URL in Google Search Console before you ask for a review.",
+          "Check that your secure HTTPS connection and browser security settings (`HSTS`, `X-Frame-Options`, `nosniff`) are active on your live pages.",
         ],
         callout: {
           tone: "tip",
-          heading: "Keep your Search Console review explanation concise and factual",
-          text: "Write two clear sentences confirming what entry gap existed (e.g. outdated form plugin), that clean core/plugin files were rebuilt, backdoors deleted, all passwords rotated and WAF rules activated.",
+          heading: "Keep your Google review note short and factual",
+          text: "Write two clear sentences saying what caused the break-in (such as an outdated form plugin), that you replaced core files, removed backdoors, changed all passwords and added a website firewall.",
         },
       },
       {
         title: "Monitor post-clearance recovery and lock out future compromises",
         body: [
-          "Safe Browsing reviews typically resolve inside 24 to 72 hours after clean verification, restoring normal Chrome and Safari access across desktop and phones smoothly. Keep external uptime monitoring, daily off-site backups and strict MFA active permanently—or migrate brochure websites cleanly onto static Next.js builds free of vulnerable PHP surfaces.",
+          "Google Safe Browsing reviews usually clear within 24 to 72 hours once your site is clean, restoring normal Chrome and Safari access. Keep alerts for when your site goes down, daily off-site backups and two-step login checks turned on, or move simple brochure sites to a static build that has no PHP plugins to hack.",
         ],
       },
       {
         title: "Post-clearance checklist to prevent repeat Safe Browsing flags",
         body: [
-          "Seeing Chrome restore clean green access feels relieving—yet nearly a third of hastily cleaned small business sites suffer a second Safe Browsing block within four months because root intrusion habits stayed broken. Locking clean operational baselines right after recovery saves painful multi-week repeat penalties.",
-          "Complete every step below immediately following Search Console Security clearance:",
+          "Seeing Chrome clear the red block is a huge relief, yet rushed cleanups often get flagged again within months if the real entry point stayed open. Locking down basic access and software habits right after recovery stops repeat blocks.",
+          "Work through these checks as soon as Google Search Console shows green:",
         ],
         subsections: [
           {
-            heading: "Re-scan Search Console indexing for lingering fake spam pages",
+            heading: "Check Google search results for leftover spam pages",
             body: [
-              "Run quick `site:yourdomain.co.za` searches and review Indexing > Pages weekly across month one post-recovery. Verify any leftover compromised URLs output hard HTTP 404/410 codes cleanly without bouncing through weird soft-404 wrappers, so Google wipes spam snippets smoothly off public results.",
+              "Search `site:yourdomain.co.za` on Google and check Google Search Console's `Indexing > Pages` report each week during the first month. Make sure deleted spam links return a proper 404 or 410 'not found' status so Google drops them from search results.",
             ],
           },
           {
-            heading: "Audit admin access, off-site backups and origin firewall rules together",
+            heading: "Audit logins, off-site backups and website firewall rules",
             body: [
-              "Confirm former freelancers no longer retain hosting/WordPress logins, enforce authenticator MFA on cPanel, WordPress, ZACR registrar and Cloudflare DNS simultaneously, restrict PHP execution inside uploads, and verify independent encrypted off-site backups run cleanly off-server.",
+              "Remove logins for former staff or freelancers, turn on app-based two-step verification on hosting, your editing system, your domain registrar and Cloudflare, block PHP files in upload folders, and keep encrypted off-server backups running.",
             ],
           },
         ],
         bullets: [
-          "Consider migrating lean static marketing domains permanently off fragile PHP plugin setups onto static Next.js edge builds.",
-          "Verify POPIA Section 22 assessment completion with legal guidance wherever stored enquiry or customer records existed on breached servers.",
+          "If your site rarely changes, consider moving off PHP plugins onto a static Next.js site with fewer ways in for hackers.",
+          "Check POPIA Section 22 breach reporting rules with your legal advisor if customer enquiries or personal records were stored on the hacked server.",
         ],
       },
     ],
     midCta: {
-      heading: "Customers hitting Google's red 'Deceptive site ahead' block today?",
-      text: "We hunt down hidden phishing kits urgently, remove backdoors safely, rotate compromised keys and guide Safe Browsing clearance fast.",
+      heading: "Visitors hitting Google's red 'Deceptive site ahead' warning today?",
+      text: "We track down hidden phishing files, remove backdoors, reset leaked passwords and guide your Google Safe Browsing review.",
       href: "/services/website-security/",
-      label: "Clear Safe Browsing Block",
+      label: "Explore website security",
     },
     related: [
       { label: "Hacked website recovery guide SA", href: "/guides/hacked-website-recovery-south-africa/" },
@@ -359,32 +359,32 @@ export const securityGuides: GuidePage[] = [
       {
         question: "How fast does Chrome remove the red screen once Google approves our review?",
         answer:
-          "Once Search Console clears Security Issues cleanly to green, Safe Browsing updates roll out across Chrome, Safari, Firefox and Edge clients inside roughly a few hours up to 24 hours.",
+          "Once Google Search Console clears Security Issues to green, the red warning usually disappears from Chrome, Safari, Firefox and Edge within a few hours to 24 hours. Some mobile browsers hold a cached warning briefly, so clearing browser data or testing in a private window shows the live result.",
       },
       {
         question: "Why did Search Console flag our homepage when our office browsers show no hack?",
         answer:
-          "Either malicious JavaScript got injected into header/footer database tables selectively targeting mobile/search referrers, OR conditional cloaking serves phishing content strictly outside office IP ranges.",
+          "Hackers often use hidden scripts that show scam pages only to phone visitors, Google's scanner or people outside your office network. Malicious code can also sit inside your site header or footer database tables where you do not notice it when logged in as an admin.",
       },
       {
         question: "Can a neglected subdomain like old.company.co.za trigger a warning on www?",
         answer:
-          "Yes—Safe Browsing protections commonly escalate warnings root-wide across `yourdomain.co.za` whenever unpatched test or legacy subdomains drop phishing kits.",
+          "Yes, Google Safe Browsing often spreads a warning across your entire domain name (`yourdomain.co.za`) if an old test, portal or private preview subdomain gets hacked. Removing unused subdomains and cleaning every site sharing the same hosting account stops one forgotten install from blocking your main website.",
       },
       {
         question: "Does a temporary Safe Browsing flag ruin organic SEO rankings permanently?",
         answer:
-          "Not when remediated cleanly within days—dropping fake URLs cleanly into 404/410 and passing Security Review allows Search snippets to recover steadily.",
+          "No, a short warning rarely causes lasting ranking damage if you fix the site within days. Once you remove bad files, make fake pages return a 404 or 410 status and pass your Google review, your normal search listings and click traffic usually recover steadily.",
       },
       {
         question: "Should we also assess POPIA Section 22 obligations after clearing the warning?",
         answer:
-          "Yes—always evaluate preserved server logs with legal guidance if client enquiry records, customer databases or user accounts lived on the breached host.",
+          "Yes, you should review preserved server logs with legal advice if customer details, enquiry forms or account logins were stored on the hacked host. Under POPIA Section 22, businesses must assess whether personal data was viewed or stolen and notify the Information Regulator and affected people when required.",
       },
     ],
     priority: 0.72,
     published: "2026-11-20",
-    updated: "2026-11-20",
+    updated: "2026-11-26",
   },
   {
     slug: "why-wordpress-websites-get-hacked-south-africa",
@@ -394,56 +394,56 @@ export const securityGuides: GuidePage[] = [
     title: "Why WordPress Websites Get Hacked in South Africa (And How to Lock Them Down)",
     metaTitle: "Why WordPress Sites Get Hacked (SA Security) | SoftKore",
     description:
-      "Why South African WordPress sites keep suffering hacks: outdated plugins, nulled themes, shared admin access, forgotten staging folders—and exact lockdown steps.",
+      "Why South African WordPress sites keep getting hacked: outdated plugins, cracked themes, shared admin logins, old preview folders and how to lock them down.",
     intro:
-      "WordPress runs thousands of South African company websites smoothly when disciplined engineering maintains it—yet accounts for the vast majority of emergency malware cleanups. Cybercriminals rarely pick local SMEs out personally; automated botnets sweep `.co.za` ranges nonstop exploiting neglected plugins, pirated themes and weak passwords.",
+      "WordPress works reliably when maintained properly, yet it accounts for most emergency website cleanups in South Africa. Automated bots scan `.co.za` websites day and night looking for outdated plugins, pirated themes and weak passwords.",
     summary: [
-      "Top WordPress attack vectors",
-      "Why 'nulled' themes invite trouble",
-      "Admin logins, MFA & file permissions",
-      "Ongoing WAF & patching habits",
+      "How bots break into WordPress",
+      "Why cracked themes cause trouble",
+      "Locking down logins and folders",
+      "Ongoing firewall and update habits",
     ],
     takeaways: [
-      "Practically all WordPress hacks enter via outdated third-party plugins, nulled themes, stolen logins or leftover staging folders—rarely core bugs.",
-      "Deactivating a risky plugin without clicking Delete leaves vulnerable PHP scripts sitting live and directly callable on disk.",
-      "Require app-based MFA across 100% of admin users, lock `/wp-login.php` with Cloudflare WAF rules and purge ex-staff profiles.",
-      "Block PHP script execution inside `wp-content/uploads/` and delete forgotten `/staging/` or `backup.sql` files.",
-      "For corporate brochure sites barely needing weekly CMS editing, static Next.js removes PHP plugin vulnerabilities altogether.",
+      "Most WordPress hacks come through outdated plugins, pirated themes, stolen logins or old preview folders, rarely from WordPress itself.",
+      "Clicking Deactivate on an old plugin leaves its PHP files sitting on your server where hackers can still run them.",
+      "Turn on app-based two-step login checks for all admins, protect `/wp-login.php` with a website firewall and delete logins for former staff.",
+      "Block PHP scripts from running inside `wp-content/uploads/` and delete old `/staging/` or `backup.sql` files.",
+      "For simple company websites that rarely change, moving to a static Next.js build removes PHP plugin risks altogether.",
     ],
     sections: [
       {
         title: "Five open doors automated scanners use to hijack WordPress sites",
         body: [
-          "Stopping recurring WordPress compromises requires understanding what bots actually scan for every single night across South African hosting servers.",
+          "Stopping repeat WordPress hacks starts with knowing what automated bots scan for every night across South African hosting servers.",
         ],
         table: {
-          caption: "Common WordPress entry paths vs practical lockdown defences",
-          headers: ["Entry vector", "How bots exploit it", "Practical lockdown defence"],
+          caption: "Common WordPress entry paths and how to block them",
+          headers: ["Way in for hackers", "How bots exploit it", "How to block it"],
           rows: [
             [
-              "Outdated plugins / builders",
-              "Automated bots hit known CVE flaws hours after disclosure",
-              "Predictable staged patching + delete inactive plugins completely",
+              "Outdated plugins or builders",
+              "Bots attack known flaws hours after they become public",
+              "Test and run updates regularly, and delete unused plugins completely",
             ],
             [
               "Cracked ('nulled') themes",
-              "Hidden backdoor shells ship inside pirated pro plugin zips",
-              "Run strictly verified official plugins & licensed keys in your name",
+              "Pirated pro plugins ship with hidden backdoors inside",
+              "Use only official licensed plugins bought in your company's name",
             ],
             [
-              "Credential stuffing / `admin`",
-              "Bots slam `/wp-login.php` & `xmlrpc.php` with leaked password dumps",
-              "Authenticator MFA + unique vault passwords + WAF rate limits + no XML-RPC",
+              "Weak or leaked logins (`admin`)",
+              "Bots hammer `/wp-login.php` and `xmlrpc.php` with leaked passwords",
+              "Use two-step login checks, password-vault logins, rate limits and block XML-RPC",
             ],
             [
-              "Forgotten `/staging/` / SQL files",
-              "Leftover test directories & `backup.sql` exposed in web root",
-              "Delete old staging clones & plaintext exports permanently post-launch",
+              "Old preview or SQL files",
+              "Leftover test folders and `backup.sql` files sit open on the server",
+              "Delete old preview copies and raw database exports once live",
             ],
             [
-              "Executable `uploads/` bugs",
-              "Disguised `.php` payloads dropped inside media upload paths",
-              "Deny PHP script execution cleanly inside `wp-content/uploads/`",
+              "Scripts in upload folders",
+              "Hackers upload disguised `.php` files into media folders",
+              "Block PHP files from running inside `wp-content/uploads/`",
             ],
           ],
         },
@@ -451,96 +451,96 @@ export const securityGuides: GuidePage[] = [
       {
         title: "Outdated plugins, page builders and hidden backdoors in 'nulled' downloads",
         body: [
-          "Audit almost any neglected WordPress SME build and you uncover thirty installed add-ons: dead countdown banners, duplicate contact packs, sliders unused since 2021 and builders whose developer licence vanished years ago.",
+          "Open almost any neglected business WordPress site and you will find 25 or 30 plugins installed: old countdown bars, duplicate contact tools, unused sliders and page builders whose licence expired years ago.",
         ],
         subsections: [
           {
-            heading: "Clicking Deactivate does NOT neutralize dangerous PHP code",
+            heading: "Clicking Deactivate does not remove risky plugin code",
             body: [
-              "Turning a plugin off inside WordPress merely tells the CMS not to load admin hooks—standalone `.php` handlers inside `/wp-content/plugins/` can still execute directly over HTTP whenever external exploit bots target them! Uninstall and delete unneeded code completely.",
+              "Deactivating a plugin only stops WordPress from loading it inside your dashboard. Standalone `.php` files inside `/wp-content/plugins/` can still be opened directly by attack bots over the web. Always uninstall and delete plugins you no longer use.",
             ],
           },
           {
-            heading: "Never trust 'free pro' cracked plugins from cheap freelancer builds",
+            heading: "Avoid 'free pro' cracked plugins on cheap builds",
             body: [
-              "Bargain website builds occasionally slip cracked ('nulled') copies of Elementor Pro, WPForms or Gravity Forms downloaded from shady forums onto client hosting—embedding sleeper malware scripts that phone home months after final payment clears.",
+              "Bargain websites sometimes use cracked ('nulled') copies of paid tools like Elementor Pro, WPForms or Gravity Forms downloaded from shady sites. Those copies often contain sleeper malware that wakes up months after launch.",
             ],
           },
         ],
         callout: {
           tone: "warning",
-          heading: "Watch expired agency umbrella licences silently blocking updates",
-          text: "If an older agency installed paid plugins under their studio master key and you parted ways, security patches silently halt until your company purchases valid independent licences.",
+          heading: "Watch expired agency licences blocking security updates",
+          text: "If an old agency installed paid plugins under their own master licence key and you moved away, updates stop quietly until your business buys its own active licences.",
         },
       },
       {
         title: "Lock down wp-admin access, XML-RPC and upload permissions",
         body: [
-          "Tightening basic WordPress authentication and server execution rules knocks automated scanner success rates down dramatically:",
+          "Tightening basic WordPress logins and folder rules cuts automated attack success right away:",
         ],
         bullets: [
-          "Retire shared generic logins (`admin`, `webmaster`); give each active person a named user with minimal Editor vs Administrator capability.",
-          "Enforce TOTP authenticator app MFA across all Administrator and WooCommerce Shop Manager logins.",
-          "Disable `/xmlrpc.php` unless genuinely needed for verified integrations, eliminating rapid multi-password brute-force attacks.",
-          "Configure Nginx or `.htaccess` cleanly to deny PHP script execution inside `/wp-content/uploads/`, and set `define('DISALLOW_FILE_EDIT', true);` inside `wp-config.php`.",
+          "Delete shared generic accounts (`admin`, `webmaster`) and give each staff member their own login with only the access they need.",
+          "Require an authenticator app for two-step verification on all Administrator and Shop Manager accounts.",
+          "Turn off `/xmlrpc.php` unless a verified tool needs it, so bots cannot test hundreds of passwords in one request.",
+          "Block PHP scripts from running inside `/wp-content/uploads/` and add `define('DISALLOW_FILE_EDIT', true);` inside `wp-config.php`.",
         ],
       },
       {
         title: "Remove stale staging subdomains and shared-hosting cross-risks",
         body: [
-          "Developers routinely launch `/old-site/`, `/wp-beta/` or `staging.domain.co.za` sharing identical SQL tables and zero maintenance—creating invisible back entries right beside locked-down production.",
-          "Equally risky: putting five independent company websites under a single shared cPanel hosting user. When one small neglected side project catches a PHP shell, attackers pivot cleanly across every website sharing that disk partition.",
+          "Developers often leave `/old-site/`, `/wp-beta/` or `staging.domain.co.za` sitting online with the same database and no updates, giving hackers an easy back door next to your live site.",
+          "Putting five company websites inside one shared hosting account is just as risky. If one small side site catches a bad script, hackers can often jump across every website sharing that same hosting space.",
         ],
         callout: {
           tone: "tip",
-          heading: "Or leave PHP plugins behind when brochure sites rarely edit templates",
-          text: "If your marketing staff mainly checks leads and adds occasional articles or annual updates, converting onto clean pre-rendered Next.js pages deletes database injections and WordPress security emergencies permanently.",
+          heading: "Skip PHP plugins if your company site rarely changes",
+          text: "If your team only updates a few lines of text or adds an article now and then, moving onto a static Next.js site removes database hacks and WordPress plugin fires altogether.",
         },
       },
       {
-        title: "Your practical 30-minute WordPress hardening checklist today",
+        title: "Your practical 30-minute WordPress lockdown checklist today",
         body: [
-          "Schedule thirty calm minutes with your developer or IT administrator to close every baseline hole below:",
+          "Set aside 30 quiet minutes with your developer or IT lead to close these common gaps:",
         ],
         numbered: [
-          "Create an encrypted off-site snapshot BEFORE deleting plugins or altering server configs.",
-          "Inspect Users cleanly -> purge ex-staff & old agency admins -> turn on unique vault passwords & MFA.",
-          "Run staging-checked core, plugin and theme updates—then Delete every unused theme, disabled plugin and ancient `/staging/` folder.",
-          "Wrap `/wp-login.php` inside Cloudflare WAF rate-limiting, enforce `DISALLOW_FILE_EDIT` and block PHP execution in `uploads/`.",
-          "Wire 24/7 external uptime/SSL monitoring and Google Search Console Security alerts so surprises show within minutes.",
+          "Save a full encrypted backup off the server before you delete plugins or change settings.",
+          "Open Users, remove old staff and ex-agency accounts, and turn on unique vault passwords with two-step login checks.",
+          "Update WordPress core, plugins and themes on a private preview first, then delete unused themes, disabled plugins and old `/staging/` folders.",
+          "Protect `/wp-login.php` with a website firewall (WAF) rate limit, set `DISALLOW_FILE_EDIT` and block PHP scripts inside `uploads/`.",
+          "Turn on alerts if your site goes down, certificate expiry checks and Google Search Console (Google's free report on how your site shows up in search) warnings.",
         ],
       },
       {
-        title: "Deciding realistically: keep hard-locked WordPress or migrate cleanly?",
+        title: "Deciding realistically: keep locked-down WordPress or switch platforms?",
         body: [
-          "After rescuing a compromised WordPress site twice inside two years, South African directors reasonably ask whether patching plugins forever beats rebuilding simpler pages cleanly off PHP entirely. Making that call honestly weighs editing habits directly against risk tolerance and support budgets.",
-          "Evaluate your exact internal site usage before throwing good money after repetitive cleanups:",
+          "After cleaning a hacked WordPress site twice in two years, many business owners ask if paying for ongoing plugin updates makes sense or if moving off PHP is smarter. The right answer depends on how often your team updates pages and what features the site runs.",
+          "Check how your team actually uses the website before spending more on repeat repairs:",
         ],
         subsections: [
           {
-            heading: "When hardening existing WordPress makes stronger commercial sense",
+            heading: "When keeping and locking down WordPress makes sense",
             body: [
-              "Keep and harden WordPress when running active multi-hundred-SKU WooCommerce checkouts, complex gated member libraries or weekly internal page edits by non-technical marketing coordinators. Trim active plugins strictly under 12 reputable licensed vendors, isolate hosting onto managed SA VPS tiers, activate Cloudflare WAF + MFA and fund disciplined monthly patch checks.",
+              "Keep WordPress when you run an active WooCommerce store with many products, gated client portals or weekly edits by non-technical staff. Cut active plugins down to under 12 trusted licensed tools, move to isolated South African hosting, add a Cloudflare website firewall with two-step logins and run monthly updates.",
             ],
           },
           {
-            heading: "When migrating cleanly onto static Next.js saves money permanently",
+            heading: "When switching to static Next.js saves money long term",
             body: [
-              "Notice how many corporate WordPress sites change text strictly four times per year! Moving brochure, B2B lead and guide-heavy sites cleanly onto static pre-rendered Next.js outputs eliminates SQL databases, PHP uploads, nulled themes and `/wp-login.php` scanning bots permanently—delivering sharper speed alongside calmer ownership.",
+              "Many company WordPress sites only change copy a few times a year. Moving brochure and lead-focused websites onto pre-built Next.js pages removes SQL databases, PHP upload gaps, cracked themes and `/wp-login.php` login attacks for good, giving you faster speeds and fewer surprises.",
             ],
           },
         ],
         bullets: [
-          "Never leave dead legacy WordPress folders lying inside `/old-wp/` on new hosting after switching platforms—delete stale PHP directories completely.",
-          "Keep all existing URL slugs mapped via tested single-hop 301 redirects cleanly whenever changing CMS architecture.",
+          "Always delete old WordPress folders like `/old-wp/` after moving platforms so forgotten PHP files do not stay live.",
+          "Keep old page links working with tested direct redirects whenever you change editing systems.",
         ],
       },
     ],
     midCta: {
-      heading: "Managing WordPress without wanting endless midnight plugin fires?",
-      text: "We lock down active WordPress builds cleanly with MFA, WAF and off-site backups—or migrate brochure sites effortlessly onto fast static Next.js.",
+      heading: "Tired of worrying about WordPress plugin hacks?",
+      text: "We lock down WordPress with two-step logins, a website firewall and off-site backups, or move brochure sites onto fast Next.js builds.",
       href: "/services/website-security/",
-      label: "Lock Down WordPress",
+      label: "Explore website security",
     },
     related: [
       { label: "Hacked website recovery guide SA", href: "/guides/hacked-website-recovery-south-africa/" },
@@ -552,32 +552,32 @@ export const securityGuides: GuidePage[] = [
       {
         question: "Is WordPress too risky for South African company websites?",
         answer:
-          "No—WordPress core follows strict open-source patching. Compromises trace almost exclusively to abandoned plugins, cracked 'nulled' code, weak shared logins and careless shared hosting.",
+          "No, WordPress itself receives regular security updates from a dedicated open-source security team. Almost every WordPress hack in South Africa starts with abandoned plugins, cracked 'nulled' themes, weak shared logins, forgotten preview folders or crowded shared hosting, rather than a flaw inside the core WordPress software.",
       },
       {
         question: "Does adding a security plugin like Wordfence stop every hack?",
         answer:
-          "Security plugins help throttle noisy logins and warn on file diffs, yet cannot protect weak cPanel access, dormant staging copies or unpatched vulnerabilities ignored for months.",
+          "A security plugin helps slow down noisy login guesses and alerts you to changed files, so it adds a useful warning layer. However, a plugin sitting inside WordPress cannot protect your site against weak hosting panel passwords, old preview folders, public database backups or outdated plugins left unpatched for months.",
       },
       {
-        question: "What maximum plugin count should a clean WordPress SME site run?",
+        question: "What maximum plugin count should a WordPress SME site run?",
         answer:
-          "Target under 10–14 essential vetted plugins cleanly—pruning bloated decorative add-ons lowers both attack exposure and mobile load drag simultaneously.",
+          "Aim for fewer than 10 to 14 essential, actively updated plugins from reputable makers. Cutting out unused page sliders, duplicate form tools and decorative add-ons reduces both the ways hackers can break into your site and the heavy code that slows pages down on phones.",
       },
       {
-        question: "Can SoftKore harden and monitor an existing WordPress build safely?",
+        question: "Can SoftKore lock down and monitor an existing WordPress build safely?",
         answer:
-          "Yes—we verify clean files and access accounts first, clear unused bloat, enable WAF + off-site backups and put reliable monthly care in place.",
+          "Yes, our [website security](/services/website-security/) team inspects your files and admin users first, removes unused plugins and forgotten preview folders, turns on two-step login checks, puts a Cloudflare website firewall in front of the site and sets up daily off-site backups with ongoing monthly update care for your team.",
       },
       {
         question: "How quickly after disclosure do bots probe newly discovered plugin bugs?",
         answer:
-          "Automated scanners routinely sweep `.co.za` ranges within hours to days of major plugin CVEs going public—making prompt patching and edge WAF filtering vital.",
+          "Automated scanners often start testing `.co.za` sites within hours or a few days after a new plugin flaw is announced publicly. Attackers do not pick small companies by hand; automated bots scan huge lists of websites around the clock, which makes prompt updates and an active website firewall vital.",
       },
     ],
     priority: 0.72,
     published: "2026-11-20",
-    updated: "2026-11-20",
+    updated: "2026-11-26",
   },
   {
     slug: "fix-your-connection-is-not-private-ssl",
@@ -587,51 +587,51 @@ export const securityGuides: GuidePage[] = [
     title: "How to Fix 'Your Connection Is Not Private' & SSL Errors on Your Website",
     metaTitle: "Fix 'Your Connection Is Not Private' SSL | SoftKore",
     description:
-      "Diagnose and fix 'Your connection is not private', expired SSL/TLS certificates, www mismatches, redirect loops and mixed content on South African websites.",
+      "Fix 'Your connection is not private', expired HTTPS security certificates, www mismatches, redirect loops and mixed content on South African sites.",
     intro:
-      "Few errors kill enquiries faster than a visitor clicking your Google snippet only to see Chrome's warning screen declaring 'Your connection is not private'. Almost every SSL panic traces cleanly to failed 90-day Let's Encrypt renewals, mismatched `www` vs root SAN hostnames or conflicting Cloudflare SSL proxy modes.",
+      "Few errors kill enquiries faster than a visitor clicking your Google link and seeing Chrome warn 'Your connection is not private'. Almost every SSL panic comes from a failed 90-day certificate renewal, a `www` mismatch or clashing Cloudflare HTTPS settings.",
     summary: [
-      "Common SSL error codes decoded",
-      "Renewing AutoSSL / Let's Encrypt cleanly",
-      "Fixing www vs non-www mismatches",
-      "Preventing silent expiry surprises",
+      "Reading Chrome's SSL error codes",
+      "Why free certificates fail to renew",
+      "Covering both www and bare domains",
+      "Stopping future expiry surprises",
     ],
     takeaways: [
-      "Check Chrome's `NET::ERR_...` code under 'Advanced' immediately—each code names the exact broken layer.",
-      "Ensure every SSL certificate covers BOTH bare apex (`domain.co.za`) and `www` (`www.domain.co.za`) hostnames together.",
-      "Configure Cloudflare strictly to **Full (Strict)** paired with a real origin certificate—never run production on `Flexible`.",
-      "Replace hardcoded `http://` theme/image embeds cleanly so the padlock loads consistently before turning HSTS on.",
-      "Run external uptime + SSL expiry monitors pinging 21 and 7 days early so quiet auto-renewal hiccups never catch customers off guard.",
+      "Click 'Advanced' in Chrome to read the `NET::ERR_...` code, which points straight to the broken setting.",
+      "Make sure every HTTPS security certificate covers both your bare domain (`domain.co.za`) and `www` (`www.domain.co.za`) together.",
+      "Set Cloudflare SSL to **Full (Strict)** with a real certificate on your hosting server, and never leave a live site on `Flexible`.",
+      "Update old `http://` links in your theme and database to `https://` before turning on HSTS browser rules.",
+      "Set up automatic alerts 21 days and 7 days before expiry so a quiet renewal failure never locks customers out.",
     ],
     sections: [
       {
         title: "Decode Chrome's exact SSL warning code inside 30 seconds",
         body: [
-          "Clicking 'Advanced' or reading Chrome's short `NET::ERR_...` identifier avoids guessing blindly inside DNS and cPanel screens.",
+          "Checking Chrome's short `NET::ERR_...` code under 'Advanced' saves you from guessing inside domain settings and hosting panels.",
         ],
         table: {
-          caption: "Browser TLS error codes and exact remediation steps",
-          headers: ["Chrome / Browser error", "Exact technical cause", "Immediate fix"],
+          caption: "Common browser HTTPS errors and how to fix them",
+          headers: ["Browser error", "What went wrong", "How to fix it"],
           rows: [
             [
               "`NET::ERR_CERT_DATE_EXPIRED`",
-              "90-day Let's Encrypt / AutoSSL failed renewal or legacy cert expired",
-              "Check firewall/`acme-challenge` path block, renew cert & wire expiry monitoring",
+              "Your 90-day Let's Encrypt or AutoSSL certificate failed to renew",
+              "Check if redirects block `/.well-known/`, renew the certificate and add expiry alerts",
             ],
             [
               "`ERR_CERT_COMMON_NAME_INVALID`",
-              "Certificate lacks `www` or bare apex, or points to default host cert",
-              "Issue clean SAN cert bundling apex + `www`; confirm matching DNS A records",
+              "The certificate misses `www` or the bare domain, or shows a default host cert",
+              "Issue one certificate covering both names and check domain IP records",
             ],
             [
               "`ERR_TOO_MANY_REDIRECTS`",
-              "Cloudflare `Flexible` HTTP loop hitting origin forcing HTTPS redirects",
-              "Install origin SSL cert & switch Cloudflare SSL strictly onto `Full (Strict)`",
+              "Cloudflare `Flexible` HTTP mode loops against a server forcing HTTPS",
+              "Install a hosting certificate and switch Cloudflare to `Full (Strict)`",
             ],
             [
-              "Not Secure / Mixed Content flag",
-              "HTTPS page still embeds raw `http://` scripts, fonts or image URLs",
-              "Upgrade hardcoded asset URLs across DB/templates cleanly to `https://`",
+              "Not Secure / Mixed Content warning",
+              "An HTTPS page still loads old `http://` scripts, fonts or images",
+              "Update old `http://` asset links in templates and the database to `https://`",
             ],
           ],
         },
@@ -639,96 +639,96 @@ export const securityGuides: GuidePage[] = [
       {
         title: "Why automated 90-day Let's Encrypt renewals fail quietly",
         body: [
-          "Standard free TLS certificates renew automatically every 60 days by checking domain reachability over `/.well-known/acme-challenge/`. Editing `.htaccess` redirects, rolling out strict firewall country rules or enabling broken proxy modes months after launch frequently interrupts that hidden check silently—while business owners only notice when expiry triggers warnings weeks later.",
+          "Free HTTPS security certificates usually renew automatically every 60 days by checking a hidden folder at `/.well-known/acme-challenge/`. New `.htaccess` redirects, country blocks or firewall rules added months after launch can block that check quietly, leaving you unaware until the warning screen appears weeks later.",
         ],
         subsections: [
           {
-            heading: "Verify `/.well-known/` verification paths stay unblocked",
+            heading: "Keep `/.well-known/` open for renewal checks",
             body: [
-              "Inspect server redirects, hotlink blockers and WAF firewall rules to guarantee automated ACME challenge probes pass cleanly without forced authentication prompts or weird rewrite loops.",
+              "Check server redirects, hotlink rules and website firewall settings to make sure automated renewal checks can reach `/.well-known/` without logins or loops.",
             ],
           },
           {
-            heading: "Switch off insecure Cloudflare 'Flexible' SSL mode forever",
+            heading: "Switch off Cloudflare 'Flexible' SSL mode",
             body: [
-              "`Flexible` SSL tells Cloudflare to speak plaintext unencrypted HTTP back to your hosting server—tripping instant `ERR_TOO_MANY_REDIRECTS` crashes whenever WordPress or Nginx expects HTTPS! Always provision real origin TLS (or free Cloudflare Origin Certs) and select **Full (Strict)**.",
+              "`Flexible` mode tells Cloudflare to talk to your hosting server over unencrypted HTTP. That triggers `ERR_TOO_MANY_REDIRECTS` crashes whenever WordPress or Nginx expects HTTPS. Always put a real certificate (or free Cloudflare Origin Certificate) on your server and select **Full (Strict)**.",
             ],
           },
         ],
       },
       {
-        title: "Cover apex AND www together before redirecting cleanly in one hop",
+        title: "Cover apex AND www together before setting a direct redirect",
         body: [
-          "A remarkably frequent bug puts valid SSL strictly on `www.company.co.za` while skipping the bare root `company.co.za`—leaving anyone typing the bare address straight in Chrome trapped on 'Your connection is not private' because **TLS encryption completes BEFORE HTTP 301 redirects ever execute**!",
+          "A very common fault puts an HTTPS security certificate on `www.company.co.za` while leaving out the bare address `company.co.za`. Anyone typing the bare address hits 'Your connection is not private' because **the browser checks the certificate before any redirect runs**.",
         ],
         bullets: [
-          "Inspect live Subject Alternative Names (SANs) inside certificate details and guarantee BOTH `yourdomain.co.za` AND `www.yourdomain.co.za` appear explicitly.",
-          "Configure single-hop HTTP -> canonical HTTPS 301 rules cleanly after both names verify TLS cleanly.",
-          "Eliminate multi-hop bounces (`http -> https -> www`) so Googlebot and cellular users land immediately.",
+          "Check your certificate's Subject Alternative Names (SANs) to confirm both `yourdomain.co.za` and `www.yourdomain.co.za` appear.",
+          "Once both names carry valid certificates, add a direct redirect from HTTP to your chosen HTTPS address.",
+          "Remove double redirect jumps (`http -> https -> www`) so Google's scan of your site and mobile visitors land in one step.",
         ],
         callout: {
           tone: "warning",
-          heading: "TLS shakes hands BEFORE any HTTP redirect can run",
-          text: "Even if `yourdomain.co.za` merely exists to forward users onto `www.yourdomain.co.za`, it MUST hold valid matching SSL coverage or HTTPS visits will throw scary privacy blocks first.",
+          heading: "HTTPS checks run before any redirect starts",
+          text: "Even if `yourdomain.co.za` only forwards visitors to `www.yourdomain.co.za`, both names must be listed on a valid certificate or Chrome blocks the visit first.",
         },
       },
       {
         title: "Clean up mixed-content URLs before enabling HSTS",
         body: [
-          "Sometimes certificates validate fine, yet Chrome shows 'Not Secure' padlocks or silently breaks fonts/maps because older database attachments (`http://yourdomain.co.za/wp-content/uploads/...`) stayed unencrypted after an earlier SSL install. Clean hardcoded HTTP pointers systematically across templates and database rows.",
-          "Only AFTER every page and variant returns clean green padlocks cleanly should you step `Strict-Transport-Security` (HSTS) up safely.",
+          "Sometimes the certificate is valid, yet Chrome still flags the page as 'Not Secure' or breaks fonts and maps because old `http://` image or file links sit inside the database or templates. Update those `http://` links to `https://` across the site.",
+          "Only after every page loads with a secure HTTPS connection should you turn up `Strict-Transport-Security` (HSTS), a browser rule forcing HTTPS.",
         ],
         callout: {
           tone: "tip",
-          heading: "Skip overpriced 'Standard Domain SSL' R2,000 annual upsells",
-          text: "For normal South African business sites and online stores using hosted PayFast/Yoco/Ozow checkout, properly automated Let's Encrypt or managed Cloudflare TLS delivers identical encryption strength cleanly for free.",
+          heading: "Skip R2,000 'Standard Domain SSL' upsells",
+          text: "For normal South African company sites and online stores using hosted PayFast, Yoco or Ozow checkouts, free automated Let's Encrypt or Cloudflare certificates give the exact same encryption.",
         },
       },
       {
-        title: "Verify every TLS check and automate early expiry alerts",
+        title: "Verify every HTTPS check and automate early expiry alerts",
         body: [
-          "Follow this five-step checklist once fixed so expired SSL never catches your business flat-footed again:",
+          "Run through these four checks after fixing the error so an expired certificate never surprises your customers again:",
         ],
         numbered: [
-          "Inspect both `https://yourdomain.co.za` and `https://www.yourdomain.co.za` in an incognito browser to confirm clean padlocks and clean single-hop canonical redirect.",
-          "Verify Cloudflare (where used) holds `Full (Strict)` active with valid trusted Origin certs underneath.",
-          "Scan key service and checkout pages via Chrome DevTools Console confirming zero yellow/red Mixed Content errors.",
-          "Verify external monitoring alerts ping your team automatically 21 days and 7 days ahead of any certificate renewal hiccup.",
+          "Open both `https://yourdomain.co.za` and `https://www.yourdomain.co.za` in a private browser window to check the secure HTTPS connection and direct redirect.",
+          "If you use Cloudflare, check that SSL mode is set to `Full (Strict)` with a valid server certificate underneath.",
+          "Open Chrome DevTools Console on key service and checkout pages to confirm there are zero Mixed Content errors.",
+          "Set external monitoring alerts to email your team 21 days and 7 days before any certificate expires.",
         ],
       },
       {
         title: "Preventing recurring Let's Encrypt failures and mixed-content loops",
         body: [
-          "Fixing an expired certificate at 8 a.m. gets visitors back inside—yet discovering *why* automatic renewal choked two weeks ago stops your site flashing warning screens identically sixty days later. Automated TLS fails most reliably inside hidden `.htaccess`/Nginx rewrites or proxy configuration mismatches.",
-          "Verify all three hidden maintenance traps once your browser padlock returns cleanly green:",
+          "Fixing an expired certificate at 8 a.m. gets customers back online, yet finding why renewal failed stops the same screen returning sixty days later. Most silent failures sit inside server rewrite rules or proxy settings.",
+          "Check these three hidden causes once your secure HTTPS connection is green again:",
         ],
         subsections: [
           {
-            heading: "Check AutoSSL validation logs for `.well-known` firewall interference",
+            heading: "Check AutoSSL logs for `/.well-known` firewall blocks",
             body: [
-              "Inspect hosting AutoSSL logs or Certbot cron outputs cleanly to verify automated domain validation passed cleanly without custom rewrite rules capturing `/.well-known/acme-challenge/` redirects or forcing Cloudflare interactive JS challenges against Let's Encrypt IP checks.",
+              "Read your hosting AutoSSL or Certbot logs to confirm automatic checks passed without rewrite rules hijacking `/.well-known/acme-challenge/` or Cloudflare bot screens blocking Let's Encrypt.",
             ],
           },
           {
-            heading: "Eliminate redirect conflicts between CMS force-SSL plugins and proxies",
+            heading: "Remove plugin redirect clashes behind proxies",
             body: [
-              "Deactivate flaky 'Really Simple SSL' WordPress override layers when configuring native clean Nginx/hosting HTTPS alongside Cloudflare **Full (Strict)** TLS. Mixing PHP-level SSL detection hacks behind reverse proxies causes repeated redirect loops (`ERR_TOO_MANY_REDIRECTS`) and slows initial page redirects unnecessarily.",
+              "Remove WordPress plugins like 'Really Simple SSL' when your Nginx server or hosting panel handles HTTPS alongside Cloudflare **Full (Strict)**. Mixing PHP-level SSL plugins behind a proxy causes `ERR_TOO_MANY_REDIRECTS` loops and slows pages down.",
             ],
           },
         ],
         bullets: [
-          "Always verify SSL certificates across BOTH mobile networks and office Wi-Fi after changes to avoid stale local browser HSTS or router caches fooling tests.",
-          "Pair SSL expiry ping alerts cleanly with `.co.za` domain renewal reminders inside business operations calendars.",
-          "Test `curl -vI https://yourdomain.co.za` AND `https://www.yourdomain.co.za` via command line post-deploy to verify intermediate certificate chains render complete on older Android phones too.",
-          "Inspect any external third-party embedded fonts, scripts or widgets ensuring HTTPS compatibility ahead of enforcing HSTS rules.",
+          "Test your certificate on both mobile data and office Wi-Fi after edits so old browser caches do not fool you.",
+          "Keep SSL expiry alerts alongside your `.co.za` domain renewal reminders in the company calendar.",
+          "Test both `yourdomain.co.za` and `www.yourdomain.co.za` with `curl -vI` to confirm the full certificate chain works on older phones too.",
+          "Check that external fonts, maps and widgets load over `https://` before turning on HSTS.",
         ],
       },
     ],
     midCta: {
-      heading: "Seeing privacy warnings, 'Too Many Redirects' or mixed-content glitches?",
-      text: "We diagnose broken SAN certificates cleanly, lock Cloudflare onto Full Strict TLS and configure automated 24/7 expiry alerts.",
+      heading: "Seeing privacy warnings, redirect loops or mixed-content errors?",
+      text: "We fix missing domain certificates, switch Cloudflare to Full (Strict) and set up automated expiry alerts before customers notice.",
       href: "/services/website-security/",
-      label: "Fix SSL & HTTPS Cleanly",
+      label: "Explore website security",
     },
     related: [
       { label: "HTTP security headers explained", href: "/guides/http-security-headers-explained/" },
@@ -740,32 +740,32 @@ export const securityGuides: GuidePage[] = [
       {
         question: "Why does the SSL warning show ONLY on www or ONLY on the bare address?",
         answer:
-          "Because your installed server certificate listed only one hostname inside its SAN extension (`domain.co.za` OR `www.domain.co.za`). Re-issuing a single SAN cert bundling both solves it immediately.",
+          "This happens when your server's HTTPS security certificate lists only one version of your domain name, either `domain.co.za` or `www.domain.co.za`. Because browsers verify the certificate before any redirect happens, visitors typing the unlisted version hit a warning. Re-issuing one certificate covering both names fixes it immediately.",
       },
       {
         question: "Can an expired SSL certificate hurt our Google Search rankings fast?",
         answer:
-          "Yes—Googlebot drops unreadable HTTPS endpoints rapidly on crawl failure while Chrome actively deters search visitors from clicking.",
+          "Yes, an expired HTTPS security certificate can hurt your website traffic and search rankings quickly if left unfixed. When Google's scan of your site hits a broken certificate, it cannot read your pages safely, while Chrome shows a warning screen that makes visitors leave right away.",
       },
       {
         question: "What causes 'Too Many Redirects' right after turning Cloudflare on?",
         answer:
-          "Running Cloudflare SSL in `Flexible` mode while your origin Nginx/Apache or WordPress setup tries forcing HTTPS back again cleanly triggers endless loops. Switch strictly onto `Full (Strict)` with valid server SSL.",
+          "Running Cloudflare in `Flexible` SSL mode causes this error when your hosting server expects HTTPS. Cloudflare connects to your server over plain HTTP, your server tells it to switch to HTTPS, and the two bounce endlessly. Adding a server certificate and choosing `Full (Strict)` stops the loop.",
       },
       {
         question: "How fast can an SSL or SAN certificate error get resolved?",
         answer:
-          "Clean diagnosis and certificate re-issuance typically finishes inside 30 minutes to 2 hours once DNS and hosting logins confirm cleanly.",
+          "Once we have hosting and domain panel logins, diagnosing a broken HTTPS security certificate and issuing a fresh one covering both `www` and the bare domain usually takes 30 minutes to 2 hours. Fixing messy mixed-content links inside an older database can take a little longer.",
       },
       {
-        question: "Does having an SSL padlock guarantee the website cannot get hacked?",
+        question: "Does having an HTTPS security certificate guarantee the website cannot get hacked?",
         answer:
-          "No—TLS solely encrypts packets in transit over Wi-Fi/cellular networks; patching plugins, enforcing MFA and configuring WAF rules remain essential.",
+          "No, an HTTPS security certificate only scrambles traffic travelling between a visitor's browser and your web server over Wi-Fi or mobile data. Hackers can still break into your site through outdated plugins, stolen passwords or unguarded forms, so you still need updates, two-step logins and a website firewall.",
       },
     ],
     priority: 0.72,
     published: "2026-11-20",
-    updated: "2026-11-20",
+    updated: "2026-11-26",
   },
   {
     slug: "website-firewall-waf-cloudflare-south-africa",
@@ -775,46 +775,46 @@ export const securityGuides: GuidePage[] = [
     title: "Website Firewalls (WAF) & Cloudflare Setup: Protecting South African Business Sites",
     metaTitle: "Website Firewalls (WAF) & Cloudflare Guide | SoftKore",
     description:
-      "How Web Application Firewalls (WAF) and Cloudflare shield South African business websites: login rate limits, origin IP masking, SA edge speed and safe webhook rules.",
+      "How a website firewall (WAF) and Cloudflare protect South African business sites: login rate limits, hiding server IPs, local speed and safe payment webhooks.",
     intro:
-      "Basic server network firewalls merely shut unused ports while leaving web ports 80 and 443 wide open—letting automated vulnerability probes, password-stuffers and spam scrapers slam websites unhindered. Placing a Web Application Firewall (WAF) like Cloudflare ahead of hosting intercepts hostile HTTP traffic cleanly at Johannesburg, Cape Town and Durban edge nodes.",
+      "A standard hosting server firewall leaves web ports 80 and 443 open, letting spam bots and password-guessing tools hit your site freely. Putting a website firewall (called a WAF) like Cloudflare in front of your site filters out bad traffic at local Johannesburg, Cape Town and Durban servers before it reaches your hosting.",
     summary: [
-      "Network firewall vs Web App Firewall",
-      "How Cloudflare edge protection helps",
-      "Rules that protect login & enquiry forms",
-      "Avoiding false blocks on real visitors",
+      "Server firewall vs website firewall",
+      "How Cloudflare local servers help",
+      "Rules for login and contact forms",
+      "Avoiding blocks on real customers",
     ],
     takeaways: [
-      "A WAF evaluates HTTP web payloads actively—filtering SQL injection, XSS, `.env`/`.sql` scanner probes and brute-force bots off-server.",
-      "Cloudflare PoPs inside Johannesburg, Cape Town and Durban cache static files locally while shielding origin servers.",
-      "Always pair Cloudflare with origin IP restriction rules; bots bypassing DNS directly to raw IP addresses evade WAF protections.",
-      "Rate-limit sensitive login and enquiry routes (`/wp-login.php`, `/api/contact/`) while explicitly exempting payment webhooks & Googlebot.",
-      "Edge firewalls provide vital perimeter armour—never skipping CMS patching, MFA logins or encrypted off-site backups.",
+      "A website firewall (WAF) inspects incoming web requests and blocks hacking attempts, fake form spam and brute-force logins before they hit your server.",
+      "Cloudflare has local nodes in Johannesburg, Cape Town and Durban that speed up files locally while absorbing attack traffic.",
+      "Lock down your hosting server IP so bots cannot bypass Cloudflare by connecting straight to your host.",
+      "Limit repeat attempts on login and contact pages (`/wp-login.php`, `/api/contact/`) while keeping payment notifications and Google's scanner unblocked.",
+      "A website firewall protects your perimeter, but you still need software updates, two-step logins and off-site backups.",
     ],
     sections: [
       {
         title: "Network firewalls vs Web Application Firewalls (WAF) decoded",
         body: [
-          "Assuming your hosting provider's baseline Linux network firewall protects your WordPress checkout against web attacks leaves a massive blind spot—because all legitimate AND hostile web requests flow down the exact same port 443 pipe.",
+          "Counting on your hosting provider's basic Linux firewall to stop WordPress or checkout attacks leaves a wide gap. Real customers and automated attack bots both enter through the exact same HTTPS port 443.",
         ],
         table: {
-          caption: "Perimeter security layers on South African business websites",
-          headers: ["Security layer", "What it blocks cleanly", "What slips right past it"],
+          caption: "Security layers on South African business websites",
+          headers: ["Security layer", "What it blocks", "What slips past it"],
           rows: [
             [
-              "Hosting Network Firewall",
-              "Unused TCP/UDP ports (SSH, FTP, SQL from unknown external IPs)",
-              "Exploits, SQLi & form spam arriving legitimately over HTTPS port 443",
+              "Hosting server firewall",
+              "Unused network ports like SSH, FTP or remote database access",
+              "Plugin exploits, code injection and spam arriving over normal HTTPS web traffic",
             ],
             [
-              "Edge Web App Firewall (Cloudflare)",
-              "Scanner floods, SQLi/XSS attacks, login brute-force & DDoS bursts",
-              "Valid stolen admin passwords without MFA, or exposed raw origin IP bypasses",
+              "Cloudflare website firewall (WAF)",
+              "Vulnerability scanners, login floods, spam bots and traffic spikes",
+              "Stolen admin passwords without two-step login, or direct attacks on an exposed host IP",
             ],
             [
-              "App Hardening + Least Privilege",
-              "Rogue admin edits, unsigned webhooks & dangerous PHP uploads",
-              "Large network floods overwhelming hosting pipes if no edge WAF blocks first",
+              "Locked-down app and access rules",
+              "Rogue admin changes, fake payment callbacks and risky uploads",
+              "Large traffic floods that overload your server before the app can respond",
             ],
           ],
         },
@@ -822,19 +822,19 @@ export const securityGuides: GuidePage[] = [
       {
         title: "Why Cloudflare fits South African websites remarkably well",
         body: [
-          "In the early 2010s, proxying South African web servers through European security nodes injected sluggish 200ms round-trips onto every local page load. Today Cloudflare maintains high-capacity local PoPs directly inside Johannesburg, Cape Town and Durban—keeping DNS resolution, HTTP/3 TLS handshakes and static caching strictly local while absorbing automated global attack noise offshore.",
+          "Years ago, routing a South African site through overseas security proxies added noticeable lag to every page load. Today Cloudflare runs local servers inside Johannesburg, Cape Town and Durban, keeping domain lookups and cached files local while dropping attack noise before it reaches your host.",
         ],
         subsections: [
           {
-            heading: "DNS, Full Strict SSL and HTTP/3 performance wins together",
+            heading: "Fast local domain lookups and Full (Strict) HTTPS",
             body: [
-              "Running authoritative DNS alongside proxied Cloudflare routing brings snappy anycast DNS resolution, Brotli asset compression and clean `Full (Strict)` TLS ahead of custom WAF rules.",
+              "Using Cloudflare for your domain settings (DNS) and traffic routing brings fast lookups, smaller compressed files and **Full (Strict)** HTTPS security alongside custom firewall rules.",
             ],
           },
           {
-            heading: "Hide and firewall your raw origin hosting IP!",
+            heading: "Hide and lock down your real server IP address",
             body: [
-              "If legacy DNS history sites (`SecurityTrails`) or mail MX records expose your underlying hosting server's raw IP address, clever bots skip Cloudflare entirely by connecting directly to that raw IP. Lock hosting firewalls to accept HTTPS strictly from Cloudflare IP ranges—and keep outbound company email off web server IPs.",
+              "If old domain history sites or email records reveal your real hosting server IP, bots can skip Cloudflare by talking straight to that IP. Restrict your hosting firewall to accept web traffic only from Cloudflare's network, and keep company email off your web server IP.",
             ],
           },
         ],
@@ -842,75 +842,75 @@ export const securityGuides: GuidePage[] = [
       {
         title: "Essential Cloudflare WAF and rate-limiting rules to set right away",
         body: [
-          "Beyond default edge filtering, adding targeted custom WAF policies clamps down on the noisest abuse targeting `.co.za` SMEs:",
+          "Beyond Cloudflare's default protections, adding a few simple custom rules stops the worst automated noise targeting `.co.za` sites:",
         ],
         bullets: [
-          "Rate-limit repeated POST attempts on login and contact endpoints (`/wp-login.php`, `/xmlrpc.php`, `/api/contact/`) to block password guessing and email floods.",
-          "Challenge or IP-restrict CMS admin routes (`/wp-admin/` outside admin-ajax) when staff log in strictly from predictable South African offices.",
-          "Drop noisy scanner probes hitting `.env`, `.git`, `wp-config.php~`, `/backup.sql` and vulnerable readme files silently at edge.",
-          "Configure Turnstile / Bot filtering cautiously so automated headless browser spam gets blocked before hammering PHP workers.",
+          "Limit repeated form sends on login and contact addresses (`/wp-login.php`, `/xmlrpc.php`, `/api/contact/`) to stop password guessing and inbox spam.",
+          "Add extra checks or office IP limits on admin paths (`/wp-admin/`, excluding `admin-ajax`) if staff log in from steady South African offices.",
+          "Block automated bots poking at hidden files like `.env`, `.git`, `wp-config.php~` and `/backup.sql` at the edge.",
+          "Use gentle bot checks like Cloudflare Turnstile so automated spam browsers get stopped without slowing real buyers.",
         ],
         callout: {
           tone: "warning",
-          heading: "Protect PayFast, Yoco, Ozow & Googlebot from aggressive challenges!",
-          text: "Overbroad interactive JS challenges or heavy country-wide blocking rules occasionally trip payment gateway server-to-server ITN webhooks—leaving paid client orders frozen Pending.",
+          heading: "Do not accidentally block PayFast, Yoco, Ozow or Google",
+          text: "Blanket country blocks or aggressive browser challenges can stop server-to-server payment notifications from PayFast, Yoco or Ozow, leaving paid orders stuck as Pending.",
         },
       },
       {
         title: "Audit firewall logs safely without blocking real clients or search bots",
         body: [
-          "Tightening firewall protections recklessly right before payday sales without verification risks alienating mobile buyers riding CGNAT South African cellular IPs or breaking Googlebot index updates.",
+          "Turning on harsh firewall rules right before a busy sales weekend without testing can block mobile shoppers sharing carrier IP addresses or stop Google's scan of your site.",
         ],
         numbered: [
-          "Review Cloudflare Security > Events analytics across 48 hours following rule rollout looking specifically for false-positive hits against mobile networks or legitimate crawlers.",
-          "Validate clean Googlebot HTML fetching via Google Search Console > URL Inspection > Test Live URL.",
-          "Test `/contact/` submissions AND payment gateway sandbox webhook deliveries completely end-to-end confirming zero silent drops.",
+          "Check Cloudflare Security > Events for 48 hours after adding a rule to catch false blocks against local mobile networks or search crawlers.",
+          "Run URL Inspection > Test Live URL in Google Search Console (Google's free report on how your site shows up in search) to confirm Google reads your pages normally.",
+          "Submit a test `/contact/` enquiry and run a sandbox checkout payment callback to prove nothing is silently blocked.",
         ],
         callout: {
           tone: "tip",
-          heading: "Even static Next.js builds benefit from Cloudflare DNS & WAF rules",
-          text: "Even without a CMS database, edge rate-limiting shields serverless `/api/contact/` email routes cleanly from spam bursts while locking down DNS and dangling CNAME hygiene.",
+          heading: "Static Next.js sites still gain from Cloudflare rules",
+          text: "Even without a database, Cloudflare rate limits protect your `/api/contact/` form from spam bursts and keep your domain settings tidy.",
         },
       },
       {
-        title: "Keep origin servers patched—a WAF is armour, not magic cure",
+        title: "Keep origin servers updated: a WAF is armour, not a magic cure",
         body: [
-          "Think of Cloudflare WAF like perimeter access gates plus strong security glass on a commercial warehouse: it breaks automated drive-by crime dramatically and buys calm patching windows when new zero-day flaws emerge. Yet you still lock the office safes inside via timely software updates, non-SMS MFA, minimal admin accounts and verified off-site backups.",
+          "Think of a Cloudflare website firewall like strong security gates and glass on a warehouse. It stops drive-by break-ins and buys you calm time to patch new software flaws, yet you still need timely updates, two-step login checks, minimal admin users and verified off-site backups inside.",
         ],
       },
       {
         title: "Avoiding common Cloudflare proxy mistakes on South African sites",
         body: [
-          "Cloudflare secures hundreds of thousands of sites cleanly yet catches small businesses out through two common misconfigurations: proxying mail hostnames wrongly or triggering accidental caching over dynamic login and checkout routes.",
-          "Verify these quick edge sanity rules immediately after onboarding any `.co.za` domain onto Cloudflare:",
+          "Cloudflare works smoothly for most sites, yet two setup mistakes often trip small businesses up: turning the orange proxy cloud on for email subdomains, or caching dynamic admin and checkout pages.",
+          "Check these two points right after connecting any `.co.za` domain to Cloudflare:",
         ],
         subsections: [
           {
-            heading: "Keep mail DNS pointers cleanly 'DNS Only' (grey cloud)",
+            heading: "Leave email domain records on 'DNS Only' (grey cloud)",
             body: [
-              "Cloudflare proxies strictly HTTP/HTTPS web traffic by default—NEVER toggle orange-cloud proxying onto `mail.`, `smtp.`, `imap.` or `MX` targets! Proxying mail subdomains breaks Outlook/IMAP sync cleanly and leaks origin web IP clues inside DNS warnings unless left cleanly grey-clouded (or running separate external Microsoft 365/Workspace MX records).",
+              "Cloudflare only handles web traffic by default, so NEVER turn the orange proxy cloud on for `mail.`, `smtp.`, `imap.` or `MX` records. Proxying mail subdomains breaks Outlook and phone email sync and can leak your real server IP unless left on grey-cloud DNS Only (or handled separately by Microsoft 365 or Google Workspace).",
             ],
           },
           {
-            heading: "Prevent aggressive HTML caching from leaking admin bars or stale forms",
+            heading: "Keep caching off admin bars, carts and dynamic checkouts",
             body: [
-              "Verify Cloudflare Cache Rules cache static assets (`/images/`, `/_next/static/`, CSS/JS) cleanly while bypassing caching on dynamic WordPress dashboards (`/wp-admin/`), WooCommerce shopping carts (`/cart/`, `/checkout/`) and CSRF/nonces inside interactive dynamic forms—whereas pre-built static pages cache globally safely.",
+              "Set Cloudflare cache rules so images, stylesheets and scripts cache locally, while dynamic WordPress dashboards (`/wp-admin/`) and WooCommerce `/cart/` or `/checkout/` pages bypass caching. Pre-built static pages can cache safely across all edge servers.",
             ],
           },
         ],
         bullets: [
-          "Keep Cloudflare **Full (Strict)** TLS mode mandatory alongside real Origin/Let's Encrypt server certificates.",
-          "Review Firewall Event sampling monthly so new security rules drop bots sharply without frustrating legitimate local mobile carriers.",
-          "Configure origin IP firewall rules on your VPS or Nginx server dropping direct port-443 traffic from non-Cloudflare networks so scanners cannot bypass WAF inspection altogether.",
-          "Log rule triggers safely during Monitor/Log mode first before switching strict custom blocks active over live checkouts.",
+          "Keep Cloudflare **Full (Strict)** HTTPS mode turned on with a real certificate on your web host.",
+          "Check Firewall Events once a month to make sure new rules drop bots without blocking normal local mobile networks.",
+          "Block direct port-443 traffic from non-Cloudflare IPs on your hosting firewall so scanners cannot go around Cloudflare.",
+          "Test new custom firewall rules in Log mode first before switching them to Block on live checkout pages.",
         ],
       },
     ],
     midCta: {
-      heading: "Setting up Cloudflare WAF cleanly without breaking forms or checkouts?",
-      text: "We deploy Full Strict TLS, isolate raw origin IPs, tune rate-limiting rules cleanly and confirm Googlebot + payment webhooks work smoothly.",
+      heading: "Want Cloudflare set up without breaking forms or checkouts?",
+      text: "We set up Full (Strict) HTTPS, hide your hosting IP, add safe rate limits and test Google and payment gateway callbacks end to end.",
       href: "/services/website-security/",
-      label: "Configure Cloudflare WAF",
+      label: "Explore website security",
     },
     related: [
       { label: "Website & cyber security", href: "/services/website-security/" },
@@ -922,32 +922,32 @@ export const securityGuides: GuidePage[] = [
       {
         question: "Will adding Cloudflare slow our South African website down?",
         answer:
-          "Properly configured proxied routing handles DNS and static caching right inside Johannesburg, Cape Town and Durban edge nodes—often making mobile speeds noticeably faster.",
+          "No, a properly set up Cloudflare account usually makes your website faster on South African phones. Cloudflare runs local servers in Johannesburg, Cape Town and Durban, so visitors load images and pages from nearby nodes instead of waiting on a busy hosting server while bad traffic is filtered out.",
       },
       {
         question: "Is Cloudflare Free sufficient for an ordinary SME service website?",
         answer:
-          "Cloudflare Free already grants resilient anycast DNS, basic DDoS absorption, Full Strict SSL and essential custom WAF/rate-limiting rules. Larger WooCommerce or high-value portals gain deeper Managed OWASP rulesets on Cloudflare Pro.",
+          "Yes, Cloudflare's free plan gives most service businesses fast local domain lookups, basic flood protection, Full (Strict) HTTPS and custom rate-limit rules for login and contact forms. Larger online stores or busy client portals can upgrade to Cloudflare Pro for deeper managed web attack rules and image tools.",
       },
       {
         question: "Why can attackers sometimes still bypass a WAF like Cloudflare?",
         answer:
-          "Almost always because raw hosting server IPs remained directly reachable on port 443 without firewall origin IP lockouts—or valid stolen admin logins bypassed security controls directly.",
+          "Attackers usually bypass a website firewall in one of two ways. Either your raw hosting server IP remained open to the public so bots connected straight to the host instead of going through Cloudflare, or hackers used stolen admin passwords on accounts without two-step login protection.",
       },
       {
         question: "Can enabling Cloudflare break company emails when updating nameservers?",
         answer:
-          "Only if `MX`, `SPF`, `DKIM` and `DMARC` DNS records get skipped—or if mail subdomains (`mail.`, `smtp.`) accidentally get orange-cloud proxied instead of remaining grey-cloud DNS-Only.",
+          "Yes, it can break email if someone forgets to copy existing `MX`, `SPF`, `DKIM` and `DMARC` lines before switching nameservers, or turns the orange proxy cloud onto `mail.` or `smtp.` entries. Checking every email record first and leaving mail on grey-cloud 'DNS Only' avoids email outages.",
       },
       {
         question: "Should we enable 'Under Attack Mode' permanently for extra safety?",
         answer:
-          "Never permanently—it forces a five-second interstitial challenge on every human shopper, damaging user patience and potentially confusing automated crawlers or API callbacks. Save it strictly for live DDoS emergencies.",
+          "No, never leave 'Under Attack Mode' turned on full time. It forces every human visitor to wait through a five-second browser check before seeing your site, which drives away mobile shoppers and can block payment callbacks or search crawlers. Save it only for active traffic floods and DDoS emergencies.",
       },
     ],
     priority: 0.72,
     published: "2026-11-20",
-    updated: "2026-11-20",
+    updated: "2026-11-26",
   },
   {
     slug: "offsite-website-backups-south-africa",
@@ -957,146 +957,146 @@ export const securityGuides: GuidePage[] = [
     title: "Why Built-In Hosting Backups Aren't Enough (And How Off-Site Recovery Works)",
     metaTitle: "Off-Site Website Backups & Recovery SA | SoftKore",
     description:
-      "Why same-server cPanel backups fail during hacks or hosting outages—and how automated, immutable off-site backups paired with test restores actually save SA businesses.",
+      "Why same-server hosting backups fail during hacks or outages, and how encrypted off-site backups with regular test restores protect South African sites.",
     intro:
-      "Assuming 'my hosting plan runs nightly backups' leaves countless businesses stunned the afternoon real emergencies hit. When server-level ransomware locks an entire hosting node, an unpaid account gets suspended, or stealth malware hides cleanly across three weeks overwriting seven-day rolling snapshots, same-server backups collapse precisely when recovery is needed most.",
+      "Relying on your hosting plan's nightly backup leaves many businesses stuck when a real outage or hack happens. If server-wide ransomware hits, a hosting account gets suspended, or hidden malware overwrites seven-day host snapshots, a backup sitting on the same server fails right when you need it.",
     summary: [
-      "Where default hosting backups fail",
-      "The 3-2-1 backup mindset",
-      "What a complete backup must include",
-      "Why untested backups aren't real",
+      "Where standard host backups fail",
+      "Keeping copies off the main server",
+      "What every full backup must save",
+      "Why untested backups fail in crises",
     ],
     takeaways: [
-      "Never store your sole backup inside the exact same hosting server, cPanel account or cloud console as production.",
-      "Short 7-day rolling host snapshots regularly spoil completely when subtle plugin hacks stay unnoticed for weeks.",
-      "Follow clean 3-2-1 resilience: encrypted off-site cloud buckets configured with write-only permissions so breaches cannot purge history.",
-      "Guarantee archives cover complete codebase, media `uploads/`, SQL databases AND offline vaulted `.env` secrets.",
-      "Schedule quarterly isolated test restores—an unverified backup archive is only optimistic theory until tested cleanly.",
+      "Never keep your only backup inside the same hosting server, cPanel account or cloud login as your live website.",
+      "Short 7-day hosting snapshots often contain malware when a quiet plugin hack goes unnoticed for weeks.",
+      "Store encrypted off-site backups in write-only cloud storage so a hacked website cannot delete older clean copies.",
+      "Back up your full site code, `uploads/` media, SQL database and a safe offline copy of `.env` settings and passwords.",
+      "Test a full restore onto a private preview server every quarter, because an untested backup is only a guess.",
     ],
     sections: [
       {
         title: "Four ways default cPanel or plugin backups fail during real crises",
         body: [
-          "Relying blindly on basic host backup checkboxes or free WordPress plugins dumping giant `.zip` archives straight inside `/wp-content/backups/` breaks repeatedly across four common failure patterns:",
+          "Trusting a host's default backup tick-box or a free WordPress plugin that drops `.zip` archives inside `/wp-content/backups/` fails in four common ways:",
         ],
         table: {
-          caption: "Hosting-local snapshots vs resilient off-site recovery strategy",
-          headers: ["Failure scenario", "Same-server host backup risk", "How proper off-site backups survive"],
+          caption: "Same-server host snapshots vs independent off-site backups",
+          headers: ["What goes wrong", "Risk with same-server backups", "How off-site backups survive"],
           rows: [
             [
-              "Ransomware / cPanel breach",
-              "Attackers encrypt or delete backup archives alongside live site code",
-              "Append/write-only cloud bucket keys stop compromised server erasing history",
+              "Server lock or cPanel hack",
+              "Hackers delete or lock your backup files alongside the live site",
+              "Write-only cloud storage keys stop the live server erasing old snapshots",
             ],
             [
-              "Hosting suspension / disk failure",
-              "Vendor portal lockout freezes live files AND host backups together",
-              "Spin clean full recovery straight onto replacement SA host inside ~2 hours",
+              "Host suspension or disk failure",
+              "An account lock cuts off your live site and your backups together",
+              "Restore the full site onto a fresh South African host in roughly 2 hours",
             ],
             [
-              "Slow stealth hack (3+ weeks)",
-              "Every single snapshot inside a 7-day rolling host window holds malware",
-              "30–90+ day staggered retention keeps clean historical restore points intact",
+              "Quiet hack lasting 3+ weeks",
+              "Every snapshot in a 7-day rolling host window is already infected",
+              "30 to 90 days of history keeps older clean restore points safe",
             ],
             [
-              "Corrupted / truncated SQL",
-              "Silent export failures discovered solely mid-crisis restore attempt",
-              "Quarterly staging restore drills verify complete files + SQL end-to-end",
+              "Broken database export",
+              "You only discover a cut-off database dump mid-emergency",
+              "Quarterly private preview restore tests prove files and databases work",
             ],
           ],
         },
         callout: {
           tone: "warning",
-          heading: "Delete local `.zip` backup files sitting inside public web directories!",
-          text: "Cheap WordPress backup plugins frequently drop readable `site-backup-2026.zip` downloads inside guessable web folders—handing external bots your whole customer SQL dump and config secrets freely.",
+          heading: "Delete local `.zip` backup files from public web folders",
+          text: "Some WordPress backup plugins leave `site-backup-2026.zip` files in guessable public folders where bots can download your database and passwords over the web.",
         },
       },
       {
-        title: "Configure immutable off-site retention without bloated bills",
+        title: "Set up tamper-proof off-site backups on a normal SME budget",
         body: [
-          "Modern cloud object storage makes off-site protection simple and affordable for South African SMEs—provided storage keys and retention history follow disciplined isolation rules.",
+          "Cloud storage makes off-site website backups cheap and reliable for South African businesses, as long as access keys and storage history follow two clear rules.",
         ],
         subsections: [
           {
-            heading: "Lock write permissions cleanly (append-only / object lock)",
+            heading: "Give your live server write-only backup access",
             body: [
-              "Provision external storage tokens giving your live website host strictly Put/Write upload privilege—NEVER delete or overwrite authority over earlier backup snapshots. Even full root compromise of the live website server cannot touch last Tuesday's or last month's clean points.",
+              "Set up your backup storage key so the live web server can only upload new copies, never delete or overwrite older ones. Even if someone breaks into your website server, they cannot wipe last week's or last month's clean backup.",
             ],
           },
           {
-            heading: "Keep staggered depth past seven rolling days",
+            heading: "Keep backup history past seven days",
             body: [
-              "Maintain automated daily snapshots for 14 days, weekly checkpoints across 8 weeks and monthly archives cleanly tagged across 6–12 months—preventing subtle backdoors sitting weeks before detection from poisoning every recovery option.",
+              "Save daily copies for 14 days, weekly copies for 8 weeks and monthly copies for 6 to 12 months. Deeper history stops a quiet month-old backdoor from ruining every restore point you have.",
             ],
           },
         ],
       },
       {
-        title: "Confirm backups capture every dependency—not half a site",
+        title: "Confirm backups capture every part of your site, not half of it",
         body: [
-          "Saving only a database or only theme styles leaves rebuilds crippled mid-crisis. Audit full scope upfront:",
+          "Saving only your database or only your theme leaves you stranded when rebuilding after a crash. Check that every piece below is covered:",
         ],
         bullets: [
-          "Clean source version control inside private Git repositories (essential for Next.js / custom stacks) alongside full CMS core/plugins/themes.",
-          "Complete media `uploads/` folders, product imagery and uploaded PDFs/documents.",
-          "Consistent transactional SQL database exports taken safely without corrupting active WooCommerce order rows.",
-          "Secure encrypted copies of `.env` / `wp-config.php` secrets, payment webhook secrets and full DNS zone exports saved safely inside team password vaults.",
+          "Full site source code stored in private Git version control (vital for Next.js and custom builds), plus all editing system core, plugin and theme files.",
+          "Complete media `uploads/` folders, product photos and downloadable PDFs.",
+          "Clean database exports taken safely without corrupting live online store orders.",
+          "Offline copies of `.env` or `wp-config.php` settings, payment keys and exported domain settings stored safely in your company password vault.",
         ],
       },
       {
-        title: "Test restores quarterly—because untested backups are guesswork",
+        title: "Test restores quarterly because untested backups are guesswork",
         body: [
-          "Too many directors discover only on launch-breaking crisis days that WordPress SQL imports cut off mid-table, media uploads stayed unlinked or PHP version updates broke restored themes.",
+          "Many business owners discover on the worst possible day that their database export stopped halfway through, images went missing or newer PHP versions broke the restored site.",
         ],
         numbered: [
-          "Schedule a recurring 45-minute restore check once per quarter cleanly.",
-          "Fetch fresh off-site files and SQL backups onto an isolated, password-locked staging sandbox.",
-          "Re-hydrate the entire application and verify homepage paint, images, admin logins, search and `/contact/` form submissions.",
-          "Measure actual end-to-end Recovery Time Objective (RTO) so emergency responses move calmly rather than scrambling.",
+          "Book a 45-minute restore test once every three months.",
+          "Download your latest off-site files and database onto an isolated, password-locked private preview server.",
+          "Open the restored preview site and test the homepage, images, admin logins, search and `/contact/` form submissions.",
+          "Note how long the full restore took so your team knows what to expect in a real emergency.",
         ],
         callout: {
           tone: "tip",
-          heading: "Static Next.js codebases in Git turn codebase recovery into minutes",
-          text: "Rebuilding static Next.js builds straight from private Git repositories onto replacement cloud edge accounts takes minutes cleanly—limiting backup complexity strictly to form logs, media and DNS templates.",
+          heading: "Static Next.js sites stored in Git restore in minutes",
+          text: "Rebuilding a static Next.js site from a private Git repository onto fresh hosting takes minutes, leaving only form logs, media files and domain settings to back up.",
         },
       },
       {
-        title: "POPIA data protection rules apply strictly to stored backups too",
+        title: "POPIA data protection rules apply to stored backups too",
         body: [
-          "Every backup archiving customer enquiry logs, subscriber lists, client CVs or ecommerce invoices holds protected personal information governed under POPIA Section 19. Encrypt archives in transit and at rest, restrict storage keys tightly to verified administrators, favour South African cloud regions (Cape Town/Johannesburg) where practical, and trim overly ancient retention clutter responsibly.",
+          "Every backup holding enquiry logs, subscriber lists, job CVs or online store invoices holds personal information protected by POPIA Section 19. Encrypt backups while moving and while stored, limit access keys to trusted admins, pick Johannesburg or Cape Town cloud storage where practical and remove overly old copies you no longer need.",
         ],
       },
       {
         title: "Building a realistic disaster recovery runbook (RTO & verification)",
         body: [
-          "Having encrypted cloud files sitting safely in Johannesburg or European storage accomplishes far less when nobody documented the sequence to reattach DNS, decrypt config keys and restore databases calmly under pressure. A concise one-page recovery runbook turns frightening outages into straightforward checklists.",
-          "Document four practical recovery details securely inside your company password vault before an incident ever demands midnight troubleshooting:",
+          "Having encrypted backups stored safely in Johannesburg or Europe helps far less if nobody wrote down how to decrypt keys, connect domain settings and restore the database under pressure. A simple one-page recovery guide turns a scary outage into clear steps.",
+          "Save these four details inside your company password vault before an incident ever happens:",
         ],
         subsections: [
           {
-            heading: "Define honest Recovery Time (RTO) and Recovery Point (RPO) targets",
+            heading: "Set clear recovery time and data-loss targets",
             body: [
-              "An active WooCommerce retailer processing 40 daily orders cannot tolerate losing 7 days of order records (high RPO pain)—mandating daily or hourly SQL captures plus instant off-site transactional mail receipts. Conversely, an informational B2B brochure tracked cleanly in private Git recovers completely in minutes via clean re-builds plus modest weekly log archives.",
+              "An online store taking 40 orders a day cannot lose a week of order records, so it needs daily or hourly database backups plus off-site order emails. A simple brochure site tracked in private Git recovers in minutes from a fresh rebuild plus a weekly backup of form logs.",
             ],
           },
           {
-            heading: "Store recovery keys, registrar links and DNS exports outside web hosting",
+            heading: "Keep backup keys and domain exports outside web hosting",
             body: [
-              "Avoid burying backup bucket keys solely inside a `.txt` note inside cPanel! Keep external cloud object keys, `.env` environment variables, registrar recovery steps and raw exported DNS zone files securely inside multi-person encrypted password vaults accessible cleanly to directors and lead engineers.",
+              "Never leave backup bucket keys inside a text note in cPanel. Store cloud storage keys, `.env` passwords, domain registrar steps and exported domain settings inside a shared company password vault that directors and key staff can reach if hosting goes down.",
             ],
           },
         ],
         bullets: [
-          "Check quarterly restore drills verify not merely file downloads, but working mobile browsing, live `/contact/` submissions and SSL padlocks on staging.",
-          "Prune obsolete multi-gigabyte unencrypted `backup-*.zip` files off local hosting partitions straight after verifying off-site cloud storage.",
+          "Make sure quarterly preview tests check mobile pages, live `/contact/` emails and the secure HTTPS connection, not just file downloads.",
+          "Delete huge unencrypted `backup-*.zip` files from your web hosting disk once your off-site cloud backups are confirmed.",
         ],
       },
     ],
     midCta: {
-      heading: "Never actually tested restoring your website backups from scratch?",
-      text: "We inspect existing backup jobs cleanly, replace risky same-server zips with encrypted off-site cloud storage and prove restore readiness safely.",
+      heading: "Never tested restoring your website backups from scratch?",
+      text: "We check your current backups, replace risky same-server zip files with encrypted off-site storage and run a real preview restore test.",
       href: "/services/website-security/",
-      label: "Verify Backup Resilience",
+      label: "Explore website security",
     },
     related: [
       { label: "Website & cyber security", href: "/services/website-security/" },
@@ -1108,32 +1108,32 @@ export const securityGuides: GuidePage[] = [
       {
         question: "How often should a South African business run off-site website backups?",
         answer:
-          "Active ecommerce stores and daily publishing CMS sites need automated daily off-site SQL + media snapshots (plus manual pre-patch captures). Stable brochure/static sites backed in Git work cleanly with automated weekly snapshots plus pre-release checkpoints.",
+          "Active online stores and sites edited daily need automated daily off-site backups of both files and the database, plus a manual copy before any major update. Stable brochure or static websites backed up in private Git work well with weekly snapshots and a checkpoint saved before every code change.",
       },
       {
         question: "How long does restoring an entire site take when backups are clean?",
         answer:
-          "When verified archives, vault secrets and registrar DNS access sit organised upfront, clean restoration onto fresh hosting typically runs 30 minutes to 2 hours.",
+          "Once verified backup files, password-vault secrets and domain registrar logins are ready, restoring a complete website onto fresh hosting usually takes 30 minutes to 2 hours. Larger online stores with gigabytes of product photos or database records can take a little longer while files transfer.",
       },
       {
         question: "Should company email backups sit together inside website cPanel archives?",
         answer:
-          "No—decouple business email completely onto Microsoft 365 or Google Workspace away from web hosts, and evaluate independent cloud M365/Workspace backup solutions where compliance calls for mail archiving.",
+          "No, keep business email completely separate from your website hosting on Microsoft 365 or Google Workspace. Mixing gigabytes of staff mailboxes into web cPanel backups slows restores down and creates a single point of failure. Use dedicated cloud email archiving if your industry requires long mail retention.",
       },
       {
         question: "Do encrypted offshore cloud backup buckets comply with POPIA?",
         answer:
-          "Under POPIA Section 72, document international storage transfers honestly under adequate encryption and vendor safeguards—or select local Johannesburg/Cape Town cloud object buckets to keep data inside South Africa directly.",
+          "Yes, under POPIA Section 72, storing personal data on servers outside South Africa is allowed when you use strong encryption and confirm the provider offers proper privacy safeguards. Whenever possible, choosing Johannesburg or Cape Town cloud storage keeps your customer backups safely inside South Africa.",
       },
       {
         question: "Can SoftKore set up isolated off-site backups without changing our web host?",
         answer:
-          "Yes—encrypted off-site cloud backup pipelines run independently alongside existing hosting plans while isolating historical recovery keys safely off-server.",
+          "Yes, our [website security](/services/website-security/) team can connect automated, encrypted off-site backups alongside your existing hosting plan without moving your website or email. We store clean daily or weekly snapshots in write-only cloud storage, keep access keys off your server and run regular preview test restores.",
       },
     ],
     priority: 0.72,
     published: "2026-11-20",
-    updated: "2026-11-20",
+    updated: "2026-11-26",
   },
   {
     slug: "http-security-headers-explained",
@@ -1143,56 +1143,56 @@ export const securityGuides: GuidePage[] = [
     title: "HTTP Security Headers Explained: HSTS, CSP & Clickjacking Protection",
     metaTitle: "HTTP Security Headers Explained (HSTS, CSP) | SoftKore",
     description:
-      "Plain guide to HTTP security headers for South African business websites: Strict-Transport-Security (HSTS), Content-Security-Policy, X-Content-Type-Options and safe rollouts.",
+      "Plain guide to browser security settings (HTTP security headers) for SA sites: HSTS, Content-Security-Policy, clickjacking blocks and safe rollouts.",
     intro:
-      "Run nearly any ordinary South African SME domain through a security header audit and it draws a bright red F grade—even on modern sites with zero WordPress plugins! Adding five concise HTTP response headers instructs modern browsers automatically to reject HTTPS downgrade snooping, invisible clickjacking frames and rogue injected scripts.",
+      "Most local business sites fail online safety checks because they miss five short browser settings, called HTTP security headers. Adding these rules tells Chrome and Safari to block fake plain-text links, hidden click traps and rogue scripts before a page loads.",
     summary: [
-      "What HTTP security headers do",
-      "The 4 must-have baseline headers",
-      "Understanding Content Security Policy",
-      "Checking headers without breaking embeds",
+      "What browser settings do",
+      "Four safe rules to add first",
+      "Rolling out CSP without errors",
+      "Where to place your header rules",
     ],
     takeaways: [
-      "Security headers ride unobtrusively ahead of HTML pages—blocking common browser-side attacks at essentially zero latency cost.",
-      "Deploy four baseline low-risk headers first: `X-Content-Type-Options: nosniff`, `Referrer-Policy`, `X-Frame-Options` and `Permissions-Policy`.",
-      "Turn on `Strict-Transport-Security` (HSTS) ONLY after confirming reliable SAN SSL auto-renewal across root and `www`.",
-      "Test `Content-Security-Policy-Report-Only` cleanly before enforcement so Google Maps, analytics or PayFast widgets never break silently.",
-      "Set headers centrally inside Nginx server configs or Cloudflare rules—remember static Next.js exports skip runtime `next.config` headers.",
+      "Browser security rules load before your web page. They stop common browser tricks without slowing your site down.",
+      "Add four low-risk rules first: `X-Content-Type-Options: nosniff`, `Referrer-Policy`, `X-Frame-Options` and `Permissions-Policy`.",
+      "Turn on `Strict-Transport-Security` (HSTS) only after you know your HTTPS cert renews well on both `www` and the bare domain.",
+      "Test `Content-Security-Policy-Report-Only` in watch mode first so Google Maps, stats tools and PayFast popups do not break.",
+      "Add rules in Nginx or Cloudflare, because static Next.js exports ignore server rules in `next.config`.",
     ],
     sections: [
       {
         title: "Essential HTTP security headers decoded in plain language",
         body: [
-          "Before Chrome, Safari or Firefox displays a single pixel of your website, your web server or CDN transmits hidden HTTP header directives specifying security boundaries around cookies, frames, scripts and encryption upgrades.",
+          "Before Chrome, Safari or Firefox draws your web page, your server sends a short set of hidden rules. These browser security settings tell the browser which scripts may run, who may frame your site and how to handle HTTPS.",
         ],
         table: {
-          caption: "Recommended baseline HTTP security headers for SA business sites",
-          headers: ["Header name", "Recommended value", "Browser exploit prevented"],
+          caption: "Recommended browser security settings for South African sites",
+          headers: ["Header name", "Recommended setting", "What it protects against"],
           rows: [
             [
-              "`Strict-Transport-Security`",
-              "`max-age=31536000; includeSubDomains` (post-SSL check)",
-              "Eliminates HTTP downgrade sniffing across public hotel/coffee Wi-Fi",
+              "`Strict-Transport-Security` (HSTS)",
+              "`max-age=31536000; includeSubDomains` (after HTTPS checks)",
+              "Stops public Wi-Fi snoops forcing users onto an unencrypted `http://` link",
             ],
             [
               "`X-Content-Type-Options`",
               "`nosniff`",
-              "Stops browsers MIME-guessing disguised dangerous scripts from images",
+              "Stops browsers guessing file types and running bad scripts hidden in images",
             ],
             [
               "`X-Frame-Options` / CSP",
               "`DENY` or `frame-ancestors 'none'`",
-              "Blocks attackers trapping your contact/login buttons inside invisible iframes",
+              "Stops scammers hiding your login or contact buttons in a hidden frame",
             ],
             [
               "`Referrer-Policy`",
               "`strict-origin-when-cross-origin`",
-              "Stops leaking private path/query parameters to third-party outbound sites",
+              "Stops full private page links leaking when someone clicks an outside link",
             ],
             [
               "`Permissions-Policy`",
               "`camera=(), microphone=(), geolocation=()`",
-              "Restricts unrequested embedded scripts probing hardware device APIs",
+              "Blocks added widgets from asking for camera, mic or location access",
             ],
           ],
         },
@@ -1200,100 +1200,100 @@ export const securityGuides: GuidePage[] = [
       {
         title: "Enable the four safe baseline headers right away",
         body: [
-          "Owners often hold off implementing security headers fearing accidental homepage lockouts. Four foundational directives (`X-Content-Type-Options`, `Referrer-Policy`, `X-Frame-Options` and `Permissions-Policy`) carry near-zero risk across corporate websites while instantly lifting browser hygiene scores cleanly.",
+          "Many owners hold back on browser settings because they fear locking users out. Four basic rules (`X-Content-Type-Options`, `Referrer-Policy`, `X-Frame-Options` and `Permissions-Policy`) are safe on almost every site. They lift your safety score right away.",
         ],
         subsections: [
           {
-            heading: "Verify reliable SSL renewals BEFORE raising HSTS to one year",
+            heading: "Check HTTPS renewals before setting HSTS to one year",
             body: [
-              "`Strict-Transport-Security` instructs Chrome strictly never to fall back onto plain HTTP—and removes the user bypass button if certificates expire! Test initially at short `max-age=3600` alongside valid SAN SSL coverage across apex and `www` before stepping cleanly to `31536000`.",
+              "HSTS tells Chrome never to drop back to plain HTTP. It also hides the bypass button if your cert expires. Test a short `max-age=3600` first once both `www` and your bare domain have valid HTTPS, then raise it to `31536000`.",
             ],
           },
           {
-            heading: "Never confuse anti-framing rules with Maps embeds",
+            heading: "Blocking external frames will not hide your Google Map",
             body: [
-              "`X-Frame-Options: DENY` blocks *other external domains* from embedding *your pages* inside invisible frames; it does NOT stop you displaying Google Maps cleanly on your own `/contact/` page!",
+              "`X-Frame-Options: DENY` stops *other sites* from wrapping *your pages* inside a hidden frame for click traps. It does not stop you showing a Google Map on your own `/contact/` page.",
             ],
           },
         ],
         callout: {
           tone: "warning",
-          heading: "Skip HSTS `includeSubDomains` until every subdomain holds valid HTTPS",
-          text: "Setting `includeSubDomains` globally when `mail.yourdomain.co.za` or an internal `crm.` portal lacks matching SSL certs locks team browsers completely out of those subdomains.",
+          heading: "Leave off `includeSubDomains` if any subdomain lacks HTTPS",
+          text: "Turning on HSTS `includeSubDomains` when `mail.yourdomain.co.za` or an old `crm.` tool lacks a valid HTTPS cert will lock your staff out of those sites.",
         },
       },
       {
         title: "Deploy Content-Security-Policy (CSP) safely without breaking embeds",
         body: [
-          "Content-Security-Policy delivers powerful defence-in-depth against injected JavaScript, skimmer tags and cross-site scripting (XSS) by listing strictly which trusted origins may execute scripts, styles, fonts or frames.",
-          "Because premature aggressive rules inadvertently stop Google Tag Manager, embedded Maps or PayFast scripts running cleanly, deploy safely across staged phases:",
+          "CSP blocks injected hack scripts and card-skimming code. It gives the browser an exact list of trusted domains allowed to load scripts, fonts, styles and frames on your site.",
+          "Turning on a tight CSP list too fast can block Google Tag Manager, embedded maps or PayFast popups. Roll it out in three calm steps:",
         ],
         numbered: [
-          "Launch `Content-Security-Policy-Report-Only` first declaring known trusted origins (`'self'`, verified analytics, maps and gateway domains).",
-          "Browse every page template—especially dropdown forms, FAQs, maps and ecommerce checkouts—scanning Chrome DevTools Console cleanly for blocked-resource alerts.",
-          "Refine trusted whitelists neatly, then switch cleanly from `Report-Only` into live enforcing `Content-Security-Policy`.",
+          "Start with `Content-Security-Policy-Report-Only`. List your own site (`'self'`) plus your stats, map and payment domains.",
+          "Click through each page type, especially forms, FAQs, maps and store checkouts. Watch Chrome DevTools Console for any blocked items.",
+          "Add any missed trusted tools to your list, then switch from `Report-Only` to live CSP.",
         ],
       },
       {
         title: "Where headers belong: Nginx / Cloudflare edge vs WordPress plugins",
         body: [
-          "Skip installing bulky WordPress header plugins that inject latency on PHP paths while missing cached static downloads altogether. Configure headers cleanly once inside Nginx server blocks (`/etc/nginx/`), Apache config or Cloudflare Transform Rules.",
+          "Skip heavy WordPress header plugins that slow down PHP requests and miss cached files or PDFs. Put these rules once inside your Nginx server config, Apache file or Cloudflare Transform Rules.",
         ],
         bullets: [
-          "Nginx / Apache server layer: ships consistent headers globally across HTML pages, downloads and API responses effortlessly.",
-          "Static Next.js warning: remember that pure `output: 'export'` static files served straight off Nginx ignore `next.config.ts` runtime `headers()`—declare headers inside your live Nginx/CDN config!",
-          "Keep clean comments documenting why external embeds or analytics domains sit whitelisted inside CSP rules.",
+          "Nginx or Apache layer: sends the same rules on every HTML page, PDF and form call without extra work.",
+          "Static Next.js tip: pure `output: 'export'` sites on Nginx ignore rules inside `next.config.ts`. Put them in your live Nginx or Cloudflare setup instead.",
+          "Add short notes in your config explaining why each map, stats or payment domain is on your CSP list.",
         ],
         callout: {
           tone: "tip",
-          heading: "Verify live response headers after every reverse-proxy edit",
-          text: "Run `curl -I https://www.yourdomain.co.za/` straight from a terminal after server deployments to make sure proxy layers did not drop or duplicate header lines silently.",
+          heading: "Check live headers after every server change",
+          text: "Run `curl -I https://www.yourdomain.co.za/` from a terminal after updates so you know your proxy did not drop or repeat a header line.",
         },
       },
       {
-        title: "Maintain header parity across redirects, API routes and error pages",
+        title: "Keep the same headers on redirects, forms and 404 pages",
         body: [
-          "Check not only `/` cleanly—spot-check 404 pages, `/contact/` endpoints and `www`/apex redirects so security guardrails hold uniform across every browser interaction without conflicting duplicate headers.",
+          "Do not check only your home page. Spot-check your 404 'not found' page, `/contact/` form calls and `www` redirects so your browser settings match everywhere.",
         ],
       },
       {
-        title: "Worked Nginx & Cloudflare configuration patterns without locking out tools",
+        title: "Example Nginx and Cloudflare header setups that keep tools working",
         body: [
-          "Seeing header syntax examples clarifies how clean and lightweight proper hardening looks in real production servers. Rather than piling on brittle CMS plugins, adding six clean lines inside your live reverse proxy or CDN edge layer locks every page consistently without touching application layout logic.",
-          "Review how careful header separation keeps embedded maps, analytics and payment scripts working cleanly alongside strong defensive guardrails:",
+          "Seeing a working sample shows how short and light these rules really are. Six simple lines in your web server or Cloudflare setup protect every page without extra plugins.",
+          "Here is how to keep maps, stats and payment scripts running safely alongside strong browser rules:",
         ],
         subsections: [
           {
-            heading: "Practical Nginx / Edge header snippet overview",
+            heading: "Practical Nginx and Cloudflare starter settings",
             body: [
-              "At baseline across corporate South African domains, enforce `Strict-Transport-Security: max-age=31536000; includeSubDomains` (once SAN SSL confirms solid), `X-Content-Type-Options: nosniff`, `X-Frame-Options: DENY`, `Referrer-Policy: strict-origin-when-cross-origin`, and `Permissions-Policy: camera=(), microphone=(), geolocation=()`. Keep directives clean and avoid legacy deprecated flags like `X-XSS-Protection: 1; mode=block` that confuse modern auditors.",
+              "Most business sites need `Strict-Transport-Security: max-age=31536000; includeSubDomains` (once HTTPS works), `X-Content-Type-Options: nosniff`, `X-Frame-Options: DENY`, `Referrer-Policy: strict-origin-when-cross-origin` and `Permissions-Policy: camera=(), microphone=(), geolocation=()`. Skip old flags like `X-XSS-Protection: 1; mode=block`, which modern browsers no longer use.",
             ],
           },
           {
-            heading: "Whitelisting Google Analytics, Maps and PayFast cleanly inside CSP",
+            heading: "Allowing Google Analytics, Maps and PayFast inside CSP",
             body: [
-              "When layering strict `Content-Security-Policy`, list exact trusted script/connect origins rather than sloppy wildcard `*` permissions: e.g. `default-src 'self'`, permitting explicit trusted analytics (`https://www.googletagmanager.com`), embedded map frames via `frame-src https://www.google.com` while holding `frame-ancestors 'none'` tight so third parties still cannot frame YOUR pages silently.",
+              "In your CSP rule, name exact trusted tools instead of using wide `*` wildcards. Set `default-src 'self'`, allow `https://www.googletagmanager.com` for stats, allow `frame-src https://www.google.com` for your contact map, and keep `frame-ancestors 'none'` so outsiders cannot frame your pages.",
             ],
           },
         ],
         bullets: [
-          "Verify live headers straight via terminal (`curl -sI https://www.yourdomain.co.za/ | grep -iE 'strict|content-security|x-frame|nosniff|referrer'`) post-deploy cleanly.",
-          "Ensure `404` and static asset locations inherit identical security headers cleanly inside server configs—Nginx `add_header` inside child `location` blocks overrides parent headers unless repeated or defined consistently.",
-          "Avoid copying giant random third-party CSP strings blindly from GitHub gists—every `'unsafe-inline'` or wide wildcard domain left unchecked weakens real cross-site script defence dramatically.",
-          "Re-verify Chrome DevTools Console and Network response headers cleanly whenever connecting new payment modals, CRM trackers or Google Maps embeds so legitimate scripts keep running smoothly.",
+          "Check live rules after each deploy with `curl -sI https://www.yourdomain.co.za/ | grep -iE 'strict|content-security|x-frame|nosniff|referrer'`.",
+          "In Nginx, adding `add_header` inside a static file `location` block wipes out parent headers unless you include the shared snippet there too.",
+          "Never paste giant random CSP strings from the web, because `'unsafe-inline'` or wide wildcards weaken real script defence.",
+          "Check Chrome DevTools Console when adding a chat widget, CRM form or payment popup so nothing gets blocked by mistake.",
         ],
         callout: {
           tone: "note",
-          heading: "Double-check child Nginx location blocks when adding headers",
-          text: "In Nginx configuration files, placing a caching `add_header Cache-Control` rule inside a static asset `location` block quietly erases parent server-level `HSTS` and `nosniff` directives unless placed inside an included shared security snippet.",
+          heading: "Watch Nginx child location blocks",
+          text: "In Nginx files, adding `add_header Cache-Control` inside an image block hides top-level rules like `HSTS` and `nosniff` unless both sit in a shared include file.",
         },
       },
     ],
     midCta: {
-      heading: "Scoring poorly on website security header checks right now?",
-      text: "We configure clean Nginx/Cloudflare headers, validate CSP safely around maps/analytics and verify HSTS without locking out subdomains.",
+      heading: "Failing website security header checks right now?",
+      text: "We set up clean browser security settings in Nginx or Cloudflare, test CSP around your maps and analytics and check HSTS safely.",
       href: "/services/website-security/",
-      label: "Harden Site Headers",
+      label: "Explore website security",
     },
     related: [
       { label: "Website security checklist", href: "/guides/website-security-checklist/" },
@@ -1305,32 +1305,32 @@ export const securityGuides: GuidePage[] = [
       {
         question: "Do missing HTTP security headers hurt Google organic rankings directly?",
         answer:
-          "Missing headers carry zero direct Google ranking penalty—yet weak browser guardrails leave domains exposed to script injection and clickjacking abuse that rapidly destroy trust and rankings when compromised.",
+          "No, missing HTTP security headers do not trigger a direct penalty from Google. However, leaving browser guardrails off makes it easier for hackers to inject fake scripts or run clickjacking scams on your pages. If your site gets hacked or flagged by Safe Browsing, your search traffic can drop fast.",
       },
       {
         question: "Will adding CSP break Google Analytics, Tag Manager or WhatsApp links?",
         answer:
-          "Not when staged properly with `Report-Only` verification so verified script/connect hosts appear cleanly in your allowlist beforehand.",
+          "Not if you test Content-Security-Policy in `Report-Only` mode first. Watch mode shows every analytics script, Google Map, payment popup or chat tool your site loads before anything gets blocked. Once those trusted addresses sit on your allowlist, normal WhatsApp links and Google tracking tools keep working without errors.",
       },
       {
         question: "Do strict framing headers prevent Googlebot or social shares working?",
         answer:
-          "Zero interference—Googlebot crawls HTML normally and OpenGraph/Twitter image tags read cleanly regardless of `X-Frame-Options`.",
+          "No, blocking frames with `X-Frame-Options` or `frame-ancestors 'none'` does not stop Google's scanner or social previews from working. Search engines read your HTML text directly, and WhatsApp, LinkedIn and Facebook still pull your page title and preview image from normal meta tags without needing to frame your site.",
       },
       {
         question: "Should we keep BOTH X-Frame-Options AND CSP frame-ancestors?",
         answer:
-          "Yes—`frame-ancestors 'none'` serves modern browsers cleanly while keeping `X-Frame-Options: DENY` protects older legacy clients smoothly.",
+          "Yes, keeping both is simple and safe. Modern browsers like Chrome, Safari and Edge follow CSP `frame-ancestors 'none'`, while older browsers and basic security scanners still look for `X-Frame-Options: DENY`. Adding both one-line rules takes seconds and makes sure every browser blocks hidden clickjacking frames consistently.",
       },
       {
         question: "Can SoftKore check and deploy security headers on an existing server?",
         answer:
-          "Yes—we inspect current Nginx, hosting or Cloudflare headers, confirm clean embed allowlists and deploy verified rules without interrupting visitor traffic.",
+          "Yes, through our [website security](/services/website-security/) service we check the headers your site sends today, test which analytics, maps and payment scripts your pages rely on, and add the right rules in Nginx, Apache or Cloudflare without taking your site offline or breaking live enquiry forms.",
       },
     ],
     priority: 0.72,
     published: "2026-11-20",
-    updated: "2026-11-20",
+    updated: "2026-11-26",
   },
   {
     slug: "stop-contact-form-spam-and-bots",
@@ -1340,153 +1340,153 @@ export const securityGuides: GuidePage[] = [
     title: "How to Stop Contact Form Spam and Bots Without Breaking Real Enquiries",
     metaTitle: "Stop Contact Form Spam & Bot Submissions | SoftKore",
     description:
-      "Stop automated spam bots flooding your contact inbox cleanly using server-side validation, IP rate limits, honeypots and Turnstile without frustrating real SA buyers.",
+      "Stop bots flooding your contact inbox using server checks, rate limits, hidden honeypots and Turnstile without driving away real South African enquiries.",
     intro:
-      "Clearing thirty automated crypto pitches and spam links out of `info@` every morning wastes real staff focus and hides genuine leads underneath clutter. Equally bad: slapping frustrating multi-screen CAPTCHA traffic-light quizzes onto forms drives impatient South African smartphone buyers straight onto competitor sites.",
+      "Deleting thirty fake crypto pitches out of your inbox each morning wastes time and hides real customer leads. Adding awkward picture puzzles to your contact form is just as bad, because impatient buyers on phones give up and move on.",
     summary: [
-      "Server-side rate limiting & checks",
-      "Why client-only validation fails",
-      "Friction-free anti-bot techniques",
-      "Never miss real leads silently",
+      "Why browser-only checks fail",
+      "Server checks and rate limits",
+      "Invisible traps bots fall into",
+      "Making sure real leads arrive",
     ],
     takeaways: [
-      "Browser `required` fields and client JavaScript checks block zero bots—scripts POST raw data straight to backend API routes.",
-      "Enforce strict backend validation, payload length ceilings and HTTP 429 IP rate limiting on server and Cloudflare WAF layers.",
-      "Combine accessible hidden honeypots + timing heuristics to drop dumb bots silently without touching genuine visitor UX.",
-      "Where persistent interactive bots attack, pick privacy-friendly Cloudflare Turnstile over blurry 5-grid image puzzles.",
-      "Submit monthly live enquiry tests so overly strict spam filters never block legitimate customer emails silently.",
+      "HTML `required` fields and browser JavaScript checks stop zero spam, because bots send data straight to your form endpoint.",
+      "Add strict server validation, text length limits and IP rate limits on both your server and your Cloudflare website firewall.",
+      "Use an accessible hidden honeypot field so dumb bots drop silently while real buyers never notice a thing.",
+      "If clever bots still get through, pick invisible Cloudflare Turnstile instead of annoying traffic-light picture quizzes.",
+      "Send yourself a quick test enquiry every month so you know spam filters never swallow real customer messages.",
     ],
     sections: [
       {
         title: "Why browser validation never slows automated contact bots",
         body: [
-          "Humans load CSS stylesheets, scan dropdown options and tap Submit. Automated spam bots scrape endpoint targets (`/api/contact/`, `/wp-admin/admin-ajax.php`) directly and spray thousands of HTTP POST payloads concurrently across domains completely ignoring client HTML/JavaScript validation.",
-          "Meaningful bot defence happens strictly at edge WAF rate rules and server-side API validation—never inside browser code alone.",
+          "Real visitors open your site, pick a service and tap Send. Automated bots skip the web page, read your form endpoint (`/api/contact/` or `/wp-admin/admin-ajax.php`), and send hundreds of raw requests straight to your server while ignoring browser rules completely.",
+          "Real spam control lives on your website firewall and server form handler, never inside browser code alone.",
         ],
         table: {
-          caption: "Comparing anti-spam defences across effectiveness & mobile UX friction",
-          headers: ["Defence layer", "Stops real automated bots?", "Human mobile UX impact", "Implementation point"],
+          caption: "Contact form anti-spam options compared",
+          headers: ["Protection step", "Stops spam bots?", "Impact on phone buyers", "Where it runs"],
           rows: [
             [
-              "HTML `required` / JS check only",
-              "No — trivially bypassed by direct HTTP POST",
-              "Zero friction",
-              "Client browser only (not security)",
+              "HTML `required` or browser checks only",
+              "No, bots send requests directly",
+              "None",
+              "Visitor browser only (not real security)",
             ],
             [
-              "Backend validation + Rate limits",
-              "High (cuts flood volume & header abuse)",
-              "Zero friction for real enquiries",
-              "API handler + Nginx / Cloudflare edge rules",
+              "Server checks and rate limits",
+              "High, blocks floods and header tricks",
+              "Zero friction for real buyers",
+              "Form API, Nginx or Cloudflare firewall",
             ],
             [
-              "Accessible honeypot + timing check",
-              "High against automated generic scrapers",
-              "100% invisible to normal buyers & screen readers",
-              "HTML field + server drop check",
+              "Hidden honeypot and timing check",
+              "High against common bulk bots",
+              "Invisible to people and screen readers",
+              "Hidden HTML field plus server drop rule",
             ],
             [
-              "Turnstile (invisible/managed) vs puzzles",
-              "Very High against headless browser spam",
-              "Turnstile smooth; traffic-light quizzes hurt leads",
-              "Edge token verified server-side cleanly",
+              "Cloudflare Turnstile vs picture puzzles",
+              "Very high against smart browser bots",
+              "Turnstile is smooth; picture grids lose leads",
+              "Edge token checked on your server",
             ],
           ],
         },
       },
       {
-        title: "Layer 1: Enforce strict backend validation, sanitisation and rate limits",
+        title: "Layer 1: Enforce server validation, clean inputs and rate limits",
         body: [
-          "Treat every external form submission strictly as untrusted data—protecting inboxes from spam floods while fulfilling POPIA Section 19 input sanitisation safeguards.",
+          "Treat every incoming form message as untrusted input. That stops spam floods and helps meet POPIA Section 19 rules for safe data handling.",
         ],
         bullets: [
-          "Validate JSON schemas strictly server-side: sane field length limits, valid RFC email syntax and strict allowed service/budget options.",
-          "Reject carriage-return (`\\r\\n`) header injection payloads cleanly across name and subject strings.",
-          "Configure Cloudflare/Nginx rate limiting (e.g. restricting burst POST counts per IP triggering `HTTP 429 Too Many Requests`).",
-          "Block repeated malicious link spam bursts across short message text areas carefully without penalising normal domain mentions.",
+          "Check every field on the server: set sensible text length limits, check email format and allow only valid dropdown options.",
+          "Block newline characters (`\\r\\n`) inside name and subject fields so bots cannot hijack email headers.",
+          "Set Cloudflare or Nginx rate limits so one IP address sending too many requests gets an `HTTP 429` pause.",
+          "Reject messages stuffed with repeated spam links without blocking normal customers who mention their own website.",
         ],
         callout: {
           tone: "warning",
-          heading: "Never leak backend CRM or mail API tokens inside client browser JS",
-          text: "Route form submissions purely through server-side handlers storing Resend, Postmark or CRM secrets safely in server environment variables.",
+          heading: "Never put mail or CRM keys inside browser code",
+          text: "Send form alerts through a server-side handler where Resend, Postmark or CRM secrets stay safely hidden in server environment settings.",
         },
       },
       {
         title: "Layer 2: Deploy invisible honeypots and low-friction verification",
         body: [
-          "Silent technical traps strip 85%+ of ordinary automated nuisance floods cleanly before human buyers ever notice security exists.",
+          "Quiet server traps block most automated spam before any human visitor notices extra steps.",
         ],
         subsections: [
           {
-            heading: "Properly built accessible honeypot fields",
+            heading: "How an accessible hidden honeypot works",
             body: [
-              "Embed an extra innocuous field (`name='website_url'`, masked cleanly off-screen via CSS positioning with `tabIndex={-1}` and `aria-hidden='true'`). Real shoppers and assistive screen readers skip it seamlessly; automated form-filler bots populate every input mechanically, letting your backend discard outbound mail notifications quietly.",
+              "Add an extra decoy field like `name='website_url'` and hide it off-screen with CSS, `tabIndex={-1}` and `aria-hidden='true'`. Real shoppers and screen readers skip right past it, while dumb bots fill in every box and get quietly dropped by your server.",
             ],
           },
           {
-            heading: "Cloudflare Turnstile over blurry motorcycle grids",
+            heading: "Choose Cloudflare Turnstile over blurry picture grids",
             body: [
-              "When dedicated click-farm bots break past simple honeypots, prefer passive non-interactive verification tokens verified server-side cleanly rather than image quizzes that lock up inside WhatsApp or Instagram in-app mobile browsers.",
+              "When smart browser bots beat a honeypot, use an invisible Cloudflare Turnstile check verified on your server instead of picture puzzles that often freeze inside WhatsApp or Instagram mobile browsers.",
             ],
           },
         ],
       },
       {
-        title: "Protect conversion clarity alongside anti-spam engineering",
+        title: "Protect enquiry rates while stopping bots",
         body: [
-          "Excessively paranoid firewall rules occasionally trip South African mobile carrier NAT ranges or shared corporate VPNs silently—costing real deals with zero visible clue! Log filtered rejections cleanly in private server logs while preserving plain alternative enquiry channels (`tel:`, clickable email and WhatsApp) clearly on `/contact/`.",
+          "Overly harsh firewall blocks can accidentally trap South African shoppers sharing mobile data IP addresses or office VPNs without giving any warning. Log blocked sends privately for review, and keep plain backup options like a clickable phone number, email address and WhatsApp link right beside your form on `/contact/`.",
         ],
         callout: {
           tone: "tip",
-          heading: "Run a real monthly live test enquiry on your own site",
-          text: "Spend 30 seconds each month submitting a genuine `/contact/` test from mobile data ensuring leads still clear spam filters and reach the right staff inbox inside ten seconds.",
+          heading: "Test your contact form from your phone each month",
+          text: "Take 30 seconds once a month to send a real test on `/contact/` over mobile data so you know leads clear spam filters and land in your inbox fast.",
         },
       },
       {
-        title: "End-to-end contact pipeline hygiene cleanly in 4 steps",
+        title: "End-to-end contact pipeline hygiene in 4 steps",
         body: [
-          "Pair clean form security seamlessly with email authentication so valid human leads receive fast replies that never slip into Gmail spam:",
+          "Pair form protection with verified domain email settings so real customer leads reach your inbox quickly instead of sitting in Gmail junk:",
         ],
         numbered: [
-          "Apply IP rate-limiting on form POST routes at Nginx / Cloudflare WAF edge.",
-          "Validate inputs strictly server-side + verify an accessible invisible honeypot cleanly.",
-          "Transmit alerts strictly via authenticated domain mail APIs matching aligned SPF/DKIM/DMARC records.",
-          "Keep clear inline user validation feedback on typos plus direct phone/WhatsApp fallback buttons visible.",
+          "Add IP rate limits on your form URL at Nginx or your Cloudflare website firewall.",
+          "Check every field on the server and include an invisible honeypot field.",
+          "Send notification emails through a verified mail service matching your SPF, DKIM and DMARC domain settings.",
+          "Show clear typo hints on the form and keep direct phone and WhatsApp buttons nearby.",
         ],
       },
       {
-        title: "Diagnosing hidden delivery drops vs genuine anti-spam victories",
+        title: "Checking why real leads go missing vs stopping spam",
         body: [
-          "Blocking 100% of bot junk feels pointless if tight thresholds simultaneously swallow two urgent R80,000 commercial enquiries quietly! Separating honest technical rejections clearly from mail delivery troubleshooting ensures every real buyer reaches your sales team reliably.",
-          "Apply disciplined verification monitoring around form endpoints alongside clean anti-spam filtering:",
+          "Blocking every spam bot means nothing if strict rules also swallow two real R80,000 quote requests. Telling real filter blocks apart from mail delivery bugs makes sure no buyer slips away unseen.",
+          "Watch these common edge cases around your form and email alerts:",
         ],
         subsections: [
           {
-            heading: "Test valid edge cases that aggressive filters accidentally reject",
+            heading: "Watch edge cases that trip aggressive timers",
             body: [
-              "Manual form blockers occasionally flag genuine leads awkwardly: executives writing brief valid enquiries using corporate VPN exit IPs, Gmail/Outlook auto-complete populating fields slightly fast (breaking overly aggressive sub-2-second timing rules!), or buyers copying clean tracking links inside message boxes. Keep server validation sane cleanly—avoid sub-second timers below ~800 ms and log filtered hits safely without silent blind blackholing.",
+              "Some overly strict filters block real buyers: directors sending brief notes on an office VPN, browser autofill completing fields in under two seconds, or buyers pasting a project link into the message box. Keep timing checks sensible (under about 800 ms) and log blocked attempts instead of deleting them blindly.",
             ],
           },
           {
-            heading: "Keep server logs and SPF/DKIM alignment healthy behind every form",
+            heading: "Watch server errors and email domain alignment",
             body: [
-              "Often business owners blame missing leads on 'form failure' when the web API actually succeeded—only for unaligned PHP mail to bounce straight into Microsoft 365 Quarantine! Monitor API HTTP status codes alongside dedicated mail-sender bounce alerts so genuine failures surface within minutes.",
+              "Owners often blame the form when the web server actually worked, and an unverified PHP email simply bounced into Microsoft 365 Quarantine. Watch your form API status codes and mail sender bounce logs so a broken mail key gets spotted within minutes.",
             ],
           },
         ],
         bullets: [
-          "Include clean human alternative channels (`tel:`, `mailto:` and direct WhatsApp links) directly beside forms on `/contact/`.",
-          "Audit contact dropdown validations whenever adding new services or budget bands so mismatched front/back allowlists never reject real form sends.",
-          "Configure private server alert pings whenever `/api/contact/` returns repeated HTTP 500 mailer timeouts, so expired transactional email API keys get caught within minutes rather than losing weeks of leads.",
-          "Rotate anti-spam filter patterns calmly quarterly as automated bot kits adjust payload shapes over time.",
+          "Keep clickable `tel:`, `mailto:` and WhatsApp links beside your form on `/contact/`.",
+          "Update server dropdown allowlists whenever you add new services or budget options so real sends are never rejected.",
+          "Set server alerts if `/api/contact/` returns `HTTP 500` errors so an expired mail API key does not lose weeks of leads.",
+          "Review your spam logs every few months as automated bot scripts change tactics.",
         ],
       },
     ],
     midCta: {
-      heading: "Inbox drowning in form spam—or worried genuine leads drop silently?",
-      text: "We audit contact APIs cleanly, deploy rate limits + invisible bot filtering, verify transactional mail alignment and test live inbox arrival.",
+      heading: "Drowning in form spam, or worried real enquiries are missing?",
+      text: "We lock down contact forms with rate limits, invisible bot traps, verified domain email delivery and live mobile inbox tests.",
       href: "/services/website-security/",
-      label: "Fix Contact Form Security",
+      label: "Explore website security",
     },
     related: [
       { label: "Website firewall & Cloudflare SA", href: "/guides/website-firewall-waf-cloudflare-south-africa/" },
@@ -1496,34 +1496,34 @@ export const securityGuides: GuidePage[] = [
     ],
     faqs: [
       {
-        question: "Why does spam still arrive when every form field says `required`?",
+        question: "Why does spam still arrive when every form field says required?",
         answer:
-          "Browser `required` flags enforce only human clicks inside browsers; bots read your target POST URL cleanly and dispatch raw scripted requests bypassing HTML rules completely.",
+          "HTML `required` tags only guide human visitors inside a web browser. Spam bots do not tap buttons on your page; they read the form's destination web address and send raw automated requests straight to your server, completely bypassing browser rules unless you add server checks and rate limits.",
       },
       {
         question: "Do interactive image CAPTCHAs hurt lead conversion rates noticeably?",
         answer:
-          "Yes—annoying multi-screen puzzles frustrate mobile shoppers on cellular data and routinely malfunction inside social media in-app browsers. Server limits paired with invisible honeypots or Turnstile convert smoothly.",
+          "Yes, multi-screen picture puzzles frustrate buyers on small mobile screens and often fail to load properly inside WhatsApp or Instagram in-app browsers. Many busy South African prospects simply close the tab. Using server checks, an invisible honeypot field and Cloudflare Turnstile stops bots while keeping enquiries smooth.",
       },
       {
         question: "Is enquiry form abuse tied to POPIA and cyber security?",
         answer:
-          "Yes—unvalidated forms expose mail-relay spam abuse, cross-site injection inside backend admin screens and inbox floods burying real POPIA deletion requests.",
+          "Yes, unguarded contact forms are both a security risk and a POPIA concern. Bots can abuse unprotected forms to send spam through your domain, inject harmful script code into staff dashboards, or flood your inbox until real customer POPIA access or deletion requests get missed.",
       },
       {
         question: "What response should bots see when triggering our honeypot?",
         answer:
-          "Return a calm normal completion or generic validation status quietly while preventing outbound notification mail or CRM database writes on the server.",
+          "Your server should return a normal generic success or validation reply while quietly skipping the email send and database save. Showing an angry error message tells bot writers their script was caught, whereas a quiet fake success wastes their time without alerting them to change their code.",
       },
       {
-        question: "Can SoftKore fix form spam on older WordPress Contact Form 7 / WPForms setups?",
+        question: "Can SoftKore fix form spam on older WordPress Contact Form 7 or WPForms setups?",
         answer:
-          "Yes—we combine Cloudflare WAF rate limiting on form endpoints, invisible anti-bot verification, stripped vulnerable PHP mailer plugins and SMTP/API delivery alignment.",
+          "Yes, our [website security](/services/website-security/) service cuts spam on Contact Form 7, WPForms and Gravity Forms without clumsy picture puzzles. We add Cloudflare firewall rate limits on your form endpoint, enable invisible Turnstile or honeypot checks, remove risky mail plugins and route notifications through a verified mail service.",
       },
     ],
     priority: 0.72,
     published: "2026-11-20",
-    updated: "2026-11-20",
+    updated: "2026-11-26",
   },
   {
     slug: "website-security-audit-what-it-checks",
@@ -1533,56 +1533,56 @@ export const securityGuides: GuidePage[] = [
     title: "What a Professional Website Security Audit Actually Checks (And What You Receive)",
     metaTitle: "What a Website Security Audit Checks (SA) | SoftKore",
     description:
-      "Inside a real South African website security audit: why free automated PDF scans miss genuine threats, manual inspection steps and your prioritised remediation plan.",
+      "Inside a South African website security audit: why free online scans miss real risks, what manual checks cover and what your plain-English fix plan includes.",
     intro:
-      "Paying for an automated 5-minute online URL vulnerability scan creates a dangerous false sense of safety—printing neat charts about minor cookie flags while completely missing stale ex-developer hosting logins, publicly exposed `.sql` database exports, unsigned payment webhooks or hidden PHP backdoors. A real website security audit pairs technical tooling with deep hands-on inspection.",
+      "A quick 5-minute web scan checks only public pages. It often misses old ex-developer logins, open database files and broken backups. A real security audit pairs scan tools with a hands-on check of your code, logins, hosting, domain settings and forms.",
     summary: [
-      "Why automated PDF scans miss real risks",
-      "Codebase, plugins & dependency checks",
-      "Hosting, logins, SSL & DNS scope",
-      "What your prioritised fix report looks like",
+      "Why free online scans miss risks",
+      "Code, plugins and login checks",
+      "Hosting, HTTPS, firewall and domain",
+      "What your plain-English fix plan shows",
     ],
     takeaways: [
-      "External black-box scanners inspect public HTML only—never seeing server logins, backup restores or leaked secrets.",
-      "Manual audits span four layers cleanly: Code & Dependencies, Hosting & Backups, Perimeter TLS/WAF/DNS, and POPIA Form Hygiene.",
-      "Reviewing Google Search Console Security Issues catches cloaked search spam completely invisible on office browsers.",
-      "Expect a concise risk-ranked remediation plan in plain English—never 90 padded pages of generic raw scanner noise.",
-      "Proactive preventative audits cost far less than emergency hack recovery, de-indexing shocks and brand embarrassment.",
+      "Free web scanners read public pages only. They cannot check your server logins, backup restores or leaked keys.",
+      "A full audit checks four parts: code and plugins, hosting and backups, HTTPS and firewall rules, and POPIA form safety.",
+      "Checking Google Search Console (Google's free report on how your site shows up in search) finds hidden spam links that office browsers miss.",
+      "You get a short, ranked fix plan in plain words instead of 80 pages of raw scan noise.",
+      "Closing gaps early costs far less than emergency hack cleanup and lost Google traffic.",
     ],
     sections: [
       {
         title: "Why automated 'PDF vulnerability scans' leave giant blind spots",
         body: [
-          "Public black-box scanners merely ping public pages quickly guessing common paths. While handy for flagging outdated header strings or expired certificates, automated scanners cannot check whether former contractors still hold registrar access or whether encrypted backups actually restore without errors.",
+          "Web scanners ping your public pages and look for basic clues like old headers or an expired cert. They cannot check if a past contractor still owns your domain or if your backups work.",
         ],
         table: {
-          caption: "Automated URL scans vs hands-on engineering security audits",
-          headers: ["Audit layer", "Automated scanner PDF alone", "Professional manual + automated audit"],
+          caption: "Online scans vs hands-on website security audits",
+          headers: ["Area checked", "Free online scan alone", "Manual and online audit"],
           rows: [
             [
-              "Code & CMS Plugins",
-              "Guesses version strings loosely from CSS links",
-              "Inspects exact installed plugins, custom snippets, `uploads/` & npm advisories",
+              "Code and plugins",
+              "Guesses version numbers from public page links",
+              "Checks exact plugins, custom code, upload folders and npm flaw lists",
             ],
             [
-              "Hosting & Accounts",
-              "Totally blind behind server firewall",
-              "Audits cPanel/SSH/WP users, MFA gaps, permissions & stale `/staging/` directories",
+              "Hosting and logins",
+              "Blind to anything behind your server login",
+              "Checks hosting, SSH and admin users, two-step logins and old preview folders",
             ],
             [
-              "Backups & Recovery",
-              "Zero visibility or restore verification",
-              "Verifies off-site encryption, retention depth & isolated staging restore proof",
+              "Backups and recovery",
+              "Cannot see backups or test a restore",
+              "Checks off-site encryption, backup history and a preview restore test",
             ],
             [
-              "Forms & Checkout APIs",
-              "Checks visible input markup lightly",
-              "Inspects server validation, rate limits, secret exposure & PayFast/Yoco webhooks",
+              "Forms and checkouts",
+              "Reads only public form HTML tags",
+              "Tests server checks, rate limits, hidden keys and PayFast or Yoco callbacks",
             ],
             [
-              "Email & Domain Control",
-              "Basic DNS record lookup only",
-              "Audits `.co.za` legal registrant, Registrar Lock, dangling CNAMEs & full DMARC",
+              "Email and domain control",
+              "Runs a basic domain lookup only",
+              "Checks `.co.za` owner records, transfer locks, old subdomains and DMARC",
             ],
           ],
         },
@@ -1590,19 +1590,19 @@ export const securityGuides: GuidePage[] = [
       {
         title: "Codebase, plugins, hosting access and backup inspection scope",
         body: [
-          "Methodical engineering audits work inside-out thoroughly across code files, hosting access accounts and recovery resilience rather than skimming superficial homepages.",
+          "A real audit checks your site from the inside out across files, hosting logins and backup safety. It goes much deeper than skimming your home page.",
         ],
         subsections: [
           {
-            heading: "Application codebase, CMS plugins & endpoint security",
+            heading: "Site files, plugins and form checks",
             body: [
-              "Review WordPress core/plugin patch hygiene, signs of 'nulled' extensions, `npm audit` vulnerability trails, executable PHP dropped inside upload folders, leaked `.env` tokens inside browser bundles, and server validation across enquiry/checkout/webhook endpoints.",
+              "We check WordPress core and plugin updates, signs of cracked plugins and npm warnings. We also look for `.php` files hiding in upload folders, leaked `.env` keys in browser code, and weak checks on contact or checkout routes.",
             ],
           },
           {
-            heading: "Hosting control panel logins, SSH permissions & restore proof",
+            heading: "Hosting logins, permissions and backup restore checks",
             body: [
-              "Inventory every active administrator across WordPress, hosting control panels, FTP/SFTP, SSH keys, database users and Search Console—catching departed staff/ex-agencies, absent MFA, abandoned `/dev/` or `/test/` staging copies and verifying whether off-site backups truly restore cleanly.",
+              "We list every admin across your editing system, hosting panel, FTP, SSH, database and Google Search Console. That spots past staff, missing two-step logins, old `/dev/` or `/test/` preview folders and untested backups.",
             ],
           },
         ],
@@ -1610,81 +1610,81 @@ export const securityGuides: GuidePage[] = [
       {
         title: "Perimeter SSL/TLS, security headers, WAF, DNS and POPIA exposure",
         body: [
-          "At the public network edge, auditors check whether visitors, email clients and Googlebot see hard trustworthy infrastructure:",
+          "From the outside, the audit checks what visitors, mail tools and Google's scan of your site see when they connect:",
         ],
         bullets: [
-          "TLS/SSL SAN coverage across bare root + `www`, Cloudflare `Full (Strict)` state and clean canonical HTTPS redirects.",
-          "Missing HTTP security headers (`HSTS`, `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`, scoped `CSP`).",
-          "Cloudflare WAF rate-limiting coverage on login/contact URLs and whether raw origin hosting IPs stay hidden cleanly.",
-          "ZACR/`.co.za` legal registrant verification, Registrar Transfer Lock, dangling subdomain CNAME cleanup and aligned `SPF`, `DKIM` and `DMARC` mail rules.",
-          "Google Search Console Security Issues + POPIA Section 19 practical exposure checks (unneeded form fields, dead trackers, exposed CSV dumps).",
+          "HTTPS security certs covering both your bare domain and `www`, Cloudflare **Full (Strict)** mode and direct HTTPS redirects.",
+          "Missing browser security settings (HTTP headers such as `HSTS`, `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy` and `CSP`).",
+          "Cloudflare website firewall (WAF) rate limits on login and contact pages, plus whether your real hosting IP stays hidden.",
+          "ZACR `.co.za` owner details, EPP transfer locks, old subdomain cleanup and matching `SPF`, `DKIM` and `DMARC` email rules.",
+          "Google Search Console Security Issues plus basic POPIA Section 19 form checks, such as extra fields, dead trackers or exposed customer files.",
         ],
         callout: {
           tone: "note",
-          heading: "Non-destructive audits keep live revenue sites completely online",
-          text: "Professional codebase, access and DNS audits execute safely via read-only inspections and staging clones—never running destructive stress floods over trading hours.",
+          heading: "Safe checks keep your live site online",
+          text: "Hands-on file, login and domain checks run safely in read-only mode or on private preview copies. Your live store stays online during trade hours.",
         },
       },
       {
-        title: "What your final report and ranked remediation roadmap delivers",
+        title: "What your final report and ranked fix plan delivers",
         body: [
-          "Forget intimidating 80-page automated PDFs filled with theoretical CVSS severity filler nobody translates into business risk. Your report breaks clear findings directly into practical execution tiers:",
+          "Forget scary 80-page PDF reports filled with raw codes nobody explains. Your fix plan groups tasks into three clear levels:",
         ],
         numbered: [
-          "Urgent / Critical (Resolve inside 24–72 hours): Active malware indicators, public backup dumps, unauthenticated webhooks or ex-staff admin logins lacking MFA.",
-          "High-Priority Hardening (Complete within 2–4 weeks): HTTP security headers, WAF rate limiting, off-site encrypted backup isolation and DMARC enforcement.",
-          "Ongoing Preventative Routine: Predictable patch cycle, quarterly staging restore drills and continuous Search Console/SSL monitoring alerts.",
+          "Urgent fixes (fix in 24 to 72 hours): signs of hacks, open backup files, unguarded payment callbacks or old staff logins without two-step checks.",
+          "High-priority locks (fix in 2 to 4 weeks): browser security settings, firewall rate limits, off-site encrypted backups and DMARC email blocks.",
+          "Ongoing care habits: regular updates, quarterly preview restore tests and live uptime and HTTPS alerts.",
         ],
         callout: {
           tone: "tip",
-          heading: "Clear action lists serve either internal devs or external implementation cleanly",
-          text: "Every vulnerability entry states clearly where the exposure sits, why it matters commercially in plain English and exact steps for resolution—usable immediately by your developer or our team.",
+          heading: "Clear steps for your developer or our team",
+          text: "Each line says where the gap sits, what risk it brings in plain words, and how to fix it. Your own developer or our team can act on it straight away.",
         },
       },
       {
         title: "When South African SMEs should book an audit before an emergency hits",
         body: [
-          "Waiting until Google drops traffic behind red security alerts flips a calm afternoon review into an expensive crisis. Schedule preventative audits deliberately around key inflection points:",
+          "Waiting until Google blocks your traffic turns a calm check into a costly rush job. Book an early audit at these key times:",
         ],
         bullets: [
-          "Directly after changing web agencies, freelancers or internal marketing coordinators.",
-          "Before ramping Google Search Ads budgets onto older WordPress or WooCommerce websites.",
-          "Ahead of launching payment gateway checkouts, customer portals or sensitive POPIA intake workflows.",
-          "Annually as prudent corporate governance for legal, accounting, medical and B2B operations.",
+          "Right after switching web agencies, freelancers or marketing staff.",
+          "Before putting larger Google Ads budgets behind an older WordPress or WooCommerce site.",
+          "Before launching online payments, client portals or sensitive POPIA intake forms.",
+          "Once a year as basic care for legal, accounting, medical and B2B firms.",
         ],
       },
       {
-        title: "Worked audit discoveries: what real manual reviews uncover weekly",
+        title: "Illustrative audit findings: common gaps manual reviews catch",
         body: [
-          "Scanning thousands of South African SME setups proves automated external tools miss the precise human mistakes responsible for real breaches. Seeing typical findings from actual manual security audits shows instantly why deep code, login and DNS checks pay back immediately.",
-          "Nearly every initial audit uncovers at least two hidden urgent exposures beneath ordinary clean homepages:",
+          "Free web tools often miss the small human slip-ups behind real site break-ins. Looking at common gaps from manual checks shows why testing code, logins and domain settings pays back.",
+          "As an illustrative example, a first review of an older firm's site often finds hidden risks behind a clean home page:",
         ],
         subsections: [
           {
-            heading: "Forgotten ex-supplier privileges and public server leftovers",
+            heading: "Old supplier logins and public server leftovers",
             body: [
-              "Manual login inventories routinely spot four active Administrator accounts belonging to long-departed interns or former marketing agencies lacking MFA—frequently alongside full uncompressed `website-old-2023.sql` exports left sitting openly at web root `/backup/` where bots download client tables straight over HTTP.",
+              "A login check often finds active admin users from former interns or an old agency with no two-step login. Beside them, an open `website-old-2023.sql` file may sit in a `/backup/` folder where bots can download client rows over the web.",
             ],
           },
           {
-            heading: "Dangling vendor CNAMEs and weak payment/form API practices",
+            heading: "Unused subdomains and weak form or payment links",
             body: [
-              "DNS reviews regularly discover expired campaign `CNAME` subdomains primed for phishing takeovers alongside frontend contact forms calling CRM endpoints with exposed hardcoded secret tokens or ecommerce webhooks trusting client redirect strings without verifying HMAC signatures cleanly.",
+              "Domain checks often spot old campaign `CNAME` links pointing to closed tools that scammers can claim. Code checks also catch browser forms holding secret CRM keys or store links that skip checking the payment gateway's security signature.",
             ],
           },
         ],
         bullets: [
-          "Verify written scope beforehand so audits check application, hosting, DNS, mail alignment AND Search Console together holistically.",
-          "Schedule concise 6-month re-audits (or post-developer change checks) cleanly so new team tools or staging edits do not re-open fixed doors.",
-          "Keep signed clean evidence of resolved audit findings alongside off-site backup restore logs—proving proactive POPIA Section 19 care to corporate clients and compliance teams.",
+          "Make sure your written audit covers code, hosting logins, domain settings, email rules and Google Search Console together.",
+          "Book a short check every 6 months or after developer changes so new tools do not open old doors.",
+          "Keep signed records of fixed items and backup restore tests as proof of POPIA Section 19 care.",
         ],
       },
     ],
     midCta: {
-      heading: "Want crisp clarity on where your website sits exposed right now?",
-      text: "Book a hands-on website security audit—we inspect code, logins, hosting, backups, DNS and POPIA hygiene and deliver a clear priority fix list.",
+      heading: "Want a clear view of where your website is exposed today?",
+      text: "Book a hands-on website security audit. We inspect your code, logins, hosting, backups, domain settings and POPIA form safety and give you a ranked fix plan.",
       href: "/services/website-security/",
-      label: "Request a Security Audit",
+      label: "Request a security audit",
     },
     related: [
       { label: "Website & cyber security", href: "/services/website-security/" },
@@ -1696,32 +1696,32 @@ export const securityGuides: GuidePage[] = [
       {
         question: "Will running a full security audit take our live website offline?",
         answer:
-          "No—inspections proceed non-destructively while taking clean snapshots upfront so customer browsing and orders never pause.",
+          "No, a security audit will not take your live website or online store offline. We save safe backups first, inspect files and server settings in read-only mode, and test any risky changes on a private preview copy so your customers can keep browsing and submitting enquiries without interruption.",
       },
       {
-        question: "What logins or access do engineers need for a real audit?",
+        question: "What logins or access do we need to share for a real security audit?",
         answer:
-          "External checks inspect public URLs and headers first; deep audits use delegated read/admin access to codebase/CMS, hosting panel, Cloudflare/DNS and Google Search Console.",
+          "First checks look at your public website, HTTPS security certificate and domain records without any logins. For the full hands-on audit, we ask for temporary access to your editing system or code repository, hosting panel, Cloudflare or domain settings and Google Search Console so nothing stays hidden.",
       },
       {
         question: "Does passing an audit guarantee zero future cyber attacks?",
         answer:
-          "Security works continuously—audits close known architectural openings cleanly, which then remain resilient via ongoing patching, MFA hygiene, backups and 24/7 monitoring.",
+          "No honest provider can promise zero future attacks, because new software flaws and scams appear every week. An audit closes existing gaps and puts strong locks in place. Staying safe long term comes from regular software updates, two-step logins, encrypted off-site backups and ongoing uptime and security checks.",
       },
       {
         question: "Can SoftKore handle fixing every finding listed in our audit report?",
         answer:
-          "Yes—you keep the prioritised engineering roadmap outright and can assign part or all of the remediation sprint straight to our team.",
+          "Yes, you keep the plain-English fix plan outright and choose how to handle the work. Your internal developer can use our checklist directly, or our [website security](/services/website-security/) team can fix part or all of the list, from plugin updates and firewall rules to domain and email locks.",
       },
       {
         question: "How long does a typical South African SME website security audit take?",
         answer:
-          "Focused audits typically complete inside 3 to 5 working days once temporary repository, hosting and Search Console access confirm.",
+          "A focused website security audit usually takes 3 to 5 working days once temporary access to your code, hosting, domain settings and Google Search Console is confirmed. Larger online stores or websites recovering from an active hack can take a few extra days for deeper file and log checks.",
       },
     ],
     priority: 0.72,
     published: "2026-11-20",
-    updated: "2026-11-20",
+    updated: "2026-11-26",
   },
   {
     slug: "protecting-domain-hijacking-co-za",
@@ -1731,77 +1731,77 @@ export const securityGuides: GuidePage[] = [
     title: "How to Protect Your .co.za Domain and DNS From Hijacking and Expired Renewals",
     metaTitle: "Protect Your .co.za Domain From Hijacking | SoftKore",
     description:
-      "Stop .co.za domain hijacking, unauthorised DNS edits, subdomain takeovers and accidental renewal drops with verified ZACR ownership, Registrar Lock and MFA.",
+      "Stop .co.za domain hijacking, unauthorised DNS edits and missed renewals using ZACR ownership checks, EPP transfer locks and two-factor login protection.",
     intro:
-      "Every week across South Africa, legitimate companies watch their website, Google rankings and company email go dark simultaneously—not from compromised hosting, but from an expired `.co.za` invoice bouncing into an ex-staffer's mailbox, a former agency retaining registrar registrant control, or phished DNS credentials rerouting mail. Locking down domain control takes twenty minutes once cleanly.",
+      "Every week, South African firms see their website and company email go dead together because of an expired domain bill, an ex-agency still holding `.co.za` ownership, or stolen domain logins. Locking down your domain and DNS settings takes about twenty minutes once you know which locks to turn on.",
     summary: [
-      "Fixing .co.za registrant ownership",
-      "Registrar lock & transfer MFA",
-      "Dedicated billing & alert emails",
-      "Auditing DNS records quarterly",
+      "Checking legal .co.za ownership",
+      "Turn on EPP lock and 2FA",
+      "Stopping missed renewal outages",
+      "Quarterly domain setting checks",
     ],
     takeaways: [
-      "Check WHOIS / ZACR records right now to ensure YOUR registered company owns the `.co.za` legally—not an outside freelancer.",
-      "Enable app/hardware MFA across BOTH your domain registrar AND external authoritative DNS account (avoiding SIM-swap SMS gaps).",
-      "Keep Registrar Transfer Lock (`clientTransferProhibited`) enabled permanently across live and defensive domains.",
-      "Prevent single-point renewal outages: turn auto-renew ON with a corporate card plus dual independent non-domain alert emails.",
-      "Audit DNS zones quarterly deleting abandoned `CNAME` subdomains pointing at dead SaaS tools (subdomain-takeover prevention).",
+      "Check WHOIS records right now to confirm your legal company owns your `.co.za` domain, not an outside freelancer.",
+      "Turn on app-based two-factor login checks (2FA) on both your domain registrar and your external DNS account (such as Cloudflare).",
+      "Keep your EPP transfer lock (`clientTransferProhibited`) turned on at all times for main and spare domains.",
+      "Turn auto-renew on with a company card and list two backup email addresses outside your own `.co.za` domain.",
+      "Clean out old `CNAME` subdomain records every quarter so scammers cannot hijack cancelled software links.",
     ],
     sections: [
       {
         title: "Verify legal .co.za registrant ownership under ZACR today",
         body: [
-          "The nastiest surprise hits SMEs when parting ways with a contractor or renewing finance systems—only to discover your `.co.za` domain sits inside a former freelancer's consolidated reseller account listed under *their* details.",
-          "Under South African ZACR registry processes, transfer confirmations authenticate straight to the recorded administrative/registrant email address. Verify inside your registrar portal today that your registered business entity holds direct primary registrant control.",
+          "A nasty surprise hits many companies when changing suppliers or finance tools: they learn their `.co.za` domain sits inside a former freelancer's reseller account under *their* name and email.",
+          "In South Africa, ZACR (the registry that manages `.co.za` domains) sends transfer approval requests straight to the listed domain owner email. Log into your registrar (the company where you pay for the domain) today and make sure your registered business is listed as the legal owner.",
         ],
         table: {
-          caption: "Domain & DNS control hygiene checklist for South African companies",
-          headers: ["Security check", "Healthy state", "Business damage if neglected"],
+          caption: "Domain and DNS protection checklist for South African firms",
+          headers: ["What to check", "Safe setup", "What happens if skipped"],
           rows: [
             [
-              "Legal Registrant Owner",
-              "Your legal company entity & audited company domain mailbox",
-              "Ex-supplier disagreements can block transfers or freeze DNS hostage",
+              "Legal domain owner",
+              "Your company name and a monitored company email",
+              "A former supplier can delay transfers or hold your domain hostage",
             ],
             [
-              "Registrar Transfer Lock",
-              "`clientTransferProhibited` kept active permanently",
-              "Phished registrar logins let thieves transfer domains away silently",
+              "EPP transfer lock",
+              "`clientTransferProhibited` kept on permanently",
+              "Anyone with a leaked login can move your domain to another registrar",
             ],
             [
-              "Registrar & DNS MFA",
-              "Authenticator app / hardware key on every portal login",
-              "Stolen passwords allow instant `A` phishing & `MX` email interception",
+              "2FA on registrar and DNS",
+              "Authenticator app or security key on every login",
+              "Thieves swap IP and mail settings to steal logins and emails",
             ],
             [
-              "Renewal & Alert Path",
-              "Auto-renew ON + corporate card + dual non-domain alert addresses",
-              "Missed renewal suspends domain overnight—killing site & all `@company` mail",
+              "Renewal and billing alerts",
+              "Auto-renew on, company card and two outside backup emails",
+              "One missed invoice switches off your site and all `@company` mail",
             ],
           ],
         },
         callout: {
           tone: "warning",
-          heading: "Never keep renewal alerts strictly at `@yourdomain.co.za`!",
-          text: "If an overdue invoice ever triggers brief suspension on `yourcompany.co.za`, final urgent notices emailed ONLY to `info@yourcompany.co.za` bounce back unreachable! Keep a resilient external director notification address on billing alerts.",
+          heading: "Never keep billing alerts only on `@yourdomain.co.za`",
+          text: "If an unpaid bill suspends `yourcompany.co.za`, warning emails sent only to `info@yourcompany.co.za` will bounce! Add an outside director backup email for billing notices.",
         },
       },
       {
-        title: "Lock down Registrar Transfer Lock and both DNS/Registrar MFA",
+        title: "Turn on EPP Transfer Lock and 2FA on both Registrar and DNS",
         body: [
-          "Modern domain hijackers ignore web servers completely—they target poorly protected registrar or CDN DNS panels, redirect your website `A` record onto a convincing phishing clone and quietly swap `MX` mail paths to intercept incoming banking links and password resets.",
+          "Modern domain hijackers do not need to hack your web server. If they get into a weakly protected registrar or DNS account (domain settings), they can send your website visitors to a fake login page and redirect `MX` mail records to read your company emails and password resets.",
         ],
         subsections: [
           {
-            heading: "Enforce authenticator MFA on Registrar AND external DNS (Cloudflare)",
+            heading: "Turn on app-based 2FA on both your registrar and Cloudflare",
             body: [
-              "When authoritative nameservers delegate onto Cloudflare, Route 53 or separate DNS platforms, protecting only the `.co.za` registrar leaves attackers free to rewrite IP and mail records inside DNS! Mandate unique password-vault credentials plus non-SMS TOTP app or hardware MFA on both portals.",
+              "Many sites buy their `.co.za` domain at one registrar and manage their domain settings (DNS) in Cloudflare or Route 53. Locking only the registrar leaves your DNS panel wide open. Turn on unique password-vault passwords plus app-based two-factor authentication (2FA, avoiding SMS because of SIM-swap risk) on both accounts.",
             ],
           },
           {
-            heading: "Lock Registrar Transfer Lock permanently between intentional moves",
+            heading: "Keep EPP transfer lock turned on between moves",
             body: [
-              "Confirm `clientTransferProhibited` Transfer Lock sits active on every production and secondary defensive domain—unlocking momentarily ONLY during pre-authorised registrar migrations.",
+              "Your EPP lock (`clientTransferProhibited`) stops anyone moving your domain away, even if they steal your EPP transfer code. Leave it switched on permanently for your main and spare domains, and unlock it only during a planned domain move.",
             ],
           },
         ],
@@ -1809,68 +1809,68 @@ export const securityGuides: GuidePage[] = [
       {
         title: "Eliminate accidental .co.za domain expiry and suspension",
         body: [
-          "`.co.za` annual renewals cost pennies compared with enterprise IT tools, yet active trading companies still go offline routinely when corporate credit cards expire, finance staff rotate or old invoices land inside Spam.",
+          "Renewing a `.co.za` domain costs very little each year, yet busy companies still lose their website and email overnight when a company card expires, finance staff leave or renewal invoices hit spam.",
         ],
         numbered: [
-          "Log exact renewal dates for EVERY active and parked defensive domain inside a shared company asset ledger.",
-          "Switch auto-renew ON tied cleanly to a corporate virtual or reliable business card—not a departing employee's card.",
-          "List at least two monitored notification emails (including a resilient non-domain backup alert address).",
-          "Connect external uptime & domain-expiry monitoring pinging alerts 30 days and 14 days ahead of expiry dates.",
+          "Write down the exact renewal date for every main and spare domain in a shared company list.",
+          "Turn on auto-renew using a reliable company card rather than an employee's personal card.",
+          "Add at least two monitored alert emails, including one backup email outside your company domain.",
+          "Set external domain expiry alerts to remind your team 30 days and 14 days ahead of renewal.",
         ],
       },
       {
         title: "Scrub dangling CNAME subdomains every quarter (Subdomain Takeovers)",
         body: [
-          "Running temporary campaign pages (`events.company.co.za`) via `CNAME` pointing at SaaS providers like Shopify, Heroku or Unbounce—then closing that SaaS subscription later without removing the DNS record—leaves a severe **Subdomain Takeover** opening.",
-          "Automated bots sweep DNS zones daily hunting dangling abandoned CNAME targets, claim that deleted external service name cleanly, and instantly host phishing logins live straight on your authentic `.co.za` subdomain!",
+          "Suppose you created `events.company.co.za` using a `CNAME` record pointing to an outside tool like Shopify, Heroku or Unbounce, and later cancelled that tool without deleting the DNS record. That leftover pointer creates a Subdomain Takeover risk.",
+          "Automated bots hunt for abandoned `CNAME` records every day, claim the deleted tool name, and publish fake scam pages straight onto your trusted `.co.za` web address.",
         ],
         bullets: [
-          "Audit every `A`, `AAAA`, `CNAME`, `MX` and `TXT` record quarterly and purge decommissioned vendor pointers immediately.",
-          "Ensure unused defensive `.com` or `.co.za` aliases keep strict `v=spf1 -all` and `p=reject` DMARC records published.",
+          "Check your `A`, `AAAA`, `CNAME`, `MX` and `TXT` domain settings every three months and delete pointers to cancelled tools.",
+          "Publish `v=spf1 -all` and `p=reject` email locks on unused spare `.com` and `.co.za` domains so scammers cannot spoof them.",
         ],
         callout: {
           tone: "tip",
-          heading: "Anchor accounts cleanly on monitored role mailboxes (`domains@`)",
-          text: "Avoid anchoring crucial registrar master ownership onto individual employee emails like `thabo@`—anchor controls safely under role-monitored mailboxes with strict MFA and multi-director recovery access.",
+          heading: "Use a shared role mailbox like `domains@`",
+          text: "Do not tie main domain ownership to one staff member's personal email like `thabo@`. Use a shared company role address protected by 2FA and director backup access.",
         },
       },
       {
         title: "Deploy automated DNS change alerting for rapid detection",
         body: [
-          "Pair Registrar Lock cleanly with external DNS & uptime monitoring pinging authoritative `A`, `NS`, `MX` and `TXT` signatures continuously—triggering instant SMS/email alarms within minutes if an unexpected nameserver change or IP redirect ever occurs.",
+          "Pair your EPP transfer lock with uptime and domain monitoring that watches your `A`, `NS`, `MX` and `TXT` settings around the clock. If anyone changes your nameservers or website IP unexpectedly, your team gets an alert within minutes.",
         ],
       },
       {
-        title: "Clean step-by-step recovery & domain lock checklist for SA directors",
+        title: "Step-by-step domain lock and takeover checklist for SA directors",
         body: [
-          "Checking who actually controls your `.co.za` domain takes ten quiet minutes on a Tuesday morning—and avoids chaotic days scrambling across registry escalation forms mid-crisis. Whether verifying clean corporate ownership or untangling old reseller accounts, walk calmly through this operational hygiene pass:",
-          "Confirm legal authority, payment resilience and DNS audit alerts together across every primary and defensive domain:",
+          "Checking who legally controls your `.co.za` domain takes ten minutes on a quiet morning and saves days of stressful forms during a crisis. Whether you are checking your own account or moving away from an old agency, follow these steps together:",
+          "Review ownership, billing safety, EPP locks and DNS alerts across every domain your business holds:",
         ],
         subsections: [
           {
-            heading: "Transferring domain ownership cleanly away from an ex-agency",
+            heading: "Moving a .co.za domain away from an old agency",
             body: [
-              "Run a quick `.co.za` WHOIS check right now to verify exact registrar name and listed registrant entity. Request a polite formal account push or EPP/transfer ticket moving domains directly into your company-controlled registrar dashboard—ensuring the ZACR administrative vote confirms cleanly straight via your monitored domain mailbox with Registrar Lock re-enabled immediately upon landing.",
+              "Run a quick `.co.za` WHOIS check right now to see which registrar holds your domain and which owner entity is listed. Ask the agency for a formal account push or EPP transfer code to move the domain into your company's own registrar account. Approve the ZACR email confirmation from your monitored company inbox and turn the EPP lock back on right away.",
             ],
           },
           {
-            heading: "Securing external DNS providers beside registrar controls",
+            heading: "Securing external DNS accounts alongside your registrar",
             body: [
-              "Remember splitting registrar control (e.g. local SA registrar) from authoritative DNS (e.g. Cloudflare) doubles safety ONLY when BOTH portals enforce unique password-vault logins, hardware/TOTP MFA and zero stale team users. Never leave old freelance technical admins holding unrestricted Super Administrator privileges indefinitely.",
+              "Splitting your registrar (such as a local SA registrar) from your DNS host (such as Cloudflare) adds safety only when both accounts use unique passwords, app-based 2FA and zero leftover logins from past freelancers or staff.",
             ],
           },
         ],
         bullets: [
-          "Confirm secondary defensive `.com` / typo domains carry auto-renew ON, Registrar Lock ON and `v=spf1 -all` mail lock.",
-          "Record registrar PINs, backup MFA codes and EPP recovery documents cleanly inside company director vaults.",
+          "Check that spare `.com` and typo domains have auto-renew on, EPP lock on and `v=spf1 -all` email locks set.",
+          "Store registrar PINs, 2FA backup codes and EPP recovery notes safely inside a shared director password vault.",
         ],
       },
     ],
     midCta: {
-      heading: "Unsure who legally controls your .co.za domain or DNS records?",
-      text: "We verify ZACR registrant ownership, strip dangerous dangling CNAMEs, lock Registrar + Cloudflare MFA and wire continuous DNS change alerts.",
+      heading: "Unsure who legally controls your .co.za domain or DNS settings?",
+      text: "We check ZACR ownership, remove risky old subdomain records, turn on EPP locks and 2FA and set up domain change alerts.",
       href: "/services/website-security/",
-      label: "Audit Domain & DNS Control",
+      label: "Explore website security",
     },
     related: [
       { label: "SPF, DKIM & DMARC guide SA", href: "/guides/spf-dkim-dmarc-guide-south-africa/" },
@@ -1882,31 +1882,31 @@ export const securityGuides: GuidePage[] = [
       {
         question: "What happens if thieves hijack DNS without touching our website host?",
         answer:
-          "They instantly steer browser visitors onto phishing clones and capture incoming company email by swapping `MX` mail targets—all while your own hosting files show zero intrusion signs.",
+          "Hackers do not need access to your hosting server to cause harm if they control your DNS settings. They can point your website address to a fake clone to steal customer logins, and swap your `MX` mail records to catch incoming company emails and password reset links silently.",
       },
       {
         question: "How fast does an unpaid .co.za domain vanish offline?",
         answer:
-          "The moment expiry transitions into registry suspension, your website drops dead and incoming email bounces immediately. Timely recovery inside ZACR grace windows avoids domains dropping publicly onto open auctions.",
+          "The moment an unpaid `.co.za` domain enters registry suspension, your website stops loading and company emails bounce right away. Paying quickly inside ZACR's short grace period brings the site back, whereas leaving it overdue too long lets the domain drop back onto the public market for anyone to buy.",
       },
       {
         question: "Can a previous freelancer withhold our .co.za domain over a disagreement?",
         answer:
-          "Recovering `.co.za` registrations listed under an ex-agency's entity triggers slow formal registry/ADR disputes—getting proper company registrant ownership locked down early avoids leverage traps completely.",
+          "Yes, if a freelancer registered your `.co.za` domain under their own name or reseller profile, getting it back can require slow ZACR or dispute processes. Checking WHOIS records early and moving ownership into a registrar account under your company's legal name removes that risk completely.",
       },
       {
         question: "Should we enable DNSSEC on our .co.za domain too?",
         answer:
-          "Yes where both registrar and DNS host (like Cloudflare) integrate smoothly—DNSSEC cryptographically signs DNS lookups preventing cache-poisoning spoofs between resolvers.",
+          "Yes, turn on DNSSEC when both your `.co.za` registrar and your DNS provider (like Cloudflare) support it easily. DNSSEC adds a digital check to domain lookups so attackers on shady public networks cannot trick browsers into visiting a fake server address instead of your real site.",
       },
       {
         question: "Why check DNS records quarterly even when nothing changed internally?",
         answer:
-          "Old vendor subscriptions get cancelled quietly without notifying web teams—leaving stale CNAME subdomains and unused SPF `include:` entries exposed unless reviewed cleanly quarterly.",
+          "Teams often cancel old newsletter tools, landing-page builders or booking apps without telling their web support person. Those cancelled accounts leave behind old `CNAME` subdomains that hackers can take over, plus leftover SPF entries that clutter your email limits unless you tidy them up every few months.",
       },
     ],
     priority: 0.72,
     published: "2026-11-20",
-    updated: "2026-11-20",
+    updated: "2026-11-26",
   },
 ];
